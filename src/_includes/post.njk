@@ -1,0 +1,113 @@
+{% extends "base.njk" %}
+
+{% block content %}
+
+<article class="h-entry entry">
+  <header>
+    <a href="/" class="u-author"></a>
+    
+    <span class="entry__published">{{ date | date  }}</span>
+
+    {% if title  %}
+    <h1>{{ title }}</h1>
+    {% endif %}
+    
+  </header> 
+  
+  {% if postType == "like"%}
+  Liked a <a href="{{mp_properties['like-of']}}">post</a>
+  {% elseif postType == "repost"%}
+  Reposted a <a href="{{mp_properties['repost-of']}}">post</a>
+  {% elseif postType == "reply"%}
+  Replied to a <a href="{{mp_properties['in-reply-to']}}">post</a>
+  {% elseif postType == "bookmark"%}
+  Bookmarked a <a href="{{mp_properties['bookmark-of']}}">link</a>
+  {% endif %}
+  
+  {{ content | safe }}
+  
+  {% if mp_properties.photo %}
+  <img src="{{ mp_properties.photo }}" class="u-photo entry__photo image"/>
+  {% endif %}
+
+  {% if postType != 'article' %}
+  {% set link = (mp_properties | referenced_link) or (content | content_link) %}
+  {% if link %}
+  {% set scraped = link | scrape(link | slug) %}
+  {% include "preview.njk" %}
+  {% endif %}
+  {% endif %}
+
+  <footer class="entry__footer">
+    {% set allmentions = webmentions.children | webmentions_for_url(page.url) %}
+    {% set mentions = allmentions | webmention_kind('in-reply-to', 'mention-of') %}
+    {% set likes = allmentions | webmention_kind('like-of') %}
+    {% set reposts = allmentions | webmention_kind('repost-of') %}
+    {% set bookmarks = allmentions | webmention_kind('bookmark-of') %}  
+    {% set syndications = wmresults | syndications_for_url(page.url) %}
+
+    <section class="row--spacious"> 
+      <a href="#wm-mentions" title="Mentions" class="wm-counter"><i class="far fa-comment"></i> {{ mentions | length }}</a>
+      <a href="#wm-likes" title="Likes" class="wm-counter"><i class="far fa-thumbs-up"></i> {{ likes | length }}</a>
+      <a href="#wm-reposts" title="Reposts" class="wm-counter"><i class="fa fa-retweet"></i>  {{ reposts | length }}</a>
+      <a href="#wm-bookmarks" title="Bookmarks" class="wm-counter"><i class="fa fa-bookmark"></i> {{ bookmarks | length }}</a>
+      {% for s in syndications %}
+      <a href="{{ s }}" title="Syndicated" class="entry__link wm-counter"><i class="{{ s | synicon }}"></i></a>
+      {% endfor %}
+      <a href="{{ page.url }}" title="Permalink" class="wm-counter"><i class="fa fa-link"></i></a>
+    </section>
+    
+    {% if mentions.length > 0 %}
+    <section class="wm-group wm-mentions">
+      <h1 id="wm-mentions" class="wm-group--header">Mentions</h1>
+      <ul class="wm-group--list"> 
+        {% for link in mentions %}
+        <li class="wm-group--mention-item">
+        {% include 'mention.njk' %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if likes.length > 0 %}
+    <section class="wm-group">
+      <h1 id="wm-likes" class="wm-group--header">Likes</h1>
+      <ul class="wm-group--list"> 
+        {% for link in likes %}
+        <li class="wm-group--item">
+        {% include 'link.njk' %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if reposts.length > 0 %}
+    <section class="wm-group">
+      <h1 id="wm-reposts" class="wm-group--header">Reposts</h1>
+      <ul class="wm-group--list">
+        {% for link in reposts %}
+        <li class="wm-group--item">
+        {% include 'link.njk' %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if bookmarks.length > 0 %}
+    <section class="wm-group">
+      <h1 id="wm-bookmarks" class="wm-group--header">Bookmarks</h1>
+      <ul class="wm-group--list">
+        {% for link in bookmarks %}
+        <li class="wm-group--item">
+        {% include 'link.njk' %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </footer>
+</article>
+{% endblock %}

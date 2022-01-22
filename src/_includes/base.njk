@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+  <title>{% block title %}{{ title }} - {{ global.SITENAME }}{% endblock %}</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if FAVICON %}
+  <link href="/{{ FAVICON }}" rel="icon">
+  {% endif %}
+  {% if TOUCHICON %}
+  <link rel="apple-touch-icon" href="/{{ TOUCHICON }}">
+  {% endif %}
+
+   
+  {% if global.AUTHOR %}
+  <meta name="author" content="{{ global.AUTHOR }}" />
+  {% endif %}
+  {% if page.summary %}
+  <meta name="description" content="{{ page.summary|striptags|escape }}" />
+  {% endif %}
+  {% block meta %}{% endblock %}
+
+  {% block opengraph %}
+  <meta property="og:site_name" content="{{ global.SITENAME }}" />
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="{{ title|striptags|escape }}"/>
+  <meta property="og:url" content="/{{ page.url }}"/>
+  {% if page.summary %}
+  <meta property="og:description" content="{{ page.summary|striptags|escape }}" />
+  {% endif %}
+  {% if og_image %}
+  <meta property="og:image" content="/{{ og_image }}"/>
+  {% elif OPEN_GRAPH_IMAGE %}
+  <meta property="og:image" content="/{{ OPEN_GRAPH_IMAGE }}"/>
+  {% endif %}
+  {% endblock %}
+  <!--
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  -->
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+  <link href="/static/site.css" rel="stylesheet">
+
+  <link href="/static/fontawesome/css/all.min.css" rel="stylesheet">
+
+  {% if global.AUTH_ENDPOINT %}
+  <link rel="authorization_endpoint" href="{{ global.AUTH_ENDPOINT }}"/>
+  {% endif %}
+
+  {% if global.TOKEN_ENDPOINT %}
+  <link rel="token_endpoint" href="{{ global.TOKEN_ENDPOINT }}"/>
+  {% endif %}
+  
+  {% if global.MICROPUB_ENDPOINT %}
+  <link rel="micropub" href="{{ global.MICROPUB_ENDPOINT }}"/>
+  {% endif %}
+
+  {% if global.MICROSUB_ENDPOINT %}
+  <link rel="microsub" href="{{ global.MICROSUB_ENDPOINT }}"/>
+  {% endif %}
+
+  {% if global.WEBMENTION_ENDPOINT %}
+  <link rel="webmention" href="{{ global.WEBMENTION_ENDPOINT }}"/>
+  {% endif %}
+</head>
+<body>  
+  <header class="main-header">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="row navbar__brand navbar__group">
+        <img src="/static/img/nav.jpg" class="u-photo" alt="Me" title="Me"/>
+        <a href="/" class="navbar__link">{{ global.SITENAME }}</a>
+      </div>
+      <ul class="navbar__group navbar__group--right">
+        <li><a href="/posts" class="navbar__link">Blog</a></li>
+        <li><a href="https://photos.desmondrivet.com/" class="navbar__link">Albums</a></li>
+        <li><a href="https://wiki.desmondrivet.com/" class="navbar__link">Wiki</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="main">
+  {% block content %}{% endblock %}
+  </main>
+  
+  <footer class="main-footer">
+    <div class="main-footer__content">
+      <p class="row">
+        <a href="http://www.facebook.com/desmond.rivet" title="Facebook" rel="me">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.instagram.com/thegreatdesmondo/" title="Instagram" rel="me">
+          <i class="fab fa-instagram"></i>
+        </a> 
+        <a href="http://www.twitter.com/desmondrivet" title="Twitter" rel="me">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/drivet" title="Github" rel="me">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+        <a href="http://ca.linkedin.com/in/desmondrivet" title="LinkedIn" rel="me">
+          <i class="fab fa-linkedin-in"></i>
+        </a> 
+        &middot; 
+        <a href="https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous">←</a>
+        An IndieWeb Webring 🕸💍
+        <a href="https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next">→</a>
+      </p>
+      
+      <p>
+          &copy;2022 by <a href="/">{{ global.AUTHOR }}</a>
+          &middot; 
+          Powered by
+          <a href="https://www.11ty.dev/" target="_blank">Eleventy</a>
+          &middot; 
+          <i class="fa fa-arrow-up"></i> <a href="#">Top</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

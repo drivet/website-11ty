@@ -1,0 +1,31 @@
+{% macro footerinfo(purl, tags) %}
+{% set allmentions = webmentions.children | webmentions_for_url(purl) %}
+{% set mentions = allmentions | webmention_kind('in-reply-to', 'mention-of')%}
+{% set likes = allmentions | webmention_kind('like-of') %}
+{% set reposts = allmentions | webmention_kind('repost-of') %}
+{% set bookmarks = allmentions | webmention_kind('bookmark-of') %}
+{% set syndications = wmresults | syndications_for_url(purl) %}
+
+<p class="entry__tags row--speacious">
+    <span title="Tags" class="wm-counter"><i class="fa fa-tag fa-flip-horizontal"></i>
+    {% set comma = joiner() %}
+    {% for tag in tags %}
+    {{ comma() }} <a href="/posts/tags/{{tag}}.html"> {{ tag }} </a>
+    {% endfor %}
+    </span>
+</p>
+<p class="row--spacious">
+  <div class="rowitem row--spacious">
+    <span title="Mentions" class="wm-counter"><i class="far fa-comment"></i> {{ mentions | length}}</span>
+    <span title="Likes" class="wm-counter"><i class="far fa-thumbs-up"></i> {{ likes | length }}</span>
+    <span title="Reposts" class="wm-counter"><i class="fa fa-retweet"></i> {{ reposts | length }}</span>
+    <span title="Bookmarks" class="wm-counter"><i class="fa fa-bookmark"></i> {{ bookmarks | length }} </span>
+  </div>
+  <div class="entry__syndication rowitem--right row--spacious">
+    {% for s in syndications %}
+    <a href="{{ s }}" title="Syndicated" class="entry__link wm-counter"><i class="{{ s | synicon }}"></i></a>
+    {% endfor %}
+    <a href="{{ purl }}" title="Permalink" class="entry__link wm-counter"><i class="fa fa-link"></i></a>
+  </div>
+</p>
+{% endmacro %}

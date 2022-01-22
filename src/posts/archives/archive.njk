@@ -1,0 +1,34 @@
+---
+pagination:
+  data: collections.archivePages
+  size: 1
+  alias: p
+permalink: "/{{ p.name }}/index{% if p.page %}{{ p.page + 1 }}{% endif %}.html"
+layout: "feed.njk"
+eleventyComputed:
+   title: "Archives for {{ p.name }}"
+---
+
+<ul class="feed__list">
+{% asyncEach post in p.items | reverse %}
+<li class="feed__item">
+{% include "post-entry.njk" %}
+</li>
+{% endeach %}
+</ul>
+
+<nav class="feed__pagenav">
+{% if p.page > 0 %}
+{% set prevpage = p.page - 1 %}
+<a href="/{{ p.name }}/index{% if prevpage %}{{ prevpage + 1 }}{% endif %}.html" class="feed__prevlink">
+   &laquo; Previous
+</a>
+{% endif %}
+
+{% if p.page < (p.total - 1) %}
+{% set nextpage = p.page + 1 %}
+<a href="/{{ p.name }}/index{% if nextpage %}{{ nextpage + 1 }}{% endif %}.html" class="feed__nextlink">
+   Next &raquo;
+</a>
+{% endif %}
+</nav>

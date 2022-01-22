@@ -1,0 +1,9 @@
+{% from "avatar.njk" import avatar %}
+<div class="wm-link row"> 
+  <a href="{{ link.url }}">
+    <i class="fas fa-external-link-alt"></i>
+  </a>
+  {{ avatar(link.author.photo) }}
+  <a href="{{ link.author.url }}">{{link.author.name}}</a>
+ 
+</div>

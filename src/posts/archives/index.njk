@@ -1,0 +1,27 @@
+---
+title: Archives
+---
+
+<ul class="archive-year-list">
+  {% for year in collections.archiveList %}
+  {% set yearUrl %}/{{ year.year }}/{% endset %}
+
+  <li class="archive-year-list__year-item row">
+    <a href="{{ yearUrl | url }}">{{ year.year }}</a> <span class="rowitem--right">{{ year.count }}</span>
+  </li>
+
+  <li class="archive-year-list__months-item">
+    <ul class="archive-month-list">
+      {% for month in year.months %}
+      {% set monthUrl %}/{{ year.year }}/{{ month.month }}/{% endset %}
+
+      <li class="archive-month-list__month-item row">
+        <a href="{{ monthUrl | url }}">{{ month.month | monthname }}</a> <span class="rowitem--right">{{ month.count }}</span>
+      </li>
+
+      {% endfor %}
+    </ul>
+  </li>
+
+  {% endfor %}
+</ul>

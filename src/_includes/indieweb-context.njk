@@ -1,0 +1,41 @@
+{% macro author(author) %}
+{% if author.photo %}
+<img src="{{ author.photo }}" class="u-photo avatar"/>
+{% endif %}
+{% if author.name and author.url %}
+<a href="{{author.url}}">{{author.name}}</a>
+{% elif author.url %}
+<a href="{{author.url}}">{{author.url}}</a>
+{% elif author.name %}
+{{author.name}}
+{% endif %}
+{% endmacro %}
+
+<blockquote cite="{{ link }}" class="h-cite cite link-context__indieweb_context">
+
+{% if scraped.meta.published %}
+{% set published = scraped.meta.published %}
+{% elif scraped.meta["published-str"] %}
+{% set published = scraped.meta["published-str"] %}
+{% endif %}
+
+{% if scraped.meta.author or published %}
+<section class="row">
+{% if scraped.meta.author and published %}
+{{ author(scraped.meta.author) }} on {{ published | date }}
+{% elif scraped.meta.author %}
+{{ author(scraped.meta.author) }}
+{% elif published %}
+{{ published | date }}
+{% endif %}
+</section>
+{% endif %}
+
+{% if scraped.meta.name %}<h1><strong>{{ scraped.meta.name }}</strong></h1>{% endif %}
+
+{% if scraped.meta.summary %}
+{{ scraped.meta.summary }}
+{% elif scraped.meta['content-plain'] %}
+{{ scraped.meta['content-plain'] | truncate }}
+{% endif %}
+</blockquote>

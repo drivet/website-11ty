@@ -1,0 +1,17 @@
+---
+title: All Posts
+pagination:
+  data: collections.posts
+  size: 10
+permalink: "/posts/all{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"  
+layout: "feed.njk"
+---
+
+<ul class="feed__list">
+{% asyncEach post in pagination.items %}
+<li class="feed__item">
+{% include "post-entry.njk" %}
+</li>
+{% endeach %}
+</ul>
+{% include "pagination-nav.njk" %}

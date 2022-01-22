@@ -1,0 +1,1553 @@
+excluded_domains:
+- twitter.com
+- www.bbc.co.uk
+- photos.desmondrivet.com
+- www.gaudi.ch
+- www.seriouseats.com
+- pip.pypa.io
+- blosxom.sourceforge.net
+- evernote.com
+- www.desmondrivet.com
+- www.sno.phy.queensu.ca
+- codeclimate.com
+- www.docker.com
+- www.foxnews.com
+- reactjs.org
+- www.gentoo.org
+- flask.pocoo.org
+- packaging.python.org
+- www.xfce.org
+- blog.getpelican.com
+- jinja.pocoo.org
+- linuxmint.com
+- www.netfirms.ca
+- play.google.com
+- virtualenvwrapper.readthedocs.org
+- rsync.samba.org
+- yehudakatz.com
+- angular.io
+- pypi.python.org
+- www.huffingtonpost.com
+- disqus.com
+- www.template-toolkit.org
+- www.pcigeomatics.com
+- en.wikipedia.org
+- thedailyshow.cc.com
+- www.carolinaeyck.com
+- freethoughtblogs.com
+- www.ubuntu.com
+- jblevins.org
+- thewml.org
+- www.amazon.com
+- www.jeffreymorgenthaler.com
+- www.youtube.com
+- fletcher.github.io
+- www.tipue.com
+- www.newstatesman.com
+- reactivex.io
+- coveralls.io
+- elinks.or.cz
+- www.upi.com
+- herboristeriedesjardins.com
+- www.python.org
+- palantir.github.io
+- www.mythtv.org
+- piwigo.org
+- jekyllrb.com
+- www.digikam.org
+- template-toolkit.org
+- www.nginx.com
+- medium.freecodecamp.org
+- www.pylint.org
+- www.ixdaily.com
+- travis-ci.org
+- perl.plover.com
+- babeljs.io
+- posativ.org
+- pythonhosted.org
+- fletcherpenney.net
+- www.typescriptlang.org
+- www.gnu.org
+- linux.die.net
+- orgmode.org
+- yesmeansyesblog.wordpress.com
+- wordpress.com
+- www.enigmacurry.com
+- tvtropes.org
+- www.quantifiedcode.com
+- www.emacswiki.org
+- virtualenv.pypa.io
+- www.pelicanthemes.com
+- volrecreatif.com
+- xkcd.com
+- magit.vc
+- www.cbc.ca
+- www.gnus.org
+- shopify.github.io
+- www.w3.org
+- theweek.com
+- lodash.com
+- flymake.sourceforge.net
+- daringfireball.net
+- github.com
+- nose.readthedocs.org
+- docs.python.org
+- caremad.io
+- www.imdb.com
+- www.tavernedominion.com
+- pedrokroger.net
+- www.theglobeandmail.com
+- search.cpan.org
+- itspronouncedmetrosexual.com
+- www.theviolencestopshere.ca
+- www.davidco.com
+- bbdb.sourceforge.net
+- angularjs.org
+- coffeescript.org
+- www.gwtproject.org
+- protonmail.com
+- www.json.org
+- diasporafoundation.org
+- git-man-page-generator.lokaltog.net
+- www.digitalocean.com
+- tools.ietf.org
+- www.oauth.com
+- indieauth.com
+- openid.net
+- microformats.org
+- news.ycombinator.com
+- sarahdrasnerdesign.com
+- martinfowler.com
+- wiki.desmondrivet.com
+- chrisaldrich.wordpress.com
+- moinmo.in
+- tiddlywiki.com
+- youtu.be
+- www.savingdessert.com
+- smittenkitchen.com
+- www.thekitchn.com
+- islandinthenet.com
+- mysardinianlife.com
+- spinachtiger.com
+- asoftmurmur.com
+- poets.org
+- staltz.com
+- www.ioccc.org
+results:
+  2007/06/01/blogging: {}
+  2007/06/11/careers: {}
+  2007/06/11/opinions: {}
+  2007/06/12/gliding: {}
+  2007/06/24/markdown: {}
+  2007/07/13/blosxom-problems: {}
+  2007/07/15/green: {}
+  2007/08/04/bachelor: {}
+  2007/12/12/artscience: {}
+  2007/12/17/snow: {}
+  2008/01/06/ellipse: {}
+  2008/02/13/perl-scoping: {}
+  2008/02/27/channel-surfing: {}
+  2008/04/06/newblog: {}
+  2008/04/09/quebec: {}
+  2008/04/22/montreal-looting: {}
+  2008/07/06/perl-error-handling: {}
+  2008/09/08/no-comments: {}
+  2011/07/16/tonic-water: {}
+  2012/02/23/montreal-toronto: {}
+  2012/06/28/niqabs: {}
+  2012/08/05/religion-and-culture: {}
+  2012/08/05/yawt-lives: {}
+  2012/08/06/free-speech: {}
+  2012/08/17/church-and-state: {}
+  2012/09/14/embury-sours: {}
+  2012/11/30/cultureless: {}
+  2012/12/15/redhat-mint: {}
+  2013/01/23/guilt-by-association: {}
+  2013/04/05/defending-the-dark: {}
+  2013/06/05/another-tonic-water: {}
+  2013/07/30/jaffa-cakes: {}
+  2013/07/31/canada-malting: {}
+  2013/10/30/emacs-cloud: {}
+  2013/11/20/charter-ramblings: {}
+  2014/05/13/free-will: {}
+  2014/09/08/correct-english: {}
+  2014/10/16/modular-flask: {}
+  2014/12/22/more-sour-cocktails: {}
+  2014/12/23/aromatic-cocktails: {}
+  2015/01/16/charlie-hebdo: {}
+  2015/01/16/python-packaging: {}
+  2015/04/02/20150402165128: {}
+  2015/05/03/20150503112559: {}
+  2015/05/05/20150505091757: {}
+  2015/06/09/20150609072839: {}
+  2015/07/11/20150711120707: {}
+  2015/07/11/learning-greek: {}
+  2015/07/11/trip-greece: {}
+  2015/08/07/20150807084049: {}
+  2015/08/13/20150813203121: {}
+  2015/08/13/ethnic-vote: {}
+  2015/08/14/20150814122238: {}
+  2015/08/18/20150818090328: {}
+  2015/08/20/emacs-python: {}
+  2015/08/21/20150821204743: {}
+  2015/08/27/20150827155542: {}
+  2015/08/31/20150831123906: {}
+  2015/09/22/pylint-badges: {}
+  2015/09/25/requirements-versus-setup: {}
+  2015/10/06/accommodation: {}
+  2015/10/09/20151009091315: {}
+  2015/10/10/metaculture: {}
+  2015/10/20/20151020072635: {}
+  2015/10/22/20151022102243: {}
+  2015/11/16/religious-devotion: {}
+  2015/11/18/20151118124858: {}
+  2015/11/22/20151122190153: {}
+  2015/11/26/graffiti-turing: {}
+  2015/12/09/20151209120255: {}
+  2015/12/09/20151209120436: {}
+  2015/12/09/20151209120454: {}
+  2016/01/11/20160111114219: {}
+  2016/01/20/20160120131313: {}
+  2016/02/10/20160210144341: {}
+  2016/03/11/20160311090424: {}
+  2016/04/01/20160401125856: {}
+  2016/04/02/on-escaping-your-past: {}
+  2016/04/07/20160407122451: {}
+  2016/04/07/20160407153550: {}
+  2016/04/11/20160411074434: {}
+  2016/04/16/20160416170011: {}
+  2016/06/21/20160621084335: {}
+  2016/06/29/poland: {}
+  2016/07/18/20160718125916: {}
+  2016/08/02/20160802090718: {}
+  2016/08/25/20160825074841: {}
+  2016/09/26/20160926220644: {}
+  2016/09/26/20160926220657: {}
+  2016/09/26/20160926221012: {}
+  2016/09/26/20160926222248: {}
+  2016/09/26/20160926222354: {}
+  2016/09/26/20160926224428: {}
+  2016/09/26/20160926224449: {}
+  2016/09/26/20160926224851: {}
+  2016/10/19/20161019235333: {}
+  2016/11/30/20161130082804: {}
+  2016/12/12/pelican-move: {}
+  2016/12/22/vesper: {}
+  2016/12/23/20161223143532: {}
+  2016/12/27/negroni: {}
+  2016/12/31/chartreuse: {}
+  2017/01/07/benedictine: {}
+  2017/01/13/20170113192833: {}
+  2017/01/13/20170113192840: {}
+  2017/01/27/20170127093035: {}
+  2017/02/06/20170206204537: {}
+  2017/02/14/20170214095322: {}
+  2017/02/25/irony-of-static: {}
+  2017/02/27/20170227221935: {}
+  2017/03/15/20170315094507: {}
+  2017/03/19/20170319142538: {}
+  2017/03/24/20170324111006: {}
+  2017/03/27/20170327165955: {}
+  2017/04/07/20170407185355: {}
+  2017/04/17/20170417211449: {}
+  2017/04/22/20170422170723: {}
+  2017/04/22/20170422174406: {}
+  2017/09/13/20170913124635: {}
+  2017/11/05/blade-runner-2049: {}
+  2017/11/24/20171124081405: {}
+  2017/12/11/20171211102424: {}
+  2017/12/17/20171217185426: {}
+  2018/01/11/20180111090751: {}
+  2018/01/18/static-typing: {}
+  2018/03/01/20180301173335: {}
+  2018/03/30/emacs-pelican-workflow: {}
+  2018/04/20/20180420085218: {}
+  2018/05/01/theremin-intro: {}
+  2018/05/20/theremin-build: {}
+  2018/06/10/learning-music: {}
+  2018/06/13/20180613215121: {}
+  2018/07/04/20180704084154: {}
+  2018/07/13/20180713090641: {}
+  2018/09/02/angular-modules: {}
+  2018/09/10/20180910234351: {}
+  2018/09/28/20180928173359: {}
+  2018/10/12/20181012110309: {}
+  2018/10/12/20181012123428: {}
+  2018/10/12/20181012145831: {}
+  2018/10/14/20181014124533: {}
+  2018/10/14/20181014213205: {}
+  2018/10/16/20181016091434: {}
+  2018/10/17/20181017122745: {}
+  2018/11/10/new-york-chicago: {}
+  2018/11/18/photo-organization: {}
+  2018/11/22/20181122132018: {}
+  2018/12/20/20181220193443: {}
+  2019/01/08/20190108160152: {}
+  2019/01/22/20190122220426: {}
+  2019/01/23/20190123123623: {}
+  2019/04/05/20190405225909: {}
+  2019/04/09/20190409081357: {}
+  2019/04/09/20190409200926: {}
+  2019/04/09/20190409201150: {}
+  2019/04/09/20190409205538: {}
+  2019/04/09/20190409211958: {}
+  2019/04/10/20190410085813: {}
+  2019/04/12/20190412230446: {}
+  2019/04/13/20190413160613: {}
+  2019/04/15/20190415154611: {}
+  2019/04/15/20190415192739: {}
+  2019/04/16/20190416080727: {}
+  2019/05/02/20190502101406: {}
+  2019/05/02/20190502115937: {}
+  2019/05/02/20190502150940: {}
+  2019/05/04/20190504103948: {}
+  2019/05/05/20190505115734: {}
+  2019/05/16/20190516124719: {}
+  2019/05/17/20190517192744: {}
+  2019/05/25/20190525110719: {}
+  2019/05/30/20190530204734:
+    https://brid.gy/publish/twitter:
+      status_code: 400
+  2019/05/31/20190531202427:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/ohhelloana/status/1134502772257239040
+      status_code: 200
+  2019/05/31/20190531204823:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/desmondrivet/status/1134622720098996224
+      status_code: 200
+  2019/06/01/20190601075740:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/sonniesedge/status/1134439901624176640
+      status_code: 200
+  2019/06/01/20190601090258:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/desmondrivet/status/1134807582286258179
+      status_code: 200
+  2019/06/01/20190601205947:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/desmondrivet/status/1134987978533691403
+      status_code: 200
+  2019/06/01/20190601212855:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1134995308113514501
+      status_code: 200
+  2019/06/02/20190602105328:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/VadymSvv/status/1135171489781755907
+      status_code: 200
+  2019/06/08/20190608193802:
+    https://doubleloop.net/2019/05/30/sicp-reading-group/:
+      status_code: 200
+  2019/06/28/20190628204047: {}
+  2019/08/02/20190802234458:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1184662522672177153
+      status_code: 201
+  2019/10/20/235615:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1188220081718861825
+      status_code: 201
+  2019/10/27/031616:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/Kavaeric/status/1186655197541609472
+      status_code: 201
+  2019/10/29/232253:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1189323180768411648
+      status_code: 201
+  2019/11/02/033407:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1190472351374356480
+      status_code: 201
+  2019/11/03/235009:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/Kavaeric/status/1191126991988281344?s=19
+      status_code: 201
+  2019/11/05/175509:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1191786462611677185
+      status_code: 201
+  2019/11/06/024549:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1191909742618271745
+      status_code: 201
+  2019/11/07/210920:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1192549898719248384
+      status_code: 201
+  2019/11/07/213700:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1192556982047322113
+      status_code: 201
+  2019/11/07/221239:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1192565834633424896
+      status_code: 201
+  2019/11/10/052608:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/WhoThat_One_Guy/status/1192988446928834561?s=19
+      status_code: 201
+  2019/11/17/174202:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1196121550736494592
+      status_code: 201
+  2019/11/17/195814:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1196155806225444870
+      status_code: 201
+  2019/11/17/235401:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1196262582459543557
+      status_code: 201
+  2019/11/20/004555:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1196952993461133312
+      status_code: 201
+  2019/11/27/234611:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1199837130236846080
+      status_code: 201
+  2019/11/28/125258:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1200035171061391368
+      status_code: 201
+  2019/11/28/131907:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1200041706344857600
+      status_code: 201
+  2019/11/28/184441:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1200123639586283522
+      status_code: 201
+  2019/12/06/142128:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1202956481173307395
+      status_code: 201
+  2019/12/06/142935:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1202958592145526784
+      status_code: 201
+  2019/12/06/160801:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1202983401986445314
+      status_code: 201
+  2019/12/06/162159:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1202986784965169153
+      status_code: 201
+  2019/12/06/173709:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/nickwalton00/status/1202706532095258625
+      status_code: 201
+  2019/12/07/145937:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1203328455703715840
+      status_code: 201
+  2019/12/07/162426:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1203349837179236353
+      status_code: 201
+  2019/12/08/intro-to-indie-web:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/desmondrivet/status/1203733452085956608
+      status_code: 201
+    https://indieweb.org/:
+      location: https://webmention.io/indiewebcamp/webmention/M2QYrwocca5e7FUrxAAY
+      status_code: 201
+    https://indieweb.org/Medium#Nagware:
+      location: https://webmention.io/indiewebcamp/webmention/h2nmoN5Vd0RB-AkpRhkN
+      status_code: 201
+    https://indieweb.org/POSSE:
+      location: https://webmention.io/indiewebcamp/webmention/_2lvSSeotTXv9fVgMsnK
+      status_code: 201
+    https://indieweb.org/backfeed:
+      location: https://webmention.io/indiewebcamp/webmention/bGKcVVpGHuRDnGlBS85h
+      status_code: 201
+    https://indieweb.org/silo:
+      location: https://webmention.io/indiewebcamp/webmention/0CB3VrmeScJndGq3dTxg
+      status_code: 201
+  2019/12/10/123147:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1204378431544270849
+      status_code: 201
+  2019/12/10/142828:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1204407839437049856
+      status_code: 201
+  2019/12/17/213805:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1207052676493643776
+      status_code: 201
+  2019/12/20/174535:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1208081376295235585
+      status_code: 201
+  2019/12/20/191707:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/melissaFTW/status/1207877289951711232?s=19
+      status_code: 201
+  2019/12/21/222902:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1208515105840926720
+      status_code: 201
+  2019/12/22/164304:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1208790309498433536
+      status_code: 201
+  2019/12/24/123055:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1209451649464520704
+      status_code: 201
+  2019/12/24/124205:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/CharlieRoseMari/status/1209266459312054273?s=19
+      status_code: 201
+  2019/12/26/022947:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1210025326157422592
+      status_code: 201
+  2019/12/27/154849:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/SaraSoueidan/status/1210540426396143617?s=19
+      status_code: 201
+  2019/12/28/234512:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1211070852470624261
+      status_code: 201
+  2019/12/31/000212:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/ohhelloana/status/1211775220916338689?s=19
+      status_code: 201
+  2020/01/05/173051:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/SurpriseSparrow/status/1213863363039682560?s=20
+      status_code: 201
+  2020/01/05/233921:
+    https://social.johanbove.info/2020/01/05/thanks-for-the-write-up-on-the-indieweb:
+      status_code: 202
+  2020/01/05/website-castle:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/desmondrivet/status/1213862104060571648
+      status_code: 201
+    https://indieweb.org:
+      location: https://webmention.io/indiewebcamp/webmention/KKb9BEDePJtJFj_N3Gxf
+      status_code: 201
+    https://indieweb.org/Bridgy:
+      location: https://webmention.io/indiewebcamp/webmention/2WWYQwBVpjz9-8JnJ0k1
+      status_code: 201
+    https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain:
+      location: https://webmention.io/indiewebcamp/webmention/1JLeQYNthoh2r9l4xqdF
+      status_code: 201
+    https://indieweb.org/IndieAuth:
+      location: https://webmention.io/indiewebcamp/webmention/0pwP_yjV-zZfGwz_yO6S
+      status_code: 201
+    https://indieweb.org/POSSE:
+      location: https://webmention.io/indiewebcamp/webmention/FMdBCpBWpn0Mi_xY1cgm
+      status_code: 201
+    https://indieweb.org/article:
+      location: https://webmention.io/indiewebcamp/webmention/LlNmrSR4VEjHB0iNtOgh
+      status_code: 201
+    https://indieweb.org/backfeed:
+      location: https://webmention.io/indiewebcamp/webmention/8-I_Q8MRsNbhlYWMmLW-
+      status_code: 201
+    https://indieweb.org/like:
+      location: https://webmention.io/indiewebcamp/webmention/cCKKB3LJfq8O1ppzmc4n
+      status_code: 201
+    https://indieweb.org/microformats:
+      location: https://webmention.io/indiewebcamp/webmention/Q83A11r1lmiKNRiY1aw5
+      status_code: 201
+    https://indieweb.org/note:
+      location: https://webmention.io/indiewebcamp/webmention/_MjZXb5Aij_BXJvLiWhC
+      status_code: 201
+    https://indieweb.org/permalink:
+      location: https://webmention.io/indiewebcamp/webmention/XzH6jLqfIwWkedmtpI7a
+      status_code: 201
+    https://indieweb.org/posts:
+      location: https://webmention.io/indiewebcamp/webmention/5xtDi5ceW3bOLmG1NrJe
+      status_code: 201
+    https://indieweb.org/reply:
+      location: https://webmention.io/indiewebcamp/webmention/ErRN184NM3062elLw1ct
+      status_code: 201
+    https://indieweb.org/repost:
+      location: https://webmention.io/indiewebcamp/webmention/2o6usOgGsViJfOwpRpSb
+      status_code: 201
+    https://indieweb.org/selfauth:
+      location: https://webmention.io/indiewebcamp/webmention/Csz2fMRk5UbEROnjjPaP
+      status_code: 201
+    https://indieweb.org/webmention:
+      location: https://webmention.io/indiewebcamp/webmention/nwTFGMtkDRm8JSlI58dH
+      status_code: 201
+  2020/01/09/181710:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1215337639685115904
+      status_code: 201
+  2020/01/10/203957:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1215735389534806017
+      status_code: 201
+  2020/01/12/224036:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1216490477609979906
+      status_code: 201
+  2020/01/13/175148:
+    https://tantek.com/2020/007/t2/walk-on-the-beach-at-sunset:
+      location: https://webmention.io/tantek.com/webmention/ZGwgM6Kd5CJE8DYqhrp8
+      status_code: 201
+  2020/01/13/175300:
+    https://islandinthenet.com/portal/:
+      status_code: 200
+  2020/01/14/135502:
+    https://charlotteallen.info/2020/01/13/6816/:
+      status_code: 200
+  2020/01/17/142035:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1218176669778874369
+      status_code: 201
+  2020/01/17/151420:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1218190067665178624
+      status_code: 201
+  2020/01/22/174239:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1220051438493163525
+      status_code: 201
+  2020/01/26/204025:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1221533708483813376
+      status_code: 201
+  2020/01/27/184734:
+    https://lefaive.ca/2019/06/territory-acknowledgements/:
+      status_code: 200
+  2020/01/29/130257:
+    https://charlotteallen.info/2020/01/28/7012/:
+      status_code: 200
+  2020/01/30/131036:
+    https://charlotteallen.info/2020/01/29/7018/:
+      status_code: 200
+  2020/02/12/website-identity:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/desmondrivet/status/1227797594660798465
+      status_code: 201
+    https://indieweb.org/:
+      location: https://webmention.io/indiewebcamp/webmention/eDAPzTcxXBAdyGKd9OO0
+      status_code: 201
+    https://indieweb.org/RelMeAuth:
+      location: https://webmention.io/indiewebcamp/webmention/TRTMuftz87jt7qWlRxqO
+      status_code: 201
+    https://indieweb.org/Web_sign-in:
+      location: https://webmention.io/indiewebcamp/webmention/Jl9ukBqR_hDZs8EQJA2O
+      status_code: 201
+    https://oauth.net/articles/authentication/:
+      location: https://webmention.io/aaronpk/webmention/sc5Sv6v_URjU7sEXsU3k
+      status_code: 201
+    https://quill.p3k.io/:
+      location: https://webmention.io/aaronpk/webmention/WdwQg0k5EGoWN_pCP2_c
+      status_code: 201
+  2020/02/20/201200:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1230670503016267778
+      status_code: 201
+  2020/02/20/212415:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1230604778885046295
+      status_code: 201
+  2020/02/23/182714: {}
+  2020/02/25/125902: {}
+  2020/03/06/121941:
+    https://jlelse.blog/micro/2020/03/photos-workflow/:
+      status_code: 200
+  2020/03/08/202032:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1236748989824892933
+      status_code: 201
+  2020/03/11/223611:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1237870446797656064
+      status_code: 201
+  2020/03/13/225015:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1238598630589845505
+      status_code: 201
+  2020/03/14/175524:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1238886977946222593
+      status_code: 201
+  2020/03/14/180710:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/FyreByrde/status/1238883923553378304?s=19
+      status_code: 201
+  2020/03/19/010334:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/BBolander/status/1240322283211612161?s=19
+      status_code: 201
+  2020/03/22/184044:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1241797304807497731
+      status_code: 201
+  2020/03/24/124145:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1242431902407176192
+      status_code: 201
+  2020/03/25/002914:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1242609894898970630
+      status_code: 201
+  2020/03/28/205413:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1244005862949244928
+      status_code: 201
+  2020/03/29/010629:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1244068708710002693
+      status_code: 201
+  2020/04/02/165411:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1245756802266025984
+      status_code: 201
+  2020/04/02/212646:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1245825676785201152
+      status_code: 201
+  2020/04/02/213743:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1245828244097478657
+      status_code: 201
+  2020/04/04/174833:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1246495186991095812
+      status_code: 201
+  2020/04/04/indieweb-conversation:
+    https://brid.gy/publish/twitter:
+      status_code: 400
+    https://desmondrivet.com/2020/02/12/website-identity:
+      status_code: 202
+    https://indieweb.org/:
+      location: https://webmention.io/indiewebcamp/webmention/rukh_MsSrPhPCRjpOS7-
+      status_code: 201
+    https://indieweb.org/Webmention:
+      location: https://webmention.io/indiewebcamp/webmention/FDFD8nCTV0g3qOd2xLN7
+      status_code: 201
+    https://indieweb.org/article:
+      location: https://webmention.io/indiewebcamp/webmention/sOopIFJFMZeaU8676ymx
+      status_code: 201
+    https://indieweb.org/h-card:
+      location: https://webmention.io/indiewebcamp/webmention/6DtHT-CGySCOU-lNMv97
+      status_code: 201
+    https://indieweb.org/h-entry:
+      location: https://webmention.io/indiewebcamp/webmention/HNCGw9ipzN--GHcrhW_4
+      status_code: 201
+    https://indieweb.org/like:
+      location: https://webmention.io/indiewebcamp/webmention/W9v3j060OZe017OvBGEf
+      status_code: 201
+    https://indieweb.org/microformats:
+      location: https://webmention.io/indiewebcamp/webmention/nDHlyGEZqH6GieBvvaov
+      status_code: 201
+    https://indieweb.org/note:
+      location: https://webmention.io/indiewebcamp/webmention/Od0a_4SEcTEb4Hd_-WAa
+      status_code: 201
+    https://indieweb.org/reply:
+      location: https://webmention.io/indiewebcamp/webmention/hAxlP1F_l7gf4FG8Dnrm
+      status_code: 201
+    https://indieweb.org/representative_h-card:
+      location: https://webmention.io/indiewebcamp/webmention/qfif41w7g1hqE2CHoyqB
+      status_code: 201
+  2020/04/06/225401:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1247296777037864960
+      status_code: 201
+  2020/04/07/162708:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1247562064434016257
+      status_code: 201
+  2020/04/09/122754:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1248226604305846272
+      status_code: 201
+  2020/04/09/123935:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1248229377046908928
+      status_code: 201
+  2020/04/12/160822:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1249369178190069762
+      status_code: 201
+  2020/04/12/192946:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1249419808971591683
+      status_code: 201
+  2020/04/13/000338:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1249488748099833858
+      status_code: 201
+  2020/04/13/201003:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1249792389633449984
+      status_code: 201
+  2020/04/14/193120:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1250145358765850628
+      status_code: 201
+  2020/04/15/170300:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1250470003419361280
+      status_code: 201
+  2020/04/16/035928:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1250635347438026752
+      status_code: 201
+  2020/04/16/133028:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1250788334366007296
+      status_code: 201
+  2020/04/21/164249:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1252639959636475910
+      status_code: 201
+  2020/04/22/133408: {}
+  2020/04/23/010611:
+    https://janboddez.tech/notes/ab8cca73e5:
+      status_code: 202
+  2020/04/26/013510:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1254222776774414338
+      status_code: 201
+  2020/04/26/154404:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1254436425736617984
+      status_code: 201
+  2020/04/27/140651: {}
+  2020/04/27/193532: {}
+  2020/04/28/125257:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1255118117702901760
+      status_code: 201
+    https://desmondrivet.com:
+      status_code: 202
+  2020/04/28/writing-reasons:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/desmondrivet/status/1255166931851673605
+      status_code: 201
+    https://indieweb.org/:
+      location: https://webmention.io/indiewebcamp/webmention/zH1sXiaP-HnElXKgxPiz
+      status_code: 201
+    https://jlelse.blog/:
+      location: https://jlelse.blog/
+      status_code: 201
+    https://jlelse.blog/posts/why-no-blog/:
+      location: https://jlelse.blog/posts/why-no-blog/
+      status_code: 201
+    https://jlelse.dev/:
+      location: https://webmention.io/jlelse.dev/webmention/DT0TeZNh7XcMqPcaxMo-
+      status_code: 201
+  2020/04/29/223754:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1255627806429589509
+      status_code: 201
+  2020/05/01/120726:
+    https://ohhelloana.blog/redesign-in-progress/:
+      location: https://webmention.io/ohhelloana.blog/webmention/lmYQIilW8cZQ_-NpWJrN
+      status_code: 201
+  2020/05/01/wikis-and-blogs:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/desmondrivet/status/1256169175124447234
+      status_code: 201
+  2020/05/03/223920: {}
+  2020/05/09/184004:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1259191843482415104
+      status_code: 201
+  2020/05/09/200608:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1259213589916921857
+      status_code: 201
+  2020/05/10/174537:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1259600842434412545
+      status_code: 201
+  2020/05/12/070234: {}
+  2020/05/13/144631:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1260642974934990848
+      status_code: 201
+  2020/05/15/143606:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1261365437679501318
+      status_code: 201
+  2020/05/15/214530:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1261473242201686016
+      status_code: 201
+  2020/05/21/084009: {}
+  2020/05/24/121245: {}
+  2020/05/24/143008:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/__nathalylopez/status/1264394840000921601?s=19
+      status_code: 201
+  2020/05/24/145254:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1264630941168873476
+      status_code: 201
+  2020/05/24/182847:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1264685264309534720
+      status_code: 201
+  2020/05/24/192842: {}
+  2020/05/26/212359:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1265454086045958144
+      status_code: 201
+  2020/05/27/232051:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1265846242468380672
+      status_code: 201
+  2020/05/28/214255:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1266183620504543233
+      status_code: 201
+  2020/05/31/141958:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1267159491667275778
+      status_code: 201
+  2020/05/31/161526:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1267188451360858112
+      status_code: 201
+  2020/06/01/073825: {}
+  2020/06/01/133321: {}
+  2020/06/02/085424: {}
+  2020/06/19/101459:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/Astrofotografen/status/1273891275679416321
+      status_code: 201
+  2020/06/20/183208:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1274470591987417103
+      status_code: 201
+  2020/06/22/122839:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1275103931891363853
+      status_code: 201
+  2020/06/27/155639:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1276968504655216640
+      status_code: 201
+  2020/06/29/092147:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1277593777478283269
+      status_code: 201
+  2020/06/30/084903:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1277947676777209856
+      status_code: 201
+  2020/07/01/214448: {}
+  2020/07/01/214706: {}
+  2020/07/03/073210:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1279015606415745024
+      status_code: 201
+  2020/07/06/232110:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1280341595292917761
+      status_code: 201
+  2020/07/08/162537:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1280961720907976704
+      status_code: 201
+    https://desmondrivet.com/2018/05/20/theremin-build:
+      status_code: 202
+  2020/07/09/073932:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1281191792277434368
+      status_code: 201
+  2020/07/09/074904:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/alyzande/status/1280479333170192385?s=19
+      status_code: 201
+  2020/07/09/090054:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1281212195641196546
+      status_code: 201
+  2020/07/10/101603:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1281593793985347585
+      status_code: 201
+  2020/07/10/101924:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      status_code: 400
+  2020/07/11/092422: {}
+  2020/07/11/092757: {}
+  2020/07/12/155621:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1282404053339832321
+      status_code: 201
+  2020/07/14/091057:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/Gemmapolyglot/status/1282394150843887616?s=19
+      status_code: 201
+  2020/07/14/191910:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1283179719496798208
+      status_code: 201
+  2020/07/15/153416: {}
+  2020/07/16/141556: {}
+  2020/07/17/214709:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1284304050004135937
+      status_code: 201
+  2020/07/17/215248:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1284305545038626816
+      status_code: 201
+  2020/07/19/100600:
+    https://doubleloop.net/2020/07/19/centralised-applications-are-authoritarian/:
+      status_code: 200
+  2020/07/20/102400:
+    https://doubleloop.net/2020/07/19/6961/:
+      status_code: 200
+  2020/07/25/113206:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/kvlly/status/1287033701600317441?s=19
+      status_code: 201
+  2020/07/25/113814:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1287049882612764677
+      status_code: 201
+  2020/07/25/152747:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1287107614602649602
+      status_code: 201
+  2020/07/26/210937:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1287556252965302273
+      status_code: 201
+  2020/07/31/144952:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      status_code: 400
+  2020/07/31/161535: {}
+  2020/08/01/124516: {}
+  2020/08/02/102042: {}
+  2020/08/04/160843: {}
+  2020/08/06/155344:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1291463159572844546
+      status_code: 201
+  2020/08/06/161918:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1291469444804415495
+      status_code: 201
+  2020/08/07/132414:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1291787788950609920
+      status_code: 201
+  2020/08/11/193040:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1293330232276131841
+      status_code: 201
+  2020/08/12/073217:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/dreid/status/1293400556984131585?s=19
+      status_code: 201
+  2020/08/13/205623:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1294075757917024256
+      status_code: 201
+  2020/08/17/195123:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1295508970740776960
+      status_code: 201
+  2020/08/17/232522:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/rosielefaive/status/1295498720759500801?s=19
+      status_code: 201
+  2020/08/18/114857:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1295750073524137986
+      status_code: 201
+  2020/08/20/084138: {}
+  2020/08/22/101347:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/susie_dent/status/1297096339394789378?s=19
+      status_code: 201
+  2020/08/22/163900:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1297272404427898880
+      status_code: 201
+  2020/08/24/080258:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1297867469613408258
+      status_code: 201
+    https://desmondrivet.com:
+      status_code: 202
+  2020/08/24/210246:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      status_code: 400
+    https://desmondrivet.com/2018/11/18/photo-organization:
+      status_code: 202
+    https://social.johanbove.info/2020/08/24/i-have-thirteen-years-worth-of-personal:
+      status_code: 202
+  2020/08/25/071952:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1298218899117412358
+      status_code: 201
+  2020/08/25/074214:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1298224523788136449
+      status_code: 201
+  2020/08/25/075917:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1298228898413588480
+      status_code: 201
+  2020/08/25/080315:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/PieAmy/status/1298226845268287489?s=20
+      status_code: 201
+  2020/08/27/143607:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1299053659146399744
+      status_code: 201
+  2020/08/27/212353:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1299156238320762886
+      status_code: 201
+  2020/08/27/pound-cake:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/desmondrivet/status/1299026195716214790
+      status_code: 201
+  2020/08/28/073533:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/Steampunk_T/status/1299297943346966528?s=19
+      status_code: 201
+  2020/08/28/083201:
+    https://adactio.com/links/17343:
+      status_code: 202
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      status_code: 400
+  2020/08/28/083712: {}
+  2020/08/28/083941:
+    https://adactio.com/links/17343:
+      status_code: 202
+  2020/08/28/183654:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1299476517458714625
+      status_code: 201
+  2020/08/29/111702:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1299728294380736515
+      status_code: 201
+  2020/08/29/130720:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/vboykis/status/1299504414835838977?s=20
+      status_code: 201
+  2020/08/29/224303:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1299900904292974592
+      status_code: 201
+  2020/08/31/073344: {}
+  2020/08/31/201410:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1300588181826437121
+      status_code: 201
+  2020/09/02/italian-gatekeeping:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/desmondrivet/status/1301348171533225984
+      status_code: 201
+  2020/09/05/201219:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1302399720401375233
+      status_code: 201
+  2020/09/06/184200:
+    https://doubleloop.net/2020/09/06/a-home-on-the-web/:
+      status_code: 200
+  2020/09/07/230346: {}
+  2020/09/07/231632: {}
+  2020/09/08/231011:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1303531557311918081
+      status_code: 201
+  2020/09/10/220354:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1304239797968474112
+      status_code: 201
+  2020/09/11/090311:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1304405680544194561
+      status_code: 201
+  2020/09/12/144800:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1304854870801948672
+      status_code: 201
+  2020/09/13/225319: {}
+  2020/09/14/070835:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/gwisk20/status/1305172143680913409?s=19
+      status_code: 201
+  2020/09/17/090849:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/spacespng/status/1306344115945254920?s=20
+      status_code: 201
+  2020/09/17/181213:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1306718222432043008
+      status_code: 201
+  2020/09/18/115258:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1306985141605195776
+      status_code: 201
+  2020/09/18/122403:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1306993070379020294
+      status_code: 201
+  2020/09/18/124738:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1306998756219461632
+      status_code: 201
+  2020/09/19/120655:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1307351144432369664
+      status_code: 201
+  2020/09/21/204139: {}
+  2020/09/22/195214:
+    https://stream.jeremycherfas.net/2020/you-may-be-doing-it-wrong:
+      status_code: 202
+  2020/09/23/073708: {}
+  2020/09/24/195202:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1309280360799318016
+      status_code: 201
+  2020/10/06/074455:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/Steampunk_T/status/1313439762993369088?s=20
+      status_code: 201
+  2020/10/08/080501:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1314176017783808000
+      status_code: 201
+  2020/10/08/081004:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1314177119862362113
+      status_code: 201
+  2020/10/08/081932:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1314179327483936768
+      status_code: 201
+  2020/10/10/135624:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/ScribblingOn/status/1314665357873999872?s=19
+      status_code: 201
+  2020/10/12/144609:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1315725950982774787
+      status_code: 201
+  2020/10/12/165607: {}
+  2020/10/13/223615: {}
+  2020/10/14/193822: {}
+  2020/10/17/205543: {}
+  2020/10/21/093414:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1318909112164491266
+      status_code: 201
+  2020/10/22/153421: {}
+  2020/10/24/lockdown:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/desmondrivet/status/1320198888398225408
+      status_code: 201
+  2020/10/25/221604:
+    https://doubleloop.net/2020/10/25/7224/:
+      status_code: 200
+  2020/10/29/083713:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1321793891025227777
+      status_code: 201
+  2020/10/30/130327:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1322223132258820097
+      status_code: 201
+  2020/10/31/144622:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/drvox/status/1322263909743484928?s=19
+      status_code: 201
+  2020/11/02/115254: {}
+  2020/11/07/120449:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1325122870348042240
+      status_code: 201
+  2020/11/17/072906:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/chrtucci/status/1328405825463873536
+      status_code: 201
+  2020/11/17/160853:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1328807984982609925
+      status_code: 201
+  2020/11/22/150217: {}
+  2020/11/26/195102:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1332125386105376769
+      status_code: 201
+  2020/11/29/152925: {}
+  2020/11/29/160424:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1333155462410334213
+      status_code: 201
+  2020/12/01/085510:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/mxbck/status/1333673939017592832
+      status_code: 201
+  2020/12/01/085704:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/emrazz/status/1333654085095055360
+      status_code: 201
+  2020/12/03/093432:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1334507014630895616
+      status_code: 201
+  2020/12/10/192649:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1337192633161150464
+      status_code: 201
+  2020/12/12/201017:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1337928598938939392
+      status_code: 201
+  2020/12/13/125029:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1338180088446193665
+      status_code: 201
+  2020/12/13/201442:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/ashhhhhhole/status/1337865017975336974
+      status_code: 201
+  2020/12/15/075553:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/susie_dent/status/1338781237406740482
+      status_code: 201
+  2020/12/20/133732:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1340728721838403588
+      status_code: 201
+  2020/12/23/211410:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1341930663092563968
+      status_code: 201
+  2020/12/24/173504:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1342237935446470670
+      status_code: 201
+  2020/12/24/201013:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1342276963122237443
+      status_code: 201
+  2020/12/24/205506:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/PavelASamsonov/status/1341881125053071368
+      status_code: 201
+  2020/12/28/175831:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1343693471828357129
+      status_code: 201
+  2020/12/30/183410: {}
+  2020/12/31/155207:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1344748835998990337
+      status_code: 201
+  2021/01/02/214757:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1345563244786802688
+      status_code: 201
+  2021/01/03/103742:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1345756911464013829
+      status_code: 201
+  2021/01/06/124446:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1346876083526901763
+      status_code: 201
+  2021/01/06/204329:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/susie_dent/status/1346915538698727428
+      status_code: 201
+  2021/01/07/133129: {}
+  2021/01/10/182552:
+    https://social.johanbove.info/2021/01/09/what-do-you-use-to-manage-your:
+      status_code: 202
+  2021/01/19/073807: {}
+  2021/01/24/223829:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/jlhbrain/status/1353536703059746816
+      status_code: 201
+  2021/01/27/102038: {}
+  2021/01/29/192416:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/philosophytweet/status/1355283086980874241
+      status_code: 201
+  2021/02/08/232414:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/AstroKatie/status/1358833824252190723
+      status_code: 201
+  2021/02/09/151357:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1359234627404247040
+      status_code: 201
+  2021/02/12/122409:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1360279113429360647
+      status_code: 201
+  2021/02/15/121759:
+    https://social.johanbove.info/2021/02/15/testing-a-new-browser-gave-me-the:
+      status_code: 202
+  2021/03/06/133010:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1368402156114546691
+      status_code: 201
+  2021/03/19/200403:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1373361797823090689
+      status_code: 201
+  2021/03/21/100551:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1373637446559223823
+      status_code: 201
+  2021/03/23/235350: {}
+  2021/03/29/235321:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1376744764423475201
+      status_code: 201
+  2021/04/12/191245:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1381748006756712449
+      status_code: 201
+  2021/04/14/212546: {}
+  2021/05/11/223338:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1392307647181950976
+      status_code: 201
+  2021/05/20/101212:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/blainecapatch/status/1395191164957958146?s=19
+      status_code: 201
+  2021/05/20/203726:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/philosophytweet/status/1395384785720258561?s=19
+      status_code: 201
+  2021/05/30/110700:
+    https://doubleloop.net/2021/05/29/when-did-you-join-the-indieweb/:
+      status_code: 200
+  2021/06/14/205334: {}
+  2021/06/25/174918:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/philippawarr/status/1408258565945663491?s=19
+      status_code: 201
+  2021/06/27/195004:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1409298383731408900
+      status_code: 201
+  2021/07/05/225409:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1412243920814227458
+      status_code: 201
+  2021/07/10/161822:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1413956182503575552
+      status_code: 201
+  2021/07/14/112000:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1415331230837612545
+      status_code: 201
+  2021/07/16/150300:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1416111628991533059
+      status_code: 201
+  2021/07/17/103400:
+    https://jlelse.blog/micro/2021/07/2021-07-17-dspcx:
+      status_code: 202
+  2021/07/18/193600: {}
+  2021/08/01/171520:
+    https://www.jvt.me/posts/2021/08/01/books-microformats/#demo:
+      location: https://webmention.io/www.jvt.me/webmention/5P5iSZbjPSwNJgg73uXg
+      status_code: 201
+  2021/08/08/195700:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1424520445194289153
+      status_code: 201
+  2021/08/10/175300:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1425214262704750612
+      status_code: 201
+  2021/08/18/132618:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1428046636379422721
+      status_code: 201
+  2021/08/21/204403:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1429243336997625862
+      status_code: 201
+  2021/08/25/101554:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1430534874901975042
+      status_code: 201
+  2021/08/25/121325:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1430564412637814789
+      status_code: 201
+  2021/08/25/git-warts:
+    https://brid.gy/publish/twitter:
+      location: https://twitter.com/desmondrivet/status/1430701984336723970
+      status_code: 201
+  2021/08/31/180241:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1432826603063681031
+      status_code: 201
+  2021/09/02/133034:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1433482949425606659
+      status_code: 201
+  2021/09/03/113100:
+    https://blog.b-ark.ca/2019/12/22/indiewebbing.html:
+      location: https://webmention.io/blog.b-ark.ca/webmention/Gs95UaOpMhwwn4PaSveq
+      status_code: 201
+  2021/09/05/213237:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1434691387426017288
+      status_code: 201
+  2021/09/08/074306:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/ChrisAldrich/status/1435017980132270080?s=19
+      status_code: 201
+  2021/09/09/130209:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1436012529831059458
+      status_code: 201
+  2021/09/13/082328:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1437392242738667527
+      status_code: 201
+  2021/09/13/121755:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1437450904094101513
+      status_code: 201
+  2021/09/14/081143:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      location: https://twitter.com/desmondrivet/status/1437751520926343172
+      status_code: 201
+  2021/09/18/135100: {}
+  2021/10/07/101400: {}
+  2021/10/08/000344: {}
+  2021/10/23/211009:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      status_code: 400
+  2021/10/29/102500:
+    https://boffosocko.com/2021/10/27/55797602/:
+      status_code: 200
+  2021/10/30/111200:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      status_code: 400
+  2021/10/31/161100:
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      status_code: 400
+  2021/11/07/210300:
+    https://brid.gy/publish/twitter:
+      status_code: 400
+    https://brid.gy/publish/twitter?bridgy_omit_link=true:
+      status_code: 400
+site_url: https://desmondrivet.com
