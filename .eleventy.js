@@ -4,10 +4,10 @@ const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL
 const sanitizeHTML = require('sanitize-html')
 const { scrape } = require('./utils/scrape');
-const { AssetCache } = require("@11ty/eleventy-cache-assets");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const parserYaml = require('prettier/parser-yaml');
 const yaml = require("js-yaml");
+const { load_previews, save_previews } = require('./utils/preview_cache.js');
 
 function webmentionsForUrl(webmentions, url) {
   if (!webmentions) {
@@ -299,20 +299,25 @@ module.exports = (eleventyConfig) => {
     }
   });
 
-  async function cached_metadata(url, key) {
-    const asset = new AssetCache(key);
-    if(asset.isCacheValid("1d")) {
-      return asset.getCachedValue();
+  let previews_changed = false;
+  eleventyConfig.addNunjucksAsyncFilter('preview', async (url, key, cb) => {
+    const previews = load_previews();
+    let preview;
+    if (key in previews) {
+      preview = previews[key];
     } else {
-      const metadata = await scrape(url);
-      await asset.save(metadata, 'json');
-      return metadata;
+      console.log(`no preview for ${url}, trying to scrape one...`);
+      preview = await scrape(url); 
+      previews[key] = preview;
+      previews_changed = true;
     }
-  }
+    return cb(null, preview);
+  });
 
-  eleventyConfig.addNunjucksAsyncFilter('scrape', async (url, key, cb) => {
-    const metadata = await cached_metadata(url, key);
-    cb(null, metadata);
+  eleventyConfig.on('eleventy.after', () => {
+    if (previews_changed) {
+      save_previews();
+    }
   });
 
   eleventyConfig.addFilter('referenced_link', properties => {
