@@ -22,7 +22,7 @@
     "html-to-text": "^8.0.0",
     "js-yaml": "^3.14.1",
     "lodash": "^4.17.21",
-    "mf2utiljs": "file:../repos/mf2utiljs",
+    "mf2utiljs": "^0.0.1",
     "microformats-parser": "^1.4.0",
     "node-fetch": "^2.6.1",
     "prettier": "^2.4.0",

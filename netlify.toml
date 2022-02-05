@@ -1,0 +1,3 @@
+# netlify.toml
+[[plugins]]
+    package = "./plugins/webmention-cache"

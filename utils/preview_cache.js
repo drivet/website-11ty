@@ -2,7 +2,7 @@ const fs = require('fs');
 
 let previews = null;
 
-const CACHE_DIR = './src/_cache'
+const CACHE_DIR = './_cache'
 
 function load_previews() {
   if (previews !== null) {
