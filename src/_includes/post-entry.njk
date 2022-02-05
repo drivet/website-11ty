@@ -21,6 +21,11 @@
   {% endif %}
   </p>
 
+  {% set bridgy = post.data.mp_properties['mp-syndicate-to'] | bridgy_mentions %}
+  {% for mention in bridgy %}
+  <a href="{{mention}}"></a>
+  {% endfor %}
+
   {{ post.templateContent | excerpt | safe }}
 
   {% if post.data.mp_properties.photo %}

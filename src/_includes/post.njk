@@ -24,6 +24,11 @@
   Bookmarked a <a href="{{mp_properties['bookmark-of']}}">link</a>
   {% endif %}
   
+  {% set bridgy = mp_properties['mp-syndicate-to'] | bridgy_mentions %}
+  {% for mention in bridgy %}
+  <a href="{{mention}}"></a>
+  {% endfor %}
+
   {{ content | safe }}
   
   {% if mp_properties.photo %}
