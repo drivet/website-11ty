@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npm install ~/repos/mf2utiljs/",
     "start": "npm run dev",
     "dev": "npm run eleventy:dev",
     "build": "npm run eleventy:prod",
