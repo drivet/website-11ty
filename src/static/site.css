@@ -92,6 +92,10 @@ a {
   margin: 0;
 }
 
+.navbar__avatar {
+  border-radius: 50%;
+}
+
 .navbar__group--right {
   margin-left: auto;
 }

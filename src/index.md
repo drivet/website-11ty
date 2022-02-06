@@ -6,9 +6,9 @@ title: Desmond's Virtual Home
 ---
 
 <section class="h-card">
-<img class="u-photo" src="/static/img/me02.jpg"
+<img class="u-photo" src="/static/img/me03.jpg"
      style="float: left; margin-right:1em; margin-bottom: 1em;
-            width: 100px; height: 100px"
+            width: 150px; height: 150px"
      alt="Me" title="Me"/>
 
 Hello! You've reached the personal website of
@@ -20,10 +20,15 @@ You can find out more [about me][1] eleswhere on this site, and some information
 There's actually a fair bit to see here, including a [blog][3] and a
 [selection of pages][4] spanning, in some cases, a couple of decades.
 
-In any case, I hope you enjoy your stay!
+This site is part of the [IndieWeb][5], a collection of personal websites that
+function as a kind of alternative to traditional social media.  I hope you enjoy
+your stay but, if you don't, please free to follow the [IndieWeb Web Ring][6],
+located at the bottom of every page, for other sites in the community.
 </section>
 
 [1]: /aboutme.html
 [2]: /aboutsite.html
 [3]: /posts/
 [4]: /oldsite/
+[5]: https://indieweb.org/
+[6]: https://indieweb.org/indiewebring

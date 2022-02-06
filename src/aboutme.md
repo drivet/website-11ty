@@ -34,7 +34,7 @@ web as well:
 * <a href="https://github.com/drivet" title="Github" rel="me">Github</a>
 * <a href="http://ca.linkedin.com/in/desmondrivet" title="LinkedIn" rel="me">LinkedIn</a>
 
-[1]: https://desmondrivet.com
+[1]: /
 [2]: https://en.wikipedia.org/wiki/Montreal
 [3]: https://engsci.utoronto.ca/
 [4]: https://www.utoronto.ca/
