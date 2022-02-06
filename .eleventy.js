@@ -201,6 +201,7 @@ function truncate(str, chars, replace = '...') {
 module.exports = (eleventyConfig) => {
   const markdownIt = require("markdown-it");
   const options = {
+    html: true,
     linkify: true
   };
   eleventyConfig.setLibrary("md", markdownIt(options));
