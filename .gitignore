@@ -1,3 +1,4 @@
 .env
 _site
 node_modules
+_cache/

@@ -151,7 +151,7 @@ a {
 .main { 
   max-width: 100%;
   margin: 0 auto;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 @media only screen and (min-device-width : 769px) {
@@ -163,7 +163,7 @@ a {
 .main-footer__content {
   max-width: 100%;
   margin: 0 auto;
-  padding: 2em;
+  padding: 2em 0.5em 2em 0.5em;
 }
 
 @media only screen and (min-device-width : 769px) {
