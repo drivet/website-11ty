@@ -6,11 +6,11 @@ title: Desmond's Virtual Home
 ---
 
 <section class="h-card">
+
 <img class="u-photo" src="/static/img/me03.jpg"
      style="float: left; margin-right:1em; margin-bottom: 1em;
-            width: 150px; height: 150px"
+            width: 150px; height:150px"
      alt="Me" title="Me"/>
-
 Hello! You've reached the personal website of
 <a class="p-name u-url u-uid" href="https://desmondrivet.com">Desmond Rivet</a>.
 

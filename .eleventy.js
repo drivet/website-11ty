@@ -199,6 +199,12 @@ function truncate(str, chars, replace = '...') {
 }
 
 module.exports = (eleventyConfig) => {
+  const markdownIt = require("markdown-it");
+  const options = {
+    linkify: true
+  };
+  eleventyConfig.setLibrary("md", markdownIt(options));
+
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
   eleventyConfig.addFilter('excerpt', content => html.excerpt(content, 100));
