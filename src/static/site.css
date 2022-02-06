@@ -7,7 +7,7 @@ html {
 
 body {
   font-family: 'Lato', serif;
-  color: #212529;
+  color: rgb(33, 37, 41);
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -60,6 +60,7 @@ a {
 
 .main-header {
   padding: 0.5em;
+  background: rgb(246,248,250);
   border-bottom: 1px solid lightgrey;
 }
 
