@@ -22,7 +22,7 @@ There's actually a fair bit to see here, including a [blog][3] and a
 
 This site is part of the [IndieWeb][5], a collection of personal websites that
 function as a kind of alternative to traditional social media.  I hope you enjoy
-your stay but, if you don't, please free to follow the [IndieWeb Web Ring][6],
+your stay but, if you don't, please free to follow the [IndieWeb Webring][6],
 located at the bottom of every page, for other sites in the community.
 </section>
 

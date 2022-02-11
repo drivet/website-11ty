@@ -104,12 +104,13 @@ a {
   color: rgba(0,0,0,.5);
 }
 
-.feed__navbar {
-  padding: 1em 0em 1em 0em;
+.main__title {
+  margin: 0.3em 0;
+  font-size: 2em;
 }
 
-.feed__title {
-  margin: 0.3em 0;
+.feed__navbar {
+  padding: 1em 0em 1em 0em;
 }
 
 .feed__list {
