@@ -1,17 +1,16 @@
 
-const feed = require("feed-read-parser");
-const fs = require('fs').promises;
+const { identify, atom } = require("feed-read-parser");
+const fs = require('fs');
 const util = require('util');
 const yaml = require('js-yaml');
 
 async function loadUrls() {
-  const feed_data = await fs.readFile('_site/posts/feed_all.xml');
+  const feed_data = fs.readFileSync('_site/posts/feed_all.xml');
   console.log(`FEED DATA! ${JSON.stringify(feed_data)}`);
-  console.log(`FEED! ${JSON.stringify(feed)}`);
-  const t = feed.identify(feed_data);
+  const t = identify(feed_data);
   console.log(`feed type! ${t}`);
-  const feedPromisfied = util.promisify(feed.atom);
-  const feed = await feedPromisfied.atom(feed_data);
+  const patom = util.promisify(atom);
+  const feed = await patom(feed_data);
   console.log(`feed: ${JSON.stringify(feed)}`);
   return feed.map(a => link);
 }
