@@ -1,4 +1,3 @@
-// index.js
 module.exports = {
     // Before the build runs,
     // restore a directory we cached in a previous build.

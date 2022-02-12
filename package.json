@@ -20,6 +20,7 @@
     "@remy/webmention": "^1.4.5",
     "cheerio": "^1.0.0-rc.10",
     "dotenv": "^10.0.0",
+    "feed-read-parser": "^1.0.5",
     "html-to-text": "^8.0.0",
     "js-yaml": "^3.14.1",
     "lodash": "^4.17.21",
