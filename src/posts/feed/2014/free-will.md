@@ -44,9 +44,8 @@ their brains are generally considered to be physical objects, and since
 their choices are generally considered to be physical events, it can be said
 that a person's choices are subject to this causal chain like any other
 physical event. A person making a choice, in this kind of universe, is not
-really fundamentally different than the operation of any physical system
-- like a steam engine, for example. A really, really *complicated* steam
-engine.
+really fundamentally different than the operation of any physical system - like 
+a steam engine, for example. A really, really *complicated* steam engine.
 
 People have a hard time imagining what a person's free will (as generally
 understood) would even *look like* under such a framework. Where exactly

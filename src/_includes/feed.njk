@@ -18,7 +18,11 @@
         <li><a href="/posts/archives/" class="navbar__link">Archives</a></li>
       </ul>
     </nav>
-    <h1 class="main__title">{{ title }}</h1>
+
+    <div class="row">
+      <h1 class="main__title">{{ title }}</h1>
+      <a class="rowitem--right" title="Subscribe via Atom" href="{{rss}}"><span class="fa fa-rss-square"></span></a>
+    <div>
   </header>
 {{ content | safe }}
 </section>

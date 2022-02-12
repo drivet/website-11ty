@@ -5,6 +5,7 @@ pagination:
   size: 10
 permalink: "/posts/bookmarks{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"
 layout: "feed.njk"
+rss: "/posts/feed_bookmarks.xml"
 ---
 
 <ul class="feed__list">

@@ -8,6 +8,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const parserYaml = require('prettier/parser-yaml');
 const yaml = require("js-yaml");
 const { load_previews, save_previews } = require('./utils/preview_cache.js');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 function webmentionsForUrl(webmentions, url) {
   if (!webmentions) {
@@ -207,6 +208,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.setLibrary("md", markdownIt(options));
 
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
   eleventyConfig.addFilter('excerpt', content => html.excerpt(content, 100));
   eleventyConfig.addFilter('truncate', str => truncate(str, 500));
@@ -350,6 +352,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.setTemplateFormats([
     "md",
     "njk",
+    "xml",
     "css",
     "jpeg",
     "jpg",
