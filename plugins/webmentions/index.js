@@ -6,6 +6,7 @@ const yaml = require('js-yaml');
 
 async function loadUrls() {
   const feed_data = await fs.readFile('_site/posts/feed_all.xml');
+  console.log(`FEED! ${JSON.stringify(feed)}`);
   const t = feed.identify(feed_data);
   console.log(`feed type! ${t}`);
   const feedPromisfied = util.promisify(feed.atom);
@@ -28,9 +29,9 @@ module.exports = {
   async onSuccess({ utils }) {
     const urls = loadUrls();
     console.log(`Urls ${JSON.stringify(urls)}`);
-    const results = loadWebmentionResults();
-    const toSend = toProcess(urls, results);
-    console.log(`Webmentions to send ${JSON.stringify(toSend)}`);
+    //const results = loadWebmentionResults();
+    //const toSend = toProcess(urls, results);
+    //console.log(`Webmentions to send ${JSON.stringify(toSend)}`);
   },
  
 }
