@@ -5,7 +5,7 @@ const util = require('util');
 const yaml = require('js-yaml');
 
 async function loadUrls() {
-  const feed_data = fs.readFileSync('_site/posts/feed_all.xml');
+  const feed_data = fs.readFileSync('_site/posts/feed_all.xml', 'utf8');
   console.log(`FEED DATA! ${JSON.stringify(feed_data)}`);
   const t = identify(feed_data);
   console.log(`feed type! ${t}`);
