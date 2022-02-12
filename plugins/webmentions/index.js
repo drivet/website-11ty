@@ -6,13 +6,9 @@ const yaml = require('js-yaml');
 
 async function loadUrls() {
   const feed_data = fs.readFileSync('_site/posts/feed_all.xml', 'utf8');
-  console.log(`FEED DATA! ${JSON.stringify(feed_data)}`);
-  const t = identify(feed_data);
-  console.log(`feed type! ${t}`);
   const patom = util.promisify(atom);
   const feed = await patom(feed_data);
-  console.log(`feed: ${JSON.stringify(feed)}`);
-  return feed.map(a => link);
+  return feed.map(a => a.link);
 }
 
 async function loadWebmentionResults() {
