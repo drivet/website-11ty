@@ -28,7 +28,7 @@ function toProcess(urls, wmresults) {
 
 module.exports = {
   async onSuccess({ utils }) {
-    const urls = loadUrls();
+    const urls = await loadUrls();
     console.log(`Urls ${JSON.stringify(urls)}`);
     //const results = loadWebmentionResults();
     //const toSend = toProcess(urls, results);
