@@ -6,6 +6,7 @@ const yaml = require('js-yaml');
 
 async function loadUrls() {
   const feed_data = await fs.readFile('_site/posts/feed_all.xml');
+  console.log(`feed contents ${feed_data}`)
   const feedPromisfied = util.promisify(feed.atom);
   return await feedPromisfied.atom(feed_data).map(a => link);
 }
