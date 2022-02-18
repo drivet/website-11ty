@@ -5,7 +5,6 @@ const rootUrl = require('./src/_data/global.json').URL
 const sanitizeHTML = require('sanitize-html')
 const { scrape } = require('./utils/scrape');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const parserYaml = require('prettier/parser-yaml');
 const yaml = require("js-yaml");
 const { load_previews, save_previews } = require('./utils/preview_cache.js');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
