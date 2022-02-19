@@ -1,11 +1,11 @@
 ---
-title: All
+title: Links
 pagination:
-  data: collections.all
+  data: collections.blog
   size: 10
-permalink: "/posts/all{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"  
+permalink: "/posts/blog{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"
 layout: "feed.njk"
-rss: "/posts/feed_all.xml"
+rss: "/posts/feed_blog.xml"
 ---
 
 <ul class="feed__list">

@@ -1,11 +1,11 @@
 ---
 title: Posts
 pagination:
-  data: collections.blog
+  data: collections.posts
   size: 10
 permalink: "/posts/index{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"
 layout: "feed.njk"
-rss: "/posts/feed_blog.xml"
+rss: "/posts/feed_posts.xml"
 ---
 
 <ul class="feed__list">

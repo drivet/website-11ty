@@ -367,12 +367,16 @@ module.exports = (eleventyConfig) => {
   ]);
 
   // standard collections with pagination
-  eleventyConfig.addCollection("posts", (collection) =>
+  eleventyConfig.addCollection("all", (collection) =>
     getPosts(collection).reverse()
   );
 
-  eleventyConfig.addCollection("blog", (collection) =>
+  eleventyConfig.addCollection("posts", (collection) =>
     postTypes(getPosts(collection), ["article", "note", "photo"]).reverse()
+  );
+  
+  eleventyConfig.addCollection("blog", (collection) =>
+    postTypes(getPosts(collection), ["article"]).reverse()
   );
 
   eleventyConfig.addCollection("bookmarks", (collection) =>

@@ -5,7 +5,6 @@ const yaml = require('js-yaml');
 const { Octokit } = require("@octokit/rest");
 const { Base64 } = require("js-base64");
 const { sendAllWebmentions } = require('send-all-webmentions');
-const ConsoleLogger = require("@11ty/eleventy/src/Util/ConsoleLogger");
 
 const octokit = new Octokit({
   auth: process.env.GITHUB_ACCESS_TOKEN,
@@ -63,5 +62,5 @@ async function onSuccess({ utils }) {
 }
 
 module.exports = {
-  onSuccess
+  onSuccess: ({ utils }) => {}
 }

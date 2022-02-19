@@ -7,6 +7,7 @@ html {
 
 body {
   font-family: 'Lato', serif;
+  font-size: 1.1em;
   color: rgb(33, 37, 41);
   margin: 0;
   padding: 0;
@@ -78,7 +79,7 @@ a {
 
 @media only screen and (min-device-width : 769px) {
 	.navbar { 
-    max-width: 1024px;
+    max-width: 850px;
     margin: 0 auto;
   }
 }
@@ -175,7 +176,7 @@ a {
 
 @media only screen and (min-device-width : 769px) {
 	.main { 
-    max-width: 750px;
+    max-width: 850px;
   }
 }
 
@@ -187,7 +188,7 @@ a {
 
 @media only screen and (min-device-width : 769px) {
 	.main-footer__content { 
-    max-width: 1024px;
+    max-width: 850px;
   }
 }
 
