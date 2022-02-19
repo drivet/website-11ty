@@ -12,27 +12,28 @@ const octokit = new Octokit({
 });
 
 async function commit(wmresults) {
-  const yaml_str = yaml.dump(wmresults);
-  console.log('committing this yaml');
-  console.log(yaml_str);
-  /*
-  const encoded = Base64.encode(yaml_str);
-  const { data } = await octokit.repos.createOrUpdateFileContents({
-    owner: "drivet",
-    repo: "website-11ty",
-    path: "src/_data/wmresults.yaml",
-    message: "save wmresults",
-    content: encoded,
-    committer: {
-      name: `Netlify`,
-      email: "desmond.rivet@gmail.com",
-    },
-    author: {
-      name: "Netlify",
-      email: "desmond.rivet@gmail.com",
-    },
-  });
-  */
+  try{
+    const yaml_str = yaml.dump(wmresults);
+    const encoded = Base64.encode(yaml_str);
+    const response = await octokit.repos.createOrUpdateFileContents({
+      owner: "drivet",
+      repo: "website-11ty",
+      path: "src/_data/wmresults.yaml",
+      message: "save wmresults",
+      content: encoded,
+      committer: {
+        name: `Netlify`,
+        email: "desmond.rivet@gmail.com",
+      },
+      author: {
+        name: "Netlify",
+        email: "desmond.rivet@gmail.com",
+      },
+    });
+    console.log(`successfully comitted wmresults: ${JSON.stringify(response)}`);
+  } catch(err) {
+    console.error(`error comitting wmresults: ${JSON.stringify(err)}`);
+  }
 }
 
 async function loadUrls() {
