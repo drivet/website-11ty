@@ -53,7 +53,7 @@ async function onSuccess({ utils }) {
   const wmresults = loadWebmentionResults();
   const sources = urls.filter(u => wmresults.results[u] === undefined || wmresults.results[u] === null);
   console.log(`sending webmentions for sources: ${JSON.stringify(sources)}`);
-  const send_results = sendAllWebmentions(sources);
+  const send_results = await sendAllWebmentions(sources);
   for (const source of sources) {
     const result_for_source = send_results[source] || {};
     console.log(`result for source: ${JSON.stringify(result_for_source)}`);
