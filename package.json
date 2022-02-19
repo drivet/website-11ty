@@ -30,7 +30,7 @@
     "node-fetch": "^2.6.1",
     "prettier": "^2.4.0",
     "sanitize-html": "^2.5.3",
-    "send-all-webmentions": "^0.0.1",
+    "send-all-webmentions": "^0.0.2",
     "unfurl.js": "^5.6.2",
     "valid-url": "^1.0.9"
   }
