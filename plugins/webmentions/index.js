@@ -59,7 +59,7 @@ async function onSuccess({ utils }) {
     console.log(`result for source: ${JSON.stringify(result_for_source)}`);
     wmresults.results[source] = result_for_source;
   }
-  commit(wmresults);
+  await commit(wmresults);
 }
 
 module.exports = {
