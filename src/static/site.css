@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  border-top: 8px solid #0096FF;
 }
 
 a {
@@ -125,9 +126,12 @@ a {
 }
 
 .feed__item {
+  border-bottom: 1px solid lightgrey;
+}
+
+.entry {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  border-bottom: 1px solid lightgrey;
 }
 
 .feed__pagenav {
@@ -141,10 +145,15 @@ a {
 .entry__published {
   font-style: italic;
   font-size: 0.8em;
+  color: grey
 }
 
 .entry__title {
   margin-top: 0.25em;
+}
+
+.entry__titlelink {
+  color: #212529;
 }
 
 .entry__photo {
@@ -153,19 +162,17 @@ a {
 
 .entry__footer {
   margin-top: 1em;
-}
-
-.entry__infoline {
-  margin-top: 1em;
+  color: grey; 
   font-size: 0.8em;
 }
 
-.entry__titlelink {
-  color: #212529;
+.entry__footerline {
+  margin-top: 0.5em;
 }
 
-.wm-counter {
-  color: #212529;
+.wm-group {
+  margin-top: 5em;
+  border-top: 1px solid lightgrey;
 }
 
 .main { 
@@ -225,11 +232,12 @@ a {
 .wm-group--mention-item {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
 }
 
 .wm-group--mention-item:first-child {
   padding-top: 0;
+  border-top: 0;
 }
 
 .wm-group--item {
