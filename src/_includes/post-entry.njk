@@ -1,3 +1,5 @@
+{% from "photo.njk" import photo %}
+
 <article class="h-entry entry">
   <header>
     <a href="/" class="u-author"></a>
@@ -29,7 +31,7 @@
   {{ post.templateContent | excerpt | safe }}
 
   {% if post.data.mp_properties.photo %}
-  <img src="{{ post.data.mp_properties.photo }}" class="u-photo entry__photo image"/>
+  {{ photo(post.data.mp_properties.photo) }}
   {% endif %}
 
   {% if post.data.postType != 'article' %}

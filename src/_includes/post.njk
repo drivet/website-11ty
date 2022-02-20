@@ -1,5 +1,7 @@
 {% extends "blogbase.njk" %}
 
+{% from "photo.njk" import photo %}
+
 {% block content %}
 <article class="h-entry entry">
   <header>
@@ -29,9 +31,9 @@
   {% endfor %}
 
   {{ content | safe }}
-  
+
   {% if mp_properties.photo %}
-  <img src="{{ mp_properties.photo }}" class="u-photo entry__photo image"/>
+  {{ photo(mp_properties.photo) }}
   {% endif %}
 
   {% if postType != 'article' %}
