@@ -8,6 +8,11 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const yaml = require("js-yaml");
 const { load_previews, save_previews } = require('./utils/preview_cache.js');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const dayjs = require('dayjs');
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone') // dependent on utc plugin
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 function webmentionsForUrl(webmentions, url) {
   if (!webmentions) {
@@ -17,16 +22,15 @@ function webmentionsForUrl(webmentions, url) {
   const absUrl = `${rootUrl}${url}`.replace(/\.[^/.]+$/, "");
  
   const sanitize = entry => {
-    const { content } = entry
+    const { content } = entry;
     if (content && content['content-type'] === 'text/html') {
       content.value = sanitizeHTML(content.value);
     }
     return entry;
   }
-  
   return webmentions
       .filter(entry => entry['wm-target'] === absUrl)
-      .map(sanitize);      
+      .map(sanitize);
 }
 
 function webmentionKind(webmentions, ...kinds) {
@@ -247,27 +251,13 @@ module.exports = (eleventyConfig) => {// Browsersync config
 
   // "permalink": "{{ page | post_permalink }}"
   eleventyConfig.addFilter("post_permalink", page => {
-    const yyyy = page.date.getFullYear();
-    const mm = String(page.date.getMonth() + 1).padStart(2, "0");
-    const dd = String(page.date.getDate()).padStart(2, "0");
+    const date_part = dayjs(page.date).tz('America/Montreal').format('YYYY/MM/DD');
     const slug = getSlug(page.fileSlug);
-    return `${yyyy}/${mm}/${dd}/${slug}.html`;
+    return `${date_part}/${slug}.html`;
   });
 
   eleventyConfig.addFilter("date", d => {
-    const date = typeof d === 'string' ? new Date(d): d;
-    if (date.getTime() !== date.getTime()) {
-      return d;
-    }
-    const day = ("0" + date.getDate()).slice(-2);
-    const month = ("0" + (date.getMonth() + 1)).slice(-2);
-    const year = date.getFullYear();
-    const hours24 = date.getHours();
-    const hourAmPm = hours24 > 12 ? hours24 - 12 : (hours24 === 0 ? 12 : hours24);
-    const hours = String(hourAmPm).padStart(2, "0");
-    const minutes = String(date.getMinutes()).padStart(2, "0");
-    const afternoon = hours24 < 12 ? 'AM' : 'PM';
-    return `${year}-${month}-${day} at ${hours}:${minutes} ${afternoon}`;
+    return dayjs(d).tz('America/Montreal').format('YYYY-MM-DD h:mm A Z');
   });
 
   eleventyConfig.addFilter("webmentions_for_url", webmentionsForUrl);
