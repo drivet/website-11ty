@@ -1,25 +1,13 @@
-{% extends "base.njk" %}
+{% extends "blogbase.njk" %}
 
 {% block meta %}
 <meta name="robots" content="noindex,follow" />
 {% endblock %}
 
+
 {% block content %}
 <section class="h-feed feed"> 
   <header class="feed__header">
-    <nav class="feed__navbar row row--wrap" role="navigation" aria-label="main navigation">
-      <ul class="navbar__group"> 
-        <li><a href="/posts/index.html" class="navbar__link">Posts</a></li>
-        <li><a href="/posts/blog.html" class="navbar__link">Blog</a></li>
-        <li><a href="/posts/bookmarks.html" class="navbar__link">Links</a></li>
-        <li><a href="/posts/all.html" class="navbar__link">All</a></li>
-      </ul>
-      <ul class="navbar__group navbar__group--right">
-        <li><a href="/posts/tags/" class="navbar__link">Tags</a></li>
-        <li><a href="/posts/archives/" class="navbar__link">Archives</a></li>
-      </ul>
-    </nav>
-
     <div class="row">
       <h1 class="main__title">{{ title }}</h1>
       <a class="rowitem--right" title="Subscribe via Atom" href="{{rss}}"><span class="fa fa-rss-square"></span></a>

@@ -35,9 +35,6 @@
   <meta property="og:image" content="/{{ OPEN_GRAPH_IMAGE }}"/>
   {% endif %}
   {% endblock %}
-  <!--
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-  -->
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
   <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
   <link href="/static/site.css" rel="stylesheet">
@@ -76,9 +73,11 @@
         <li><a href="https://photos.desmondrivet.com/" class="navbar__link">Albums</a></li>
         <li><a href="https://wiki.desmondrivet.com/" class="navbar__link">Wiki</a></li>
       </ul>
-    </nav>
+    </nav>  
   </header>
   
+  {% block secondarynav %}{% endblock %}
+
   <main class="main">
   {% block content %}{% endblock %}
   </main>

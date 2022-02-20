@@ -1,4 +1,0 @@
-{
-  "permalink": "/{{ page.filePathStem }}.html",
-  "layout": "page.njk"
-}

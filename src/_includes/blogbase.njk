@@ -1,0 +1,18 @@
+{% extends "base.njk" %}
+
+{% block secondarynav %}
+<header>
+  <nav class="navbar feed__navbar row row--wrap" role="navigation" aria-label="feed navigation">
+    <ul class="navbar__group"> 
+      <li><a href="/posts/index.html" class="navbar__link">Posts</a></li>
+      <li><a href="/posts/blog.html" class="navbar__link">Blog</a></li>
+      <li><a href="/posts/bookmarks.html" class="navbar__link">Links</a></li>
+      <li><a href="/posts/all.html" class="navbar__link">All</a></li>
+    </ul>
+    <ul class="navbar__group navbar__group--right">
+      <li><a href="/posts/tags/" class="navbar__link">Tags</a></li>
+      <li><a href="/posts/archives/" class="navbar__link">Archives</a></li>
+    </ul>
+  </nav>
+</header>
+{% endblock %}

@@ -1,9 +1,19 @@
 ---
 title: Tags
+permalink: /{{ page.filePathStem }}.html
 ---
+
+{% extends "blogbase.njk" %}
+
+{% block meta %}
+<meta name="robots" content="noindex,follow" />
+{% endblock %}
+
+{% block content %}
 <ul class="tag-list">
 {% for tag in collections.tagList %}
   {% set tagUrl %}/posts/tags/{{ tag.tag | slug }}.html{% endset %}
   <li class="tag-list__item row"><a href="{{ tagUrl | url }}">{{ tag.tag }}</a>  <span class="rowitem--right">{{ tag.count }}</span></li>
 {% endfor %}
 </ul>
+{% endblock content %}
