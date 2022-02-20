@@ -14,7 +14,7 @@ function webmentionsForUrl(webmentions, url) {
     return [];
   }
 
-  const absUrl =  `${rootUrl}${url}`.replace(/\.[^/.]+$/, "");
+  const absUrl = `${rootUrl}${url}`.replace(/\.[^/.]+$/, "");
  
   const sanitize = entry => {
     const { content } = entry
@@ -198,7 +198,11 @@ function truncate(str, chars, replace = '...') {
   }
 }
 
-module.exports = (eleventyConfig) => {
+module.exports = (eleventyConfig) => {// Browsersync config
+  eleventyConfig.setBrowserSyncConfig(
+    require('./configs/browsersync.config')('_site')
+  );
+
   const markdownIt = require("markdown-it");
   const options = {
     html: true,
@@ -346,6 +350,10 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter('json_string', obj => {
     return JSON.stringify(obj);
+  });
+
+  eleventyConfig.addFilter('strip_ext', obj => {
+    return obj.replace(/\.[^/.]+$/, '');
   });
 
   eleventyConfig.setTemplateFormats([

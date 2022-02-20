@@ -11,7 +11,7 @@ It is indeed difficult to describe the name of the Lord.
 ## Part 1 - The Omnipotent God
 
 I wrote an essay a few months back called
-[The Nature of Omnipotence](god.html), where I attempted to present reasons
+[The Nature of Omnipotence](/oldsite/god), where I attempted to present reasons
 for why an omnipotent God cannot exist and why I think of myself as an
 atheist rather than an agnostic. The response to this essay was varied. In
 some cases, I won agnostic converts and in other cases I won criticism for
@@ -342,7 +342,7 @@ or divine continuum exists. I am merely trying to guess, in a very rough
 manner, the structure of humanity's belief in what they call "God". I don't
 think I'm *too* far off the mark.
 
-In [The Nature of Omnipotence](god.html), I concentrated on one particular
+In [The Nature of Omnipotence](/oldsite/god), I concentrated on one particular
 point of this spectrum, what I call the **Logically Omnipotent God** in Part
 1 of this essay.  I don't think I was clear enough about where I stand on
 the existence of entities on other parts of the spectrum, and I suspect that
@@ -350,7 +350,7 @@ part of the criticism I got in the past and may get in the future stems from
 a confusion on what people (and myself) actually mean when they use the term
 "God". So, allow me to clarify what I mean by a "spectrum of beliefs" and to
 answer the question which may have occurred to some people who read
-[The Nature of Omnipotence](god.html) : Am I an atheist with respect to all
+[The Nature of Omnipotence](/oldsite/god) : Am I an atheist with respect to all
 Gods? The quick answer is "Not quite", but that requires slightly more
 explanation. Not including the Logically Omnipotent God, I would identify
 three broad classes of the divine concept; my stance to each of them is

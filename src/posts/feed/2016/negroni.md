@@ -203,10 +203,10 @@ fun!
 [4]: https://en.wikipedia.org/wiki/Americano_(cocktail)
 [5]: https://en.wikipedia.org/wiki/Aperol
 [6]: https://en.wikipedia.org/wiki/Lillet
-[7]: /2016/12/22/vesper.html
+[7]: /2016/12/22/vesper
 [8]: https://en.wikipedia.org/wiki/Boulevardier_(cocktail)
 [9]: https://en.wikipedia.org/wiki/Cocchi_Americano
-[10]: /2016/12/22/vesper.html
-[11]: /2014/12/22/more-sour-cocktails.html
-[12]: /2014/12/23/aromatic-cocktails.html
+[10]: /2016/12/22/vesper
+[11]: /2014/12/22/more-sour-cocktails
+[12]: /2014/12/23/aromatic-cocktails
 [13]: https://en.wikipedia.org/wiki/Sidecar_(cocktail)

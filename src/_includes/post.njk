@@ -44,7 +44,7 @@
   {% endif %}
   {% endif %}
 
-  {% set url = page.url %} 
+  {% set url = page.url | strip_ext %} 
   {% set expand = true %}
   {% include "entry-footer.njk" %}
   

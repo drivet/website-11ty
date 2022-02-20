@@ -26,8 +26,8 @@ your stay but, if you don't, please free to follow the [IndieWeb Webring][6],
 located at the bottom of every page, for other sites in the community.
 </section>
 
-[1]: /aboutme.html
-[2]: /aboutsite.html
+[1]: /aboutme
+[2]: /aboutsite
 [3]: /posts/
 [4]: /oldsite/
 [5]: https://indieweb.org/

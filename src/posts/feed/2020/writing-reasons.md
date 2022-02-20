@@ -157,6 +157,6 @@ diary, *that's* my answer.
 [7]: https://en.wikipedia.org/wiki/The_Truth_of_Fact,_the_Truth_of_Feeling
 [8]: https://en.wikipedia.org/wiki/Tiv_people
 [9]: https://en.wikipedia.org/wiki/The_Entire_History_of_You
-[10]: /oldsite/bioessay.html
+[10]: /oldsite/bioessay
 [11]: https://sarahdrasnerdesign.com
 [12]: https://indieweb.org/

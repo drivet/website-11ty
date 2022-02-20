@@ -7,7 +7,7 @@
     <span class="entry__published">{{ post.data.date | date  }}</span>
     
     {% if post.data.title  %}
-    <h2 class="entry__title"><a href="{{ post.url }}" class="entry__titlelink">{{ post.data.title }}</a></h2>
+    <h2 class="entry__title"><a href="{{ post.url | strip_ext }}" class="entry__titlelink">{{ post.data.title }}</a></h2>
     {% endif %}
   </header>
   
@@ -43,10 +43,10 @@
   {% endif %}
 
   {% if post.data.postType == 'article' %}
-  <a href="{{ post.url }}">Read more &raquo;</a>
+  <a href="{{ post.url | strip_ext }}">Read more &raquo;</a>
   {% endif %}
   
   {% set tags = post.data.tags %}
-  {% set url = post.url %}
+  {% set url = post.url | strip_ext %}
   {% include "entry-footer.njk" %}
   
