@@ -7,12 +7,18 @@ html {
 
 body {
   font-family: 'Lato', serif;
-  font-size: 1.1em;
+  font-size: 1.0em;
   color: rgb(33, 37, 41);
   margin: 0;
   padding: 0;
   line-height: 1.5;
   border-top: 8px solid #0096FF;
+}
+
+@media only screen and (min-width : 769px) {
+  body {
+    font-size: 1.075em;
+  }
 }
 
 a {
@@ -78,6 +84,10 @@ a {
   max-width: 100%;
 }
 
+.secondary-header {
+  border-bottom: 1px solid lightgrey;
+}
+
 @media only screen and (min-device-width : 769px) {
 	.navbar { 
     max-width: 850px;
@@ -110,13 +120,25 @@ a {
   color: rgba(0,0,0,.5);
 }
 
+.main__header {
+  margin-top: 1em;
+}
+
 .main__title {
   margin: 0.3em 0;
   font-size: 2em;
 }
 
-.feed__navbar {
-  padding: 1em 0em 1em 0em;
+.feed__navbaritem {
+  padding: 0.5em 0em 0.5em 0em;
+}
+
+.feed__navbaritem--active {
+  border-bottom: 2px solid #0096FF
+}
+
+.feed__header {
+  margin-top: 1em;
 }
 
 .feed__list {
@@ -181,9 +203,10 @@ a {
   padding: 0.5em;
 }
 
-@media only screen and (min-device-width : 769px) {
+@media only screen and (min-width : 769px) {
 	.main { 
     max-width: 850px;
+    padding: 0;
   }
 }
 
@@ -193,7 +216,7 @@ a {
   padding: 2em 0.5em 2em 0.5em;
 }
 
-@media only screen and (min-device-width : 769px) {
+@media only screen and (min-width : 769px) {
 	.main-footer__content { 
     max-width: 850px;
   }

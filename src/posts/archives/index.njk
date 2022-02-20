@@ -1,6 +1,7 @@
 ---
 title: Archives
 permalink: /{{ page.filePathStem }}.html
+navname: "archives"
 ---
 
 {% extends "blogbase.njk" %}
@@ -9,7 +10,12 @@ permalink: /{{ page.filePathStem }}.html
 <meta name="robots" content="noindex,follow" />
 {% endblock %}
 
-{% block content %}
+{% block content %} 
+<header class="main__header">  
+  <div class="row">
+    <h1 class="main__title">{{ title }}</h1>
+  </div>
+</header>
 <ul class="archive-year-list">
   {% for year in collections.archiveList %}
   {% set yearUrl %}/{{ year.year }}/{% endset %}

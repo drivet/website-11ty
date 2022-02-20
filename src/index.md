@@ -2,7 +2,7 @@
 modified: 2015-05-16 01:52:55.879342-04:00
 permalink: "{{ page.filePathStem }}.html"
 layout: "page.njk"
-title: Desmond's Virtual Home
+title: Desmond's Corner of the Web
 ---
 
 <section class="h-card">
