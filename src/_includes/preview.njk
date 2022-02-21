@@ -1,7 +1,7 @@
 {% set type = scraped | link_context_type %}
 
 {% if type %}
-<p><section class="link-context">
+<section class="link-context">
 {% if type == 'indieweb' %}
 {% include "indieweb-context.njk" %}
 {% elif type == 'oembed' %}
@@ -9,6 +9,6 @@
 {% elif type == 'unfurl' %}
 {% include "unfurl.njk" %}
 {% endif %}
-</section></p>
+</section>
 {% endif %}
 
