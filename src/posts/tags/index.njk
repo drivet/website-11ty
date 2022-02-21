@@ -11,6 +11,7 @@ navname: "tags"
 {% endblock %}
 
 {% block content %}
+<main class="main">
 <header class="main__header">
   <div class="row">
     <h1 class="main__title">{{ title }}</h1>
@@ -22,4 +23,5 @@ navname: "tags"
   <li class="tag-list__item row"><a href="{{ tagUrl | url }}">{{ tag.tag }}</a>  <span class="rowitem--right">{{ tag.count }}</span></li>
 {% endfor %}
 </ul>
+</main>
 {% endblock content %}
