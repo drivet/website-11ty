@@ -6,14 +6,14 @@
 
 {% block content %}
 <main class="main">
-<section class="h-feed feed"> 
-  <header class="feed__header">
-    <div class="row">
-      <h1 class="main__title">{{ title }}</h1>
-      <a class="rowitem--right" title="Subscribe via Atom" href="{{rss}}"><span class="fa fa-rss-square"></span></a>
-    </div>
-  </header>
+<div class="h-feed feed">
+<header class="feed__header">
+  <div class="row">
+    <h1 class="main__title">{{ title }}</h1>
+    <a class="rowitem--right" title="Subscribe via Atom" href="{{rss}}"><span class="fa fa-rss-square"></span></a>
+  </div>
+</header>
 {{ content | safe }}
-</section>
+</div>
 </main>
 {% endblock content %}

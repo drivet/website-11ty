@@ -2,13 +2,11 @@
 
 {% block content %}
 <main class="main">
-<article>
-  <header class="main__header">
-    {% if title  %}
-    <h1 class="main__title">{{ title }}</h1>
-    {% endif %}
-  </header>
-  {{ content | safe }}
-</article>
+<header class="main__header">
+  {% if title  %}
+  <h1 class="main__title">{{ title }}</h1>
+  {% endif %}
+</header>
+{{ content | safe }}
 <main>
 {% endblock %}

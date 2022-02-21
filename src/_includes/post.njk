@@ -4,7 +4,7 @@
 
 {% block content %}
 <main class="main">
-<article class="h-entry entry">
+<div class="h-entry entry">
   <header>
     <a href="/" class="u-author"></a>
     
@@ -49,7 +49,6 @@
   {% set url = page.url | strip_ext %} 
   {% set expand = true %}
   {% include "entry-footer.njk" %}
-  
-</article>
+</div>
 </main>
 {% endblock %}
