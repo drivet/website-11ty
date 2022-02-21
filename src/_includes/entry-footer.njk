@@ -18,11 +18,10 @@
     {% endif %}
     <div class="entry__footerline row--spacious">
       <div class = "rowitem row--spacious">
-        <a href="{{ url }}#wm-mentions" title="Mentions"><i class="far fa-comment"></i> {{ mentions | length }}</a>
-        <a href="{{ url }}#wm-likes" title="Likes"><i class="far fa-thumbs-up"></i> {{ likes | length }}</a>
-        <a href="{{ url }}#wm-reposts" title="Reposts"><i class="fa fa-retweet"></i>  {{ reposts | length }}</a>
-        <a href="{{ url }}#wm-bookmarks" title="Bookmarks"><i class="fa fa-bookmark"></i> {{ bookmarks | length }}</a>
-       
+        <a class="wm-counter" href="{{ url }}#wm-mentions" title="Mentions"><i class="far fa-comment"></i> {{ mentions | length }}</a>
+        <a class="wm-counter" href="{{ url }}#wm-likes" title="Likes"><i class="far fa-thumbs-up"></i> {{ likes | length }}</a>
+        <a class="wm-counter" href="{{ url }}#wm-reposts" title="Reposts"><i class="fa fa-retweet"></i>  {{ reposts | length }}</a>
+        <a class="wm-counter" href="{{ url }}#wm-bookmarks" title="Bookmarks"><i class="fa fa-bookmark"></i> {{ bookmarks | length }}</a>
       </div>
       <div class="rowitem--right row--spacious">
         {% for s in syndications %}
@@ -32,7 +31,6 @@
       </div>
     </div>
 </footer>
-
 {% if expand and ((mentions | length > 0) or (likes | length > 0) or (reposts | length > 0) or (bookmarks | length > 0)) %}
 
 {% if mentions.length > 0 %}

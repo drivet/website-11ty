@@ -169,7 +169,7 @@ a {
 
 .entry__published {
   font-style: italic;
-  font-size: 0.8em;
+  
   color: grey
 }
 
@@ -188,11 +188,15 @@ a {
 .entry__footer {
   margin-top: 1em;
   color: grey; 
-  font-size: 0.8em;
+  
 }
 
 .entry__footerline {
   margin-top: 0.5em;
+}
+
+.wm-counter {
+  color: grey; 
 }
 
 .wm-group {
