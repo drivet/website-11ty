@@ -25,9 +25,9 @@
       </div>
       <div class="rowitem--right row--spacious">
         {% for s in syndications %}
-        <a class="u-syndication" href="{{ s }}" title="Syndicated" class="entry__link"><i class="{{ s | synicon }}"></i></a>
+        <a class="u-syndication entry__link" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
         {% endfor %}
-        <a class="u-url" href="{{ url }}" title="Permalink" class="entry__link"><i class="fa fa-link"></i></a>
+        <a class="u-url entry__link" href="{{ url }}" title="Permalink"><i class="fa fa-link"></i></a>
       </div>
     </div>
 </footer>
