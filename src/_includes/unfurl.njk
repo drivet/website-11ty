@@ -14,9 +14,9 @@
 {% endif %}
 
 {% if meta.open_graph.images and meta.open_graph.images.length > 0 %}
-<img src="{{meta.open_graph.images[0].url}}" class="u-photo image"/>
+<img alt="open graph image" src="{{meta.open_graph.images[0].url}}" class="u-photo image"/>
 {% elif meta.twitter_card.images and meta.twitter_card.images.length > 0 %}
-<img src="{{meta.twitter_card.images[0].url}}" class="u-photo image" />
+<img alt="twitter card image" src="{{meta.twitter_card.images[0].url}}" class="u-photo image" />
 {% endif %}
 
 </blockquote>

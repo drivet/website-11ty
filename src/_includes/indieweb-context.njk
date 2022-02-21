@@ -1,6 +1,6 @@
 {% macro author(author) %}
 {% if author.photo %}
-<img src="{{ author.photo }}" class="u-photo avatar"/>
+<img alt="author photo" src="{{ author.photo }}" class="u-photo avatar"/>
 {% endif %}
 {% if author.name and author.url %}
 <a href="{{author.url}}">{{author.name}}</a>
