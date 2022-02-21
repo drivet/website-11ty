@@ -11,7 +11,7 @@
        <span title="Tags"><i class="fa fa-tag fa-flip-horizontal"></i>
        {% set comma = joiner() %}
        {% for tag in tags %}
-       {{ comma() }} <a href="/posts/tags/{{tag}}.html"> {{ tag }} </a>
+       {{ comma() }} <a class="p-category" href="/posts/tags/{{tag}}.html"> {{ tag }} </a>
        {% endfor %}
        </span>
     </div>
@@ -25,9 +25,9 @@
       </div>
       <div class="rowitem--right row--spacious">
         {% for s in syndications %}
-        <a href="{{ s }}" title="Syndicated" class="entry__link"><i class="{{ s | synicon }}"></i></a>
+        <a class="u-syndication" href="{{ s }}" title="Syndicated" class="entry__link"><i class="{{ s | synicon }}"></i></a>
         {% endfor %}
-        <a href="{{ url }}" title="Permalink" class="entry__link"><i class="fa fa-link"></i></a>
+        <a class="u-url" href="{{ url }}" title="Permalink" class="entry__link"><i class="fa fa-link"></i></a>
       </div>
     </div>
 </footer>
