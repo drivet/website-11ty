@@ -16,7 +16,7 @@
     
   </header>
   
-  <section class="e-content">
+  <div class="e-content">
   {% if postType == "like"%}
   Liked a <a class="u-like-of" href="{{mp_properties['like-of']}}">post</a>
   {% elseif postType == "repost"%}
@@ -45,7 +45,7 @@
   {% include "preview.njk" %}
   {% endif %}
   {% endif %}
-  </section>
+  </div>
   {% set url = page.url | strip_ext %} 
   {% set expand = true %}
   {% include "entry-footer.njk" %}
