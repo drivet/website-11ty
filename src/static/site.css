@@ -131,7 +131,9 @@ a {
 }
 
 .feed__navbaritem {
-  padding: 0.5em 0em 0.5em 0em;
+  padding: 0.45em 0em 0.45em 0em;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
 }
 
 .feed__navbaritem--active {
