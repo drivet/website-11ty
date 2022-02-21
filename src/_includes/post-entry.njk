@@ -46,7 +46,7 @@
   {% if post.data.postType == 'article' %}
   <a href="{{ post.url | strip_ext }}">Read more &raquo;</a>
   {% endif %}
-  <section>
+  </section>
   {% set tags = post.data.tags %}
   {% set url = post.url | strip_ext %}
   {% include "entry-footer.njk" %}
