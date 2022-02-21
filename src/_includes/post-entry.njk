@@ -4,13 +4,14 @@
   <header>
     <a href="/" class="u-author"></a>
     
-    <span class="entry__published">{{ post.data.date | date  }}</span>
+    <span class="entry__published dt-published">{{ post.data.date | date  }}</span>
     
     {% if post.data.title  %}
-    <h2 class="entry__title"><a href="{{ post.url | strip_ext }}" class="entry__titlelink">{{ post.data.title }}</a></h2>
+    <h2 class="entry__title p-name"><a href="{{ post.url | strip_ext }}" class="entry__titlelink">{{ post.data.title }}</a></h2>
     {% endif %}
   </header>
   
+  <section class="e-content">
   <p>
   {% if post.data.postType == "like"%}
   Liked a <a href="{{post.data.mp_properties['like-of']}}">post</a>
@@ -45,7 +46,7 @@
   {% if post.data.postType == 'article' %}
   <a href="{{ post.url | strip_ext }}">Read more &raquo;</a>
   {% endif %}
-  
+  <section>
   {% set tags = post.data.tags %}
   {% set url = post.url | strip_ext %}
   {% include "entry-footer.njk" %}
