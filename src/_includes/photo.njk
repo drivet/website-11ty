@@ -3,8 +3,8 @@
 {% if photoObj.value and photoObj.alt %} 
 <img src="{{ photoObj.value }}" alt="{{ photoObj.alt }}" class="u-photo entry__photo image"/>
 {% elif photoObj.value %}
-<img src="{{ photoObj.value }}" class="u-photo entry__photo image"/>
+<img alt="post photo" src="{{ photoObj.value }}" class="u-photo entry__photo image"/>
 {% else %}
-<img src="{{ photoObj }}" class="u-photo entry__photo image"/>
+<img alt="post photo" src="{{ photoObj }}" class="u-photo entry__photo image"/>
 {% endif %}
 {% endmacro %}
