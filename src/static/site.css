@@ -20,10 +20,10 @@ body {
 }
 
 blockquote {
-  margin-left: 0.75em;
-  margin-right: 0;
-  padding-left: 1.25em;
-  border-left: 4px solid lightgrey;
+  margin: 0;
+  padding: 0 0 0 1em;
+  border-left: 3px solid;
+  border-color: lightgrey;
 }
 
 @media only screen and (min-width : 769px) {

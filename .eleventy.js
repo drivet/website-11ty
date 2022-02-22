@@ -264,25 +264,6 @@ module.exports = (eleventyConfig) => {// Browsersync config
   eleventyConfig.addFilter("webmention_kind", webmentionKind);
   eleventyConfig.addFilter("syndications_for_url", sydicationsForUrl);
 
-  eleventyConfig.addFilter("bridgy_mentions", syndication_tokens => {
-    if (!syndication_tokens) {
-      return [];
-    }
-    return syndication_tokens.
-      map(s => {
-        if (s === 'twitter_bridgy_no_link') {
-          return 'https://brid.gy/publish/twitter?bridgy_omit_link=true'
-        } else if (s === 'twitter_bridgy_maybe_link') {
-          return 'https://brid.gy/publish/twitter?bridgy_omit_link=maybe'
-        } else if (s === 'twitter') {
-          return 'https://brid.gy/publish/twitter'
-        } else {
-          return undefined;
-        }
-      }).
-      filter(s => !!s);
-  });
-
   eleventyConfig.addFilter('link_context_type', scraped => {
     if (!scraped) {
       return null;
@@ -322,17 +303,6 @@ module.exports = (eleventyConfig) => {// Browsersync config
     }
   });
 
-  eleventyConfig.addFilter('referenced_link', properties => {
-    if (!properties) {
-      return null;
-    }
-    
-    return _.head(properties['like-of']) ||
-           _.head(properties['repost-of']) ||
-           _.head(properties['in-reply-to']) ||
-           _.head(properties['bookmark-of']);
-  }); 
-  
   eleventyConfig.addFilter('content_link', content => {
     const links = html.links(content);
     return links[0];
