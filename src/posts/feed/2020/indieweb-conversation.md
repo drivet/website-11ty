@@ -1,11 +1,12 @@
 ---
 blurb: 'In which I describe how to avoid solipsism on the #indieweb'
-date: 2020-04-04 21:30:09-04:00
-modified: 2020-04-04 21:30:09-04:00
-mp_syndicate_to: twitter_bridgy
+date: 2020-04-05T01:30:09.000Z
+modified: 2020-04-05T01:30:09.000Z
 tags:
-- indieweb
+  - indieweb
 title: How to Have a Conversation on the IndieWeb
+mp-syndicate-to:
+  - twitter_bridgy
 ---
 
 If you've read my [previous articles][1] on the [IndieWeb][2], you might be

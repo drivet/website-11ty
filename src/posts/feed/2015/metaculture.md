@@ -1,11 +1,11 @@
 ---
-date: 2015-10-10 00:31:28.202881-04:00
-modified: 2015-10-10 00:31:28.202881-04:00
+date: 2015-10-10T04:31:28.202Z
+modified: 2015-10-10T04:31:28.202Z
 tags:
-- society
-- multiculturalism
-- culture
-title: Putting "Meta" in Front of Words Makes them Sound Cooler, Right?
+  - society
+  - multiculturalism
+  - culture
+title: 'Putting "Meta" in Front of Words Makes them Sound Cooler, Right?'
 ---
 
 One time, back when I was actually semi-active on Google+, I came across a

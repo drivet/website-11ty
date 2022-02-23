@@ -1,11 +1,11 @@
 ---
-date: 2008-04-09 01:50:44-04:00
-modified: 2015-05-16 01:52:56.441248-04:00
+date: 2008-04-09T05:50:44.000Z
+modified: 2015-05-16T05:52:56.441Z
 tags:
-- society
-- french
-- quebec
-- culture
+  - society
+  - french
+  - quebec
+  - culture
 title: French as an Emergent Property
 ---
 

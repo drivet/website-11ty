@@ -1,10 +1,10 @@
 ---
-date: 2008-07-06 19:00:01-04:00
-modified: 2015-05-16 01:53:03.040613-04:00
+date: 2008-07-06T23:00:01.000Z
+modified: 2015-05-16T05:53:03.040Z
 tags:
-- technical
-- perl
-- programming
+  - technical
+  - perl
+  - programming
 title: Error Handling in Perl
 ---
 

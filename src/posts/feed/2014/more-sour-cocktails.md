@@ -1,11 +1,11 @@
 ---
-date: 2014-12-22 04:37:20-05:00
-modified: 2015-05-16 01:52:58.419418-04:00
+date: 2014-12-22T09:37:20.000Z
+modified: 2015-05-16T05:52:58.419Z
 tags:
-- food
-- cocktails
-- embury
-- recipes
+  - food
+  - cocktails
+  - embury
+  - recipes
 title: More on Sour Cocktails
 ---
 

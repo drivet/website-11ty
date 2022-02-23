@@ -1,9 +1,9 @@
 ---
-date: 2016-12-31 02:21:00-05:00
+date: 2016-12-31T07:21:00.000Z
 tags:
-- food
-- cocktails
-- recipes
+  - food
+  - cocktails
+  - recipes
 title: It's Not Easy Being Green
 ---
 

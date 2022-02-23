@@ -1,8 +1,8 @@
 ---
-date: 2008-02-27 14:52:50-05:00
-modified: 2015-05-16 01:53:01.352853-04:00
+date: 2008-02-27T19:52:50.000Z
+modified: 2015-05-16T05:53:01.352Z
 tags:
-- television
+  - television
 title: Why Watching "Buffy the Vampire Slayer" Is Not a Waste of Time
 ---
 

@@ -1,11 +1,11 @@
 ---
-date: 2013-07-30 03:08:15-04:00
-modified: 2015-05-16 01:52:58.078096-04:00
+date: 2013-07-30T07:08:15.000Z
+modified: 2015-05-16T05:52:58.078Z
 tags:
-- food
-- baking
-- jaffa-cakes
-- recipes
+  - food
+  - baking
+  - jaffa-cakes
+  - recipes
 title: 'Jaffa Cakes for North Americans: an Odyssey'
 ---
 

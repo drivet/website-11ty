@@ -1,11 +1,11 @@
 ---
-date: 2012-08-05 02:18:53-04:00
-modified: 2015-05-16 01:52:57.214090-04:00
+date: 2012-08-05T06:18:53.000Z
+modified: 2015-05-16T05:52:57.214Z
 tags:
-- society
-- islam
-- religion
-- culture
+  - society
+  - islam
+  - religion
+  - culture
 title: Religion Versus Culture
 ---
 

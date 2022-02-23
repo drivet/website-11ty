@@ -1,12 +1,12 @@
 ---
-date: 2013-11-20 03:53:49-05:00
-modified: 2015-05-16 01:53:02.140388-04:00
+date: 2013-11-20T08:53:49.000Z
+modified: 2015-05-16T05:53:02.140Z
 tags:
-- society
-- quebec
-- religion
-- charter
-- atheism
+  - society
+  - quebec
+  - religion
+  - charter
+  - atheism
 title: Charter Ramblings
 ---
 

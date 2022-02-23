@@ -1,11 +1,11 @@
 ---
-date: 2012-09-14 01:24:20-04:00
-modified: 2015-05-16 01:52:58.247854-04:00
+date: 2012-09-14T05:24:20.000Z
+modified: 2015-05-16T05:52:58.247Z
 tags:
-- food
-- cocktails
-- embury
-- recipes
+  - food
+  - cocktails
+  - embury
+  - recipes
 title: Sour Cocktails and the Embury Ratio
 ---
 

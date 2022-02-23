@@ -1,5 +1,5 @@
 {% macro photo(photoArr) %}
-{% set photoObj = photoArr[0] %}
+{% for photoObj in photoArr %}
 {% if photoObj.value and photoObj.alt %} 
 <img src="{{ photoObj.value }}" alt="{{ photoObj.alt }}" class="u-photo entry__photo image"/>
 {% elif photoObj.value %}
@@ -7,4 +7,5 @@
 {% else %}
 <img alt="post photo" src="{{ photoObj }}" class="u-photo entry__photo image"/>
 {% endif %}
+{% endfor %}
 {% endmacro %}

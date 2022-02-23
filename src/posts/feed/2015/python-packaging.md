@@ -1,10 +1,10 @@
 ---
-date: 2015-01-16 01:43:35-05:00
-modified: 2015-05-16 01:53:03.218193-04:00
+date: 2015-01-16T06:43:35.000Z
+modified: 2015-05-16T05:53:03.218Z
 tags:
-- technical
-- python
-- programming
+  - technical
+  - python
+  - programming
 title: Coming to Terms with the Nightmare that is Python Packaging
 ---
 

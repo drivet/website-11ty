@@ -1,8 +1,8 @@
 ---
-date: 2007-06-11 16:13:04-04:00
-modified: 2015-05-16 01:53:00.916933-04:00
+date: 2007-06-11T20:13:04.000Z
+modified: 2015-05-16T05:53:00.916Z
 tags:
-- language
+  - language
 title: Why I'll Never Be a Good Speller
 ---
 

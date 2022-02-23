@@ -1,9 +1,9 @@
 ---
-date: 2012-02-23 10:42:00-05:00
-modified: 2015-11-21 02:06:25-05:00
+date: 2012-02-23T15:42:00.000Z
+modified: 2015-11-21T07:06:25.000Z
 tags:
-- montreal
-- toronto
+  - montreal
+  - toronto
 title: Toronto Versus Montreal
 ---
 

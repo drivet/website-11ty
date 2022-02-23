@@ -1,11 +1,11 @@
 ---
-date: 2014-12-23 04:49:32-05:00
-modified: 2015-05-16 01:52:58.602584-04:00
+date: 2014-12-23T09:49:32.000Z
+modified: 2015-05-16T05:52:58.602Z
 tags:
-- food
-- cocktails
-- embury
-- recipes
+  - food
+  - cocktails
+  - embury
+  - recipes
 title: Meditations on the Aromatic Cocktail
 ---
 

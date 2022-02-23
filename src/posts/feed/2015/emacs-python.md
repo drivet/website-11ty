@@ -1,11 +1,11 @@
 ---
-date: 2015-08-20 01:48:47-04:00
-modified: 2015-08-21 01:53:02-04:00
+date: 2015-08-20T05:48:47.000Z
+modified: 2015-08-21T05:53:02.000Z
 tags:
-- technical
-- emacs
-- python
-- programming
+  - technical
+  - emacs
+  - python
+  - programming
 title: Emacs and Python
 ---
 

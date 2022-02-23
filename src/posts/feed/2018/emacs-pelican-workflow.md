@@ -1,11 +1,11 @@
 ---
-date: 2018-03-30 13:25:49-04:00
-modified: 2018-03-30 13:25:49-04:00
+date: 2018-03-30T17:25:49.000Z
+modified: 2018-03-30T17:25:49.000Z
 tags:
-- blogging
-- python
-- pelican
-- emacs
+  - blogging
+  - python
+  - pelican
+  - emacs
 title: Blogging with Emacs and Pelican
 ---
 

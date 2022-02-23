@@ -1,8 +1,8 @@
 ---
-date: 2007-12-17 16:10:31-05:00
-modified: 2015-05-16 01:53:00.741175-04:00
+date: 2007-12-17T21:10:31.000Z
+modified: 2015-05-16T05:53:00.741Z
 tags:
-- montreal
+  - montreal
 title: Let It Snow
 ---
 

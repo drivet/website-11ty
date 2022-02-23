@@ -1,11 +1,11 @@
 ---
-date: 2015-10-06 02:52:17.295924-04:00
-modified: 2015-10-06 02:54:53.341724-04:00
+date: 2015-10-06T06:52:17.295Z
+modified: 2015-10-06T06:54:53.341Z
 tags:
-- society
-- niqabs
-- religion
-- canada
+  - society
+  - niqabs
+  - religion
+  - canada
 title: On Being "Accommodating"
 ---
 

@@ -1,8 +1,8 @@
 ---
-date: 2008-04-22 16:34:21-04:00
-modified: 2015-05-16 01:53:00.568155-04:00
+date: 2008-04-22T20:34:21.000Z
+modified: 2015-05-16T05:53:00.568Z
 tags:
-- montreal
+  - montreal
 title: Hockey and Looting
 ---
 

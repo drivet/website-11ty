@@ -1,10 +1,10 @@
 ---
-date: 2016-12-27 20:45:00-05:00
+date: 2016-12-28T01:45:00.000Z
 tags:
-- food
-- cocktails
-- embury
-- recipes
+  - food
+  - cocktails
+  - embury
+  - recipes
 title: Life is Bitter
 ---
 

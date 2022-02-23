@@ -1,11 +1,12 @@
 ---
 blurb: 'In which I zoom in slightly on the #indieweb'
-date: 2020-01-05 11:06:35-05:00
-modified: 2020-01-05 11:06:35-05:00
-mp_syndicate_to: twitter_bridgy
+date: 2020-01-05T16:06:35.000Z
+modified: 2020-01-05T16:06:35.000Z
 tags:
-- indieweb
+  - indieweb
 title: Your Website Is Your Castle
+mp-syndicate-to:
+  - twitter_bridgy
 ---
 
 In a [previous blog post][1], I gave a very brief introduction to the

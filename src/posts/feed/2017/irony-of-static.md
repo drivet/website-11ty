@@ -1,9 +1,9 @@
 ---
-date: 2017-02-25 21:35:00-05:00
-modified: 2017-02-25 21:35:00-05:00
+date: 2017-02-26T02:35:00.000Z
+modified: 2017-02-26T02:35:00.000Z
 tags:
-- blogging
-- pelican
+  - blogging
+  - pelican
 title: On the Irony of Using Static Site Generators
 ---
 

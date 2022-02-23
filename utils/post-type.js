@@ -26,26 +26,11 @@ function getHtmlValue(html) {
  * @return {String} Extracted value
  */
 function getPropValue(value) {
-  return value ? getValue(value[0]) : undefined;
+  return value ? getValue(Array.isArray(value) ? value[0] : value) : undefined;
 }
 
 function getValue(value) {
   return value.value || getHtmlValue(value.html) || value;
-}
-
-/**
- * Strip the content and name of non-alphanumeric
- * characters and check if the content includes the name.
- *
- * @private
- * @param {String} name Name property of the item
- * @param {String} content Content property of the item
- * @return {Boolean} Whether the content includes the name
- */
- function contentIncludesName(name, content) {
-  const trimmedName = name.replace(/\W+/g, ' ');
-  const trimmedContent = content.replace(/\W+/g, ' ');
-  return trimmedContent.indexOf( trimmedName ) !== -1;
 }
 
 function postType(item) {
@@ -57,7 +42,7 @@ function postType(item) {
     return "event";
   }
 
-  const props = item.data.mp_properties ? item.data.mp_properties : {}
+  const props = item.data;
   const propNames = Object.keys(props);
 
   if (propNames.includes( 'rsvp' ) &&
@@ -84,19 +69,7 @@ function postType(item) {
     }
   }
 
-  const name = props.name ? getPropValue( props.name ) : undefined;
-  const title = name ? name : item.data.title;
-  return title ? 'article' : 'note';
-  
-  /*
-  const content = getValue( item.content ) || getValue( props.summary );
-  
-  if (content && title && !contentIncludesName(title, content)) {
-    return 'article';
-  }
-
-  return "note";
-  */
+  return item.data.title ? 'article' : 'note';
 }
 
 module.exports = {

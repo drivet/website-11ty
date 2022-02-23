@@ -1,12 +1,13 @@
 ---
 blurb: 'Why I write #indieweb'
-date: 2020-04-28 12:01:23-04:00
-modified: 2020-04-28 12:01:23-04:00
-mp_syndicate_to: twitter_bridgy
+date: 2020-04-28T16:01:23.000Z
+modified: 2020-04-28T16:01:23.000Z
 tags:
-- blogging
-- indieweb
+  - blogging
+  - indieweb
 title: Pieces of Thinking
+mp-syndicate-to:
+  - twitter_bridgy
 ---
 
 [Jan-Lukas Else][1] recently [asked the Hacker News community][2] why most

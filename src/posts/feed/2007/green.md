@@ -1,9 +1,9 @@
 ---
-date: 2007-07-15 18:23:30-04:00
-modified: 2015-05-16 01:52:56.646553-04:00
+date: 2007-07-15T22:23:30.000Z
+modified: 2015-05-16T05:52:56.646Z
 tags:
-- philosophy
-- qualia
+  - philosophy
+  - qualia
 title: Seeing Green
 ---
 

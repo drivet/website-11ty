@@ -1,12 +1,12 @@
 ---
-date: 2012-06-28 11:51:00-04:00
-modified: 2015-05-16 01:53:01.933752-04:00
+date: 2012-06-28T15:51:00.000Z
+modified: 2015-05-16T05:53:01.933Z
 tags:
-- society
-- niqabs
-- islam
-- religion
-- france
+  - society
+  - niqabs
+  - islam
+  - religion
+  - france
 title: On the Banning of Niqabs
 ---
 

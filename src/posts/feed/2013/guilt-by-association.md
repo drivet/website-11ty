@@ -1,9 +1,9 @@
 ---
-date: 2013-01-23 03:14:25-05:00
-modified: 2015-05-16 01:53:00.028186-04:00
+date: 2013-01-23T08:14:25.000Z
+modified: 2015-05-16T05:53:00.028Z
 tags:
-- feminism
-- rape
+  - feminism
+  - rape
 title: Guilt by Association
 ---
 

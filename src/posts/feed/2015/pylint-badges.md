@@ -1,10 +1,10 @@
 ---
-date: 2015-09-22 02:15:12.632484-04:00
-modified: 2015-09-22 02:15:12.632484-04:00
+date: 2015-09-22T06:15:12.632Z
+modified: 2015-09-22T06:15:12.632Z
 tags:
-- technical
-- python
-- programming
+  - technical
+  - python
+  - programming
 title: Generating Pylint Badges
 ---
 

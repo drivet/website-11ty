@@ -1,11 +1,12 @@
 ---
 blurb: 'Your personal website as a form of identification #indieweb'
-date: 2020-02-12 22:27:54-05:00
-modified: 2020-02-12 22:27:54-05:00
-mp_syndicate_to: twitter_bridgy
+date: 2020-02-13T03:27:54.000Z
+modified: 2020-02-13T03:27:54.000Z
 tags:
-- indieweb
+  - indieweb
 title: Your Website Is Your Passport
+mp-syndicate-to:
+  - twitter_bridgy
 ---
 
 One of the themes that crops up again and again in the [IndieWeb][1]

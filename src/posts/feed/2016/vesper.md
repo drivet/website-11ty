@@ -1,9 +1,9 @@
 ---
-date: 2016-12-22 22:17:00-05:00
+date: 2016-12-23T03:17:00.000Z
 tags:
-- food
-- cocktails
-- recipes
+  - food
+  - cocktails
+  - recipes
 title: It Started with the Vesper
 ---
 

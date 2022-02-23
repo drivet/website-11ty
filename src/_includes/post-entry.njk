@@ -30,8 +30,8 @@
 
   {{ post.templateContent | excerpt | safe }}
 
-  {% if post.data.mp_properties.photo %}
-  {{ photo(post.data.mp_properties.photo) }}
+  {% if post.data.photo %}
+  {{ photo(post.data.photo) }}
   {% endif %}
 
   {% if post.data.postType != 'article' %}

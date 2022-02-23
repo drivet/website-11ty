@@ -1,13 +1,13 @@
 ---
-date: 2012-08-17 01:47:26-04:00
-modified: 2015-05-16 01:52:57.043134-04:00
+date: 2012-08-17T05:47:26.000Z
+modified: 2015-05-16T05:52:57.043Z
 tags:
-- society
-- religion
-- quebec
-- culture
-- atheism
-title: Church, State, and Culture
+  - society
+  - religion
+  - quebec
+  - culture
+  - atheism
+title: 'Church, State, and Culture'
 ---
 
 Have you ever wondered why the separation of church and state is good idea?

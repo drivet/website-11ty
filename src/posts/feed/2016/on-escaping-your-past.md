@@ -1,9 +1,9 @@
 ---
-date: 2016-04-02 01:45:01.152350-04:00
-modified: 2016-04-02 02:34:58.532228-04:00
+date: 2016-04-02T05:45:01.152Z
+modified: 2016-04-02T06:34:58.532Z
 tags:
-- religion
-- atheism
+  - religion
+  - atheism
 title: On Trying to Escape Your Past
 ---
 

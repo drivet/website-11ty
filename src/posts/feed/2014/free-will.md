@@ -1,9 +1,9 @@
 ---
-date: 2014-05-13 00:59:24-04:00
-modified: 2015-05-16 01:52:56.840039-04:00
+date: 2014-05-13T04:59:24.000Z
+modified: 2015-05-16T05:52:56.840Z
 tags:
-- philosophy
-- free-will
+  - philosophy
+  - free-will
 title: On Billiard Balls and Scorched Cats
 ---
 

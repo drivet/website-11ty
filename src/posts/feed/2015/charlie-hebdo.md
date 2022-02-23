@@ -1,12 +1,12 @@
 ---
-date: 2015-01-16 01:31:40-05:00
-modified: 2015-05-16 01:53:02.343155-04:00
+date: 2015-01-16T06:31:40.000Z
+modified: 2015-05-16T05:53:02.343Z
 tags:
-- society
-- religion
-- france
-- islam
-- free-speech
+  - society
+  - religion
+  - france
+  - islam
+  - free-speech
 title: You Keep Using That Word
 ---
 

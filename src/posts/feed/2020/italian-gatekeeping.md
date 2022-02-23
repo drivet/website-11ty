@@ -1,11 +1,12 @@
 ---
 blurb: In which I reflect on gatekeeping in Italian cooking
-date: 2020-09-02 22:06:13-04:00
-modified: 2020-09-02 22:06:13-04:00
-mp_syndicate_to: twitter_bridgy
+date: 2020-09-03T02:06:13.000Z
+modified: 2020-09-03T02:06:13.000Z
 tags:
-- cooking
+  - cooking
 title: On Carrots in Tomato Sauce
+mp-syndicate-to:
+  - twitter_bridgy
 ---
 
 Not long ago, I joined an Italian cooking group on Facebook.  I thought it

@@ -1,11 +1,11 @@
 ---
-date: 2015-08-13 00:31:21-04:00
-modified: 2015-08-21 01:54:00-04:00
+date: 2015-08-13T04:31:21.000Z
+modified: 2015-08-21T05:54:00.000Z
 tags:
-- society
-- quebec
-- referendum
-- culture
+  - society
+  - quebec
+  - referendum
+  - culture
 title: Reflections on the Ethnic Vote
 ---
 

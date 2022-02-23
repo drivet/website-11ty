@@ -1,6 +1,6 @@
 ---
-date: 2007-12-12 18:09:33-05:00
-modified: 2015-05-16 01:52:57.561237-04:00
+date: 2007-12-12T23:09:33.000Z
+modified: 2015-05-16T05:52:57.561Z
 title: The Intersection of Art and Science
 ---
 

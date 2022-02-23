@@ -1,8 +1,8 @@
 ---
-date: 2018-05-01 22:45:07-04:00
-modified: 2018-05-01 22:45:07-04:00
+date: 2018-05-02T02:45:07.000Z
+modified: 2018-05-02T02:45:07.000Z
 tags:
-- theremin
+  - theremin
 title: On Pulling Musical Notes Out of Thin Air
 ---
 

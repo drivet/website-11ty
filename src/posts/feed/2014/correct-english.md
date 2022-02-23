@@ -1,8 +1,8 @@
 ---
-date: 2014-09-08 01:09:19-04:00
-modified: 2015-05-16 01:53:01.885293-04:00
+date: 2014-09-08T05:09:19.000Z
+modified: 2015-05-16T05:53:01.885Z
 tags:
-- language
+  - language
 title: The Plural of Book
 ---
 

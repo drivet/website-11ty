@@ -1,11 +1,12 @@
 ---
-blurb: "In which I discover that I'm retro, not pass\xE9 #indieweb"
-date: 2019-12-08 12:46:15-05:00
-modified: 2019-12-08 12:46:15-05:00
-mp_syndicate_to: twitter_bridgy
+blurb: 'In which I discover that I''m retro, not passé #indieweb'
+date: 2019-12-08T17:46:15.000Z
+modified: 2019-12-08T17:46:15.000Z
 tags:
-- indieweb
+  - indieweb
 title: In the Beginning Was the Website
+mp-syndicate-to:
+  - twitter_bridgy
 ---
 
 I don't think I've ever felt quite as old as I felt when, last year, I

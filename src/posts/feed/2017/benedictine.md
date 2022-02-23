@@ -1,9 +1,9 @@
 ---
-date: 2017-01-07 21:32:00-05:00
+date: 2017-01-08T02:32:00.000Z
 tags:
-- food
-- cocktails
-- recipes
+  - food
+  - cocktails
+  - recipes
 title: Not Invented by Monks
 ---
 

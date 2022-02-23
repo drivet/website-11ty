@@ -1,10 +1,10 @@
 ---
-date: 2015-07-11 15:33:00-04:00
-modified: 2015-07-11 15:33:00-04:00
+date: 2015-07-11T19:33:00.000Z
+modified: 2015-07-11T19:33:00.000Z
 tags:
-- travel
-- greece
-- language
+  - travel
+  - greece
+  - language
 title: Don't Make the Joke
 ---
 

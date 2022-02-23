@@ -1,9 +1,9 @@
 ---
-date: 2008-09-08 23:39:14-04:00
-modified: 2015-05-16 01:52:59.151425-04:00
+date: 2008-09-09T03:39:14.000Z
+modified: 2015-05-16T05:52:59.151Z
 tags:
-- blogging
-- yawt
+  - blogging
+  - yawt
 title: Comments and Trackbacks Have Been Deactivated
 ---
 

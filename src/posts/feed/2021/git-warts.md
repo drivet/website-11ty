@@ -1,9 +1,10 @@
 ---
 blurb: I cannot be the only one who thinks that git is awful
-date: 2021-08-25 21:17:13-04:00
-modified: 2021-08-25 21:17:13-04:00
-mp_syndicate_to: twitter_bridgy
+date: 2021-08-26T01:17:13.000Z
+modified: 2021-08-26T01:17:13.000Z
 title: Git is Terrible
+mp-syndicate-to:
+  - twitter_bridgy
 ---
 
 If I say that my professional life has spanned [RCS][1], [CVS][2],

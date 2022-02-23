@@ -1,12 +1,12 @@
 ---
-date: 2013-07-31 00:51:26-04:00
-modified: 2015-05-16 01:53:01.162350-04:00
+date: 2013-07-31T04:51:26.000Z
+modified: 2015-05-16T05:53:01.162Z
 og_description: In which I try to gauge my reaction to the Canada Malting building
 og_image: /blog/miscellanea/IMG_0646.JPG
 tags:
-- montreal
-- saint-henri
-- graffiti
+  - montreal
+  - saint-henri
+  - graffiti
 title: Oatmeal Stout Under the Watchful Eye of Abandoned Silos
 ---
 

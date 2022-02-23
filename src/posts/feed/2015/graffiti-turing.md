@@ -1,10 +1,10 @@
 ---
-date: 2015-11-26 03:44:00-05:00
-modified: 2015-11-26 03:44:00-05:00
+date: 2015-11-26T08:44:00.000Z
+modified: 2015-11-26T08:44:00.000Z
 tags:
-- saint-henri
-- montreal
-- graffiti
+  - saint-henri
+  - montreal
+  - graffiti
 title: Graffiti and the Art Test
 ---
 

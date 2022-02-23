@@ -1,9 +1,9 @@
 ---
-date: 2016-06-29 23:32:00-04:00
+date: 2016-06-30T03:32:00.000Z
 tags:
-- travel
-- poland
-- zurek
+  - travel
+  - poland
+  - zurek
 title: Pierogieland
 ---
 

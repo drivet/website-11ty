@@ -1,8 +1,8 @@
 ---
-date: 2012-12-15 00:51:46-05:00
-modified: 2015-05-16 01:53:03.581847-04:00
+date: 2012-12-15T05:51:46.000Z
+modified: 2015-05-16T05:53:03.581Z
 tags:
-- technical
+  - technical
 title: Of Red Hats and Mints
 ---
 

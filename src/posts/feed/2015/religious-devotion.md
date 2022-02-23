@@ -1,10 +1,10 @@
 ---
-date: 2015-11-16 23:53:22.594563-05:00
-modified: 2015-11-16 23:54:53.292529-05:00
+date: 2015-11-17T04:53:22.594Z
+modified: 2015-11-17T04:54:53.292Z
 tags:
-- society
-- religion
-- islam
+  - society
+  - religion
+  - islam
 title: Have You Ever Actually Read That Thing?
 ---
 

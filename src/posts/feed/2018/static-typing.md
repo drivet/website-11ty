@@ -1,9 +1,9 @@
 ---
-date: 2018-01-18 20:46:00-05:00
-modified: 2018-03-17 19:03:39-04:00
+date: 2018-01-19T01:46:00.000Z
+modified: 2018-03-17T23:03:39.000Z
 tags:
-- technical
-- programming
+  - technical
+  - programming
 title: 'Static Typing, IDEs, Automated Testing: An Eternal Golden Braid'
 ---
 

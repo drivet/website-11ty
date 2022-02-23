@@ -1,10 +1,10 @@
 ---
-date: 2008-02-13 16:31:46-05:00
-modified: 2015-05-16 01:53:03.401994-04:00
+date: 2008-02-13T21:31:46.000Z
+modified: 2015-05-16T05:53:03.401Z
 tags:
-- technical
-- perl
-- programming
+  - technical
+  - perl
+  - programming
 title: Scoping in Perl
 ---
 

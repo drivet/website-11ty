@@ -1,6 +1,6 @@
 ---
-date: 2008-01-06 20:26:29-05:00
-modified: 2015-05-16 01:52:56.237031-04:00
+date: 2008-01-07T01:26:29.000Z
+modified: 2015-05-16T05:52:56.237Z
 title: Solar System Simulations
 ---
 

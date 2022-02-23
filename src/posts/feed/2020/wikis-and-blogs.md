@@ -1,13 +1,14 @@
 ---
 blurb: 'Digging into the differences between wikis and blogs #indieweb'
-date: 2020-05-01 06:24:25-04:00
-modified: 2020-05-01 06:24:25-04:00
-mp_syndicate_to: twitter_bridgy
+date: 2020-05-01T10:24:25.000Z
+modified: 2020-05-01T10:24:25.000Z
 tags:
-- blogging
-- wiki
-- indieweb
+  - blogging
+  - wiki
+  - indieweb
 title: On Gardens and Streams
+mp-syndicate-to:
+  - twitter_bridgy
 ---
 
 I attended my first [IndieWebCamp session][1] last week, on the subject of

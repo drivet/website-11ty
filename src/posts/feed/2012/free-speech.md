@@ -1,10 +1,10 @@
 ---
-date: 2012-08-06 01:37:37-04:00
-modified: 2015-05-16 01:52:57.383328-04:00
+date: 2012-08-06T05:37:37.000Z
+modified: 2015-05-16T05:52:57.383Z
 tags:
-- society
-- free-speech
-- rape
+  - society
+  - free-speech
+  - rape
 title: What Free Speech Isn't
 ---
 

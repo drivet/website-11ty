@@ -1,6 +1,6 @@
 ---
-date: 2007-06-11 16:12:39-04:00
-modified: 2015-05-16 01:52:57.739630-04:00
+date: 2007-06-11T20:12:39.000Z
+modified: 2015-05-16T05:52:57.739Z
 title: What it Means to Have an Opinion
 ---
 

@@ -1,10 +1,10 @@
 ---
-date: 2012-08-05 03:22:15-04:00
-modified: 2015-05-16 01:52:59.311239-04:00
+date: 2012-08-05T07:22:15.000Z
+modified: 2015-05-16T05:52:59.311Z
 tags:
-- blogging
-- python
-- yawt
+  - blogging
+  - python
+  - yawt
 title: YAWT Lives!
 ---
 

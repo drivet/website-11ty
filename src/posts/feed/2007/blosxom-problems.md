@@ -1,9 +1,9 @@
 ---
-date: 2007-07-13 11:56:32-04:00
-modified: 2015-05-16 01:52:59.845906-04:00
+date: 2007-07-13T15:56:32.000Z
+modified: 2015-05-16T05:52:59.845Z
 tags:
-- blogging
-- blosxom
+  - blogging
+  - blosxom
 title: Blosxom Warts
 ---
 

@@ -1,11 +1,11 @@
 ---
-date: 2008-04-06 20:00:44-04:00
-modified: 2015-05-16 01:52:58.976361-04:00
+date: 2008-04-07T00:00:44.000Z
+modified: 2015-05-16T05:52:58.976Z
 tags:
-- blogging
-- yawt
-- blosxom
-- perl
+  - blogging
+  - yawt
+  - blosxom
+  - perl
 title: New Blog
 ---
 

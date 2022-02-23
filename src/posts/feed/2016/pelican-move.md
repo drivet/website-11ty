@@ -1,8 +1,8 @@
 ---
-date: 2016-12-12 22:06:00-05:00
+date: 2016-12-13T03:06:00.000Z
 tags:
-- blogging
-- pelican
+  - blogging
+  - pelican
 title: Moving to Pelican
 ---
 

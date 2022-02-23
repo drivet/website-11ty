@@ -1,9 +1,9 @@
 ---
-date: 2018-09-02 16:03:25-04:00
-modified: 2018-09-02 16:03:25-04:00
+date: 2018-09-02T20:03:25.000Z
+modified: 2018-09-02T20:03:25.000Z
 tags:
-- technical
-- angular
+  - technical
+  - angular
 title: Angst and the Angular Module System
 ---
 

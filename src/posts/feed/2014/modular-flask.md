@@ -1,12 +1,12 @@
 ---
-date: 2014-10-16 01:01:35-04:00
-modified: 2015-05-16 01:53:02.815585-04:00
+date: 2014-10-16T05:01:35.000Z
+modified: 2015-05-16T05:53:02.815Z
 tags:
-- technical
-- python
-- yawt
-- flask
-- programming
+  - technical
+  - python
+  - yawt
+  - flask
+  - programming
 title: Thoughts on Modularizing Flask Applications
 ---
 

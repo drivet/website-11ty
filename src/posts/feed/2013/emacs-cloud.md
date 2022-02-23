@@ -1,9 +1,9 @@
 ---
-date: 2013-10-30 01:50:12-04:00
-modified: 2015-05-16 01:53:02.520519-04:00
+date: 2013-10-30T05:50:12.000Z
+modified: 2015-05-16T05:53:02.520Z
 tags:
-- technical
-- emacs
+  - technical
+  - emacs
 title: Being an Emacs User in the Cloud Age
 ---
 

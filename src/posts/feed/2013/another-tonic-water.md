@@ -1,11 +1,11 @@
 ---
-date: 2013-06-05 00:25:51-04:00
-modified: 2015-05-16 01:52:57.906737-04:00
+date: 2013-06-05T04:25:51.000Z
+modified: 2015-05-16T05:52:57.906Z
 tags:
-- food
-- cocktails
-- tonic
-- recipes
+  - food
+  - cocktails
+  - tonic
+  - recipes
 title: Another Batch of Tonic Water
 ---
 

@@ -1,8 +1,8 @@
 ---
-date: 2013-04-05 00:50:47-04:00
-modified: 2015-05-16 01:53:01.703092-04:00
+date: 2013-04-05T04:50:47.000Z
+modified: 2015-05-16T05:53:01.703Z
 tags:
-- television
+  - television
 title: In Defence of the Dark
 ---
 

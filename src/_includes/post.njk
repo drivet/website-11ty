@@ -28,15 +28,15 @@
   Bookmarked a <a class="u-bookmark-of" href="{{referenced_link}}">link</a>
   {% endif %}
   </p>
-  
+
   {% for mention in bridgy_mentions %}
   <a href="{{mention}}"></a>
   {% endfor %}
 
   {{ content | safe }}
 
-  {% if mp_properties.photo %}
-  {{ photo(mp_properties.photo) }}
+  {% if photo %}
+  {{ photo(photo) }}
   {% endif %}
 
   {% if postType != 'article' %}

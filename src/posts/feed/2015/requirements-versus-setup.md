@@ -1,10 +1,10 @@
 ---
-date: 2015-09-25 22:48:19.716056-04:00
-modified: 2015-09-25 23:03:13.315350-04:00
+date: 2015-09-26T02:48:19.716Z
+modified: 2015-09-26T03:03:13.315Z
 tags:
-- technical
-- python
-- programming
+  - technical
+  - python
+  - programming
 title: Yet Another Requirements Versus Setup Post
 ---
 

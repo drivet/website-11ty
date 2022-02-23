@@ -1,8 +1,8 @@
 ---
-date: 2007-06-24 11:51:14-04:00
-modified: 2015-05-16 01:52:59.483961-04:00
+date: 2007-06-24T15:51:14.000Z
+modified: 2015-05-16T05:52:59.483Z
 tags:
-- blogging
+  - blogging
 title: Markdown Is Cool
 ---
 

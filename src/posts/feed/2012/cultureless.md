@@ -1,10 +1,10 @@
 ---
-date: 2012-11-30 04:04:17-05:00
-modified: 2015-05-16 01:53:00.211310-04:00
+date: 2012-11-30T09:04:17.000Z
+modified: 2015-05-16T05:53:00.211Z
 tags:
-- society
-- multiculturalism
-- canada
+  - society
+  - multiculturalism
+  - canada
 title: The Cultureless
 ---
 

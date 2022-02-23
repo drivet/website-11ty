@@ -1,9 +1,9 @@
 ---
-date: 2007-06-01 23:29:47-04:00
-modified: 2015-05-16 01:52:59.661339-04:00
+date: 2007-06-02T03:29:47.000Z
+modified: 2015-05-16T05:52:59.661Z
 tags:
-- blogging
-- blosxom
+  - blogging
+  - blosxom
 title: Joining the Rest of Mankind
 ---
 
