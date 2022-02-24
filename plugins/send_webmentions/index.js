@@ -6,20 +6,31 @@ const { Octokit } = require("@octokit/rest");
 const { Base64 } = require("js-base64");
 const { sendAllWebmentions } = require('send-all-webmentions');
 
+const WM_RESULTS_PATH = "src/_data/wmresults.yaml";
+
 const octokit = new Octokit({
   auth: process.env.GITHUB_ACCESS_TOKEN,
 });
 
-async function commit(wmresults) {
-  try{
+async function getWmResultsSHA() {
+  const result = await octokit.repos.getContent({
+    owner: "drivet",
+    repo: "website-11ty",
+    path: WM_RESULTS_PATH,
+  });
+  return result?.data?.sha;
+}
+
+async function commitWmResults(wmresults) {
+  try {
     const yaml_str = yaml.dump(wmresults);
     const encoded = Base64.encode(yaml_str);
+    const sha = await getWmResultsSHA();
     const response = await octokit.repos.createOrUpdateFileContents({
       owner: "drivet",
       repo: "website-11ty",
-      path: "src/_data/wmresults.yaml",
+      path: WM_RESULTS_PATH,
       message: "save wmresults",
-      content: encoded,
       committer: {
         name: `Netlify`,
         email: "desmond.rivet@gmail.com",
@@ -28,10 +39,12 @@ async function commit(wmresults) {
         name: "Netlify",
         email: "desmond.rivet@gmail.com",
       },
+      content: encoded,
+      sha,
     });
-    console.log(`successfully comitted wmresults: ${JSON.stringify(response)}`);
+    console.log(`Successfully comitted wmresults: ${JSON.stringify(response)}`);
   } catch(err) {
-    console.error(`error comitting wmresults: ${JSON.stringify(err)}`);
+    console.error(`Error committing wmresults: ${JSON.stringify(err)}`);
   }
 }
 
@@ -61,7 +74,7 @@ async function onSuccess({ utils }) {
     console.log(`Result: ${JSON.stringify(result_for_source)}`);
     wmresults.results[source] = result_for_source;
   }
-  await commit(wmresults);
+  await commitWmResults(wmresults);
 }
 
 module.exports = {
