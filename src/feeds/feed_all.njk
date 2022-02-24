@@ -25,10 +25,10 @@
     <email>{{ metadata.author.email }}</email>
   </author>
   {%- for post in collections.all.slice(0, 10) %}
-  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) | strip_ext }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
-    <link href="{{ absolutePostUrl }}"/>
+    <link href="{{ absolutePostUrl  }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
     <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>

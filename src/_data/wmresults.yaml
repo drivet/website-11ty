@@ -1415,35 +1415,35 @@ results:
       status_code: 400
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 400
-  2022/02/23/210751.html: {}
-  2022/02/23/202735.html: {}
-  2022/01/16/131055.html:
+  2022/02/23/210751: {}
+  2022/02/23/202735: {}
+  2022/01/16/131055:
     'https://blog.mollywhite.net/its-not-still-the-early-days/': {}
-  2021/12/05/210233.html: {}
-  2021/11/27/142949.html:
+  2021/12/05/210233: {}
+  2021/11/27/142949:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 400
-  2021/11/07/210300.html:
+  2021/11/07/210300:
     'https://twitter.com/Elzo_/status/1455949934449111040?t=cMc-bQB9UD6EksduuE6e-g&s=19': {}
     'https://brid.gy/publish/twitter':
       status_code: 400
     'https://t.co/7s0JyHoRcw': {}
     'https://twitter.com/Elzo_/status/1455949934449111040?ref_src=twsrc%5Etfw': {}
-  2021/10/31/161100.html:
+  2021/10/31/161100:
     'https://twitter.com/Sotherans/status/1454894992103821314?t=P5jft_MC8RUIoIgP-UVLZQ&s=19': {}
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 400
     'https://twitter.com/Sotherans/status/1454894992103821314?ref_src=twsrc%5Etfw': {}
-  2021/10/30/111200.html:
+  2021/10/30/111200:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 400
-  2021/10/29/102500.html:
+  2021/10/29/102500:
     'https://boffosocko.com/2021/10/27/55797602/':
       status_code: 200
     'https://boffosocko.com/author/chrisaldrich/': {}
-  2021/10/23/211009.html:
+  2021/10/23/211009:
     'https://twitter.com/paul_franklin_/status/1452026115501985793?t=ND3F_VRRzcUu9Dh8D4buIA&s=19': {}
-  2022/02/24/155956.html:
+  2022/02/24/155956:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1496954749937139715'
