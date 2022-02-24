@@ -65,6 +65,10 @@ async function onSuccess({ utils }) {
   const wmresults = loadWebmentionResults();
   const site_url = wmresults.site_url;
   const sources = urls.filter(u => wmresults.results[u] === undefined || wmresults.results[u] === null);
+  if (sources.length === 0) {
+    console.log('No webmentions to process');
+    return;
+  }
   console.log(`processing these source URLs for possible webmentions: ${JSON.stringify(sources)}`);
   const report = await sendAllWebmentions(sources.map(s => `${site_url}/${s}`));
   console.log(`webmentions (possibly) sent, showing results for ${site_url}`);
