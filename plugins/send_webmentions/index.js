@@ -50,12 +50,15 @@ function loadWebmentionResults() {
 async function onSuccess({ utils }) {
   const urls = await loadUrls();
   const wmresults = loadWebmentionResults();
+  const site_url = wmresults.site_url;
   const sources = urls.filter(u => wmresults.results[u] === undefined || wmresults.results[u] === null);
-  console.log(`sending webmentions for sources: ${JSON.stringify(sources)}`);
-  const report = await sendAllWebmentions(sources);
+  console.log(`processing these source URLs for possible webmentions: ${JSON.stringify(sources)}`);
+  const report = await sendAllWebmentions(sources.map(s => `${site_url}/${s}`));
+  console.log(`webmentions (possibly) sent, showing results for ${site_url}`);
   for (const source of sources) {
-    const result_for_source = report[source] || {};
-    console.log(`result for source: ${JSON.stringify(result_for_source)}`);
+    console.log(`Source URL: ${source}`);
+    const result_for_source = report[`${site_url}/${source}`] || {};
+    console.log(`Result: ${JSON.stringify(result_for_source)}`);
     wmresults.results[source] = result_for_source;
   }
   await commit(wmresults);
