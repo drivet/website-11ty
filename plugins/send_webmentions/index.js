@@ -52,9 +52,9 @@ async function onSuccess({ utils }) {
   const wmresults = loadWebmentionResults();
   const sources = urls.filter(u => wmresults.results[u] === undefined || wmresults.results[u] === null);
   console.log(`sending webmentions for sources: ${JSON.stringify(sources)}`);
-  const send_results = await sendAllWebmentions(sources);
+  const report = await sendAllWebmentions(sources);
   for (const source of sources) {
-    const result_for_source = send_results[source] || {};
+    const result_for_source = report[source] || {};
     console.log(`result for source: ${JSON.stringify(result_for_source)}`);
     wmresults.results[source] = result_for_source;
   }
@@ -62,5 +62,5 @@ async function onSuccess({ utils }) {
 }
 
 module.exports = {
-  onSuccess: ({ utils }) => {}
+  onSuccess
 }
