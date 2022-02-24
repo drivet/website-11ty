@@ -1443,7 +1443,4 @@ results:
     'https://boffosocko.com/author/chrisaldrich/': {}
   2021/10/23/211009.html:
     'https://twitter.com/paul_franklin_/status/1452026115501985793?t=ND3F_VRRzcUu9Dh8D4buIA&s=19': {}
-  2022/02/24/155956.html:
-    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
-      status_code: 400
 site_url: 'https://desmondrivet.com'
