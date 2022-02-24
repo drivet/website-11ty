@@ -45,13 +45,10 @@ function sydicationsForUrl(wmresults, url) {
     url = url.substring(1);
   }
   url = url.replace(/\.[^/.]+$/, "");
-  console.log(`synd for ${url}`);
   const target_results = wmresults.results[url];
   if (!target_results) {
-    console.log(`returning empty`);
     return [];
   }
-  console.log(`tres ${JSON.stringify(target_results)}`);
   return Object.entries(target_results)
                .filter(([k, v]) => k.startsWith('https://brid.gy'))
                .map(([k, v]) => v)
