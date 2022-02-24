@@ -1398,25 +1398,6 @@ results:
   2021/09/18/135100: {}
   2021/10/07/101400: {}
   2021/10/08/000344: {}
-  2021/10/23/211009:
-    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
-      status_code: 400
-  2021/10/29/102500:
-    'https://boffosocko.com/2021/10/27/55797602/':
-      status_code: 200
-  2021/10/30/111200:
-    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
-      status_code: 400
-  2021/10/31/161100:
-    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
-      status_code: 400
-  2021/11/07/210300:
-    'https://brid.gy/publish/twitter':
-      status_code: 400
-    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
-      status_code: 400
-  2022/02/23/210751: {}
-  2022/02/23/202735: {}
   2022/01/16/131055:
     'https://blog.mollywhite.net/its-not-still-the-early-days/': {}
   2021/12/05/210233: {}
@@ -1443,6 +1424,8 @@ results:
     'https://boffosocko.com/author/chrisaldrich/': {}
   2021/10/23/211009:
     'https://twitter.com/paul_franklin_/status/1452026115501985793?t=ND3F_VRRzcUu9Dh8D4buIA&s=19': {}
+  2022/02/23/210751: {}
+  2022/02/23/202735: {}
   2022/02/24/155956:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 201
