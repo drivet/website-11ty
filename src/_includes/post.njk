@@ -1,6 +1,6 @@
 {% extends "blogbase.njk" %}
 
-{% from "photo.njk" import photo %}
+{% from "photo.njk" import photo as photom %}
 
 {% block content %}
 <main class="main">
@@ -34,9 +34,9 @@
   {% endfor %}
 
   {{ content | safe }}
-
+  
   {% if photo %}
-  {{ photo(photo) }}
+  {{ photom(photo) }}
   {% endif %}
 
   {% if postType != 'article' %}
