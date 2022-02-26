@@ -1,10 +1,15 @@
 :root {
+    /* background and text color.  Needs to be fairly high contrast */
     --background-color: rgb(255, 255, 255);
-    
     --color: rgb(80, 80, 80);
-    --light-color: rgb(211, 211, 211);
+
+    /* as the name says, still used for text, but for things that are less important */
+    --lighter-color: rgb(130, 130, 130);
+
+    /* a lighter text color for seperators, etc.  TOO LIGHT FOR TEXT */
+    --lightest-color: rgb(211, 211, 211);
   
-    /* this could be used for the headings, if the text color is light */
+    /* this could be used for the headings, if the text color is very light */
     --dark-color: rgb(75, 75, 75);
     
     --accent: rgb(25, 131, 230);
