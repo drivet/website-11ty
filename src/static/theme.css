@@ -1,0 +1,12 @@
+:root {
+    --background-color: rgb(255, 255, 255);
+    
+    --color: rgb(80, 80, 80);
+    --light-color: rgb(211, 211, 211);
+  
+    /* this could be used for the headings, if the text color is light */
+    --dark-color: rgb(75, 75, 75);
+    
+    --accent: rgb(25, 131, 230);
+}
+  

@@ -1,0 +1,20 @@
+
+html {
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+blockquote {
+    margin: 0;
+    padding: 0 0 0 1em;
+    border-left: 3px solid;
+    border-color: var(--light-color);
+  }
+  
+a {
+    text-decoration: none;
+    color: var(--accent);
+}

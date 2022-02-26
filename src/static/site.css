@@ -1,22 +1,5 @@
 :root {
-  --background-color: rgb(255, 255, 255);
-  
-  --color: rgb(90, 90, 90);
-  --light-color: rgb(211, 211, 211);
-
-  /* this could be used for the headings, if the text color is light */
-  --dark-color: rgb(75, 75, 75);
-  
-  --light-blue: rgb(29, 155, 240);
   --side-padding: 1em;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
 }
 
 body {
@@ -27,25 +10,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  border-top: 4px solid var(--light-blue);
-}
-
-blockquote {
-  margin: 0;
-  padding: 0 0 0 1em;
-  border-left: 3px solid;
-  border-color: var(--light-color);
-}
-
-@media only screen and (min-width : 769px) {
-  body {
-    font-size: 1.075em;
-  }
-}
-
-a {
-  text-decoration: none;
-  color: var(--light-blue);
+  border-top: 4px solid var(--accent);
 }
 
 .fa-rss-square {
@@ -64,12 +29,6 @@ a {
 
 .image { 
   max-width: 100%;
-}
-
-@media only screen and (min-width : 769px) {
-	.image { 
-    max-width: 600px;
-  }
 }
 
 .row {
@@ -108,13 +67,6 @@ a {
 .secondary-header {
   padding: 0 var(--side-padding);
   border-bottom: 1px solid lightgrey;
-}
-
-@media only screen and (min-device-width : 769px) {
-	.navbar { 
-    max-width: 850px;
-    margin: 0 auto;
-  }
 }
 
 .navbar__brand {
@@ -158,7 +110,7 @@ a {
 }
 
 .feed__navbaritem--active {
-  border-bottom: 2px solid var(--light-blue)
+  border-bottom: 2px solid var(--accent)
 }
 
 .feed__header {
@@ -227,23 +179,10 @@ a {
   padding: 0.5em var(--side-padding) 0.5em var(--side-padding);
 }
 
-@media only screen and (min-width : 769px) {
-	.main { 
-    max-width: 850px;
-    padding: 0;
-  }
-}
-
 .main-footer__content {
   max-width: 100%;
   margin: 0 auto;
   padding: 2em 0.5em 2em 0.5em;
-}
-
-@media only screen and (min-width : 769px) {
-	.main-footer__content { 
-    max-width: 850px;
-  }
 }
 
 .cite {

@@ -1,0 +1,16 @@
+@media only screen and (min-width : 769px) {
+    body {
+        font-size: 1.075em;
+    }
+    .image { 
+        max-width: 600px;
+    }
+    .navbar { 
+        max-width: 850px;
+        margin: 0 auto;
+    }
+    .main { 
+        max-width: 850px;
+        padding: 0;
+    }
+}
