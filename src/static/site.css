@@ -99,6 +99,10 @@ body {
   border-bottom: 2px solid var(--accent)
 }
 
+.feed__navname {
+  display: none;
+}
+
 .feed__list {
   list-style: none;
   padding-left: 0;

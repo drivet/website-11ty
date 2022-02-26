@@ -15,4 +15,8 @@
         max-width: var(--width);
         padding: 0;
     }
+
+    .feed__navname {
+        display: inline;
+    }
 }
