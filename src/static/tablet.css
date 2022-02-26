@@ -2,10 +2,11 @@
     :root {
         --width: 750px;
     }
+    /*
     body {
         font-size: 1.075em;
     }
-   
+   */
     .navbar { 
         max-width: var(--width);
         margin: 0 auto;
@@ -19,4 +20,10 @@
     .feed__navname {
         display: inline;
     }
+
+
+    .main-footer__content {
+        max-width: var(--width);
+    }
+  
 }

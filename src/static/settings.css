@@ -11,7 +11,7 @@ blockquote {
     margin: 0;
     padding: 0 0 0 1em;
     border-left: 3px solid;
-    border-color: var(--light-color);
+    border-color: var(--lightest-color);
   }
   
 a {
