@@ -1,0 +1,253 @@
+From 23b369e9458068f6349f4368d98f90a434d807be Mon Sep 17 00:00:00 2001
+From: Desmond Rivet <desmond.rivet@gmail.com>
+Date: Sat, 26 Feb 2022 12:13:14 -0500
+Subject: [PATCH] Rejigger some styles for footer, etc.
+
+---
+ src/_includes/base.njk         | 13 ++++++-------
+ src/_includes/entry-footer.njk | 12 ++++++------
+ src/static/settings.css        |  2 +-
+ src/static/site.css            | 34 ++++++++++++++++++++++++----------
+ src/static/tablet.css          |  9 ++++++++-
+ src/static/theme.css           | 11 ++++++++---
+ 6 files changed, 53 insertions(+), 28 deletions(-)
+
+diff --git a/src/_includes/base.njk b/src/_includes/base.njk
+index 10c423d..4e995fb 100644
+--- a/src/_includes/base.njk
++++ b/src/_includes/base.njk
+@@ -89,6 +89,8 @@
+   <footer class="main-footer">
+     <div class="main-footer__content">
+       <div class="row">
++        &copy;2022 by <a href="/">{{ global.AUTHOR }}</a>
++        &middot;
+         <a href="http://www.facebook.com/desmond.rivet" title="Facebook" rel="me">
+           <i class="fab fa-facebook-square"></i>
+         </a>
+@@ -104,15 +106,12 @@
+         <a href="http://ca.linkedin.com/in/desmondrivet" title="LinkedIn" rel="me">
+           <i class="fab fa-linkedin-in"></i>
+         </a> 
+-        &middot; 
+-        <a href="https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous">←</a>
+-        An IndieWeb Webring 🕸💍
+-        <a href="https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next">→</a>
+       </div>
+-      
+       <div>
+-          &copy;2022 by <a href="/">{{ global.AUTHOR }}</a>
+-          &middot; 
++          <a href="https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous">←</a>
++         🕸💍
++          <a href="https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next">→</a>
++          &middot;
+           Powered by
+           <a href="https://www.11ty.dev/" target="_blank">Eleventy</a>
+           &middot; 
+diff --git a/src/_includes/entry-footer.njk b/src/_includes/entry-footer.njk
+index c23eef7..33d648e 100644
+--- a/src/_includes/entry-footer.njk
++++ b/src/_includes/entry-footer.njk
+@@ -18,16 +18,16 @@
+     {% endif %}
+     <div class="entry__footerline row--spacious">
+       <div class = "rowitem row--spacious">
+-        <a class="wm-counter" href="{{ url }}#wm-mentions" title="Mentions"><i class="far fa-comment"></i> {{ mentions | length }}</a>
+-        <a class="wm-counter" href="{{ url }}#wm-likes" title="Likes"><i class="far fa-thumbs-up"></i> {{ likes | length }}</a>
+-        <a class="wm-counter" href="{{ url }}#wm-reposts" title="Reposts"><i class="fa fa-retweet"></i>  {{ reposts | length }}</a>
+-        <a class="wm-counter" href="{{ url }}#wm-bookmarks" title="Bookmarks"><i class="fa fa-bookmark"></i> {{ bookmarks | length }}</a>
++        <a class="wm-counter entry__footerlink" href="{{ url }}#wm-mentions" title="Mentions"><i class="far fa-comment"></i> {{ mentions | length }}</a>
++        <a class="wm-counter entry__footerlink" href="{{ url }}#wm-likes" title="Likes"><i class="far fa-thumbs-up"></i> {{ likes | length }}</a>
++        <a class="wm-counter entry__footerlink" href="{{ url }}#wm-reposts" title="Reposts"><i class="fa fa-retweet"></i>  {{ reposts | length }}</a>
++        <a class="wm-counter entry__footerlink" href="{{ url }}#wm-bookmarks" title="Bookmarks"><i class="fa fa-bookmark"></i> {{ bookmarks | length }}</a>
+       </div>
+       <div class="rowitem--right row--spacious">
+         {% for s in syndications %}
+-        <a class="u-syndication entry__link" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
++        <a class="u-syndication entry__footerlink" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
+         {% endfor %}
+-        <a class="u-url entry__link" href="{{ url }}" title="Permalink"><i class="fa fa-link"></i></a>
++        <a class="u-url entry__footerlink" href="{{ url }}" title="Permalink"><i class="fa fa-link"></i></a>
+       </div>
+     </div>
+ </footer>
+diff --git a/src/static/settings.css b/src/static/settings.css
+index bbfdf73..9981d1d 100644
+--- a/src/static/settings.css
++++ b/src/static/settings.css
+@@ -11,7 +11,7 @@ blockquote {
+     margin: 0;
+     padding: 0 0 0 1em;
+     border-left: 3px solid;
+-    border-color: var(--light-color);
++    border-color: var(--lightest-color);
+   }
+   
+ a {
+diff --git a/src/static/site.css b/src/static/site.css
+index 2eb6fc4..4c83db0 100644
+--- a/src/static/site.css
++++ b/src/static/site.css
+@@ -1,10 +1,13 @@
+ :root {
+   --side-padding: 1em;
++  --font-size: 18px;
++  --font-size-smaller: 16px;
++  --font-size-bigger: 20px;
+ }
+ 
+ body {
+   font-family: 'Lato', serif;
+-  font-size: 16px;
++  font-size: var(--font-size);
+   background-color: var(--background-color);
+   color: var(--color);
+   margin: 0;
+@@ -24,7 +27,7 @@ body {
+ 
+ .main-header {
+   padding: 0.6em var(--side-padding);
+-  border-bottom: 1px solid var(--light-color);
++  border-bottom: 1px solid var(--lightest-color);
+ }
+ 
+ .navbar {
+@@ -76,10 +79,14 @@ body {
+   padding: 0.5em var(--side-padding);
+ }
+ 
++.main-footer {
++  margin-top: 1em;
++  border-top: 1px solid var(--lightest-color);
++}
+ .main-footer__content {
+   max-width: 100%;
+   margin: 0 auto;
+-  padding: 2em 0.5em;
++  padding: 1em 0.5em;
+ }
+ 
+ .feed__navbaritem {
+@@ -110,7 +117,11 @@ body {
+ }
+ 
+ .feed__item {
+-  border-bottom: 1px solid var(--light-color);
++  border-bottom: 1px solid var(--lightest-color);
++}
++
++.feed__item:last-child {
++  border-bottom: 0;
+ }
+ 
+ .feed__pagenav {
+@@ -128,10 +139,12 @@ body {
+ 
+ .entry__published {
+   font-style: italic;
++  font-size: var(--font-size-smaller);
++  color: var(--lighter-color);
+ }
+ 
+ .entry__title {
+-  margin-top: 0.25em;
++  margin-top: 0;
+ }
+ 
+ .entry__titlelink {
+@@ -145,26 +158,27 @@ body {
+ 
+ .entry__footer {
+   margin-top: 1em;
++  font-size: var(--font-size-smaller);
+ }
+ 
+ .entry__footerline {
+   margin-top: 0.5em;
+ }
+ 
+-.wm-counter {
+-  color: grey; 
++.entry__footerlink {
++  color: var(--lighter-color); 
+ }
+ 
+ .wm-group {
+   margin-top: 5em;
+-  border-top: 1px solid var(--light-color);
++  border-top: 1px solid var(--lightest-color);
+ }
+ 
+ .cite {
+   margin: 0;
+   padding: 0 0 0 1em;
+   border-left: 3px solid;
+-  border-color: var(--light-color);
++  border-color: var(--lightest-color);
+ }
+ 
+ .link-context {
+@@ -198,7 +212,7 @@ body {
+ .wm-group--mention-item {
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
+-  border-top: 1px solid var(--light-color);
++  border-top: 1px solid var(--lightest-color);
+ }
+ 
+ .wm-group--mention-item:first-child {
+diff --git a/src/static/tablet.css b/src/static/tablet.css
+index f7311d6..4f643c8 100644
+--- a/src/static/tablet.css
++++ b/src/static/tablet.css
+@@ -2,10 +2,11 @@
+     :root {
+         --width: 750px;
+     }
++    /*
+     body {
+         font-size: 1.075em;
+     }
+-   
++   */
+     .navbar { 
+         max-width: var(--width);
+         margin: 0 auto;
+@@ -19,4 +20,10 @@
+     .feed__navname {
+         display: inline;
+     }
++
++
++    .main-footer__content {
++        max-width: var(--width);
++    }
++  
+ }
+diff --git a/src/static/theme.css b/src/static/theme.css
+index 5af789e..a1f9c78 100644
+--- a/src/static/theme.css
++++ b/src/static/theme.css
+@@ -1,10 +1,15 @@
+ :root {
++    /* background and text color.  Needs to be fairly high contrast */
+     --background-color: rgb(255, 255, 255);
+-    
+     --color: rgb(80, 80, 80);
+-    --light-color: rgb(211, 211, 211);
++
++    /* as the name says, still used for text, but for things that are less important */
++    --lighter-color: rgb(130, 130, 130);
++
++    /* a lighter text color for seperators, etc.  TOO LIGHT FOR TEXT */
++    --lightest-color: rgb(211, 211, 211);
+   
+-    /* this could be used for the headings, if the text color is light */
++    /* this could be used for the headings, if the text color is very light */
+     --dark-color: rgb(75, 75, 75);
+     
+     --accent: rgb(25, 131, 230);
+-- 
+2.25.1
+

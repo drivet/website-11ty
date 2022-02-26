@@ -1,0 +1,64 @@
+From b5e7322ad15222cf5f69a297b2abeb292f909ee8 Mon Sep 17 00:00:00 2001
+From: Desmond Rivet <desmond.rivet@gmail.com>
+Date: Sat, 26 Feb 2022 12:42:44 -0500
+Subject: [PATCH] make desktop nav a bit bigger
+
+---
+ src/static/site.css   |  4 ++--
+ src/static/tablet.css | 11 ++++++-----
+ 2 files changed, 8 insertions(+), 7 deletions(-)
+
+diff --git a/src/static/site.css b/src/static/site.css
+index 4c83db0..a4a9250 100644
+--- a/src/static/site.css
++++ b/src/static/site.css
+@@ -13,7 +13,7 @@ body {
+   margin: 0;
+   padding: 0;
+   line-height: 1.7;
+-  border-top: 4px solid var(--accent);
++  border-top: 5px solid var(--accent);
+ }
+ 
+ .fa-rss-square {
+@@ -70,7 +70,7 @@ body {
+ 
+ .main__title {
+   margin: 0;
+-  color: var(--dark-grey)
++  color: var(--dark-grey);
+ }
+ 
+ .main { 
+diff --git a/src/static/tablet.css b/src/static/tablet.css
+index 4f643c8..7e4ec1f 100644
+--- a/src/static/tablet.css
++++ b/src/static/tablet.css
+@@ -2,11 +2,7 @@
+     :root {
+         --width: 750px;
+     }
+-    /*
+-    body {
+-        font-size: 1.075em;
+-    }
+-   */
++
+     .navbar { 
+         max-width: var(--width);
+         margin: 0 auto;
+@@ -17,6 +13,11 @@
+         padding: 0;
+     }
+ 
++    .main-header {
++        padding: 1em var(--side-padding);
++        font-size: var(--font-size-bigger);
++    }
++      
+     .feed__navname {
+         display: inline;
+     }
+-- 
+2.25.1
+

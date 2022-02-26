@@ -159,6 +159,7 @@ body {
 .entry__footer {
   margin-top: 1em;
   font-size: var(--font-size-smaller);
+  color: var(--lighter-color);
 }
 
 .entry__footerline {

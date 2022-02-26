@@ -8,12 +8,19 @@
     
     {% if tags %}
     <div class="entry__footerline row--spacious">
-       <span title="Tags"><i class="fa fa-tag fa-flip-horizontal"></i>
-       {% set comma = joiner() %}
-       {% for tag in tags %}
-       {{ comma() }} <a class="p-category" href="/posts/tags/{{tag}}.html"> {{ tag }} </a>
-       {% endfor %}
+       <span title="Tags">
+          <i class="fa fa-tag fa-flip-horizontal"></i>
+          {% set comma = joiner(",") %}
+          {% for tag in tags %}
+          {{ comma() }} <a class="p-category" href="/posts/tags/{{tag}}.html">{{ tag }}</a>
+          {% endfor %}
        </span>
+       <div class="row rowitem--right">
+          {% for s in syndications %}
+          <a class="u-syndication entry__footerlink" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
+          {% endfor %}
+          <a class="u-url entry__footerlink" href="{{ url }}" title="Permalink"><i class="fa fa-link"></i></a>
+       </div>
     </div>
     {% endif %}
     <div class="entry__footerline row--spacious">
@@ -22,12 +29,6 @@
         <a class="wm-counter entry__footerlink" href="{{ url }}#wm-likes" title="Likes"><i class="far fa-thumbs-up"></i> {{ likes | length }}</a>
         <a class="wm-counter entry__footerlink" href="{{ url }}#wm-reposts" title="Reposts"><i class="fa fa-retweet"></i>  {{ reposts | length }}</a>
         <a class="wm-counter entry__footerlink" href="{{ url }}#wm-bookmarks" title="Bookmarks"><i class="fa fa-bookmark"></i> {{ bookmarks | length }}</a>
-      </div>
-      <div class="rowitem--right row--spacious">
-        {% for s in syndications %}
-        <a class="u-syndication entry__footerlink" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
-        {% endfor %}
-        <a class="u-url entry__footerlink" href="{{ url }}" title="Permalink"><i class="fa fa-link"></i></a>
       </div>
     </div>
 </footer>
