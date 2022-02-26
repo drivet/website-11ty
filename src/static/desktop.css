@@ -2,17 +2,12 @@
     :root {
         --width: 850px;
     }
-    body {
-        font-size: 1.075em;
-    }
    
     .navbar { 
         max-width: var(--width);
-        margin: 0 auto;
     }
 
     .main { 
         max-width: var(--width);
-        padding: 0;
     }
 }
