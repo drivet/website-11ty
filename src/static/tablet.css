@@ -2,11 +2,7 @@
     :root {
         --width: 750px;
     }
-    /*
-    body {
-        font-size: 1.075em;
-    }
-   */
+
     .navbar { 
         max-width: var(--width);
         margin: 0 auto;
@@ -17,6 +13,11 @@
         padding: 0;
     }
 
+    .main-header {
+        padding: 1em var(--side-padding);
+        font-size: var(--font-size-bigger);
+    }
+      
     .feed__navname {
         display: inline;
     }

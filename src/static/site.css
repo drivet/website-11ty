@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.7;
-  border-top: 4px solid var(--accent);
+  border-top: 5px solid var(--accent);
 }
 
 .fa-rss-square {
@@ -70,7 +70,7 @@ body {
 
 .main__title {
   margin: 0;
-  color: var(--dark-grey)
+  color: var(--dark-grey);
 }
 
 .main { 
