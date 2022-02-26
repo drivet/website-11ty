@@ -17,38 +17,9 @@ body {
   color: #ffa872;
 }
 
-.image {
-  width: auto;
-  height: auto;
-}
-
 .avatar {
   width: 32px;
   height: 32px;
-}
-
-.image { 
-  max-width: 100%;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-  gap: 0.3em;
-}
-
-.row--wrap {
-  flex-wrap: wrap;
-}
-
-.row--spacious {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-
-.rowitem--right {
-  margin-left: auto;
 }
 
 .main-header {
@@ -153,6 +124,7 @@ body {
 }
 
 .entry__photo {
+  border-radius: 10px;
   max-width: 100%;
 }
 
@@ -204,6 +176,10 @@ body {
 
 .link-context__indieweb_context {
   width: 100%;
+}
+
+.link-context__image { 
+  max-width: 100%;
 }
 
 .wm-group {

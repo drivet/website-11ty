@@ -1,0 +1,20 @@
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.row--wrap {
+    flex-wrap: wrap;
+}
+
+.row--spacious {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.rowitem--right {
+    margin-left: auto;
+}

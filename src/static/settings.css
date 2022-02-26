@@ -18,3 +18,9 @@ a {
     text-decoration: none;
     color: var(--accent);
 }
+
+.image {
+    width: auto;
+    height: auto;
+}
+  

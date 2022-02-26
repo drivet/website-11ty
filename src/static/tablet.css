@@ -1,6 +1,6 @@
-@media only screen and (min-width : 1024px) {
+@media only screen and (min-width : 768px) {
     :root {
-        --width: 850px;
+        --width: 750px;
     }
     body {
         font-size: 1.075em;
