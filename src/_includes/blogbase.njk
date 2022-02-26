@@ -2,16 +2,38 @@
 
 {% block secondarynav %}
 <header class="secondary-header">
-  <nav class="navbar feed__navbar row row--wrap" role="navigation" aria-label="feed navigation">
-    <ul class="navbar__group"> 
-      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'posts' }}"><a href="/posts/" class="navbar__link">Posts</a></li>
-      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'blog' }}"><a href="/posts/blog" class="navbar__link">Blog</a></li>
-      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'links' }}"><a href="/posts/bookmarks" class="navbar__link">Links</a></li>
-      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'all' }}"><a href="/posts/all" class="navbar__link">All</a></li>
-    </ul>
-    <ul class="navbar__group navbar__group--right">
-      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'tags' }}"><a href="/posts/tags/" class="navbar__link">Tags</a></li>
-      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'archives' }}"><a href="/posts/archives/" class="navbar__link">Archives</a></li>
+  <nav class="navbar" aria-label="feed navigation">
+    <ul class="row"> 
+      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'posts' }}">
+        <a href="/posts/" class="navbar__link row--comfy">
+          <i class="far fa-sticky-note"></i> <span class="feed__navname">Posts</span>
+        </a>
+      </li>
+      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'blog' }}">
+        <a href="/posts/blog" class="navbar__link row--comfy">
+          <i class="far fa-newspaper"></i> <span class="feed__navname">Blog</span>
+        </a>
+      </li>
+      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'links' }}">
+        <a href="/posts/bookmarks" class="navbar__link row--comfy">
+          <i class="far fa-bookmark"></i> <span class="feed__navname">Links</span>
+        </a>
+      </li>
+      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'all' }}">
+        <a href="/posts/all" class="navbar__link row--comfy">
+          <i class="fa fa-list"></i> <span class="feed__navname">All</span>
+        </a>
+      </li>
+      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'tags' }}">
+        <a href="/posts/tags/" class="navbar__link row--comfy">
+          <i class="fa fa-tags"></i> <span class="feed__navname">Tags</span>
+        </a>
+      </li>
+      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'archives' }}">
+        <a href="/posts/archives/" class="navbar__link row--comfy">
+          <i class="fa fa-archive"></i> <span class="feed__navname">Archives</span>
+        </a>
+      </li>
     </ul>
   </nav>
 </header>

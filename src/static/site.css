@@ -23,15 +23,11 @@ body {
 }
 
 .main-header {
-  padding: 0.4em var(--side-padding);
+  padding: 0.6em var(--side-padding);
   border-bottom: 1px solid var(--light-color);
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  flex-wrap: wrap;
   max-width: 100%;
 }
 
@@ -83,17 +79,28 @@ body {
 .main-footer__content {
   max-width: 100%;
   margin: 0 auto;
-  padding: 2em 0.5em 2em 0.5em;
+  padding: 2em 0.5em;
 }
 
 .feed__navbaritem {
-  padding: 0.45em 0em 0.45em 0em;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 0.6em 0;
   border-bottom: 2px solid white;
   border-top: 2px solid white;
 }
 
 .feed__navbaritem--active {
+  font-weight: bold;
+  color: var(--accent);
   border-bottom: 2px solid var(--accent)
+}
+
+.feed__navname {
+  display: none;
 }
 
 .feed__list {
@@ -161,7 +168,7 @@ body {
 }
 
 .link-context {
-  margin: 1em 0 1em 0;
+  margin: 1em 0;
   display: flex;
   justify-content: center;
 }
