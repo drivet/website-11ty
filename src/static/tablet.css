@@ -2,11 +2,7 @@
     :root {
         --width: 750px;
     }
-    /*
-    body {
-        font-size: 1.075em;
-    }
-   */
+
     .navbar { 
         max-width: var(--width);
         margin: 0 auto;
@@ -21,9 +17,12 @@
         display: inline;
     }
 
+    .main-header {
+        padding: 1em var(--side-padding);
+        font-size: var(--font-size-bigger);
+    }
 
     .main-footer__content {
         max-width: var(--width);
     }
-  
 }
