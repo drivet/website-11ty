@@ -6,8 +6,9 @@
     {% set bookmarks = allmentions | webmention_kind('bookmark-of') %}
     {% set syndications = wmresults | syndications_for_url(url) %}
     
-    {% if tags %}
+  
     <div class="entry__footerline row--spacious">
+      {% if tags %}
        <span title="Tags">
           <i class="fa fa-tag fa-flip-horizontal"></i>
           {% set comma = joiner(",") %}
@@ -15,6 +16,7 @@
           {{ comma() }} <a class="p-category" href="/posts/tags/{{tag}}.html">{{ tag }}</a>
           {% endfor %}
        </span>
+       {% endif %}
        <div class="row rowitem--right">
           {% for s in syndications %}
           <a class="u-syndication entry__footerlink" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
@@ -22,7 +24,6 @@
           <a class="u-url entry__footerlink" href="{{ url }}" title="Permalink"><i class="fa fa-link"></i></a>
        </div>
     </div>
-    {% endif %}
     <div class="entry__footerline row--spacious">
       <div class = "rowitem row--spacious">
         <a class="wm-counter entry__footerlink" href="{{ url }}#wm-mentions" title="Mentions"><i class="far fa-comment"></i> {{ mentions | length }}</a>
