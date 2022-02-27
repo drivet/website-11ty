@@ -4,8 +4,6 @@ modified: 2015-05-16T05:53:02.815Z
 tags:
   - technical
   - python
-  - yawt
-  - flask
   - programming
 title: Thoughts on Modularizing Flask Applications
 ---
