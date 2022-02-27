@@ -137,10 +137,13 @@ body {
   padding-bottom: 1.5em;
 }
 
-.entry__published {
-  font-style: italic;
+.entry__headerline {
   font-size: var(--font-size-smaller);
   color: var(--lighter-color);
+}
+
+.entry__published {
+  font-style: italic;
 }
 
 .entry__title {
