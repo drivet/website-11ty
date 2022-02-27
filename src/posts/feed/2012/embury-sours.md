@@ -2,9 +2,7 @@
 date: 2012-09-14T05:24:20.000Z
 modified: 2015-05-16T05:52:58.247Z
 tags:
-  - food
   - cocktails
-  - embury
   - recipes
 title: Sour Cocktails and the Embury Ratio
 ---
