@@ -2,9 +2,7 @@
 date: 2013-07-30T07:08:15.000Z
 modified: 2015-05-16T05:52:58.078Z
 tags:
-  - food
-  - baking
-  - jaffa-cakes
+  - cooking
   - recipes
 title: 'Jaffa Cakes for North Americans: an Odyssey'
 ---

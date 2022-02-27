@@ -3,6 +3,7 @@ date: 2013-04-05T04:50:47.000Z
 modified: 2015-05-16T05:53:01.703Z
 tags:
   - television
+  - movies
 title: In Defence of the Dark
 ---
 

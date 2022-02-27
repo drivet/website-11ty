@@ -4,7 +4,6 @@ date: 2020-08-27T16:41:19.000Z
 modified: 2020-08-27T16:41:19.000Z
 tags:
   - cooking
-  - baking
   - recipes
 title: On Being Vaguely Obsessed With Pound Cake
 mp-syndicate-to:

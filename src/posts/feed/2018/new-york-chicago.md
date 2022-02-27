@@ -3,8 +3,6 @@ date: 2018-11-11T02:14:39.000Z
 modified: 2018-11-11T02:14:39.000Z
 tags:
   - travel
-  - chicago
-  - newyork
 title: Fedoras and Infinite Streets
 ---
 

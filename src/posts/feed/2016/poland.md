@@ -2,8 +2,6 @@
 date: 2016-06-30T03:32:00.000Z
 tags:
   - travel
-  - poland
-  - zurek
 title: Pierogieland
 ---
 

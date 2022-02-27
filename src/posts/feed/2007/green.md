@@ -3,7 +3,6 @@ date: 2007-07-15T22:23:30.000Z
 modified: 2015-05-16T05:52:56.646Z
 tags:
   - philosophy
-  - qualia
 title: Seeing Green
 ---
 

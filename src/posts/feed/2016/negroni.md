@@ -1,9 +1,7 @@
 ---
 date: 2016-12-28T01:45:00.000Z
 tags:
-  - food
   - cocktails
-  - embury
   - recipes
 title: Life is Bitter
 ---

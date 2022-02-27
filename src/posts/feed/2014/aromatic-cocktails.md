@@ -2,9 +2,7 @@
 date: 2014-12-23T09:49:32.000Z
 modified: 2015-05-16T05:52:58.602Z
 tags:
-  - food
   - cocktails
-  - embury
   - recipes
 title: Meditations on the Aromatic Cocktail
 ---
