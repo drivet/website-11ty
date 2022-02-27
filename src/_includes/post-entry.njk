@@ -19,6 +19,12 @@
     {% endif %}
   </header>
   
+  {% if post.data.blurb %}
+  <div class="p-summary" style="display: none">
+  {{post.data.blurb}}
+  </div>
+  {% endif %}
+
   <div class="e-content">
   <p>
   {% if post.data.postType == "like"%}

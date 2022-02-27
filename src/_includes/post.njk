@@ -23,7 +23,13 @@
     {% endif %}
     
   </header>
-  
+
+  {% if blurb %}
+  <div class="p-summary" style="display: none">
+  {{blurb}}
+  </div>
+  {% endif %}
+
   <div class="e-content">
   <p>
   {% if postType == "like"%}
