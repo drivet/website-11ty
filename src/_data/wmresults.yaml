@@ -1438,4 +1438,44 @@ results:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1497020143318224897'
+  2022/02/27/post-type-org:
+    'https://brid.gy/publish/twitter':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1498068969718226953'
+    'https://en.wikipedia.org/wiki/Design_Patterns': {}
+    'https://tvtropes.org/': {}
+    'https://indieweb.org/':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/npY1J9tBy5W661Ux4kK-'
+    'https://indieweb.org/article':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/INC4-6wJgVeDUwf2lj5h'
+    'https://indieweb.org/note':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/xYW9RTry48KwHZhiRwJK'
+    'https://indieweb.org/photo':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/oP14f5tsJUza7cBCKW9G'
+    'https://indieweb.org/video':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/3NtAYPp1RnZ4pDmyfUzZ'
+    'https://indieweb.org/reply':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/BKEJ8MAseDa60dusL_R1'
+    'https://indieweb.org/like':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/7ZtClDW_MG5AzmnKZvVL'
+    'https://indieweb.org/repost':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/rt2OCNW67U8Ug1UyviVf'
+    'https://indieweb.org/bookmark':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/_R0ROJtuKMzq-QqzA_gr'
+    'https://en.wikipedia.org/wiki/Atom_(Web_standard)': {}
+    'https://en.wikipedia.org/wiki/RSS': {}
+    'https://indieweb.org/microformats':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/-31nWQErn7suau0Z9gKm'
+    'https://doubleloop.net/':
+      status_code: 200
 site_url: 'https://desmondrivet.com'
