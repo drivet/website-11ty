@@ -1,7 +1,6 @@
 ---
 date: 2017-01-08T02:32:00.000Z
 tags:
-  - food
   - cocktails
   - recipes
 title: Not Invented by Monks

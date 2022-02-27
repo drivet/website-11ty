@@ -2,7 +2,6 @@
 date: 2013-06-05T04:25:51.000Z
 modified: 2015-05-16T05:52:57.906Z
 tags:
-  - food
   - cocktails
   - tonic
   - recipes

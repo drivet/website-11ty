@@ -3,7 +3,6 @@ date: 2011-07-16T22:28:00.000Z
 modified: 2015-05-16T05:52:58.789Z
 og_image: /blog/food/IMG_6394.JPG
 tags:
-  - food
   - cocktails
   - tonic
   - recipes
