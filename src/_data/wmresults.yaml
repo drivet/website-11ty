@@ -1478,4 +1478,9 @@ results:
       location: 'https://webmention.io/indiewebcamp/webmention/-31nWQErn7suau0Z9gKm'
     'https://doubleloop.net/':
       status_code: 200
+  2022/02/28/005250:
+    'https://snarfed.org/2022-01-08_happy-10th-birthday-bridgy':
+      status_code: 200
+    'https://snarfed.org/':
+      status_code: 200
 site_url: 'https://desmondrivet.com'
