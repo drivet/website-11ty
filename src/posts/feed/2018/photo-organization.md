@@ -2,7 +2,6 @@
 date: 2018-11-18T17:23:39.000Z
 modified: 2018-11-18T17:23:39.000Z
 tags:
-  - technical
   - photography
 title: How I Organize my Photos
 ---

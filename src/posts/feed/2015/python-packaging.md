@@ -2,7 +2,6 @@
 date: 2015-01-16T06:43:35.000Z
 modified: 2015-05-16T05:53:03.218Z
 tags:
-  - technical
   - python
   - programming
 title: Coming to Terms with the Nightmare that is Python Packaging

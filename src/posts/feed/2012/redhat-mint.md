@@ -2,7 +2,7 @@
 date: 2012-12-15T05:51:46.000Z
 modified: 2015-05-16T05:53:03.581Z
 tags:
-  - technical
+  - linux
 title: Of Red Hats and Mints
 ---
 

@@ -2,7 +2,6 @@
 date: 2015-08-20T05:48:47.000Z
 modified: 2015-08-21T05:53:02.000Z
 tags:
-  - technical
   - emacs
   - python
   - programming

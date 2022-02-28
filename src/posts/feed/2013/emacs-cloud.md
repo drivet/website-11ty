@@ -2,7 +2,6 @@
 date: 2013-10-30T05:50:12.000Z
 modified: 2015-05-16T05:53:02.520Z
 tags:
-  - technical
   - emacs
 title: Being an Emacs User in the Cloud Age
 ---

@@ -2,7 +2,6 @@
 date: 2015-09-26T02:48:19.716Z
 modified: 2015-09-26T03:03:13.315Z
 tags:
-  - technical
   - python
   - programming
 title: Yet Another Requirements Versus Setup Post

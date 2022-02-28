@@ -2,7 +2,6 @@
 date: 2008-07-06T23:00:01.000Z
 modified: 2015-05-16T05:53:03.040Z
 tags:
-  - technical
   - perl
   - programming
 title: Error Handling in Perl

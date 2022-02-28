@@ -2,7 +2,6 @@
 date: 2018-05-20T19:45:11.000Z
 modified: 2018-05-20T19:45:11.000Z
 tags:
-  - technical
   - theremin
 title: 'On Finding an Excuse to Buy an Arduino or: How I Finally Got Myself a Theremin'
 ---

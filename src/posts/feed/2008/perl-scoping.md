@@ -2,7 +2,6 @@
 date: 2008-02-13T21:31:46.000Z
 modified: 2015-05-16T05:53:03.401Z
 tags:
-  - technical
   - perl
   - programming
 title: Scoping in Perl

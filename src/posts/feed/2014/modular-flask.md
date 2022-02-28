@@ -2,7 +2,6 @@
 date: 2014-10-16T05:01:35.000Z
 modified: 2015-05-16T05:53:02.815Z
 tags:
-  - technical
   - python
   - programming
 title: Thoughts on Modularizing Flask Applications

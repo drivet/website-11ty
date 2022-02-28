@@ -2,7 +2,6 @@
 date: 2015-09-22T06:15:12.632Z
 modified: 2015-09-22T06:15:12.632Z
 tags:
-  - technical
   - python
   - programming
 title: Generating Pylint Badges
