@@ -4,7 +4,6 @@ date: 2020-05-01T10:24:25.000Z
 modified: 2020-05-01T10:24:25.000Z
 tags:
   - blogging
-  - wiki
   - indieweb
 title: On Gardens and Streams
 mp-syndicate-to:

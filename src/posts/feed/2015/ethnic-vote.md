@@ -4,7 +4,6 @@ modified: 2015-08-21T05:54:00.000Z
 tags:
   - society
   - quebec
-  - referendum
   - culture
 title: Reflections on the Ethnic Vote
 ---

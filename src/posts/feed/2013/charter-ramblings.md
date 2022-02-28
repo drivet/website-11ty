@@ -5,8 +5,6 @@ tags:
   - society
   - quebec
   - religion
-  - charter
-  - atheism
 title: Charter Ramblings
 ---
 

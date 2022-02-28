@@ -6,7 +6,6 @@ tags:
   - religion
   - quebec
   - culture
-  - atheism
 title: 'Church, State, and Culture'
 ---
 
