@@ -1,0 +1,11 @@
+{% macro reflink(postType, referencedLink) %}
+{% if postType == "like"%}
+<p>Liked a <a class="u-like-of" href="{{referencedLink}}">post</a></p>
+{% elseif postType == "repost"%}
+<p>Reposted a <a class="u-repost-of" href="{{referencedLink}}">post</a></p>
+{% elseif postType == "reply"%}
+<p>Replied to a <a class="u-in-reply-to" href="{{referencedLink}}">post</a></p>
+{% elseif postType == "bookmark"%}
+<p>Bookmarked a <a class="u-bookmark-of" href="{{referencedLink}}">link</a></p>
+{% endif %}
+{% endmacro %}

@@ -1,4 +1,5 @@
 {% from "photo.njk" import photo %}
+{% from "reflink.njk" import reflink %}
 
 <article class="h-entry entry">
   <header>
@@ -26,17 +27,8 @@
   {% endif %}
 
   <div class="e-content">
-  <p>
-  {% if post.data.postType == "like"%}
-  Liked a <a class="u-like-of" href="{{post.data.referencedLink}}">post</a>
-  {% elseif post.data.postType == "repost"%}
-  Reposted a <a class="u-repost-of" href="{{post.data.referencedLink}}">post</a>
-  {% elseif post.data.postType == "reply"%}
-  Replied to a <a class="u-in-reply-to" href="{{post.data.referencedLink}}">post</a>
-  {% elseif post.data.postType == "bookmark"%}
-  Bookmarked a <a class="u-bookmark-of" href="{{post.data.referencedLink}}">link</a>
-  {% endif %}
-  </p>
+
+  {{ reflink(post.data.postType, post.data.referencedLink) }}
 
   {% for mention in post.data.bridgyMentions %}
   <a href="{{mention}}"></a>
