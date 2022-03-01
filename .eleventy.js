@@ -201,7 +201,7 @@ function truncate(str, chars, replace = '...') {
   }
 }
 
-module.exports = (eleventyConfig) => {// Browsersync config
+module.exports = (eleventyConfig) => {
   eleventyConfig.setBrowserSyncConfig(
     require('./configs/browsersync.config')('_site')
   );

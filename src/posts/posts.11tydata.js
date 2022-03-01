@@ -7,12 +7,12 @@ function bridgyMentions(data) {
     return [];
   }
 
-  const syndication_tokens = properties['mp-syndicate-to'];
-  if (!syndication_tokens) {
+  const syndicationTokens = properties['mp-syndicate-to'];
+  if (!syndicationTokens) {
     return [];
   }
 
-  return syndication_tokens.
+  return syndicationTokens.
     map(s => {
       if (s === 'twitter_bridgy_no_link') {
         return 'https://brid.gy/publish/twitter?bridgy_omit_link=true'
@@ -45,6 +45,6 @@ module.exports = {
   eleventyComputed: {
     postType: (data) => pt.postType({data}),
     bridgyMentions,
-    referencedLink
+    referencedLink,
   }
 };
