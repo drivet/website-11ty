@@ -28,17 +28,17 @@
   <div class="e-content">
   <p>
   {% if post.data.postType == "like"%}
-  Liked a <a class="u-like-of" href="{{post.data.referenced_link}}">post</a>
+  Liked a <a class="u-like-of" href="{{post.data.referencedLink}}">post</a>
   {% elseif post.data.postType == "repost"%}
-  Reposted a <a class="u-repost-of" href="{{post.data.referenced_link}}">post</a>
+  Reposted a <a class="u-repost-of" href="{{post.data.referencedLink}}">post</a>
   {% elseif post.data.postType == "reply"%}
-  Replied to a <a class="u-in-reply-to" href="{{post.data.referenced_link}}">post</a>
+  Replied to a <a class="u-in-reply-to" href="{{post.data.referencedLink}}">post</a>
   {% elseif post.data.postType == "bookmark"%}
-  Bookmarked a <a class="u-bookmark-of" href="{{post.data.referenced_link}}">link</a>
+  Bookmarked a <a class="u-bookmark-of" href="{{post.data.referencedLink}}">link</a>
   {% endif %}
   </p>
 
-  {% for mention in post.data.bridgy_mentions %}
+  {% for mention in post.data.bridgyMentions %}
   <a href="{{mention}}"></a>
   {% endfor %}
 
@@ -49,7 +49,7 @@
   {% endif %}
 
   {% if post.data.postType != 'article' %}
-  {% set link = post.data.referenced_link or (post.templateContent | content_link) %}
+  {% set link = post.data.referencedLink or (post.templateContent | content_link) %}
   {% if link %}
   {% set scraped = link | preview(link | slug) %}
   {% include "preview.njk" %}

@@ -1,7 +1,7 @@
 const pt = require('../../utils/post-type.js');
 const _ = require('lodash');
 
-function bridgy_mentions(data) {
+function bridgyMentions(data) {
   const properties = data;
   if (!properties) {
     return [];
@@ -28,7 +28,7 @@ function bridgy_mentions(data) {
 }
 
 
-function referenced_link(data) {
+function referencedLink(data) {
   const properties = data;
 
   if (!properties) {
@@ -44,7 +44,7 @@ function referenced_link(data) {
 module.exports = {
   eleventyComputed: {
     postType: (data) => pt.postType({data}),
-    bridgy_mentions,
-    referenced_link
+    bridgyMentions,
+    referencedLink
   }
 };

@@ -33,17 +33,17 @@
   <div class="e-content">
   <p>
   {% if postType == "like"%}
-  Liked a <a class="u-like-of" href="{{referenced_link}}">post</a>
+  Liked a <a class="u-like-of" href="{{referencedLink}}">post</a>
   {% elseif postType == "repost"%}
-  Reposted a <a class="u-repost-of" href="{{referenced_link}}">post</a>
+  Reposted a <a class="u-repost-of" href="{{referencedLink}}">post</a>
   {% elseif postType == "reply"%}
-  Replied to a <a class="u-in-reply-to" href="{{referenced_link}}">post</a>
+  Replied to a <a class="u-in-reply-to" href="{{referencedLink}}">post</a>
   {% elseif postType == "bookmark"%}
-  Bookmarked a <a class="u-bookmark-of" href="{{referenced_link}}">link</a>
+  Bookmarked a <a class="u-bookmark-of" href="{{referencedLink}}">link</a>
   {% endif %}
   </p>
 
-  {% for mention in bridgy_mentions %}
+  {% for mention in bridgyMentions %}
   <a href="{{mention}}"></a>
   {% endfor %}
 
@@ -54,7 +54,7 @@
   {% endif %}
 
   {% if postType != 'article' %}
-  {% set link = referenced_link or (content | content_link) %}
+  {% set link = referencedLink or (content | content_link) %}
   {% if link %}
   {% set scraped = link | preview(link | slug) %}
   {% include "preview.njk" %}
