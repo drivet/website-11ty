@@ -2,5 +2,5 @@
     package = "./plugins/cache"
 
 [[plugins]]
-    package = "./plugins/send_webmentions"
+    package = "./plugins/send-webmentions"
     
