@@ -216,7 +216,7 @@ module.exports = (eleventyConfig) => {// Browsersync config
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
-  eleventyConfig.addFilter('excerpt', content => html.excerpt(content, 100));
+  eleventyConfig.addFilter('excerpt', content => html.excerpt(content, 50));
   eleventyConfig.addFilter('truncate', str => truncate(str, 500));
   eleventyConfig.addFilter('synicon', url => synIcon(url));
   eleventyConfig.addFilter('monthname', month => {
