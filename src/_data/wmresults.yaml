@@ -1496,4 +1496,22 @@ results:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1498646587773534208'
+  2022/03/01/bookmark-thoughts:
+    'https://brid.gy/publish/twitter':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1498734581431902217'
+    'https://indieweb.org/bookmark':
+      status_code: 429
+    'https://indieweb.org/like':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/sSu6ZYg6dfuvEfhb5Yep'
+    'https://indieweb.org/repost':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/3ZLpEJnDxCBfGHmFkiJQ'
+    'https://indieweb.org/h-entry':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/touUnqRSwtH8YKUg_Yz6'
+    'https://indieweb.org/microformats':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/pyP-dRPL2QqLZ0VvSGDy'
 site_url: 'https://desmondrivet.com'
