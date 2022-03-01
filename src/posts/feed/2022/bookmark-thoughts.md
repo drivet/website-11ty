@@ -9,7 +9,7 @@ mp-syndicate-to:
   - twitter_bridgy
 ---
 
-Like many Indieweb particiants, I post [bookmarks][1], [likes][2] and
+Like many Indieweb participants, I post [bookmarks][1], [likes][2] and
 [reposts][3] to my website.
 
 From a technical standpoint, there's virtually no difference between these
