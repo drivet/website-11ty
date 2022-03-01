@@ -6,7 +6,7 @@ const sanitizeHTML = require('sanitize-html')
 const { scrape } = require('./utils/scrape');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const yaml = require("js-yaml");
-const { load_previews, save_previews } = require('./utils/preview_cache.js');
+const { loadPreviews, savePreviews } = require('./utils/preview-cache.js');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc')
@@ -283,7 +283,7 @@ module.exports = (eleventyConfig) => {// Browsersync config
 
   let previews_changed = false;
   eleventyConfig.addNunjucksAsyncFilter('preview', async (url, key, cb) => {
-    const previews = load_previews();
+    const previews = loadPreviews();
     let preview;
     if (key in previews) {
       preview = previews[key];
@@ -298,7 +298,7 @@ module.exports = (eleventyConfig) => {// Browsersync config
 
   eleventyConfig.on('eleventy.after', () => {
     if (previews_changed) {
-      save_previews();
+      savePreviews();
     }
   });
 

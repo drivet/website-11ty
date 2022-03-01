@@ -4,7 +4,7 @@ let previews = null;
 
 const CACHE_DIR = './_cache'
 
-function load_previews() {
+function loadPreviews() {
   if (previews !== null) {
     return previews;
   }
@@ -21,7 +21,7 @@ function load_previews() {
   return previews;
 }
 
-function save_previews() {
+function savePreviews() {
   console.log('saving previews...');
   const filePath = `${CACHE_DIR}/previews.json`
   const fileContent = JSON.stringify(previews, null, 2);
@@ -34,5 +34,5 @@ function save_previews() {
 }
 
 module.exports = {
-  load_previews, save_previews
+  loadPreviews, savePreviews
 };
