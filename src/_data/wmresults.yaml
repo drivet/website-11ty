@@ -1514,4 +1514,6 @@ results:
     'https://indieweb.org/microformats':
       status_code: 201
       location: 'https://webmention.io/indiewebcamp/webmention/pyP-dRPL2QqLZ0VvSGDy'
+  2022/03/02/090110:
+    'https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/': {}
 site_url: 'https://desmondrivet.com'
