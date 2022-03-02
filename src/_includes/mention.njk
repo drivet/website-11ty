@@ -1,18 +1,24 @@
 {% from "avatar.njk" import avatar %}
-<div class="row">
-  <a href="{{ link.url }}">
-    <i class="fas fa-external-link-alt"></i>
-  </a>
-  {{ avatar(link.author.photo) }}
-  <a href="{{ link.author.url }}">{{ link.author.name }}</a>
-  &middot;
-  <span>{{ link.published | date  }}</span>
-</div>
 
-<article class="wm-group--content">
-  {% if link.content.html %}
-  {{ link.content.html | safe }}
-  {% else %}
-  {{ link.content.text }}
-  {% endif %}
+<article class="wm-mention">
+  <div class="row">
+    <a class="wm-mention--link" href="{{ link.url }}"><i class="fas fa-external-link-alt"></i></a>
+    {{ avatar(link.author.photo) }}
+    <div>
+      <div>
+        <a class="wm-mention--author" href="{{ link.author.url }}">{{ link.author.name }}</a>
+      </div>
+      <div>
+        <span class="wm-mention--published">{{ link.published | date  }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="wm-mention--content">
+    {% if link.content.html %}
+    {{ link.content.html | safe }}
+    {% else %}
+    {{ link.content.text }}
+    {% endif %}
+  </div>
 </article>

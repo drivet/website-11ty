@@ -26,11 +26,11 @@
 
 {% if expand and ((mentions | length > 0) or (likes | length > 0) or (reposts | length > 0) or (bookmarks | length > 0)) %}
 {% if mentions.length > 0 %}
-<section class="wm-group wm-mentions">
-  <h1 id="wm-mentions" class="wm-group--header">Mentions</h1>
-  <ul class="wm-group--list"> 
+<section class="wm-group">
+  <h1 id="wm-mentions">Mentions</h1>
+  <ul class="content-list"> 
     {% for link in mentions %}
-    <li class="wm-group--mention-item">
+    <li class="content-list__item content-list__item--separator">
     {% include 'mention.njk' %}
     </li>
     {% endfor %}
@@ -40,10 +40,10 @@
 
 {% if likes.length > 0 %}
 <section class="wm-group">
-  <h1 id="wm-likes" class="wm-group--header">Likes</h1>
-  <ul class="wm-group--list"> 
+  <h1 id="wm-likes">Likes</h1>
+  <ul class="content-list"> 
     {% for link in likes %}
-    <li class="wm-group--item">
+    <li class="content-list__item content-list__item--compact">
     {% include 'link.njk' %}
     </li>
     {% endfor %}
@@ -53,10 +53,10 @@
 
 {% if reposts.length > 0 %}
 <section class="wm-group">
-  <h1 id="wm-reposts" class="wm-group--header">Reposts</h1>
-  <ul class="wm-group--list">
+  <h1 id="wm-reposts">Reposts</h1>
+  <ul class="content-list">
     {% for link in reposts %}
-    <li class="wm-group--item">
+    <li class="content-list__item content-list__item--compact">
     {% include 'link.njk' %}
     </li>
     {% endfor %}
@@ -67,9 +67,9 @@
 {% if bookmarks.length > 0 %}
 <section class="wm-group">
   <h1 id="wm-bookmarks" class="wm-group--header">Bookmarks</h1>
-  <ul class="wm-group--list">
+  <ul class="content-list">
     {% for link in bookmarks %}
-    <li class="wm-group--item">
+    <li class="content-list__item content-list__item--compact">
     {% include 'link.njk' %}
     </li>
     {% endfor %}

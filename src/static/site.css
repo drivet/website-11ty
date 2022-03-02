@@ -173,11 +173,6 @@ body {
   color: var(--lighter-color); 
 }
 
-.wm-group {
-  margin-top: 5em;
-  border-top: 1px solid var(--lightest-color);
-}
-
 .cite {
   margin: 0;
   padding: 0 0 0 1em;
@@ -203,10 +198,12 @@ body {
   max-width: 100%;
 }
 
-.wm-group {
-  margin-top: 2em;
-}
 
+.wm-group {
+  margin-top: 3em;
+  /* border-top: 1px solid var(--lightest-color); */
+}
+/*
 .wm-group--list {
   list-style: none;
   padding-left: 0;
@@ -233,7 +230,19 @@ body {
   padding-top: 0;
 }
 
-.wm-group--content {
+.wm-mention {
+  padding: 1.5em 0;
+}
+*/
+.wm-mention--author {
+  margin-right: 0.5em;
+}
+
+.wm-mention--published {
+  font-size: var(--font-size-smaller);
+}
+
+.wm-mention--content {
   margin-top: 1em;
 }
 

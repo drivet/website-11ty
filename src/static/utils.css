@@ -27,3 +27,28 @@
 .rowitem--right {
     margin-left: auto;
 }
+
+.content-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+  
+.content-list__item:first-child {
+    padding-top: 0;
+    border-top: 0;
+}
+  
+.content-list__item {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+ 
+.content-list__item--separator {
+    border-top: 1px solid var(--lightest-color);
+}
+
+.content-list__item--compact {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
