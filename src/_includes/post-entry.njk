@@ -5,7 +5,7 @@
   <header>
     <a href="/" class="u-author"></a>
     
-    <span class="entry__headerline row--comfy">
+    <span class="entry__headerline row row--comfy">
       <span class="entry__published dt-published">{{ post.data.date | date  }}</span>
       &middot;
       {% set syndications = wmresults | syndications_for_url(post.url | strip_ext) %}

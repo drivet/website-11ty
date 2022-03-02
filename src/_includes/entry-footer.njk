@@ -14,8 +14,8 @@
           {% endfor %}
     </div>
     {% endif %}
-    <div class="entry__footerline row--spacious">
-      <div class = "rowitem row--spacious">
+    <div class="entry__footerline row row--spacious">
+      <div class = "rowitem row row--spacious">
         <a class="wm-counter entry__footerlink" href="{{ url }}#wm-mentions" title="Mentions"><i class="far fa-comment"></i> {{ mentions | length }}</a>
         <a class="wm-counter entry__footerlink" href="{{ url }}#wm-likes" title="Likes"><i class="far fa-thumbs-up"></i> {{ likes | length }}</a>
         <a class="wm-counter entry__footerlink" href="{{ url }}#wm-reposts" title="Reposts"><i class="fa fa-retweet"></i>  {{ reposts | length }}</a>

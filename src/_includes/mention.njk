@@ -1,20 +1,20 @@
 {% from "avatar.njk" import avatar %}
 
 <article class="wm-mention">
-  <div class="row">
+  <div class="wm-mention__header row">
     <a class="wm-mention--link" href="{{ link.url }}"><i class="fas fa-external-link-alt"></i></a>
     {{ avatar(link.author.photo) }}
     <div>
       <div>
-        <a class="wm-mention--author" href="{{ link.author.url }}">{{ link.author.name }}</a>
+        <a class="wm-mention__author" href="{{ link.author.url }}">{{ link.author.name }}</a>
       </div>
       <div>
-        <span class="wm-mention--published">{{ link.published | date  }}</span>
+        <span class="wm-mention__published">{{ link.published | date  }}</span>
       </div>
     </div>
   </div>
 
-  <div class="wm-mention--content">
+  <div class="wm-mention__content">
     {% if link.content.html %}
     {{ link.content.html | safe }}
     {% else %}

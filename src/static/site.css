@@ -2,6 +2,7 @@
   --side-padding: 1em;
   --font-size: 18px;
   --font-size-smaller: 16px;
+  --font-size-smallest: 12px;
   --font-size-bigger: 20px;
 }
 
@@ -234,15 +235,20 @@ body {
   padding: 1.5em 0;
 }
 */
-.wm-mention--author {
+
+.wm-mention__header {
+  line-height: 1.3;
+}
+
+.wm-mention__author {
   margin-right: 0.5em;
 }
 
-.wm-mention--published {
+.wm-mention__published {
   font-size: var(--font-size-smaller);
 }
 
-.wm-mention--content {
+.wm-mention__content {
   margin-top: 1em;
 }
 
