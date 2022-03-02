@@ -1514,4 +1514,12 @@ results:
     'https://indieweb.org/microformats':
       status_code: 201
       location: 'https://webmention.io/indiewebcamp/webmention/pyP-dRPL2QqLZ0VvSGDy'
+  2022/03/02/090110:
+    'https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/': {}
+  2022/03/02/090216:
+    'https://www.smashingmagazine.com/2016/04/web-developer-guide-color/': {}
+  2022/03/02/090157:
+    'https://www.smashingmagazine.com/2010/02/color-theory-for-designer-part-3-creating-your-own-color-palettes/': {}
+  2022/03/02/090136:
+    'https://www.smashingmagazine.com/2010/02/color-theory-for-designers-part-2-understanding-concepts-and-terminology/': {}
 site_url: 'https://desmondrivet.com'
