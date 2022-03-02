@@ -1,7 +1,7 @@
 :root {
   --side-padding: 1em;
   --font-size: 18px;
-  --font-size-smaller: 16px;
+  --font-size-smaller: 14px;
   --font-size-smallest: 12px;
   --font-size-bigger: 20px;
 }
@@ -134,8 +134,8 @@ body {
 }
 
 .entry {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .entry__headerline {
@@ -167,7 +167,7 @@ body {
 }
 
 .entry__footerline {
-  margin-top: 0.5em;
+  margin-top: 0.3em;
 }
 
 .entry__footerlink {
