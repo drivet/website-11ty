@@ -3,7 +3,7 @@
 {% from "entry-header.njk" import entryheader %}
 
 <article class="h-entry">
-  {{ entryheader(post.data.date, post.url, post.data.title, 2) }}
+  {{ entryheader(wmresults, post.data.date, post.url, post.data.title, 2) }}
   
   {% if post.data.blurb %}
   <div class="p-summary" style="display: none">

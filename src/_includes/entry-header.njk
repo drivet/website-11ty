@@ -1,15 +1,17 @@
-{% macro entryheader(date, url, title, level) %}
+{% macro entryheader(wmresults, date, url, title, level) %}
 <header class="entry__header {{'entry__header--top' if level == 1 }}">
     <a href="/" class="u-author"></a>
 
-    <span class="entry__headerline row row--comfy">
+    <span class="entry__headerline row row--spacious">
         <span class="entry__published dt-published">{{ date | date  }}</span>
-        &middot;
-        {% set syndications = wmresults | syndications_for_url(url | strip_ext) %}
-        {% for s in syndications %}
-        <a class="u-syndication entry__footerlink" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
-        {% endfor %}
-        <a class="u-url entry__footerlink" href="{{ url | strip_ext }}" title="Permalink"><i class="fa fa-link"></i></a>
+
+        <div class="row">
+            {% set syndications = wmresults | syndications_for_url(url | strip_ext) %}
+            {% for s in syndications %}
+            <a class="u-syndication entry__footerlink" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
+            {% endfor %}
+            <a class="u-url entry__footerlink" href="{{ url | strip_ext }}" title="Permalink"><i class="fa fa-bookmark"></i></a>
+        </div>
     </span>
 
     {% if title  %}
