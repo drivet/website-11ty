@@ -6,7 +6,7 @@
         <span class="entry__published dt-published">{{ date | date  }}</span>
 
         <div class="row">
-            {% set syndications = wmresults | syndications_for_url(url | strip_ext) %}
+            {% set syndications = wmresults | syndicationsForUrl(url | strip_ext) %}
             {% for s in syndications %}
             <a class="u-syndication entry__footerlink" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
             {% endfor %}

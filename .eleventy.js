@@ -259,9 +259,9 @@ module.exports = (eleventyConfig) => {
     return dayjs(d).tz('America/Montreal').format('YYYY-MM-DD h:mm A Z');
   });
 
-  eleventyConfig.addFilter("webmentions_for_url", webmentionsForUrl);
-  eleventyConfig.addFilter("webmention_kind", webmentionKind);
-  eleventyConfig.addFilter("syndications_for_url", sydicationsForUrl);
+  eleventyConfig.addFilter("webmentionsForUrl", webmentionsForUrl);
+  eleventyConfig.addFilter("webmentionKind", webmentionKind);
+  eleventyConfig.addFilter("syndicationsForUrl", sydicationsForUrl);
 
   eleventyConfig.addFilter('link_context_type', scraped => {
     if (!scraped) {

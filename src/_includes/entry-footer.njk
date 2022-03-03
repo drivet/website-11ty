@@ -1,9 +1,9 @@
  <footer class="entry__footer">
-    {% set allmentions = webmentions.children | webmentions_for_url(url) %}
-    {% set mentions = allmentions | webmention_kind('in-reply-to', 'mention-of')%}
-    {% set likes = allmentions | webmention_kind('like-of') %}
-    {% set reposts = allmentions | webmention_kind('repost-of') %}
-    {% set bookmarks = allmentions | webmention_kind('bookmark-of') %}
+    {% set allmentions = webmentions.children | webmentionsForUrl(url) %}
+    {% set mentions = allmentions | webmentionKind('in-reply-to', 'mention-of')%}
+    {% set likes = allmentions | webmentionKind('like-of') %}
+    {% set reposts = allmentions | webmentionKind('repost-of') %}
+    {% set bookmarks = allmentions | webmentionKind('bookmark-of') %}
   
    {% if tags %}
     <div class="entry__footerline">
