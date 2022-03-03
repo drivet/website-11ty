@@ -9,9 +9,9 @@ rss: "/posts/feed_blog.xml"
 navname: "blog"
 ---
 
-<ul class="feed__list">
+<ul class="content-list">
 {% asyncEach post in pagination.items %}
-<li class="feed__item">
+<li class="content-list__item content-list__item--separator content-list__item--spacious">
 {% include "post-entry.njk" %}
 </li>
 {% endeach %}

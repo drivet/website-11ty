@@ -1,24 +1,9 @@
 {% from "photo.njk" import photo %}
 {% from "reflink.njk" import reflink %}
+{% from "entry-header.njk" import entryheader %}
 
-<article class="h-entry entry">
-  <header>
-    <a href="/" class="u-author"></a>
-    
-    <span class="entry__headerline row row--comfy">
-      <span class="entry__published dt-published">{{ post.data.date | date  }}</span>
-      &middot;
-      {% set syndications = wmresults | syndications_for_url(post.url | strip_ext) %}
-      {% for s in syndications %}
-      <a class="u-syndication entry__footerlink" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
-      {% endfor %}
-      <a class="u-url entry__footerlink" href="{{ post.url | strip_ext }}" title="Permalink"><i class="fa fa-link"></i></a>
-    </span>
-
-    {% if post.data.title  %}
-    <h2 class="entry__title p-name"><a href="{{ post.url | strip_ext }}" class="entry__titlelink">{{ post.data.title }}</a></h2>
-    {% endif %}
-  </header>
+<article class="h-entry">
+  {{ entryheader(post.data.date, post.url, post.data.title, 2) }}
   
   {% if post.data.blurb %}
   <div class="p-summary" style="display: none">

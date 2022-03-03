@@ -65,12 +65,7 @@ body {
   color: var(--dark-grey);
 }
 
-.main__header {
-  margin-top: 1em;
-}
-
 .main__title {
-  margin: 0;
   color: var(--dark-grey);
 }
 
@@ -113,20 +108,6 @@ body {
   display: none;
 }
 
-.feed__list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.feed__item {
-  border-bottom: 1px solid var(--lightest-color);
-}
-
-.feed__item:last-child {
-  border-bottom: 0;
-}
-
 .feed__pagenav {
   display: flex;
 }
@@ -135,9 +116,13 @@ body {
   margin-right: auto;
 }
 
-.entry {
-  padding-top: 3em;
-  padding-bottom: 3em;
+
+.entry__header {
+  margin: 0 0 1em 0;
+}
+
+.entry__header--top {
+  margin-top: 1em;
 }
 
 .entry__headerline {

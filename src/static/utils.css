@@ -47,3 +47,8 @@
     padding-top: 0.2em;
     padding-bottom: 0.2em;
 }
+
+.content-list__item--spacious {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
