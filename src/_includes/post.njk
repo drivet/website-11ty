@@ -29,14 +29,14 @@
   {{ photom(photo) }}
 
   {% if postType != 'article' %}
-  {% set link = referencedLink or (content | content_link) %}
+  {% set link = referencedLink or (content | contentLink) %}
   {% if link %}
   {% set scraped = link | preview(link | slug) %}
   {% include "preview.njk" %}
   {% endif %}
   {% endif %}
   </div>
-  {% set url = page.url | strip_ext %} 
+  {% set url = page.url | stripExt %} 
   {% set expand = true %}
   {% include "entry-footer.njk" %}
 </div>

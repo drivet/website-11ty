@@ -24,7 +24,7 @@
   {{ photo(post.data.photo) }}
 
   {% if post.data.postType != 'article' %}
-  {% set link = post.data.referencedLink or (post.templateContent | content_link) %}
+  {% set link = post.data.referencedLink or (post.templateContent | contentLink) %}
   {% if link %}
   {% set scraped = link | preview(link | slug) %}
   {% include "preview.njk" %}
@@ -32,10 +32,10 @@
   {% endif %}
 
   {% if post.data.postType == 'article' %}
-  <a href="{{ post.url | strip_ext }}">Read more &raquo;</a>
+  <a href="{{ post.url | stripExt }}">Read more &raquo;</a>
   {% endif %}
   </div>
   {% set tags = post.data.tags %}
-  {% set url = post.url | strip_ext %}
+  {% set url = post.url | stripExt %}
   {% include "entry-footer.njk" %}
 </article>

@@ -263,7 +263,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter("webmentionKind", webmentionKind);
   eleventyConfig.addFilter("syndicationsForUrl", sydicationsForUrl);
 
-  eleventyConfig.addFilter('link_context_type', scraped => {
+  eleventyConfig.addFilter('linkContextType', scraped => {
     if (!scraped) {
       return null;
     }
@@ -302,16 +302,16 @@ module.exports = (eleventyConfig) => {
     }
   });
 
-  eleventyConfig.addFilter('content_link', content => {
+  eleventyConfig.addFilter('contentLink', content => {
     const links = html.links(content);
     return links[0];
   });
 
-  eleventyConfig.addFilter('json_string', obj => {
+  eleventyConfig.addFilter('jsonString', obj => {
     return JSON.stringify(obj);
   });
 
-  eleventyConfig.addFilter('strip_ext', obj => {
+  eleventyConfig.addFilter('stripExt', obj => {
     return obj.replace(/\.[^/.]+$/, '');
   });
 

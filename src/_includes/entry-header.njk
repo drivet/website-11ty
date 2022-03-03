@@ -6,19 +6,19 @@
         <span class="entry__published dt-published">{{ date | date  }}</span>
 
         <div class="row">
-            {% set syndications = wmresults | syndicationsForUrl(url | strip_ext) %}
+            {% set syndications = wmresults | syndicationsForUrl(url | stripExt) %}
             {% for s in syndications %}
             <a class="u-syndication entry__footerlink" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
             {% endfor %}
-            <a class="u-url entry__footerlink" href="{{ url | strip_ext }}" title="Permalink"><i class="fa fa-bookmark"></i></a>
+            <a class="u-url entry__footerlink" href="{{ url | stripExt }}" title="Permalink"><i class="fa fa-bookmark"></i></a>
         </div>
     </span>
 
     {% if title  %}
     {% if level == 1 %}
-    <h1 class="entry__title p-name"><a href="{{ url | strip_ext }}" class="entry__titlelink">{{ title }}</a></h1>
+    <h1 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h1>
     {% else %}
-    <h2 class="entry__title p-name"><a href="{{ url | strip_ext }}" class="entry__titlelink">{{ title }}</a></h2>
+    <h2 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h2>
     {% endif %}
     {% endif %}
 </header>
