@@ -84,10 +84,12 @@ body {
   margin-top: 1em;
   border-top: 1px solid var(--lightest-color);
 }
+
 .main-footer__content {
   max-width: 100%;
   margin: 0 auto;
   padding: 1em 0.5em;
+  font-size: var(--font-size-smaller);
 }
 
 .feed__navbaritem {
@@ -199,42 +201,9 @@ body {
   max-width: 100%;
 }
 
-
 .wm-group {
   margin-top: 3em;
-  /* border-top: 1px solid var(--lightest-color); */
 }
-/*
-.wm-group--list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.wm-group--mention-item {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  border-top: 1px solid var(--lightest-color);
-}
-
-.wm-group--mention-item:first-child {
-  padding-top: 0;
-  border-top: 0;
-}
-
-.wm-group--item {
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-}
-
-.wm-group--item:first-child {
-  padding-top: 0;
-}
-
-.wm-mention {
-  padding: 1.5em 0;
-}
-*/
 
 .wm-mention__header {
   line-height: 1.3;
