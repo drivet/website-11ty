@@ -21,9 +21,7 @@
 
   {{ post.templateContent | excerpt | safe }}
 
-  {% if post.data.photo %}
   {{ photo(post.data.photo) }}
-  {% endif %}
 
   {% if post.data.postType != 'article' %}
   {% set link = post.data.referencedLink or (post.templateContent | content_link) %}

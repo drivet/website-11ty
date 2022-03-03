@@ -26,9 +26,7 @@
 
   {{ content | safe }}
   
-  {% if photo %}
   {{ photom(photo) }}
-  {% endif %}
 
   {% if postType != 'article' %}
   {% set link = referencedLink or (content | content_link) %}
