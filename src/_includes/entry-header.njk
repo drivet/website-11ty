@@ -3,14 +3,13 @@
     <a href="/" class="u-author"></a>
 
     <span class="entry__headerline row row--spacious">
-        <span class="entry__published dt-published">{{ date | date  }}</span>
+        <a class="entry__published dt-published" href="{{ url | stripExt }}">{{ date | date  }}</a>
 
-        <div class="row">
+        <div class="row row__item--right">
             {% set syndications = wmresults | syndicationsForUrl(url | stripExt) %}
             {% for s in syndications %}
             <a class="u-syndication entry__footerlink" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
             {% endfor %}
-            <a class="u-url entry__footerlink" href="{{ url | stripExt }}" title="Permalink"><i class="fa fa-bookmark"></i></a>
         </div>
     </span>
 

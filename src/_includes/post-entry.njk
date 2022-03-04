@@ -32,8 +32,9 @@
   {% endif %}
 
   {% if post.data.postType == 'article' %}
-  <a href="{{ post.url | stripExt }}">Read more &raquo;</a>
+  <p><a href="{{ post.url | stripExt }}">Read more &raquo;</a></p>
   {% endif %}
+
   </div>
   {% set tags = post.data.tags %}
   {% set url = post.url | stripExt %}

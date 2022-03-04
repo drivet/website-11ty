@@ -6,22 +6,20 @@
     {% set bookmarks = allmentions | webmentionKind('bookmark-of') %}
   
    {% if tags %}
-    <div class="entry__footerline">
-          <i class="fa fa-tag fa-flip-horizontal"></i>
-          {% set comma = joiner(",") %}
-          {% for tag in tags %}
-          {{ comma() }} <a class="p-category" href="/posts/tags/{{tag}}.html">{{ tag }}</a>
-          {% endfor %}
-    </div>
+    <p>
+        {% for tag in tags %}
+        <a class="p-category tag" href="/posts/tags/{{tag}}.html">{{ tag }}</a>
+        {% endfor %}
+    </p>
     {% endif %}
-    <div class="entry__footerline row row--spacious">
-      <div class = "rowitem row row--spacious">
+    <p class="row row--spacious">
+      <div class = "row__item row row--spacious">
         <a class="wm-counter entry__footerlink" href="{{ url }}#wm-mentions" title="Mentions"><i class="far fa-comment"></i> {{ mentions | length }}</a>
         <a class="wm-counter entry__footerlink" href="{{ url }}#wm-likes" title="Likes"><i class="far fa-thumbs-up"></i> {{ likes | length }}</a>
         <a class="wm-counter entry__footerlink" href="{{ url }}#wm-reposts" title="Reposts"><i class="fa fa-retweet"></i>  {{ reposts | length }}</a>
         <a class="wm-counter entry__footerlink" href="{{ url }}#wm-bookmarks" title="Bookmarks"><i class="fa fa-bookmark"></i> {{ bookmarks | length }}</a>
       </div>
-    </div>
+    </p>
 </footer>
 
 {% if expand and ((mentions | length > 0) or (likes | length > 0) or (reposts | length > 0) or (bookmarks | length > 0)) %}

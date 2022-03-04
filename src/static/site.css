@@ -18,7 +18,7 @@ body {
 }
 
 .fa-rss-square {
-  color: #ffa872;
+  color: var(--complement);
 }
 
 .avatar {
@@ -37,7 +37,7 @@ body {
 
 .secondary-header {
   padding: 0 var(--side-padding);
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid var(--lightest-color);
 }
 
 .navbar__brand {
@@ -131,11 +131,11 @@ body {
 }
 
 .entry__published {
-  font-style: italic;
+  color: var(--lighter-color);
 }
 
 .entry__title {
-  margin-top: 0;
+  margin: 0.5em 0;
 }
 
 .entry__titlelink {
@@ -148,17 +148,19 @@ body {
 }
 
 .entry__footer {
-  margin-top: 1em;
   font-size: var(--font-size-smaller);
   color: var(--lighter-color);
 }
 
-.entry__footerline {
-  margin-top: 0.3em;
-}
-
 .entry__footerlink {
   color: var(--lighter-color); 
+}
+
+.tag {
+  padding: 0.3em;
+  background-color: var(--accent);
+  color: white;
+  border-radius: 5px;
 }
 
 .cite {
@@ -215,7 +217,7 @@ body {
 .tag-list__item {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid var(--lighter-color);
 }
 .archive-year-list {
   list-style: none;
@@ -228,11 +230,11 @@ body {
 .archive-year-list__year-item {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid var(--lighter-color);
 }
 
 .archive-month-list__month-item {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid var(--lighter-color);
 }

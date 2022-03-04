@@ -12,6 +12,8 @@
     /* this could be used for the headings, if the text color is very light */
     --dark-color: rgb(75, 75, 75);
     
-    --accent: rgb(25, 131, 230);
+    --accent: #1983e6;
+
+    --complement: #e67c19;
 }
   
