@@ -5,6 +5,8 @@ modified: 2021-08-26T01:17:13.000Z
 title: Git is Terrible
 mp-syndicate-to:
   - twitter_bridgy
+tags:
+  - programming
 ---
 
 If I say that my professional life has spanned [RCS][1], [CVS][2],

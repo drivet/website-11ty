@@ -4,13 +4,6 @@
 
     <span class="entry__headerline row row--spacious">
         <a class="entry__published dt-published" href="{{ url | stripExt }}">{{ date | date  }}</a>
-
-        <div class="row row__item--right">
-            {% set syndications = wmresults | syndicationsForUrl(url | stripExt) %}
-            {% for s in syndications %}
-            <a class="u-syndication entry__footerlink" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
-            {% endfor %}
-        </div>
     </span>
 
     {% if title  %}

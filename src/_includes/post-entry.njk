@@ -30,12 +30,12 @@
   {% include "preview.njk" %}
   {% endif %}
   {% endif %}
+  </div>
 
   {% if post.data.postType == 'article' %}
-  <p><a href="{{ post.url | stripExt }}">Read more &raquo;</a></p>
+  <p><a class="read-more" href="{{ post.url | stripExt }}">Read more &raquo;</a></p>
   {% endif %}
-
-  </div>
+    
   {% set tags = post.data.tags %}
   {% set url = post.url | stripExt %}
   {% include "entry-footer.njk" %}

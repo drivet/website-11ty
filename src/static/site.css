@@ -1,7 +1,7 @@
 :root {
   --side-padding: 1em;
   --font-size: 18px;
-  --font-size-smaller: 14px;
+  --font-size-smaller: 16px;
   --font-size-smallest: 12px;
   --font-size-bigger: 20px;
 }
@@ -155,14 +155,22 @@ body {
 .entry__footerlink {
   color: var(--lighter-color); 
 }
-
-.tag {
-  padding: 0.3em;
-  background-color: var(--accent);
+/*
+.read-more {
+  font-size: var(--font-size-smaller);
+  padding: 0.2em;
+  background-color: var(--complement);
   color: white;
   border-radius: 5px;
 }
 
+.tag {
+  padding: 0.2em;
+  background-color: var(--accent);
+  color: white;
+  border-radius: 5px;
+}
+*/
 .cite {
   margin: 0;
   padding: 0 0 0 1em;
