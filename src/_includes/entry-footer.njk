@@ -9,15 +9,20 @@
     {% if tags or syndications %}
     <p>
       <div class="row">
-        {% if tags %}
+        {% if tags | length > 0 %}
         <div class="row">
           {% for tag in tags %}
           <a class="p-category tag" href="/posts/tags/{{tag}}.html">#{{ tag }}</a>
           {% endfor %}
         </div>
-        {% endif %}
+        
+        {% if syndications | length > 0 %}
         &middot;
-        {% if syndications %}
+        {% endif %}
+
+        {% endif %}
+        
+        {% if syndications | length > 0 %}
         <div class="row">
           {% for s in syndications %}
           <a class="u-syndication" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
