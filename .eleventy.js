@@ -73,7 +73,7 @@ function getSlug(fslug) {
 }
 
 function getPosts(collection) {
-  return collection.getFilteredByGlob("./src/posts/feed/**/*.md");
+  return collection.getFilteredByGlob("./src/posts/feed/**/*.md").reverse();
 }
 
 function getYear(date) {
@@ -187,7 +187,6 @@ function flatPaginate(indexedCollection, size) {
       pages.push(page);
     }
   }
- 
   return pages;
 }
 
@@ -335,19 +334,19 @@ module.exports = (eleventyConfig) => {
 
   // standard collections with pagination
   eleventyConfig.addCollection("all", (collection) =>
-    getPosts(collection).reverse()
+    getPosts(collection)
   );
 
   eleventyConfig.addCollection("posts", (collection) =>
-    postTypes(getPosts(collection), ["article", "note", "photo"]).reverse()
+    postTypes(getPosts(collection), ["article", "note", "photo"])
   );
   
   eleventyConfig.addCollection("blog", (collection) =>
-    postTypes(getPosts(collection), ["article"]).reverse()
+    postTypes(getPosts(collection), ["article"])
   );
 
   eleventyConfig.addCollection("bookmarks", (collection) =>
-    postTypes(getPosts(collection), ["bookmark"]).reverse()
+    postTypes(getPosts(collection), ["bookmark"])
   );
 
   // index pages
