@@ -13,6 +13,7 @@
   }
 }
 ---
+{%- from "reflink.njk" import reflink -%}
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ metadata.title }}</title>
@@ -31,7 +32,10 @@
     <link href="{{ absolutePostUrl  }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    <content type="html">
+        {{ reflink(post.data.postType, post.data.referencedLink) }}
+        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+    </content>
   </entry>
   {%- endfor %}
 </feed>
