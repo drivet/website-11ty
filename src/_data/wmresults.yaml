@@ -1522,4 +1522,33 @@ results:
     'https://www.smashingmagazine.com/2010/02/color-theory-for-designer-part-3-creating-your-own-color-palettes/': {}
   2022/03/02/090136:
     'https://www.smashingmagazine.com/2010/02/color-theory-for-designers-part-2-understanding-concepts-and-terminology/': {}
+  2022/03/06/pelican-to-eleventy:
+    'https://brid.gy/publish/twitter':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1500529883793010688'
+    'https://blog.getpelican.com/': {}
+    'https://www.11ty.dev/': {}
+    'https://indieweb.org/':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/XpvyzxqCDrqOicx5JRSl'
+    'https://indieweb.org/article':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/wi5oEg_ThnAWj5PdxBXi'
+    'https://indieweb.org/note':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/Xy8CwrqDEKpUtLcxP4mw'
+  2022/03/06/195739:
+    'https://mxb.dev/blog/indieweb-link-sharing/':
+      status_code: 201
+      location: 'https://webmention.io/mxb.dev/webmention/MUTJgWW9tDAb0HhfXLw2'
+    'https://mxb.dev':
+      status_code: 201
+      location: 'https://webmention.io/mxb.dev/webmention/ebJOK0wUsFDpaGtR31b6'
+  2022/03/06/200139:
+    'https://mxb.dev/blog/how-to-turn-your-website-into-a-pwa/':
+      status_code: 201
+      location: 'https://webmention.io/mxb.dev/webmention/T5NtpzvUnwn_kobbNC89'
+    'https://mxb.dev':
+      status_code: 201
+      location: 'https://webmention.io/mxb.dev/webmention/6Klt203FLQdIVnkFRwQA'
 site_url: 'https://desmondrivet.com'
