@@ -1544,4 +1544,11 @@ results:
     'https://mxb.dev':
       status_code: 201
       location: 'https://webmention.io/mxb.dev/webmention/ebJOK0wUsFDpaGtR31b6'
+  2022/03/06/200139:
+    'https://mxb.dev/blog/how-to-turn-your-website-into-a-pwa/':
+      status_code: 201
+      location: 'https://webmention.io/mxb.dev/webmention/T5NtpzvUnwn_kobbNC89'
+    'https://mxb.dev':
+      status_code: 201
+      location: 'https://webmention.io/mxb.dev/webmention/6Klt203FLQdIVnkFRwQA'
 site_url: 'https://desmondrivet.com'
