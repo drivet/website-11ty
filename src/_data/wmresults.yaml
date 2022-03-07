@@ -1537,4 +1537,11 @@ results:
     'https://indieweb.org/note':
       status_code: 201
       location: 'https://webmention.io/indiewebcamp/webmention/Xy8CwrqDEKpUtLcxP4mw'
+  2022/03/06/195739:
+    'https://mxb.dev/blog/indieweb-link-sharing/':
+      status_code: 201
+      location: 'https://webmention.io/mxb.dev/webmention/MUTJgWW9tDAb0HhfXLw2'
+    'https://mxb.dev':
+      status_code: 201
+      location: 'https://webmention.io/mxb.dev/webmention/ebJOK0wUsFDpaGtR31b6'
 site_url: 'https://desmondrivet.com'
