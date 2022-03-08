@@ -93,15 +93,16 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1em;
-  padding: 0.6em 0;
+  padding: 0.4em 0;
   border-bottom: 2px solid white;
-  border-top: 2px solid white;
 }
 
 .feed__navbaritem--active {
   font-weight: bold;
   color: var(--accent);
-  border-bottom: 2px solid var(--accent)
+  border-bottom: 2px solid var(--accent);
+  border-top: 2px solid var(--light-accent);
+  background-color: var(--light-accent);
 }
 
 .feed__navname {
@@ -163,14 +164,13 @@ body {
   color: white;
   border-radius: 5px;
 }
-
+*/
 .tag {
-  padding: 0.2em;
-  background-color: var(--accent);
-  color: white;
+  padding: 0.1em 0.3em;
+  background-color: var(--light-accent);
   border-radius: 5px;
 }
-*/
+
 .cite {
   margin: 0;
   padding: 0 0 0 1em;
