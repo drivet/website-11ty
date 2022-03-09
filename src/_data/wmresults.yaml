@@ -1551,4 +1551,44 @@ results:
     'https://mxb.dev':
       status_code: 201
       location: 'https://webmention.io/mxb.dev/webmention/6Klt203FLQdIVnkFRwQA'
+  2022/03/09/basic-eleventy-setup:
+    'https://brid.gy/publish/twitter':
+      status_code: 400
+    'https://www.11ty.dev/': {}
+    'https://indieweb.org/':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/FX7-DTUVtS9oKaFdb4YG'
+    'https://www.11ty.dev/docs/': {}
+    'https://indieweb.org/article':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/vAaq5b3NGVgFeOQDTWLf'
+    'https://jekyllrb.com/': {}
+    'https://indieweb.org/note':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/BsrFj9vbJUxW3Z5JHn7F'
+    'https://indieweb.org/bookmark':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/VcmJFOLMJgMtqqsSwu9i'
+    'https://indieweb.org/like':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/02vg8sDLbimj0Yf45Q1V'
+    'https://indieweb.org/repost':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/2pgzhple1d3JruGchkHx'
+    'https://www.11ty.dev/docs/data-template-dir/': {}
+    'https://www.11ty.dev/docs/filters/': {}
+    'https://www.w3.org/Provider/Style/URI': {}
+    'https://www.netlify.com/': {}
+    'https://www.11ty.dev/docs/collections/': {}
+    'https://indieweb.org/post-type-discovery':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/pHbsAweCH12gNA2alYlk'
+    'https://indieweb.org/microformats':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/bUyIWxx8NpksDAslOpro'
+    'https://github.com/kylewm/mf2util': {}
+    'https://www.11ty.dev/docs/data-computed/': {}
+    'https://indieweb.org/Webmention':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/WEFjM2JAPBOaMddh8zuD'
 site_url: 'https://desmondrivet.com'
