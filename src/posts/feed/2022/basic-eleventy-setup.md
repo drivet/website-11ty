@@ -1,6 +1,6 @@
 ---
 title: Eleventy For IndieWeb Enthusiasts - Basic Setup And Post Organization
-blurb: Classifying your #indieweb posts with @eleven_ty
+blurb: Classifying your posts with @eleven_ty #indieweb
 date: 2022-03-09T16:32:33-05:00
 tags:
 - eleventy
