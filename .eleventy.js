@@ -1,4 +1,3 @@
-const pt = require('./utils/post-type.js');
 const html = require('./utils/html.js');
 const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL
@@ -163,7 +162,7 @@ function archiveList(collection) {
 }
 
 function postTypes(collection, postTypes) {
-  return collection.filter((item) => postTypes.includes(pt.postType(item)));
+  return collection.filter((item) => postTypes.includes(item.data.postType));
 }
 
 /**
