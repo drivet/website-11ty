@@ -1551,4 +1551,45 @@ results:
     'https://mxb.dev':
       status_code: 201
       location: 'https://webmention.io/mxb.dev/webmention/6Klt203FLQdIVnkFRwQA'
+  2022/03/09/basic-eleventy-setup:
+    'https://brid.gy/publish/twitter':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1501672831876218890'
+    'https://www.11ty.dev/': {}
+    'https://indieweb.org/':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/Jy9AVz8RjhnaYr5D0Pc9'
+    'https://www.11ty.dev/docs/': {}
+    'https://indieweb.org/article':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/LvsSDHAQS9X05QbKfEfC'
+    'https://jekyllrb.com/': {}
+    'https://indieweb.org/note':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/8BTo2JeFE-D0LZ1-VFJh'
+    'https://indieweb.org/bookmark':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/mf6d1tc7y94eJeOOfS-m'
+    'https://indieweb.org/like':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/DinjRdGoSVB3qqUGRXpu'
+    'https://indieweb.org/repost':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/2kedM-JmikoifX8Y9lkp'
+    'https://www.11ty.dev/docs/data-template-dir/': {}
+    'https://www.11ty.dev/docs/filters/': {}
+    'https://www.w3.org/Provider/Style/URI': {}
+    'https://www.netlify.com/': {}
+    'https://www.11ty.dev/docs/collections/': {}
+    'https://indieweb.org/post-type-discovery':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/5AUE-N2aYWAb3RB5GerL'
+    'https://indieweb.org/microformats':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/XQmlKBGEPy6NWK5EnLXl'
+    'https://github.com/kylewm/mf2util': {}
+    'https://www.11ty.dev/docs/data-computed/': {}
+    'https://indieweb.org/Webmention':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/0-VRrgB1x1qdJLU4LF5j'
 site_url: 'https://desmondrivet.com'
