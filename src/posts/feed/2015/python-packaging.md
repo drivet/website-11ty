@@ -4,7 +4,7 @@ modified: 2015-05-16T05:53:03.218Z
 tags:
   - python
   - programming
-title: Coming to Terms with the Nightmare that is Python Packaging
+title: Coming to Terms With the Nightmare That Is Python Packaging
 ---
 
 I started [YAWT][1] a while ago, in python, because a) I wanted to learn a

@@ -3,6 +3,7 @@ date: 2018-09-02T20:03:25.000Z
 modified: 2018-09-02T20:03:25.000Z
 tags:
   - programming
+  - typescript
 title: Angst and the Angular Module System
 ---
 

@@ -3,6 +3,7 @@ date: 2016-12-13T03:06:00.000Z
 tags:
   - blogging
   - pelican
+  - yawt
 title: Moving to Pelican
 ---
 

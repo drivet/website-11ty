@@ -1,9 +1,10 @@
 ---
 title: Eleventy For IndieWeb Enthusiasts - Basic Setup And Post Organization
-date: 2022-03-07T20:03:02-05:00
+blurb: Classifying your #indieweb posts with @eleven_ty
+date: 2022-03-09T16:32:33-05:00
 tags:
 - eleventy
-- indeweb
+- indieweb
 - blogging
 mp-syndicate-to:
 - twitter_bridgy
@@ -20,7 +21,7 @@ None of this is intended to be an Eleventy tutorial and you'll get the most
 from these posts if you already know [something about how Eleventy
 works][4].
 
-With that out of the way, we'll start with my basic Eleventy setup.
+With that out of the way, we'll start with my basic setup.
 
 ## Post Format
 
@@ -41,10 +42,10 @@ mp-syndicate-to:
 Like many Indieweb participants, I post...
 ```
 
-Nothing much to see here.  I suspect the format would be familiar to
-[Jekyll][6] users.  I have standard title, date and tags attributes. The
-mp-syndicate-to and blurb attributes will be covered later when I talk about
-syndication.
+There's nothing really surprising here and I suspect the format would be
+familiar to [Jekyll][6] users.  I have a standard title, date and tags
+attribute. The mp-syndicate-to and blurb attributes will be covered later
+when I talk about syndication.
 
 I also post [notes][7].  They look like this:
 
@@ -125,9 +126,8 @@ the URL in a browser, and it becomes /year/month/day/slug.
 What this means is that every post will end up at a URL directly off my
 domain name, with no extra decorations that may end up changing over time.
 My "introduction to the IndieWeb" article, for example, is located at
-https://desmondrivet.com/2019/12/08/intro-to-indie-web and I feel like
-there's a good chance this URL would survive any reorganization of my
-website.
+[/2019/12/08/intro-to-indie-web][22] and I feel like there's a good chance
+this URL would survive any reorganization of my website.
 
 ## Post Organization - Recap and Implementation
 
@@ -165,12 +165,12 @@ custom code to handle it.
 I ended up writing a simplified (some might say "half-assed") version of the
 [post discovery algorithm][17] to attach a special "postType" data attribute
 to each post.  The complete post discovery algorithm is meant to work with
-the full variation of [microformatted][18] posts seen "in the wild" and was
+the entire gamut of [microformatted][18] posts seen "in the wild" and was
 unnecessary in the context of my eleventy setup because we're dealing my
 content, on my website, over which I have full control.
 
 So I wrote a postType utility.  As I said, it's geared towards my own
-content but my posts are formatted in a fairly standard manner so I suspect
+content but my posts are formatted in a vaguely standard manner so I suspect
 this code would be at least semi-useful to anyone using Eleventy:
 
 **utils/post-type.js**:
@@ -300,6 +300,9 @@ Things to note:
 * Eleventy's collection API, plus the two helper functions mentioned above,
   are used to create the actual feeds that I want.
 
+After that, you just have to hook these collections into your templates.  I
+won't get into that here.
+
 ## More To Come
 
 This website, as I mentioned before, isn't simple.  In the end, I ended up
@@ -310,8 +313,8 @@ writing code to:
 * receive and display [webmentions][21]
 * send webmentions and syndicate posts
 
-I'm not even getting into the actual *web design* of the site, which might
-deserve its own set of posts.
+It's a lot, and I'm not even getting into the actual *web design* of the
+site, which might deserve its own set of posts.
 
 In any case, I hope someone gets something out of this.  Stay tuned to go
 further down the rabbit hole.
@@ -337,4 +340,4 @@ further down the rabbit hole.
 [19]: https://github.com/kylewm/mf2util
 [20]: https://www.11ty.dev/docs/data-computed/
 [21]: https://indieweb.org/Webmention
-
+[22]: /2019/12/08/intro-to-indie-web

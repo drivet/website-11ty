@@ -5,7 +5,6 @@ tags:
   - blogging
   - yawt
   - blosxom
-  - perl
 title: New Blog
 ---
 
@@ -41,29 +40,21 @@ supports:
 
 * Flavours, as in blosxom.  Non-blosxom users might know this idea
   better as "themes".
-
 * RSS 1.0 and 2.0 at the category level, including, of course, the root
   category (i.e. the entire blog).
-
 * Non-threaded comments.
-
 * Trackbacks.
-
 * Displayable category and archive counts.
-
 * Date based permalinks.
-
 * Markdown syntax for the entries
 
 
 Several features are planned for phase 2:
 
 * Tagging
-
 * Full text search, probably via
   [Plucene](http://search.cpan.org/dist/Plucene/) though I'm not 100%
   decided yet.
-
 * Threading and RSS support for the comments.
 
 I will probably write more about YAWT in detail at a later date,

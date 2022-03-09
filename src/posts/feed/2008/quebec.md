@@ -3,7 +3,6 @@ date: 2008-04-09T05:50:44.000Z
 modified: 2015-05-16T05:52:56.441Z
 tags:
   - society
-  - french
   - quebec
   - culture
 title: French as an Emergent Property
