@@ -1,4 +1,4 @@
 {
-  "permalink": "{{ page | post_permalink }}",
+  "permalink": "{{ page | postPermalink }}",
   "layout": "post.njk"
 }

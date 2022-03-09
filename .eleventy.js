@@ -247,8 +247,7 @@ module.exports = (eleventyConfig) => {
     }
   });
 
-  // "permalink": "{{ page | post_permalink }}"
-  eleventyConfig.addFilter("post_permalink", page => {
+  eleventyConfig.addFilter("postPermalink", page => {
     const date_part = dayjs(page.date).tz('America/Montreal').format('YYYY/MM/DD');
     const slug = getSlug(page.fileSlug);
     return `${date_part}/${slug}.html`;
