@@ -1,25 +1,31 @@
 ---
-title: Eleventy For IndieWeb Enthusiasts - Basic Setup And Organization
+title: Eleventy For IndieWeb Enthusiasts - Basic Setup And Post Organization
 date: 2022-03-07T20:03:02-05:00
+tags:
+- eleventy
+- indeweb
+- blogging
+mp-syndicate-to:
+- twitter_bridgy
 ---
 
-As mentioned previously, I recently converted my website over to Eleventy.
-I'm an IndieWeb participant and, moreover, my website is fairly complex so I
-ended up writing (or, in some cases, pilfering) a fair amount of code to
-make it all work together in an acceptable manner.  I thought I would
-document the process via a series of blog posts in case anyone else finds it
-of value.
+As [mentioned previously][1], I recently converted my website over to
+[Eleventy][2].  I'm an [IndieWeb][3] participant and, moreover, my website
+is fairly complex so I ended up writing (or, in some cases, pilfering) a
+fair amount of code to make it all work together in an acceptable manner.  I
+thought I would document the process via a series of blog posts in case
+anyone else finds it of value.
 
 None of this is intended to be an Eleventy tutorial and you'll get the most
-from these posts if you already know something about how Eleventy works.
+from these posts if you already know [something about how Eleventy
+works][4].
 
 With that out of the way, we'll start with my basic Eleventy setup.
 
 ## Post Format
 
 My posts, like a lot of people's, are all written in markdown with yaml
-frontmatter.  This format is very common and not specific to the IndieWeb.
-A typical blog entry looks like this:
+frontmatter.  A typical [blog entry][5] looks like this:
 
 ``` markdown
 ---
@@ -35,11 +41,12 @@ mp-syndicate-to:
 Like many Indieweb participants, I post...
 ```
 
-Nothing much to see here.  I have standard title, date and tags
-attributes. The mp-syndicate-to and blurb attributes will be covered later
-when I talk about syndication.  The rest of it is pretty standard stuff.
+Nothing much to see here.  I suspect the format would be familiar to
+[Jekyll][6] users.  I have standard title, date and tags attributes. The
+mp-syndicate-to and blurb attributes will be covered later when I talk about
+syndication.
 
-I also post notes.  They look like this:
+I also post [notes][7].  They look like this:
 
 ``` markdown
 ---
@@ -52,7 +59,7 @@ I am grateful that Wordle exists if for no other reason...
 There's no title here, which marks it as a note instead of an article.  More
 on that later.
 
-I post bookmarks, too:
+I post [bookmarks][8], too:
 
 ``` markdown
 ---
@@ -62,7 +69,7 @@ bookmark-of: 'https://blog.mollywhite.net/its-not-still-the-early-days/'
 ```
 
 As you can see, that one contains no title *and* no content.  Most of my
-bookmarks (and likes, and reposts) are formatted like this.  The
+bookmarks (and [likes][9], and [reposts][10]) are formatted like this.  The
 `bookmark-of` attribute identifies this as a bookmark post.  More on that
 later.
 
@@ -77,8 +84,9 @@ folder for every output URL, so one of the first things I did was change
 the permalink scheme.
 
 My posts are all located in `src/posts/feed/` which has the following
-`feed.json` directory data file tucked away inside:
+`feed.json` [directory data file][11] tucked away inside:
 
+**src/posts/feed/feed.json**:
 ``` json
 {
   "permalink": " {{ '{{' }} page | postPermalink {{ '}}' }}",
@@ -86,9 +94,10 @@ My posts are all located in `src/posts/feed/` which has the following
 }
 ```
 
-You can see that the permalink is calculated via a postPermalink filter,
-defined in my .eleventy.js file as so:
+You can see that the permalink is calculated via a postPermalink
+[filter][12], defined in my .eleventy.js file as so:
 
+**.eleventy.js**:
 ``` javascript
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc')
@@ -108,10 +117,10 @@ module.exports = (eleventyConfig) => {
 ```
 
 From reading this, you can see that my preferred permalink structure is
-/year/month/day/slug.html (inspired by Cool URIs don't change), and you can
-probably tell that I live in Montreal :-) Because I host my website on
-Netlify, you can drop the html part of the permalink and it becomes
-/year/month/day/slug.
+/year/month/day/slug.html (inspired by [Cool URIs don't change][13]), and
+you can probably tell that I live in Montreal.  Because I host my website on
+[Netlify][14], you can drop the html part of the permalink when accessing
+the URL in a browser, and it becomes /year/month/day/slug.
 
 What this means is that every post will end up at a URL directly off my
 domain name, with no extra decorations that may end up changing over time.
@@ -123,7 +132,7 @@ website.
 ## Post Organization - Recap and Implementation
 
 I implied above that my post feed consists of several different kinds of
-posts.  I've written about the different post types recognized by the
+posts.  I've [written about][15] the different post types recognized by the
 IndieWeb community, so I won't rehash that here.  I *will*, however, rehash
 the post organization scheme that I eventually settled on for my personal
 site:
@@ -139,7 +148,7 @@ site:
 
 I wanted all these groups to show up as distinct, subscribable feeds on my
 website.  To do this, I made use of a feature of Eleventy called
-"collections", which allows you to group content in arbitrary ways.
+*[collections][16]*, which allows you to group content in arbitrary ways.
 
 The first step in this process involves identifying the type of each post,
 so I can put it in the right bucket.  Is it a blog entry?  A note?  A
@@ -153,11 +162,10 @@ a burden that would discourage frequent posting and, in any case, I
 suspected the process could be automated so I opted instead to write some
 custom code to handle it.
 
-
 I ended up writing a simplified (some might say "half-assed") version of the
-post discovery algorithm to attach a special "postType" data attribute to
-each post.  The complete post discovery algorithm is meant to work with the
-full variation of microformatted posts seen "in the wild" and was
+[post discovery algorithm][17] to attach a special "postType" data attribute
+to each post.  The complete post discovery algorithm is meant to work with
+the full variation of [microformatted][18] posts seen "in the wild" and was
 unnecessary in the context of my eleventy setup because we're dealing my
 content, on my website, over which I have full control.
 
@@ -230,19 +238,33 @@ module.exports = {
 ```
 
 This is a Javascript adaptation of the post discovery function from the
-mf2util python package, which I used in the previous version of my site.  I
-simplified it for my use case, but opted to leave in the event and rsvp
-support in case I ever implement that for my site.
+[mf2util python package][19], which I used in the previous version of my
+site.  I simplified it for my use case, but opted to leave in the event and
+rsvp support in case I ever implement that for my site.
 
 The postType attribute will be one of event, rsvp, repost, like, bookmark,
-reply, video, photo, article or note.  The next step is to group the posts
-into my desired feeds.  To this end, add this to your `.eleventy.js` file:
+reply, video, photo, article or note.  It's attached to each post via
+Eleventy's [computed data feature][20] - I have a `feed.11tydata.js` file in
+my feed folder, alongside the `feed.json` file mentioned above:
 
+**src/posts/feed/feed.11tydata.js**:
 ``` javascript
-const pt = require('./utils/post-type.js');
+const pt = require('../../../utils/post-type.js');
 
+module.exports = {
+  eleventyComputed: {
+    postType: (data) => pt.postType({data}),
+  }
+};
+```
+
+The next step is to group the posts into my desired feeds.  To this end, I
+added this to my `.eleventy.js` file:
+
+**.eleventy.js**:
+``` javascript
 function postTypes(collection, postTypes) {
-  return collection.filter((item) => postTypes.includes(pt.postType(item)));
+  return collection.filter((item) => postTypes.includes(item.data.postType));
 }
 
 function getPosts(collection) {
@@ -270,9 +292,49 @@ module.exports = (eleventyConfig) => {
 ```
 
 Things to note:
+
 * The `getPosts` function returns a reverse-chronologically ordered list of
   all my posts.
 * The `postTypes` function will select out all posts with a type that
   matches one of the types in the supplied list.
 * Eleventy's collection API, plus the two helper functions mentioned above,
   are used to create the actual feeds that I want.
+
+## More To Come
+
+This website, as I mentioned before, isn't simple.  In the end, I ended up
+writing code to:
+
+* provide tag and archive pages for all my posts
+* unfurl external URLs, so we can see context for likes and bookmarks
+* receive and display [webmentions][21]
+* send webmentions and syndicate posts
+
+I'm not even getting into the actual *web design* of the site, which might
+deserve its own set of posts.
+
+In any case, I hope someone gets something out of this.  Stay tuned to go
+further down the rabbit hole.
+
+[1]: /2022/03/06/pelican-to-eleventy
+[2]: https://www.11ty.dev/
+[3]: https://indieweb.org/
+[4]: https://www.11ty.dev/docs/
+[5]: https://indieweb.org/article
+[6]: https://jekyllrb.com/
+[7]: https://indieweb.org/note
+[8]: https://indieweb.org/bookmark
+[9]: https://indieweb.org/like
+[10]: https://indieweb.org/repost
+[11]: https://www.11ty.dev/docs/data-template-dir/
+[12]: https://www.11ty.dev/docs/filters/
+[13]: https://www.w3.org/Provider/Style/URI
+[14]: https://www.netlify.com/
+[15]: /2020/01/05/website-castle
+[16]: https://www.11ty.dev/docs/collections/
+[17]: https://indieweb.org/post-type-discovery
+[18]: https://indieweb.org/microformats
+[19]: https://github.com/kylewm/mf2util
+[20]: https://www.11ty.dev/docs/data-computed/
+[21]: https://indieweb.org/Webmention
+

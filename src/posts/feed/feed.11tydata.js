@@ -1,4 +1,4 @@
-const pt = require('../../utils/post-type.js');
+const pt = require('../../../utils/post-type.js');
 const _ = require('lodash');
 
 function bridgyMentions(data) {
