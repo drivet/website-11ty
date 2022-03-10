@@ -117,6 +117,10 @@ body {
   margin-right: auto;
 }
 
+.feed__description {
+  font-style: italic;
+  margin-bottom: 3em;
+}
 
 .entry__header {
   margin: 0 0 1em 0;
