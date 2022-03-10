@@ -8,25 +8,24 @@
 <main class="main">
 <div class="h-entry entry">
   
-  {{ entryheader(wmresults, date, page.url, title, 1) }}
-  
-  {% if blurb %}
-  <div class="p-summary" style="display: none">
-  {{blurb}}
-  </div>
-  {% endif %}
-
-  <div class="e-content">
-
-  {{ reflink(postType, referencedLink) }}
-  
   {% for mention in bridgyMentions %}
   <a href="{{mention}}"></a>
   {% endfor %}
-
-  {{ content | safe }}
   
-  {{ photom(photo) }}
+  {{ entryheader(wmresults, date, page.url, title, 1) }}
+  
+  {% if blurb %}
+    <div class="p-summary" style="display: none">
+    {{blurb}}
+    </div>
+  {% endif %}
+
+  {{ reflink(postType, referencedLink) }}
+  
+  <div class="e-content">
+    {{ content | safe }}  
+    {{ photom(photo) }}
+  </div>
 
   {% if postType != 'article' %}
   {% set link = referencedLink or (content | contentLink) %}
@@ -35,7 +34,7 @@
   {% include "preview.njk" %}
   {% endif %}
   {% endif %}
-  </div>
+
   {% set url = page.url | stripExt %} 
   {% set expand = true %}
   {% include "entry-footer.njk" %}
