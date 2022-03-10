@@ -1629,4 +1629,10 @@ results:
       status_code: 400
     'https://twitter.com/FalconSensei/status/1501967593363558415': {}
     'https://twitter.com/FalconSensei/status/1501967593363558415?ref_src=twsrc%5Etfw': {}
+  2022/03/10/122023:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 400
+    'https://twitter.com/nhoizey/status/1501967877305470981': {}
+    'https://t.co/T7FBg18dlT': {}
+    'https://twitter.com/nhoizey/status/1501967877305470981?ref_src=twsrc%5Etfw': {}
 site_url: 'https://desmondrivet.com'
