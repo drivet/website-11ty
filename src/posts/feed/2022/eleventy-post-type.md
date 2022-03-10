@@ -106,6 +106,19 @@ const timezone = require('dayjs/plugin/timezone') // dependent on utc plugin
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
+
+function getSlug(fslug) {
+  // test for my note files from micropub, which look like this:
+  // 20200810123845.md
+  if (/^\d\d\d\d\d\d\d\d\d\d\d\d\d\d(.*)/.test(fslug)) {
+    // strip off the date portion, only pick up the time portion of the timestamp
+    return fslug.substring(8);
+  } else {
+    // otherwise just return the filename
+    return fslug;
+  }
+}
+
 module.exports = (eleventyConfig) => {
   ...
   eleventyConfig.addFilter("postPermalink", page => {
@@ -123,9 +136,16 @@ you can probably tell that I live in Montreal.  Because I host my website on
 [Netlify][14], you can drop the html part of the permalink when accessing
 the URL in a browser, and it becomes /year/month/day/slug.
 
-What this means is that every post will end up at a URL directly off my
-domain name, with no extra decorations that may end up changing over time.
-My "introduction to the IndieWeb" article, for example, is located at
+One thing to notice, which I will likely delve into when I start talking
+about my [Micropub client][23], is that when I publish notes via Micropub,
+the file name is the current timestamp, to the second.  I want the slug to
+be just the time portion of that timestamp, so my code here will extract
+that part.  This is *very* specific to my use case and may not be of
+interest to many others.
+
+With this configuration in place, every post will end up at a URL directly
+off my domain name, with no extra decorations that may end up changing over
+time.  My "introduction to the IndieWeb" article, for example, is located at
 [/2019/12/08/intro-to-indie-web][22] and I feel like there's a good chance
 this URL would survive any reorganization of my website.
 
@@ -341,3 +361,4 @@ further down the rabbit hole.
 [20]: https://www.11ty.dev/docs/data-computed/
 [21]: https://indieweb.org/Webmention
 [22]: /2019/12/08/intro-to-indie-web
+[23]: https://github.com/drivet/micropub-git-server
