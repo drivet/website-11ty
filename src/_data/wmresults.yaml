@@ -1604,4 +1604,13 @@ results:
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1501911508309078017'
     'https://twitter.com/nhoizey/status/1501888419907186691?ref_src=twsrc%5Etfw': {}
+  2022/03/10/see-post-type:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1501959845620113414'
+    'https://twitter.com/nhoizey/status/1501888419907186691': {}
+    'https://desmondrivet.com/2022/02/27/post-type-org':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/oHMXWzBXReG4l-GgwTOS'
+    'https://twitter.com/nhoizey/status/1501888419907186691?ref_src=twsrc%5Etfw': {}
 site_url: 'https://desmondrivet.com'
