@@ -1613,4 +1613,10 @@ results:
       status_code: 201
       location: 'https://webmention.io/desmondrivet.com/webmention/oHMXWzBXReG4l-GgwTOS'
     'https://twitter.com/nhoizey/status/1501888419907186691?ref_src=twsrc%5Etfw': {}
+  2022/03/10/115424:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1501964974264135685'
+    'https://twitter.com/FalconSensei/status/1501961557806178306': {}
+    'https://twitter.com/FalconSensei/status/1501961557806178306?ref_src=twsrc%5Etfw': {}
 site_url: 'https://desmondrivet.com'
