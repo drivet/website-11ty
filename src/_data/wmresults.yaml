@@ -1619,4 +1619,14 @@ results:
       location: 'https://twitter.com/desmondrivet/status/1501964974264135685'
     'https://twitter.com/FalconSensei/status/1501961557806178306': {}
     'https://twitter.com/FalconSensei/status/1501961557806178306?ref_src=twsrc%5Etfw': {}
+  2022/03/10/bridgy-location:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 400
+    'https://twitter.com/FalconSensei/status/1501967593363558415': {}
+    'https://twitter.com/FalconSensei/status/1501967593363558415?ref_src=twsrc%5Etfw': {}
+  2022/03/10/bridgy-publish:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 400
+    'https://twitter.com/FalconSensei/status/1501967593363558415': {}
+    'https://twitter.com/FalconSensei/status/1501967593363558415?ref_src=twsrc%5Etfw': {}
 site_url: 'https://desmondrivet.com'
