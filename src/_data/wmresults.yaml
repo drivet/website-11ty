@@ -1592,4 +1592,10 @@ results:
     'https://indieweb.org/Webmention':
       status_code: 201
       location: 'https://webmention.io/indiewebcamp/webmention/MlgojquJMZMZsly21srF'
+  2022/03/10/080848:
+    'https://twitter.com/nhoizey/status/1501888419907186691': {}
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1501908215977721858'
+    'https://twitter.com/nhoizey/status/1501888419907186691?ref_src=twsrc%5Etfw': {}
 site_url: 'https://desmondrivet.com'
