@@ -1642,4 +1642,9 @@ results:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1501984891675815938'
+  2022/03/12/164307:
+    'https://jlelse.blog/micro/2022/03/2022-03-11-rorfe':
+      status_code: 202
+    'https://jlelse.blog/':
+      status_code: 202
 site_url: 'https://desmondrivet.com'
