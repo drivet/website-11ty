@@ -1,13 +1,13 @@
 ---
-title: Posts
-description: A combined feed of my notes, photos and blog for the latest of what's on my mind
+title: All
+description: A veritable firehose of all my posts.  Who knows, maybe someone will get a kick out of this
 pagination:
-  data: collections.posts
+  data: collections.all
   size: 10
-permalink: "/posts/index{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"
+permalink: "/posts/index{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"  
 layout: "feed.njk"
-rss: "/posts/feed_posts.xml"
-navname: "posts"
+rss: "/posts/feed_all.xml"
+navname: "all"
 ---
 
 <ul class="content-list">

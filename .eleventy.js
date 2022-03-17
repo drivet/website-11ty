@@ -339,7 +339,7 @@ module.exports = (eleventyConfig) => {
     getPosts(collection)
   );
 
-  eleventyConfig.addCollection("posts", (collection) =>
+  eleventyConfig.addCollection("updates", (collection) =>
     postTypes(getPosts(collection), ["article", "note", "photo"])
   );
   
