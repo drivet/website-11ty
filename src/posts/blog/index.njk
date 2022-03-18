@@ -4,7 +4,7 @@ description: Just my classic blog, without anything else, because I'm nostalgic 
 pagination:
   data: collections.blog
   size: 10
-permalink: "/posts/blog{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"
+permalink: "/posts/blog/index{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"
 layout: "feed.njk"
 rss: "/posts/feed_blog.xml"
 navname: "blog"

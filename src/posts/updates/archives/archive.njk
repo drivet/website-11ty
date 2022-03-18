@@ -1,12 +1,12 @@
 ---
 pagination:
-  data: collections.all_tagPages
+  data: collections.updates_archivePages
   size: 1
   alias: p
-permalink: "/posts/tags/{{ p.name }}{% if p.page %}{{ p.page + 1 }}{% endif %}.html"
+permalink: "/posts/updates/{{ p.name }}/index{% if p.page %}{{ p.page + 1 }}{% endif %}.html"
 layout: "feed.njk"
 eleventyComputed:
-  title: "Tagged {{ p.name }}"
+   title: "Archives for {{ p.name }} (Updates)"
 ---
 
 <ul class="content-list">
@@ -20,15 +20,15 @@ eleventyComputed:
 <nav class="feed__pagenav">
 {% if p.page > 0 %}
 {% set prevpage = p.page - 1 %}
-<a href="/posts/tags/{{ p.name }}{% if prevpage %}{{ prevpage + 1 }}{% endif %}" class="feed__prevlink">
-  &laquo; Previous
+<a href="/posts/updates/{{ p.name }}/index{% if prevpage %}{{ prevpage + 1 }}{% endif %}" class="feed__prevlink">
+   &laquo; Previous
 </a>
 {% endif %}
 
 {% if p.page < (p.total - 1) %}
 {% set nextpage = p.page + 1 %}
-<a href="/posts/tags/{{ p.name }}{% if nextpage %}{{ nextpage + 1 }}{% endif %}" class="feed__nextlink">
-  Next &raquo;
+<a href="/posts/updates/{{ p.name }}/index{% if nextpage %}{{ nextpage + 1 }}{% endif %}" class="feed__nextlink">
+   Next &raquo;
 </a>
 {% endif %}
 </nav>

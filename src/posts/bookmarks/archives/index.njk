@@ -1,7 +1,6 @@
 ---
-title: Archives
+title: Archives (Links)
 permalink: /{{ page.filePathStem }}.html
-navname: "archives"
 ---
 
 {% extends "blogbase.njk" %}
@@ -18,11 +17,11 @@ navname: "archives"
   </div>
 </header>
 <ul class="archive-year-list">
-  {% for year in collections.all_archiveList %}
+  {% for year in collections.bookmarks_archiveList %}
   {% set yearUrl %}/{{ year.year }}/{% endset %}
 
   <li class="archive-year-list__year-item row">
-    <a href="{{ yearUrl | url }}">{{ year.year }}</a> <span class="row__item--right">{{ year.count }}</span>
+    <a href="/posts/bookmarks{{ yearUrl | url }}">{{ year.year }}</a> <span class="row__item--right">{{ year.count }}</span>
   </li>
 
   <li class="archive-year-list__months-item">
@@ -31,7 +30,7 @@ navname: "archives"
       {% set monthUrl %}/{{ year.year }}/{{ month.month }}/{% endset %}
 
       <li class="archive-month-list__month-item row">
-        <a href="{{ monthUrl | url }}">{{ month.month | monthname }}</a> <span class="row__item--right">{{ month.count }}</span>
+        <a href="/posts/bookmarks{{ monthUrl | url }}">{{ month.month | monthname }}</a> <span class="row__item--right">{{ month.count }}</span>
       </li>
 
       {% endfor %}

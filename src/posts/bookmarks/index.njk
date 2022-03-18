@@ -4,7 +4,7 @@ description: A pile of links for me to sift through later if I ever get around t
 pagination:
   data: collections.bookmarks
   size: 10
-permalink: "/posts/bookmarks{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"
+permalink: "/posts/bookmarks/index{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"
 layout: "feed.njk"
 rss: "/posts/feed_bookmarks.xml"
 navname: "links"

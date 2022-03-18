@@ -1,7 +1,6 @@
 ---
-title: Tags
+title: Tags (Links)
 permalink: /{{ page.filePathStem }}.html
-navname: "tags"
 ---
 
 {% extends "blogbase.njk" %}
@@ -18,8 +17,8 @@ navname: "tags"
   </div>
 </header>
 <ul class="tag-list">
-{% for tag in collections.all_tagList %}
-  {% set tagUrl %}/posts/tags/{{ tag.tag | slug }}{% endset %}
+{% for tag in collections.bookmarks_tagList %}
+  {% set tagUrl %}/posts/bookmarks/tags/{{ tag.tag | slug }}{% endset %}
   <li class="tag-list__item row"><a href="{{ tagUrl | url }}">{{ tag.tag }}</a>  <span class="row__item--right">{{ tag.count }}</span></li>
 {% endfor %}
 </ul>
