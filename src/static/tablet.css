@@ -17,6 +17,11 @@
         display: inline;
     }
 
+
+    .feed-extra__label {
+        display: inline;
+    }
+
     .main-header {
         padding: 1em var(--side-padding);
         font-size: var(--font-size-bigger);

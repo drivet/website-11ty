@@ -17,8 +17,8 @@ body {
   border-top: 5px solid var(--accent);
 }
 
-.fa-rss-square {
-  color: var(--complement);
+.feed-extra {
+  color: var(--accent);
 }
 
 .avatar {
@@ -120,6 +120,10 @@ body {
 .feed__description {
   font-style: italic;
   margin-bottom: 3em;
+}
+
+.feed-extra__label {
+  display: none;
 }
 
 .entry__header {
