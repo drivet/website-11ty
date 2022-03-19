@@ -1,12 +1,14 @@
 ---
 title: Updates
-description: A combined feed of my notes, photos and blog for the latest of what's on my mind
+description: A combined feed of my notes and photos for the latest of what's on my mind
 pagination:
   data: collections.updates
   size: 10
 permalink: "/posts/updates/index{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"
 layout: "feed.njk"
 rss: "/posts/feed_updates.xml"
+tagurl: "/posts/updates/tags/"
+archiveurl: "/posts/updates/archives/"
 navname: "updates"
 ---
 

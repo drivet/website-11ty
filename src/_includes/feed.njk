@@ -10,7 +10,17 @@
 <header>
   <div class="row">
     <h1>{{ title }}</h1>
-    <a class="row__item--right" title="Subscribe via Atom" href="{{rss}}"><span class="fa fa-rss-square"></span></a>
+    <div class="row__item--right">
+      <a title="Subscribe via Atom" href="{{rss}}">
+        <span class="fa fa-rss-square"></span>
+      </a>
+      <a title="Tags" href="{{tagurl}}">
+        <span class="fa fa-tags"></span>
+      </a>
+      <a title="Archives" href="{{archiveurl}}">
+        <span class="fa fa-archive"></span>
+      </a>
+    </div>
   </div>
   <div class="feed__description">{{ description }}</div>
 </header>
