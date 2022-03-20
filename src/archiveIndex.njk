@@ -3,6 +3,8 @@ permalink: "{{ pagination.items[0].permalink }}/index.html"
 pagination:
   data: archiveIndexData
   size: 1
+eleventyComputed:
+  title: "{{pagination.items[0].title}}"
 archiveIndexData:
 - title: Archives (Links)
   permalink: /posts/bookmarks/archives/
@@ -33,7 +35,7 @@ archiveIndexData:
 <main class="main">
 <header class="main__header">  
   <div class="row">
-    <h1>{{ title }}</h1>
+    <h1>{{ metadata.title }}</h1>
   </div>
 </header>
 <ul class="archive-year-list">

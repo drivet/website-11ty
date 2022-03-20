@@ -3,6 +3,8 @@ permalink: "/{{ pagination.items[0].tagUrlPrefix }}/index.html"
 pagination:
   data: tagIndexData
   size: 1
+eleventyComputed:
+  title: "{{pagination.items[0].title}}"
 tagIndexData:
 - title: Tags (Links)
   tagUrlPrefix: posts/bookmarks/tags

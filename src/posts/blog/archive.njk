@@ -3,32 +3,11 @@ pagination:
   data: collections.blog_archivePages
   size: 1
   alias: p
-permalink: "/posts/blog/{{ p.name }}/index{% if p.page %}{{ p.page + 1 }}{% endif %}.html"
+permalink: "{{archiveUrlPrefix}}/{{ p.name }}/index{% if p.page %}{{ p.page + 1 }}{% endif %}.html"
 layout: "feed.njk"
+archiveUrlPrefix: "/posts/blog"
 eleventyComputed:
    title: "Archives for {{ p.name }} (Blog)"
 ---
 
-<ul class="content-list">
-{% asyncEach post in p.items %}
-<li class="content-list__item content-list__item--separator content-list__item--spacious">
-{% include "post-entry.njk" %}
-</li>
-{% endeach %}
-</ul>
-
-<nav class="feed__pagenav">
-{% if p.page > 0 %}
-{% set prevpage = p.page - 1 %}
-<a href="/posts/blog/{{ p.name }}/index{% if prevpage %}{{ prevpage + 1 }}{% endif %}" class="feed__prevlink">
-   &laquo; Previous
-</a>
-{% endif %}
-
-{% if p.page < (p.total - 1) %}
-{% set nextpage = p.page + 1 %}
-<a href="/posts/blog/{{ p.name }}/index{% if nextpage %}{{ nextpage + 1 }}{% endif %}" class="feed__nextlink">
-   Next &raquo;
-</a>
-{% endif %}
-</nav>
+{% include 'archive.njk' %}
