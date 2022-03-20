@@ -1647,4 +1647,8 @@ results:
       status_code: 202
     'https://jlelse.blog/':
       status_code: 202
+  2022/03/20/123836:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1505584984329011208'
 site_url: 'https://desmondrivet.com'
