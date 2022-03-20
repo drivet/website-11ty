@@ -1,0 +1,64 @@
+---json
+{
+  "pagination": {
+    "data": "feedData",
+    "size": 1
+  },
+  "permalink": "posts/feed_{{pagination.items[0].collection}}.xml",
+  "eleventyExcludeFromCollections": true,
+  "author": {
+    "name": "Desmond Rivet",
+    "email": "desmond.rivet@gmail.com"
+  },
+  "feedUrlPrefix": "https://desmondrivet.com/posts",
+  "feedData": [
+    {
+      "collection": "all",
+      "title":  "Desmond Rivet - All Posts",
+      "url": "https://desmondrivet.com/posts/"
+    },
+    {
+      "collection": "blog",
+      "title":  "Desmond Rivet - Blog",
+      "url": "https://desmondrivet.com/posts/blog/"
+    },
+    {
+      "collection": "bookmarks",
+      "title":  "Desmond Rivet - Links",
+      "url": "https://desmondrivet.com/posts/bookmarks/"
+    },
+    {
+      "collection": "updates",
+      "title":  "Desmond Rivet - Updates",
+      "url": "https://desmondrivet.com/posts/updates/"
+    }
+  ]
+}
+---
+{% set metadata = pagination.items[0] %}
+{%- from "reflink.njk" import reflink -%}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <link href="{{ feedUrlPrefix }}/feed_{{metadata.collection}}.xml" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections[metadata.collection] | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ author.name }}</name>
+    <email>{{ author.email }}</email>
+  </author>
+  {%- for post in collections[metadata.collection].slice(0, 10) %}
+  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) | stripExt }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl  }}"/>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">
+        {{ reflink(post.data.postType, post.data.referencedLink) }}
+        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+    </content>
+  </entry>
+  {%- endfor %}
+</feed>
