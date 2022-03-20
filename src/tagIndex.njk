@@ -1,0 +1,41 @@
+---
+permalink: "{{ pagination.items[0].tagUrlPrefix }}/index.html"
+pagination:
+  data: tagIndexData
+  size: 1
+tagIndexData:
+- title: Tags (Links)
+  tagUrlPrefix: /posts/bookmarks/tags
+  collection: bookmarks
+- title: Tags (Blog)
+  tagUrlPrefix: /posts/blog/tags
+  collection: blog
+- title: Tags (Updates)
+  tagUrlPrefix: /posts/updates/tags
+  collection: updates
+- title: Tags (All)
+  tagUrlPrefix: /posts/tags
+  collection: all
+---
+{% set metadata = pagination.items[0]%}
+{% extends "blogbase.njk" %}
+
+{% block meta %}
+<meta name="robots" content="noindex,follow" />
+{% endblock %}
+
+{% block content %}
+<main class="main">
+<header>
+  <div class="row">
+    <h1>{{ metadata.title }}</h1>
+  </div>
+</header>
+<ul class="tag-list">
+{% for tag in collections[metadata.collection + '_tagList'] %}
+  {% set tagUrl %}/{{metadata.tagUrlPrefix}}/{{ tag.tag | slug }}{% endset %}
+  <li class="tag-list__item row"><a href="{{ tagUrl | url }}">{{ tag.tag }}</a>  <span class="row__item--right">{{ tag.count }}</span></li>
+{% endfor %}
+</ul>
+</main>
+{% endblock content %}
