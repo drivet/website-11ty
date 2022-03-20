@@ -2,6 +2,8 @@
 date: 2022-03-10T13:03:51-05:00
 mp-syndicate-to:
 - twitter_bridgy_no_link
+tags:
+- indieweb
 ---
 
 Recent interactions on Twitter have led me to clarify the purpose of all my
