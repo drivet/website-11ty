@@ -235,6 +235,11 @@ body {
   padding-bottom: 0.5em;
   border-bottom: 1px solid var(--lighter-color);
 }
+
+.tag-list__item:last-child {
+  border-bottom: 0;
+}
+
 .archive-year-list {
   list-style: none;
   padding: 0;
@@ -243,10 +248,15 @@ body {
 .archive-month-list {
   list-style: none;
 }
+
 .archive-year-list__year-item {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border-bottom: 1px solid var(--lighter-color);
+}
+
+.archive-year-list__year-item:last-child {
+  border-bottom: 0;
 }
 
 .archive-month-list__month-item {
@@ -254,3 +264,8 @@ body {
   padding-bottom: 0.5em;
   border-bottom: 1px solid var(--lighter-color);
 }
+
+.archive-month-list__month-item:last-child {
+  border-bottom: 0;
+}
+
