@@ -6,30 +6,30 @@
 
 {% block content %}
 <main class="main">
-<div class="h-feed feed">
-<header>
-  <div class="row">
-    <h1>{{ title }}</h1>
-    <div class="row__item--right">
-      <div class="row row--spacious">
-        <a class="feed-extra" title="Tags" href="{{tagurl}}">
-          <span class="fa fa-tags"></span>
-          <span class="feed-extra__label">Tags</span>
-        </a>
-        <a class="feed-extra" title="Archives" href="{{archiveurl}}">
-          <span class="fa fa-archive"></span>
-          <span class="feed-extra__label">Archives</span>
-        </a>
-        <a class="feed-extra" title="Subscribe" href="{{rss}}">
-          <span class="fa fa-rss-square"></span>
-          <span class="feed-extra__label">Subscribe</span>
-        </a>
+  <div class="h-feed feed">
+    <header>
+      <div class="row">
+        <h1>{{ title }}</h1>
+        <div class="row__item--right">
+          <div class="row row--spacious">
+            <a class="feed-extra" title="Tags" href="{{tagurl}}">
+              <span class="fa fa-tags"></span>
+              <span class="feed-extra__label">Tags</span>
+            </a>
+            <a class="feed-extra" title="Archives" href="{{archiveurl}}">
+              <span class="fa fa-archive"></span>
+              <span class="feed-extra__label">Archives</span>
+            </a>
+            <a class="feed-extra" title="Subscribe" href="{{rss}}">
+              <span class="fa fa-rss-square"></span>
+              <span class="feed-extra__label">Subscribe</span>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="feed__description">{{ description }}</div>
+    </header>
+  {{ content | safe }}
   </div>
-  <div class="feed__description">{{ description }}</div>
-</header>
-{{ content | safe }}
-</div>
 </main>
 {% endblock content %}

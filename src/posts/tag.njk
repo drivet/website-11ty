@@ -4,9 +4,10 @@ pagination:
   size: 1
   alias: p
 permalink: "{{tagUrlPrefix}}/{{ p.name }}{% if p.page %}{{ p.page + 1 }}{% endif %}.html"
-layout: "feed.njk"
+layout: "collection.njk"
 tagUrlPrefix: "/posts/tags"
 eleventyComputed:
   title: "Tagged {{ p.name }}"
 ---
+
 {% include 'tag.njk' %}

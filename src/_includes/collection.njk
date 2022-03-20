@@ -1,0 +1,12 @@
+{% extends "blogbase.njk" %}
+
+{% block meta %}
+<meta name="robots" content="noindex,follow" />
+{% endblock %}
+
+{% block content %}
+<main class="main">
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+</main>
+{% endblock content %}
