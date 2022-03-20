@@ -1,20 +1,20 @@
 ---
-permalink: "{{ pagination.items[0].tagUrlPrefix }}/index.html"
+permalink: "/{{ pagination.items[0].tagUrlPrefix }}/index.html"
 pagination:
   data: tagIndexData
   size: 1
 tagIndexData:
 - title: Tags (Links)
-  tagUrlPrefix: /posts/bookmarks/tags
+  tagUrlPrefix: posts/bookmarks/tags
   collection: bookmarks
 - title: Tags (Blog)
-  tagUrlPrefix: /posts/blog/tags
+  tagUrlPrefix: posts/blog/tags
   collection: blog
 - title: Tags (Updates)
-  tagUrlPrefix: /posts/updates/tags
+  tagUrlPrefix: posts/updates/tags
   collection: updates
 - title: Tags (All)
-  tagUrlPrefix: /posts/tags
+  tagUrlPrefix: posts/tags
   collection: all
 ---
 {% set metadata = pagination.items[0]%}
