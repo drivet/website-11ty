@@ -1,8 +1,8 @@
 ---
 title: Changes To Post Organization
-date: 2022-03-20T23:44:09-04:00
+date: 2022-03-21T06:53:22-04:00
 mp-syndicate-to:
-- twitter_bridgy_no_link
+- twitter_bridgy
 tags:
 - blogging
 - indieweb
