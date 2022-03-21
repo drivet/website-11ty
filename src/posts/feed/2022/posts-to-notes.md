@@ -23,8 +23,8 @@ approach.
   one of those services, it doesn't matter where my notes or articles come
   from - they always just show up combined on my profile or wall.
 
-* If you're a bit more tech savvy and you're reading my stuff via [Atom][]
-  feeds or a [microsub][] reader, you probably already know how to subscribe
+* If you're a bit more tech savvy and you're reading my stuff via [Atom][1]
+  feeds or a [microsub][2] reader, you probably already know how to subscribe
   to multiple feeds at once, and you can therefore still get an "original
   content" feed by subscribing to my notes and blog feeds.
   
@@ -47,3 +47,6 @@ For people who did actually subscribe to the posts feed, I'll continue to
 publish it for the time being, but it's not directly linked from my pages.
 
 I hope this is less confusing.  Thanks for the patience everyone!
+
+[1]: https://indieweb.org/Atom
+[2]: https://indieweb.org/Microsub
