@@ -227,8 +227,8 @@ module.exports = (eleventyConfig) => {
 
   addCollectionGroup(eleventyConfig, "all", getPosts);
 
-  addCollectionGroup(eleventyConfig, "updates",
-    collection => postTypes(getPosts(collection), ["note", "photo"]));
+  addCollectionGroup(eleventyConfig, "notes",
+    collection => postTypes(getPosts(collection), ["note", "photo", "video"]));
 
   addCollectionGroup(eleventyConfig, "blog",
     collection => postTypes(getPosts(collection), ["article"]));
