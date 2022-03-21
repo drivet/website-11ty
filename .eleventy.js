@@ -235,6 +235,11 @@ module.exports = (eleventyConfig) => {
 
   addCollectionGroup(eleventyConfig, "bookmarks",
     collection => postTypes(getPosts(collection), ["bookmark"]));
+  
+  // for backward compatibility
+  eleventyConfig.addCollection("posts", (collection) =>
+    postTypes(getPosts(collection), ["note", "photo", "video", "article"])
+  );
 
   return {
     dir: {

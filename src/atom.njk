@@ -4,33 +4,43 @@
     "data": "feedData",
     "size": 1
   },
-  "permalink": "posts/feed_{{pagination.items[0].collection}}.xml",
+  "permalink": "{{pagination.items[0].permalink}}",
   "eleventyExcludeFromCollections": true,
   "author": {
     "name": "Desmond Rivet",
     "email": "desmond.rivet@gmail.com"
   },
-  "feedUrlPrefix": "https://desmondrivet.com/posts",
+  "feedUrlPrefix": "https://desmondrivet.com",
   "feedData": [
     {
       "collection": "all",
+      "permalink": "posts/feed_all.xml",
       "title":  "Desmond Rivet - All Posts",
       "url": "https://desmondrivet.com/posts/"
     },
     {
       "collection": "blog",
+      "permalink": "posts/feed_blog.xml",
       "title":  "Desmond Rivet - Blog",
       "url": "https://desmondrivet.com/posts/blog/"
     },
     {
       "collection": "bookmarks",
+      "permalink": "posts/feed_bookmarks.xml",
       "title":  "Desmond Rivet - Links",
       "url": "https://desmondrivet.com/posts/bookmarks/"
     },
     {
       "collection": "notes",
+      "permalink": "posts/feed_notes.xml",
       "title":  "Desmond Rivet - Notes",
       "url": "https://desmondrivet.com/posts/notes/"
+    },
+    {
+      "collection": "posts",
+      "permalink": "posts/feed_posts.xml",
+      "title":  "Desmond Rivet - Posts",
+      "url": "https://desmondrivet.com/posts/"
     }
   ]
 }
@@ -40,7 +50,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ metadata.title }}</title>
-  <link href="{{ feedUrlPrefix }}/feed_{{metadata.collection}}.xml" rel="self"/>
+  <link href="{{ feedUrlPrefix }}/{{metadata.permalink}}" rel="self"/>
   <link href="{{ metadata.url }}"/>
   <updated>{{ collections[metadata.collection] | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ metadata.url }}</id>
