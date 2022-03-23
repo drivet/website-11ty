@@ -85,10 +85,6 @@ function archiveList(collection) {
     });
   return c;
 }
-
-function postTypes(collection, postTypes) {
-  return collection.filter((item) => postTypes.includes(item.data.postType));
-}
   
 /**
  * 
