@@ -1659,4 +1659,12 @@ results:
     'https://brid.gy/publish/twitter':
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1505861190576189441'
+  2022/03/23/eleventy-pagination:
+    'https://brid.gy/publish/twitter':
+      status_code: 400
+    'https://www.11ty.dev/docs/pagination/': {}
+    'https://www.11ty.dev/docs/': {}
+    'https://www.11ty.dev/docs/layouts/': {}
+    'https://www.11ty.dev/docs/collections/': {}
+    'https://www.11ty.dev/docs/quicktips/tag-pages/': {}
 site_url: 'https://desmondrivet.com'
