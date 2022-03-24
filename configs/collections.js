@@ -135,6 +135,32 @@ function addCollectionGroup(eleventyConfig, name, collectionFn) {
   );
 }
 
+function getPosts(collection) {
+  return collection.getFilteredByGlob("./src/posts/feed/**/*.md").reverse();
+}
+
+function postTypes(collection, postTypes) {
+  return collection.filter((item) => postTypes.includes(item.data.postType));
+}
+
+function addAllCollectionGroups(eleventyConfig) {
+  addCollectionGroup(eleventyConfig, "all", getPosts);
+
+  addCollectionGroup(eleventyConfig, "notes",
+    collection => postTypes(getPosts(collection), ["note", "photo", "video"]));
+
+  addCollectionGroup(eleventyConfig, "blog",
+    collection => postTypes(getPosts(collection), ["article"]));
+
+  addCollectionGroup(eleventyConfig, "bookmarks",
+    collection => postTypes(getPosts(collection), ["bookmark"]));
+
+  // for backward compatibility
+  eleventyConfig.addCollection("posts", (collection) =>
+    postTypes(getPosts(collection), ["note", "photo", "video", "article"])
+  );
+}
+
 module.exports = {
-  addCollectionGroup
+  addAllCollectionGroups
 }

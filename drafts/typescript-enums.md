@@ -1,7 +1,8 @@
 title: Enum Musings in TypeScript
 date: 2020-11-30 22:21:29 -0500
-modified: 2020-11-30 22:21:29 -0500
-tags: typescript
+tags:
+- typescript
+- programmine
 blurb: Typescript enums are kind of weird
 mp_syndicate_to: twitter_bridgy
 
@@ -91,7 +92,7 @@ function doSomethingWithDay(day: DayOfWeek) {
 This allows to call the function like this:
 
 ```
-doSomethiWithDay(DayOfWeek.Monday)
+doSomethingWithDay(DayOfWeek.Monday)
 ```
 
 Writing code like this makes two things clear.  For one thing, while

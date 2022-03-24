@@ -1,18 +1,18 @@
 const html = require('./utils/html.js');
 const _ = require('lodash');
-const rootUrl = require('./src/_data/global.json').URL
-const sanitizeHTML = require('sanitize-html')
+const rootUrl = require('./src/_data/global.json').URL;
+const sanitizeHTML = require('sanitize-html');
 const { scrape } = require('./utils/scrape');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const yaml = require("js-yaml");
 const { loadPreviews, savePreviews } = require('./utils/preview-cache.js');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const { addCollectionGroup } = require('./configs/collections')
+const { addAllCollectionGroups } = require('./configs/collections');
 const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone') // dependent on utc plugin
-dayjs.extend(utc)
-dayjs.extend(timezone)
+const utc = require('dayjs/plugin/utc');
+const timezone = require('dayjs/plugin/timezone');
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 function webmentionsForUrl(webmentions, url) {
   if (!webmentions) {
@@ -20,14 +20,14 @@ function webmentionsForUrl(webmentions, url) {
   }
 
   const absUrl = `${rootUrl}${url}`.replace(/\.[^/.]+$/, "");
- 
+
   const sanitize = entry => {
     const { content } = entry;
     if (content && content['content-type'] === 'text/html') {
       content.value = sanitizeHTML(content.value);
     }
     return entry;
-  }
+  };
   return webmentions
       .filter(entry => entry['wm-target'] === absUrl)
       .map(sanitize);
@@ -76,14 +76,6 @@ function getSlug(fslug) {
   }
 }
 
-function getPosts(collection) {
-  return collection.getFilteredByGlob("./src/posts/feed/**/*.md").reverse();
-}
-
-function postTypes(collection, postTypes) {
-  return collection.filter((item) => postTypes.includes(item.data.postType));
-}
-
 function truncate(str, chars, replace = '...') {
   const truncated = str.substring(0, chars);
   if (truncated.length === str.length) {
@@ -129,7 +121,7 @@ module.exports = (eleventyConfig) => {
       case '07':
         return 'July';
       case '08':
-        return 'August'; 
+        return 'August';
       case '09':
         return 'September';
       case '10':
@@ -181,7 +173,7 @@ module.exports = (eleventyConfig) => {
       preview = previews[key];
     } else {
       console.log(`no preview for ${url}, trying to scrape one...`);
-      preview = await scrape(url); 
+      preview = await scrape(url);
       previews[key] = preview;
       previews_changed = true;
     }
@@ -225,21 +217,7 @@ module.exports = (eleventyConfig) => {
     "woff2"
   ]);
 
-  addCollectionGroup(eleventyConfig, "all", getPosts);
-
-  addCollectionGroup(eleventyConfig, "notes",
-    collection => postTypes(getPosts(collection), ["note", "photo", "video"]));
-
-  addCollectionGroup(eleventyConfig, "blog",
-    collection => postTypes(getPosts(collection), ["article"]));
-
-  addCollectionGroup(eleventyConfig, "bookmarks",
-    collection => postTypes(getPosts(collection), ["bookmark"]));
-  
-  // for backward compatibility
-  eleventyConfig.addCollection("posts", (collection) =>
-    postTypes(getPosts(collection), ["note", "photo", "video", "article"])
-  );
+  addAllCollectionGroups(eleventyConfig);
 
   return {
     dir: {
@@ -247,5 +225,5 @@ module.exports = (eleventyConfig) => {
     },
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk'
-  }
+  };
 };
