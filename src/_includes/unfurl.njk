@@ -1,22 +1,16 @@
-{% set meta = scraped.meta %}
+{% set meta = scraped.meta | normalizeUnfurl %}
 
 <blockquote cite="{{ link }}" class="h-cite cite link-context__unfurl">
-{% if meta.open_graph.title %}
-<h1><a href="{{ link }}">{{ meta.open_graph.title }}</a></h1>
-{% elif meta.twitter_card.title %}
-<h1><a href="{{ link }}">{{ meta.twitter_card.title }}</a></h1>
+{% if meta.title %}
+<h1><a href="{{ link }}">{{ meta.title }}</a></h1>
 {% endif %}
 
-{% if meta.open_graph.description %}
-<section>{{ meta.open_graph.description }}</section>
-{% elif meta.twitter_card.description %}
-<section>{{ meta.twitter_card.description }}</section>
+{% if meta.description %}
+<section>{{ meta.description }}</section>
 {% endif %}
 
-{% if meta.open_graph.images and meta.open_graph.images.length > 0 %}
-<img alt="open graph image" src="{{meta.open_graph.images[0].url}}" class="u-photo link-context__image"/>
-{% elif meta.twitter_card.images and meta.twitter_card.images.length > 0 %}
-<img alt="twitter card image" src="{{meta.twitter_card.images[0].url}}" class="u-photo link-context__image" />
+{% if meta.image %}
+<img alt="open graph image" src="{{meta.image.url}}" class="link-context__image"/>
 {% endif %}
 
 </blockquote>
