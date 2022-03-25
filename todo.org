@@ -1,0 +1,2 @@
+* TODO put preview code into config file
+* TODO cache preview images using eleventy img pluin

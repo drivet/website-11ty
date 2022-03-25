@@ -2,12 +2,11 @@ const html = require('./utils/html.js');
 const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL;
 const sanitizeHTML = require('sanitize-html');
-const { scrape } = require('./utils/scrape');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const yaml = require("js-yaml");
-const { loadPreviews, savePreviews } = require('./utils/preview-cache.js');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { addAllCollectionGroups } = require('./configs/collections');
+const { previewConfig } = require('./configs/previews.js');
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
@@ -147,50 +146,6 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter("webmentionKind", webmentionKind);
   eleventyConfig.addFilter("syndicationsForUrl", sydicationsForUrl);
 
-  eleventyConfig.addFilter('linkContextType', scraped => {
-    if (!scraped) {
-      return null;
-    }
-    const embedlist = ['https://twitter.com', 'https://youtube.com'];
-    if (scraped.type == 'mf2') {
-      return 'indieweb';
-    } else if (scraped.type == 'unfurl' && scraped.meta.oEmbed &&
-             (scraped.meta.oEmbed.type == "rich" || scraped.meta.oEmbed.type == "video") &&
-             embedlist.some(u => scraped.url.startsWith(u))) {
-      return 'oembed';
-    } else if (scraped.type == 'unfurl' && (scraped.meta.open_graph || scraped.meta.twitter_card)) {
-      return 'unfurl';
-    } else {
-      return null;
-    }
-  });
-
-  let previews_changed = false;
-  eleventyConfig.addNunjucksAsyncFilter('preview', async (url, key, cb) => {
-    const previews = loadPreviews();
-    let preview;
-    if (key in previews) {
-      preview = previews[key];
-    } else {
-      console.log(`no preview for ${url}, trying to scrape one...`);
-      preview = await scrape(url);
-      previews[key] = preview;
-      previews_changed = true;
-    }
-    return cb(null, preview);
-  });
-
-  eleventyConfig.on('eleventy.after', () => {
-    if (previews_changed) {
-      savePreviews();
-    }
-  });
-
-  eleventyConfig.addFilter('contentLink', content => {
-    const links = html.links(content);
-    return links[0];
-  });
-
   eleventyConfig.addFilter('jsonString', obj => {
     return JSON.stringify(obj);
   });
@@ -217,6 +172,7 @@ module.exports = (eleventyConfig) => {
     "woff2"
   ]);
 
+  previewConfig(eleventyConfig);
   addAllCollectionGroups(eleventyConfig);
 
   return {
