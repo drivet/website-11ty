@@ -1,7 +1,6 @@
 {% from "photo.njk" import photo %}
 {% from "reflink.njk" import reflink %}
 {% from "entry-header.njk" import entryheader %}
-{% from "preview.njk" import preview %}
 
 <article class="h-entry">
   {% for mention in post.data.bridgyMentions %}
@@ -25,7 +24,10 @@
 
   {% if post.data.postType != 'article' %}
     {% set link = post.data.referencedLink or (post.templateContent | contentLink) %}
-    {{ preview(link) }}
+    {% if link %}
+      {% set preview_data = link | preview %}
+      {% include "preview.njk" %}
+    {% endif %}
   {% endif %}
 
   {% if post.data.postType == 'article' %}

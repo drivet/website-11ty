@@ -8,7 +8,7 @@ const domain = require('./global.json').DOMAIN;
 require('dotenv').config()
 
 // Define Cache Location and API Endpoint
-const CACHE_DIR = './_cache'
+const CACHE_DIR = './_cache/webmentions'
 const API = 'https://webmention.io/api'
 const TOKEN = process.env.WEBMENTION_IO_TOKEN
 
@@ -55,7 +55,7 @@ function writeToCache(data) {
     const fileContent = JSON.stringify(data, null, 2)
     // create cache folder if it doesnt exist already
     if (!fs.existsSync(CACHE_DIR)) {
-        fs.mkdirSync(CACHE_DIR)
+        fs.mkdirSync(CACHE_DIR, { recursive: true })
     }
     // write data to cache json file
     fs.writeFile(filePath, fileContent, (err) => {

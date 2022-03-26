@@ -172,6 +172,11 @@ module.exports = (eleventyConfig) => {
     "woff2"
   ]);
 
+  eleventyConfig.addFilter('contentLink', content => {
+    const links = html.links(content);
+    return links[0];
+  });
+  
   previewConfig(eleventyConfig);
   addAllCollectionGroups(eleventyConfig);
 

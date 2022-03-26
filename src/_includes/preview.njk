@@ -1,18 +1,11 @@
-{% macro preview(link) %}
-{% if link %}
-  {% set scraped = link | preview(link | slug) %}
-  {% set type = scraped | linkContextType %}
-
-  {% if type %}
-    <section class="link-context">
-    {% if type == 'indieweb' %}
-      {% include "indieweb-context.njk" %}
-    {% elif type == 'oembed' %}
-      {% include "oembed.njk" %}
-    {% elif type == 'unfurl' %}
-      {% include "unfurl.njk" %}
-    {% endif %}
-    </section>
+{% if preview_data %}
+  <section class="link-context">
+  {% if preview_data.type == 'mf2' %}
+    {% include "indieweb-context.njk" %}
+  {% elif preview_data.type == 'oembed' %}
+    {% include "oembed.njk" %}
+  {% elif preview_data.type == 'unfurl' %}
+    {% include "unfurl.njk" %}
   {% endif %}
+  </section>
 {% endif %}
-{% endmacro %}

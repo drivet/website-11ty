@@ -1,5 +1,4 @@
-{% set meta = scraped.meta | normalizeUnfurl %}
-
+{% set meta = preview_data.meta %}
 <blockquote cite="{{ link }}" class="h-cite cite link-context__unfurl">
 {% if meta.title %}
 <h1><a href="{{ link }}">{{ meta.title }}</a></h1>
@@ -10,7 +9,7 @@
 {% endif %}
 
 {% if meta.image %}
-<img alt="open graph image" src="{{meta.image.url}}" class="link-context__image"/>
+<img alt="{{ meta.image.alt }}" src="{{ meta.image.url }}" class="link-context__image"/>
 {% endif %}
 
 </blockquote>
