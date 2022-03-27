@@ -1668,4 +1668,6 @@ results:
     'https://www.11ty.dev/docs/layouts/': {}
     'https://www.11ty.dev/docs/collections/': {}
     'https://www.11ty.dev/docs/quicktips/tag-pages/': {}
+  2022/03/27/190500:
+    'https://github.com/james-stoup/emacs-org-mode-tutorial': {}
 site_url: 'https://desmondrivet.com'
