@@ -11,7 +11,7 @@ const oembedList = ['https://twitter.com', 'https://youtube.com'];
 async function cachePreviewImage(parentUrl, url) {
   try {
     const stats = await Image(url, {
-      widths: [500],
+      widths: [750],
       outputDir: "./_site/static/previews",
       urlPath: "/static/previews",
       formats: ['jpeg'],

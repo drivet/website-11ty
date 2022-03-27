@@ -208,19 +208,19 @@ body {
   margin-top: 3em;
 }
 
-.wm-mention__header {
+.post-info__header {
   line-height: 1.3;
 }
 
-.wm-mention__author {
+.post-info__author {
   margin-right: 0.5em;
 }
 
-.wm-mention__published {
+.post-info__published {
   font-size: var(--font-size-smaller);
 }
 
-.wm-mention__content {
+.post-info__content {
   margin-top: 1em;
 }
 
