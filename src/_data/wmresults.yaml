@@ -1677,4 +1677,8 @@ results:
       status_code: 202
     'https://social.johanbove.info/profile/johan':
       status_code: 202
+  2022/03/30/110159:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1509185283597688832'
 site_url: 'https://desmondrivet.com'
