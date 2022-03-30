@@ -30,7 +30,7 @@ async function commitWmResults(wmresults) {
       owner: "drivet",
       repo: "website-11ty",
       path: WM_RESULTS_PATH,
-      message: "save wmresults",
+      message: "save wmresults [skip ci]",
       committer: {
         name: `Netlify`,
         email: "desmond.rivet@gmail.com",

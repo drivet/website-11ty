@@ -1,4 +1,9 @@
-const folders = ['./_cache/webmentions', './_cache/previews'];
+const folders = [
+    './_cache/webmentions',
+    './_cache/previews',
+    './_cache/avatars',
+    './_cache/scraped'
+];
 module.exports = {
     // Before the build runs,
     // restore a directory we cached in a previous build.
