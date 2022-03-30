@@ -1672,4 +1672,9 @@ results:
     'https://github.com/james-stoup/emacs-org-mode-tutorial': {}
   2022/03/28/104300:
     'https://medium.com/@rebeccawilliams9941/the-zettelkasten-method-examples-to-help-you-get-started-8f8a44fa9ae6': {}
+  2022/03/30/080800:
+    'https://social.johanbove.info/2022/03/29/people-drinking-the-vodka-they-already-had':
+      status_code: 202
+    'https://social.johanbove.info/profile/johan':
+      status_code: 202
 site_url: 'https://desmondrivet.com'
