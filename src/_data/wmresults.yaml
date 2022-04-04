@@ -1681,4 +1681,77 @@ results:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1509185283597688832'
+  2022/04/04/eleventy-previews:
+    'https://brid.gy/publish/twitter':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1511074075334041605'
+    'https://indieweb.org/':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/7NA811EemuKu5oDcyLFs'
+    'https://indieweb.org/like':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/al74usSdgIEjYI3TH5qW'
+    'https://indieweb.org/reply':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/OYB4KjgNHWiMow5n93dK'
+    'https://indieweb.org/repost':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/gDXk1iGcRf7ERwO1aa8X'
+    'https://indieweb.org/bookmark':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/RaKlLvrpeV1hiOcyKUKI'
+    'https://www.11ty.dev/': {}
+    'https://www.netlify.com/': {}
+    'https://indieweb.org/link-preview':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/6ZOeCmknWtlsBJbSy3dI'
+    'https://indieweb.org/reply-context':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/_SgbYa1kuJYV3dmOIF7s'
+    'https://indieweb.org/note':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/A8XWd_t230uZLqz9PdJN'
+    'https://indieweb.org/article':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/52xLPuim9vgM3LJoR-Ho'
+    'https://www.11ty.dev/docs/data-computed/': {}
+    'https://cheerio.js.org/': {}
+    'https://jquery.com/': {}
+    'https://indieweb.org/microformats':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/ozb2lFndKTuNS5slfj2t'
+    'https://indieweb.org/Twitter_Cards':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/vUIXVmNRPUsOEISzGw_f'
+    'https://indieweb.org/The-Open-Graph-protocol':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/JmG201qTDv5dWeQi6r1d'
+    'https://indieweb.org/oEmbed':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/O_SDp5o2D7-dVu-ePz85'
+    'https://indieweb.org/authorship-spec':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/Cjdde_mLsJO-s_d2QmQ7'
+    'https://indieweb.org/post-type-discovery':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/KGeB39YKK8SY3Z1drN-s'
+    'https://pypi.org/project/mf2util/': {}
+    'https://www.npmjs.com/package/microformats-parser': {}
+    'https://www.npmjs.com/package/mf2utiljs': {}
+    'https://www.npmjs.com/package/unfurl.js': {}
+    'https://mxb.dev':
+      status_code: 201
+      location: 'https://webmention.io/mxb.dev/webmention/cH5z-aIO7aLIa6YcUJDO'
+    'https://mxb.dev/blog/using-webmentions-on-static-sites/':
+      status_code: 201
+      location: 'https://webmention.io/mxb.dev/webmention/aOxklzH9zQX_C2DrOWf4'
+    'https://www.11ty.dev/docs/data-global/': {}
+    'https://mxb.dev/blog/persistent-build-folders-netlify/':
+      status_code: 201
+      location: 'https://webmention.io/mxb.dev/webmention/wqWc8SKSvwIaWbQo9TgW'
+    'https://indieweb.org/featured':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/T5aZf9QoMLGZKXpEdwMf'
+    'https://www.11ty.dev/docs/plugins/image/': {}
+    'https://github.com/drivet/website-11ty/blob/main/configs/previews.js': {}
 site_url: 'https://desmondrivet.com'
