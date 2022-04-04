@@ -2,7 +2,7 @@ title: Enum Musings in TypeScript
 date: 2020-11-30 22:21:29 -0500
 tags:
 - typescript
-- programmine
+- programming
 blurb: Typescript enums are kind of weird
 mp_syndicate_to: twitter_bridgy
 
@@ -322,8 +322,8 @@ enum DayOfWeek {
 ```
 
 And nothing else needs to change, as long as the keys are always referenced
-via the enum.  The apparent redundancy, it turns out, buys us a certain
-amount of protection from change.
+via the enum.  The apparent redundancy, as it turns out, buys us a certain
+amount of future-proofing.
 
 ## Alternatives to Enums
 

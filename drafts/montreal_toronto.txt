@@ -1,0 +1,99 @@
+Toronto
+
+Area
+ • City 	630 km2 (243.2 sq mi)
+ • Urban 	1,749 km2 (675.3 sq mi)
+ • Metro 	7,125 km2 (2,751 sq mi)
+
+Population (2006)
+ • City 	2,503,281 (1st)
+ • Urban 	4,753,120 (1st)
+ • Metro 	5,113,149 (1st)
+
+Density:
+
+ • City	3,972/km2 (10,287.4/sq mi)
+ • Urban 2718/km2
+ • Metro 718/km2 
+----
+
+Montreal
+
+Area
+ • City 	365.13 km2 (140.98 sq mi)
+ • Urban 	1,677 km2 (647 sq mi)
+ • Metro 	4,259 km2 (1,644 sq mi)
+
+Population (2006)
+ • City 	1,620,693 (2nd)
+ • Urban 	3,316,615
+ • Metro 	3,635,571 (2nd)
+ 
+Density:
+ • City 	4439/km2 (11,496/sq mi)
+ • Urban    1978/km2 
+ • Metro	 854/km2 (2,211.8/sq mi)
+
+
+
+<table>
+<tr> <td>
+<h2>
+Toronto</h2>
+<p>
+Area:
+<ul>
+<li>City: 630 km2</li>
+<li>Urban: 1749 km2</li>
+<li>Metro: 7125 km2</li>
+</ul>
+</p>
+
+<p>
+Population:
+<ul>
+<li>City: 2,503,281</li>
+<li>Urban: 4,753,120</li>
+<li>Metro: 5,113,149</li>
+</ul>
+</p>
+
+<p>
+Density:
+<ul>
+<li>City 3972/km2</li>
+<li>Urban 2718/km2</li>
+<li>Metro 718/km2</li>
+</ul>
+</p>
+</td>  <td>
+<h2>
+Montreal</h2>
+<p>
+Area:
+<ul>
+<li>City: 365.13 km</li>
+<li>Urban: 1,677 km2</li>
+<li>Metro: 4,259 km2</li>
+</ul>
+</p>
+
+<p>
+Population:
+<ul>
+<li>City: 1,620,693</li>
+<li>Urban: 3,316,615</li>
+<li>Metro: 3,635,571</li>
+</ul>
+</p>
+
+<p>
+Density:
+<ul>
+<li>City: 4439/km2
+<li>Urban: 1978/km2
+<li>Metro: 854/km2 
+</ul>
+</p>
+</td> </tr>
+</table>

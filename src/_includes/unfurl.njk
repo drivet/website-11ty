@@ -1,15 +1,9 @@
-{% set meta = preview_data.meta %}
-<blockquote cite="{{ link }}" class="h-cite cite link-context__unfurl">
-{% if meta.title %}
-<h1><a href="{{ link }}">{{ meta.title }}</a></h1>
+{% if preview_data %}
+  <section class="unfurl">
+  {% if preview_data.type == 'mf2' or preview_data.type == 'unfurl' %}
+    {% include "link-context.njk" %}
+  {% elif preview_data.type == 'oembed' %}
+    {{ preview_data.meta.oEmbed.html | safe }}
+  {% endif %}
+  </section>
 {% endif %}
-
-{% if meta.description %}
-<section>{{ meta.description }}</section>
-{% endif %}
-
-{% if meta.image %}
-<img alt="{{ meta.image.alt }}" src="{{ meta.image.url }}" class="link-context__image"/>
-{% endif %}
-
-</blockquote>

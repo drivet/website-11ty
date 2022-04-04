@@ -31,7 +31,7 @@
     {% set link = referencedLink or (content | contentLink) %}
     {% if link %}
       {% set preview_data = link | preview %}
-      {% include "preview.njk" %}
+      {% include "unfurl.njk" %}
     {% endif %}
   {% endif %}
 

@@ -75,16 +75,6 @@ function getSlug(fslug) {
   }
 }
 
-function truncate(str, chars, replace = '...') {
-  const truncated = str.substring(0, chars);
-  if (truncated.length === str.length) {
-    return str;
-  } else {
-    const replaceLength = replace.length;
-    return truncated.substring(0, chars-replaceLength) + replace;
-  }
-}
-
 module.exports = (eleventyConfig) => {
   eleventyConfig.setBrowserSyncConfig(
     require('./configs/browsersync.config')('_site')
@@ -101,7 +91,6 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
   eleventyConfig.addFilter('excerpt', content => html.excerpt(content, 50));
-  eleventyConfig.addFilter('truncate', str => truncate(str, 500));
   eleventyConfig.addFilter('synicon', url => synIcon(url));
   eleventyConfig.addFilter('monthname', month => {
     switch(month) {
@@ -171,11 +160,6 @@ module.exports = (eleventyConfig) => {
     "woff",
     "woff2"
   ]);
-
-  eleventyConfig.addFilter('contentLink', content => {
-    const links = html.links(content);
-    return links[0];
-  });
   
   previewConfig(eleventyConfig);
   addAllCollectionGroups(eleventyConfig);

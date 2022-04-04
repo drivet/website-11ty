@@ -1,51 +1,44 @@
-const { loadScraped, saveScraped } = require('./scraped-cache.js');
+const html = require('../utils/html.js');
 const { unfurl } = require('unfurl.js');
 const { parse_mf2, interpret_entry } = require('mf2utiljs');
 const Image = require('@11ty/eleventy-img');
 const slugify = require('slugify');
 const clone = require('clone');
+const fs = require('fs');
 
-const oembedList = ['https://twitter.com', 'https://youtube.com'];
+let scraped = null;
+
+const CACHE_DIR = './_cache/scraped'
+const OEMBED_LIST = ['https://twitter.com', 'https://youtube.com'];
 
 
-async function cachePreviewImage(parentUrl, url) {
-  try {
-    const stats = await Image(url, {
-      widths: [750],
-      outputDir: "./_site/static/previews",
-      urlPath: "/static/previews",
-      formats: ['jpeg'],
-      cacheOptions: {
-        duration: "*",
-        directory: "_cache/previews",
-        removeUrlQueryParams: false,
-      },
-    });
-    return stats.jpeg[0].url;
-  } catch (e) {
-    console.warn(`could not process preview image from ${parentUrl} with Image`);
-    return url;
+function loadScraped() {
+  if (scraped !== null) {
+    return scraped;
   }
+
+  console.log('scraped data not loaded, loading...');
+  const filePath = `${CACHE_DIR}/scraped.json`
+  if (fs.existsSync(filePath)) {
+    const cacheFile = fs.readFileSync(filePath)
+    scraped = JSON.parse(cacheFile);
+  } else {
+    console.warn('no scraped cache, initializing...');
+    scraped = {};
+  }
+  return scraped;
 }
 
-async function cacheAvatar(authorUrl, url) {
-  try {
-    const stats = await Image(url, {
-      widths: [64],
-      outputDir: "./_site/static/avatars",
-      urlPath: "/static/avatars",
-      formats: ['png'],
-      cacheOptions: {
-        duration: "*",
-        directory: "_cache/avatars",
-        removeUrlQueryParams: false,
-      },
-    });
-    return stats.png[0].url;
-  } catch (e) {
-    console.warn(`could not process avatar image for ${authorUrl} with Image`);
-    return url;
+function saveScraped() {
+  console.log('saving scraped...');
+  const filePath = `${CACHE_DIR}/scraped.json`
+  const fileContent = JSON.stringify(scraped, null, 2);
+  // create cache folder if it doesnt exist already
+  if (!fs.existsSync(CACHE_DIR)) {
+    fs.mkdirSync(CACHE_DIR)
   }
+
+  fs.writeFileSync(filePath, fileContent);
 }
 
 /**
@@ -82,6 +75,69 @@ async function preparePreview(scraped) {
   }
 }
 
+function truncate(str, chars, replace = '...') {
+  const truncated = str.substring(0, chars);
+  if (truncated.length === str.length) {
+    return str;
+  } else {
+    const replaceLength = replace.length;
+    return truncated.substring(0, chars-replaceLength) + replace;
+  }
+}
+
+function extractSummary(meta) {
+  if (meta.summary) {
+    return meta.summary;
+  } else if (meta['content-plain']) {
+    return truncate(meta['content-plain'], 500);
+  }
+}
+
+async function cachePreviewImage(url, widths, format) {
+  try {
+    const stats = await Image(url, {
+      widths,
+      outputDir: "./_site/static/previews",
+      urlPath: "/static/previews",
+      formats: [format],
+      cacheOptions: {
+        duration: "*",
+        directory: "_cache/previews",
+        removeUrlQueryParams: false,
+      },
+    });
+    return stats[format][0].url;
+  } catch (e) {
+    if (url.startsWith('http:') || url.startsWith('https:')) {
+      console.warn(`could not process preview image ${url}, ${JSON.stringify(e)}`);
+    } else {
+      console.warn(`could not process non-http URL`);
+    }
+    return url;
+  }
+}
+
+async function cacheImages(preview) {
+  if (preview?.meta?.favicon) {
+    preview.meta.favicon = await cachePreviewImage(preview.meta.favicon, [64], ['png']);
+  }
+  if (preview?.meta?.image?.url) {
+    preview.meta.image.url = await cachePreviewImage(preview.meta.image.url, [750], ['jpeg']);
+  }
+}
+
+function extractPicture(meta) {
+  const picture = meta?.featured || meta?.photo;
+  if (picture) {
+    return {
+      alt: "featured image",
+      url: picture
+    }; 
+  } else {
+    return null;
+  }
+}
+
 /**
  * We just cache the avatar, but otherwise leave this more or less alone.
  * 
@@ -89,31 +145,79 @@ async function preparePreview(scraped) {
  * @returns 
  */
 async function prepareMf2Preview(scraped) {
-  const mf2Preview = clone(scraped);
-  if (mf2Preview.meta?.author?.photo) {
-    mf2Preview.meta.author.photo =
-      await cacheAvatar(mf2Preview.meta.author.url, mf2Preview.meta.author.photo);
-  }
-  return mf2Preview;
+  const scrapedCopy = clone(scraped);
+  const meta = scrapedCopy.meta;
+ 
+  const image = extractPicture(meta);
+  const preview = {
+    type: scrapedCopy.type,
+    meta: {
+      url: scrapedCopy.url,
+      title: meta?.name,
+      description: extractSummary(meta),
+      published: meta.published || meta['published-str'],
+      image,
+      site: meta?.author?.name,
+      siteUrl: meta?.author?.url,
+      favicon: meta?.author?.photo
+    }
+  };
+  await cacheImages(preview);
+  return preview;
 }
 
-/**
- * Nothing really to do for the omebed preview except stamp the type
- * 
- * @param {*} scaped 
- */
 function prepareOembedPreview(scraped) {
   return {
-    ...scraped,
-    type: 'oembed'
+    type: 'oembed',
+    meta: {
+      oEmbed: {
+        html: scraped.meta.oEmbed.html
+      }
+    }
   };
 }
 
 /**
+ * Meta has both open_graph and twitter instances.
+ * Prefer open_graph, fall back to twitter
+ * @param {*} meta 
+ */
+function select(meta, f1, f2) {
+  function valueOrFirst(value) {
+    return Array.isArray(value) ? value[0]: value;
+  }
+
+  if (!meta) {
+    return null;
+  }
+  let value = null;
+  if (meta.open_graph) {
+    value = valueOrFirst(meta.open_graph[f1]);
+  }
+  if (value) {
+    return value;
+  }
+  const twitter_att = f2 ? f2 : f1;
+  if (meta.twitter_card) {
+    value = valueOrFirst(meta.twitter_card[twitter_att]);
+  }
+  return value;
+}
+
+/**
+ * Return a structure that looks like:
+ * 
+ * {
+ *   type: unfurl,
+ *   meta: {
+ *     title, description, image, site, icon
+ *   }
+ * }
+ * 
  * We will choose a title, description and image from the open graph and twitter data,
  * based on what is available.
  * 
- * Then we will cache the preview image if there is one
+ * Then we will cache the preview image if there is one.
  * 
  * @param {*} scraped 
  * @returns 
@@ -121,23 +225,19 @@ function prepareOembedPreview(scraped) {
 async function prepareMetadataPreview(scraped) {
   const scrapedCopy = clone(scraped);
   const meta = scrapedCopy.meta;
-  let image = null;
-  if (meta?.open_graph?.images?.length > 0) {
-    image = meta.open_graph.images[0];
-  } else if (meta?.twitter_card?.images?.length > 0) {
-    image = meta.twitter_card.images[0];
-  }
+ 
   const preview = {
-    ...scrapedCopy,
+    type: scrapedCopy.type,
     meta: {
-      title: meta?.open_graph?.title || meta?.twitter_card?.title,
-      description: meta?.open_graph?.description || meta?.twitter_card?.description,
-      image
+      url: scrapedCopy.url,
+      title: select(meta, 'title'),
+      description: select(meta, 'description'),
+      image: select(meta, 'images'),
+      site: select(meta, 'site_name', 'site'),
+      favicon: meta?.favicon
     }
   };
-  if (preview.meta.image?.url) {
-    preview.meta.image.url = await cachePreviewImage(preview.url, preview.meta.image.url);
-  }
+  cacheImages(preview);
   return preview;
 }
 
@@ -157,7 +257,7 @@ async function prepareMetadataPreview(scraped) {
 function useOEmbed(url, meta) {
   return meta.oEmbed &&
          ["rich", "video"].includes(meta.oEmbed.type) &&
-         oembedList.some(u => url.startsWith(u));
+         OEMBED_LIST.some(u => url.startsWith(u));
 }
 
 function useMetadata(scraped) {
@@ -224,6 +324,11 @@ function previewConfig(eleventyConfig) {
    */
   eleventyConfig.on('eleventy.after', () => {
     saveScraped();
+  });
+
+  eleventyConfig.addFilter('contentLink', content => {
+    const links = html.links(content);
+    return links[0];
   });
 }
 

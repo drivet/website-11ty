@@ -27,18 +27,15 @@ function bridgyMentions(data) {
     filter(s => !!s);
 }
 
-
 function referencedLink(data) {
-  const properties = data;
-
-  if (!properties) {
+  if (!data) {
     return null;
   }
   
-  return properties['like-of'] ||
-         properties['repost-of'] ||
-         properties['in-reply-to'] ||
-         properties['bookmark-of'];
+  return data['like-of'] ||
+         data['repost-of'] ||
+         data['in-reply-to'] ||
+         data['bookmark-of'];
 } 
 
 module.exports = {

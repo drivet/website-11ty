@@ -1,0 +1,37 @@
+{% set meta = preview_data.meta %}
+<blockquote cite="{{ meta.url }}" class="h-cite cite link-context">
+
+{% if meta.site %}
+<div class="row link-context__header">
+    {% if meta.favicon %}
+    <img class="link-context__avatar" src="{{meta.favicon}}"/>
+    {% endif %}
+    <div>
+        <div>
+            {% if meta.siteUrl %}
+                <a class="link-context__site-url" href="{{meta.siteUrl}}">{{meta.site}}</a>
+            {% else %}
+                <span class="link-context__site">{{ meta.site }}</span>
+            {% endif %}
+        </div>
+
+        {% if meta.published %}
+            <div><span class="link-context__published">{{ meta.published | date }}</span></div>  
+        {% endif %}        
+    </div>
+</div>
+{% endif %}
+
+{% if meta.image %}
+<img alt="{{ meta.image.alt }}" src="{{ meta.image.url }}" class="link-context__image"/>
+{% endif %}
+
+{% if meta.title %}
+<h1><a href="{{ meta.url }}">{{ meta.title }}</a></h1>
+{% endif %}
+
+{% if meta.description %}
+<div class="link-context__content">{{ meta.description }}</div>
+{% endif %}
+
+</blockquote>
