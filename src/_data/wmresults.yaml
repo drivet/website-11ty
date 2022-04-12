@@ -1758,4 +1758,11 @@ results:
     'https://boffosocko.com/2022/02/05/zettelkasten-overreach/':
       status_code: 200
     'https://boffosocko.com/author/chrisaldrich/': {}
+  2022/04/11/typescript-enums:
+    'https://brid.gy/publish/twitter':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1513672136908587009'
+    'https://www.typescriptlang.org/': {}
+    'https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_%E2%80%93_ECMAScript_2015': {}
+    'https://www.typescriptlang.org/docs/handbook/interfaces.html': {}
 site_url: 'https://desmondrivet.com'
