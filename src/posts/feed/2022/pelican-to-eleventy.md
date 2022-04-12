@@ -2,7 +2,6 @@
 title: From Pelican to Eleventy
 blurb: Making the switch from Pelican to @eleven_ty
 date: 2022-03-06T12:08:25-05:00
-post-status: draft
 tags:
 - pelican
 - eleventy
