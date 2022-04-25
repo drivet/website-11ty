@@ -1,7 +1,7 @@
 ---
 date: 2022-04-25T08:37:06-04:00
-title: "Receiving and Displaying Webmentions in #Eleventy"
-blurb: "It turns out other people have done most of the work for displaying webmentions on a static site"
+title: "Receiving and Displaying Webmentions in Eleventy"
+blurb: "It turns out other people have done most of the work for displaying webmentions in #Eleventy"
 mp-syndicate-to:
 - twitter_bridgy
 tags:
