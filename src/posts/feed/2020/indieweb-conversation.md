@@ -466,7 +466,7 @@ I would be remiss if I didn't write about them, but we'll see.
 Anyway, thanks for reading this far!  I hope to see you around!
 
 
-[1]: /tags/indieweb
+[1]: /posts/tags/indieweb
 [2]: https://indieweb.org/
 [3]: https://indieweb.org/like
 [4]: https://en.wikipedia.org/wiki/Representational_state_transfer
