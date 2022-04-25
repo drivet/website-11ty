@@ -1768,4 +1768,28 @@ results:
   2022/04/13/130300:
     'https://learntrepreneurs.com/books-reading-better-learning-more/zettelkastens-3-note-taking-levels-help-you-harvest-your-thoughts/': {}
   2022/04/23/145000: {}
+  2022/04/25/receiving-webmentions:
+    'https://brid.gy/publish/twitter':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1518570835983876096'
+    'https://indieweb.org/POSSE':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/AWiBAhjjtGMLad3Q9RgI'
+    'https://indieweb.org/backfeed':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/VIoEsyPkUu2ShDo8eV8p'
+    'https://github.com/drivet/webmention-git-server': {}
+    'https://redis.io/': {}
+    'https://mxb.dev/':
+      status_code: 201
+      location: 'https://webmention.io/mxb.dev/webmention/1gudm4P174ttKOj7XGGT'
+    'https://mxb.dev/blog/using-webmentions-on-static-sites/':
+      status_code: 429
+    'https://webmention.io':
+      status_code: 201
+      location: 'https://webmention.io/pingback/webmention/tTeaPU3xHcw5xNGjoR1-'
+    'https://www.11ty.dev/docs/data-global/': {}
+    'https://mxb.dev/blog/persistent-build-folders-netlify/':
+      status_code: 201
+      location: 'https://webmention.io/mxb.dev/webmention/fqYGPy_fFyNBIpkW2It-'
 site_url: 'https://desmondrivet.com'
