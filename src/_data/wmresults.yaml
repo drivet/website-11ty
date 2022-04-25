@@ -1754,4 +1754,18 @@ results:
       location: 'https://webmention.io/indiewebcamp/webmention/T5aZf9QoMLGZKXpEdwMf'
     'https://www.11ty.dev/docs/plugins/image/': {}
     'https://github.com/drivet/website-11ty/blob/main/configs/previews.js': {}
+  2022/04/06/zettlekastan-overreach-reply:
+    'https://boffosocko.com/2022/02/05/zettelkasten-overreach/':
+      status_code: 200
+    'https://boffosocko.com/author/chrisaldrich/': {}
+  2022/04/11/typescript-enums:
+    'https://brid.gy/publish/twitter':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1513672136908587009'
+    'https://www.typescriptlang.org/': {}
+    'https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_%E2%80%93_ECMAScript_2015': {}
+    'https://www.typescriptlang.org/docs/handbook/interfaces.html': {}
+  2022/04/13/130300:
+    'https://learntrepreneurs.com/books-reading-better-learning-more/zettelkastens-3-note-taking-levels-help-you-harvest-your-thoughts/': {}
+  2022/04/23/145000: {}
 site_url: 'https://desmondrivet.com'
