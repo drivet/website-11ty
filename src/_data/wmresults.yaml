@@ -1800,4 +1800,8 @@ results:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1521496364462530562'
+  2022/05/04/constitutional-amendment:
+    'https://brid.gy/publish/twitter':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1522025423290482690'
 site_url: 'https://desmondrivet.com'
