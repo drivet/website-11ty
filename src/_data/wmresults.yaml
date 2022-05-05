@@ -1792,4 +1792,12 @@ results:
     'https://mxb.dev/blog/persistent-build-folders-netlify/':
       status_code: 201
       location: 'https://webmention.io/mxb.dev/webmention/fqYGPy_fFyNBIpkW2It-'
+  2022/05/01/152628:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1520847665428377600'
+  2022/05/03/102424:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1521496364462530562'
 site_url: 'https://desmondrivet.com'
