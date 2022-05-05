@@ -1,5 +1,5 @@
 ---
-date: 2022-04-26T09:03:05-04:00
+date: 2022-04-30T08:58:27-04:00
 title: "Fifteen Years of Blogging"
 blurb: "Fifteen years ago today, I started blogging"
 mp-syndicate-to:
@@ -21,24 +21,24 @@ example, or a programming blog, or a reading blog.  Among other things, it's
 a way to collect followers - people seem to place greater trust in a blog
 when it focuses on one subject.
 
-I'm not so precious as to claim that I don't care about readers *at all* -
-believe it or not, I do like it when people read my posts - but I *will*
-say, being completely honest, that it's not a huge concern, and gaining
-readers has very little do with why this blog exists.  I've tried, over the
-years, to keep track of visitors (first with piwik and then with google
-analytics) but I inevitably end up abandoning the effort as not worth my
-time.
+I'm not so precious as to claim that I don't care about readership *at
+all* - I do enjoy it when people read my posts, believe it or not - but I
+*will* say, being completely honest, that it's not a huge concern, and
+gaining a following has very little do with why this blog exists.  I've
+tried, over the years, to keep track of visitors (first with piwik and then
+with google analytics) but I inevitably end up abandoning the effort as not
+worth my time.
 
-In any case, I've always resisted the temptation to try and pigeonhole this
-project.  My blog, like me, is a bit all over the place.  It doesn't have a
+In any case, I've always resisted the temptation to limit this project with
+labels.  My blog, like me, is a bit all over the place.  It doesn't have a
 theme other than "stuff Desmond finds interesting".  It's a purely selfish
 creative outlet, a dim extension of myself, and sticking to one subject
 would run counter to that purpose.
 
-All that being said, I did notice, poring over my writing through the years,
+All that being said, I did notice, poring through my writing over the years,
 that certain patterns do stand out.  And, even though my blog isn't about
-anything in particular, individual posts generally *are*, so given that this
-post should probably be about *something*, let's explore!
+anything in particular, individual posts generally *are*, so it makes sense
+to turn this anniversary post into a trip down memory lane.
 
 ## The Diary - Part 1
 
@@ -59,7 +59,14 @@ entries began to dry up as I became more active on social media.  Facebook
 effectively became my diary, I suppose.  It makes me a bit sad to think
 about it.
 
-## The Gap
+One obvious reason for the change is that Facebook is easier to write for
+than a blog, particularly *my* blog.  It's not just the UI - sites like
+Facebook and Twitter revolve around posting small, titleless snippets of
+content that are by nature easier to craft than a blog entry.
+
+Joining the IndieWeb in 2018 helped me take back that kind of content.
+
+## The Gap and Nothing Personal
 
 There's a three year gap from 2008-2011, ostensibly because my blog got
 overrun with spam.  A number of life events happened in that gap - my dad
@@ -76,8 +83,9 @@ Some exceptions do exist.  I published a relatively personal post about
 religion back in 2016.  I published a fairly introspective post about the
 Canada Malting silos way back in 2013.  But day-to-day stuff?  Not so much.
 
-This changes somewhat when I started participating in the IndieWeb.  Read on
-for more information on *that*.
+Again, this changes somewhat when I started participating in the IndieWeb,
+which made it easier, from a conceptual standpoint, to post one-off status
+updates of what's happening in my life.
 
 ## On Being Meta
 
@@ -87,10 +95,10 @@ fact, "blogging" is the single biggest entry on my tag page.  I'm not sure
 what to make of that, except that I suppose I tend to fall into the common
 nerd trap of getting caught up in the tools I use.
 
-What can I say?  Blogging software (and web publishing software in general,
-really) is a topic that fascinates me. I'm old enough to still be amazed at
-the idea that a random person can put a random web page on a random web
-server and have it be instantly accessible to the rest of the world.
+What can I say?  Blogging software (and web publishing software in general)
+is a topic that fascinates me. I'm old enough to still be amazed at the idea
+that a random person can put a random web page on a random web server and
+have it be instantly accessible to the rest of the world.
 
 I started this blog with an obscure little Perl program called Blosxom,
 moved on fairly quickly to my own homegrown engine called YAWT (first
@@ -140,11 +148,10 @@ Joining the IndieWeb has had a profound effect on the format and structure
 of my blog.  The most prominent changes, from a reader's perspective, would
 probably be the introduction of notes and webmentions.
 
-The ability to publish short, quick notes (think tweets or status updates)
-on my blog basically means that I can more easily use this platform for
-purposes that hitherto had been mostly the purview of Facebook and Twitter -
-namely day-to-day, diary oriented musings.  The introduction of webmentions
-have added a sense of community.
+The ability to publish short, quick notes on my blog basically means that I
+can more easily use this platform for purposes that hitherto had been mostly
+the purview of Facebook and Twitter - namely day-to-day, diary oriented
+musings.  The introduction of webmentions have added a sense of community.
 
 Effectively, participating in the IndieWeb has resulted in a kind of
 renaissance of the diary aspects of my blog, and a lessening of the
