@@ -1813,4 +1813,9 @@ results:
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1523701870623178754'
     'https://youtu.be/n0EKDZ4H3jo': {}
+  2022/05/09/132432:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1523715896820314115'
+    'https://www.youtube.com/watch?v=3O28uSZxyEw': {}
 site_url: 'https://desmondrivet.com'
