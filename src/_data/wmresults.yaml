@@ -1827,4 +1827,8 @@ results:
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1525577559446003712'
     'https://williamkennedy.ninja/javascript/2022/05/03/in-defence-of-the-single-page-application/': {}
+  2022/05/16/144125:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1526272025588813827'
 site_url: 'https://desmondrivet.com'
