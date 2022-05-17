@@ -14,13 +14,13 @@ have a strong sense of what I wanted to say but, anniversaries being a
 chance to reminisce, I found myself revisiting what I've written over the
 years.
 
-It's definitely a mixed bag.  The tone and content vary wildly.  For this
-reason, when people ask me what this blog is "about", I usually have trouble
-answering, and this sometimes catches them off guard because common wisdom
-states that blogs typically have themes.  People will have a food blog, for
-example, or a programming blog, or a reading blog.  Among other things, it's
-a way to collect followers - people seem to place greater trust in a blog
-when it focuses on one subject.
+It's definitely a mixed bag.  The tone and content vary quite a bit.  For
+this reason, when people ask me what this blog is "about", I don't usually
+have a ready answer, and this sometimes catches them off guard because
+common wisdom states that blogs typically have themes.  People will manage a
+cooking blog, for example, or a programming blog, or a reading blog.  Among
+other things, it's a way to collect followers - people seem to place greater
+trust in a blog when it focuses on one subject.
 
 I'm not so precious as to claim that I don't care about readership *at
 all* - I do enjoy it when people read my posts, believe it or not - but I
@@ -36,11 +36,12 @@ theme other than "stuff Desmond finds interesting".  It's a purely selfish
 creative outlet, a dim extension of myself, and sticking to one subject
 would run counter to that purpose.
 
-All that being said, I did notice, poring through my writing over the years,
-that certain patterns do stand out.  And, even though my blog isn't about
-anything in particular, individual posts generally *are*, so I suppose it
-makes a certain amount of sense to turn this anniversary post into a trip
-down memory lane.
+All that being said, I did notice, poring over the years, that certain
+patterns do stand out.  And, even though my blog isn't about anything in
+particular, individual posts generally *are*, so I suppose it makes a
+certain amount of sense to turn this anniversary post into a trip down
+memory lane.  Not the most elegant of segues but hey, let's see what shakes
+loose!
 
 ## The Diary - Part 1
 
@@ -169,13 +170,55 @@ than cooking if I'm honest.
 
 I enjoy mixing drinks.  I'm not entirely sure why. It's not to get drunk; I
 almost always stop at one or two.  I think it has something to do with my
-childhood fascination with chemistry.  Mixing a drink is like a science
+childhood fascination with chemistry.  Mixing a drink feels like a chemistry
 experiment.
 
 For while I was really into crafting my own mixers.  I have a couple of
 articles on [making my own tonic water][31], and one on how to make my own
 grenadine.  I have a series of posts on how I use what are traditionally
 labelled as "mixing liqueurs", like vermouth or Chartreuse.
+
+## Just...a Lot of Soapboxing
+
+This blog doesn't really have title but, if it did, "Desmond's Soapbox"
+wouldn't be entirely off the mark.  I often use this blog to bleat opinions
+into the void.
+
+So, one occasionally runs into posts about [life in Quebec][32], or posts
+about [philosophy][33], or posts about [religion][34].  There's no rhyme or
+reason to most of it.  It's just stuff about which I felt was important to
+write at the time.
+
+Given that I'm not really writing for anyone other than myself, my blog is
+peppered with this kind of thing.
+
+## Thoughts On The Future
+
+I sometimes wonder why I do any of this.  I even have a [blog entry about
+it][35].  The essential conclusion reached in that article - that blogging
+is just *fun* - is as true as it ever was.
+
+Still, though, in the midst of giant platforms like Facebook and Twitter,
+there are times when it feels like the whole exercise is pointless.
+
+And then I read about how Elon Musk is buying Twitter, with the attendant
+fuss over what that might mean, and I'm suddenly more grateful than ever for
+having my own space on the Web.  Because even if Twitter or Facebook
+suddenly disappear, or become unbearable, I'll still have this space.
+
+This space is important, if for no other reason than that.
+
+And I guess I feel lucky that I have a certain amount of technical
+experience, and that I'm capable of maintaining a project like this, however
+imperfectly.  Not everyone is, which is exactly the reason things like
+Facebook and Twitter exist.
+
+So what does the future look like for this vanity project I call my home on
+the web?  Probably much like it does now, I suspect, aside from the
+occasional face lift.
+
+I imagine I'll be posting random stuff online for as long as there's a web.
+
 
 [1]: /2007/06/01/blogging
 [2]: /2007/
@@ -208,3 +251,8 @@ labelled as "mixing liqueurs", like vermouth or Chartreuse.
 [29]: /posts/blog/tags/cooking
 [30]: /posts/blog/tags/cocktails
 [31]: /posts/blog/tags/tonic
+[32]: /posts/blog/tags/quebec
+[33]: /posts/blog/tags/philosophy
+[34]: /posts/blog/tags/religion
+[35]: /2020/04/28/writing-reasons
+
