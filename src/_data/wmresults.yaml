@@ -1835,4 +1835,8 @@ results:
     'https://www.canadahelps.org/en/donate-to-the-afghanistan-emergency-relief-efforts/': {}
   2022/05/21/164300:
     'https://coredumped.dev/2021/05/26/taking-org-roam-everywhere-with-logseq/': {}
+  2022/05/22/190050:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1528511711484989446'
 site_url: 'https://desmondrivet.com'
