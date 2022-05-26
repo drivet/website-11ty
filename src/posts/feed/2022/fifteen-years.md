@@ -1,5 +1,5 @@
 ---
-date: 2022-04-30T08:58:27-04:00
+date: 2022-05-18T20:58:46-04:00
 title: "Fifteen Years of Blogging"
 blurb: "Fifteen years ago today, I started blogging"
 mp-syndicate-to:
@@ -37,11 +37,10 @@ creative outlet, a dim extension of myself, and sticking to one subject
 would run counter to that purpose.
 
 All that being said, I did notice, poring over the years, that certain
-patterns do stand out.  And, even though my blog isn't about anything in
-particular, individual posts generally *are*, so I suppose it makes a
-certain amount of sense to turn this anniversary post into a trip down
-memory lane.  Not the most elegant of segues but hey, let's see what shakes
-loose!
+patterns stand out.  And, even though my blog isn't about anything in
+particular, individual posts generally *are*, so I suppose it makes some
+amount of sense to turn this anniversary post into a trip down memory lane.
+Not the most elegant of segues but hey, let's see what shakes loose!
 
 ## The Diary - Part 1
 
@@ -64,9 +63,10 @@ effectively became my diary, I suppose.  It makes me a bit sad to think
 about it.
 
 One obvious reason for the change is that Facebook is easier to write for
-than a blog, particularly *my* blog.  It's not just the UI - sites like
-Facebook and Twitter revolve around posting small, titleless snippets of
-content that are by nature easier to craft than a blog entry.
+than a blog, particularly *my* blog.  I use a static site generator without
+a dedicated interface but it's not just about the UI - sites like Facebook
+and Twitter make it easy to post small, titleless snippets of content that
+are by nature easier to craft than a blog entry.
 
 Joining the [IndieWeb][10] in 2018, though, helped me take back that kind of
 content.
@@ -104,7 +104,8 @@ common nerd trap of getting caught up in the tools I use.
 What can I say?  Blogging software (and web publishing software in general)
 is a topic that fascinates me. I'm old enough to still be amazed at the idea
 that a random person can put a random web page on a random web server and
-have it be instantly accessible to the rest of the world.
+have it be instantly accessible to anyone in the world with an Internet
+connection.
 
 I started this blog with an obscure little Perl program called
 [Blosxom][15], moved on fairly quickly to my own homegrown engine called
@@ -117,7 +118,7 @@ certain popular programs like [Wordpress][19] are not on the list.  That's
 because I like writing all my blog entries in a plain text editor (usually
 [Emacs][20]) and saving them as vanilla text files on disk, a personal
 idiosyncrasy which informs my choice of publishing software.  The longevity
-of my blog can at least partially be attributed to the fact that my content
+of my blog can be at least partially attributed to the fact that my content
 is stored this way, and can be processed by relatively low-tech digital
 tools (i.e. any text editor, on any platform).  This is a topic that
 probably deserves its own post.
@@ -156,7 +157,7 @@ probably be the introduction of [notes][27] and [webmentions][28].
 
 The ability to publish short, quick notes on my blog basically means that I
 can more easily use this platform for purposes that hitherto had been mostly
-the purview of Facebook and Twitter - namely day-to-day, diary oriented
+the purview of Facebook and Twitter - namely day-to-day, diary-oriented
 musings.  The introduction of webmentions have added a sense of community.
 
 Effectively, participating in the IndieWeb has resulted in a kind of
@@ -168,17 +169,17 @@ reliance on Facebook and Twitter, which is nice.
 A number of posts involve [cooking][29] and [cocktails][30].  More cocktails
 than cooking if I'm honest.
 
-I enjoy mixing drinks.  I'm not entirely sure why. It's not to get drunk; I
+I enjoy mixing drinks.  I'm not entirely sure why.  It's not to get drunk; I
 almost always stop at one or two.  I think it has something to do with my
 childhood fascination with chemistry.  Mixing a drink feels like a chemistry
 experiment.
 
-For while I was really into crafting my own mixers.  I have a couple of
-articles on [making my own tonic water][31], and one on how to make my own
-grenadine.  I have a series of posts on how I use what are traditionally
-labelled as "mixing liqueurs", like vermouth or Chartreuse.
+For a while I was really into crafting my own mixers.  I have a couple of
+articles on [making my own tonic water][31], and one that mentions how I
+[make my own grenadine][36].  I have a series of posts on how I use what are
+traditionally labelled as "mixing liqueurs", like vermouth or Chartreuse.
 
-## Just...a Lot of Soapboxing
+## And Finally...Just a Lot of Soapboxing
 
 This blog doesn't really have title but, if it did, "Desmond's Soapbox"
 wouldn't be entirely off the mark.  I often use this blog to bleat opinions
@@ -208,17 +209,21 @@ suddenly disappear, or become unbearable, I'll still have this space.
 
 This space is important, if for no other reason than that.
 
-And I guess I feel lucky that I have a certain amount of technical
+And I guess I feel grateful that I have a certain amount of technical
 experience, and that I'm capable of maintaining a project like this, however
 imperfectly.  Not everyone is, which is exactly the reason things like
 Facebook and Twitter exist.
 
 So what does the future look like for this vanity project I call my home on
 the web?  Probably much like it does now, I suspect, aside from the
-occasional face lift.
+occasional face lift.  I imagine I'll be posting random stuff online for as
+long as there's a web to post to.
 
-I imagine I'll be posting random stuff online for as long as there's a web.
+Call it pride, but this space will likely always be around in some form or
+another.  At this point, it's become a part of my identity - part of how I
+see myself.  I suppose there are worse things.
 
+I wonder what the thirtieth anniversary post will look like?
 
 [1]: /2007/06/01/blogging
 [2]: /2007/
@@ -255,4 +260,4 @@ I imagine I'll be posting random stuff online for as long as there's a web.
 [33]: /posts/blog/tags/philosophy
 [34]: /posts/blog/tags/religion
 [35]: /2020/04/28/writing-reasons
-
+[36]: /2014/12/22/more-sour-cocktails
