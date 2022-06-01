@@ -1843,4 +1843,19 @@ results:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1531020825683496962'
+  2022/06/01/fifteen-years:
+    'https://brid.gy/publish/twitter':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1531983413867171843'
+    'https://indieweb.org':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/mw8nVtbzeltK5o3gpHG_'
+    'https://github.com/drivet/yawt': {}
+    'https://blog.getpelican.com/': {}
+    'https://www.11ty.dev/': {}
+    'https://wordpress.com/': {}
+    'https://www.gnu.org/software/emacs/': {}
+    'https://indieweb.org/Webmention':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/gb_RFF6xk2hLI5yfboye'
 site_url: 'https://desmondrivet.com'
