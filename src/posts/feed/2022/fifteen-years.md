@@ -1,5 +1,5 @@
 ---
-date: 2022-05-18T20:58:46-04:00
+date: 2022-06-01T08:44:30-04:00
 title: "Fifteen Years of Blogging"
 blurb: "Fifteen years ago today, I started blogging"
 mp-syndicate-to:
@@ -216,8 +216,8 @@ Facebook and Twitter exist.
 
 So what does the future look like for this vanity project I call my home on
 the web?  Probably much like it does now, I suspect, aside from the
-occasional face lift.  I imagine I'll be posting random stuff online for as
-long as there's a web to post to.
+occasional (amateurish) face lift.  I imagine I'll be posting random stuff
+online for as long as there's a web to post to.
 
 Call it pride, but this space will likely always be around in some form or
 another.  At this point, it's become a part of my identity - part of how I
