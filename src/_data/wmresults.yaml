@@ -1862,4 +1862,8 @@ results:
     'https://boffosocko.com/2022/06/10/reframing-and-simplifying-the-idea-of-how-to-keep-a-zettelkasten/':
       status_code: 200
     'https://boffosocko.com/author/chrisaldrich/': {}
+  2022/06/28/135347:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1541843083163213825'
 site_url: 'https://desmondrivet.com'
