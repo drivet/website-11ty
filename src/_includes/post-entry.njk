@@ -7,6 +7,8 @@
   <a href="{{mention}}"></a>
   {% endfor %}
 
+  {{ photo(post.data.featured, "u-featured entry__photo image") }}
+
   {{ entryheader(wmresults, post.data.date, post.url, post.data.title, 2) }}
   
   {% if post.data.blurb %}
@@ -19,7 +21,7 @@
 
   <div class="e-content">
     {{ post.templateContent | excerpt | safe }}
-    {{ photo(post.data.photo) }}
+    {{ photo(post.data.photo, "u-photo entry__photo image") }}
   </div>
 
   {% if post.data.postType != 'article' %}

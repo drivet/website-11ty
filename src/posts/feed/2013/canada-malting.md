@@ -2,7 +2,7 @@
 date: 2013-07-31T04:51:26.000Z
 modified: 2015-05-16T05:53:01.162Z
 og_description: In which I try to gauge my reaction to the Canada Malting building
-og_image: /blog/miscellanea/IMG_0646.JPG
+og_image: /static/img/IMG_0646.JPG
 tags:
   - montreal
   - saint-henri

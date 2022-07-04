@@ -1,13 +1,21 @@
-{% macro photo(photoArr) %}
+{% macro photo(photoArr, classes) %}
 {% if photoArr %}
+
+{% if photoArr is string %}
+<img alt="post photo" src="{{ photoArr }}" class="{{ classes }}"/>
+{% else %}
+
 {% for photoObj in photoArr %}
 {% if photoObj.value and photoObj.alt %} 
-<img src="{{ photoObj.value }}" alt="{{ photoObj.alt }}" class="u-photo entry__photo image"/>
+<img src="{{ photoObj.value }}" alt="{{ photoObj.alt }}" class="{{ classes }}"/>
 {% elif photoObj.value %}
-<img alt="post photo" src="{{ photoObj.value }}" class="u-photo entry__photo image"/>
+<img alt="post photo" src="{{ photoObj.value }}" class="{{ classes }}"/>
 {% else %}
-<img alt="post photo" src="{{ photoObj }}" class="u-photo entry__photo image"/>
+<img alt="post photo" src="{{ photoObj }}" class="{{ classes }}"/>
 {% endif %}
 {% endfor %}
+
+{% endif %}
+
 {% endif %}
 {% endmacro %}

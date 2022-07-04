@@ -154,6 +154,8 @@ body {
 .entry__photo {
   border-radius: 10px;
   max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 .entry__footer {
