@@ -137,7 +137,6 @@ body {
 .entry__headerline {
   font-size: var(--font-size-smaller);
   color: var(--lighter-color);
-  margin: 2em 0;
 }
 
 .entry__published {
@@ -162,7 +161,6 @@ body {
 .entry__footer {
   font-size: var(--font-size-smaller);
   color: var(--lighter-color);
-  margin-bottom: 2em;
 }
 
 .entry__footerlink {
