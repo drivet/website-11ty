@@ -1884,4 +1884,22 @@ results:
     'https://en.wikipedia.org/wiki/Campari': {}
     'https://en.wikipedia.org/wiki/Aperol': {}
     'https://en.wikipedia.org/wiki/Suze_(drink)': {}
+  2022/07/23/amaro-tasting:
+    'https://brid.gy/publish/twitter':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1550823947658313730'
+    'https://en.wikipedia.org/wiki/Amaro_(liqueur)': {}
+    'https://en.wikipedia.org/wiki/J%C3%A4germeister': {}
+    'https://en.wikipedia.org/wiki/Chartreuse_(liqueur)': {}
+    'https://en.wikipedia.org/wiki/Amaro_Averna': {}
+    'https://en.wikipedia.org/wiki/Zucca_(aperitif)': {}
+    'https://en.wikipedia.org/wiki/Cynar': {}
+    'https://en.wikipedia.org/wiki/Amaro_Montenegro': {}
+    'https://www.saq.com/en/10999073': {}
+    'https://www.vecchioamarodelcapo.com/en/': {}
+    'https://en.wikipedia.org/wiki/Amaro_Lucano': {}
+    'https://en.wikipedia.org/wiki/Fernet-Branca': {}
+    'https://en.wikipedia.org/wiki/Campari': {}
+    'https://en.wikipedia.org/wiki/Aperol': {}
+    'https://en.wikipedia.org/wiki/Suze_(drink)': {}
 site_url: 'https://desmondrivet.com'
