@@ -1902,4 +1902,8 @@ results:
     'https://en.wikipedia.org/wiki/Campari': {}
     'https://en.wikipedia.org/wiki/Aperol': {}
     'https://en.wikipedia.org/wiki/Suze_(drink)': {}
+  2022/07/23/115538:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1550872646472110081'
 site_url: 'https://desmondrivet.com'
