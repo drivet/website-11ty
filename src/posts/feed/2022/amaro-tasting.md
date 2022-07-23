@@ -1,5 +1,5 @@
 ---
-date: 2022-07-01T12:42:24-04:00
+date: 2022-07-23T08:34:14-04:00
 title: "Amaro Showdown at Casa Di Desmond"
 blurb: "I have a small collection of Italian Amaros.  I decided to try them all"
 mp-syndicate-to:
