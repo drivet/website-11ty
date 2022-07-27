@@ -4,6 +4,7 @@ modified: 2018-05-20T19:45:11.000Z
 tags:
   - theremin
 title: 'On Finding an Excuse to Buy an Arduino or: How I Finally Got Myself a Theremin'
+og_image: /static/img/open_theremin_soldered.jpg
 ---
 
 In my [last blog entry][3], I talked about theremins.  I've known about them
@@ -47,20 +48,11 @@ couple of LEDs, and the antennae connectors).  The electronics are all
 pretty much pre-soldered onto the board; the knobs and LEDs, on the other
 hand, are not.  The bare board looks like this:
 
-<div style="clear: both; text-align: center;"> 
-<a href="/static/img/open_theremin_board.jpg" 
-   style="margin-left: 1em; margin-right: 1em;">
-<img border="0" height="266" width="200" 
-     src="/static/img/open_theremin_board_t.jpg" 
-     alt="Open Theremin Board (Front)" />
-</a>
-<a href="/static/img/open_theremin_board_back.jpg" 
-   style="margin-left: 1em; margin-right: 1em;">
-<img border="0" height="266" width="200" 
-     src="/static/img/open_theremin_board_back_t.jpg" 
-     alt="Open Theremin Board (Back)" />
-</a>
-</div>
+<img src="/static/img/open_theremin_board.jpg" 
+     alt="Open Theremin Board (Front)" class="entry__photo image" />
+
+<img src="/static/img/open_theremin_board.jpg" 
+     alt="Open Theremin Board (Back)" class="entry__photo image"/>
 
 There's not actually that much to put together (like I said, the components
 are mostly already soldered for you).  You have to solder on the Arduino
@@ -77,14 +69,8 @@ it seemed to me that the components could have just as easily been soldered
 I ended up doing a not-horrible job, but it took _way_ longer than it should
 have.  The soldered result looks like this:
 
-<div style="clear: both; text-align: center;"> 
-<a href="/static/img/open_theremin_soldered.jpg" 
-   style="margin-left: 1em; margin-right: 1em;">
-<img border="0" height="200" width="266" 
-     src="/static/img/open_theremin_soldered_t.jpg" 
-     alt="Open Theremin Board (Soldered)" />
-</a>
-</div>
+<img src="/static/img/open_theremin_soldered.jpg" 
+     alt="Open Theremin Board (Soldered)" class="u-featured entry__photo image"/>
 
 I'm a little disappointed at the "blobby" soldering job I did on the LEDs
 and Function switch, but on the whole I don't think it's that bad.
@@ -107,14 +93,8 @@ Anyway, you put it all together, add an Arduino, connect the resulting
 monstrosity to a pair of speakers and voila!  You have yourself a working
 theremin.  The final result look like this:
 
-<div style="clear: both; text-align: center;"> 
-<a href="/static/img/complete_theremin.jpg" 
-   style="margin-left: 1em; margin-right: 1em;">
-<img border="0" height="266" width="200" 
-     src="/static/img/complete_theremin_t.jpg" 
-     alt="Complete Open Theremin Board" />
-</a>
-</div>
+<img src="/static/img/complete_theremin.jpg" 
+     alt="Complete Open Theremin Board" class="entry__photo image" />
 
 This particular theremin is screwed into a small camera tripod, which is
 itself seated on a stool.  The speakers were the cheapest I could find.
@@ -131,14 +111,8 @@ player and the instrument are connected to ground.  Luckily, the board comes
 with a grounding pad, which I connected to a makeshift copper wire bracelet
 via alligator clips:
 
-<div style="clear: both; text-align: center;"> 
-<a href="/static/img/grounding_bracelet.jpg" 
-   style="margin-left: 1em; margin-right: 1em;">
-<img border="0" height="200" width="266" 
-     src="/static/img/grounding_bracelet_t.jpg" 
-     alt="Complete Open Theremin Board" />
-</a>
-</div>
+<img src="/static/img/grounding_bracelet.jpg" 
+     alt="Grounding bracelet" class="entry__photo image" />
 
 Note that, in theory, you can also use a properly grounded power plug, but
 either my house isn't properly grounded (a very real possibility) or the

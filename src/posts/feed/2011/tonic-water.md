@@ -46,14 +46,9 @@ assured, it's the middle of frickin' nowhere (it would almost anti-climactic
 if it weren't, right?). But...they sell quinquina bark! Huzza!  It looks
 like this:
 
-<div style="clear: both; text-align: center;"> 
-<a href="/static/img/IMG_6394.JPG"
-style="margin-left: 1em; margin-right: 1em;">
-<img border="0" height="240" width="320" 
-     src="/static/img/IMG_6394_thumb.JPG" 
-     alt="Quinquina bark" />
-</a>
-</div>
+<img src="/static/img/IMG_6394.JPG"
+     alt="Quinquina bark"
+     class="u-featured entry__photo image"/>
 
 The recipe calls for powdered bark. As you can see, this isn't powdered. I
 briefly considered pulverizing it in a food processor until I came across
@@ -69,24 +64,16 @@ Asian grocery stores (I went to Marche PA on Fort).
 
 Here's the mix ready to boil: 
 
-<div style="clear: both; text-align: center;"> 
-<a href="/static/img/IMG_6396.JPG"
-style="margin-left: 1em; margin-right: 1em;">
-<img border="0" width="320" height="240" 
-     src="/static/img/IMG_6396_thumb.JPG" 
-     alt="Unboiled tonic mix" />
-</a></div>
+<img src="/static/img/IMG_6396.JPG"
+     alt="Unboiled tonic mix"
+     class="entry__photo image"/>
 
 It's a bit of a mess, but it looks more promising after 20 minutes of
 boiling and filtering:
-0
-<div style="clear: both; text-align: center;"> 
-<a href="/static/img/IMG_6399.JPG"
-style="margin-left: 1em; margin-right: 1em;">
-<img border="0" height="240" 
-     src="/static/img/IMG_6399_thumb.JPG" width="320" 
-     alt="Boiled and filtered tonic mix" />
-</a></div>
+
+<img src="/static/img/IMG_6399.JPG" 
+     alt="Boiled and filtered tonic mix"
+     class="entry__photo image"/>
 
 The above is unsweetened tonic water concentrate. The recipe I used calls
 for mixing 3/4 cup of agave syrup per cup of concentrate, while other
@@ -101,13 +88,9 @@ leisure.
 I let it cool a bit and then assembled a gin and tonic: 1 ounce tonic syrup,
 2 ounces gin, in a high ball glass with ice, topped off with club soda: 
 
-<div class="separator" style="clear: both; text-align: center;"> <a
-href="/static/img/IMG_6401.JPG"
-imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
-<img border="0" height="240" 
-     src="/static/img/IMG_6401_thumb.JPG" width="320" 
-     alt="Homemade gin and tonic" />
-</a></div>
+<img src="/static/img/IMG_6401.JPG" 
+     alt="Homemade gin and tonic"
+     class="entry__photo image"/>
 
 Verdict: pretty good. But I would make some changes next time around:
 

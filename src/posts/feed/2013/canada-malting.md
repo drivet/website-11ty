@@ -13,26 +13,21 @@ title: Oatmeal Stout Under the Watchful Eye of Abandoned Silos
 For a long time I've been trying to gauge my personal feelings about this
 building:
 
-<div style="clear: both; text-align: center;"> 
-<a href="/static/img/IMG_0631.JPG" 
-   style="margin-left: 1em; margin-right: 1em;">
-<img border="0" height="200" width="266" 
-     src="/static/img/IMG_0631_thumb.JPG" 
-     alt="Canada malting silos" />
-</a>
-<a href="/static/img/IMG_0646.JPG" 
-   style="margin-left: 1em; margin-right: 1em;">
-<img border="0" height="200" width="266" 
-     src="/static/img/IMG_0646_thumb.JPG" 
-     alt="Canada malting silos" />
-</a>
-</div>
+<img src="/static/img/IMG_0646.JPG"
+     alt="Canada malting silos"
+     class="u-featured entry__photo image"/>
 
 This is the old [Canada Malting factory][1]. It's in the heart of Saint
 Henri, in Montreal, next to the McAuslan brewery on Notre Dame, right on the
 Lachine canal. I live about a 20 minute walk away.  It's huge, intimidating,
 in extreme disrepair and *very* well-graffitied. It's been abandoned for
 decades.
+
+Here's another view:
+
+<img src="/static/img/IMG_0631.JPG"
+     alt="Canada malting silos"
+     class="entry__photo image"/>
 
 Ferreting out my reaction is not as easy as one might imagine.
 Introspection, at the best of times, is a tricky business.
@@ -46,14 +41,9 @@ My reaction is fed somewhat by its proximity to the Saint Ambroise beer
 terrace, operated in the summer by the McAuslan brewery itself. It sits
 comfortably on the foothills of the factory. It's an interesting view:
 
-<div style="clear: both; text-align: center;"> 
-<a href="/static/img/IMG_0641.JPG" 
-   style="margin-left: 1em; margin-right: 1em;">
-<img border="0" height="200" width="266" 
-     src="/static/img/IMG_0641_thumb.JPG" 
-     alt="View of silos from beer terrace" />
-</a>
-</div>
+<img src="/static/img/IMG_0641.JPG"
+     alt="View of silos from beer terrace"
+     class="entry__photo image"/>
 
 I like the beer terrace. Aside from the beer itself, which is good, there's
 something melancholic about the setting as well, about drinking oatmeal
@@ -80,14 +70,9 @@ On some level, I *do* get it - like I said, the building is pretty neat -
 but on another level, I sometimes find it hard to sympathize.  Take this,
 for example:
 
-<div style="clear: both; text-align: center;"> 
-<a href="/static/img/IMG_0660.JPG" 
-   style="margin-left: 1em; margin-right: 1em;">
-<img border="0" height="200" width="266" 
-     src="/static/img/IMG_0660_thumb.JPG" 
-     alt="Graffiti on Saint-Henri Cafe" />
-</a>
-</div>
+<img src="/static/img/IMG_0660.JPG"
+     alt="Graffitu on Cafe Saint-Henri"
+     class="entry__photo image"/>
 
 This is the Saint Henri Cafe, on Notre Dame (everything of interest in Saint
 Henri seems to either be on Notre Dame or off of Notre Dame). 

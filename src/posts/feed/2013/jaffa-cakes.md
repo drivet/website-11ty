@@ -5,6 +5,7 @@ tags:
   - cooking
   - recipes
 title: 'Jaffa Cakes for North Americans: an Odyssey'
+og_image: /static/img/IMG_0659.JPG
 ---
 
 Evelyn and I found a polish bakery in Point St Charles. One of the things we
@@ -74,12 +75,9 @@ consistency of gummi bears...but it was well on its way.
 Anyway, this jelly could totally withstand the heat from the melted
 chocolate.  The end result looked like this:
 
-<div style="clear: both; text-align: center;"> 
-<a href="/static/img/IMG_0659.JPG"
-style="margin-left: 1em; margin-right: 1em;">
-<img border="0" height="240" width="320" src="/static/img/IMG_0659_thumb.JPG"/>
-</a>
-</div>
+<img src="/static/img/IMG_0659.JPG" 
+     alt="Homemadge jaffa cakes"
+     class="u-featured entry__photo image"/>
 
 I probably could have clean up the edges a bit, but didn't bother. Also, the
 jelly itself softened considerably at room temperature.  These were actually

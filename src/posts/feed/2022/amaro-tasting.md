@@ -6,9 +6,6 @@ mp-syndicate-to:
 - twitter_bridgy
 tags: 
 - cocktails
-featured:
-- alt: Amaro collection
-  value: /static/img/amari.jpg
 og_image: /static/img/amari.jpg
 ---
 
@@ -50,7 +47,9 @@ of these qualities are more prominent than others.  So, in that spirit
 side, to see how they compare.  Here they are, lined up for your viewing
 pleasure:
 
-<img src="/static/img/amari.jpg" alt="My amaro collection" class="u-featured entry__photo image"/>
+<img src="/static/img/amari.jpg"
+     alt="My amaro collection"
+     class="u-featured entry__photo image"/>
 
 I'll give away some of the ending right now: they do differ quite
 significantly in flavour, and some are definitely more of an acquired taste

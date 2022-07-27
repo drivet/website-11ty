@@ -4,6 +4,7 @@ modified: 2018-05-02T02:45:07.000Z
 tags:
   - theremin
 title: On Pulling Musical Notes Out of Thin Air
+og_image: /static/img/etherwave_theremin.jpg
 ---
 
 I am an unapologetic [Downton Abbey][3] fan.  The series is full of
@@ -49,10 +50,8 @@ the higher the pitch.  The second antenna controls the volume in the same
 way; moving your hand closer lowers the volume.  A typical setup looks like
 this:
 
-<div style="clear: both; text-align: center;">
-<img border="0"  width="320" height="240"
-    src="/static/img/etherwave_theremin.jpg"/>
-</div>
+<img src="/static/img/etherwave_theremin.jpg" 
+     alt="Complete Open Theremin Board" class="u-featured entry__photo image" />
 
 Given the lack of anything physical to manipulate, they are notoriously
 difficult to play.  They are also the butt of many jokes.  For example:
