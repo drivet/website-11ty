@@ -24,6 +24,7 @@
   {% block opengraph %}
   <meta property="og:site_name" content="{{ global.SITENAME }}" />
   <meta property="og:type" content="article"/>
+  <meta property="twitter:title" content="{{ title|striptags|escape }}"/>
   <meta property="og:title" content="{{ title|striptags|escape }}"/>
   <meta property="og:url" content="{{ page.url }}"/>
   {% if page.summary %}
@@ -31,8 +32,10 @@
   {% endif %}
   {% if og_image %}
   <meta property="og:image" content="{{ og_image }}"/> 
+  <meta property="twitter:image" content="{{ og_image }}"/> 
   {% elif OPEN_GRAPH_IMAGE %}
   <meta property="og:image" content="{{ OPEN_GRAPH_IMAGE }}"/>
+  <meta property="twitter:image" content="{{ OPEN_GRAPH_IMAGE }}"/>
   {% endif %}
   {% endblock %}
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
