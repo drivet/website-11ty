@@ -6,7 +6,7 @@ mp-syndicate-to:
 - twitter_bridgy
 tags: 
 - cocktails
-og_image: /static/img/amari.jpg
+image: /static/img/amari.jpg
 ---
 
 A while back I started going through a phase where I would buy any

@@ -5,7 +5,7 @@ tags:
   - cooking
   - recipes
 title: 'Jaffa Cakes for North Americans: an Odyssey'
-og_image: /static/img/IMG_0659.JPG
+image: /static/img/IMG_0659.JPG
 ---
 
 Evelyn and I found a polish bakery in Point St Charles. One of the things we

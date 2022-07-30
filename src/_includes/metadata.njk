@@ -1,0 +1,34 @@
+
+{% block meta %}{% endblock %}
+
+{% if global.AUTHOR %}
+<meta name="author" content="{{ global.AUTHOR }}" />
+{% endif %}
+
+{% if postType == 'article' %}
+
+{% if description %}
+{% set m_description = description | striptags | escape | truncate(160) %}
+{% else %}
+{% set m_description = content | striptags | escape | truncate(160) %}
+{% endif %}
+
+<meta name="description" content="{{ m_description }}" />
+
+{% set m_title = title | striptags | escape %}
+
+{% if image %}
+{% set m_image = image | aUrl %}
+{% set m_large = true %}
+{% elif thumb %}
+{% set m_image = thumb | aUrl %}
+{% set m_large = false %}
+{% elif OPEN_GRAPH_IMAGE %}
+{% set m_image = OPEN_GRAPH_IMAGE | aUrl %}
+{% set m_large = false %}
+{% endif %}
+
+{% include 'opengraph.njk' %}
+{% include 'twitter.njk' %}
+
+{% endif %} {# postType == 'article' #}

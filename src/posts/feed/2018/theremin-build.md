@@ -4,7 +4,7 @@ modified: 2018-05-20T19:45:11.000Z
 tags:
   - theremin
 title: 'On Finding an Excuse to Buy an Arduino or: How I Finally Got Myself a Theremin'
-og_image: /static/img/open_theremin_soldered.jpg
+image: /static/img/open_theremin_soldered.jpg
 ---
 
 In my [last blog entry][3], I talked about theremins.  I've known about them

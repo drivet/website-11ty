@@ -143,6 +143,14 @@ module.exports = (eleventyConfig) => {
     return obj.replace(/\.[^/.]+$/, '');
   });
 
+  eleventyConfig.addFilter('aUrl', obj => {
+    if (obj.startsWith('/')) {
+      return `${rootUrl}${obj}`;
+    } else {
+      return `ddd ${obj}`;
+    }
+  });
+
   eleventyConfig.setTemplateFormats([
     "md",
     "njk",

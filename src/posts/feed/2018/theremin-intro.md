@@ -4,7 +4,7 @@ modified: 2018-05-02T02:45:07.000Z
 tags:
   - theremin
 title: On Pulling Musical Notes Out of Thin Air
-og_image: /static/img/etherwave_theremin.jpg
+image: /static/img/etherwave_theremin.jpg
 ---
 
 I am an unapologetic [Downton Abbey][3] fan.  The series is full of
