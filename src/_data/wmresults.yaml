@@ -1910,4 +1910,6 @@ results:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1550873064832892929'
+  2022/07/31/093034:
+    'https://storax.github.io/blog/2016/05/02/org-capture-tricks/': {}
 site_url: 'https://desmondrivet.com'
