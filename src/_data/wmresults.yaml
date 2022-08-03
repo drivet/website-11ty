@@ -1912,4 +1912,8 @@ results:
       location: 'https://twitter.com/desmondrivet/status/1550873064832892929'
   2022/07/31/093034:
     'https://storax.github.io/blog/2016/05/02/org-capture-tricks/': {}
+  2022/08/03/001737:
+    'https://boffosocko.com/2022/06/10/reframing-and-simplifying-the-idea-of-how-to-keep-a-zettelkasten/':
+      status_code: 200
+    'https://boffosocko.com/author/chrisaldrich/': {}
 site_url: 'https://desmondrivet.com'
