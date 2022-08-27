@@ -1926,4 +1926,6 @@ results:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1558263506868256768'
+  2022/08/26/205125:
+    'https://jhalabi.com/': {}
 site_url: 'https://desmondrivet.com'
