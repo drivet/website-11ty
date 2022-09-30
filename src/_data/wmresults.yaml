@@ -1933,4 +1933,9 @@ results:
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1575462137547325444'
     'https://twitter.com/AtheneTrek/status/1575449556527255552?t=bTzsiGi9b4Ikzw4br6q7iQ&s=19': {}
+  2022/09/29/222915:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1575674397452533760'
+    'https://twitter.com/AtheneTrek/status/1575469656382787584?t=iFkPpWLqPDbpCp4XhgaTyg&s=19': {}
 site_url: 'https://desmondrivet.com'
