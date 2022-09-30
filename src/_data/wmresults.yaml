@@ -1943,4 +1943,9 @@ results:
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1575842134284013569'
     'https://twitter.com/SaraSoueidan/status/1575839350150922246?t=J78w77Vitc3RTFQkS7h-ew&s=19': {}
+  2022/09/30/095010:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1575845735282655232'
+    'https://twitter.com/SaraSoueidan/status/1575844351863058435?t=xf6d37EW2F8Yt0UVSCJ8Ew&s=19': {}
 site_url: 'https://desmondrivet.com'
