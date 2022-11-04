@@ -1964,4 +1964,8 @@ results:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 400
     'https://twitter.com/AtheneTrek/status/1586486431689867264?t=6UA9N3XfL6xE1NetlLYYtw&s=19': {}
+  2022/11/04/174252:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1588648361904799744'
 site_url: 'https://desmondrivet.com'
