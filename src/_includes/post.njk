@@ -1,6 +1,5 @@
 {% extends "blogbase.njk" %}
 
-{% from "photo.njk" import photo as photom %}
 {% from "reflink.njk" import reflink %}
 {% from "entry-header.njk" import entryheader %}
 
@@ -16,15 +15,16 @@
   
   {% if blurb %}
     <div class="p-summary" style="display: none">
-    {{blurb}}
+    {{ blurb }}
     </div>
   {% endif %}
 
   {{ reflink(postType, referencedLink) }}
   
   <div class="e-content">
-    {{ content | safe }}  
-    {{ photom(photo, "u-photo entry__photo image") }}
+    {{ content | safe }}
+    {% set photoArg = photo %}
+    {% include "photo.njk" %}
   </div>
 
   {% if postType != 'article' %}

@@ -127,11 +127,11 @@ function addCollectionGroup(eleventyConfig, name, collectionFn) {
 
   // double pagination collections
   eleventyConfig.addCollection(`${name}_tagPages`, (collection) =>
-    flatPaginate(indexByTag(collectionFn(collection)), 10)
+    flatPaginate(indexByTag(collectionFn(collection)), 25)
   );
 
   eleventyConfig.addCollection(`${name}_archivePages`, (collection) =>
-    flatPaginate(indexByDates(collectionFn(collection)), 10)
+    flatPaginate(indexByDates(collectionFn(collection)), 25)
   );
 }
 

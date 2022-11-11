@@ -1,4 +1,3 @@
-{% from "photo.njk" import photo %}
 {% from "reflink.njk" import reflink %}
 {% from "entry-header.njk" import entryheader %}
 
@@ -19,7 +18,8 @@
 
   <div class="e-content">
     {{ post.templateContent | excerpt | safe }}
-    {{ photo(post.data.photo, "u-photo entry__photo image") }}
+    {% set photoArg = post.data.photo %}
+    {% include "photo.njk" %}
   </div>
 
   {% if post.data.postType != 'article' %}

@@ -21,8 +21,10 @@ accordingly, a fair amount of thought has gone into its organization.  Among oth
 this site sports:
 
 * a [blog][7], where I publish random thoughts on a semi-regular basis
+<!--
 * a [piwigo][8] [photo album][9]
 * a [wiki][10], which I use to keep track of longer term pages like recipes
+-->
 * various [selected pages][11] from my old sites
 
 [1]: https://www.utoronto.ca/

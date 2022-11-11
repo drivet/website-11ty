@@ -7,6 +7,7 @@ const yaml = require("js-yaml");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { addAllCollectionGroups } = require('./configs/collections');
 const { previewConfig } = require('./configs/previews.js');
+const { imageConfig } = require('./configs/image.js');
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
@@ -171,6 +172,7 @@ module.exports = (eleventyConfig) => {
   
   previewConfig(eleventyConfig);
   addAllCollectionGroups(eleventyConfig);
+  imageConfig(eleventyConfig);
 
   return {
     dir: {
