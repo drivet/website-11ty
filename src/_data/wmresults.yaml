@@ -1978,4 +1978,8 @@ results:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1590541883406630912'
+  2022/11/15/211120:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1592702151893348352'
 site_url: 'https://desmondrivet.com'
