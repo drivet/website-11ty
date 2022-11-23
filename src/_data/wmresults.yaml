@@ -1991,4 +1991,8 @@ results:
       status_code: 201
       location: 'https://twitter.com/desmondrivet/status/1593058147186327552'
     'https://twitter.com/LuxAlptraum/status/1593050629194514435?t=eL-iPYmJdgq8yHsWkBT8Ow&s=19': {}
+  2022/11/23/132053:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1595482907790888961'
 site_url: 'https://desmondrivet.com'
