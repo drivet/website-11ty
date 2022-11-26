@@ -1,0 +1,29 @@
+---
+pagination:
+  data: collections.albumImages
+  size: 1
+  alias: p
+permalink: "{{ p.permalink }}.html"
+---
+{% extends "blogbase.njk" %}
+{% from "entry-header.njk" import entryheader %}
+{% block content %}
+{% set date = p.date %}
+<main class="main">
+<div class="h-entry entry">
+    
+  {% for mention in bridgyMentions %}
+  <a href="{{ mention }}"></a>
+  {% endfor %}
+    
+  {{ entryheader(wmresults, date, page.url, title, 1) }}
+
+  <div class="e-content">
+    {{ content | safe }} 
+    {% set photoObj = p.photo %}
+    {% set img_classes = "u-photo entry__photo image" %}
+    {% include "image.njk" %}
+   </div>
+</div>
+</main>
+{% endblock %}

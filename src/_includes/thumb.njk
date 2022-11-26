@@ -1,0 +1,7 @@
+{% if photoObj.value and photoObj.alt %}
+  {% thumb photoObj.value, photoObj.alt, classes %}
+{% elif photoObj.value %}
+  {% thumb photoObj.value, "post photo", classes %}
+{% else %}
+  {% thumb photoObj, "post photo", classes %}
+{% endif %}

@@ -22,7 +22,10 @@
   {{ reflink(postType, referencedLink) }}
   
   <div class="e-content">
-    {{ content | safe }}
+    {{ content | safe }} 
+    {% if photo | length > 1 %}
+      <p>{{ photo | length }} photos</p>
+    {% endif %}
     {% set photoArg = photo %}
     {% include "photo.njk" %}
   </div>

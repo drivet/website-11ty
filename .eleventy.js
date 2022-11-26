@@ -1,11 +1,12 @@
 const html = require('./utils/html.js');
+const albums = require('./utils/albums.js');
 const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL;
 const sanitizeHTML = require('sanitize-html');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const yaml = require("js-yaml");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const { addAllCollectionGroups } = require('./configs/collections');
+const { addAllCollectionGroups, addAlbumImages } = require('./configs/collections');
 const { previewConfig } = require('./configs/previews.js');
 const { imageConfig } = require('./configs/image.js');
 const dayjs = require('dayjs');
@@ -144,6 +145,10 @@ module.exports = (eleventyConfig) => {
     return obj.replace(/\.[^/.]+$/, '');
   });
 
+  eleventyConfig.addFilter('clamp', (arr, limit) => {
+    return arr ? arr.slice(0, limit) : null;
+  });
+
   eleventyConfig.addFilter('aUrl', obj => {
     if (obj.startsWith('/')) {
       return `${rootUrl}${obj}`;
@@ -151,6 +156,9 @@ module.exports = (eleventyConfig) => {
       return `ddd ${obj}`;
     }
   });
+  
+  eleventyConfig.addFilter('albumImageUrl', (albumPath, index) => 
+    albums.albumImageUrl(albumPath, index));
 
   eleventyConfig.setTemplateFormats([
     "md",
@@ -172,6 +180,8 @@ module.exports = (eleventyConfig) => {
   
   previewConfig(eleventyConfig);
   addAllCollectionGroups(eleventyConfig);
+  addAlbumImages(eleventyConfig);
+
   imageConfig(eleventyConfig);
 
   return {

@@ -1,4 +1,10 @@
 const _ = require('lodash');
+const dayjs = require('dayjs');
+const utc = require('dayjs/plugin/utc');
+const timezone = require('dayjs/plugin/timezone');
+const BenchmarkGroup = require('@11ty/eleventy/src/BenchmarkGroup');
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 function getYear(date) {
   return date.getFullYear().toString();
@@ -147,7 +153,7 @@ function addAllCollectionGroups(eleventyConfig) {
   addCollectionGroup(eleventyConfig, "all", getPosts);
 
   addCollectionGroup(eleventyConfig, "notes",
-    collection => postTypes(getPosts(collection), ["note", "photo", "video"]));
+    collection => postTypes(getPosts(collection), ["note", "photo", "video", "album"]));
 
   addCollectionGroup(eleventyConfig, "blog",
     collection => postTypes(getPosts(collection), ["article"]));
@@ -157,10 +163,46 @@ function addAllCollectionGroups(eleventyConfig) {
 
   // for backward compatibility
   eleventyConfig.addCollection("posts", (collection) =>
-    postTypes(getPosts(collection), ["note", "photo", "video", "article"])
+    postTypes(getPosts(collection), ["note", "photo", "video", "article", "album"])
   );
 }
 
+function albumPhotoPost(date, albumPath, index, photo) {
+  const indexSlug = `${index}`.padStart(6, '0');
+  return {
+    permalink: `${albumPath}/${indexSlug}`,
+    photo,
+    date
+  };
+}
+
+function getSlug(fslug) {
+  // test for my note files from micropub, which look like this:
+  // 20200810123845.md
+  if (/^\d\d\d\d\d\d\d\d\d\d\d\d\d\d(.*)/.test(fslug)) {
+    // pick up the time portion of the timestamp
+    return fslug.substring(8);
+  } else {
+    // otherwise just return the filename
+    return fslug;
+  }
+}
+
+function albumToImagePosts(album) {
+  const date_part = dayjs(album.date).tz('America/Montreal').format('YYYY/MM/DD');
+  const slug = getSlug(album.fileSlug);
+  const albumPath = `${date_part}/${slug}`;
+  return album.data.photo.map((p, i) => albumPhotoPost(album.date, albumPath, i, p));
+}
+
+function addAlbumImages(eleventyConfig) {
+  eleventyConfig.addCollection('albumImages', (collection) => {
+    const albums = postTypes(getPosts(collection), ['album']);
+    return _.flatten(albums.map(albumToImagePosts));
+  });
+}
+
 module.exports = {
-  addAllCollectionGroups
+  addAllCollectionGroups,
+  addAlbumImages
 }

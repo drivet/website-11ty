@@ -1,17 +1,20 @@
-{% set classes = "u-photo entry__photo image" %}
 {% if photoArg %}
-  {% if photoArg is string %}
-    {% image photoArg, "post photo", classes %}
+  {% if photoArg | length == 1 %}
+    {% set photoObj = photoArg[0] %}
+    {% set img_classes = "u-photo entry__photo image" %}
+    {% include "image.njk" %}
   {% else %}
-    {% for photoObj in photoArg %}
-      {% if photoObj.value and photoObj.alt %}
-        {% image photoObj.value, photoObj.alt, classes %}
-      {% elif photoObj.value %}
-        {% image photoObj.value, "post photo", classes %}
-      {% else %}
-        {% image photoObj, "post photo", classes %}
-      {% endif %}
-    {% endfor %}
+    {% set thumb_classes = "u-photo entry__photo image" %}
+    <div class="image-grid">
+    {% if album %}
+    {% asyncEach photoObj in photoArg %}
+      <div class="h-entry">
+      <a href="{{ page.url | stripExt | albumImageUrl(loop.index0) }}">{% include "thumb.njk" %}</a>
+      </div>
+    {% endeach %}
+    {% else %} 
+    {% include "thumb.njk" %}
+    {% endif %}
+    </div>
   {% endif %}
 {% endif %}
-

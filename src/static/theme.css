@@ -16,4 +16,8 @@
     --light-accent: #dceeff;
     
     --complement: #E67C19;
+
+    /* gallery variables */
+    --img-gap: 8px;
+    --img-num-cols: 4;
 }
