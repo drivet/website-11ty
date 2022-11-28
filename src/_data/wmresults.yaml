@@ -2002,4 +2002,9 @@ results:
     'https://twitter.com/LuxAlptraum/status/1595758735301152768?t=4RhU4nsdh8g62oUwVGl19w&s=19': {}
   2022/11/26/082249:
     'https://gamerant.com/best-lesser-known-sci-fi-books-read-holidays/': {}
+  2022/11/28/182035:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1597370243793526784'
+    'https://twitter.com/LuxAlptraum/status/1597365932556693505?t=Yb8wXJRZMspcBXvi7uN0BA&s=19': {}
 site_url: 'https://desmondrivet.com'
