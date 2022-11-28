@@ -1,5 +1,6 @@
 const html = require('./utils/html.js');
 const albums = require('./utils/albums.js');
+const { dateFormat, makePermalink } = require('./utils/helpers.js');
 const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL;
 const sanitizeHTML = require('sanitize-html');
@@ -9,11 +10,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { addAllCollectionGroups, addAlbumImages } = require('./configs/collections');
 const { previewConfig } = require('./configs/previews.js');
 const { imageConfig } = require('./configs/image.js');
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
-const timezone = require('dayjs/plugin/timezone');
-dayjs.extend(utc);
-dayjs.extend(timezone);
+
 
 function webmentionsForUrl(webmentions, url) {
   if (!webmentions) {
@@ -65,18 +62,6 @@ function synIcon(url) {
   }
 }
 
-function getSlug(fslug) {
-  // test for my note files from micropub, which look like this:
-  // 20200810123845.md
-  if (/^\d\d\d\d\d\d\d\d\d\d\d\d\d\d(.*)/.test(fslug)) {
-    // pick up the time portion of the timestamp
-    return fslug.substring(8);
-  } else {
-    // otherwise just return the filename
-    return fslug;
-  }
-}
-
 module.exports = (eleventyConfig) => {
   eleventyConfig.setBrowserSyncConfig(
     require('./configs/browsersync.config')('_site')
@@ -124,13 +109,12 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addFilter("postPermalink", page => {
-    const date_part = dayjs(page.date).tz('America/Montreal').format('YYYY/MM/DD');
-    const slug = getSlug(page.fileSlug);
-    return `${date_part}/${slug}.html`;
+    const permalink = makePermalink(page);
+    return `${permalink}.html`;
   });
 
   eleventyConfig.addFilter("date", d => {
-    return dayjs(d).tz('America/Montreal').format('YYYY-MM-DD h:mm A Z');
+    return dateFormat(d, 'YYYY-MM-DD h:mm A Z');
   });
 
   eleventyConfig.addFilter("webmentionsForUrl", webmentionsForUrl);

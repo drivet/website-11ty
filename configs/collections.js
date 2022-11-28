@@ -1,10 +1,6 @@
 const _ = require('lodash');
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
-const timezone = require('dayjs/plugin/timezone');
-const BenchmarkGroup = require('@11ty/eleventy/src/BenchmarkGroup');
-dayjs.extend(utc);
-dayjs.extend(timezone);
+const { makePermalink } = require('../utils/helpers.js');
+
 
 function getYear(date) {
   return date.getFullYear().toString();
@@ -176,22 +172,8 @@ function albumPhotoPost(date, albumPath, index, photo) {
   };
 }
 
-function getSlug(fslug) {
-  // test for my note files from micropub, which look like this:
-  // 20200810123845.md
-  if (/^\d\d\d\d\d\d\d\d\d\d\d\d\d\d(.*)/.test(fslug)) {
-    // pick up the time portion of the timestamp
-    return fslug.substring(8);
-  } else {
-    // otherwise just return the filename
-    return fslug;
-  }
-}
-
 function albumToImagePosts(album) {
-  const date_part = dayjs(album.date).tz('America/Montreal').format('YYYY/MM/DD');
-  const slug = getSlug(album.fileSlug);
-  const albumPath = `${date_part}/${slug}`;
+  const albumPath = makePermalink(album);
   return album.data.photo.map((p, i) => albumPhotoPost(album.date, albumPath, i, p));
 }
 
