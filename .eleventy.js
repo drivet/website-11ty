@@ -1,6 +1,6 @@
 const html = require('./utils/html.js');
 const albums = require('./utils/albums.js');
-const { dateFormat, makePermalink } = require('./utils/helpers.js');
+const { dateFormat, makePermalink, makeAlbumPermalink } = require('./utils/helpers.js');
 const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL;
 const sanitizeHTML = require('sanitize-html');
@@ -110,6 +110,11 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter("postPermalink", page => {
     const permalink = makePermalink(page);
+    return `${permalink}.html`;
+  });
+  
+  eleventyConfig.addFilter("albumPermalink", page => {
+    const permalink = makeAlbumPermalink(page);
     return `${permalink}.html`;
   });
 

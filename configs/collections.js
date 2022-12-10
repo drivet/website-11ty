@@ -163,18 +163,34 @@ function addAllCollectionGroups(eleventyConfig) {
   );
 }
 
-function albumPhotoPost(date, albumPath, index, photo) {
-  const indexSlug = `${index}`.padStart(6, '0');
+function indexToSlug(index) {
+  return `${index}`.padStart(6, '0');
+}
+
+function albumPhotoPost(album, albumPath, index, photoUrl) {
+  const date = album.data.date;
+  const indexSlug = indexToSlug(index);
+  const total = album.data.photo.length;
+  const next = index < (total - 1) ? index + 1 : undefined;
+  const prev = index > 0 ? index - 1 : undefined;
+  const nextLink = next != undefined ? indexToSlug(next) : undefined;
+  const prevLink = prev != undefined ? indexToSlug(prev) : undefined;
+
   return {
     permalink: `${albumPath}/${indexSlug}`,
-    photo,
-    date
+    photo: photoUrl,
+    date,
+    title: album.data.title,
+    albumUrl: album.url,
+    slug: indexSlug,
+    nextLink,
+    prevLink
   };
 }
 
 function albumToImagePosts(album) {
   const albumPath = makePermalink(album);
-  return album.data.photo.map((p, i) => albumPhotoPost(album.date, albumPath, i, p));
+  return album.data.photo.map((p, i) => albumPhotoPost(album, albumPath, i, p));
 }
 
 function addAlbumImages(eleventyConfig) {

@@ -292,6 +292,5 @@ body {
 .image-grid {
   display: grid;
   grid-template-columns: repeat(var(--img-num-cols), 1fr);
-  padding: var(--img-gap);
   gap: var(--img-gap);
 }

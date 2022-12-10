@@ -3,16 +3,27 @@ const axios = require('axios');
 const path = require('path');
 const FormData = require('form-data');
 const yaml = require('js-yaml');
+const { ArgumentParser } = require('argparse');
 
-if (process.argv.length < 5) {
-  console.error('Expecting 3 arguments');
-  process.exit(1);
-}
+const parser = new ArgumentParser({
+  description: 'Album post generator'
+});
 
-const imgFolder = process.argv[2];
-const mediaServer = process.argv[3];
-const token = process.argv[4];
-const body = process.argv[5];
+parser.add_argument('folder', {help: 'folder of images'});
+parser.add_argument('server', {help: 'media server'});
+parser.add_argument('token', {help: 'indieweb token for media server'});
+parser.add_argument('-f', '--featured', {help: "featured image"});
+parser.add_argument('-t', '--title', {help: "album title"});
+parser.add_argument('-b', '--body', {help: "album body"});
+
+const args = parser.parse_args();
+
+const folder = args.folder;
+const server = args.server;
+const token = args.token;
+const featured = args.featured;
+const body = args.body;
+const title = args.title;
 
 function toIsoString(date) {
   var tzo = -date.getTimezoneOffset(),
@@ -32,12 +43,12 @@ function toIsoString(date) {
 }
 
 async function processImageFile(filename) {
-  const imgPath = path.join(imgFolder, filename); 
+  const imgPath = path.join(folder, filename); 
   const formData = new FormData();
   formData.append('file', fs.createReadStream(imgPath));
 
   try {
-    const res = await axios.post(mediaServer, formData, {
+    const res = await axios.post(server, formData, {
       headers: {
         ...formData.getHeaders(),
         'Authorization': `Bearer ${token}`
@@ -50,7 +61,7 @@ async function processImageFile(filename) {
   }
 }
 
-const files = fs.readdirSync(imgFolder);
+const files = fs.readdirSync(folder);
 
 const imageUrls = [];
 
@@ -60,8 +71,13 @@ const imageUrls = [];
     imageUrls.push(url);
   }
 
+  const furl = await processImageFile(featured);
+
   const data = {
     date: toIsoString(new Date()),
+    title,
+    featured: { alt: '', value: furl },
+    album: true,
     photo: imageUrls.map(u => ({alt: '', value: u}))
   };
 
@@ -69,7 +85,8 @@ const imageUrls = [];
   process.stdout.write(yaml.dump(data));
   process.stdout.write('---\n\n');
   if (body) {
-    console.log(body);
+    process.stdout.write(body);
+    process.stdout.write('\n');
   }
 
   //imageUrls.forEach(u => console.log(u));

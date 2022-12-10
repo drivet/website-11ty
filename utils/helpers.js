@@ -20,13 +20,20 @@ function dateFormat(date, format) {
   return dayjs(date).tz('America/Montreal').format(format);
 }
 
-function makePermalink(page) {
+function makePermalink(page, album) {
   const date_part = dateFormat(page.date, 'YYYY/MM/DD');
   const slug = getSlug(page.fileSlug);
   return`${date_part}/${slug}`;
 }
 
+function makeAlbumPermalink(page, album) {
+  const date_part = dateFormat(page.date, 'YYYY/MM/DD');
+  const slug = getSlug(page.fileSlug);
+  return`${date_part}/${slug}/index`;
+}
+
 module.exports = {
   dateFormat,
-  makePermalink
+  makePermalink,
+  makeAlbumPermalink
 }
