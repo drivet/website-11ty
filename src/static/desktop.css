@@ -1,6 +1,6 @@
 @media only screen and (min-width : 1024px) {
     :root {
-        --width: 850px;
+        --width: 800px;
     }
    
     .navbar { 
