@@ -1,5 +1,6 @@
 const _ = require('lodash');
-const { makePermalink } = require('../utils/helpers.js');
+const { postTypes, getPosts } = require('../utils/helpers.js');
+const { addAlbumCollections } = require('./albums.js');
 
 
 function getYear(date) {
@@ -137,14 +138,6 @@ function addCollectionGroup(eleventyConfig, name, collectionFn) {
   );
 }
 
-function getPosts(collection) {
-  return collection.getFilteredByGlob("./src/posts/feed/**/*.md").reverse();
-}
-
-function postTypes(collection, postTypes) {
-  return collection.filter((item) => postTypes.includes(item.data.postType));
-}
-
 function addAllCollectionGroups(eleventyConfig) {
   addCollectionGroup(eleventyConfig, "all", getPosts);
 
@@ -156,51 +149,19 @@ function addAllCollectionGroups(eleventyConfig) {
 
   addCollectionGroup(eleventyConfig, "bookmarks",
     collection => postTypes(getPosts(collection), ["bookmark"]));
+  
+  eleventyConfig.addCollection("albums", (collection) =>
+    postTypes(getPosts(collection), ["album"])
+  );
 
   // for backward compatibility
   eleventyConfig.addCollection("posts", (collection) =>
     postTypes(getPosts(collection), ["note", "photo", "video", "article", "album"])
   );
-}
 
-function indexToSlug(index) {
-  return `${index}`.padStart(6, '0');
-}
-
-function albumPhotoPost(album, albumPath, index, photoUrl) {
-  const date = album.data.date;
-  const indexSlug = indexToSlug(index);
-  const total = album.data.photo.length;
-  const next = index < (total - 1) ? index + 1 : undefined;
-  const prev = index > 0 ? index - 1 : undefined;
-  const nextLink = next != undefined ? indexToSlug(next) : undefined;
-  const prevLink = prev != undefined ? indexToSlug(prev) : undefined;
-
-  return {
-    permalink: `${albumPath}/${indexSlug}`,
-    photo: photoUrl,
-    date,
-    title: album.data.title,
-    albumUrl: album.url,
-    slug: indexSlug,
-    nextLink,
-    prevLink
-  };
-}
-
-function albumToImagePosts(album) {
-  const albumPath = makePermalink(album);
-  return album.data.photo.map((p, i) => albumPhotoPost(album, albumPath, i, p));
-}
-
-function addAlbumImages(eleventyConfig) {
-  eleventyConfig.addCollection('albumImages', (collection) => {
-    const albums = postTypes(getPosts(collection), ['album']);
-    return _.flatten(albums.map(albumToImagePosts));
-  });
+  addAlbumCollections(eleventyConfig);
 }
 
 module.exports = {
   addAllCollectionGroups,
-  addAlbumImages
 }

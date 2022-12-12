@@ -108,19 +108,9 @@ module.exports = (eleventyConfig) => {
     }
   });
 
-  eleventyConfig.addFilter("postPermalink", page => {
-    const permalink = makePermalink(page);
-    return `${permalink}.html`;
-  });
-  
-  eleventyConfig.addFilter("albumPermalink", page => {
-    const permalink = makeAlbumPermalink(page);
-    return `${permalink}.html`;
-  });
-
-  eleventyConfig.addFilter("date", d => {
-    return dateFormat(d, 'YYYY-MM-DD h:mm A Z');
-  });
+  eleventyConfig.addFilter("postPermalink", page => `${makePermalink(page)}.html`);
+  eleventyConfig.addFilter("albumPermalink", page => `${makeAlbumPermalink(page)}.html`);
+  eleventyConfig.addFilter("date", d => dateFormat(d, 'YYYY-MM-DD h:mm A Z'));
 
   eleventyConfig.addFilter("webmentionsForUrl", webmentionsForUrl);
   eleventyConfig.addFilter("webmentionKind", webmentionKind);
@@ -142,12 +132,21 @@ module.exports = (eleventyConfig) => {
     if (obj.startsWith('/')) {
       return `${rootUrl}${obj}`;
     } else {
-      return `ddd ${obj}`;
+      return `${obj}`;
     }
   });
   
   eleventyConfig.addFilter('albumImageUrl', (albumPath, index) => 
     albums.albumImageUrl(albumPath, index));
+
+  eleventyConfig.addFilter('albumTitle', (title, parents) => {
+    if (!parents || parents.length === 0) {
+      return title;
+    } else {
+      const parentTitles = parents.map(p => p.title).join(' / ')
+      return `${parentTitles} / ${title}`;
+    }
+  });
 
   eleventyConfig.setTemplateFormats([
     "md",
@@ -169,8 +168,6 @@ module.exports = (eleventyConfig) => {
   
   previewConfig(eleventyConfig);
   addAllCollectionGroups(eleventyConfig);
-  addAlbumImages(eleventyConfig);
-
   imageConfig(eleventyConfig);
 
   return {

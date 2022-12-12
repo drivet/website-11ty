@@ -20,20 +20,30 @@ function dateFormat(date, format) {
   return dayjs(date).tz('America/Montreal').format(format);
 }
 
-function makePermalink(page, album) {
+function makePermalink(page) {
   const date_part = dateFormat(page.date, 'YYYY/MM/DD');
   const slug = getSlug(page.fileSlug);
   return`${date_part}/${slug}`;
 }
 
-function makeAlbumPermalink(page, album) {
+function makeAlbumPermalink(page) {
   const date_part = dateFormat(page.date, 'YYYY/MM/DD');
   const slug = getSlug(page.fileSlug);
   return`${date_part}/${slug}/index`;
 }
 
+function postTypes(collection, postTypes) {
+  return collection.filter((item) => postTypes.includes(item.data.postType));
+}
+
+function getPosts(collection) {
+  return collection.getFilteredByGlob("./src/posts/feed/**/*.md").reverse();
+}
+
 module.exports = {
   dateFormat,
   makePermalink,
-  makeAlbumPermalink
+  makeAlbumPermalink,
+  postTypes,
+  getPosts
 }

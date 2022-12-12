@@ -7,6 +7,10 @@
     </span>
 
     {% if title  %}
+    {% if post.data.parent01 %}
+    {% set title = [post.data.parent01, title] | join(" / ") %}
+    {% endif %}
+
     {% if level == 1 %}
     <h1 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h1>
     {% else %}
