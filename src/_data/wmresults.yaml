@@ -2009,4 +2009,8 @@ results:
     'https://twitter.com/LuxAlptraum/status/1597365932556693505?t=Yb8wXJRZMspcBXvi7uN0BA&s=19': {}
   2022/12/07/171126:
     'https://twitter.com/JillFilipovic/status/1600606364459536387?t=AQRQP-93fd6Ac7HtiFp5Dw&s=19': {}
+  2022/12/11/224205:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1602147250053996544'
 site_url: 'https://desmondrivet.com'
