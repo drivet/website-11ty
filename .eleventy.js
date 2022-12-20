@@ -1,5 +1,4 @@
 const html = require('./utils/html.js');
-const albums = require('./utils/albums.js');
 const { dateFormat, makePermalink, makeAlbumPermalink } = require('./utils/helpers.js');
 const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL;
@@ -60,6 +59,11 @@ function synIcon(url) {
   } else {
     return 'fas fa-external-link-alt';
   }
+}
+
+function albumImageUrl(albumPath, index) {
+  const indexSlug = `${index}`.padStart(6, '0');
+  return `${albumPath}/${indexSlug}`;
 }
 
 module.exports = (eleventyConfig) => {
@@ -136,8 +140,7 @@ module.exports = (eleventyConfig) => {
     }
   });
   
-  eleventyConfig.addFilter('albumImageUrl', (albumPath, index) => 
-    albums.albumImageUrl(albumPath, index));
+  eleventyConfig.addFilter('albumImageUrl', albumImageUrl);
 
   eleventyConfig.addFilter('albumTitle', (title, parents) => {
     if (!parents || parents.length === 0) {

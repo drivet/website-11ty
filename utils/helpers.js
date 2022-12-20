@@ -1,3 +1,4 @@
+const slugify = require('slugify');
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
@@ -40,10 +41,29 @@ function getPosts(collection) {
   return collection.getFilteredByGlob("./src/posts/feed/**/*.md").reverse();
 }
 
+function albumNavigation(root, data) {
+  if (!data.parent) {
+    return undefined;
+  }
+  const parentList = data.parent.slice().reverse();
+  let path = root;
+  const navList = parentList.map(p => {
+    const slug = slugify(p.title, { lower: true, strict: true } );
+    path += '/' + slug;
+    return {
+      title: p.title,
+      description: p.description,
+      permalink: path
+    };
+  });
+  return navList;
+}
+
 module.exports = {
   dateFormat,
   makePermalink,
   makeAlbumPermalink,
   postTypes,
-  getPosts
+  getPosts,
+  albumNavigation
 }
