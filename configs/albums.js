@@ -1,7 +1,7 @@
 const _ = require('lodash');
 const slugify = require('slugify');
+const util = require('util');
 const { postTypes, getPosts, makePermalink } = require('../utils/helpers.js');
-const { inspect } = require('util');
 
 function indexToSlug(index) {
   return `${index}`.padStart(6, '0');
@@ -24,7 +24,8 @@ function albumPhotoPost(album, albumPath, index, photoUrl) {
     albumUrl: album.url,
     slug,
     nextLink,
-    prevLink
+    prevLink,
+    albumNavigation: album.data.albumNavigation
   };
 }
 
@@ -33,57 +34,69 @@ function albumToImagePosts(album) {
   return album.data.photo.map((p, i) => albumPhotoPost(album, albumPath, i, p));
 }
 
-function findOrCreateNode(parent, albums) {
-  const match = albums.find(a => a.title === parent.title);
-  if (match) {
-    return match;
+function findOrCreateNode(rootUrl, parent, albumMap) {
+  if (albumMap.has(parent.title)) {
+    return albumMap.get(parent.title);
   } else {
-    const slug = slugify(parent.title);
-    const purl = parent.url || '';
+    const slug = slugify(parent.title, { lower: true, strict: true } );
     const newNode = {
-      url: `${purl}${slug}/`,
+      permalink: `${rootUrl}/${slug}`,
       title: parent.title,
       description: parent.description,
-      albums: []
+      albumMap: new Map()
     };
-    albums.push(newNode);
+    albumMap.set(parent.title, newNode);
     return newNode;
   }
 }
 
 function albumTree(collection) {
+  const rootUrl = '/albums';
+
+  const albumMap = new Map();
+  
   const root = {
-    url: '/',
+    permalink: rootUrl,
     title: "Albums",
     description: "All my albums",
-    albums: []
+    albumMap: new Map()
   };
 
+  albumMap.set(root.title, root);
+
   collection.forEach(album => {
-    const parent = album.data.parent || [];
+    const parents = (album.data.parent || []).slice().reverse();
     let context = root;
-    parent.forEach(p => {
-      context = findOrCreateNode(p, context.albums);
+    parents.forEach(p => {
+      node = findOrCreateNode(context.permalink, p, albumMap);
+      context.albumMap.set(node.title, node);
+      context = node;
     });
-    context.albums.push({ url: album.url });
+
+    // handle actual album
+    const albumEntry = {
+      permalink: album.url,
+      title: album.data.title,
+    }
+    context.albumMap.set(albumEntry.title, albumEntry);
   });
 
-  return root;
+  albumMap.forEach((v,k) => v.albums = Array.from(v.albumMap.values()));
+  const albums = Array.from(albumMap.values());
+  console.log(`fff ${util.inspect(albums, false, 3)}`);
+  return albums;
 }
 
 function addAlbumCollections(eleventyConfig) {
   eleventyConfig.addCollection('albumImages', (collection) => {
     const albums = postTypes(getPosts(collection), ['album']);
-    const albumTreeCol = albumTree(albums);
-    console.log(`DDDD ${JSON.stringify(albumTreeCol)}`);
     return _.flatten(albums.map(albumToImagePosts));
   });
   
-/*
   eleventyConfig.addCollection('albumTree', (collection) => {
-
+    const albums = postTypes(getPosts(collection), ['album']);
+    return albumTree(albums);
   });
-  */
 }
 
 module.exports = {

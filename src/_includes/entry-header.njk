@@ -1,21 +1,23 @@
-{% macro entryheader(wmresults, date, url, title, level) %}
+{% macro entryheader(wmresults, date, url, albumNavigation, title, level) %}
 <header class="entry__header {{'entry__header--top' if level == 1 }}">
     <a href="/" class="u-author"></a>
 
     <span class="entry__headerline row row--spacious">
         <a class="entry__published dt-published" href="{{ url | stripExt }}">{{ date | date  }}</a>
     </span>
-
-    {% if title  %}
-    {% if post.data.parent01 %}
-    {% set title = [post.data.parent01, title] | join(" / ") %}
-    {% endif %}
-
+   
     {% if level == 1 %}
     <h1 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h1>
     {% else %}
     <h2 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h2>
-    {% endif %}
+    {% endif %} 
+    {% if albumNavigation %}
+    <div>
+        Posted in: 
+        {% for nav in albumNavigation %}
+        <a href="{{ nav.permalink }}">{{ nav.title }}</a> {% if not loop.last %} / {% endif %} 
+        {% endfor %}
+    </div>
     {% endif %}
 </header>
 {% endmacro %}

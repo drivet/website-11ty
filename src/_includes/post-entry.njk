@@ -6,8 +6,8 @@
   <a href="{{mention}}"></a>
   {% endfor %}
 
-  {% set title = post.data.title | albumTitle(post.data.parent) %}
-  {{ entryheader(wmresults, post.data.date, post.url, title, 2) }}
+  {% set title = post.data.title  %}
+  {{ entryheader(wmresults, post.data.date, post.url, post.data.albumNavigation, title, 2) }}
   
   {% if post.data.blurb %}
     <div class="p-summary" style="display: none">

@@ -10,8 +10,7 @@
   {% for mention in bridgyMentions %}
   <a href="{{mention}}"></a>
   {% endfor %}
-  {% set title = title | albumTitle(parent) %}
-  {{ entryheader(wmresults, date, page.url, title, 1) }}
+  {{ entryheader(wmresults, date, page.url, albumNavigation, title, 1) }}
   
   {% if blurb %}
     <div class="p-summary" style="display: none">
