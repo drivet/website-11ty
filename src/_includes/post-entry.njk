@@ -7,7 +7,7 @@
   {% endfor %}
 
   {% set title = post.data.title  %}
-  {{ entryheader(wmresults, post.data.date, post.url, post.data.albumNavigation, title, 2) }}
+  {{ entryheader(wmresults, post.data.date, post.url, post.data.navigation, title, 2) }}
   
   {% if post.data.blurb %}
     <div class="p-summary" style="display: none">

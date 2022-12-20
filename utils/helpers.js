@@ -41,7 +41,7 @@ function getPosts(collection) {
   return collection.getFilteredByGlob("./src/posts/feed/**/*.md").reverse();
 }
 
-function albumNavigation(root, data) {
+function navigation(root, data) {
   if (!data.parent) {
     return undefined;
   }
@@ -65,5 +65,5 @@ module.exports = {
   makeAlbumPermalink,
   postTypes,
   getPosts,
-  albumNavigation
+  navigation
 }

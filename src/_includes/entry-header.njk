@@ -1,4 +1,4 @@
-{% macro entryheader(wmresults, date, url, albumNavigation, title, level) %}
+{% macro entryheader(wmresults, date, url, navigation, title, level) %}
 <header class="entry__header {{'entry__header--top' if level == 1 }}">
     <a href="/" class="u-author"></a>
 
@@ -11,10 +11,10 @@
     {% else %}
     <h2 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h2>
     {% endif %} 
-    {% if albumNavigation %}
+    {% if navigation %}
     <div>
         Posted in: 
-        {% for nav in albumNavigation %}
+        {% for nav in navigation %}
         <a href="{{ nav.permalink }}">{{ nav.title }}</a> {% if not loop.last %} / {% endif %} 
         {% endfor %}
     </div>

@@ -25,7 +25,7 @@ function albumPhotoPost(album, albumPath, index, photoUrl) {
     slug,
     nextLink,
     prevLink,
-    albumNavigation: album.data.albumNavigation
+    navigation: album.data.navigation
   };
 }
 
