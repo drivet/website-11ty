@@ -1,0 +1,4 @@
+{
+  "permalink": "{{ page | albumPermalink }}",
+  "layout": "post.njk"
+}

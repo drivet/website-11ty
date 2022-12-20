@@ -1,0 +1,33 @@
+---
+pagination:
+  data: collections.albumTree
+  size: 1
+  alias: p
+permalink: "{{ p.permalink }}/index.html"
+layout: "collection.njk"
+eleventyComputed:
+  title: "{{ p.title }}"
+---
+
+<p>{{p.description}}</p>
+
+<ul class="content-list">
+{% for a in p.albums %}
+<li>
+  <h2>{{a.title}}</h2>
+  
+
+  <p>
+    {% if a.photos %}
+    <a href="{{a.permalink}}">{{ a.photos}} photos</a>
+    {% else %}
+     <a href="{{a.permalink}}">{{ a.albums | length }} albums</a>
+    {% endif %}
+  </p>
+
+  {% if a.featured %}
+  {% image a.featured.value, a.featured.alt, 'u-featured entry__photo image' %}
+  {% endif %}
+</li>
+{% endfor %}
+</ul>

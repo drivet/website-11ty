@@ -2,4 +2,4 @@
 _site
 node_modules
 _cache/
-albums/
+raw_albums/
