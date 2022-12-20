@@ -5,12 +5,15 @@
     <span class="entry__headerline row row--spacious">
         <a class="entry__published dt-published" href="{{ url | stripExt }}">{{ date | date  }}</a>
     </span>
-   
-    {% if level == 1 %}
-    <h1 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h1>
-    {% else %}
-    <h2 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h2>
-    {% endif %} 
+
+    {% if title  %}
+        {% if level == 1 %}
+            <h1 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h1>
+        {% else %}
+            <h2 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h2>
+        {% endif %}
+    {% endif %}
+
     {% if navigation %}
     <div>
         Posted in: 
