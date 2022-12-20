@@ -43,6 +43,7 @@ function findOrCreateNode(rootUrl, parent, albumMap) {
       permalink: `${rootUrl}/${slug}`,
       title: parent.title,
       description: parent.description,
+      featured: parent.featured,
       albumMap: new Map()
     };
     albumMap.set(parent.title, newNode);
@@ -77,13 +78,14 @@ function albumTree(collection) {
     const albumEntry = {
       permalink: album.url,
       title: album.data.title,
+      featured: album.data.featured,
+      photos: album.data.photo.length
     }
     context.albumMap.set(albumEntry.title, albumEntry);
   });
 
   albumMap.forEach((v,k) => v.albums = Array.from(v.albumMap.values()));
   const albums = Array.from(albumMap.values());
-  console.log(`fff ${util.inspect(albums, false, 3)}`);
   return albums;
 }
 
