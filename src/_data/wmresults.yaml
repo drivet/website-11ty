@@ -2002,15 +2002,8 @@ results:
     'https://twitter.com/LuxAlptraum/status/1595758735301152768?t=4RhU4nsdh8g62oUwVGl19w&s=19': {}
   2022/11/26/082249:
     'https://gamerant.com/best-lesser-known-sci-fi-books-read-holidays/': {}
-  2022/11/28/182035:
-    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
-      status_code: 201
-      location: 'https://twitter.com/desmondrivet/status/1597370243793526784'
-    'https://twitter.com/LuxAlptraum/status/1597365932556693505?t=Yb8wXJRZMspcBXvi7uN0BA&s=19': {}
-  2022/12/07/171126:
-    'https://twitter.com/JillFilipovic/status/1600606364459536387?t=AQRQP-93fd6Ac7HtiFp5Dw&s=19': {}
-  2022/12/11/224205:
-    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
-      status_code: 201
-      location: 'https://twitter.com/desmondrivet/status/1602147250053996544'
+  2022/12/30/delphi/:
+    'https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking': {}
+  2022/12/22/athens-gods/:
+    'https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking': {}
 site_url: 'https://desmondrivet.com'
