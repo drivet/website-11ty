@@ -11,7 +11,9 @@ const parser = new ArgumentParser({
 
 parser.add_argument('folder', {help: 'folder of images'});
 parser.add_argument('server', {help: 'media server'});
+// parser.add_argument('output file', {help: 'output file'});
 parser.add_argument('token', {help: 'indieweb token for media server'});
+
 parser.add_argument('-f', '--featured', {help: "featured image"});
 parser.add_argument('-t', '--title', {help: "album title"});
 parser.add_argument('-b', '--body', {help: "album body"});
@@ -24,6 +26,8 @@ const token = args.token;
 const featured = args.featured;
 const body = args.body;
 const title = args.title;
+
+
 
 function toIsoString(date) {
   var tzo = -date.getTimezoneOffset(),
@@ -61,6 +65,14 @@ async function processImageFile(filename) {
   }
 }
 
+async function processFeatured() {
+  if (featured) {
+    return await processImageFile(featured);
+  } else {
+    return undefined;
+  }
+}
+
 const files = fs.readdirSync(folder);
 
 const imageUrls = [];
@@ -71,12 +83,12 @@ const imageUrls = [];
     imageUrls.push(url);
   }
 
-  const furl = await processImageFile(featured);
+  const furl = await processFeatured();
 
   const data = {
     date: toIsoString(new Date()),
     title,
-    featured: { alt: '', value: furl },
+    featured: furl ? { alt: '', value: furl }: undefined,
     album: true,
     photo: imageUrls.map(u => ({alt: '', value: u}))
   };

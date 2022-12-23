@@ -30,7 +30,7 @@ function albumPhotoPost(album, albumPath, index, photoUrl) {
 }
 
 function albumToImagePosts(album) {
-  const albumPath = makePermalink(album);
+  const albumPath = makePermalink(album, false);
   return album.data.photo.map((p, i) => albumPhotoPost(album, albumPath, i, p));
 }
 
@@ -78,6 +78,7 @@ function albumTree(collection) {
     const albumEntry = {
       permalink: album.url,
       title: album.data.title,
+      description: album.data.description,
       featured: album.data.featured,
       photos: album.data.photo.length
     }
@@ -85,8 +86,7 @@ function albumTree(collection) {
   });
 
   albumMap.forEach((v,k) => v.albums = Array.from(v.albumMap.values()));
-  const albums = Array.from(albumMap.values());
-  return albums;
+  return Array.from(albumMap.values());
 }
 
 function addAlbumCollections(eleventyConfig) {

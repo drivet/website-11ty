@@ -12,12 +12,14 @@ eleventyComputed:
 <p>{{p.description}}</p>
 
 <ul class="content-list">
-{% for a in p.albums %}
-<li>
-  <h2>{{a.title}}</h2>
-  
-
+{% for a in p.albums | sort(false, false, 'date')%}
+<li class="content-list__item content-list__item--separator content-list__item--spacious">
+  <h2 class="entry__title p-name"><a href="{{a.permalink}}" class="entry__titlelink">{{a.title}}</a></h2>
   <p>
+    {{ a.description }}
+  </p>
+  <p>
+
     {% if a.photos %}
     <a href="{{a.permalink}}">{{ a.photos}} photos</a>
     {% else %}

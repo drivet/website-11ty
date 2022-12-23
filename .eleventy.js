@@ -1,5 +1,5 @@
 const html = require('./utils/html.js');
-const { dateFormat, makePermalink, makeAlbumPermalink } = require('./utils/helpers.js');
+const { dateFormat, makePermalink } = require('./utils/helpers.js');
 const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL;
 const sanitizeHTML = require('sanitize-html');
@@ -112,8 +112,8 @@ module.exports = (eleventyConfig) => {
     }
   });
 
-  eleventyConfig.addFilter("postPermalink", page => `${makePermalink(page)}.html`);
-  eleventyConfig.addFilter("albumPermalink", page => `${makeAlbumPermalink(page)}.html`);
+  eleventyConfig.addFilter("postPermalink", page => `${makePermalink(page, false)}.html`);
+  eleventyConfig.addFilter("albumPermalink", page => `${makePermalink(page, true)}.html`);
   eleventyConfig.addFilter("date", d => dateFormat(d, 'YYYY-MM-DD h:mm A Z'));
 
   eleventyConfig.addFilter("webmentionsForUrl", webmentionsForUrl);
