@@ -1,7 +1,6 @@
 ---
 date: '2003-10-01T12:00:00-05:00'
 title: "France (Fall 2003)"
-parent: albums
 key: 2003-france
 featured:
   alt: "Eiffel Tower"

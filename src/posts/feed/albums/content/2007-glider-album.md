@@ -1,13 +1,14 @@
 ---
 date: '2007-06-12T14:00:00-05:00'
 title: Glider (Summer 2007)
+key: 2007-glider-album
 featured:
   alt: ''
   value: >-
     https://media.desmondrivet.com/d1/61/a4/26/d644a23cdf971633f39cebf7cee4e257e89adda810357bff2e8c36d0.jpg
 album: true
 eleventyNavigation:
-  key: 2007-glider
+  key: 2007-glider-album
   title: Glider (Summer 2007)
   parent: albums
 photo:

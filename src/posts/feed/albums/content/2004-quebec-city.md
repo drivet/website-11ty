@@ -1,6 +1,7 @@
 ---
 date: '2004-08-01T12:00:00-05:00'
 title: Quebec City (Summer, 2004)
+key: 2004-quebec-city
 featured: 
   alt: 'Chateau Frontenac in the distance'
   value: https://media.desmondrivet.com/7d/f7/3b/45/38ac184e7656e6805c1581d72dd3c06ff87b252e86a1797347f956e3.jpg

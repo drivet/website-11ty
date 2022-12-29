@@ -1,6 +1,7 @@
 ---
 date: '2013-09-29T11:00:00-05:00'
 title: Eastern Townships (Fall 2013)
+key: 2012-eastern-townships
 featured:
   alt: ''
   value: >-
