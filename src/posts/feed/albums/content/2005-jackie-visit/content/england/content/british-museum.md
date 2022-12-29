@@ -1,7 +1,6 @@
 ---
 date: '2005-10-01T12:00:10-05:00'
 title: British Museum
-parent: england
 featured:
   alt: ''
   value: >-

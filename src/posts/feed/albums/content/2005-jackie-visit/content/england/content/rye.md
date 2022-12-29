@@ -1,7 +1,6 @@
 ---
 date: '2005-10-01T12:00:20-05:00'
 title: Rye
-parent: england
 featured:
   alt: ''
   value: >-

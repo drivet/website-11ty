@@ -6,6 +6,9 @@
   <a href="{{mention}}"></a>
   {% endfor %}
 
+  Hello
+  {{ eleventyNavigation | dump }}
+
   {% set title = post.data.title  %}
   {{ entryheader(wmresults, post.data.date, post.url, post.data.navigation, title, 2) }}
   

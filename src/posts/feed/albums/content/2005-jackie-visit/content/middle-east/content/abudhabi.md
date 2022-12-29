@@ -1,7 +1,6 @@
 ---
 date: '2005-10-01T12:01:00-05:00'
 title: Abu Dhabi
-parent: middle-east
 featured:
   alt: ''
   value: >-

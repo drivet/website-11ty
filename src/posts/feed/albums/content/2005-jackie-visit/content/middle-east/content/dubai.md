@@ -1,7 +1,6 @@
 ---
 date: '2005-10-01T12:00:50-05:00'
 title: Dubai
-parent: middle-east
 featured:
   alt: ''
   value: >-

@@ -1,7 +1,6 @@
 ---
 date: '2005-10-01T12:00:40-05:00'
 title: Bahrain
-parent: middle-east
 featured:
   alt: ''
   value: >-

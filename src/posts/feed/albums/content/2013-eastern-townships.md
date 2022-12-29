@@ -7,10 +7,6 @@ featured:
   value: >-
     https://media.desmondrivet.com/27/7d/63/0f/1ea4cdd515f2134f918037519d3999dd94f8b8ce1ba14f1dd7be9305.jpg
 album: true
-eleventyNavigation:
-  key: 2012-eastern-townships
-  title: Eastern Townships (Fall 2013)
-  parent: albums
 photo:
   - alt: ''
     value: >-

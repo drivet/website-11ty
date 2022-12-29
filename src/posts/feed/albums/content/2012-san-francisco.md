@@ -7,10 +7,6 @@ featured:
   value: >-
     https://media.desmondrivet.com/44/39/b4/f2/587885621beab1f3e80016f399ee0fef0ff1ad5ea593f9a8ff9eadc3.jpg
 album: true
-eleventyNavigation:
-  key: 2012-san-francisco
-  title: San Francisco (JavaOne Conference, Fall 2012)
-  parent: albums
 photo:
   - alt: ''
     value: >-

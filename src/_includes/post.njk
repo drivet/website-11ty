@@ -9,7 +9,9 @@
   
   {% for mention in bridgyMentions %}
   <a href="{{mention}}"></a>
-  {% endfor %}
+  {% endfor %} 
+  Hello
+  {{ eleventyNavigation | dump }}
   {{ entryheader(wmresults, date, page.url, navigation, title, 1) }}
   
   {% if blurb %}

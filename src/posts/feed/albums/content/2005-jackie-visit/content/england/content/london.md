@@ -1,7 +1,6 @@
 ---
 date: '2005-10-01T12:00:00-05:00'
 title: London
-parent: england
 featured:
   alt: ''
   value: >-
