@@ -9,7 +9,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { addAllCollectionGroups, addAlbumImages } = require('./configs/collections');
 const { previewConfig } = require('./configs/previews.js');
 const { imageConfig } = require('./configs/image.js');
-
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 function webmentionsForUrl(webmentions, url) {
   if (!webmentions) {
@@ -80,6 +80,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
   eleventyConfig.addFilter('excerpt', content => html.excerpt(content, 50));
   eleventyConfig.addFilter('synicon', url => synIcon(url));

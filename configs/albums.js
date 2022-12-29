@@ -94,10 +94,14 @@ function addAlbumCollections(eleventyConfig) {
     const albums = postTypes(getPosts(collection), ['album']);
     return _.flatten(albums.map(albumToImagePosts));
   });
-  
+  /*
   eleventyConfig.addCollection('albumTree', (collection) => {
     const albums = postTypes(getPosts(collection), ['album']);
     return albumTree(albums);
+  });
+  */
+  eleventyConfig.addCollection('albumNav', (collection) => {
+    return collection.getFilteredByGlob("./src/posts/feed/albums/**/*.md").reverse();
   });
 }
 
