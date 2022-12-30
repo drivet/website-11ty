@@ -1,7 +1,9 @@
 ---
 title: Albums
 key: albums
-permalink: "{{ page.filePathStem }}.html"
+permalink: "albums/index.html"
 ---
 
 I'm not a great photographer, but I do occasionally take a good shot.
+
+{{ collections.albumNav | eleventyNavigation("albums") | dump }}

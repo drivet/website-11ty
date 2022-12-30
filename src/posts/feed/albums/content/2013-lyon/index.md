@@ -6,7 +6,7 @@ featured:
   alt: "A view of Lyon"
   value: "https://media.desmondrivet.com/0a/84/cc/90/9d86a38b8e62f2d8d7b2cea0945edfd41ea49fa9e8b1832e0769f894.jpg"
 permalink: "albums/2013-lyon/index.html"
-layout: "collection.njk"
+layout: "albumCollection.njk"
 ---
 
 We visited our friend Sid who lives in Lyon.  Saw some cool stuff.
