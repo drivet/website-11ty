@@ -10,6 +10,8 @@ const { addAllCollectionGroups, addAlbumImages } = require('./configs/collection
 const { previewConfig } = require('./configs/previews.js');
 const { imageConfig } = require('./configs/image.js');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const { enhanceNavigation } = require('./configs/albums.js');
+const { inspect } = require('util');
 
 function webmentionsForUrl(webmentions, url) {
   if (!webmentions) {
@@ -121,10 +123,6 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter("webmentionKind", webmentionKind);
   eleventyConfig.addFilter("syndicationsForUrl", sydicationsForUrl);
 
-  eleventyConfig.addFilter('jsonString', obj => {
-    return JSON.stringify(obj);
-  });
-
   eleventyConfig.addFilter('stripExt', obj => {
     return obj.replace(/\.[^/.]+$/, '');
   });
@@ -132,6 +130,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('clamp', (arr, limit) => {
     return arr ? arr.slice(0, limit) : null;
   });
+  
+  eleventyConfig.addFilter('inspect', obj => inspect(obj));
 
   eleventyConfig.addFilter('aUrl', obj => {
     if (obj.startsWith('/')) {
@@ -151,6 +151,8 @@ module.exports = (eleventyConfig) => {
       return `${parentTitles} / ${title}`;
     }
   });
+
+  eleventyConfig.addFilter('enhanceNavigation', enhanceNavigation);
 
   eleventyConfig.setTemplateFormats([
     "md",

@@ -14,8 +14,8 @@ async function makeImage(src, width) {
   });
 }
 
-async function imageShortcode(src, alt, cls) {
-  const data = await makeImage(src, 800);
+async function imgShortcode(src, alt, cls, width) {
+  const data = await makeImage(src, width);
 
   return Image.generateHTML(data, {
     alt,
@@ -23,17 +23,21 @@ async function imageShortcode(src, alt, cls) {
   });
 }
 
-async function thumbShortcode(src, alt, cls) {
-  const data = await makeImage(src, 200);
+async function imageShortcode(src, alt, cls) {
+  return await imgShortcode(src, alt, cls, 800);
+}
 
-  return Image.generateHTML(data, {
-    alt,
-    class: cls
-  });
+async function bigThumbShortcode(src, alt, cls) {
+  return await imgShortcode(src, alt, cls, 350);
+}
+
+async function thumbShortcode(src, alt, cls) {
+  return await imgShortcode(src, alt, cls, 200);
 }
 
 function imageConfig(eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("bigthumb", bigThumbShortcode);
   eleventyConfig.addNunjucksAsyncShortcode("thumb", thumbShortcode);
 }
 

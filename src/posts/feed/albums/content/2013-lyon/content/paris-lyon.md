@@ -1,7 +1,6 @@
 ---
 date: '2013-10-06T09:00:00-05:00'
 title: Lyon (and a bit of Paris)
-parent: "Lyon and Surroundings (Fall 2013)"
 featured:
   alt: ''
   value: >-

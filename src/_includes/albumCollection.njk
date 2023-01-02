@@ -2,10 +2,23 @@
 layout: "collection.njk"
 ---
 
-<ul class="content-list">
-{% asyncEach album in (collections.albumNav | eleventyNavigation(key)) %}
-<li class="content-list__item content-list__item--separator content-list__item--spacious">
-{{ album | dump }}
-</li>
+{{ collections.albumNav | eleventyNavigationBreadcrumb(key) | eleventyNavigationToHtml | safe}}
+
+{% set enhancedAlbums = collections.albumNav | eleventyNavigation(key) | enhanceNavigation(collections.albumNav) %}
+
+{{ content | safe }}
+
+{{ enhancedAlbums.length }} albums
+
+ <div class="image-grid-2">
+{% asyncEach album in enhancedAlbums %}
+  <div class="h-entry">
+  <div>
+    <a href="{{ album.url }}">
+      {% bigthumb album.featured.value, album.featured.alt, "u-photo image"  %}
+    </a>
+  </div>
+  {{ album.title }}
+  </div>
 {% endeach %}
-</ul>
+</div>

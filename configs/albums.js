@@ -34,59 +34,26 @@ function albumToImagePosts(album) {
   return album.data.photo.map((p, i) => albumPhotoPost(album, albumPath, i, p));
 }
 
-function findOrCreateNode(rootUrl, parent, albumMap) {
-  if (albumMap.has(parent.title)) {
-    return albumMap.get(parent.title);
-  } else {
-    const slug = slugify(parent.title, { lower: true, strict: true } );
-    const newNode = {
-      permalink: `${rootUrl}/${slug}`,
-      title: parent.title,
-      description: parent.description,
-      featured: parent.featured,
-      albumMap: new Map()
-    };
-    albumMap.set(parent.title, newNode);
-    return newNode;
-  }
-}
-
-function albumTree(collection) {
-  const rootUrl = '/albums';
-
-  const albumMap = new Map();
-  
-  const root = {
-    permalink: rootUrl,
-    title: "Albums",
-    description: "All my albums",
-    albumMap: new Map()
-  };
-
-  albumMap.set(root.title, root);
-
-  collection.forEach(album => {
-    const parents = (album.data.parent || []).slice().reverse();
-    let context = root;
-    parents.forEach(p => {
-      node = findOrCreateNode(context.permalink, p, albumMap);
-      context.albumMap.set(node.title, node);
-      context = node;
-    });
-
-    // handle actual album
-    const albumEntry = {
-      permalink: album.url,
-      title: album.data.title,
-      description: album.data.description,
-      featured: album.data.featured,
-      photos: album.data.photo.length
-    }
-    context.albumMap.set(albumEntry.title, albumEntry);
+function enhanceNavigation(nav, allAlbums) {
+  const indexed = _.keyBy(allAlbums, a => a.data.eleventyNavigation?.key);
+  /*
+  console.log('ddddddd');
+  Object.keys(indexed).forEach(key => {
+    console.log(key, { eleventyNavigation: indexed[key].data.eleventyNavigation, featured: indexed[key].data.featured });
   });
-
-  albumMap.forEach((v,k) => v.albums = Array.from(v.albumMap.values()));
-  return Array.from(albumMap.values());
+  */
+  nav.forEach(n => {
+    //console.log(`ggggg: ${n.key}`);
+    const album = indexed[n.key];
+    //console.log(`1: ${n.key}`);
+    //console.log(util.inspect(album));
+    //console.log('\n\n\n');
+    n.featured = album ? album.data.featured : undefined;
+    if (n.children && n.children.length > 0) {
+      enhanceNavigation(n.children, allAlbums);
+    }
+  });
+  return nav;
 }
 
 function addAlbumCollections(eleventyConfig) {
@@ -94,12 +61,7 @@ function addAlbumCollections(eleventyConfig) {
     const albums = postTypes(getPosts(collection), ['album']);
     return _.flatten(albums.map(albumToImagePosts));
   });
-  /*
-  eleventyConfig.addCollection('albumTree', (collection) => {
-    const albums = postTypes(getPosts(collection), ['album']);
-    return albumTree(albums);
-  });
-  */
+
   eleventyConfig.addCollection('albumNav', (collection) => {
     return collection.getFilteredByGlob("./src/posts/feed/albums/**/*.md").reverse();
   });
@@ -107,4 +69,5 @@ function addAlbumCollections(eleventyConfig) {
 
 module.exports = {
   addAlbumCollections,
+  enhanceNavigation,
 }

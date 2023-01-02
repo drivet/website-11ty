@@ -294,3 +294,9 @@ body {
   grid-template-columns: repeat(var(--img-num-cols), 1fr);
   gap: var(--img-gap);
 }
+
+.image-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(var(--img-num-cols-2), 1fr);
+  gap: var(--img-gap);
+}
