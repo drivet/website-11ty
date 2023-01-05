@@ -1,7 +1,7 @@
 {% if photoObj.value and photoObj.alt %}
-  {% thumb photoObj.value, photoObj.alt, classes %}
+  {% thumb photoObj.value, photoObj.alt, thumb_classes %}
 {% elif photoObj.value %}
-  {% thumb photoObj.value, "post photo", classes %}
+  {% thumb photoObj.value, "post photo", thumb_classes %}
 {% else %}
-  {% thumb photoObj, "post photo", classes %}
+  {% thumb photoObj, "post photo", thumb_classes %}
 {% endif %}

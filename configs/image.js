@@ -17,9 +17,10 @@ async function makeImage(src, width) {
 async function imgShortcode(src, alt, cls, width) {
   const data = await makeImage(src, width);
 
+  const allCls = data['jpeg'][0].height > data['jpeg'][0].width ? `${cls} portrait` : cls;
   return Image.generateHTML(data, {
     alt,
-    class: cls
+    class: allCls
   });
 }
 
@@ -28,7 +29,7 @@ async function imageShortcode(src, alt, cls) {
 }
 
 async function bigThumbShortcode(src, alt, cls) {
-  return await imgShortcode(src, alt, cls, 350);
+  return await imgShortcode(src, alt, cls, 400);
 }
 
 async function thumbShortcode(src, alt, cls) {

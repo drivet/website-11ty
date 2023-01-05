@@ -36,19 +36,11 @@ function albumToImagePosts(album) {
 
 function enhanceNavigation(nav, allAlbums) {
   const indexed = _.keyBy(allAlbums, a => a.data.eleventyNavigation?.key);
-  /*
-  console.log('ddddddd');
-  Object.keys(indexed).forEach(key => {
-    console.log(key, { eleventyNavigation: indexed[key].data.eleventyNavigation, featured: indexed[key].data.featured });
-  });
-  */
+
   nav.forEach(n => {
-    //console.log(`ggggg: ${n.key}`);
     const album = indexed[n.key];
-    //console.log(`1: ${n.key}`);
-    //console.log(util.inspect(album));
-    //console.log('\n\n\n');
     n.featured = album ? album.data.featured : undefined;
+    n.content = album ? album.templateContent : undefined;
     if (n.children && n.children.length > 0) {
       enhanceNavigation(n.children, allAlbums);
     }

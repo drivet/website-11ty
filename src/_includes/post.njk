@@ -1,3 +1,10 @@
+---
+breadcumbOptions:
+  listClass: breadcrumbs
+  listItemClass: breadcrumbs__item
+  anchorClass: breadcrumbs__anchor
+---
+
 {% extends "blogbase.njk" %}
 
 {% from "reflink.njk" import reflink %}
@@ -12,6 +19,10 @@
   {% endfor %} 
   {{ entryheader(wmresults, date, page.url, navigation, title, 1) }}
   
+  {% if eleventyNavigation %}
+  Posted in {{ collections.albumNav | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
+  {% endif %}
+
   {% if blurb %}
     <div class="p-summary" style="display: none">
     {{ blurb }}

@@ -1,24 +1,31 @@
 ---
 layout: "collection.njk"
+breadcumbOptions:
+  listClass: breadcrumbs
+  listItemClass: breadcrumbs__item
+  anchorClass: breadcrumbs__anchor
 ---
 
-{{ collections.albumNav | eleventyNavigationBreadcrumb(key) | eleventyNavigationToHtml | safe}}
+{{ collections.albumNav | eleventyNavigationBreadcrumb(key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
 
 {% set enhancedAlbums = collections.albumNav | eleventyNavigation(key) | enhanceNavigation(collections.albumNav) %}
 
 {{ content | safe }}
 
-{{ enhancedAlbums.length }} albums
+<p>
+  {{ enhancedAlbums.length }} albums
+</p>
 
- <div class="image-grid-2">
-{% asyncEach album in enhancedAlbums %}
-  <div class="h-entry">
-  <div>
+ <div class="album-grid">
+  {% asyncEach album in enhancedAlbums %}
+  <div class="entry h-entry album-grid__item">
+    <p class="album-grid__title">
+      {{ album.title }}
+    </p>
     <a href="{{ album.url }}">
-      {% bigthumb album.featured.value, album.featured.alt, "u-photo image"  %}
+      {% bigthumb album.featured.value, album.featured.alt, "u-photo image album-grid__cover"  %}
     </a>
+    {{ album.content | safe }}
   </div>
-  {{ album.title }}
-  </div>
-{% endeach %}
+  {% endeach %}
 </div>

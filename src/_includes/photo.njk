@@ -4,17 +4,19 @@
     {% set img_classes = "u-photo entry__photo image" %}
     {% include "image.njk" %}
   {% else %}
-    {% set thumb_classes = "u-photo entry__photo image" %}
+    {% set thumb_classes = "u-photo image-grid__thumb image" %}
     <div class="image-grid">
-    {% if album %}
-    {% asyncEach photoObj in photoArg %}
-      <div class="h-entry">
-      <a href="{{ page.url | stripExt | albumImageUrl(loop.index0) }}">{% include "thumb.njk" %}</a>
-      </div>
-    {% endeach %}
-    {% else %} 
-    {% include "thumb.njk" %}
-    {% endif %}
+      {% if album %}
+        {% asyncEach photoObj in photoArg %}
+          <div class="h-entry entry image-grid__item">
+            <a href="{{ page.url | stripExt | albumImageUrl(loop.index0) }}">
+              {% include "thumb.njk" %}
+            </a>
+          </div>
+        {% endeach %}
+      {% else %} 
+        {% include "thumb.njk" %}
+      {% endif %}
     </div>
   {% endif %}
 {% endif %}
