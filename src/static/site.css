@@ -283,14 +283,13 @@ body {
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(157px, 1fr));
-  gap: 3px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
 }
 
 .image-grid__item {
-  width: 157px;
-  height: 157px;
-
+  padding-top: 100%;
+  height: 0;
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -300,9 +299,9 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
+  transform: translate(-50%,-50%);
   height: 100%;
   width: auto;
-  transform: translate(-50%,-50%);
 }
 
 .image-grid__thumb.portrait {
