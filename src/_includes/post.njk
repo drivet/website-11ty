@@ -36,7 +36,7 @@ breadcumbOptions:
     {% if photo | length > 1 %}
       <p>{{ photo | length }} photos</p>
     {% endif %}
-    {% set photoArg = photo %}
+    {% set photoArg = photo %} 
     {% include "photo.njk" %}
   </div>
 

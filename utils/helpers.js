@@ -33,7 +33,8 @@ function postTypes(collection, postTypes) {
 }
 
 function getPosts(collection) {
-  return collection.getFilteredByGlob("./src/posts/feed/**/*.md").reverse();
+  return collection.getFilteredByGlob("./src/posts/feed/**/*.md")
+            .filter(p => !p.data.exclude).reverse();
 }
 
 function navigation(root, data) {

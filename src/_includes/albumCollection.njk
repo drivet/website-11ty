@@ -6,7 +6,9 @@ breadcumbOptions:
   anchorClass: breadcrumbs__anchor
 ---
 
-{{ collections.albumNav | eleventyNavigationBreadcrumb(key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
+{% if key %}
+Posted in {{ collections.albumNav | eleventyNavigationBreadcrumb(key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
+{% endif %}
 
 {% set enhancedAlbums = collections.albumNav | eleventyNavigation(key) | enhanceNavigation(collections.albumNav) %}
 

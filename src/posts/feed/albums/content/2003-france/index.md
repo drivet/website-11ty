@@ -7,6 +7,7 @@ featured:
   value: "https://media.desmondrivet.com/16/f3/e2/99/d8ca6fa9f37d3c600df74a94ed47e85a5726663c7fec97f9e1eec0be.jpg"
 permalink: "albums/2003-france/index.html"
 layout: "albumCollection.njk"
+exclude: true
 ---
 
 I took a three week tour of to France in 2003
