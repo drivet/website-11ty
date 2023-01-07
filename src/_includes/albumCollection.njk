@@ -14,20 +14,19 @@ Posted in {{ collections.albumNav | eleventyNavigationBreadcrumb(key) | eleventy
 
 {{ content | safe }}
 
-<p>
-  {{ enhancedAlbums.length }} albums
-</p>
-
- <div class="album-grid">
-  {% asyncEach album in enhancedAlbums %}
-  <div class="entry h-entry album-grid__item">
-    <p class="album-grid__title">
-      {{ album.title }}
-    </p>
-    <a href="{{ album.url }}">
-      {% bigthumb album.featured.value, album.featured.alt, "u-photo image album-grid__cover"  %}
-    </a>
-    {{ album.content | safe }}
-  </div>
-  {% endeach %}
-</div>
+<p>{{ enhancedAlbums.length }} albums</p>
+<ul class="content-list">
+{% asyncEach album in enhancedAlbums %}
+<li class="content-list__item content-list__item--separator content-list__item--spacious">
+  <article>
+    <h2 class="entry__title"><a href="{{ album.url }}" class="entry__titlelink">{{ album.title }}</a></h2>
+    <div>
+      {{ album.content | safe }}
+      <a href="{{ album.url }}">
+        {% image album.featured.value, album.featured.alt, "u-featured entry__photo image"  %}
+      </a>
+    </div>
+  </article>
+</li>
+{% endeach %}
+</ul>

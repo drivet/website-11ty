@@ -310,26 +310,6 @@ body {
   height: auto;
 }
 
-.album-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 10px;
-}
-
-.album-grid__item {
-  overflow: hidden;
-}
-
-.album-grid__cover {
-  width: 100%;
-}
-
-.album-grid__title {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-weight: bold;
-}
-
 .breadcrumbs {
   padding: 0 0 0 0;
   margin: 0 0 1em 0;
