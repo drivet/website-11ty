@@ -24,6 +24,7 @@ permalink: "{{ p.permalink }}.html"
       <h1 class="entry__title p-name">
         <a href="{{ p.albumUrl | stripExt }}" class="entry__titlelink">{{ p.title }}</a> / {{ p.slug }}
       </h1>
+
       <p>
       {% if p.prevLink %}
       <a href="{{p.prevLink}}">Prev</a>

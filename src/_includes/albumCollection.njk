@@ -6,7 +6,7 @@ breadcumbOptions:
   anchorClass: breadcrumbs__anchor
 ---
 
-{% if key %}
+{% if key and parent %}
 Posted in {{ collections.albumNav | eleventyNavigationBreadcrumb(key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
 {% endif %}
 
