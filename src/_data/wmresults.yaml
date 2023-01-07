@@ -2004,4 +2004,17 @@ results:
     'https://gamerant.com/best-lesser-known-sci-fi-books-read-holidays/': {}
   albums/:
     'https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking': {}
+  2022/12/25/152554:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 400
+    'https://twitter.com/DanielBGreene/status/1607064455350988800?t=Cl1uhE114V24yr4vnSwQpQ&s=19': {}
+  2022/12/11/224205:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 400
+  2022/12/07/171126:
+    'https://twitter.com/JillFilipovic/status/1600606364459536387?t=AQRQP-93fd6Ac7HtiFp5Dw&s=19': {}
+  2022/11/28/182035:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 400
+    'https://twitter.com/LuxAlptraum/status/1597365932556693505?t=Yb8wXJRZMspcBXvi7uN0BA&s=19': {}
 site_url: 'https://desmondrivet.com'
