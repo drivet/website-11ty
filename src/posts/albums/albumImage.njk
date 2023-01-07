@@ -24,14 +24,6 @@ permalink: "{{ p.permalink }}.html"
       <h1 class="entry__title p-name">
         <a href="{{ p.albumUrl | stripExt }}" class="entry__titlelink">{{ p.title }}</a> / {{ p.slug }}
       </h1>
-      {% if p.navigation %}
-      <div>
-          Posted in: 
-          {% for nav in p.navigation %}
-          <a href="{{ nav.permalink }}">{{ nav.title }}</a> {% if not loop.last %} / {% endif %} 
-          {% endfor %}
-      </div>
-      {% endif %}
       <p>
       {% if p.prevLink %}
       <a href="{{p.prevLink}}">Prev</a>

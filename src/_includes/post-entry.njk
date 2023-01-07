@@ -19,15 +19,28 @@
 
   <div class="e-content">
     {{ post.templateContent | excerpt | safe }}
-    {% if post.data.photo | length > 1 %}
-    <p><a href="{{ post.url | stripExt }}">{{ post.data.photo | length }} photos</a></p>
+
+    {% set photoCount = post.data.photo | length %}
+    {% set album = post.data.postType == 'album' %}
+
+    {% if album or photoCount > 1 %}
+    <p><a href="{{ post.url | stripExt }}">{{ photoCount }} photos</a></p>
     {% endif %}
   
-    {% if post.data.postType == 'album' %}
+    {% if album %}
       {% image post.data.featured.value, post.data.featured.alt, 'u-featured entry__photo image' %}
+    {% elif photoCount == 1 %}
+      {% set photoObj = post.data.photo[0] %}
+      {% image photoObj.value | d(photoObj), photoObj.alt | d('') , "u-photo entry__photo image" %}
     {% else %}
       {% set photoArg = post.data.photo | clamp(8) %}
-      {% include "photo.njk" %}
+      <div class="image-grid">
+        {% asyncEach photoObj in photoArg %}
+          <div class="image-grid__item">
+            {% thumb photoObj.value | d(photoObj), photoObj.alt | d('') , "u-photo image-grid__thumb image" %}
+          </div>
+        {% endeach %}
+      </div>
     {% endif %}
   </div>
 

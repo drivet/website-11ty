@@ -32,12 +32,34 @@ breadcumbOptions:
   {{ reflink(postType, referencedLink) }}
   
   <div class="e-content">
-    {{ content | safe }} 
-    {% if photo | length > 1 %}
+    {{ content | safe }}
+
+    {% if album or photo | length > 1 %}
       <p>{{ photo | length }} photos</p>
     {% endif %}
-    {% set photoArg = photo %} 
-    {% include "photo.njk" %}
+
+    {% set photoArg = photo %}
+    {% if photoArg %}
+      {% if album %}
+        <div class="image-grid">
+          {% asyncEach photoObj in photoArg %}
+            {% set obj = photoObj.value | d(photoObj) %}
+            {% set alt = photoObj.alt | d('') %}
+            <div class="h-entry entry image-grid__item">
+              <a href="{{ page.url | stripExt | albumImageUrl(loop.index0) }}">
+                {% thumb obj, alt, "u-photo image-grid__thumb image" %}
+              </a>
+            </div>
+          {% endeach %}
+        </div>
+      {% else %}
+        {% asyncEach photoObj in photoArg %}
+          {% set obj = photoObj.value | d(photoObj) %}
+          {% set alt = photoObj.alt | d('') %}
+          {% image obj, alt, "u-photo entry__photo image" %}
+        {% endeach %}
+      {% endif %}
+    {% endif %}
   </div>
 
   {% if postType != 'article' %}
