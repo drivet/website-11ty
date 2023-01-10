@@ -2019,4 +2019,9 @@ results:
     'https://twitter.com/LuxAlptraum/status/1597365932556693505?t=Yb8wXJRZMspcBXvi7uN0BA&s=19': {}
   2023/01/10/075411:
     'https://bloodknife.com/everyone-beautiful-no-one-horny/': {}
+  2023/01/10/131551:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1612876274917117981'
+    'https://twitter.com/AmandaMarcotte/status/1612858374269407246?t=q20IaYO7hOGVMkrXawmc9g&s=19': {}
 site_url: 'https://desmondrivet.com'
