@@ -2002,26 +2002,24 @@ results:
     'https://twitter.com/LuxAlptraum/status/1595758735301152768?t=4RhU4nsdh8g62oUwVGl19w&s=19': {}
   2022/11/26/082249:
     'https://gamerant.com/best-lesser-known-sci-fi-books-read-holidays/': {}
-  albums/:
+  posts/albums/2003-france/:
     'https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking': {}
-  2022/12/25/152554:
-    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
-      status_code: 400
-    'https://twitter.com/DanielBGreene/status/1607064455350988800?t=Cl1uhE114V24yr4vnSwQpQ&s=19': {}
-  2022/12/11/224205:
-    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
-      status_code: 400
-  2022/12/07/171126:
-    'https://twitter.com/JillFilipovic/status/1600606364459536387?t=AQRQP-93fd6Ac7HtiFp5Dw&s=19': {}
-  2022/11/28/182035:
-    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
-      status_code: 400
-    'https://twitter.com/LuxAlptraum/status/1597365932556693505?t=Yb8wXJRZMspcBXvi7uN0BA&s=19': {}
-  2023/01/10/075411:
-    'https://bloodknife.com/everyone-beautiful-no-one-horny/': {}
-  2023/01/10/131551:
-    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
-      status_code: 201
-      location: 'https://twitter.com/desmondrivet/status/1612876274917117981'
-    'https://twitter.com/AmandaMarcotte/status/1612858374269407246?t=q20IaYO7hOGVMkrXawmc9g&s=19': {}
+  2003/10/01/paris:
+    'https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking': {}
+  2003/10/01/louvre-rodin:
+    'https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking': {}
+  2003/10/01/versailles:
+    'https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking': {}
+  2003/10/01/blois:
+    'https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking': {}
+  2003/10/01/bordeaux:
+    'https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking': {}
+  2003/10/01/perigueux:
+    'https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking': {}
+  2003/10/01/sarlat:
+    'https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking': {}
+  2003/10/01/toulouse:
+    'https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking': {}
+  2003/10/01/carcasonne:
+    'https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking': {}
 site_url: 'https://desmondrivet.com'
