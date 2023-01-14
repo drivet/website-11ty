@@ -38,10 +38,22 @@ function referencedLink(data) {
          data['bookmark-of'];
 } 
 
+function eleventyNavigation(data) {
+  if (!data.album) {
+    return undefined;
+  }
+  return {
+    key: data.key || data.title,
+    parent: data.parent || "albums",
+    title: data.title
+  };
+}
+
 module.exports = {
   eleventyComputed: {
     postType: (data) => pt.postType({data}),
     bridgyMentions,
-    referencedLink,
+    referencedLink, 
+    eleventyNavigation
   }
 };

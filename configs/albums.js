@@ -36,7 +36,6 @@ function albumToImagePosts(album) {
 
 function enhanceNavigation(nav, allAlbums) {
   const indexed = _.keyBy(allAlbums, a => a.data.eleventyNavigation?.key);
-
   nav.forEach(n => {
     const album = indexed[n.key];
     n.featured = album ? album.data.featured : undefined;
@@ -52,10 +51,6 @@ function addAlbumCollections(eleventyConfig) {
   eleventyConfig.addCollection('albumImages', (collection) => {
     const albums = postTypes(getPosts(collection), ['album']);
     return _.flatten(albums.map(albumToImagePosts));
-  });
-
-  eleventyConfig.addCollection('albumNav', (collection) => {
-    return collection.getFilteredByGlob("./src/posts/feed/albums/**/*.md").reverse();
   });
 }
 

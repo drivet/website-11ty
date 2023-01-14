@@ -21,11 +21,11 @@ function dateFormat(date, format) {
   return dayjs(date).tz('America/Montreal').format(format);
 }
 
-function makePermalink(page, addIndex) {
+function makePermalink(page) {
   const date_part = dateFormat(page.date, 'YYYY/MM/DD');
   const slug = getSlug(page.fileSlug);
   const url = `${date_part}/${slug}`;
-  return addIndex ? `${url}/index` : url;
+  return page.album ? `${url}/index` : url;
 }
 
 function postTypes(collection, postTypes) {
@@ -33,8 +33,7 @@ function postTypes(collection, postTypes) {
 }
 
 function getPosts(collection) {
-  return collection.getFilteredByGlob("./src/posts/feed/**/*.md")
-            .filter(p => !p.data.exclude).reverse();
+  return collection.getFilteredByGlob("./src/posts/feed/**/*.md").reverse();
 }
 
 function navigation(root, data) {

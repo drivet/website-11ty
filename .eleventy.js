@@ -116,7 +116,6 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addFilter("postPermalink", page => `${makePermalink(page, false)}.html`);
-  eleventyConfig.addFilter("albumPermalink", page => `${makePermalink(page, true)}.html`);
   eleventyConfig.addFilter("date", d => dateFormat(d, 'YYYY-MM-DD h:mm A Z'));
 
   eleventyConfig.addFilter("webmentionsForUrl", webmentionsForUrl);

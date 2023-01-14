@@ -20,7 +20,7 @@ breadcumbOptions:
   {{ entryheader(wmresults, date, page.url, navigation, title, 1) }}
   
   {% if eleventyNavigation %}
-  Posted in {{ collections.albumNav | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
+  Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
   {% endif %}
 
   {% if blurb %}
