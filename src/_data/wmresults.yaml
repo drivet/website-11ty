@@ -2045,4 +2045,45 @@ results:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 400
     'https://twitter.com/LuxAlptraum/status/1597365932556693505?t=Yb8wXJRZMspcBXvi7uN0BA&s=19': {}
+  posts/albums/2005-jackie-visit/england/:
+    'https://www.instagram.com/thegreatdesmondo/': {}
+    'https://github.com/drivet': {}
+    'https://www.11ty.dev/': {}
+    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous':
+      status_code: 201
+      location: 'https://webmention.io/vreeman.com/webmention/dQL2RhfBe64yJkudkBV7'
+    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next':
+      status_code: 201
+      location: 'https://webmention.io/rasulkireev.com/webmention/r6GvE_osqSZXEyB5A2ud'
+    'https://github.com/drivet/website-11ty/edit/main/./src/posts/albums/2005-jackie-visit/england.md': {}
+  posts/albums/2005-jackie-visit/:
+    'https://www.instagram.com/thegreatdesmondo/': {}
+    'https://github.com/drivet': {}
+    'https://www.11ty.dev/': {}
+    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous': {}
+    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next':
+      status_code: 201
+      location: >-
+        https://webmention.io/alexandr-sidorenko.me/webmention/dXY84tveiKzFT9xD04cv
+    'https://github.com/drivet/website-11ty/edit/main/./src/posts/albums/2005-jackie-visit/index.md': {}
+  posts/albums/2013-lyon/:
+    'https://www.instagram.com/thegreatdesmondo/': {}
+    'https://github.com/drivet': {}
+    'https://www.11ty.dev/': {}
+    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous':
+      status_code: 201
+      location: 'https://webmention.io/weisser-zwerg.dev/webmention/amJA_noq1eWokvubsSJm'
+    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next':
+      status_code: 202
+    'https://github.com/drivet/website-11ty/edit/main/./src/posts/albums/2013-lyon.md': {}
+  posts/albums/2005-jackie-visit/middle-east/:
+    'https://www.instagram.com/thegreatdesmondo/': {}
+    'https://github.com/drivet': {}
+    'https://www.11ty.dev/': {}
+    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous':
+      status_code: 202
+    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next':
+      status_code: 201
+      location: 'https://webmention.io/smurygin.com/webmention/k72MWuvBdOeJnwbjQ4dN'
+    'https://github.com/drivet/website-11ty/edit/main/./src/posts/albums/2005-jackie-visit/middle-east.md': {}
 site_url: 'https://desmondrivet.com'
