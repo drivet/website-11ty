@@ -1,4 +1,7 @@
 const _ = require('lodash');
+const { postTypes, getPosts } = require('../utils/helpers.js');
+const { addAlbumCollections } = require('./albums.js');
+
 
 function getYear(date) {
   return date.getFullYear().toString();
@@ -135,32 +138,30 @@ function addCollectionGroup(eleventyConfig, name, collectionFn) {
   );
 }
 
-function getPosts(collection) {
-  return collection.getFilteredByGlob("./src/posts/feed/**/*.md").reverse();
-}
-
-function postTypes(collection, postTypes) {
-  return collection.filter((item) => postTypes.includes(item.data.postType));
-}
-
 function addAllCollectionGroups(eleventyConfig) {
-  addCollectionGroup(eleventyConfig, "all", getPosts);
+  addCollectionGroup(eleventyConfig, "allPosts", getPosts);
 
   addCollectionGroup(eleventyConfig, "notes",
-    collection => postTypes(getPosts(collection), ["note", "photo", "video"]));
+    collection => postTypes(getPosts(collection), ["note", "photo", "video", "album"]));
 
   addCollectionGroup(eleventyConfig, "blog",
     collection => postTypes(getPosts(collection), ["article"]));
 
   addCollectionGroup(eleventyConfig, "bookmarks",
     collection => postTypes(getPosts(collection), ["bookmark"]));
+  
+  eleventyConfig.addCollection("albums", (collection) =>
+    postTypes(getPosts(collection), ["album"])
+  );
 
   // for backward compatibility
   eleventyConfig.addCollection("posts", (collection) =>
-    postTypes(getPosts(collection), ["note", "photo", "video", "article"])
+    postTypes(getPosts(collection), ["note", "photo", "video", "article", "album"])
   );
+
+  addAlbumCollections(eleventyConfig);
 }
 
 module.exports = {
-  addAllCollectionGroups
+  addAllCollectionGroups,
 }

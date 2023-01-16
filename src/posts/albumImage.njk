@@ -1,0 +1,48 @@
+---
+pagination:
+  data: collections.albumImages
+  size: 1
+  alias: p
+permalink: "{{ p.permalink }}.html"
+---
+{% extends "blogbase.njk" %}
+{% from "entry-header.njk" import entryheader %}
+{% block content %}
+{% set date = p.date %}
+<main class="main">
+<div class="h-entry entry">
+    
+  {% for mention in bridgyMentions %}
+  <a href="{{ mention }}"></a>
+  {% endfor %}
+
+  <header class="entry__header {{'entry__header--top' }}">
+      <a href="/" class="u-author"></a>
+      <span class="entry__headerline row row--spacious">
+          <a class="entry__published dt-published" href="{{ page.url | stripExt }}">{{ date | date  }}</a>
+      </span>
+      <h1 class="entry__title p-name">
+        <a href="{{ p.albumUrl | stripExt }}" class="entry__titlelink">{{ p.title }}</a> / {{ p.slug }}
+      </h1>
+
+      <p>
+      {% if p.prevLink %}
+      <a href="{{p.prevLink}}">Prev</a>
+      {% endif %}
+      {% if p.nextLink %}
+      <a href="{{p.nextLink}}">Next</a>
+      {% endif %}
+     
+      <a href="{{p.photo.value}}">Download</a>
+       </p>
+  </header>
+
+  <div class="e-content">
+    {{ content | safe }} 
+    {% set photoObj = p.photo %}
+    {% set img_classes = "u-photo entry__photo image" %}
+    {% include "image.njk" %}
+   </div>
+</div>
+</main>
+{% endblock %}

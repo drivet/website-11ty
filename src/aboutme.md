@@ -2,7 +2,7 @@
 modified: 2015-05-16 01:52:55.879342-04:00
 permalink: "{{ page.filePathStem }}.html"
 layout: "page.njk"
-title: About Desmond
+title: About Me
 ---
 
 Hi, I'm [Desmond][1], a software developer by trade currently residing in [Montreal][2], 
@@ -21,7 +21,7 @@ While I enjoy programming (or else I wouldn't do it for a living) I wouldn't say
 my sole focus in life.I also enjoy reading, television,
 cooking, cocktails, board games, photography, philosophy and travelling.
 
-I also enjoy writing, mostly on this webiste.  I particularly enjoy the web as a medium and I'm
+I also enjoy writing, mostly on this website.  I particularly enjoy the web as a medium and I'm
 old enough to still be amazed at the idea that anyone can just throw up a website for some spare
 change and have it acessible to almost the entire world.
 

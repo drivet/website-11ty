@@ -30,4 +30,10 @@
     .main-footer__content {
         max-width: var(--width);
     }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+    }
 }

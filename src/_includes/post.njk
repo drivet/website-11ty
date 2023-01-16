@@ -1,3 +1,10 @@
+---
+breadcumbOptions:
+  listClass: breadcrumbs
+  listItemClass: breadcrumbs__item
+  anchorClass: breadcrumbs__anchor
+---
+
 {% extends "blogbase.njk" %}
 
 {% from "reflink.njk" import reflink %}
@@ -9,10 +16,13 @@
   
   {% for mention in bridgyMentions %}
   <a href="{{mention}}"></a>
-  {% endfor %}
+  {% endfor %} 
+  {{ entryheader(wmresults, date, page.url, navigation, title, 1) }}
   
-  {{ entryheader(wmresults, date, page.url, title, 1) }}
-  
+  {% if eleventyNavigation %}
+  Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
+  {% endif %}
+
   {% if blurb %}
     <div class="p-summary" style="display: none">
     {{ blurb }}
@@ -23,8 +33,33 @@
   
   <div class="e-content">
     {{ content | safe }}
+
+    {% if album or photo | length > 1 %}
+      <p>{{ photo | length }} photos</p>
+    {% endif %}
+
     {% set photoArg = photo %}
-    {% include "photo.njk" %}
+    {% if photoArg %}
+      {% if album %}
+        <div class="image-grid">
+          {% asyncEach photoObj in photoArg %}
+            {% set obj = photoObj.value | d(photoObj) %}
+            {% set alt = photoObj.alt | d('') %}
+            <div class="h-entry entry image-grid__item">
+              <a href="{{ page.url | stripExt | albumImageUrl(loop.index) }}">
+                {% thumb obj, alt, "u-photo image-grid__thumb image" %}
+              </a>
+            </div>
+          {% endeach %}
+        </div>
+      {% else %}
+        {% asyncEach photoObj in photoArg %}
+          {% set obj = photoObj.value | d(photoObj) %}
+          {% set alt = photoObj.alt | d('') %}
+          {% image obj, alt, "u-photo entry__photo image" %}
+        {% endeach %}
+      {% endif %}
+    {% endif %}
   </div>
 
   {% if postType != 'article' %}

@@ -1,12 +1,13 @@
 {% from "reflink.njk" import reflink %}
 {% from "entry-header.njk" import entryheader %}
 
-<article class="h-entry">
+<article class="h-entry entry">
   {% for mention in post.data.bridgyMentions %}
   <a href="{{mention}}"></a>
   {% endfor %}
 
-  {{ entryheader(wmresults, post.data.date, post.url, post.data.title, 2) }}
+  {% set title = post.data.title  %}
+  {{ entryheader(wmresults, post.data.date, post.url, post.data.navigation, title, 2) }}
   
   {% if post.data.blurb %}
     <div class="p-summary" style="display: none">
@@ -18,8 +19,29 @@
 
   <div class="e-content">
     {{ post.templateContent | excerpt | safe }}
-    {% set photoArg = post.data.photo %}
-    {% include "photo.njk" %}
+
+    {% set photoCount = post.data.photo | length %}
+    {% set album = post.data.postType == 'album' %}
+
+    {% if album or photoCount > 1 %}
+    <p><a href="{{ post.url | stripExt }}">{{ photoCount }} photos</a></p>
+    {% endif %}
+  
+    {% if album %}
+      {% image post.data.featured.value, post.data.featured.alt, 'u-featured entry__photo image' %}
+    {% elif photoCount == 1 %}
+      {% set photoObj = post.data.photo[0] %}
+      {% image photoObj.value | d(photoObj), photoObj.alt | d('') , "u-photo entry__photo image" %}
+    {% else %}
+      {% set photoArg = post.data.photo | clamp(8) %}
+      <div class="image-grid">
+        {% asyncEach photoObj in photoArg %}
+          <div class="image-grid__item">
+            {% thumb photoObj.value | d(photoObj), photoObj.alt | d('') , "u-photo image-grid__thumb image" %}
+          </div>
+        {% endeach %}
+      </div>
+    {% endif %}
   </div>
 
   {% if post.data.postType != 'article' %}

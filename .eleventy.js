@@ -1,18 +1,17 @@
 const html = require('./utils/html.js');
+const { dateFormat, makePermalink } = require('./utils/helpers.js');
 const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL;
 const sanitizeHTML = require('sanitize-html');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const yaml = require("js-yaml");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const { addAllCollectionGroups } = require('./configs/collections');
+const { addAllCollectionGroups, addAlbumImages } = require('./configs/collections');
 const { previewConfig } = require('./configs/previews.js');
 const { imageConfig } = require('./configs/image.js');
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
-const timezone = require('dayjs/plugin/timezone');
-dayjs.extend(utc);
-dayjs.extend(timezone);
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const { enhanceNavigation } = require('./configs/albums.js');
+const { inspect } = require('util');
 
 function webmentionsForUrl(webmentions, url) {
   if (!webmentions) {
@@ -64,16 +63,9 @@ function synIcon(url) {
   }
 }
 
-function getSlug(fslug) {
-  // test for my note files from micropub, which look like this:
-  // 20200810123845.md
-  if (/^\d\d\d\d\d\d\d\d\d\d\d\d\d\d(.*)/.test(fslug)) {
-    // pick up the time portion of the timestamp
-    return fslug.substring(8);
-  } else {
-    // otherwise just return the filename
-    return fslug;
-  }
+function albumImageUrl(albumPath, index) {
+  const indexSlug = `${index}`.padStart(3, '0');
+  return `${albumPath}/${indexSlug}`;
 }
 
 module.exports = (eleventyConfig) => {
@@ -90,6 +82,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
   eleventyConfig.addFilter('excerpt', content => html.excerpt(content, 50));
   eleventyConfig.addFilter('synicon', url => synIcon(url));
@@ -122,35 +115,43 @@ module.exports = (eleventyConfig) => {
     }
   });
 
-  eleventyConfig.addFilter("postPermalink", page => {
-    const date_part = dayjs(page.date).tz('America/Montreal').format('YYYY/MM/DD');
-    const slug = getSlug(page.fileSlug);
-    return `${date_part}/${slug}.html`;
-  });
-
-  eleventyConfig.addFilter("date", d => {
-    return dayjs(d).tz('America/Montreal').format('YYYY-MM-DD h:mm A Z');
-  });
+  eleventyConfig.addFilter("postPermalink", page => `${makePermalink(page, false)}.html`);
+  eleventyConfig.addFilter("date", d => dateFormat(d, 'YYYY-MM-DD h:mm A Z'));
 
   eleventyConfig.addFilter("webmentionsForUrl", webmentionsForUrl);
   eleventyConfig.addFilter("webmentionKind", webmentionKind);
   eleventyConfig.addFilter("syndicationsForUrl", sydicationsForUrl);
 
-  eleventyConfig.addFilter('jsonString', obj => {
-    return JSON.stringify(obj);
-  });
-
   eleventyConfig.addFilter('stripExt', obj => {
     return obj.replace(/\.[^/.]+$/, '');
   });
+
+  eleventyConfig.addFilter('clamp', (arr, limit) => {
+    return arr ? arr.slice(0, limit) : null;
+  });
+  
+  eleventyConfig.addFilter('inspect', obj => inspect(obj));
 
   eleventyConfig.addFilter('aUrl', obj => {
     if (obj.startsWith('/')) {
       return `${rootUrl}${obj}`;
     } else {
-      return `ddd ${obj}`;
+      return `${obj}`;
     }
   });
+  
+  eleventyConfig.addFilter('albumImageUrl', albumImageUrl);
+
+  eleventyConfig.addFilter('albumTitle', (title, parents) => {
+    if (!parents || parents.length === 0) {
+      return title;
+    } else {
+      const parentTitles = parents.map(p => p.title).join(' / ')
+      return `${parentTitles} / ${title}`;
+    }
+  });
+
+  eleventyConfig.addFilter('enhanceNavigation', enhanceNavigation);
 
   eleventyConfig.setTemplateFormats([
     "md",

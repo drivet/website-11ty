@@ -1,0 +1,34 @@
+---
+layout: "collection.njk"
+breadcumbOptions:
+  listClass: breadcrumbs
+  listItemClass: breadcrumbs__item
+  anchorClass: breadcrumbs__anchor
+---
+
+{% if eleventyNavigation.key and eleventyNavigation.parent %}
+Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
+{% endif %}
+
+{% set enhancedAlbums = collections.all | eleventyNavigation(eleventyNavigation.key) | enhanceNavigation(collections.all) %}
+
+{{ content | safe }}
+
+<p>{{ enhancedAlbums.length }} albums</p>
+<ul class="content-list">
+{% asyncEach album in enhancedAlbums | reverse %}
+<li class="content-list__item content-list__item--separator content-list__item--spacious">
+  <article>
+    <h2 class="entry__title"><a href="{{ album.url }}" class="entry__titlelink">{{ album.title }}</a></h2>
+    <div>
+      {{ album.content | safe }}
+      {% if album.featured %}
+      <a href="{{ album.url }}">
+        {% image album.featured.value, album.featured.alt, "u-featured entry__photo image"  %}
+      </a>
+      {% endif %}
+    </div>
+  </article>
+</li>
+{% endeach %}
+</ul>

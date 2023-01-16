@@ -1,4 +1,4 @@
-{% macro entryheader(wmresults, date, url, title, level) %}
+{% macro entryheader(wmresults, date, url, navigation, title, level) %}
 <header class="entry__header {{'entry__header--top' if level == 1 }}">
     <a href="/" class="u-author"></a>
 
@@ -7,11 +7,12 @@
     </span>
 
     {% if title  %}
-    {% if level == 1 %}
-    <h1 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h1>
-    {% else %}
-    <h2 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h2>
+        {% if level == 1 %}
+            <h1 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h1>
+        {% else %}
+            <h2 class="entry__title p-name"><a href="{{ url | stripExt }}" class="entry__titlelink">{{ title }}</a></h2>
+        {% endif %}
     {% endif %}
-    {% endif %}
+    
 </header>
 {% endmacro %}

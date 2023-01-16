@@ -1,0 +1,7 @@
+{% if photoObj.value and photoObj.alt %}
+  {% image photoObj.value, photoObj.alt, img_classes %}
+{% elif photoObj.value %}
+  {% image photoObj.value, "post photo", img_classes %}
+{% else %}
+  {% image photoObj, "post photo", img_classes %}
+{% endif %}
