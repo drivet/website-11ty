@@ -64,7 +64,7 @@ function synIcon(url) {
 }
 
 function albumImageUrl(albumPath, index) {
-  const indexSlug = `${index}`.padStart(6, '0');
+  const indexSlug = `${index}`.padStart(3, '0');
   return `${albumPath}/${indexSlug}`;
 }
 

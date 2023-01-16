@@ -46,7 +46,7 @@ breadcumbOptions:
             {% set obj = photoObj.value | d(photoObj) %}
             {% set alt = photoObj.alt | d('') %}
             <div class="h-entry entry image-grid__item">
-              <a href="{{ page.url | stripExt | albumImageUrl(loop.index0) }}">
+              <a href="{{ page.url | stripExt | albumImageUrl(loop.index) }}">
                 {% thumb obj, alt, "u-photo image-grid__thumb image" %}
               </a>
             </div>

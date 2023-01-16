@@ -1,20 +1,18 @@
 const _ = require('lodash');
-const slugify = require('slugify');
-const util = require('util');
 const { postTypes, getPosts, makePermalink } = require('../utils/helpers.js');
 
 function indexToSlug(index) {
-  return `${index}`.padStart(6, '0');
+  return `${index}`.padStart(3, '0');
 }
 
-function albumPhotoPost(album, albumPath, index, photoUrl) {
+function albumPhotoPost(album, albumPath, index0, photoUrl) {
   const date = album.data.date;
-  const slug = indexToSlug(index);
+  const slug = indexToSlug(index0+1);
   const total = album.data.photo.length;
-  const next = index < (total - 1) ? index + 1 : undefined;
-  const prev = index > 0 ? index - 1 : undefined;
-  const nextLink = next != undefined ? indexToSlug(next) : undefined;
-  const prevLink = prev != undefined ? indexToSlug(prev) : undefined;
+  const next = index0 < (total - 1) ? index0 + 1 : undefined;
+  const prev = index0 > 0 ? index0 - 1 : undefined;
+  const nextLink = next != undefined ? indexToSlug(next+1) : undefined;
+  const prevLink = prev != undefined ? indexToSlug(prev+1) : undefined;
 
   return {
     permalink: `${albumPath}/${slug}`,
@@ -25,7 +23,6 @@ function albumPhotoPost(album, albumPath, index, photoUrl) {
     slug,
     nextLink,
     prevLink,
-    navigation: album.data.navigation
   };
 }
 
