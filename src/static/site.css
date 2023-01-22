@@ -122,6 +122,10 @@ body {
   margin-bottom: 3em;
 }
 
+.feed__summary {
+  margin-bottom: 3em;
+}
+
 .feed-extra__label {
   display: none;
 }
@@ -155,7 +159,6 @@ body {
   border-radius: 10px;
   max-width: 100%;
   display: block;
-  margin: auto;
   margin-bottom: 1em;
 }
 

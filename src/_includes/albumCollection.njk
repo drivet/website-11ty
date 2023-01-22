@@ -22,6 +22,13 @@ Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.k
     <h2 class="entry__title"><a href="{{ album.url }}" class="entry__titlelink">{{ album.title }}</a></h2>
     <div>
       {{ album.content | safe }}
+      
+      {% if album.photo %}
+      <p>{{ album.photo | length }} photos</p>
+      {% else %}
+      <p>{{ album.children | length }} albums</p>
+      {% endif %}
+
       {% if album.featured %}
       <a href="{{ album.url }}">
         {% image album.featured.value, album.featured.alt, "u-featured entry__photo image"  %}

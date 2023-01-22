@@ -3,12 +3,7 @@
 {% block secondarynav %}
 <header class="secondary-header">
   <nav class="navbar" aria-label="feed navigation">
-    <ul class="row"> 
-      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'notes' }}">
-        <a href="/posts/notes" class="navbar__link row row--comfy">
-          <i class="far fa-sticky-note"></i> <span class="feed__navname">Notes</span>
-        </a>
-      </li>
+    <ul class="row">
       <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'blog' }}">
         <a href="/posts/blog" class="navbar__link row row--comfy">
           <i class="far fa-newspaper"></i> <span class="feed__navname">Blog</span>

@@ -1,13 +1,13 @@
 ---
 pagination:
-  data: collections.notes_archivePages
+  data: collections.articles_archivePages
   size: 1
   alias: p
 permalink: "{{archiveUrlPrefix}}/{{ p.name }}/index{% if p.page %}{{ p.page + 1 }}{% endif %}.html"
 layout: "collection.njk"
-archiveUrlPrefix: "/posts/notes"
+archiveUrlPrefix: "/posts/articles"
 eleventyComputed:
-   title: "Archives for {{ p.name }} (Notes)"
+   title: "Archives for {{ p.name }} (Articles)"
 ---
 
 {% include 'archive.njk' %}

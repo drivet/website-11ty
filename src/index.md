@@ -12,7 +12,7 @@ title: Desmond's Corner of the Web
             width: 150px; height:150px"
      alt="Me" title="Me"/>
 Hello! You've reached the personal website of
-<a class="p-name u-url u-uid" href="https://desmondrivet.com">Desmond Rivet</a>.
+<a class="p-name u-url u-uid" href="/">Desmond Rivet</a>.
 
 You can find out more [about me][1] eleswhere on this site, and some information
 [about the site itself][2] if that sort of thing interests you.

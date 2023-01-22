@@ -141,10 +141,10 @@ function addCollectionGroup(eleventyConfig, name, collectionFn) {
 function addAllCollectionGroups(eleventyConfig) {
   addCollectionGroup(eleventyConfig, "allPosts", getPosts);
 
-  addCollectionGroup(eleventyConfig, "notes",
-    collection => postTypes(getPosts(collection), ["note", "photo", "video", "album"]));
-
   addCollectionGroup(eleventyConfig, "blog",
+    collection => postTypes(getPosts(collection), ["article", "note", "photo", "video", "album"]));
+  
+  addCollectionGroup(eleventyConfig, "articles",
     collection => postTypes(getPosts(collection), ["article"]));
 
   addCollectionGroup(eleventyConfig, "bookmarks",
@@ -152,11 +152,6 @@ function addAllCollectionGroups(eleventyConfig) {
   
   eleventyConfig.addCollection("albums", (collection) =>
     postTypes(getPosts(collection), ["album"])
-  );
-
-  // for backward compatibility
-  eleventyConfig.addCollection("posts", (collection) =>
-    postTypes(getPosts(collection), ["note", "photo", "video", "article", "album"])
   );
 
   addAlbumCollections(eleventyConfig);
