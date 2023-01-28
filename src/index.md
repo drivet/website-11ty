@@ -22,16 +22,14 @@ Given that I've been online for over 20 years, I've accumulated a fair bit
 of content and, accordingly, a fair amount of thought has gone into its
 organization.  Among other things, this site sports:
 
-* a [blog][7], where I publish random thoughts on a semi-regular basis
-<!--
-* a [piwigo][8] [photo album][9]
-* a [wiki][10], which I use to keep track of longer term pages like recipes
--->
-* various [selected pages][11] from my old sites
+* a [blog][3], where I publish random thoughts on a semi-regular basis
+* a [set of photo albums][4]
+* various [selected pages][5] from my old sites
 
 </section>
 
 [1]: /about
 [2]: /colophon
 [3]: /posts/
-[4]: /oldsite/
+[4]: /posts/albums/
+[5]: /oldsite/
