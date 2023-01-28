@@ -11,24 +11,27 @@ title: Desmond's Corner of the Web
      style="float: left; margin-right:1em; margin-bottom: 1em;
             width: 150px; height:150px"
      alt="Me" title="Me"/>
-Hello! You've reached the personal website of
-<a class="p-name u-url u-uid" href="/">Desmond Rivet</a>.
 
-You can find out more [about me][1] eleswhere on this site, and some information
-[about the site itself][2] if that sort of thing interests you.
+Hello! You've reached the personal website of <a class="p-name u-url u-uid"
+href="/">Desmond Rivet</a>, a software developer living in Montreal, Canada.
 
-There's actually a fair bit to see here, including a [blog][3] and a
-[selection of pages][4] spanning, in some cases, a couple of decades.
+You can find out more [about me][1] eleswhere on this site, and some
+information [about the site itself][2] if that sort of thing interests you.
 
-This site is part of the [IndieWeb][5], a collection of personal websites that
-function as a kind of alternative to traditional social media.  I hope you enjoy
-your stay but, if you don't, please free to follow the [IndieWeb Webring][6],
-located at the bottom of every page, for other sites in the community.
+Given that I've been online for over 20 years, I've accumulated a fair bit
+of content and, accordingly, a fair amount of thought has gone into its
+organization.  Among other things, this site sports:
+
+* a [blog][7], where I publish random thoughts on a semi-regular basis
+<!--
+* a [piwigo][8] [photo album][9]
+* a [wiki][10], which I use to keep track of longer term pages like recipes
+-->
+* various [selected pages][11] from my old sites
+
 </section>
 
-[1]: /aboutme
-[2]: /aboutsite
+[1]: /about
+[2]: /colophon
 [3]: /posts/
 [4]: /oldsite/
-[5]: https://indieweb.org/
-[6]: https://indieweb.org/indiewebring
