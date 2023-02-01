@@ -17,6 +17,20 @@ body {
   border-top: 5px solid var(--accent);
 }
 
+.mug {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.mug-about {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
 .feed-extra {
   color: var(--accent);
 }

@@ -15,5 +15,13 @@
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 5px;
+    }   
+
+    .mug-about {
+      width: 250px;
+      height: 250px;
+      float: left;
+      margin: 0 1em 1em 0;
     }
+     
 }

@@ -1,18 +1,20 @@
 const _ = require('lodash');
 const { postTypes, getPosts, makePermalink } = require('../utils/helpers.js');
 
-function indexToSlug(index) {
-  return `${index}`.padStart(3, '0');
+function photoUrlSlug(photoUrl) {
+  const hash = photoUrl.substring(photoUrl.lastIndexOf('/') + 1)
+                 .replace(/\.[^/.]+$/, '');
+  return hash.substring(0, Math.floor(hash.length / 4));
 }
 
-function albumPhotoPost(album, albumPath, index0, photoUrl) {
+function albumPhotoPost(album, albumPath, index0, photoUrl, slugs) {
   const date = album.data.date;
-  const slug = indexToSlug(index0+1);
+  const slug = slugs[index0];
   const total = album.data.photo.length;
   const next = index0 < (total - 1) ? index0 + 1 : undefined;
   const prev = index0 > 0 ? index0 - 1 : undefined;
-  const nextLink = next != undefined ? indexToSlug(next+1) : undefined;
-  const prevLink = prev != undefined ? indexToSlug(prev+1) : undefined;
+  const nextLink = next != undefined ? slugs[next] : undefined;
+  const prevLink = prev != undefined ? slugs[prev] : undefined;
 
   return {
     permalink: `${albumPath}/${slug}`,
@@ -28,7 +30,8 @@ function albumPhotoPost(album, albumPath, index0, photoUrl) {
 
 function albumToImagePosts(album) {
   const albumPath = makePermalink(album, false);
-  return album.data.photo.map((p, i) => albumPhotoPost(album, albumPath, i, p));
+  const imageSlugs = album.data.photo.map(p => photoUrlSlug(p.value));
+  return album.data.photo.map((p, i) => albumPhotoPost(album, albumPath, i, p, imageSlugs));
 }
 
 function enhanceNavigation(nav, allAlbums) {
@@ -55,4 +58,5 @@ function addAlbumCollections(eleventyConfig) {
 module.exports = {
   addAlbumCollections,
   enhanceNavigation,
+  photoUrlSlug
 }

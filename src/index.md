@@ -6,30 +6,56 @@ title: Desmond's Corner of the Web
 ---
 
 <section class="h-card">
-
-<img class="u-photo" src="/static/img/me03.jpg"
-     style="float: left; margin-right:1em; margin-bottom: 1em;
-            width: 150px; height:150px"
+<div>
+<img class="u-photo mug" src="/static/img/me03.jpg"
      alt="Me" title="Me"/>
 
 Hello! You've reached the personal website of <a class="p-name u-url u-uid"
-href="/">Desmond Rivet</a>, a software developer living in Montreal, Canada.
+href="/">Desmond Rivet</a>, a <span class="p-note">software developer</span>
+living in <span class="p-locality">Montreal<span>, <span
+class="p-country">Canada</span>.
 
-You can find out more [about me][1] eleswhere on this site, and some
-information [about the site itself][2] if that sort of thing interests you.
+You can find out more [about me][1] elsewhere on this site, see what I'm up
+to [now][6], and peruse some information [about the site itself][2] if that
+sort of thing interests you.
+</div>
 
-Given that I've been online for over 20 years, I've accumulated a fair bit
-of content and, accordingly, a fair amount of thought has gone into its
-organization.  Among other things, this site sports:
+## Finding Your Way Around
+
+There's actually a fair bit of content on this site:
 
 * a [blog][3], where I publish random thoughts on a semi-regular basis
-* a [set of photo albums][4]
+* a [set of curated photo albums][4]
 * various [selected pages][5] from my old sites
+
+## Contact 
+
+I consider this website to be my main online platform, but you can find me
+elswhere on the web as well:
+
+<div class="row row--spacious">
+    <a href="http://www.facebook.com/desmond.rivet" title="Facebook" rel="me">
+        <i class="fab fa-facebook-square"></i>
+    </a>
+    <a href="https://www.instagram.com/thegreatdesmondo/" title="Instagram" rel="me">
+        <i class="fab fa-instagram"></i>
+    </a> 
+    <a href="http://www.twitter.com/desmondrivet" title="Twitter" rel="me">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://github.com/drivet" title="Github" rel="me">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="http://ca.linkedin.com/in/desmondrivet" title="LinkedIn" rel="me">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+</div>
 
 </section>
 
 [1]: /about
 [2]: /colophon
-[3]: /posts/
+[3]: /posts/blog/
 [4]: /posts/albums/
 [5]: /oldsite/
+[6]: /now

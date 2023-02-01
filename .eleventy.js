@@ -10,7 +10,7 @@ const { addAllCollectionGroups, addAlbumImages } = require('./configs/collection
 const { previewConfig } = require('./configs/previews.js');
 const { imageConfig } = require('./configs/image.js');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const { enhanceNavigation } = require('./configs/albums.js');
+const { enhanceNavigation, photoUrlSlug } = require('./configs/albums.js');
 const { inspect } = require('util');
 
 function webmentionsForUrl(webmentions, url) {
@@ -63,9 +63,9 @@ function synIcon(url) {
   }
 }
 
-function albumImageUrl(albumPath, index) {
-  const indexSlug = `${index}`.padStart(3, '0');
-  return `${albumPath}/${indexSlug}`;
+function albumImageUrl(albumPath, photoUrl) {
+  const slug = photoUrlSlug(photoUrl);
+  return `${albumPath}/${slug}`;
 }
 
 module.exports = (eleventyConfig) => {

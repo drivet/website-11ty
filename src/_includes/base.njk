@@ -8,11 +8,11 @@
 
   {% include 'metadata.njk' %}
 
-  {% if FAVICON %}
-  <link href="/{{ FAVICON }}" rel="icon">
+  {% if global.FAVICON %}
+  <link href="{{ global.FAVICON }}" rel="icon">
   {% endif %}
-  {% if TOUCHICON %}
-  <link rel="apple-touch-icon" href="/{{ TOUCHICON }}">
+  {% if global.TOUCHICON %}
+  <link rel="apple-touch-icon" href="{{ global.TOUCHICON }}">
   {% endif %}
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
   <link href="https://unpkg.com/prismjs@1.27.0/themes/prism-okaidia.css" rel="stylesheet">
@@ -70,24 +70,7 @@
   <footer class="main-footer">
     <div class="main-footer__content">
       <div class="row">
-        &copy;2022 by <a href="/">{{ global.AUTHOR }}</a>
-        <div class="row__item--right">
-            <a href="http://www.facebook.com/desmond.rivet" title="Facebook" rel="me">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="https://www.instagram.com/thegreatdesmondo/" title="Instagram" rel="me">
-              <i class="fab fa-instagram"></i>
-            </a> 
-            <a href="http://www.twitter.com/desmondrivet" title="Twitter" rel="me">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://github.com/drivet" title="Github" rel="me">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="http://ca.linkedin.com/in/desmondrivet" title="LinkedIn" rel="me">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div> 
+        &copy;2023 by <a href="/">{{ global.AUTHOR }}</a>
       </div>
       <div class="row">
           Powered by <a href="https://www.11ty.dev/" target="_blank">Eleventy</a>

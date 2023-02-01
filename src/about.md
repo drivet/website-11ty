@@ -2,45 +2,39 @@
 modified: 2015-05-16 01:52:55.879342-04:00
 permalink: "{{ page.filePathStem }}.html"
 layout: "page.njk"
-title: About Me
+title: About
 ---
 
-Hi, I'm [Desmond][1], a software developer by trade currently residing in
-[Montreal][2], Canada.
+<img class="u-photo mug-about" src="/static/img/me04.jpg"
+     alt="Me" title="Me"/>
 
-I'm a graduate of the [Engineering Science][3] program (Computer Option) at
-the [University of Toronto][4], currently employed by [Unity
-Technologies][5].
+Greetings!  My name is [Desmond Rivet][1], a <span class="p-note">software
+developer</span> by trade living in <span class="p-locality">Montreal<span>,
+<span class="p-country">Canada</span>.  I'm a graduate of the [Engineering
+Science][2] program (Computer Option) at the [University of Toronto][3].
 
-People who know me tend to assume I'm from [Toronto][6] but I'm actually a
-native Montrealer.  The confusion usually stems from the fact that, while I
-was born in Montreal, I spent a good chunk of my formative years (i.e. high
-school and Univeristy) in Toronto, and I only moved back to Montreal in my
-20s.  Having spent a fair bit of time in both cities I like to think I'm
-above the typical rivalry shared between them.
+I was born in Montreal, but spent a good chunk of my life, including high
+school and University, in Toronto.  I moved back to Montreal soon after I
+got my Bachelor's degree and started my first job.  Having spent a fair bit
+of time in both cities I like to think I'm above the typical rivalry shared
+between them.
 
-While I enjoy programming (or else I wouldn't do it for a living) I wouldn't
-say that it's my sole focus in life.I also enjoy reading, television,
-cooking, cocktails, board games, photography, philosophy and travelling.
+I've worked as a software developer (junior, senior, staff, etc.) for over
+20 years.  My first job was as a summer student, then intern, at [PCI
+Geomatics][4].  Next, I had a brief stint as an NSERC researcher during my
+last year of University.  After I graduated, I spent a number of years at
+Airwide Solutions (formerly Schlumberger), followed by over a decade at
+[Intelerad Medical Systems][5].  I'm currently employed by [Unity
+Technologies][6].
 
-I also enjoy writing, mostly on this website.  I particularly enjoy the web
-as a medium and I'm old enough to still be amazed at the idea that anyone
-can just throw up a website for some spare change and have it acessible to
-almost the entire world.
-
-I consider this website to be my main online platform, but you can find me
-elswhere on the web as well:
-
-* <a href="http://www.facebook.com/desmond.rivet" title="Facebook" rel="me">Facebook</a>
-* <a href="https://www.instagram.com/thegreancatdesmondo/" title="Instagram" rel="me">Instagram</a> 
-* <a href="http://www.twitter.com/desmondrivet" title="Twitter" rel="me">Twitter</a>
-* <a href="https://github.com/drivet" title="Github" rel="me">Github</a>
-* <a href="http://ca.linkedin.com/in/desmondrivet" title="LinkedIn" rel="me">LinkedIn</a>
+I enjoy writing and programming (not shocking, considering what I do for a
+living), and futzing around with this website is a good way to do both.  I
+also enjoy reading, television, cooking, cocktails, board games,
+photography, philosophy and travelling.
 
 [1]: /
-[2]: https://en.wikipedia.org/wiki/Montreal
-[3]: https://engsci.utoronto.ca/
-[4]: https://www.utoronto.ca/
-[5]: https://unity.com/
-[6]: https://en.wikipedia.org/wiki/Toronto
-
+[2]: https://engsci.utoronto.ca/
+[3]: https://www.utoronto.ca/
+[4]: https://catalyst.earth/
+[5]: https://www.intelerad.com/en/
+[6]: https://unity.com/

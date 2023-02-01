@@ -3,6 +3,8 @@
   "SITENAME": "Desmond Rivet",
   "DOMAIN": "desmondrivet.com",
   "URL": "https://desmondrivet.com",
+  "FAVICON": "/static/img/me03.jpg", 
+  "TOUCHICON": "/static/img/me03.jpg",
   "AUTH_ENDPOINT": "https://indieauth.com/auth",
   "TOKEN_ENDPOINT": "https://tokens.indieauth.com/token",
   "MICROPUB_ENDPOINT": "https://micropub.desmondrivet.com",
