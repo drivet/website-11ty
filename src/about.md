@@ -5,6 +5,8 @@ layout: "page.njk"
 title: About
 ---
 
+<section class="h-card">
+
 <img class="u-photo mug-about" src="/static/img/me04.jpg"
      alt="Me" title="Me"/>
 
@@ -34,6 +36,8 @@ photography, philosophy and travelling.
 
 Feel free to <a class="u-email" href="mailto:hello@desmondrivet.com">drop me
 a line!</a>
+
+</section>
 
 [1]: /
 [2]: https://engsci.utoronto.ca/
