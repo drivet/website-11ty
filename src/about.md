@@ -32,6 +32,9 @@ living), and futzing around with this website is a good way to do both.  I
 also enjoy reading, television, cooking, cocktails, board games,
 photography, philosophy and travelling.
 
+Feel free to <a class="u-email" href="mailto:hello@desmondrivet.com">drop me
+a line!</a>
+
 [1]: /
 [2]: https://engsci.utoronto.ca/
 [3]: https://www.utoronto.ca/

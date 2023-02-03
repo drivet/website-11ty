@@ -30,6 +30,9 @@ There's actually a fair bit of content on this site:
 
 ## Contact 
 
+<a class="u-email" href="mailto:hello@desmondrivet.com">Email</a> is
+probably the best way to contact me.
+
 I consider this website to be my main online platform, but you can find me
 elswhere on the web as well:
 
@@ -59,3 +62,4 @@ elswhere on the web as well:
 [4]: /posts/albums/
 [5]: /oldsite/
 [6]: /now
+
