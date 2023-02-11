@@ -1,0 +1,4 @@
+{
+  "permalink": "{{ page | postPermalink }}",
+  "layout": "recipe.njk"
+}

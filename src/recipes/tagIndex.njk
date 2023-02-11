@@ -1,0 +1,24 @@
+---
+permalink: "/recipes/tags/index.html"
+---
+{% extends "base.njk" %}
+
+{% block meta %}
+<meta name="robots" content="noindex,follow" />
+{% endblock %}
+
+{% block content %}
+<main class="main">
+<header>
+  <div class="row">
+    <h1>Recipe Tags</h1>
+  </div>
+</header>
+<ul class="tag-list">
+{% for tag in collections['recipes_tagList'] %}
+  {% set tagUrl %}/recipes/tags/{{ tag.tag | slug }}{% endset %}
+  <li class="tag-list__item row"><a href="{{ tagUrl | url }}">{{ tag.tag }}</a>  <span class="row__item--right">{{ tag.count }}</span></li>
+{% endfor %}
+</ul>
+</main>
+{% endblock content %}

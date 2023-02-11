@@ -12,6 +12,7 @@ const { imageConfig } = require('./configs/image.js');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { enhanceNavigation, photoUrlSlug } = require('./configs/albums.js');
 const { inspect } = require('util');
+const { searchFilter } = require('./configs/search.js');
 
 function webmentionsForUrl(webmentions, url) {
   if (!webmentions) {
@@ -139,6 +140,8 @@ module.exports = (eleventyConfig) => {
       return `${obj}`;
     }
   });
+
+  eleventyConfig.addFilter('isArray', obj => Array.isArray(obj));
   
   eleventyConfig.addFilter('albumImageUrl', albumImageUrl);
 
@@ -152,6 +155,7 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addFilter('enhanceNavigation', enhanceNavigation);
+  eleventyConfig.addFilter("search", searchFilter);
 
   eleventyConfig.setTemplateFormats([
     "md",

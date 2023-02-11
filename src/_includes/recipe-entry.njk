@@ -1,0 +1,16 @@
+<article class="h-recipe">
+  <header class="entry__header">
+    <a href="/" class="u-author"></a>
+    <h2 class="entry__title p-name"><a href="{{ post.url | stripExt }}" class="entry__titlelink">{{ post.data.title }}</a></h2>
+  </header>
+  {% if post.data.source %}
+  <div>
+    Source: <a class="u-remix-of" href="{{post.data.source}}">{{ post.data.source }}</a>
+  </div>
+  {% endif %}
+  {% if post.data.yield %}
+  <div>
+    Yield: <span class="p-yield">{{ post.data.yield }}</span>
+  </div> 
+  {% endif %}
+</article>

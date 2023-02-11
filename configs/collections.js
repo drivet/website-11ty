@@ -119,7 +119,7 @@ function addCollectionGroup(eleventyConfig, name, collectionFn) {
     collectionFn(collection)
   );
 
-  // index pages
+  // index pages, with the tags/dates listed on them
   eleventyConfig.addCollection(`${name}_tagList`, (collection) =>
     tagList(collectionFn(collection))
   );
@@ -128,7 +128,7 @@ function addCollectionGroup(eleventyConfig, name, collectionFn) {
     archiveList(collectionFn(collection))
   );
 
-  // double pagination collections
+  // double paginated collections - each tag page
   eleventyConfig.addCollection(`${name}_tagPages`, (collection) =>
     flatPaginate(indexByTag(collectionFn(collection)), 25)
   );
@@ -155,6 +155,9 @@ function addAllCollectionGroups(eleventyConfig) {
   );
 
   addAlbumCollections(eleventyConfig);
+
+  addCollectionGroup(eleventyConfig, "recipes",
+    collection => collection.getFilteredByGlob('./src/recipes/**/*.md'));
 }
 
 module.exports = {

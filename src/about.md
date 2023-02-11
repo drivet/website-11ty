@@ -11,7 +11,7 @@ title: About
      alt="Me" title="Me"/>
 
 Greetings!  My name is [Desmond Rivet][1], a <span class="p-note">software
-developer</span> by trade living in <span class="p-locality">Montreal<span>,
+developer</span> by trade living in <span class="p-locality">Montreal</span>,
 <span class="p-country">Canada</span>.  I'm a graduate of the [Engineering
 Science][2] program (Computer Option) at the [University of Toronto][3].
 

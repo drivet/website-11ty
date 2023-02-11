@@ -26,6 +26,7 @@ There's actually a fair bit of content on this site:
 
 * a [blog][3], where I publish random thoughts on a semi-regular basis
 * a [set of curated photo albums][4]
+* my [recipe collection][7]
 * various [selected pages][5] from my old sites
 
 ## Contact 
@@ -62,4 +63,4 @@ elswhere on the web as well:
 [4]: /posts/albums/
 [5]: /oldsite/
 [6]: /now
-
+[7]: /recipes/
