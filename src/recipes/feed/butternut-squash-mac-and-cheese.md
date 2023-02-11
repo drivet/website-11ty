@@ -5,6 +5,8 @@ source: https://www.foodnetwork.com/recipes/rachael-ray/butternut-squash-mac-and
 yield: 5 servings
 tags:
 - vegetarian
+blurb: |
+  Not quite as good as regular mac and cheese but healthier
 ingredients:
 - 1 pound macaroni with lines, such as tubatini or mini penne rigate
 - Salt

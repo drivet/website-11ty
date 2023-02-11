@@ -6,6 +6,8 @@ source: http://www.cbc.ca/inthekitchen/2011/10/apple-and-cheddar-french-toast.ht
 tags:
 - breakfast
 - vegetarian
+blurb: |
+  This one is a crowd pleaser and good for brunch
 ingredients:
 - 2 apples, peeled and diced
 - Butter

@@ -5,6 +5,9 @@ yield: 4 servings
 source: http://vivalabuenavida.blogspot.com/2009/10/my-favorite-meal-chicken-picatta.html
 tags:
 - italian
+blurb: |
+  Easy recipe, but pretty rich so I don't make it that often.
+  Still good for a treat once in a while.
 ingredients:
 - 4 boneless, skinless chicken breasts, pounded until thin.
 - 4 Tablespoons Olive Oil

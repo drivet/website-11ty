@@ -7,6 +7,9 @@ tags:
 - vegetarian
 - vegan
 yield: 2 2/3 Tbsp 
+blurb: |
+  I usually buy chili powder, but occasionally I'm out, and it's not 
+  uncommon that I'll have the ingredients lying about.
 ingredients:
 - 1 Tbsp ground cumin
 - 2 tsp garlic powder

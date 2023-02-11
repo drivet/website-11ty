@@ -3,6 +3,9 @@
     <a href="/" class="u-author"></a>
     <h2 class="entry__title p-name"><a href="{{ post.url | stripExt }}" class="entry__titlelink">{{ post.data.title }}</a></h2>
   </header>
+  {% if post.data.blurb %}
+    <p>{{ post.data.blurb | safe }}</p>
+    {% endif %}
   {% if post.data.source %}
   <div>
     Source: <a class="u-remix-of" href="{{post.data.source}}">{{ post.data.source }}</a>

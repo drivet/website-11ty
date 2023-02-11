@@ -6,6 +6,7 @@ duration: 10 minutes
 yield: 2 cups
 tags:
 - vegetarian
+blurb: This is a really versatile cheese sauce that I often use with pasta
 ingredients:
 - 3 tablespoons butter
 - 3 tablespoons flour

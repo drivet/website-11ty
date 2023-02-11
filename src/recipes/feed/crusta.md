@@ -7,6 +7,9 @@ tags:
 - drinks
 - vegetarian
 - vegan
+blurb: |
+  One of my favorite cocktails. It's like a sour, but dialed back a notch so that the
+  base spirit shines through.
 ingredients:
 - 4 cl Brandy (Calvados, Whisky, etc.)
 - 1.5 tsp triple sec

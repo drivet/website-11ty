@@ -7,6 +7,10 @@ tags:
 - breakfast
 - vegetarian
 duration: 50 minutes
+blurb: |
+  This one is a favorite and a crowd pleaser.  You can use dry, fresh or frozen cranberries.
+  If you use dry cranberries, you may want to up the liquid a smidge (maybe a suple of
+  tablespoons) - they absorb a bit of the moisture.
 ingredients:
  Streusel Topping:
  - 1 tablespoon cold unsalted butter

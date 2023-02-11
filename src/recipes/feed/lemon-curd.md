@@ -6,6 +6,9 @@ tags:
 - dessert
 - vegetarian
 yield: 1.5 cups
+blurb: |
+  Delectable stuff.  One of my favorite ways to use lemons.  Excellent as a spread, on
+  oatmeal, over muffins aand scones, on cake, etc.
 ingredients: 
 - 3 large eggs
 - 1/3 cup (80 ml) fresh lemon juice (2-3 lemons) (do not use the bottled lemon juice)

@@ -8,6 +8,8 @@ tags:
 - vegetarian
 - vegan
 - soup
+blurb: |
+  Suprisingly simple and tasty.  Use good quality sesame oil.  You don't need to use Japnaese rice.
 ingredients:
 - 1 tablespoon canola oil
 - 2 teaspoons toasted sesame oil

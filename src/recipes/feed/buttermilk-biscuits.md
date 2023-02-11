@@ -6,6 +6,9 @@ tags:
 - breakfast
 - vegetarian
 duration: 22 minutes
+blurb: |
+  Good, reliable recipe for buttermilk biscuits.  If you have a clean
+  surface ready to go, these are fairly quick to make.
 ingredients:
 - 2 cups unbleached all-purpose flour, plus more for dusting the board (if you can get 
   White Lily flour, your biscuits will be even better)

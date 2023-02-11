@@ -8,6 +8,11 @@ tags:
 - ethiopian
 - vegetarian
 - vegan
+blurb: |
+  I usually buy berber spice from my local ethnic organic grocer, but this is still 
+  useful to have around in case I ever lose access to this place.  I don't think
+  it's quite authentic but would work in a  pinch.
+  
 ingredients:
 - 2 teaspoons coriander seeds
 - 1 teaspoon cumin seeds

@@ -7,6 +7,8 @@ tags:
 - drinks
 - vegetarian
 yield: 12 servings
+blurb: |
+  Delicious but very rich.  I usually reserve this for the holidays, often New Year's Eve.
 ingredients:
 - 1 1/2 cups heavy whipping cream
 - (1) 14 ounce can sweetened condensed milk

@@ -1,6 +1,11 @@
 ---
 date: '2011-11-21T23:43:58-05:00'
 title: JB's Cincinnati Chili
+blurb: |
+  This one comes from my friend JB.  I know that Cincinnati Chili can be controversial 
+  but I'm an unapologetic fan.   The trick is to manage your expectations - this is not 
+  Tex Mex chili, but rather its own thing entirely. If you imagine this dish as an 
+  exotically flavoured meat-based spaghetti sauce, you'll do much better.
 ingredients:
 - 4 cups water
 - 2 lbs ground beef, browned
