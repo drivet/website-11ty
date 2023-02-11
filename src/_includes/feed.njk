@@ -1,4 +1,8 @@
+{% if section == "posts" %}
 {% extends "blogbase.njk" %}
+{% else %}
+{% extends "base.njk" %}
+{% endif %}
 
 {% block meta %}
 <meta name="robots" content="noindex,follow" />

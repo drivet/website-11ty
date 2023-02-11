@@ -157,7 +157,7 @@ function addAllCollectionGroups(eleventyConfig) {
   addAlbumCollections(eleventyConfig);
 
   addCollectionGroup(eleventyConfig, "recipes",
-    collection => collection.getFilteredByGlob('./src/recipes/**/*.md'));
+    collection => collection.getFilteredByGlob('./src/recipes/**/*.md').reverse());
 }
 
 module.exports = {
