@@ -346,3 +346,11 @@ body {
 .breadcrums__anchor {
   text-decoration: none;
 }
+
+.recipe__ingredients-header {
+  font-weight: bold;
+}
+
+.recipe__instructions-header {
+  font-weight: bold;
+}

@@ -6,7 +6,7 @@
     <a href="/" class="u-author"></a>
     <h1 class="entry__title p-name"><a href="{{ page.url | stripExt }}" class="entry__titlelink">{{ title }}</a></h1>
   </header>
-  <div class="h-recipe">
+  <div class="h-recipe recipe">
     {% if blurb %}
     <p>{{ blurb | safe }}</p>
     {% endif %}
@@ -20,7 +20,7 @@
       Yield: <span class="p-yield">{{ yield }}</span>
     </div>
     {% endif %}
-    <p>Ingredients:</p>
+    <p class="recipe__ingredients-header">Ingredients</p>
     
     {% if ingredients | isArray %}
     <ul>
@@ -48,7 +48,7 @@
     </ul>
 
     {% endif %}
-    <p>Instructions:</p> 
+    <p class="recipe__instructions-header">Instructions</p> 
     <div class="e-instructions">
       {{ content | safe }}
     </div>
