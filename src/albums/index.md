@@ -1,6 +1,6 @@
 ---
 title: Albums
-permalink: "posts/albums/index.html"
+permalink: "albums/index.html"
 layout: "albumCollection.njk"
 eleventyNavigation:
   key: albums

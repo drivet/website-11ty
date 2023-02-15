@@ -4,7 +4,7 @@ title: "France (Fall 2003)"
 featured:
   alt: "Eiffel Tower"
   value: "https://media.desmondrivet.com/16/f3/e2/99/d8ca6fa9f37d3c600df74a94ed47e85a5726663c7fec97f9e1eec0be.jpg"
-permalink: "posts/albums/2003-france/index.html"
+permalink: "albums/2003-france/index.html"
 layout: "albumCollection.njk"
 eleventyNavigation:
   key: 2003-france

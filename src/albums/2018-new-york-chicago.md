@@ -5,7 +5,7 @@ featured:
   alt: 'Statue of Liberty'
   value: >-
     https://media.desmondrivet.com/c6/37/e0/f5/f8f78ef483bfb056756f998f1408d26255428c9fbedc4d4f4d6c6b02.jpg
-permalink: "posts/albums/2018-new-york-chicago/index.html"
+permalink: "albums/2018-new-york-chicago/index.html"
 layout: "albumCollection.njk"
 eleventyNavigation:
   key: 2018-new-york-chicago
