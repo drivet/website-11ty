@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { postTypes, getPosts } = require('../utils/helpers.js');
+const { postTypes, getPosts, getRecipes, getAlbums } = require('../utils/helpers.js');
 const { addAlbumCollections } = require('./albums.js');
 
 
@@ -142,7 +142,7 @@ function addAllCollectionGroups(eleventyConfig) {
   addCollectionGroup(eleventyConfig, "allPosts", getPosts);
 
   addCollectionGroup(eleventyConfig, "blog",
-    collection => postTypes(getPosts(collection), ["article", "note", "photo", "video", "album"]));
+    collection => postTypes(getPosts(collection), ["article", "note", "photo", "video"]));
   
   addCollectionGroup(eleventyConfig, "articles",
     collection => postTypes(getPosts(collection), ["article"]));
@@ -150,14 +150,11 @@ function addAllCollectionGroups(eleventyConfig) {
   addCollectionGroup(eleventyConfig, "bookmarks",
     collection => postTypes(getPosts(collection), ["bookmark"]));
   
-  eleventyConfig.addCollection("albums", (collection) =>
-    postTypes(getPosts(collection), ["album"])
-  );
+  eleventyConfig.addCollection("albums", getAlbums);
 
   addAlbumCollections(eleventyConfig);
 
-  addCollectionGroup(eleventyConfig, "recipes",
-    collection => collection.getFilteredByGlob('./src/recipes/**/*.md').reverse());
+  addCollectionGroup(eleventyConfig, "recipes", getRecipes);
 }
 
 module.exports = {

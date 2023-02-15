@@ -36,6 +36,14 @@ function getPosts(collection) {
   return collection.getFilteredByGlob("./src/posts/feed/**/*.md").reverse();
 }
 
+function getRecipes(collection) {
+  return collection.getFilteredByGlob("./src/recipes/feed/**/*.md").reverse();
+}
+
+function getAlbums(collection) {
+  return collection.getFilteredByGlob("./src/albums/feed/**/*.md").reverse();
+}
+
 function navigation(root, data) {
   if (!data.parent) {
     return undefined;
@@ -59,5 +67,7 @@ module.exports = {
   makePermalink,
   postTypes,
   getPosts,
+  getRecipes,
+  getAlbums,
   navigation
 }
