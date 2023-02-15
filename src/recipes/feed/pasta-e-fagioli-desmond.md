@@ -8,6 +8,7 @@ tags:
 - vegetarian
 - vegan
 - soup
+yield: 4 servings
 ingredients:
 - 2 tablespoons extra virgin olive oil, plus more for serving
 - 1 medium yellow onion, finely diced

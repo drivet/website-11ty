@@ -8,6 +8,7 @@ tags:
 blurb: |
   Not as densely sweet as some other gingerbreads.  More bready, less cakey.
   Good with ice cream.
+yield: 20 servings
 ingredients:
 - 1/4 pound (1 stick) unsalted butter
 - 1 cup sugar

@@ -10,6 +10,7 @@ source: http://southernfood.about.com/od/ricerecipes/r/bl30116d.htm
 tags:
 - vegetarian
 - vegan
+yield: 4 servings
 ingredients:
 - 1 medium chopped onion
 - 1 chopped green bell pepper

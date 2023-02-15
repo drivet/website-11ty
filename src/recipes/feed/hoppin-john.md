@@ -8,6 +8,7 @@ blurb: |
 tags:
 - vegetarian
 - vegan
+yield: 5 servings
 ingredients:
 - 1/2 pound dried black eyed peas (about 2 cups)
 - 1 green pepper, diced

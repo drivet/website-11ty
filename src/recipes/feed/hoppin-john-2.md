@@ -8,6 +8,7 @@ source: https://www.thepioneerwoman.com/food-cooking/recipes/a10902/hoppin-john/
 tags:
 - vegetarian
 - vegan
+yield: 10 servings
 ingredients:
 - 4 Tablespoons Butter
 - 1 whole Large Onion, Diced

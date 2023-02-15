@@ -6,6 +6,7 @@ blurb: |
   Good with Lemon curd.  Even better the next day
 tags:
 - dessert
+yield: 1 9x5 loaf
 ingredients:
 - 4 eggs
 - 1 cup butter

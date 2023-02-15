@@ -7,6 +7,7 @@ blurb: |
 source: http://allrecipes.com/recipe/27131/creamiest-rice-pudding/
 tags:
 - dessert
+yield: 12 servings
 ingredients:
 - 2 litres milk, minus 1/4 cup for the egg mix
 - 1 cup white sugar
