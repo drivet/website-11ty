@@ -1,7 +1,9 @@
 ---
 date: 2010-07-21T16:12:41-04:00
 title: Roman Style Chicken
-blurb: Delicious recipe for chicken.  I usually use bacon and breasts (no thighs)
+blurb: |
+  Delicious recipe for chicken.  I usually use bacon and chicken
+  breasts (no thighs)
 source: http://www.foodnetwork.com/recipes/giada-de-laurentiis/roman-style-chicken-recipe/index.html
 tags:
 - italian

@@ -6,6 +6,7 @@ blurb: |
   both vegetable and meat dishes.  This has been adapted and simplified
   from another recipe I found on the Internet.
 source: http://umamigirl.com/2011/11/best-vegetarian-gravy-recipe.html
+yield: 2 cups
 tags:
 - vegetarian
 ingredients:

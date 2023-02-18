@@ -1,6 +1,6 @@
 ---
 date: 2011-05-13T15:20:53-04:00
-title: Chili (Vegetarian #1)
+title: "Chili (Vegetarian #1)"
 blurb: Tasty, easy, quick, what more can you ask for?
 source: http://thelazyvegetarian.blogspot.com/2006/04/i-love-my-crockpot-chili-recipe.html
 tags:

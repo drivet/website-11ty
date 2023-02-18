@@ -6,6 +6,7 @@ blurb: |
   from various online sources.
 tags:
 - italian
+yield: 9 servings
 ingredients:
 - 1 jar (700ml) tomato sauce
 - 1 package (500g) cottage cheese

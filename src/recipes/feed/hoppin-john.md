@@ -1,6 +1,6 @@
 ---
 date: 2014-12-22T15:51:37-05:00
-title: Hoppin' John
+title: Hoppin' John (Desmond's version)
 blurb: |
     This is an amalgamation of various recipes I found on the Internet for 
     southern black eyed peas.  Can easily be made vegetarian by omitting 

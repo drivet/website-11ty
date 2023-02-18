@@ -5,6 +5,7 @@ blurb: Being vegetarian, this is obviously not a real meatloaf, but it's still p
 source: http://www.food.com/recipe/really-good-vegetarian-meatloaf-really-33921
 tags:
 - vegetarian
+yield: 4-6 servings
 ingredients:
 - 2 cups water
 - 1 teaspoon salt
