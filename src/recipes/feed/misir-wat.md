@@ -6,6 +6,7 @@ blurb: |
   even if you don't have niter kibbeh.
 source: https://www.daringgourmet.com/misir-wat-ethiopian-spiced-red-lentils/
 tags:
+- lentils
 - vegetarian
 - ethiopian
 ingredients:

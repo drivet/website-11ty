@@ -5,7 +5,12 @@ blurb: |
   A good recipe, if a bit more complicated then it needs to be.
 source: https://www.onceuponachef.com/recipes/pasta-fagioli.html
 tags:
+- pasta
+- beans
+- vegetarian
+- vegan
 - soup
+- italian
 duration: 45 minutes
 yield: 4 servings
 ingredients:

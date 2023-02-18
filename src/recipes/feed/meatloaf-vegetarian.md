@@ -4,6 +4,7 @@ title: Meatloaf (Vegetarian)
 blurb: Being vegetarian, this is obviously not a real meatloaf, but it's still pretty good.
 source: http://www.food.com/recipe/really-good-vegetarian-meatloaf-really-33921
 tags:
+- lentils
 - vegetarian
 yield: 4-6 servings
 ingredients:

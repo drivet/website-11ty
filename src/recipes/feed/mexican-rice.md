@@ -8,6 +8,9 @@ blurb: |
   make it vegetarian.
 source: http://southernfood.about.com/od/ricerecipes/r/bl30116d.htm
 tags:
+- mexican
+- rice
+- beans
 - vegetarian
 - vegan
 yield: 4 servings

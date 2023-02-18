@@ -6,6 +6,7 @@ blurb: |
   I've found around the Internet
 tags:
 - italian
+- rice
 ingredients:
 - 1/4 cup olive oil
 - One medium to large onion, minced

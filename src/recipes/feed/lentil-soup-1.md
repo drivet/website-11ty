@@ -5,6 +5,7 @@ title: Best Lentil Soup (Cookie and Kate)
 yield: 4 servings
 duration: 55 minutes
 tags:
+- lentils
 - soup
 - vegetarian
 - vegan

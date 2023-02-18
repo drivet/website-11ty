@@ -4,6 +4,7 @@ title: Cranberry Orange Buttermilk Muffins
 yield: 12 muffins
 source: http://www.food.com/recipe/cranberry-orange-buttermilk-muffins-142983
 tags:
+- dessert
 - breakfast
 - vegetarian
 duration: 50 minutes

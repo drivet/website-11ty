@@ -3,6 +3,7 @@ date: '2011-02-06T13:01:34-05:00'
 title: Buttermilk Biscuits
 source: http://www.food.com/recipe/southern-buttermilk-biscuits-26110
 tags:
+- sides
 - breakfast
 - vegetarian
 duration: 22 minutes

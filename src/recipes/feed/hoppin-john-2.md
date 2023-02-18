@@ -6,6 +6,7 @@ blurb: |
   Omit ham hock for vegetarian, use vegetable broth.
 source: https://www.thepioneerwoman.com/food-cooking/recipes/a10902/hoppin-john/
 tags:
+- black-eyed-peas
 - vegetarian
 - vegan
 yield: 10 servings

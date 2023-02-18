@@ -5,7 +5,9 @@ blurb: |
   A relatively simple and healthy vegetarian lasagna that I've adapted
   from various online sources.
 tags:
+- pasta
 - italian
+- vegetarian
 yield: 9 servings
 ingredients:
 - 1 jar (700ml) tomato sauce

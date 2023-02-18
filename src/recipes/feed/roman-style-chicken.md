@@ -7,6 +7,7 @@ blurb: |
 source: http://www.foodnetwork.com/recipes/giada-de-laurentiis/roman-style-chicken-recipe/index.html
 tags:
 - italian
+- chicken
 ingredients:
 - 4 skinless chicken breast halves, with ribs
 - 2 skinless chicken thighs, with bones

@@ -5,7 +5,10 @@
   </header>
   {% if post.data.blurb %}
     <p>{{ post.data.blurb | safe }}</p>
-    {% endif %}
+  {% endif %}
+  {% if post.data.featured %}
+  {% image post.data.featured.value, post.data.featured.alt, 'u-featured entry__photo image' %}
+  {% endif %}
   {% if post.data.source %}
   <div>
     Source: <a class="u-remix-of" href="{{post.data.source}}">{{ post.data.source }}</a>
@@ -16,4 +19,21 @@
     Yield: <span class="p-yield">{{ post.data.yield }}</span>
   </div> 
   {% endif %}
+
+  <footer class="entry__footer">
+    {% if post.data.tags %}
+    <p>
+      <div class="row">
+        {% if post.data.tags | length > 0 %}
+        <div class="row">
+          {% for tag in post.data.tags %}
+          <a class="p-category post-tag" href="/recipes/tags/{{tag}}.html">#{{ tag }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </p>
+    {% endif %}
+  </footer>
+
 </article>

@@ -5,9 +5,12 @@ blurb: |
   My own simplified, vegan version of Pasta e Fagioli,
   adapted from Once Upon a Chef.
 tags:
+- pasta
+- beans
 - vegetarian
 - vegan
 - soup
+- italian
 yield: 4 servings
 ingredients:
 - 2 tablespoons extra virgin olive oil, plus more for serving

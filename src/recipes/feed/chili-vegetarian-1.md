@@ -4,6 +4,7 @@ title: "Chili (Vegetarian #1)"
 blurb: Tasty, easy, quick, what more can you ask for?
 source: http://thelazyvegetarian.blogspot.com/2006/04/i-love-my-crockpot-chili-recipe.html
 tags:
+- mexican
 - vegetarian
 - vegan
 ingredients:

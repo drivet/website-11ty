@@ -3,6 +3,7 @@ date: '2020-08-03T22:20:36-04:00'
 title: Curried Eggplant
 yield: 4 servings
 tags:
+- eggplant
 - indian
 - vegetarian
 - vegan

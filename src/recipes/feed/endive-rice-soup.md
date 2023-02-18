@@ -4,6 +4,7 @@ source: https://endive.com/recipes/Endive_Rice_Soup
 title: Endive Rice Soup
 yield: 4 servings
 tags:
+- endives
 - asian
 - vegetarian
 - vegan

@@ -5,6 +5,7 @@ blurb: |
   This is my favourite lentil soup.  Healthy, easy, quick, delicious.
 source: https://ohsheglows.com/2012/11/07/spiced-red-lentil-tomato-and-kale-soup/
 tags:
+- lentils
 - vegetarian
 - vegan
 - soup

@@ -5,6 +5,7 @@ source: https://www.styleathome.com/food-and-drink/recipes/article/recipe-nigell
 tags:
 - dessert
 - cake
+- ginger
 yield: 20 servings
 blurb: |
   This one comes from Nigella Lawson.  More cake-y, less bread-y.  I've found that's 

@@ -5,6 +5,7 @@ source: http://southernfood.about.com/od/cheeserecipes/r/bl30103x.htm
 duration: 10 minutes
 yield: 2 cups
 tags:
+- cheese
 - vegetarian
 blurb: This is a really versatile cheese sauce that I often use with pasta
 ingredients:

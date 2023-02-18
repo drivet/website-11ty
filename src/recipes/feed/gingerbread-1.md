@@ -5,6 +5,7 @@ source: http://www.kitchenelly.com/2010/03/a-reliable-weapon-gingerbread/
 tags:
 - dessert
 - cake
+- ginger
 blurb: |
   Not as densely sweet as some other gingerbreads.  More bready, less cakey.
   Good with ice cream.

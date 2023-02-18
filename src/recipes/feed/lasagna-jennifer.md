@@ -4,7 +4,9 @@ title: Jennifer's Lasagna
 blurb: |
   This one comes from my friend Jennifer.
 tags:
+- pasta
 - vegetarian
+- italian
 ingredients:
 - 1 aubergine, cut into 1 cm cubes
 - 1 onion, diced

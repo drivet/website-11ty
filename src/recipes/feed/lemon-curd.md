@@ -3,6 +3,7 @@ date: '2010-07-21T16:13:28-04:00'
 title: Lemon Curd
 source: http://www.joyofbaking.com/LemonCurd.html
 tags:
+- lemon
 - dessert
 - vegetarian
 yield: 1.5 cups

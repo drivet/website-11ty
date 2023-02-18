@@ -4,9 +4,9 @@ title: Tourtiere
 blurb: The classic French-Canadian meat pie
 source: http://www.simplebites.net/how-to-makeclassic-tourtiere-qubec-pork-pie/
 tags:
-- christmas
-- dinner
 - pie
+- pork
+- beef
 yield: 2 9-inch pies
 ingredients:
 - 2 1/2 pounds ground pork (or beef, or a mix), ideally organic & local

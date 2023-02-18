@@ -4,6 +4,7 @@ title: Apple Cheddar French Toast
 yield: 4 servings
 source: http://www.cbc.ca/inthekitchen/2011/10/apple-and-cheddar-french-toast.html
 tags:
+- apples
 - breakfast
 - vegetarian
 blurb: |

@@ -4,6 +4,8 @@ title: Butternut Squash Mac and Cheese
 source: https://www.foodnetwork.com/recipes/rachael-ray/butternut-squash-mac-and-cheese-recipe-1916479
 yield: 5 servings
 tags:
+- cheese
+- pasta
 - vegetarian
 blurb: |
   Not quite as good as regular mac and cheese but healthier

@@ -5,6 +5,7 @@ blurb: I'll sometimes make these if I have some leftover ricotta that I want to 
 source: https://www.thekitchn.com/recipe-fluffy-ricotta-pancakes-48085
 tags:
 - breakfast
+- ricotta
 yield: 8 pancakes
 ingredients:
 - 1 cup ricotta cheese

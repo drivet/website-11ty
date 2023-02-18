@@ -4,6 +4,7 @@ title: Chicken Picatta
 yield: 4 servings
 source: http://vivalabuenavida.blogspot.com/2009/10/my-favorite-meal-chicken-picatta.html
 tags:
+- chicken
 - italian
 blurb: |
   Easy recipe, but pretty rich so I don't make it that often.

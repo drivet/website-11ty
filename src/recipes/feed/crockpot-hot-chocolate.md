@@ -3,6 +3,7 @@ date: '2014-12-17T23:11:17-05:00'
 title: Best Ever Creamy Crockpot Cocoa
 source: http://www.onegoodthingbyjillee.com/2014/12/best-ever-creamy-crockpot-cocoa-an-ipad-mini-giveaway.html
 tags:
+- chocolate
 - dessert
 - drinks
 - vegetarian

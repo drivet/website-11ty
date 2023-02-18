@@ -6,6 +6,7 @@ blurb: |
     southern black eyed peas.  Can easily be made vegetarian by omitting 
     the bacon and using vegetable broth.
 tags:
+- black-eyed-peas
 - vegetarian
 - vegan
 yield: 5 servings

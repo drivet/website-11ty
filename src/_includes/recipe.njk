@@ -52,6 +52,21 @@
     <div class="e-instructions">
       {{ content | safe }}
     </div>
-  </div>
+    <footer class="entry__footer">
+    {% if tags %}
+    <p>
+      <div class="row">
+        {% if tags | length > 0 %}
+        <div class="row">
+          {% for tag in tags %}
+          <a class="p-category post-tag" href="/recipes/tags/{{tag}}.html">#{{ tag }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </p>
+    {% endif %}
+  </footer>
+  </div>  
 </main>
 {% endblock %}

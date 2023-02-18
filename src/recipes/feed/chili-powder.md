@@ -3,6 +3,7 @@ date: '2012-06-10T12:18:39-04:00'
 title: Chili Powder
 source: http://culinaryarts.about.com/od/glossary/g/Chili-Powder.htm
 tags:
+- mexican
 - spices
 - vegetarian
 - vegan

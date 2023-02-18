@@ -3,6 +3,7 @@ date: 2012-02-12T18:38:41-05:00
 title: "Chili (Vegetarian #2)"
 blurb: Another chili recipe, with diced tomatoes so it's chunkier
 tags:
+- mexican
 - vegetarian
 - vegan
 ingredients:
