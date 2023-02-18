@@ -1,6 +1,6 @@
 ---
 date: 2020-05-16T12:17:34-04:00
-title: Niter Kibbeh
+title: Niter Kibbeh (Ethiopian spiced butter)
 blurb: Ethiopian spiced butter, used to make Misir Wat and other dishes
 source: https://www.daringgourmet.com/niter-kibbeh-ethiopian-spiced-clarified-butter/
 tags:

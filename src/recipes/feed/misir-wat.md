@@ -1,6 +1,6 @@
 ---
 date: 2020-05-16T12:13:40-04:00
-title: Misir Wat (Ethiopian Spiced Lentils)
+title: Misir Wat (Ethiopian spiced lentils)
 blurb: |
   This is one of my favourite lentil dishes.  Absolutely delicious, 
   even if you don't have niter kibbeh.

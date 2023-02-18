@@ -1,6 +1,6 @@
 ---
 date: 2015-05-11T14:27:11-04:00
-title: Mexican Rice (My version)
+title: Mexican Rice (Desmond's version)
 blurb: |
   Adapted from various sources around the Internet. I add beans, 
   to make it more meal-like, not just a side dish.  I don't bother 
