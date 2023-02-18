@@ -2088,4 +2088,11 @@ results:
     'https://github.com/drivet/website-11ty/edit/main/./src/posts/albums/2005-jackie-visit/middle-east.md': {}
   2007/06/12/glider-album: {}
   2004/08/01/quebec-city: {}
+  albums/2003-france/:
+    'https://www.11ty.dev/': {}
+    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous':
+      status_code: 201
+      location: 'https://webmention.io/marksuth.dev/webmention/ZkyQXK6YNR0bZuUGErZ_'
+    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next': {}
+    'https://github.com/drivet/website-11ty/edit/main/./src/albums/2003-france.md': {}
 site_url: 'https://desmondrivet.com'
