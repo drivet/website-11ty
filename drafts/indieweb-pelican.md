@@ -1,7 +1,7 @@
 ---
 date: 2019-03-09 20:04:45-05:00
 modified: 2019-03-09 20:04:45-05:00
-status: draft
+post-status: draft
 title: Indieweb and Pelican
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2019-07-02 12:00:00-04:00
-status: draft
+post-status: draft
 title: Hot and Cold Observables
 ---
 

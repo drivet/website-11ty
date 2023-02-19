@@ -1,7 +1,7 @@
 ---
 date: 2018-10-09 13:50:46-04:00
 modified: 2018-10-09 13:50:46-04:00
-status: draft
+post-status: draft
 title: On Religious Neutrality and Fashion Choices
 ---
 

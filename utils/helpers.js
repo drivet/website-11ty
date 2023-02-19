@@ -29,11 +29,14 @@ function makePermalink(page) {
 }
 
 function postTypes(collection, postTypes) {
-  return collection.filter((item) => postTypes.includes(item.data.postType));
+  return collection.filter(item => postTypes.includes(item.data.postType));
 }
 
 function getPosts(collection) {
-  return collection.getFilteredByGlob("./src/posts/feed/**/*.md").reverse();
+  return collection.getFilteredByGlob("./src/posts/feed/**/*.md")
+                   .filter(item => process.env['ELEVENTY_ENV'] === 'development' || 
+                           item.data['post-status'] !== 'draft')
+                   .reverse();
 }
 
 function getRecipes(collection) {
