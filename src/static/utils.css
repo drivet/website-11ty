@@ -15,6 +15,10 @@
     gap: 1em;
 }
 
+.row--center {
+    justify-content: center;
+}
+
 .row--extra-spacious {
     gap: 1.5em;
 }

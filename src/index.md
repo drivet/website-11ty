@@ -24,7 +24,7 @@ sort of thing interests you.
 
 There's actually a fair bit of content on this site:
 
-* a [blog][3], where I publish random thoughts on a semi-regular basis
+* a collection of [posts][3], where I publish random thoughts on a semi-regular basis
 * a [set of curated photo albums][4]
 * my [recipe collection][7]
 * various [selected pages][5] from my old sites
@@ -37,21 +37,21 @@ probably the best way to contact me.
 I consider this website to be my main online platform, but you can find me
 elswhere on the web as well:
 
-<div class="row row--spacious">
+<div class="row row--spacious row--center">
     <a href="http://www.facebook.com/desmond.rivet" title="Facebook" rel="me">
-        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-facebook-square fa-lg"></i>
     </a>
     <a href="https://www.instagram.com/thegreatdesmondo/" title="Instagram" rel="me">
-        <i class="fab fa-instagram"></i>
+        <i class="fab fa-instagram fa-lg"></i>
     </a> 
     <a href="http://www.twitter.com/desmondrivet" title="Twitter" rel="me">
-        <i class="fab fa-twitter"></i>
+        <i class="fab fa-twitter fa-lg"></i>
     </a>
     <a href="https://github.com/drivet" title="Github" rel="me">
-        <i class="fab fa-github"></i>
+        <i class="fab fa-github fa-lg"></i>
     </a>
     <a href="http://ca.linkedin.com/in/desmondrivet" title="LinkedIn" rel="me">
-        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-linkedin-in fa-lg"></i>
     </a>
 </div>
 
@@ -59,7 +59,7 @@ elswhere on the web as well:
 
 [1]: /about
 [2]: /colophon
-[3]: /posts/blog/
+[3]: /posts/lifestream/
 [4]: /posts/albums/
 [5]: /oldsite/
 [6]: /now

@@ -117,7 +117,8 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addFilter("postPermalink", page => `${makePermalink(page, false)}.html`);
-  eleventyConfig.addFilter("date", d => dateFormat(d, 'YYYY-MM-DD h:mm A Z'));
+  //eleventyConfig.addFilter("date", d => dateFormat(d, 'YYYY-MM-DD h:mm A Z'));
+  eleventyConfig.addFilter("date", d => dateFormat(d, 'dddd, MMMM D, h:mm A Z'));
 
   eleventyConfig.addFilter("webmentionsForUrl", webmentionsForUrl);
   eleventyConfig.addFilter("webmentionKind", webmentionKind);

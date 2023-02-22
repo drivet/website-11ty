@@ -4,9 +4,14 @@
 <header class="secondary-header">
   <nav class="navbar" aria-label="feed navigation">
     <ul class="row">
+      <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'lifestream' }}">
+        <a href="/posts/lifestream" class="navbar__link row row--comfy">
+          <i class="far fa-newspaper"></i> <span class="feed__navname">Lifestream</span>
+        </a>
+      </li> 
       <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'blog' }}">
-        <a href="/posts/blog" class="navbar__link row row--comfy">
-          <i class="far fa-newspaper"></i> <span class="feed__navname">Blog</span>
+        <a href="/posts/articles" class="navbar__link row row--comfy">
+          <i class="fa fa-pen-nib"></i> <span class="feed__navname">Blog</span>
         </a>
       </li>
       <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'links' }}">

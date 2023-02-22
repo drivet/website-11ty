@@ -1,13 +1,13 @@
 ---
 pagination:
-  data: collections.blog_tagPages
+  data: collections.lifestream_tagPages
   size: 1
   alias: p
 permalink: "{{tagUrlPrefix}}/{{ p.name }}{% if p.page %}{{ p.page + 1 }}{% endif %}.html"
 layout: "collection.njk"
-tagUrlPrefix: "/posts/blog/tags"
+tagUrlPrefix: "/posts/lifestream/tags"
 eleventyComputed:
-  title: "Tagged {{ p.name }} (Blog)"
+  title: "Tagged {{ p.name }} (Lifestream)"
 ---
 
 {% include 'tag.njk' %}

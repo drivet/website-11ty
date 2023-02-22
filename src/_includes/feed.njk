@@ -31,7 +31,7 @@
           </div>
         </div>
       </div>
-      <div class="feed__description">{{ description }}</div>
+      <div class="feed__description">{{ description  | safe }}</div>
     </header>
   {{ content | safe }}
   </div>

@@ -141,7 +141,7 @@ function addCollectionGroup(eleventyConfig, name, collectionFn) {
 function addAllCollectionGroups(eleventyConfig) {
   addCollectionGroup(eleventyConfig, "allPosts", getPosts);
 
-  addCollectionGroup(eleventyConfig, "blog",
+  addCollectionGroup(eleventyConfig, "lifestream",
     collection => postTypes(getPosts(collection), ["article", "note", "photo", "video"]));
   
   addCollectionGroup(eleventyConfig, "articles",

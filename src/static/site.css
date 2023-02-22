@@ -133,11 +133,7 @@ body {
 
 .feed__description {
   font-style: italic;
-  margin-bottom: 3em;
-}
-
-.feed__summary {
-  margin-bottom: 3em;
+  margin-bottom: 6em;
 }
 
 .feed-extra__label {
