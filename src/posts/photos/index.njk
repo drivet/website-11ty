@@ -1,0 +1,28 @@
+---
+title: Photos
+description: |
+  <p>Posts where the photo is main focus.  </p>
+  
+  <p>If you find yourself perusing my <a href="/posts/blog/">blog<a/> and 
+  <a href="/posts/notes/">notes as well</a>, you may be 
+  interested in my <a  href="/posts/lifestream/">lifestream</a>, which
+  combines them.<p>
+pagination:
+  data: collections.photos
+  size: 25
+permalink: "/posts/photos/index{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"
+layout: "feed.njk"
+rss: "/posts/feed_photos.xml"
+tagurl: "/posts/photos/tags/"
+archiveurl: "/posts/photos/archives/"
+navname: photos
+---
+
+<ul class="content-list">
+{% asyncEach post in pagination.items %}
+<li class="content-list__item content-list__item--separator content-list__item--spacious">
+{% include "post-entry.njk" %}
+</li>
+{% endeach %}
+</ul>
+{% include "pagination-nav.njk" %}

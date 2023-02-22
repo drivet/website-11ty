@@ -149,7 +149,22 @@ function addAllCollectionGroups(eleventyConfig) {
 
   addCollectionGroup(eleventyConfig, "bookmarks",
     collection => postTypes(getPosts(collection), ["bookmark"]));
+
+  addCollectionGroup(eleventyConfig, "notes",
+    collection => postTypes(getPosts(collection), ["note"]));
   
+  addCollectionGroup(eleventyConfig, "photos",
+    collection => postTypes(getPosts(collection), ["notes"]));
+
+  addCollectionGroup(eleventyConfig, "likes",
+    collection => postTypes(getPosts(collection), ["like"]));
+  
+  addCollectionGroup(eleventyConfig, "reposts",
+    collection => postTypes(getPosts(collection), ["repost"]));
+
+  addCollectionGroup(eleventyConfig, "replies",
+    collection => postTypes(getPosts(collection), ["reply"]));
+
   eleventyConfig.addCollection("albums", getAlbums);
 
   addAlbumCollections(eleventyConfig);

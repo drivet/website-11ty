@@ -1,0 +1,13 @@
+---
+pagination:
+  data: collections.likes_tagPages
+  size: 1
+  alias: p
+permalink: "{{tagUrlPrefix}}/{{ p.name }}{% if p.page %}{{ p.page + 1 }}{% endif %}.html"
+layout: "collection.njk"
+tagUrlPrefix: "/posts/likes/tags"
+eleventyComputed:
+  title: "Tagged {{ p.name }} (Likes)"
+---
+
+{% include 'tag.njk' %}

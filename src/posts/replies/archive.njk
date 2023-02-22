@@ -1,0 +1,13 @@
+---
+pagination:
+  data: collections.replies_archivePages
+  size: 1
+  alias: p
+permalink: "{{archiveUrlPrefix}}/{{ p.name }}/index{% if p.page %}{{ p.page + 1 }}{% endif %}.html"
+layout: "collection.njk"
+archiveUrlPrefix: "/posts/replies"
+eleventyComputed:
+   title: "Archives for {{ p.name }} (Replies)"
+---
+
+{% include 'archive.njk' %}
