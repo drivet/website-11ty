@@ -25,14 +25,14 @@ tagIndexData:
   tagUrlPrefix: posts/reposts/tags
   collection: reposts
 - title: Tags (Likes)
-  tagUrlPrefix: posts/Likes/tags
+  tagUrlPrefix: posts/likes/tags
   collection: likes
 - title: Tags (All)
   tagUrlPrefix: posts/tags
   collection: all
 ---
 {% set metadata = pagination.items[0]%}
-{% extends "blogbase.njk" %}
+{% extends "base.njk" %}
 
 {% block meta %}
 <meta name="robots" content="noindex,follow" />

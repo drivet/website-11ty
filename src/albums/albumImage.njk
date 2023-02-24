@@ -5,7 +5,7 @@ pagination:
   alias: p
 permalink: "{{ p.permalink }}.html"
 ---
-{% extends "blogbase.njk" %}
+{% extends "base.njk" %}
 {% from "entry-header.njk" import entryheader %}
 {% block content %}
 {% set date = p.date %}

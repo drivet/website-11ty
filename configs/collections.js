@@ -142,7 +142,7 @@ function addAllCollectionGroups(eleventyConfig) {
   addCollectionGroup(eleventyConfig, "allPosts", getPosts);
 
   addCollectionGroup(eleventyConfig, "lifestream",
-    collection => postTypes(getPosts(collection), ["article", "note", "photo", "video"]));
+    collection => postTypes(getPosts(collection), ["article", "note", "video"]));
   
   addCollectionGroup(eleventyConfig, "articles",
     collection => postTypes(getPosts(collection), ["article"]));
@@ -154,7 +154,7 @@ function addAllCollectionGroups(eleventyConfig) {
     collection => postTypes(getPosts(collection), ["note"]));
   
   addCollectionGroup(eleventyConfig, "photos",
-    collection => postTypes(getPosts(collection), ["notes"]));
+    collection => postTypes(getPosts(collection), ["photo"]));
 
   addCollectionGroup(eleventyConfig, "likes",
     collection => postTypes(getPosts(collection), ["like"]));

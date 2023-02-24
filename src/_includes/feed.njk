@@ -1,4 +1,8 @@
+{% if secondarynavoff %}
 {% extends "base.njk" %}
+{% else %}
+{% extends "basepost.njk" %}
+{% endif %}
 
 
 {% block meta %}
