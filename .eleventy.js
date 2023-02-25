@@ -59,6 +59,8 @@ function sydicationsForUrl(wmresults, url) {
 function synIcon(url) {
   if (url.startsWith('https://twitter.com')) {
     return 'fab fa-twitter';
+  } else if (url.startsWith('https://indieweb.social')) {
+    return 'fab fa-mastodon';
   } else {
     return 'fas fa-external-link-alt';
   }
