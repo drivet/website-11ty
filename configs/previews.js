@@ -237,7 +237,7 @@ async function prepareMetadataPreview(scraped) {
       favicon: meta?.favicon
     }
   };
-  cacheImages(preview);
+  await cacheImages(preview);
   return preview;
 }
 
