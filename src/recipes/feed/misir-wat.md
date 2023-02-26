@@ -17,7 +17,7 @@ ingredients:
 - 3 tablespoons tomato paste
 - 2 tablespoons bebere (homemade strongly recommended), divided
 - 1 cup red lentils, rinsed
-- 2 1/2 cups Aneto All-Natural Chicken Broth (vegetarians: use Aneto Vegetable Broth)
+- 2 1/2 cups Aneto All-Natural Chicken Broth (vegetarians use Aneto Vegetable Broth)
 - 1 teaspoon salt
 ---
 

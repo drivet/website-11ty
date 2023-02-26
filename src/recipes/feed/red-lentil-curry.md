@@ -26,7 +26,7 @@ ingredients:
 - 2 tsp garam masala
 - 1/2 tsp salt
 - 1 tsp paprika
-- 1 cup dried red lentils, riced
+- 1 cup dried red lentils, rinced
 - 1 400ml can coconut milk
 - 1 cup water
 ---
@@ -37,7 +37,7 @@ on medium heat.
 Transfer the spices to a mortar and pestle.  Remove the seeds from the
 cardamom and discard the shells. Coarsely crush the spices.  Set aside.
 
-Put olive in saute pan and turn up heat to medium.  Saute onion in oil for
+Put olive oil in saute pan and turn up heat to medium.  Saute onion in oil for
 2-3 minutes.  Add garlic and chili peppers (if using) and saute for 2
 minutes.
 
