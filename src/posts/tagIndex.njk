@@ -27,9 +27,12 @@ tagIndexData:
 - title: Tags (Likes)
   tagUrlPrefix: posts/likes/tags
   collection: likes
+- title: Tags (Lifestream)
+  tagUrlPrefix: posts/lifestream/tags
+  collection: lifestream
 - title: Tags (All)
   tagUrlPrefix: posts/tags
-  collection: all
+  collection: allPosts
 ---
 {% set metadata = pagination.items[0]%}
 {% extends "base.njk" %}
