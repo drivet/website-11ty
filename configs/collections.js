@@ -170,6 +170,12 @@ function addAllCollectionGroups(eleventyConfig) {
   addAlbumCollections(eleventyConfig);
 
   addCollectionGroup(eleventyConfig, "recipes", getRecipes);
+
+  eleventyConfig.addCollection("searchDocs", collectionApi => {
+    const posts = getPosts(collectionApi);
+    const recipes = getRecipes(collectionApi);
+    return [...posts, ...recipes];
+  });
 }
 
 module.exports = {

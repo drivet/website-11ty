@@ -26,7 +26,7 @@ function searchFilter(collection) {
       'bookmark-of': page.data['bookmark-of'],
       'in-reply-of': page.data['in-reply-of'],
       ingredients: page.data.ingredients,
-      content: post.templateContent 
+      content: page.templateContent 
     });
   });
 
