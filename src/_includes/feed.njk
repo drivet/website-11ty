@@ -12,27 +12,32 @@
 {% block content %}
 <main class="main">
   <div class="h-feed feed">
-    <header>
-      <div class="row">
+    <header class="feed__header">    
         <h1>{{ title }}</h1>
-        <div class="row__item--right">
-          <div class="row row--spacious">
-            <a class="feed-extra" title="Tags" href="{{tagurl}}">
-              <span class="fa fa-tags"></span>
-              <span class="feed-extra__label">Tags</span>
-            </a>
-            <a class="feed-extra" title="Archives" href="{{archiveurl}}">
-              <span class="fa fa-archive"></span>
-              <span class="feed-extra__label">Archives</span>
-            </a>
-            <a class="feed-extra" title="Subscribe" href="{{rss}}">
-              <span class="fa fa-rss-square"></span>
-              <span class="feed-extra__label">Subscribe</span>
-            </a>
-          </div>
+
+        <div class="feed__description">{{ description  | safe }}</div>
+
+        <div class="row row--spacious content">
+          {% if search %}
+          <form action="/search.html" method="get">
+            <input class="feed__search row__item" type="search" 
+                   placeholder="Search..." id="searchField" name="searchField"/>
+            <input type="hidden" name="searchRoot" value="{{searchRoot}}"/>
+          </form>
+          {% endif %}
+          <a class="feed-extra row__item" title="Tags" href="{{tagurl}}">
+            <span class="fa fa-tags"></span>
+            <span class="feed-extra__label">Tags</span>
+          </a>
+          <a class="feed-extra row__item" title="Archives" href="{{archiveurl}}">
+            <span class="fa fa-archive"></span>
+            <span class="feed-extra__label">Archives</span>
+          </a>
+          <a class="feed-extra row__item" title="Subscribe" href="{{rss}}">
+            <span class="fa fa-rss-square"></span>
+            <span class="feed-extra__label">Subscribe</span>
+          </a>  
         </div>
-      </div>
-      <div class="feed__description">{{ description  | safe }}</div>
     </header>
   {{ content | safe }}
   </div>

@@ -133,6 +133,16 @@ body {
 
 .feed__description {
   font-style: italic;
+}
+
+.feed__search {
+  width: 150px;
+  height: 26px;
+  border: 1px solid rgb(80, 80, 80);
+  border-radius: 6px;
+}
+
+.feed__header {
   margin-bottom: 6em;
 }
 

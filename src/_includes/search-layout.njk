@@ -1,0 +1,16 @@
+{% extends "base.njk" %}
+
+{% block meta %}
+<meta name="robots" content="noindex,follow" />
+{% endblock %}
+
+{% block content %}
+<main class="main">
+  <div>
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+    {{ content | safe }}
+  </div>
+</main>
+{% endblock content %}

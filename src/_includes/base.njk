@@ -45,6 +45,11 @@
   {% if global.WEBMENTION_ENDPOINT %}
   <link rel="webmention" href="{{ global.WEBMENTION_ENDPOINT }}"/>
   {% endif %}
+ 
+  {% for script in scripts %}
+  <script type="{{script.type}}" src="{{script.src}}"></script>
+  {% endfor %}
+
 </head>
 <body>  
   <header class="main-header">

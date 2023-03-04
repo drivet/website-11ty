@@ -61,6 +61,11 @@
     padding-bottom: 3em;
 }
 
+.content {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .dont-break-out {
     /* These are technically the same, but use both */
     overflow-wrap: break-word;

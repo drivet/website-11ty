@@ -1,0 +1,63 @@
+---
+title: Search results
+permalink: "/search.html"
+layout: "search-layout.njk"
+scripts:
+- type: text/javascript
+  src: https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js
+- type: text/javascript
+  src: https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.min.js
+- type: text/javascript
+  src: /static/js/searchResults.js
+---
+{% raw %}
+<script id="searchResultsTemplate-recipes" type="text/x-mustache-template">
+  {{#hasResults}}
+  <p class="feed__header">Results for {{field}} in {{root}}</p>
+  <ul class="content-list">
+    {{#results}}
+    <li class="content-list__item">
+      <h3><a href="{{id}}">{{title}}</a></h3>
+      {{blurb}}
+    </li>
+    {{/results}}
+  </ul>
+  {{/hasResults}}
+
+  {{^results}}
+  <p>No results found.</p>
+  {{/results}}
+</script>
+
+<script id="searchResultsTemplate-posts" type="text/x-mustache-template">
+  {{#hasResults}}
+  <p class="feed__header">Results for {{field}} in {{root}}</p>
+  <ul class="content-list">
+    {{#results}}
+    <li class="content-list__item">
+      <span class="entry__headerline">
+        <a class="entry__published dt-published" href="{{ id }}">{{ date  }}</a>
+      </span>
+      
+      {{#refLink}}
+      <p>
+        {{refLinkType}} <a href="{{refLink}}">{{refLink}}</a>
+      </p>
+      {{/refLink}}
+
+      {{#title}}
+      <h3><a href="{{id}}">{{title}}</a></h3>
+      {{/title}}
+      
+      {{{truncated}}}
+    </li>
+    {{/results}}
+  </ul>
+  {{/hasResults}}
+
+  {{^results}}
+  <p>No results found.</p>
+  {{/results}}
+</script>
+{% endraw %}
+<div id="searchResults" />

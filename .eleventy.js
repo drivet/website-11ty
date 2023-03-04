@@ -12,7 +12,7 @@ const { imageConfig } = require('./configs/image.js');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { enhanceNavigation, photoUrlSlug } = require('./configs/albums.js');
 const { inspect } = require('util');
-const { searchFilter } = require('./configs/search.js');
+const { searchIdxPosts, searchIdxRecipes } = require('./configs/search.js');
 
 function webmentionsForUrl(webmentions, url) {
   if (!webmentions) {
@@ -119,7 +119,6 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addFilter("postPermalink", page => `${makePermalink(page, false)}.html`);
-  //eleventyConfig.addFilter("date", d => dateFormat(d, 'YYYY-MM-DD h:mm A Z'));
   eleventyConfig.addFilter("date", d => dateFormat(d, 'MMM D, YYYY, h:mm A Z'));
 
   eleventyConfig.addFilter("webmentionsForUrl", webmentionsForUrl);
@@ -158,7 +157,8 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addFilter('enhanceNavigation', enhanceNavigation);
-  eleventyConfig.addFilter("search", searchFilter);
+  eleventyConfig.addFilter("searchIdxPosts", searchIdxPosts);
+  eleventyConfig.addFilter("searchIdxRecipes", searchIdxRecipes);
 
   eleventyConfig.setTemplateFormats([
     "md",
@@ -175,7 +175,8 @@ module.exports = (eleventyConfig) => {
     "eot",
     "ttf",
     "woff",
-    "woff2"
+    "woff2",
+    "js"
   ]);
   
   previewConfig(eleventyConfig);
