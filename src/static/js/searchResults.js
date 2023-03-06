@@ -18,6 +18,13 @@
     }
   };
 
+  const summarize = (html) => {
+    const tmp = document.createElement("DIV");
+    tmp.innerHTML = html;
+    const text = tmp.textContent || tmp.innerText || "";
+    return text.length <= 200 ? text : text.slice(0, 200) + '[...]';
+  };
+
   const search = () => {
     const field = urlParams.get('searchField');
     const results = window.searchIndex.search(field);
@@ -29,11 +36,11 @@
       results: results.map(r => ({
         id: r.doc.id,
         title: r.doc.title,
-        blurb: r.doc.blurb,
+        blurb: summarize(r.doc.blurb),
         date: r.doc.date,
         refLinkType: refLinkType(r.doc.postType),
         refLink: r.doc.refLink,
-        truncated: r.doc.content.length <= 200 ? r.doc.content : r.doc.content.slice(0, 200) + '[...]'
+        truncated: summarize(r.doc.content)
       }))
     });
 
