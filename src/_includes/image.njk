@@ -1,7 +1,10 @@
 {% if photoObj.value and photoObj.alt %}
+  <!-- image url: {{photoObj.value}} -->
   {% image photoObj.value, photoObj.alt, img_classes %}
 {% elif photoObj.value %}
+  <!-- image url: {{photoObj.value}} -->
   {% image photoObj.value, "post photo", img_classes %}
 {% else %}
+  <!-- image url: {{photoObj}}-->
   {% image photoObj, "post photo", img_classes %}
 {% endif %}

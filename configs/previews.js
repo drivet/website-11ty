@@ -5,6 +5,7 @@ const Image = require('@11ty/eleventy-img');
 const slugify = require('slugify');
 const clone = require('clone');
 const fs = require('fs');
+const debug = require('debug')('previews');
 
 let scraped = null;
 
@@ -17,20 +18,20 @@ function loadScraped() {
     return scraped;
   }
 
-  console.log('scraped data not loaded, loading...');
+  debug('scraped data not loaded, loading...');
   const filePath = `${CACHE_DIR}/scraped.json`
   if (fs.existsSync(filePath)) {
     const cacheFile = fs.readFileSync(filePath)
     scraped = JSON.parse(cacheFile);
   } else {
-    console.warn('no scraped cache, initializing...');
+    debug('no scraped cache, initializing...');
     scraped = {};
   }
   return scraped;
 }
 
 function saveScraped() {
-  console.log('saving scraped...');
+  debug('saving scraped...');
   const filePath = `${CACHE_DIR}/scraped.json`
   const fileContent = JSON.stringify(scraped, null, 2);
   // create cache folder if it doesnt exist already
@@ -109,9 +110,9 @@ async function cachePreviewImage(url, widths, format) {
     return stats[format][0].url;
   } catch (e) {
     if (url.startsWith('http:') || url.startsWith('https:')) {
-      console.warn(`could not process preview image ${url}, ${JSON.stringify(e)}`);
+      debug(`could not process preview image ${url}, ${e.message}`);
     } else {
-      console.warn(`could not process non-http URL`);
+      debug(`could not process non-http URL`);
     }
     return url;
   }
