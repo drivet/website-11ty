@@ -60,7 +60,7 @@ elswhere on the web as well:
 [1]: /about
 [2]: /colophon
 [3]: /posts/lifestream/
-[4]: /posts/albums/
+[4]: /albums/
 [5]: /oldsite/
 [6]: /now
 [7]: /recipes/
