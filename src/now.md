@@ -23,10 +23,8 @@ So, currently, my life looks roughly like this:
    reading a book, cooking, baking or playing around with [stately][3] and
    [boardgame.io][2], trying to capture the rules of various board games I
    own.
- * Television: currently obsessed with The Expanse, Mr. Robot, The Wheel of
-   Time.
- * Books: currently obsessed with The Expanse, The Broken Earth, His Dark
-   Materials.
+ * Television: Star Trek: Picard
+ * Books: currently obsessed with The Expanse, The Broken Earth.
 
 [1]: https://indieweb.org/Now
 [2]: https://boardgame.io/
