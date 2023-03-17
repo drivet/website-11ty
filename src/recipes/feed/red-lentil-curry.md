@@ -1,6 +1,6 @@
 ---
 date: 2023-02-21T19:45:29-05:00
-title: Red Lentil Curry
+title: Red Lentil Curry (Yeung Man Cooking Version)
 blurb: Easy and tasty.  This is quickly becoming a staple dish.
 source: https://www.youtube.com/watch?v=vDS9JZfEnuY
 yield: 4 servings
