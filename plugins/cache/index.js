@@ -3,7 +3,8 @@ const folders = [
     './_cache/previews',
     './_cache/avatars',
     './_cache/scraped',
-    './_cache/images'
+    './_cache/images',
+    './_site'
 ];
 module.exports = {
     // Before the build runs,
