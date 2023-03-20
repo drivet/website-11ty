@@ -6,7 +6,7 @@ tags:
 - programming
 blurb: "#TypeScript enums are kind of weird"
 mp-syndicate-to:
-- twitter_bridgy
+- twitter
 ---
 
 I'm a pretty big fan of [TypeScript][1], probably best described as a

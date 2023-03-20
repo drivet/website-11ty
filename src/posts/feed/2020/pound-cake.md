@@ -7,7 +7,7 @@ tags:
   - recipes
 title: On Being Vaguely Obsessed With Pound Cake
 mp-syndicate-to:
-  - twitter_bridgy
+  - twitter
 ---
 
 When it comes to food and drink, I tend to lean towards the simple.  Or,

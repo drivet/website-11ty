@@ -7,7 +7,7 @@ tags:
   - indieweb
   - blogging
 mp-syndicate-to:
-  - twitter_bridgy
+  - twitter
 ---
 
 If you're a programmer of a certain age, you've either read or know about

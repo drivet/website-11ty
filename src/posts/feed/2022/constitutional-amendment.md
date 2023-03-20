@@ -3,7 +3,7 @@ date: 2022-05-04T21:23:30-04:00
 title: "Prohibition Was a Constitutional Amendment"
 blurb: "Constitutions are a lot more malleable than I would like"
 mp-syndicate-to:
-- twitter_bridgy
+- twitter
 tags: society
 ---
 

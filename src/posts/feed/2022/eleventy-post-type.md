@@ -7,7 +7,7 @@ tags:
 - indieweb
 - blogging
 mp-syndicate-to:
-- twitter_bridgy
+- twitter
 ---
 
 As [mentioned previously][1], I recently converted my website over to
@@ -36,7 +36,7 @@ blurb: 'The ins and outs of owning your bookmarks on the #indieweb'
 tags:
   - indieweb
 mp-syndicate-to:
-  - twitter_bridgy
+  - twitter
 ---
 
 Like many Indieweb participants, I post...

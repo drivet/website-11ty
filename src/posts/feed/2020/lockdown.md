@@ -6,7 +6,7 @@ tags:
   - covid-19
 title: Things I Learned In Lockdown
 mp-syndicate-to:
-  - twitter_bridgy
+  - twitter
 ---
 
 While it's perhaps inaccurate to call the current Covid-19 crisis

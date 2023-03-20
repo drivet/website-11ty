@@ -2,7 +2,7 @@
 title: Changes To Post Organization
 date: 2022-03-21T06:53:22-04:00
 mp-syndicate-to:
-- twitter_bridgy
+- twitter
 tags:
 - blogging
 - indieweb

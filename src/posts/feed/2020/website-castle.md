@@ -6,7 +6,7 @@ tags:
   - indieweb
 title: Your Website Is Your Castle
 mp-syndicate-to:
-  - twitter_bridgy
+  - twitter
 ---
 
 In a [previous blog post][1], I gave a very brief introduction to the

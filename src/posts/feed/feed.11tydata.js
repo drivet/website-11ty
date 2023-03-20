@@ -14,12 +14,10 @@ function bridgyMentions(data) {
 
   return syndicationTokens.
     map(s => {
-      if (s === 'twitter_bridgy_no_link') {
-        return 'https://brid.gy/publish/twitter?bridgy_omit_link=true'
-      } else if (s === 'twitter_bridgy_maybe_link') {
+      if (s === 'twitter') {
         return 'https://brid.gy/publish/twitter?bridgy_omit_link=maybe'
-      } else if (s === 'twitter_bridgy') {
-        return 'https://brid.gy/publish/twitter'
+      } else if (s === 'mastodon') {
+        return 'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe'
       } else {
         return undefined;
       }

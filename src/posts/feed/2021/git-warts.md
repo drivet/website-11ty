@@ -4,7 +4,7 @@ date: 2021-08-26T01:17:13.000Z
 modified: 2021-08-26T01:17:13.000Z
 title: Git is Terrible
 mp-syndicate-to:
-  - twitter_bridgy
+  - twitter
 tags:
   - programming
 ---

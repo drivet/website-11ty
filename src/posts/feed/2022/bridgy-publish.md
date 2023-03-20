@@ -2,7 +2,7 @@
 date: 2022-03-10T12:13:37-05:00
 in-reply-to: https://twitter.com/FalconSensei/status/1501967593363558415
 mp-syndicate-to:
-- twitter_bridgy_no_link
+- twitter
 tags:
 - indieweb
 ---

@@ -7,7 +7,7 @@ tags:
   - indieweb
 title: On Gardens and Streams
 mp-syndicate-to:
-  - twitter_bridgy
+  - twitter
 ---
 
 I attended my first [IndieWebCamp session][1] last week, on the subject of

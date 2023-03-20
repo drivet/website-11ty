@@ -6,7 +6,7 @@ blurb: 'The ins and outs of owning your bookmarks on the #indieweb'
 tags:
   - indieweb
 mp-syndicate-to:
-  - twitter_bridgy
+  - twitter
 ---
 
 Like many Indieweb participants, I post [bookmarks][1], [likes][2] and

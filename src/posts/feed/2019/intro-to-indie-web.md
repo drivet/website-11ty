@@ -6,7 +6,7 @@ tags:
   - indieweb
 title: In the Beginning Was the Website
 mp-syndicate-to:
-  - twitter_bridgy
+  - twitter
 ---
 
 I don't think I've ever felt quite as old as I felt when, last year, I

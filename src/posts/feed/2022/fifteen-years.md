@@ -3,7 +3,7 @@ date: 2022-06-01T08:44:30-04:00
 title: "Fifteen Years of Blogging"
 blurb: "Fifteen years ago today, I started blogging"
 mp-syndicate-to:
-- twitter_bridgy
+- twitter
 tags:
 - blogging
 ---

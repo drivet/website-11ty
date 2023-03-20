@@ -4,7 +4,7 @@ title: "Link Contexts In Eleventy"
 blurb: "An #indieweb aware approach to unfurling URLs in @eleven_ty"
 post-status: draft
 mp-syndicate-to:
-- twitter_bridgy
+- twitter
 tags:
 - eleventy
 - indieweb

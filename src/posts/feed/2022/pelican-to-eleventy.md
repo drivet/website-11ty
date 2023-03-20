@@ -7,7 +7,7 @@ tags:
 - eleventy
 - blogging
 mp-syndicate-to:
-- twitter_bridgy
+- twitter
 ---
 
 After roughly [five years][1], I've finally decided to switch my blog over

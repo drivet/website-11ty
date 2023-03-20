@@ -7,7 +7,7 @@ tags:
   - indieweb
 title: Pieces of Thinking
 mp-syndicate-to:
-  - twitter_bridgy
+  - twitter
 ---
 
 [Jan-Lukas Else][1] recently [asked the Hacker News community][2] why most

@@ -3,7 +3,7 @@ date: 2023-02-19T17:11:29-05:00
 title: "The Popular Vote as a Psychological Coping Mechanism"
 blurb: "Why I don't care so much about the popular vote"
 mp-syndicate-to:
-- twitter_bridgy
+- twitter
 tags: 
 - politics
 ---

@@ -2,7 +2,7 @@
 title: "Taming Eleventy Tags: Or How I Learned To Tolerate Double Pagination"
 date: 2022-03-23T15:33:00-04:00
 mp-syndicate-to:
-- twitter_bridgy
+- twitter
 tags:
 - blogging
 - eleventy

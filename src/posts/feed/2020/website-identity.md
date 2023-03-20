@@ -6,7 +6,7 @@ tags:
   - indieweb
 title: Your Website Is Your Passport
 mp-syndicate-to:
-  - twitter_bridgy
+  - twitter
 ---
 
 One of the themes that crops up again and again in the [IndieWeb][1]

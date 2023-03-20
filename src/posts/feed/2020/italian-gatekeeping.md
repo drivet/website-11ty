@@ -6,7 +6,7 @@ tags:
   - cooking
 title: On Carrots in Tomato Sauce
 mp-syndicate-to:
-  - twitter_bridgy
+  - twitter
 ---
 
 Not long ago, I joined an Italian cooking group on Facebook.  I thought it
