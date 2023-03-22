@@ -45,7 +45,7 @@ python and can be installed easily via [pip][15].
 Though these libraries are usually available via the package management
 system of your favourite Linux distribution, and though I'm normally an
 advocate of using a Linux distribution's packaging system wherever possible,
-the versions on PyPI, installed via pip, are much more up-to-date are much
+the versions on PyPI, installed via pip, are much more up-to-date and are much
 more likely to work.  Plus, using pip makes it easier to use
 [virtualenv][4], if that's your thing (which it should be, unless you're
 using [docker][5], which is on my list of things to try out).
