@@ -2056,61 +2056,13 @@ results:
     'https://brid.gy/publish/mastodon':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/109925838754750846'
-  posts/albums/2005-jackie-visit/england/:
-    'https://www.instagram.com/thegreatdesmondo/': {}
-    'https://github.com/drivet': {}
-    'https://www.11ty.dev/': {}
-    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous':
-      status_code: 201
-      location: 'https://webmention.io/vreeman.com/webmention/dQL2RhfBe64yJkudkBV7'
-    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next':
-      status_code: 201
-      location: 'https://webmention.io/rasulkireev.com/webmention/r6GvE_osqSZXEyB5A2ud'
-    'https://github.com/drivet/website-11ty/edit/main/./src/posts/albums/2005-jackie-visit/england.md': {}
-  posts/albums/2005-jackie-visit/:
-    'https://www.instagram.com/thegreatdesmondo/': {}
-    'https://github.com/drivet': {}
-    'https://www.11ty.dev/': {}
-    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous': {}
-    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next':
-      status_code: 201
-      location: >-
-        https://webmention.io/alexandr-sidorenko.me/webmention/dXY84tveiKzFT9xD04cv
-    'https://github.com/drivet/website-11ty/edit/main/./src/posts/albums/2005-jackie-visit/index.md': {}
-  posts/albums/2013-lyon/:
-    'https://www.instagram.com/thegreatdesmondo/': {}
-    'https://github.com/drivet': {}
-    'https://www.11ty.dev/': {}
-    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous':
-      status_code: 201
-      location: 'https://webmention.io/weisser-zwerg.dev/webmention/amJA_noq1eWokvubsSJm'
-    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next':
-      status_code: 202
-    'https://github.com/drivet/website-11ty/edit/main/./src/posts/albums/2013-lyon.md': {}
-  posts/albums/2005-jackie-visit/middle-east/:
-    'https://www.instagram.com/thegreatdesmondo/': {}
-    'https://github.com/drivet': {}
-    'https://www.11ty.dev/': {}
-    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous':
-      status_code: 202
-    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next':
-      status_code: 201
-      location: 'https://webmention.io/smurygin.com/webmention/k72MWuvBdOeJnwbjQ4dN'
-    'https://github.com/drivet/website-11ty/edit/main/./src/posts/albums/2005-jackie-visit/middle-east.md': {}
-  2007/06/12/glider-album: {}
-  2004/08/01/quebec-city: {}
-  albums/2003-france/:
-    'https://www.11ty.dev/': {}
-    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/previous':
-      status_code: 201
-      location: 'https://webmention.io/marksuth.dev/webmention/ZkyQXK6YNR0bZuUGErZ_'
-    'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next': {}
-    'https://github.com/drivet/website-11ty/edit/main/./src/albums/2003-france.md': {}
   2023/03/22/211802:
     'https://brid.gy/publish/twitter?bridgy_omit_link=maybe':
-      status_code: 403
+      status_code: 201
+      location: https://twitter.com/desmondrivet/status/1638719825332826113
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
-      status_code: 403
+      status_code: 201
+      location: https://indieweb.social/@desmondrivet/110070083815090768
   2023/03/22/160204:
     'https://werd.io/2022/the-fediverse-and-the-indieweb':
       status_code: 202
