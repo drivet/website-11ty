@@ -2106,4 +2106,33 @@ results:
       location: 'https://webmention.io/marksuth.dev/webmention/ZkyQXK6YNR0bZuUGErZ_'
     'https://xn--sr8hvo.ws/%F0%9F%91%A8%E2%80%8D%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%92%8B%E2%80%8D%F0%9F%91%A8%F0%9F%98%A4%F0%9F%94%BB/next': {}
     'https://github.com/drivet/website-11ty/edit/main/./src/albums/2003-france.md': {}
+  2023/03/22/211802:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=maybe':
+      status_code: 403
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 403
+  2023/03/22/160204:
+    'https://werd.io/2022/the-fediverse-and-the-indieweb':
+      status_code: 202
+    'https://werd.io/profile/benwerd':
+      status_code: 202
+  2023/03/14/005320:
+    'https://twitter.com/culturaltutor/status/1625024395960807424?t=MQxrtImIUWRj2Emy7X2Emw&s=19': {}
+  2023/03/09/120147:
+    'https://set.studio/some-simple-ways-to-make-content-look-good/': {}
+  2023/03/04/134856:
+    'https://www.theguardian.com/commentisfree/2023/mar/04/the-joy-of-mediocrity-we-need-hobbies-even-if-were-bad-at-them-to-free-us-from-perfection': {}
+  2023/03/02/222859:
+    'https://indieweb.social/@johanbove/109955475813359665': {}
+  2023/03/01/231554:
+    'https://social.johanbove.info/2023/03/01/i-dont-think-anybody-would-miss-my':
+      status_code: 202
+    'https://social.johanbove.info/profile/johan':
+      status_code: 202
+  2023/02/28/071500:
+    'https://islandinthenet.com/corn-meal-porridge/':
+      status_code: 200
+  2023/02/23/210045:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=maybe':
+      status_code: 400
 site_url: 'https://desmondrivet.com'
