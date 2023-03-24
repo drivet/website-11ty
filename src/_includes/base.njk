@@ -1,7 +1,12 @@
+{% from "pagetitle.njk" import pagetitle %}
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <head>
-  <title>{% block title %}{{ title }} - {{ global.SITENAME }}{% endblock %}</title>
+  <title>
+    {% block title %}
+    {{ pagetitle(title, postType, content) }} - {{ global.SITENAME }}
+    {% endblock %}
+  </title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">

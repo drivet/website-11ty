@@ -1,0 +1,9 @@
+{% macro pagetitle(title, postType, content) %}
+{% if title %}
+{{ title }}
+{% elif content %}
+{{ content | striptags | truncate(100) }}
+{% else %}
+{{ postType | title }}
+{% endif %}
+{% endmacro %}
