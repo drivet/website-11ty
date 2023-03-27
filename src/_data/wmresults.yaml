@@ -2087,4 +2087,10 @@ results:
   2023/02/23/210045:
     'https://brid.gy/publish/twitter?bridgy_omit_link=maybe':
       status_code: 400
+  2023/03/27/144324:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=maybe':
+      status_code: 400
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/110096769777640453'
 site_url: 'https://desmondrivet.com'
