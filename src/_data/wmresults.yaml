@@ -2059,10 +2059,10 @@ results:
   2023/03/22/211802:
     'https://brid.gy/publish/twitter?bridgy_omit_link=maybe':
       status_code: 201
-      location: https://twitter.com/desmondrivet/status/1638719825332826113
+      location: 'https://twitter.com/desmondrivet/status/1638719825332826113'
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
-      location: https://indieweb.social/@desmondrivet/110070083815090768
+      location: 'https://indieweb.social/@desmondrivet/110070083815090768'
   2023/03/22/160204:
     'https://werd.io/2022/the-fediverse-and-the-indieweb':
       status_code: 202
@@ -2087,4 +2087,9 @@ results:
   2023/02/23/210045:
     'https://brid.gy/publish/twitter?bridgy_omit_link=maybe':
       status_code: 400
+  2023/03/27/144324:
+    'https://brid.gy/publish/twitter?bridgy_omit_link=maybe':
+      status_code: 400
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 403
 site_url: 'https://desmondrivet.com'
