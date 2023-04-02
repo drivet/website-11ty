@@ -2096,7 +2096,8 @@ results:
       location: 'https://indieweb.social/@desmondrivet/110096769777640453'
   2023/04/02/123549:
     'https://brid.gy/publish/twitter?bridgy_omit_link=maybe':
-      status_code: 400
+      status_code: 201
+      location: 'https://twitter.com/desmondrivet/status/1642574047257980934?t=f35PeCbF1QsTsmhYYK16dQ&s=19'
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/110130202625756253'
