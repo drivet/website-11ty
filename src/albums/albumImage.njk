@@ -4,6 +4,8 @@ pagination:
   size: 1
   alias: p
 permalink: "{{ p.permalink }}.html"
+eleventyComputed:
+  title: "{{p.title}} / {{p.slug}}"
 ---
 {% extends "base.njk" %}
 {% from "entry-header.njk" import entryheader %}
