@@ -38,18 +38,21 @@ I consider this website to be my main online platform, but you can find me
 elswhere on the web as well:
 
 <div class="row row--spacious row--center">
-    <a href="http://www.facebook.com/desmond.rivet" title="Facebook" rel="me">
-        <i class="fab fa-facebook-square fa-lg"></i>
+    <a href="https://indieweb.social/@desmondrivet" title="Twitter" rel="me">
+        <i class="fab fa-mastodon fa-lg"></i>
     </a>
-    <a href="https://www.instagram.com/thegreatdesmondo/" title="Instagram" rel="me">
-        <i class="fab fa-instagram fa-lg"></i>
-    </a> 
     <a href="http://www.twitter.com/desmondrivet" title="Twitter" rel="me">
         <i class="fab fa-twitter fa-lg"></i>
     </a>
     <a href="https://github.com/drivet" title="Github" rel="me">
         <i class="fab fa-github fa-lg"></i>
     </a>
+    <a href="http://www.facebook.com/desmond.rivet" title="Facebook" rel="me">
+        <i class="fab fa-facebook-square fa-lg"></i>
+    </a>
+    <a href="https://www.instagram.com/thegreatdesmondo/" title="Instagram" rel="me">
+        <i class="fab fa-instagram fa-lg"></i>
+    </a> 
     <a href="http://ca.linkedin.com/in/desmondrivet" title="LinkedIn" rel="me">
         <i class="fab fa-linkedin-in fa-lg"></i>
     </a>

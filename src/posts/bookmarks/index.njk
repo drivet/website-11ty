@@ -15,11 +15,4 @@ archiveurl: "/posts/bookmarks/archives/"
 navname: links
 ---
 
-<ul class="content-list">
-{% asyncEach post in pagination.items %}
-<li class="content-list__item content-list__item--separator content-list__item--spacious">
-{% include "post-entry.njk" %}
-</li>
-{% endeach %}
-</ul>
-{% include "pagination-nav.njk" %}
+{% include "feed-list.njk" %}
