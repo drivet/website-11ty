@@ -10,9 +10,6 @@ album: true
 photo:
   - alt: ''
     value: >-
-      https://media.desmondrivet.com/65/aa/3e/fc/8d6a2a0c20e37c189ecc298b702ab67ad8910f386c572c1d169bf028.jpg
-  - alt: ''
-    value: >-
       https://media.desmondrivet.com/4a/6e/47/50/0ea6d055e8f8c01de31d6f8297f49942cba2cb557b9cb17ff4fb33d5.jpg
   - alt: ''
     value: >-
@@ -20,9 +17,6 @@ photo:
   - alt: ''
     value: >-
       https://media.desmondrivet.com/74/13/4b/d8/731eecf3e52d523c1427a8c8708799cc63ce44ded7f41c04ef1e6993.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/d7/57/5b/31/6cc20d60a3ae223f35bc70cb053a0ff044417141761b461dd2afa77e.jpg
   - alt: ''
     value: >-
       https://media.desmondrivet.com/8a/eb/18/0b/9488bdae5a45a0244d54633f085c7c619d16246f75ba4e0253261681.jpg
@@ -64,13 +58,7 @@ photo:
       https://media.desmondrivet.com/21/02/b4/fe/a47c176ddbf9004cb269cd2d6d31967e6c7a704d1595c4a89e2988c0.jpg
   - alt: ''
     value: >-
-      https://media.desmondrivet.com/1a/36/58/c8/63e244fe52a56d4f0fe06452b68f2b6c489dda92d02c7068d66eec8b.jpg
-  - alt: ''
-    value: >-
       https://media.desmondrivet.com/1c/53/39/73/c70413092658611dc3b9386e25566c374b0328e8cae097d8eaf67935.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/35/d9/53/41/0b035676d05eccfa57d39afa4881d077177d0794ca897cc3a81d1b25.jpg
 ---
 
 I won a trip on a glider.  I took these pictures through the sweat on my palms and forehead.
