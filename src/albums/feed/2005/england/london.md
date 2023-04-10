@@ -9,16 +9,7 @@ album: true
 photo:
   - alt: ''
     value: >-
-      https://media.desmondrivet.com/ee/25/9a/95/dc1bed948c0b81d8272e027c7065699968a47e5bd0cba98cccd16c88.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/02/a2/d6/21/73dc324cb39cefb151cb47d4cf32f00fb6619b383442962ead204ff7.jpg
-  - alt: ''
-    value: >-
       https://media.desmondrivet.com/6e/d7/b0/62/7987e37043e65789b693316fd739b5242f7f2fe3c3c5e09fd60512a1.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/75/2c/92/45/4315ad758ab9da0fc594d82b5973689995f495ee7f313cbf5ea4999c.jpg
   - alt: ''
     value: >-
       https://media.desmondrivet.com/81/73/b3/be/6edfa671467ba8ce1c5bb6e90bc9a5e573d91c7f2b838cb37b2e43f0.jpg
@@ -54,19 +45,10 @@ photo:
       https://media.desmondrivet.com/e8/f9/bb/f6/59e22ea44de10b2da260b215c00ac54603cfe815b2966fd62b55f3dc.jpg
   - alt: ''
     value: >-
-      https://media.desmondrivet.com/bd/b9/2c/ea/66e98462d0038f5b0d3726ff987f3da07cc7f9e3a193d7c126d1b8bf.jpg
-  - alt: ''
-    value: >-
       https://media.desmondrivet.com/39/bd/84/d1/ad0043a1656e7c2b96f1d14263e490596d474cc3b373334024f1f60e.jpg
   - alt: ''
     value: >-
       https://media.desmondrivet.com/28/42/08/f1/9755dd4a8861138bd0bf80fff5a625317f91692f16bc85413d4fd0d5.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/5a/1d/a0/fc/b372dcaeaf0d8249cffe36ec154bd8aa8ced5e9acd71a55b1a29e653.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/bf/70/b6/8e/8a8c78fc7e408ce0805a42f7aee117190486e4e35ca289fcfce0eb95.jpg
   - alt: ''
     value: >-
       https://media.desmondrivet.com/90/e5/05/b5/49d2249f79cbaf909587c6fa442a549faf8d30517b6589cfa20c2d49.jpg
@@ -76,12 +58,6 @@ photo:
   - alt: ''
     value: >-
       https://media.desmondrivet.com/d7/84/91/45/e0ee51952aa768278e91e1cc48d53c8938e1ef1dff1f7cd7b4c893b2.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/72/e8/a7/07/941f7ddafdba4bbce21e6bb349d6de83e96ec0fd6e4a2a62bca30a4c.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/f0/ed/eb/73/44aadfc8db85bab2d42b828be6bb882133235a3e9b83256dec60638b.jpg
   - alt: ''
     value: >-
       https://media.desmondrivet.com/5a/a9/0d/4a/f74ec70dd0273a7629baead312e42f03bbade8e8ae1cb5a34be25187.jpg
@@ -103,15 +79,6 @@ photo:
   - alt: ''
     value: >-
       https://media.desmondrivet.com/6a/54/d7/fe/b6220e4a5a08ff3924f00d699642025c02aefaf2614b9bdb656c167f.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/cb/6b/f9/20/3b0da381fc99f0ebf6e8da9afdc6912b143413dd49bd6fd7d54e1886.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/2d/c6/6a/f7/ee31d1e0b9c0e9ca03bd13fbe316997f9f56b349f9b43e9bee66304f.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/3d/6c/98/d1/fca361924b6f607b7914e2881d11ef3270800f3208240c75645f3583.jpg
   - alt: ''
     value: >-
       https://media.desmondrivet.com/18/e6/f2/66/69e4686bcfb0d2118e822edf3a148f695875868e08c94107636520cf.jpg
