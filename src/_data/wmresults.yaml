@@ -2111,7 +2111,8 @@ results:
     'https://fedi.tips/what-other-kinds-of-servers-are-on-the-fediverse/': {}
   2023/04/19/101856:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
-      status_code: 403
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/110225937975853457'
     'https://mastodon.social/@john_fisherman/110224246899618915': {}
     'https://desmondrivet.com':
       status_code: 201
