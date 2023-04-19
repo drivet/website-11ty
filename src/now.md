@@ -16,15 +16,15 @@ So, currently, my life looks roughly like this:
 
  * I live in the Saint-Henri neighbourhood of Montreal, in an old, large
    Edwardian apartment.
- * I work as a software developer at Unity Technologies, doing mostly data
+ * Currently trying to replace the rusted out railing on my front porch.
+ * I work as a senior software developer at Unity Technologies, doing mostly data
    and billing related tasks.  The languages I use most often in my job at
    the moment are Typescript, JavaScript, Python and SQL.
  * When I'm not working I'm usually tinkering with my website, watching TV,
-   reading a book, cooking, baking or playing around with [stately][3] and
-   [boardgame.io][2], trying to capture the rules of various board games I
-   own.
- * Television: Star Trek: Picard
- * Books: currently obsessed with The Expanse, The Broken Earth.
+   reading a book, cooking, or baking.
+ * Current television obsessions: Star Trek: Picard.
+ * Current book obsessions: *The Broken Earth* trilogy.
+ * Want to learn: ML/AI, photography, graphic design, Cloud basics. 
 
 [1]: https://indieweb.org/Now
 [2]: https://boardgame.io/
