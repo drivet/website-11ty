@@ -2109,4 +2109,11 @@ results:
     'https://social.platypush.tech/@cambridgeport90/110141072688298642': {}
   2023/04/08/143155:
     'https://fedi.tips/what-other-kinds-of-servers-are-on-the-fediverse/': {}
+  2023/04/19/101856:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 403
+    'https://mastodon.social/@john_fisherman/110224246899618915': {}
+    'https://desmondrivet.com':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/oCGp5ZXV3CHnpUk-8KLK'
 site_url: 'https://desmondrivet.com'
