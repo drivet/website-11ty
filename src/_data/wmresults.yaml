@@ -2117,4 +2117,7 @@ results:
     'https://desmondrivet.com':
       status_code: 201
       location: 'https://webmention.io/desmondrivet.com/webmention/oCGp5ZXV3CHnpUk-8KLK'
+  2023/04/21/130027:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 403
 site_url: 'https://desmondrivet.com'
