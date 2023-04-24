@@ -2,7 +2,6 @@
 date: 2022-04-04T15:00:42-04:00
 title: "Link Contexts In Eleventy"
 blurb: "An #indieweb aware approach to unfurling URLs in @eleven_ty"
-post-status: draft
 mp-syndicate-to:
 - twitter
 tags:
