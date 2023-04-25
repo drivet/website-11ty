@@ -47,7 +47,7 @@ eleventyComputed:
   <div class="e-content">
     {{ content | safe }} 
     {% set photoObj = p.photo %}
-    {% set img_classes = "u-photo entry__photo image" %}
+    {% set img_classes = "u-featured u-photo entry__photo image" %}
     {% include "image.njk" %}
    </div>
 </div>

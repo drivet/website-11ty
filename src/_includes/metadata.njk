@@ -4,9 +4,6 @@
 {% if global.AUTHOR %}
 <meta name="author" content="{{ global.AUTHOR }}" />
 {% endif %}
-
-{% if postType == 'article' %}
-
 {% if description %}
 {% set m_description = description | striptags | escape | truncate(160) %}
 {% else %}
@@ -20,6 +17,9 @@
 {% if image %}
 {% set m_image = image | aUrl %}
 {% set m_large = true %}
+{% elif photo %}
+{% set m_image = (photo[0].value or photo[0]) | aUrl %}
+{% set m_large = true %}
 {% elif thumb %}
 {% set m_image = thumb | aUrl %}
 {% set m_large = false %}
@@ -30,5 +30,3 @@
 
 {% include 'opengraph.njk' %}
 {% include 'twitter.njk' %}
-
-{% endif %} {# postType == 'article' #}

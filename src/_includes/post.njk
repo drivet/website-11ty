@@ -56,7 +56,11 @@ breadcumbOptions:
         {% asyncEach photoObj in photoArg %}
           {% set obj = photoObj.value | d(photoObj) %}
           {% set alt = photoObj.alt | d('') %}
+          {% if loop.first %}
+          {% image obj, alt, "u-featured u-photo entry__photo image" %}
+          {% else %}
           {% image obj, alt, "u-photo entry__photo image" %}
+          {% endif %}
         {% endeach %}
       {% endif %}
     {% endif %}
