@@ -2139,4 +2139,8 @@ results:
       location: 'https://indieweb.social/@desmondrivet/110261215442372288'
   2023/04/26/073715:
     'https://mastodon.social/@john_fisherman/110254704190170859': {}
+  2023/04/29/154734:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/110283837984803530'
 site_url: 'https://desmondrivet.com'
