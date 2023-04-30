@@ -2143,4 +2143,7 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/110283837984803530'
+  2023/04/30/182239:
+    'https://chelseatroy.com/2022/11/25/on-the-psychology-of-tech-money/': {}
+    'https://chelseatroy.com/author/ctd524/': {}
 site_url: 'https://desmondrivet.com'
