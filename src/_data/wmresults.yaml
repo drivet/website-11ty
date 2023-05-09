@@ -2146,4 +2146,7 @@ results:
   2023/04/30/182239:
     'https://chelseatroy.com/2022/11/25/on-the-psychology-of-tech-money/': {}
     'https://chelseatroy.com/author/ctd524/': {}
+  2023/05/09/094325:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 403
 site_url: 'https://desmondrivet.com'
