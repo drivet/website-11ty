@@ -2148,5 +2148,6 @@ results:
     'https://chelseatroy.com/author/ctd524/': {}
   2023/05/09/094325:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
-      status_code: 403
+      status_code: 201
+      location: https://indieweb.social/@desmondrivet/110344393743574115
 site_url: 'https://desmondrivet.com'
