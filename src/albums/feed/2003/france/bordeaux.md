@@ -9,9 +9,6 @@ album: true
 photo:
   - alt: ''
     value: >-
-      https://media.desmondrivet.com/c1/f5/6c/d2/85f0c26688809e665ec70b0e0e34b11de720d5da8d863febfdf2eb30.jpg
-  - alt: ''
-    value: >-
       https://media.desmondrivet.com/72/b1/40/d9/562add0de065421cbe2f9109b397aaac44e05c26884a293e1579e08d.jpg
   - alt: ''
     value: >-
@@ -25,9 +22,6 @@ photo:
   - alt: ''
     value: >-
       https://media.desmondrivet.com/42/b7/e8/f1/b4a5215f6c95e0fa24ad2d59572b9ea24bc0c9342a025ea0bd83e001.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/e4/b6/5f/ee/70c9e9723360c1ed3aa4276750c32611f670f4778758d4448c61c7e9.jpg
   - alt: ''
     value: >-
       https://media.desmondrivet.com/30/8c/48/84/a2c74e280a9b6264bf3b249d25cdef0c4c9624958afd39172957ffc1.jpg

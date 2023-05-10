@@ -9,25 +9,10 @@ album: true
 photo:
   - alt: ''
     value: >-
-      https://media.desmondrivet.com/4c/24/cc/35/09a6bb5c1807131ed795b7a705080bdf5565d83a28bcee0a44b9af41.jpg
-  - alt: ''
-    value: >-
       https://media.desmondrivet.com/8c/68/ba/fe/c78e0c40f914fd260f316a089af4908eea548cdf37ea02d98e349ada.jpg
   - alt: ''
     value: >-
-      https://media.desmondrivet.com/24/a9/ab/12/e686b496d4d21cb9555633a625b48cc319c1d6f3685860583dc66442.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/50/84/88/d6/80f7ebc96dcdb2eb407b63011103b225e403c0a59665886c21d93838.jpg
-  - alt: ''
-    value: >-
       https://media.desmondrivet.com/c4/58/1f/c6/70df4e014befcb3df35beeab5b63143cd7faeff242e84af720c7f064.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/0d/e2/85/06/91bd6ece63613a7f9348e5aeec614c9fe35153377145d70247832c61.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/0a/d1/45/95/6eaddc203df9f74491ae7b4774325e03816a73ee6ad35c7f734dfa1e.jpg
   - alt: ''
     value: >-
       https://media.desmondrivet.com/64/79/a3/84/1d66fd39c66c67f5add8dcc56459ef1297c1f77004b46b72a6f4b71d.jpg

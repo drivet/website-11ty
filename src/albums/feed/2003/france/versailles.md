@@ -42,9 +42,6 @@ photo:
       https://media.desmondrivet.com/f2/dc/11/5a/372460f1d9e3daf5f05078e7703b6725436668c6acf6dfa3f4a1d7c3.jpg
   - alt: ''
     value: >-
-      https://media.desmondrivet.com/82/1a/7c/d1/df2e6cff6526b93d535b70e7885a58f5eb3720974f93d3b9e7b92f44.jpg
-  - alt: ''
-    value: >-
       https://media.desmondrivet.com/00/1b/e8/10/598caf89255b4af3d06dbce83e58b304d37dc476abe67b6fb2854585.jpg
   - alt: ''
     value: >-
@@ -64,9 +61,6 @@ photo:
   - alt: ''
     value: >-
       https://media.desmondrivet.com/f3/8e/23/df/79c7c142c4f326a7b898294bd184d3dfdf6151920922bc1bc0efd540.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/c7/33/d0/e6/cee87e6b7b2bd77127684564b4067f87c4da392859e051f3393dddbc.jpg
   - alt: ''
     value: >-
       https://media.desmondrivet.com/3c/cc/10/dc/d59945a79cc11991af318844382b377a85637c34cb7f88bbb2ee4e3e.jpg
