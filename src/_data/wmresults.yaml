@@ -2149,5 +2149,8 @@ results:
   2023/05/09/094325:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
-      location: https://indieweb.social/@desmondrivet/110344393743574115
+      location: 'https://indieweb.social/@desmondrivet/110344393743574115'
+  2023/05/27/092034:
+    'https://golmac.org/about-the-time-i-wrote-an-inform-7-game/': {}
+    'https://golmac.org/author/infocom79/': {}
 site_url: 'https://desmondrivet.com'
