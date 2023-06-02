@@ -60,4 +60,4 @@ get you in the end.
 _[As you might have guessed, Evelyn and I recently visited New York City and
 Chicago.  Photos are available in my [gallery][1]]_
 
-[1]: https://photos.desmondrivet.com/index.php?/category/53
+[1]: https://desmondrivet.com/albums/2018-new-york-chicago/
