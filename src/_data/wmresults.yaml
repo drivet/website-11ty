@@ -2161,4 +2161,9 @@ results:
     'https://www.gnu.org/software/emacs/': {}
   2023/06/18/183700:
     'https://youtu.be/Kok5RLFYtSo': {}
+  2023/06/27/110931:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/110616910509780736'
+    'https://www.currentaffairs.org/2023/06/the-perils-of-innovator-mindset': {}
 site_url: 'https://desmondrivet.com'
