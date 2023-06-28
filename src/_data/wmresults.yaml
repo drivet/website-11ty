@@ -2166,4 +2166,18 @@ results:
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/110616910509780736'
     'https://www.currentaffairs.org/2023/06/the-perils-of-innovator-mindset': {}
+  2023/06/28/104447:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/110622384107944414'
+    'https://indieweb.social/@ohhelloana@mastodon.social/110618245234039592': {}
+    'https://desmondrivet.com/2013/07/31/canada-malting.html':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/ZyoJi2Q8Duww-wc4GcPp'
+    'https://desmondrivet.com/2016/06/29/poland.html':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/85I8nNRhjX874WAb7G1i'
+    'https://desmondrivet.com/2016/04/02/on-escaping-your-past.html':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/M5OybjiRtzpBhe-3Bfxm'
 site_url: 'https://desmondrivet.com'
