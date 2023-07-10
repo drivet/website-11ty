@@ -2180,4 +2180,8 @@ results:
     'https://desmondrivet.com/2016/04/02/on-escaping-your-past.html':
       status_code: 201
       location: 'https://webmention.io/desmondrivet.com/webmention/M5OybjiRtzpBhe-3Bfxm'
+  2023/07/10/183500:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/110692180897103509'
 site_url: 'https://desmondrivet.com'
