@@ -5,6 +5,10 @@ blurb: |
   This is my preferred key lime bar recipe.
 source: https://littlespicejar.com/key-lime-pie-bars/
 yield: 16 squares
+featured:
+  alt: 'Key lime square'
+  value: >-
+    https://media.desmondrivet.com/05/f7/f2/d9/6e034629b3e11d0a49a0da79aed088469fd74a512fcbeb6cb4b518b8.jpg
 tags:
 - dessert
 - vegetarian

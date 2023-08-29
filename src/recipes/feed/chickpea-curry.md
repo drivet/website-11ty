@@ -4,6 +4,10 @@ title: Chickpea Curry
 blurb: Pretty tasty one pot chickpea curry, though I find the crunchy spices a bit weird
 source: https://rainbowplantlife.com/chickpea-curry
 yield: 6 servings
+featured:
+  alt: 'Chickpea curry with rice'
+  value: >-
+    https://media.desmondrivet.com/01/89/6b/3b/c3f22a9134b97ccadd67dd9e4c3d60e80a7087f628db9689fd7c0452.jpg
 tags:
 - indian
 - vegetarian

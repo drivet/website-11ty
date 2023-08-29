@@ -2139,4 +2139,49 @@ results:
       location: 'https://indieweb.social/@desmondrivet/110261215442372288'
   2023/04/26/073715:
     'https://mastodon.social/@john_fisherman/110254704190170859': {}
+  2023/04/29/154734:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/110283837984803530'
+  2023/04/30/182239:
+    'https://chelseatroy.com/2022/11/25/on-the-psychology-of-tech-money/': {}
+    'https://chelseatroy.com/author/ctd524/': {}
+  2023/05/09/094325:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/110344393743574115'
+  2023/05/27/092034:
+    'https://golmac.org/about-the-time-i-wrote-an-inform-7-game/': {}
+    'https://golmac.org/author/infocom79/': {}
+  2023/05/30/enjoy-coding:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/110460490573043169'
+    'https://orgmode.org/': {}
+    'https://www.gnu.org/software/emacs/': {}
+  2023/06/18/183700:
+    'https://youtu.be/Kok5RLFYtSo': {}
+  2023/06/27/110931:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/110616910509780736'
+    'https://www.currentaffairs.org/2023/06/the-perils-of-innovator-mindset': {}
+  2023/06/28/104447:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/110622384107944414'
+    'https://indieweb.social/@ohhelloana@mastodon.social/110618245234039592': {}
+    'https://desmondrivet.com/2013/07/31/canada-malting.html':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/ZyoJi2Q8Duww-wc4GcPp'
+    'https://desmondrivet.com/2016/06/29/poland.html':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/85I8nNRhjX874WAb7G1i'
+    'https://desmondrivet.com/2016/04/02/on-escaping-your-past.html':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/M5OybjiRtzpBhe-3Bfxm'
+  2023/07/10/183500:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/110692180897103509'
 site_url: 'https://desmondrivet.com'

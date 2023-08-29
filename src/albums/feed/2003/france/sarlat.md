@@ -46,14 +46,5 @@ photo:
   - alt: ''
     value: >-
       https://media.desmondrivet.com/24/6c/26/22/01ba6495ec38b6746f7f6b3c53470c057ce197093e0d478b24f4d33f.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/15/cb/c5/07/324c6ea270c1f30f89734c56fd491aa9941daa83f65521f2b48ac068.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/14/78/c7/c0/af3ed0b73eb5080e2dc6a134b6d6d95ae5241874f8acb9742b664bea.jpg
-  - alt: ''
-    value: >-
-      https://media.desmondrivet.com/14/c9/6a/48/fdc66b60116ad76cbc6d0735a38f114c4c912959c2174d44c09ddfdb.jpg
 ---
 
