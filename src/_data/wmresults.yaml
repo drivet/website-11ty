@@ -2184,4 +2184,9 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/110692180897103509'
+  2023/08/28/world-library:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/110970602070427675'
+    'https://www.imdb.com/title/tt26242614/': {}
 site_url: 'https://desmondrivet.com'
