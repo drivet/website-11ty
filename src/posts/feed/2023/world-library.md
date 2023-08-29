@@ -4,7 +4,6 @@ title: "A Library of the World"
 blurb: "Having a library is a privilege"
 mp-syndicate-to:
 - mastodon
-tags: 
 ---
 
 I recently saw [Umberto Eco: A Library of the World][1], a documentary about
