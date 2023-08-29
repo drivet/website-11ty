@@ -2,7 +2,6 @@
 date: 2023-08-28T22:33:32-04:00
 title: "A Library of the World"
 blurb: "Having a library is a privilege"
-post-status: draft
 mp-syndicate-to:
 - mastodon
 tags: 
