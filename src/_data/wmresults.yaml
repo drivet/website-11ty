@@ -2216,4 +2216,9 @@ results:
     'https://roamresearch.com/': {}
     'https://www.orgroam.com/': {}
     'https://todoist.com/': {}
+  2023/09/15/064124:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/111068750656605535'
+    'https://nerdculture.de/@titaniumbiscuit/111067559683462120': {}
 site_url: 'https://desmondrivet.com'
