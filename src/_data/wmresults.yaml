@@ -2197,4 +2197,23 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/111060534591930492'
+  2023/09/14/plain-text:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/111066276767360167'
+    'https://blosxom.sourceforge.net/': {}
+    'https://getpelican.com/': {}
+    'https://www.11ty.dev/': {}
+    'https://www.mysql.com/': {}
+    'https://wordpress.com/': {}
+    'https://en.wikipedia.org/wiki/ASCII': {}
+    'https://daringfireball.net/projects/markdown/': {}
+    'https://asciidoc.org/': {}
+    'https://docutils.sourceforge.io/rst.html': {}
+    'https://orgmode.org/': {}
+    'https://www.gnu.org/software/emacs/': {}
+    'https://obsidian.md/': {}
+    'https://roamresearch.com/': {}
+    'https://www.orgroam.com/': {}
+    'https://todoist.com/': {}
 site_url: 'https://desmondrivet.com'
