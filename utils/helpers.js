@@ -34,8 +34,6 @@ function postTypes(collection, postTypes) {
 
 function getPosts(collection) {
   return collection.getFilteredByGlob("./src/posts/feed/**/*.md")
-                   .filter(item => process.env['ELEVENTY_ENV'] === 'development' || 
-                           item.data['post-status'] !== 'draft')
                    .reverse();
 }
 
@@ -45,6 +43,11 @@ function getRecipes(collection) {
 
 function getAlbums(collection) {
   return collection.getFilteredByGlob("./src/albums/feed/**/*.md").reverse();
+}
+
+function getDrafts(collection) {
+  return collection.getFilteredByGlob("./src/drafts/**/*.md")
+                   .reverse();
 }
 
 function navigation(root, data) {
@@ -72,5 +75,6 @@ module.exports = {
   getPosts,
   getRecipes,
   getAlbums,
+  getDrafts,
   navigation
 }

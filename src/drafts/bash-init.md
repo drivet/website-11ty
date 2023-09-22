@@ -1,7 +1,6 @@
 ---
 date: 2019-07-23 07:53:05-04:00
 modified: 2019-07-23 07:53:05-04:00
-post-status: draft
 title: Notes on Bash Startup Scripts
 ---
 

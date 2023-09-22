@@ -1,7 +1,6 @@
 ---
 date: 2019-01-12 12:41:53-05:00
 modified: 2019-01-12 12:41:53-05:00
-status: draft
 title: Taming Pelican Settings
 ---
 
