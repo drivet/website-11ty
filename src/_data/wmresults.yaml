@@ -2221,4 +2221,8 @@ results:
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/111068750656605535'
     'https://nerdculture.de/@titaniumbiscuit/111067559683462120': {}
+  2023/09/24/154250:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/111121839584598767'
 site_url: 'https://desmondrivet.com'
