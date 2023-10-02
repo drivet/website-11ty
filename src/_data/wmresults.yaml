@@ -2225,4 +2225,9 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/111121839584598767'
+  2023/10/02/121935:
+    'https://adactio.com/journal/20515':
+      status_code: 202
+    'https://adactio.com/':
+      status_code: 302
 site_url: 'https://desmondrivet.com'
