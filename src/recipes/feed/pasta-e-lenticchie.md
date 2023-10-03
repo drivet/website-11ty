@@ -7,7 +7,7 @@ yield:
 tags:
 - vegetarian
 ingredients:
-- 454 g of Tubetti (about 3 cups)
+- 225 g of Tubetti (about 1.5 cups)
 - 1 cup of Lentils
 - 1 cup Tomato Puree
 - 1 carrot, Finely Diced
