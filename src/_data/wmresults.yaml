@@ -2230,4 +2230,6 @@ results:
       status_code: 202
     'https://adactio.com/':
       status_code: 302
+  2023/10/16/142300:
+    'https://lucidmanager.org/tags/emacs/': {}
 site_url: 'https://desmondrivet.com'
