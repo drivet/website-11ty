@@ -31,7 +31,9 @@
       {% image post.data.featured.value, post.data.featured.alt, 'u-featured entry__photo image' %}
     {% elif photoCount == 1 %}
       {% set photoObj = post.data.photo[0] %}
-      {% image photoObj.value | d(photoObj), photoObj.alt | d('') , "u-photo entry__photo image" %}
+      <div class="entry__photowrapper">
+        {% image photoObj.value | d(photoObj), photoObj.alt | d('') , "u-photo entry__photoclipped image" %}
+      </div>
     {% else %}
       {% set photoArg = post.data.photo | clamp(8) %}
       <div class="image-grid">

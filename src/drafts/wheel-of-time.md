@@ -7,32 +7,38 @@ mp-syndicate-to:
 tags: 
 ---
 
-
-
-If you're a fantasy aficionado you probably know about The Wheel of Time,
-Robert Jordan's enormous, sprawling epic, spanning 14 door stopping volumes
+It's safe to say that The Wheel of Time TV series, streaming on Amazon
+Prime, has divided fans of the source material, namely Robert Jordan's
+enormous, sprawling, epic book series, spanning 14 door-stopping volumes
 published over a period of 24 years (1989-2013).
 
-I myself am not a great reader of fantasy, but I do know something about
-these books, having been introduced to them in my early teens by a high
-school friend in the early nineties.  Their publication coincided with the
-popular rise of the Internet and the birth of the Web; I have many fond
-memories of scouring newsgroups and fan sites, looking for theories about
-what was going to happen in the next book.
+I would not call myself a great connoisseur of fantasy, but I do know
+something about these particular books, having been introduced to them as a
+teenager by a high school friend in the early nineties.  I have warm
+memories of the series, and less warm memories of the tense, multi-year
+waits in between instalments.
 
-My fascination with the series lasted until book nine, by which point I gave
-up.  The infamous slog had begun, and I was knee deep in it.  It felt like
-Robert Jordan had lost control of the story.  It became clear to me that he
-didn't what to do with all the loose threads he had created.  I still kept
-up with what happened after, and I know Brandon Sanderson picked up the
-baton after Jordan died, but I never read anything after that.
+Their publication also coincided with the birth of the Web and the
+popularization of the Internet that came with that.  It's impossible for me
+to separate my memories of these books from my memories of scouring
+WOT-themed newsgroups and fan sites, often over dial-up, looking for
+plausible answers to the various plot mysteries that had maddeningly
+accumulated over the years.
+
+I lasted until book nine, at which point I gave up.  The infamous slog had
+begun, and I was knee deep in it.  Sometime after book six, it became clear
+to me that Robert Jordan didn't what to do with all the loose narrative
+threads he had created, and I despaired of them being resolved in a
+satisfactory manner.  He eventually died without finishing his life's work.
+I know Brandon Sanderson picked up the baton after Jordan died, but I never
+finished reading the series.
 
 I say all this to give you some sense of my relationship to these books - my
 credentials, if you will.  I'm a fan, but I'm not an *uber* fan.  I haven't
 even read the whole series *once*, let alone multiple times.  I liked the
-books a lot, and it definitely made an impression on my teenage mind, but I
-can't say that I *loved* them.  I am (or at least was) an *enthusiastic* fan
-but I'm not an *obsessive* one.  Keep that in mind for what comes next.
+books a lot, and they definitely left an impression on my teenage mind, but
+I can't say that I *loved* them.  I am (or at least was) an *enthusiastic*
+fan but I'm not an *obsessive* one.  Keep that in mind for what follows.
 
 ## The Difficulty of Adapting *The Wheel Of Time*
 
@@ -55,9 +61,9 @@ are reasons it's been deemed unfilmable.
 So much of the series is *invisible*.  Aes Sedai in the book are famously
 composed, almost Vulcan-like.  Warders, or at least Lan, are famously stoic.
 A lot of the so-called dialogue consists of people talking to themselves.
-And don't get me started on the background.  Half of the story takes place
-in the insanely comprehensive glossary at the back of each book, before the
-meat of the plot even begins.
+And don't get me started on the background material.  Half of the story
+takes place in the insanely comprehensive glossary at the back of each book,
+before the meat of the plot even begins.
 
 Add to this: the books are full of characters who often appear in one or two
 chapters, and then don't get mentioned again until several (long) books
@@ -69,14 +75,14 @@ between seasons.
 And it's not just characters - some important artifacts are given the same
 treatment as well.  Case in point (and major spoiler warning): the Choedan
 Kal are briefly seen in book 2, are not mentioned again until book 4, and
-aren't actually used for anything until book 9.  How exactly does this
-translate to TV?  Are you supposed to mention something once in season 2
-and then not mention it again until season 4?
+aren't actually used for anything interesting until book 9.  How exactly
+does this translate to TV?  Are you supposed to mention something once in
+season 2 and then not mention it again until season 4?
 
 (The thing is, the show actually did this with the introduction of Dain
-Bornhald.  He's the son of a character that appears in one episode from last
-season.  I can't imagine anyone remembers him.  It's frankly a weak
-introduction).
+Bornhald in season 2.  He's the son of a character that appears in one
+episode from season one.  I can't imagine anyone remembers him.  It's
+frankly a weak introduction).
 
 In addition, the vibe of first book is very different from the rest of the
 series, and the ending of first *three* books basically consists of the same

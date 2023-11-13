@@ -175,6 +175,26 @@ body {
   color: var(--color);
 }
 
+.entry__photowrapper {
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+
+.entry__photoclipped {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0,-50%);
+  height: auto;
+  width: 100%;
+  display: block;
+  margin-bottom: 1em;
+}
+
 .entry__photo {
   border-radius: 10px;
   max-width: 100%;
