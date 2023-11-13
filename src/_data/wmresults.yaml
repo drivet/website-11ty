@@ -2230,4 +2230,10 @@ results:
       status_code: 202
     'https://adactio.com/':
       status_code: 302
+  2023/10/16/142300:
+    'https://lucidmanager.org/tags/emacs/': {}
+  2023/11/03/221421:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/111349870321942586'
 site_url: 'https://desmondrivet.com'
