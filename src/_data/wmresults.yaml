@@ -2236,4 +2236,16 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/111349870321942586'
+  2023/12/05/gtd-org-mode:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/111531207238423458'
+    'https://en.wikipedia.org/wiki/Getting_Things_Done': {}
+    'https://www.gnu.org/software/emacs/': {}
+    'https://orgmode.org/': {}
+    'https://orgmode.org/manual/Capture.html': {}
+    'https://orgmode.org/manual/Agenda-Views.html': {}
+    'https://orgmode.org/manual/Filtering_002flimiting-agenda-items.html': {}
+    'https://orgmode.org/manual/Drawers.html': {}
+    'https://orgmode.org/manual/Refile-and-Copy.html': {}
 site_url: 'https://desmondrivet.com'
