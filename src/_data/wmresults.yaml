@@ -2248,4 +2248,8 @@ results:
     'https://orgmode.org/manual/Filtering_002flimiting-agenda-items.html': {}
     'https://orgmode.org/manual/Drawers.html': {}
     'https://orgmode.org/manual/Refile-and-Copy.html': {}
+  2023/12/16/171358:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/111592404701244888'
 site_url: 'https://desmondrivet.com'
