@@ -2252,4 +2252,6 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/111592404701244888'
+  2023/12/27/231100:
+    'https://www.theguardian.com/commentisfree/2023/dec/26/blogging-freedom-outdated-format': {}
 site_url: 'https://desmondrivet.com'
