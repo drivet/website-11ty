@@ -1,4 +1,8 @@
-# Multiculturalism and Relativism
+---
+date: 2019-03-09 20:04:45-05:00
+modified: 2019-03-09 20:04:45-05:00
+title: Multiculturalism and Relativism
+---
 
 In October 2010 Angela Merkel, Chancellor of Germany, stated that
 multiculturalism in Germany was a failure.
