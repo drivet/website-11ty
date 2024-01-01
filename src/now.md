@@ -16,7 +16,7 @@ So, currently, my life looks roughly like this, in approximate order of stuff mo
 
 * Reading: Persepolis Rising by James S. A. Corey
 * Playing: Baldur's Gate 3
-* Currently trying to replace the rusted out railing on my front porch.
+* In the process of replacing the rusted out railing on my front porch.
 * Currently looking into what's required to obtain my Italian citizenship
 * I work as a senior software developer at Unity Technologies, doing mostly data
 and billing related tasks.  The languages I use most often in my job at
@@ -25,4 +25,3 @@ the moment are Typescript, JavaScript, Python and SQL.
 Edwardian apartment.
 
 [1]: https://indieweb.org/Now
-
