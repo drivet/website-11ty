@@ -2255,4 +2255,12 @@ results:
   2023/12/27/231100:
     'https://www.theguardian.com/commentisfree/2023/dec/26/blogging-freedom-outdated-format': {}
   2024/01/03/222222: {}
+  2024/01/07/free-will-illusion:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/111718065713273734'
+    'https://backtothefuture.fandom.com/wiki/Predestination_paradox': {}
+    'https://en.wikipedia.org/wiki/Incompatibilism': {}
+    'https://en.wikipedia.org/wiki/Determinism': {}
+    'https://en.wikipedia.org/wiki/Compatibilism': {}
 site_url: 'https://desmondrivet.com'
