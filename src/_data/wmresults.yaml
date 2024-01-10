@@ -2269,4 +2269,12 @@ results:
       location: >-
         https://mastodon.social/@rjkwon/111698894265326672#favorited-by-109915770893332033
     'https://mastodon.social/@rjkwon/111698894265326672': {}
+  2024/01/09/230000:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/111729660207035843'
+    'https://mastodon.social/@rjkwon/111698894265326672': {}
+    'https://desmondrivet.com/2019/12/08/intro-to-indie-web':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/G929sUoFHN-br7_ntrMU'
 site_url: 'https://desmondrivet.com'
