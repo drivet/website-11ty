@@ -2263,4 +2263,10 @@ results:
     'https://en.wikipedia.org/wiki/Incompatibilism': {}
     'https://en.wikipedia.org/wiki/Determinism': {}
     'https://en.wikipedia.org/wiki/Compatibilism': {}
+  2024/01/09/225000:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: >-
+        https://mastodon.social/@rjkwon/111698894265326672#favorited-by-109915770893332033
+    'https://mastodon.social/@rjkwon/111698894265326672': {}
 site_url: 'https://desmondrivet.com'
