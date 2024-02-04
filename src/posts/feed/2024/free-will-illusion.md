@@ -9,7 +9,7 @@ tags:
 
 I recently finished watching Bodies on Netflix and the concept of free will
 comes up a fair bit given that the show involves a [predestination
-paradox][1].  One of the characters ultimately voices the opinion that, in
+paradox][1].  One of the characters voices the opinion that, in
 his words, "free will is an illusion" because human choices are ultimately
 the result of physics and biology.  Humans choices, in other words, are
 predetermined, and that means that the free will doesn't exist.
