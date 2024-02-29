@@ -1,7 +1,7 @@
 ---
-date: 2023-09-17T14:14:59-04:00
-title: "Some People Need to Calm Down About the Wheel of Time Show"
-blurb: "Adaptations are hard work, and the Wheel of Time is harder than most"
+date: 2024-02-27T21:09:19-05:00
+title: "People Need to Calm Down About *The Wheel of Time* Show"
+blurb: "Adaptations are hard work, and *The Wheel of Time* is harder than most"
 mp-syndicate-to:
 - mastodon
 tags: 
@@ -49,57 +49,86 @@ they would pull it off.
 I mean, adapting such a well-known and well-loved series has to be a
 difficult and thankless job at the best of times, but it must be
 *particularly* hard in the case of *The Wheel of Time* (and Amazon didn't do
-itself any favours by restricting the seasons to 8 episodes each).
+itself any favours by restricting the seasons to eight episodes each).
 
 I mean, with thousands of characters, and hundreds of locations, the sheer
 size of it is daunting (understatement!), but it's not just that.
 
 The simple truth is that this is no ordinary book series.  It doesn't really
 translate well to a traditional season-based TV narrative structure. There
-are reasons it's been deemed unfilmable.
+are reasons beyond its length that it's been deemed unfilmable.
 
 So much of the series is *invisible*.  Aes Sedai in the book are famously
-composed, almost Vulcan-like.  Warders, or at least Lan, are famously stoic.
-A lot of the so-called dialogue consists of people talking to themselves.
-And don't get me started on the background material.  Half of the story
-takes place in the insanely comprehensive glossary at the back of each book,
-before the meat of the plot even begins.
+composed - almost Vulcan-like.  Warders, or at least Lan, are famously
+stoic.  A lot of the so-called dialogue consists of people thinking to
+themselves.  And don't get me started on the background material.  Half of
+the story takes place in the insanely comprehensive glossary at the back of
+each book, before the meat of the plot even begins.
 
 Add to this: the books are full of characters who often appear in one or two
-chapters, and then don't get mentioned again until several (long) books
+chapters in one book, and then don't reappear until several (long) books
 later (Bors? Aginor? Balthamel? Aludra?).  This might be workable in a
 printed medium (barely) but it becomes a real problem when you have to hire
 real actors, and you're at risk of losing them to different projects in
 between seasons.
 
-And it's not just characters - some important artifacts are given the same
-treatment as well.  Case in point (and major spoiler warning): the Choedan
-Kal are briefly seen in book 2, are not mentioned again until book 4, and
-aren't actually used for anything interesting until book 9.  How exactly
-does this translate to TV?  Are you supposed to mention something once in
-season 2 and then not mention it again until season 4?
+The show actually did this with the introduction of Dain Bornhald in season
+two.  He's the son of a character that appears in one scene from one episode
+in season one.  I can't imagine anyone remembers him and it's frankly a weak
+introduction as far as his son is concerned, despite the attempt to jog
+everyone's memory with the "Previously on" segment.
 
-(The thing is, the show actually did this with the introduction of Dain
-Bornhald in season 2.  He's the son of a character that appears in one
-episode from season one.  I can't imagine anyone remembers him.  It's
-frankly a weak introduction).
+It's not just characters - some important artifacts are given the same
+treatment in the books as well.  Case in point (and major spoiler warning):
+the Choedan Kal are briefly seen in book two, are not mentioned again until
+book four, and aren't actually used for anything interesting until book
+nine.  How exactly does one adapt this to TV?  Are you supposed to mention
+something once in season two and then not mention it again until season
+four?
 
-In addition, the vibe of first book is very different from the rest of the
-series, and the ending of first *three* books basically consists of the same
-sword fight between the same two characters.  It's generally agreed that the
-series only really begins to come into its own in book 4.
+It doesn't help matters that Robert Jordan originally intended *The Wheel of
+Time* to be a trilogy - and it shows painfully in the way the story is
+structured.  The first three books have a drastically different feel to them
+from the rest of the series.  He basically recycled the same ending three
+times - it's the same sword fight between the same two characters.  In some
+cases, major characters are almost completely rewritten.  Fan favourite Mat,
+for example, might as well be a different character in books one through
+three.
 
-The upshot is that you can't really do a straight "one book = one season" TV
-adaptation of The Wheel of Time.  You need to adapt the whole series at
+The series only really starts to break out of this rut in book four and it's
+generally agreed that this is when it really starts to come into its own.
+This is, of course, easy to say, and not a big deal to patient readers, but
+it makes life infinitely difficult for people trying to adapt it into a
+episodic, season based format.
+
+I mean, what exactly are you supposed to do?  I don't know, but I'll tell
+you what you *can't* do - you can't really do a straightforward "one book =
+one season" kind of adaptation.  You need to adapt the whole series at
 once, and that's *hard*.  I don't envy the people who've been given this
 task.
 
 ## Separating the Wheat From the Chaff
 
-Okay, so with all that in mind...how was The Wheel of Time show?
+Okay. So with all that in mind...how was *The Wheel of Time* show?
 
-Given the controversy it's caused, I feel I have to be extra careful and
-measured in my response.
+First off, before I express any concrete opinions, I do need to vent a
+little bit about some aspects of the fandom.  There is a kind of fan who
+wants nothing less than a scene for scene adaptation of *The Wheel of Time*
+and won't be happy with anything less.  This is something that is simply not
+possible, for all the reasons I've already stated, and hence I'm not going
+to devote too much time to this type of fan.  I wish them good luck.
 
-First off, before I give any concrete opinions about the show, I do need to
-vent a little bit about some aspects of the fandom.  Some 
+Other fans veer into legitimately racist territory, focusing on the skin
+colour of the cast.  For obvious reasons, I won't devote any time to these
+people either, except to say that for all the show's flaws, the cast is
+probably one of the best parts.
+
+This leaves us with the fans who, for whatever reason, criticize *the actual
+show* and it's here that I have to be careful because while some (okay, a
+lot of) criticism is definitely warranted, some of what I've seen is
+just...well...petty.
+
+The books hinted at a relationship between Moiraine and Siuan; the show
+makes it explicit.  The books hint at Logain taking over Ghealdean; the show
+makes it explicit.  The books hint at the abuse suffered by Egwene at the
+hands of Seanchan; the show makes it explicit
