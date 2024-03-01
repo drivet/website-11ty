@@ -15,6 +15,4 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
           cd website-11ty
-          git pull
-          npm install
-          npm run build
+          sh ./deploy.sh
