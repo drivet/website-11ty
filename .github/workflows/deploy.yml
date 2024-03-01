@@ -13,4 +13,6 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_KEY }}
-        script: whoami
+        script: |
+          whoami
+          ls -al
