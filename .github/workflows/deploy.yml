@@ -15,4 +15,5 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
           cd website-11ty
+          git pull
           sh ./deploy.sh
