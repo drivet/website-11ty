@@ -9,7 +9,7 @@ const { sendAllWebmentions } = require('send-all-webmentions');
 const WM_RESULTS_PATH = "src/_data/wmresults.yaml";
 
 const octokit = new Octokit({
-  auth: process.env.GITHUB_ACCESS_TOKEN,
+  auth: process.env.GH_ACCESS_TOKEN,
 });
 
 async function getWmResultsSHA() {
@@ -30,13 +30,13 @@ async function commitWmResults(wmresults) {
       owner: "drivet",
       repo: "website-11ty",
       path: WM_RESULTS_PATH,
-      message: "save wmresults [skip ci]",
+      message: "save wmresults",
       committer: {
-        name: `Netlify`,
+        name: "Desmond Rivet",
         email: "desmond.rivet@gmail.com",
       },
       author: {
-        name: "Netlify",
+        name: "Desmond Rivet",
         email: "desmond.rivet@gmail.com",
       },
       content: encoded,
@@ -60,7 +60,7 @@ function loadWebmentionResults() {
   return yaml.load(wmresultsData);
 }
 
-async function onSuccess({ utils }) {
+async function onSuccess() {
   const urls = await loadUrls();
   const wmresults = loadWebmentionResults();
   const siteUrl = wmresults.site_url;
@@ -81,6 +81,4 @@ async function onSuccess({ utils }) {
   await commitWmResults(wmresults);
 }
 
-module.exports = {
-  onSuccess
-}
+onSuccess();

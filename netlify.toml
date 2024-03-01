@@ -1,6 +1,0 @@
-[[plugins]]
-    package = "./plugins/cache"
-
-[[plugins]]
-    package = "./plugins/send-webmentions"
-    

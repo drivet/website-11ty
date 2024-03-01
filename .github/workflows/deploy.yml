@@ -1,18 +1,23 @@
 name: remote ssh command
-on: [push]
+on: 
+  push:
+    branches:    
+      - main
 jobs:
-
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@v1.0.3
+      env:
+        GH_ACCESS_TOKEN: ${{secrets.GH_ACCESS_TOKEN}}
       with:
         host: ${{ secrets.PROD_HOST }}
         port: ${{ secrets.SSH_PORT }}
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_KEY }}
+        envs: GH_ACCESS_TOKEN
         script: |
           cd website-11ty
           git pull
