@@ -14,5 +14,7 @@ jobs:
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          whoami
-          ls -al
+          cd website-11ty
+          git pull
+          npm install
+          npm run build
