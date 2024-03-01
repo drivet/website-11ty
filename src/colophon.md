@@ -8,10 +8,10 @@ title: Colophon
 I've maintained some form of personal online presence since roughly 1998 or
 so, when I made my first hand coded HTML pages available on the web.
 There have been several incarnations of this site over the years, hosted
-variously on [U of T][1] servers, [Geocities][2], [Netfirms][3] and a raft
-of dedicated home and [rented][4] machines, but the current version is now
-hosted on [Netlify][5] and I haven't found the experince too painful so I'm
-going to try and make it last.
+variously on [U of T][1] servers, [Geocities][2], [Netfirms][3], [Netlify][11]
+and a raft of dedicated home and [rented][4] machines, but the current version
+is now hosted on a dedicated VPS and I haven't found the experince too painful
+so I'm going to try and make it last.
 
 These days I'm using [eleventy][6] to build this site; when it comes to
 content management systems, I favour plain text files over databases, which
@@ -38,3 +38,4 @@ varies.
 [8]: https://github.com/drivet/yawt
 [9]: https://getpelican.com/
 [10]: https://indieweb.org/
+[11]: https://www.netlify.com/
