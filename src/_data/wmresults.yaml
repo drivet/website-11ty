@@ -2283,4 +2283,8 @@ results:
     'https://stackoverflow.com/questions/24330980/enumerate-all-tags-in-org-mode': {}
   2024/02/09/092646:
     'https://edwardtufte.github.io/tufte-css/': {}
+  2024/03/03/180240:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112034251651512816'
 site_url: 'https://desmondrivet.com'
