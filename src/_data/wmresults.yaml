@@ -2291,4 +2291,8 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/112034389966570657'
+  2024/03/03/202657:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112034819108008888'
 site_url: 'https://desmondrivet.com'
