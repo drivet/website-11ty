@@ -12,12 +12,13 @@ jobs:
       uses: appleboy/ssh-action@v1.0.3
       env:
         GH_ACCESS_TOKEN: ${{secrets.GH_ACCESS_TOKEN}}
+        WEBMENTION_IO_TOKEN: ${{secrets.WEBMENTION_IO_TOKEN}}
       with:
         host: ${{ secrets.PROD_HOST }}
         port: ${{ secrets.SSH_PORT }}
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_KEY }}
-        envs: GH_ACCESS_TOKEN
+        envs: GH_ACCESS_TOKEN,WEBMENTION_IO_TOKEN
         script: |
           cd website-11ty
           git pull
