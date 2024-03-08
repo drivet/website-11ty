@@ -63,28 +63,20 @@ composed - almost Vulcan-like.  Warders, or at least Lan, are famously
 stoic.  A lot of the so-called dialogue consists of people thinking to
 themselves.  And don't get me started on the background material.  Half of
 the story takes place in the insanely comprehensive glossary at the back of
-each book, before the meat of the plot even begins.
+each book, before the plot even begins.
 
-Add to this: the books are full of characters who often appear in one or two
-chapters in one book, and then don't reappear until several (long) books
-later (Bors? Aginor? Balthamel? Aludra?).  This might be workable in a
-printed medium (barely) but it becomes a real problem when you have to hire
-real actors, and you're at risk of losing them to different projects in
-between seasons.
+Add to this: the books are full of characters and artifacts that often
+appear in one or two chapters in one book, and then don't reappear until
+several (long) books later - if, indeed, they ever do at all.  This might be
+workable in a printed medium (barely) but it becomes a real problem when you
+have to hire real actors, and you're at risk of losing them to different
+projects in between seasons.
 
-The show actually did this with the introduction of Dain Bornhald in season
-two.  He's the son of a character that appears in one scene from one episode
-in season one.  I can't imagine anyone remembers him and it's frankly a weak
-introduction as far as his son is concerned, despite the attempt to jog
-everyone's memory with the "Previously on" segment.
-
-It's not just characters - some important artifacts are given the same
-treatment in the books as well.  Case in point (and major spoiler warning):
-the Choedan Kal are briefly seen in book two, are not mentioned again until
-book four, and aren't actually used for anything interesting until book
-nine.  How exactly does one adapt this to TV?  Are you supposed to mention
-something once in season two and then not mention it again until season
-four?
+The show actually tried to do this with the introduction of Dain Bornhald in
+season two.  He's the son of a character that appears in one scene from one
+episode in season one.  I can't imagine anyone remembers him and it's
+frankly a weak introduction as far as his son is concerned, despite the
+attempt to jog everyone's memory with the "Previously on" segment.
 
 It doesn't help matters that Robert Jordan originally intended *The Wheel of
 Time* to be a trilogy - and it shows painfully in the way the story is
@@ -107,28 +99,106 @@ one season" kind of adaptation.  You need to adapt the whole series at
 once, and that's *hard*.  I don't envy the people who've been given this
 task.
 
+Contrast this with, say, *A Song of Ice and Fire*, the series they adapted
+into Game of Thrones.  It's much more tightly plotted and it's relatively
+straightforward to take the first book and adapt it into a single season of
+television.
+
 ## Separating the Wheat From the Chaff
 
 Okay. So with all that in mind...how was *The Wheel of Time* show?
 
-First off, before I express any concrete opinions, I do need to vent a
-little bit about some aspects of the fandom.  There is a kind of fan who
-wants nothing less than a scene for scene adaptation of *The Wheel of Time*
-and won't be happy with anything less.  This is something that is simply not
-possible, for all the reasons I've already stated, and hence I'm not going
-to devote too much time to this type of fan.  I wish them good luck.
+Before I express any concrete opinions, there are a few things I need to get
+out of the way.  The first is that, as a general rule, I don't consider
+"faithfulness to source material" to be the yardstick by which I measure the
+quality of an adaptation.  We're talking about fiction here, not historical
+documents.  Changes, in and of themselves, don't bother me that much if they
+make the story better.  I'm even okay with "lateral" changes - ones that
+don't end up making much of a difference at all because, at the end of the
+day, we're just talking about two different works of fiction.
+
+For all the reasons I've already covered, this goes *double* for a something
+like *The Wheel of Time*.
+
+Second, I need to vent a little bit about certain aspects of the fandom.
+There is a kind of fan who wants nothing less than a scene for scene
+adaptation and won't be happy with anything less.  This is something that is
+simply not possible, for all the reasons I've already stated, and hence I'm
+not going to devote too much time to this type of fan.  I wish them good
+luck.
 
 Other fans veer into legitimately racist territory, focusing on the skin
 colour of the cast.  For obvious reasons, I won't devote any time to these
 people either, except to say that for all the show's flaws, the cast is
-probably one of the best parts.
+probably one of the show's main strengths.
 
 This leaves us with the fans who, for whatever reason, criticize *the actual
-show* and it's here that I have to be careful because while some (okay, a
-lot of) criticism is definitely warranted, some of what I've seen is
-just...well...petty.
+show* and it's here that we can have an actual discussion.  We're obviously
+headed into major spoiler territory here, so be warned.  I'll also point
+that that if you're not already familiar with either the books or the show,
+then literally nothing I here will make any sense whatsoever - but if that's
+the case, then why are you even reading? :-)
 
-The books hinted at a relationship between Moiraine and Siuan; the show
-makes it explicit.  The books hint at Logain taking over Ghealdean; the show
-makes it explicit.  The books hint at the abuse suffered by Egwene at the
-hands of Seanchan; the show makes it explicit
+On the whole, I *liked* the show, but I didn't *love* it.  I *wanted* to,
+and there were moments when I thought I *could*, but I never quite got
+there.
+
+There were *definitely* a lot of changes, and they were definitely a mixed
+bag.  Some of them made the story flow better, and some of them were, to put
+it mildly, utterly baffling.
+
+The show was at its best when it made changes that expanded on
+underdeveloped aspects of the books.  Season 1, episode 4 is a good example,
+A Logain-centric episode that was never actually described in the books, it
+was, in my opinion, the best episode of the season and one of the best of
+the show.  I say "one of" because the title of "best episode of the show"
+has to go to season 2, episode 6, an emotionally intense Egwene-centric
+episode that explicitly depicts certain events that were, at best, only
+hinted at in *The Great Hunt*.
+
+Moiraine and Siuan's romantic pairing on the show is another example.  The
+books hint that these two characters may have been more than friends at some
+point in their past, but it's never made explicit and it's open to
+interpretation.  The show makes it explicit, and it adds to the drama.  I
+liked the change.
+
+Sometimes, the writers made significant alterations to the lore to simplify
+the narrative mechanics, and I'm all for it.  One of the best examples is in
+how they streamlined a Forsaken's relationship to death.  The Forsaken, if
+you recall, are the Dark One's main lieutenants - *The Wheel of Time*'s
+version of the Nazgûl, if you will - and, in the books, their deaths were
+always complicated affairs.  A Forsaken could be killed, like anyone, but
+they could also be resurrected in a different body at the Dark One's whim
+later on.  Robert Jordan did this quite a bit - the only Forsaken, killed by
+conventional means, that *doesn't* get resurrected at some point is, to my
+knowledge, Asmodean.
+
+This kind of works in print, but it's confusing in a visual medium.  You'd
+have to get a different actor to play the same character, several seasons
+later.  So, on the show, they just make the Forsaken unkillable - at one
+point, Moiraine slits Lanfear's throat and Lanfear just magically heals up
+and goes continues along as if nothing happened.  If you look closely,
+Lanfear's eyes have small specks floating in them as she comes back to life,
+indicating that the Dark One is connected to this ability via the True
+Power, a little nod to the lore that I very much appreciated.
+
+The only way to permanently kill a Forsaken in the books was to use balefire
+and though it obviously remains to be seen, I suspect that show will do the
+same.
+
+Of course, not all the changes were positive, and I would be remiss if I
+didn't mention the ones that rubbed me the wrong way. I hated everything
+related to the Rand-Egwene-Perrin love triangle - it came out of nowhere and
+added nothing.  I didn't care for how they gave Perrin a wife just to kill
+her off and make him dark.
+
+I *especially* didn't like how the ending of season 1's robbed Rand of his
+big power moment against the Trolloc army in order to give it to Nynaeve who
+had, by that point, already had several big power moments herself.  The show
+does this in season 2 as well; despite Egwene being a *major* part of the
+lead up to the the finale, they once again rob Rand of his big moment
+against Ishamael by having Egwene attack him and very nearly win.
+
+Some of the problems with the show are less about the changes they and are
+more structural.
+
