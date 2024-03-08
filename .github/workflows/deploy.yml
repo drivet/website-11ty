@@ -21,5 +21,6 @@ jobs:
         envs: GH_ACCESS_TOKEN,WEBMENTION_IO_TOKEN
         script: |
           cd website-11ty
-          git pull
+          git fetch origin
+          git reset --hard
           sh ./deploy.sh
