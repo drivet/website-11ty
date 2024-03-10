@@ -82,15 +82,18 @@
     <div class="main-footer__content">
       <div class="row">
         &copy;2023 by <a href="/">{{ global.AUTHOR }}</a>
+        <span class="row__item--right">
+          <a href="https://github.com/drivet/website-11ty/edit/main/{{page.inputPath}}">Edit</a>
+          &middot;
+          <i class="fa fa-arrow-up"></i> <a href="#">Top</a>
+        </span>
       </div>
       <div class="row">
           Powered by <a href="https://www.11ty.dev/" target="_blank">Eleventy</a>
-          &middot;
+           <span class="row__item--right">
           {% include "webring.njk" %}
-          <span class="row__item--right">
-            <a href="https://github.com/drivet/website-11ty/edit/main/{{page.inputPath}}">Edit</a>
-            &middot;
-            <i class="fa fa-arrow-up"></i> <a href="#">Top</a>
+          &middot;
+          {% include "geekring.njk" %}
           </span>
       </div>
     </div>

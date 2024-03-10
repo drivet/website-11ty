@@ -199,6 +199,9 @@ does this in season 2 as well; despite Egwene being a *major* part of the
 lead up to the the finale, they once again rob Rand of his big moment
 against Ishamael by having Egwene attack him and very nearly win.
 
-Some of the problems with the show are less about the changes they and are
-more structural.
+Some of the problems with the show are less about the changes and are more
+structural.  The show doesn't go out of its way to explain how the magic
+system works and indeed, goes to some length to de-emphasize certain aspects
+that I suppose were deemed "problematic".  The fact that there's a male half
+and female half of the One Power isn't specifically established on the show.
 
