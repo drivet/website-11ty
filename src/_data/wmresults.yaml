@@ -2302,4 +2302,8 @@ results:
     'https://front-end.social/@sarajw/112033998987930006': {}
   2024/03/11/091249:
     'https://cleberg.net/blog/digital-minimalism/': {}
+  2024/03/11/183238:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112079432078932934'
 site_url: 'https://desmondrivet.com'
