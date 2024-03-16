@@ -17,6 +17,15 @@ function getDay(date) {
   return (day < 10 ? '0' : '') + day;
 }
 
+/**
+ * Given a collection and a tagExtractor function (a function which returns a list of 
+ * "tags" for an item), create an object with tags for the elements and the matching
+ * items for the values.
+ *  
+ * @param {*} collection 
+ * @param {*} tagExtractor 
+ * @returns 
+ */
 function classify(collection, tagExtractor) {
   const classified = {};
   collection.forEach((item) => {
@@ -54,9 +63,7 @@ function tagList(collection) {
 
 function indexByDates(collection) {
   return classify(collection, item => [
-    getYear(item.date),
     getYear(item.date) + '/' + getMonth(item.date),
-    getYear(item.date) + '/' + getMonth(item.date) + '/' + getDay(item.date)
   ]);
 }
 

@@ -63,7 +63,7 @@ archiveIndexData:
   {% set yearUrl %}/{{ year.year }}/{% endset %}
 
   <li class="archive-year-list__year-item row">
-    <a href="{{metadata.archiveUrlPrefix}}{{ yearUrl | url }}">{{ year.year }}</a> <span class="row__item--right">{{ year.count }}</span>
+    {{ year.year }} <span class="row__item--right">{{ year.count }}</span>
   </li>
 
   <li class="archive-year-list__months-item">
