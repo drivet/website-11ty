@@ -2310,4 +2310,25 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/112083933215581450'
+  2024/03/16/wheel-of-time:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112106833371922883'
+    'https://en.wikipedia.org/wiki/The_Wheel_of_Time_(TV_series)': {}
+    'https://en.wikipedia.org/wiki/Robert_Jordan': {}
+    'https://en.wikipedia.org/wiki/The_Wheel_of_Time': {}
+    'https://en.wikipedia.org/wiki/Brandon_Sanderson': {}
+    'https://www.imdb.com/title/tt11316280/': {}
+    'https://en.wikipedia.org/wiki/The_Great_Hunt': {}
+    'https://wot.fandom.com/wiki/Liandrin_Guirale': {}
+    'https://lotr.fandom.com/wiki/Nazg%C3%BBl': {}
+    'https://wot.fandom.com/wiki/True_Power': {}
+    'https://tvtropes.org/pmwiki/pmwiki.php/Main/WomenInRefrigerators': {}
+    'https://wot.fandom.com/wiki/Dragon': {}
+    'https://wot.fandom.com/wiki/Age_of_Legends': {}
+    'https://wot.fandom.com/wiki/War_of_Power': {}
+    'https://wot.fandom.com/wiki/Forsaken': {}
+    'https://wot.fandom.com/wiki/Artur_Hawkwing': {}
+    'https://wot.fandom.com/wiki/Seanchan': {}
+    'https://en.wikipedia.org/wiki/The_Shadow_Rising': {}
 site_url: 'https://desmondrivet.com'
