@@ -1,5 +1,5 @@
 const cheerio = require('cheerio');
-
+/*
 function excerpt(html, maxCount) {
   if (!html) {
     return '';
@@ -16,6 +16,27 @@ function excerpt(html, maxCount) {
       return wordCount < maxCount;
   });
   return summary;
+}
+*/
+
+function excerpt(content, length) {
+  let excerptParagraphs = [];
+  let currentLength = 0;
+  const paragraphs = content.match(/<p>.*?<\/p>/gs) || [];
+
+  for (let paragraph of paragraphs) {
+      // Strip HTML from the paragraph
+      const text = paragraph.replace(/(<([^>]+)>)/gi, "");
+
+      if (currentLength > 0 && currentLength + text.length > length) {
+          break;
+      }
+
+      excerptParagraphs.push(paragraph);
+      currentLength += text.length;
+  }
+
+  return excerptParagraphs.join(" ");
 }
 
 function links(html) {

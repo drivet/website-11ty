@@ -87,7 +87,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
-  eleventyConfig.addFilter('excerpt', content => html.excerpt(content, 50));
+  eleventyConfig.addFilter('excerpt', content => html.excerpt(content, 250));
   eleventyConfig.addFilter('synicon', url => synIcon(url));
   eleventyConfig.addFilter('monthname', month => {
     switch(month) {

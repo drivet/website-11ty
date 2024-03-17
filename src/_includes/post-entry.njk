@@ -18,7 +18,11 @@
   {{ reflink(post.data.postType, post.data.referencedLink) }}
 
   <div class="e-content">
+    {% if post.data.postType == 'article' %}
     {{ post.templateContent | excerpt | safe }}
+    {% else %} 
+    {{ post.templateContent | safe }}
+    {% endif %}
 
     {% set photoCount = post.data.photo | length %}
     {% set album = post.data.postType == 'album' %}
