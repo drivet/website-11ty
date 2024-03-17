@@ -25,15 +25,15 @@ function excerpt(content, length) {
   const paragraphs = content.match(/<p>.*?<\/p>/gs) || [];
 
   for (let paragraph of paragraphs) {
+      excerptParagraphs.push(paragraph);
+      
       // Strip HTML from the paragraph
       const text = paragraph.replace(/(<([^>]+)>)/gi, "");
+      currentLength += text.length;
 
-      if (currentLength > 0 && currentLength + text.length > length) {
+      if (currentLength >= length) {
           break;
       }
-
-      excerptParagraphs.push(paragraph);
-      currentLength += text.length;
   }
 
   return excerptParagraphs.join(" ");
