@@ -129,9 +129,9 @@ and there were moments when I thought I *could*, but I never quite got
 there.
 
 There were *definitely* a lot of changes, and they were definitely a mixed
-bag.  Some of them made the story flow better, some of them just...*were*.
-And some of them were, to put it mildly, utterly baffling.  To say that the
-quality of the show was uneven is to put it mildly.
+bag.  Some of them made the story flow better, some of them were utterly 
+baffling and some of them just...*were*.  To say that the quality of the 
+show was uneven is to put it mildly.
 
 The show was at its best when it made changes that expanded on
 underdeveloped aspects of the books.  [Season one, episode four ("The Dragon
