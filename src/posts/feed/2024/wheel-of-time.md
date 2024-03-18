@@ -50,16 +50,15 @@ When I heard that Amazon was adapting *The Wheel of Time*, my primary
 emotion was surprise followed by...curiosity?  I wanted to see how (or if)
 they would pull it off.
 
-I mean, adapting such a well-known and well-loved series has to be a
+Adapting such a well-known and well-loved series has to be a
 difficult and thankless job at the best of times, but it must be
-*particularly* hard in the case of *The Wheel of Time* (and Amazon didn't do
-itself any favours by restricting the seasons to eight episodes each).
+*particularly* hard in the case of *The Wheel of Time*, with 
+thousands of characters, and hundreds of locations.  Amazon didn't do
+itself any favours by restricting the seasons to eight episodes each.
 
-I mean, with thousands of characters, and hundreds of locations, the sheer
-size of it is daunting (understatement!), but it's not just that.
-
-The simple truth is that this is no ordinary book series.  It doesn't really
-translate well to a traditional season-based TV narrative structure. It's
+But it's not just the size of it.  The simple truth is that this is no 
+ordinary book series.  Its structure doesn't really
+translate well to a traditional season-based TV narrative format. It's
 been deemed unfilmable more than once and it's not just because of its
 length.
 
