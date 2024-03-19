@@ -2331,4 +2331,8 @@ results:
     'https://wot.fandom.com/wiki/Artur_Hawkwing': {}
     'https://wot.fandom.com/wiki/Seanchan': {}
     'https://en.wikipedia.org/wiki/The_Shadow_Rising': {}
+  2024/03/19/152857:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112124008850937197'
 site_url: 'https://desmondrivet.com'
