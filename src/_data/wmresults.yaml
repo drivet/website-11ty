@@ -2345,4 +2345,6 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/112180503476299495'
+  2024/04/06/100033:
+    'https://dev.to/antopiras89/add-comments-to-your-static-blog-with-utterances-3jao': {}
 site_url: 'https://desmondrivet.com'
