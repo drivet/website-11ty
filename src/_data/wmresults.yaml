@@ -2331,4 +2331,20 @@ results:
     'https://wot.fandom.com/wiki/Artur_Hawkwing': {}
     'https://wot.fandom.com/wiki/Seanchan': {}
     'https://en.wikipedia.org/wiki/The_Shadow_Rising': {}
+  2024/03/19/152857:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112124008850937197'
+  2024/03/27/133109:
+    'https://cmdln.org/2023/03/25/how-i-org-in-2023/': {}
+  2024/03/29/084200:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112179032462456087'
+  2024/03/29/145634:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112180503476299495'
+  2024/04/06/100033:
+    'https://dev.to/antopiras89/add-comments-to-your-static-blog-with-utterances-3jao': {}
 site_url: 'https://desmondrivet.com'
