@@ -123,7 +123,7 @@ the pros, but I find it useful nonetheless to ferret out what works and what
 doesn't.
 
 One very obvious way to implement GTD is to maintain a separate file for
-each list, in roughly the same manner than one would implement with paper.
+each list, in roughly the same manner that one would implement with paper.
 Your Next Actions, for example, could live in an ```actions.org``` file that
 looks like this:
 
@@ -133,7 +133,7 @@ looks like this:
 ```
 
 
-And a ```projects.org`` file that looks pretty much the same:
+And a ```projects.org``` file that looks pretty much the same:
 
 ```text
 * TODO project 1
@@ -151,7 +151,7 @@ item, like so:
 * TODO do this other thing :plumber:
 ```
 
-Org has built in ways of filters the agenda view based on the tags you add
+Org has built-in ways of filtering the agenda view based on the tags you add
 to each item.
 
 This approach has one huge, underrated advantage: it's dead simple to
