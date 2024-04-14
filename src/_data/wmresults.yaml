@@ -2351,4 +2351,8 @@ results:
     'https://blog.lazkani.io/posts/bookmark-with-org-capture/': {}
   2024/04/06/205714:
     'https://dewaka.com/blog/bookmarking-with-org-mode/': {}
+  2024/04/14/150239:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112271124171596748'
 site_url: 'https://desmondrivet.com'
