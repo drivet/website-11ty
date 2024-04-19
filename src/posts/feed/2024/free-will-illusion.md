@@ -4,7 +4,8 @@ title: "The Problem With Saying That Free Will Is an Illusion"
 blurb: "On why arguing that free will is an illusion doesn't make any sense"
 mp-syndicate-to:
 - mastodon
-tags: 
+tags:
+- philosophy
 ---
 
 I recently finished watching Bodies on Netflix and the concept of free will
