@@ -280,4 +280,4 @@ Maybe one day.
 [7]: https://en.wikipedia.org/wiki/Santorini
 [8]: https://en.wikipedia.org/wiki/Rhodes
 [9]: https://en.wikipedia.org/wiki/Acropolis_of_Athens
-[10]: https://photos.desmondrivet.com/index.php?/category/1
+[10]: /albums/2015-greece/
