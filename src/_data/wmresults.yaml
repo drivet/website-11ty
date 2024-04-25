@@ -2359,4 +2359,6 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/112299547891164026'
+  2024/04/25/082120:
+    'https://canadianportfoliomanagerblog.com/how-to-choose-your-asset-allocation-etf/': {}
 site_url: 'https://desmondrivet.com'
