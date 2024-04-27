@@ -282,6 +282,6 @@ totally go back.
 
 [1]: https://en.wikipedia.org/wiki/Sour_rye_soup
 [2]: https://en.wikipedia.org/wiki/Wieliczka_Salt_Mine
-[3]: https://photos.desmondrivet.com/picture.php?/1119/category/52
+[3]: /2016/05/25/wieliczka/a6e4995b24c8c1
 [4]: https://en.wikipedia.org/wiki/The_Caves_of_Steel
 [5]: https://en.wikipedia.org/wiki/Auschwitz_concentration_camp
