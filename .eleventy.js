@@ -33,6 +33,19 @@ function webmentionsForUrl(webmentions, url) {
       .map(sanitize);
 }
 
+function commentsForUrl(comments, url) {
+  if (!comments) {
+    return [];
+  }  
+  const sanitize = entry => {
+    entry.message = sanitizeHTML(entry.message);
+    return entry;
+  };
+  return comments
+      .filter(entry => entry['permalink'] === url)
+      .map(sanitize);
+}
+
 function webmentionKind(webmentions, ...kinds) {
   return webmentions.filter(entry => kinds.includes(entry['wm-property']));
 }
@@ -120,7 +133,8 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter("postPermalink", page => `${makePermalink(page, false)}.html`);
   eleventyConfig.addFilter("date", d => dateFormat(d, 'MMM D, YYYY, h:mm A Z'));
-
+  
+  eleventyConfig.addFilter("commentsForUrl", commentsForUrl);
   eleventyConfig.addFilter("webmentionsForUrl", webmentionsForUrl);
   eleventyConfig.addFilter("webmentionKind", webmentionKind);
   eleventyConfig.addFilter("syndicationsForUrl", sydicationsForUrl);
@@ -159,6 +173,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('enhanceNavigation', enhanceNavigation);
   eleventyConfig.addFilter("searchIdxPosts", searchIdxPosts);
   eleventyConfig.addFilter("searchIdxRecipes", searchIdxRecipes);
+  
+  eleventyConfig.addFilter("debug", obj => JSON.stringify(obj));
 
   eleventyConfig.setTemplateFormats([
     "md",
