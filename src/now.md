@@ -1,5 +1,5 @@
 ---
-modified: 2023-10-03T13:53:00-04:00
+modified: 2024-05-02T20:52:00-04:00
 permalink: "{{ page.filePathStem }}.html"
 layout: "page.njk"
 title: Now
@@ -16,7 +16,6 @@ So, currently, my life looks roughly like this, in approximate order of stuff mo
 
 * Reading Leviathan Falls by James S. A. Corey.
 * Playing Baldur's Gate 3.
-* Replacing the rusted out railing on my front porch.
 * Trying to obtain my Italian citizenship.
 * Working as a senior software developer at Unity Technologies, doing mostly data
 and billing related tasks.  The languages I use most often in my job at
