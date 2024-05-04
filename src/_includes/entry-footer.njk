@@ -48,11 +48,11 @@
 <section class="wm-group">
   <h1 id="wm-mentions">Mentions</h1>
   <ul class="content-list"> 
-    {% for link in mentions %}
+    {% asyncEach link in mentions %}
     <li class="content-list__item content-list__item--separator">
     {% include 'mention.njk' %}
     </li>
-    {% endfor %}
+    {% endeach %}
   </ul>
 </section>
 {% endif %}

@@ -1,11 +1,10 @@
-{% from "avatar.njk" import avatar %}
-
+{% set photo = link.author.photo %}
 <article class="wm-mention">
   <div class="post-info__header row">
     {% if link.url %}
     <a href="{{ link.url }}"><i class="fas fa-external-link-alt"></i></a>
     {% endif %}
-    {{ avatar(link.author.photo) }}
+    {% include "avatar.njk" %}
     <div>
       <div>
         {% if link.author.url %}

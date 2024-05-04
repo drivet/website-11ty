@@ -26,20 +26,20 @@ async function imgShortcode(src, alt, cls, width, onerror) {
   return Image.generateHTML(data, attributes);
 }
 
-async function imageShortcode(src, alt, cls) {
-  return await imgShortcode(src, alt, cls, 800);
+async function imageShortcode(src, alt, cls, onerror) {
+  return await imgShortcode(src, alt, cls, 800, onerror);
 }
 
-async function bigThumbShortcode(src, alt, cls) {
-  return await imgShortcode(src, alt, cls, 400);
+async function bigThumbShortcode(src, alt, cls, onerror) {
+  return await imgShortcode(src, alt, cls, 400, onerror);
 }
 
-async function thumbShortcode(src, alt, cls) {
-  return await imgShortcode(src, alt, cls, 200);
+async function thumbShortcode(src, alt, cls, onerror) {
+  return await imgShortcode(src, alt, cls, 200, onerror);
 }
 
-async function iconShortcode(src, alt, cls) {
-  return await imgShortcode(src, alt, cls, 32);
+async function iconShortcode(src, alt, cls, onerror) {
+  return await imgShortcode(src, alt, cls, 32, onerror);
 }
 
 function imageConfig(eleventyConfig) {
