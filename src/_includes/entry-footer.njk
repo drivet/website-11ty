@@ -1,10 +1,9 @@
- <footer class="entry__footer">
-    {% set comments = allstaticman | commentsForUrl(url) %}
-    {% set allwebmentions = webmentions.children | webmentionsForUrl(url) %}
-    {% set mentions = allwebmentions | webmentionKind('in-reply-to', 'mention-of')%}
-    {% set likes = allwebmentions | webmentionKind('like-of') %}
-    {% set reposts = allwebmentions | webmentionKind('repost-of') %}
-    {% set bookmarks = allwebmentions | webmentionKind('bookmark-of') %}
+ <footer class="entry__footer"> 
+    {% set discussion = url | discussionForUrl(allstaticman, webmentions.children) %}
+    {% set mentions =  discussion.commentsAndMentions %}
+    {% set likes = discussion.likes %}
+    {% set reposts = discussion.reposts %}
+    {% set bookmarks = discussion.bookmarks %}
   
     {% set syndications = wmresults | syndicationsForUrl(url | stripExt) %}  
     {% if tags or syndications %}
@@ -36,8 +35,7 @@
 
     <p>
       <div class = "row row--extra-spacious"> 
-        <a class="row entry__footerlink" href="{{ url }}#wm-comments" title="Comments"><i class="far fa-comment"></i>{{ comments | length }}</a>
-        <a class="row entry__footerlink" href="{{ url }}#wm-mentions" title="Mentions"><i class="fa fa-reply"></i> {{ mentions | length }}</a>
+        <a class="row entry__footerlink" href="{{ url }}#wm-mentions" title="Comments and Mentions"><i class="far fa-comment"></i> {{ mentions | length }}</a>
         <a class="row entry__footerlink" href="{{ url }}#wm-likes" title="Likes"><i class="far fa-thumbs-up"></i> {{ likes | length }}</a>
         <a class="row entry__footerlink" href="{{ url }}#wm-reposts" title="Reposts"><i class="fa fa-retweet"></i>  {{ reposts | length }}</a>
         <a class="row entry__footerlink" href="{{ url }}#wm-bookmarks" title="Bookmarks"><i class="fa fa-bookmark"></i> {{ bookmarks | length }}</a>
@@ -45,19 +43,7 @@
     </p>
 </footer>
 
-{% if expand and ((comments | length > 0) or (mentions | length > 0) or (likes | length > 0) or (reposts | length > 0) or (bookmarks | length > 0)) %}
-{% if comments.length > 0 %}
-<section class="wm-group">
-  <h1 id="wm-comments">Comments</h1>
-  <ul class="content-list"> 
-    {% for comment in comments %}
-    <li class="content-list__item content-list__item--separator">
-    {% include 'comment.njk' %}
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}
+{% if expand and ((mentions | length > 0) or (likes | length > 0) or (reposts | length > 0) or (bookmarks | length > 0)) %}
 {% if mentions.length > 0 %}
 <section class="wm-group">
   <h1 id="wm-mentions">Mentions</h1>

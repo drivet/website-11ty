@@ -2,11 +2,17 @@
 
 <article class="wm-mention">
   <div class="post-info__header row">
+    {% if link.url %}
     <a href="{{ link.url }}"><i class="fas fa-external-link-alt"></i></a>
+    {% endif %}
     {{ avatar(link.author.photo) }}
     <div>
       <div>
+        {% if link.author.url %}
         <a class="post-info__author" href="{{ link.author.url }}">{{ link.author.name }}</a>
+        {% else %}
+        <span class="post-info__author">{{ link.author.name }}</span>
+        {% endif %}
       </div>
       <div>
         <span class="post-info__published">{{ link.published | date  }}</span>
