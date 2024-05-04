@@ -71,23 +71,38 @@ function discussionForUrl(url, allstaticmandata, allwebmentions) {
  * @param {*} comments 
  */
 function mergeMentionsAndComments(mentions, comments) {
+  const normalizedComments = comments.map(normalizeComment);
   return [
     ...mentions,
-    ...comments.map(normalizeComment)
+    ...normalizedComments
   ].sort((m1,m2) => dayjs(m2.published).unix() - dayjs(m1.published).unix());
 }
 
-function normalizeComment(comment) {
+function normalizeComment(staticmanData) {
+  const photo = avatarUrl(staticmanData);
   return {
     author: {
-      name: comment.name,
-      url: comment.url,
+      name: staticmanData.name,
+      url: staticmanData.url,
+      photo,
     },
-    published: new Date(comment.date * 1000),
+    published: new Date(staticmanData.date * 1000),
     content: {
-      text: comment.message,
+      text: staticmanData.message,
     }
   }
+}
+
+function avatarUrl(staticmanData) {
+  return `https://gravatar.com/avatar/${staticmanData.email}`
+  /*
+  if (staticmanData.url) {
+    const icon = await getFavicon(staticmanData.url);
+    return icon ? icon : `https://gravatar.com/avatar/${staticmanData.email}`
+  } else {
+    return `https://gravatar.com/avatar/${staticmanData.email}`
+  }
+  */
 }
 
 function discussionConfig(eleventyConfig) {
