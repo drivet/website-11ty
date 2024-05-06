@@ -74,9 +74,10 @@ breadcumbOptions:
     {% endif %}
   {% endif %}
 
-  {% set url = page.url | stripExt %} 
-  {% set expand = true %}
+  {% set url = page.url | stripExt %}
+  {% set discussion = url | discussionForUrl(allstaticman, webmentions.children) %}
   {% include "entry-footer.njk" %}
+  {% include "discussion.njk" %}
 </div>
 </main>
 {% endblock %}

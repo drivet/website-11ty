@@ -1,99 +1,40 @@
- <footer class="entry__footer"> 
-    {% set discussion = url | discussionForUrl(allstaticman, webmentions.children) %}
-    {% set mentions =  discussion.commentsAndMentions %}
-    {% set likes = discussion.likes %}
-    {% set reposts = discussion.reposts %}
-    {% set bookmarks = discussion.bookmarks %}
-  
+{% set mentions =  discussion.commentsAndMentions %}
+{% set likes = discussion.likes %}
+{% set reposts = discussion.reposts %}
+{% set bookmarks = discussion.bookmarks %}
+<footer class="entry__footer"> 
     {% set syndications = wmresults | syndicationsForUrl(url | stripExt) %}  
     {% if tags or syndications %}
-    <p>
+  
+    <div class="entry__footerline row">
+      {% if tags | length > 0 %}
       <div class="row">
-        {% if tags | length > 0 %}
-        <div class="row">
-          {% for tag in tags %}
-          <a class="p-category post-tag" href="/posts/tags/{{tag}}.html">#{{ tag }}</a>
-          {% endfor %}
-        </div>
-        
-        {% if syndications | length > 0 %}
-        &middot;
-        {% endif %}
-
-        {% endif %}
-        
-        {% if syndications | length > 0 %}
-        <div class="row">
-          {% for s in syndications %}
-          <a class="u-syndication" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
-          {% endfor %}
-        </div>
-        {% endif %}
+        {% for tag in tags %}
+        <a class="p-category post-tag" href="/posts/tags/{{tag}}.html">#{{ tag }}</a>
+        {% endfor %}
       </div>
-    </p>
+      
+      {% if syndications | length > 0 %}
+      &middot;
+      {% endif %}
+
+      {% endif %}
+      
+      {% if syndications | length > 0 %}
+      <div class="row">
+        {% for s in syndications %}
+        <a class="u-syndication" href="{{ s }}" title="Syndicated"><i class="{{ s | synicon }}"></i></a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    
     {% endif %}
-
-    <p>
-      <div class = "row row--extra-spacious"> 
-        <a class="row entry__footerlink" href="{{ url }}#wm-mentions" title="Comments and Mentions"><i class="far fa-comment"></i> {{ mentions | length }}</a>
-        <a class="row entry__footerlink" href="{{ url }}#wm-likes" title="Likes"><i class="far fa-thumbs-up"></i> {{ likes | length }}</a>
-        <a class="row entry__footerlink" href="{{ url }}#wm-reposts" title="Reposts"><i class="fa fa-retweet"></i>  {{ reposts | length }}</a>
-        <a class="row entry__footerlink" href="{{ url }}#wm-bookmarks" title="Bookmarks"><i class="fa fa-bookmark"></i> {{ bookmarks | length }}</a>
-      </div>
-    </p>
+    <div class = "entry__footerline row row--extra-spacious"> 
+      <a class="row entry__footerlink" href="{{ url }}#wm-mentions" title="Comments and Mentions"><i class="far fa-comment"></i> {{ mentions | length }}</a>
+      <a class="row entry__footerlink" href="{{ url }}#wm-likes" title="Likes"><i class="far fa-thumbs-up"></i> {{ likes | length }}</a>
+      <a class="row entry__footerlink" href="{{ url }}#wm-reposts" title="Reposts"><i class="fa fa-retweet"></i>  {{ reposts | length }}</a>
+      <a class="row entry__footerlink" href="{{ url }}#wm-bookmarks" title="Bookmarks"><i class="fa fa-bookmark"></i> {{ bookmarks | length }}</a>
+    </div>
+  
 </footer>
-
-{% if expand and ((mentions | length > 0) or (likes | length > 0) or (reposts | length > 0) or (bookmarks | length > 0)) %}
-{% if mentions.length > 0 %}
-<section class="wm-group">
-  <h1 id="wm-mentions">Mentions</h1>
-  <ul class="content-list"> 
-    {% asyncEach link in mentions %}
-    <li class="content-list__item content-list__item--separator">
-    {% include 'mention.njk' %}
-    </li>
-    {% endeach %}
-  </ul>
-</section>
-{% endif %}
-
-{% if likes.length > 0 %}
-<section class="wm-group">
-  <h1 id="wm-likes">Likes</h1>
-  <ul class="content-list"> 
-    {% for link in likes %}
-    <li class="content-list__item content-list__item--compact">
-    {% include 'link.njk' %}
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}
-
-{% if reposts.length > 0 %}
-<section class="wm-group">
-  <h1 id="wm-reposts">Reposts</h1>
-  <ul class="content-list">
-    {% for link in reposts %}
-    <li class="content-list__item content-list__item--compact">
-    {% include 'link.njk' %}
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}
-
-{% if bookmarks.length > 0 %}
-<section class="wm-group">
-  <h1 id="wm-bookmarks" class="wm-group--header">Bookmarks</h1>
-  <ul class="content-list">
-    {% for link in bookmarks %}
-    <li class="content-list__item content-list__item--compact">
-    {% include 'link.njk' %}
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}
-
-{% endif %}

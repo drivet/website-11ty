@@ -48,7 +48,8 @@ function discussionForUrl(url, allstaticmandata, allwebmentions) {
   const bookmarks = webmentionKind(webmentions, 'bookmark-of');
   const commentsAndMentions = mergeMentionsAndComments(mentions, comments);
   return {
-    commentsAndMentions, likes, reposts, bookmarks
+    commentsAndMentions, likes, reposts, bookmarks,
+    total: comments.length + webmentions.length
   };
 }
 

@@ -64,5 +64,6 @@
 
   {% set tags = post.data.tags %}
   {% set url = post.url | stripExt %}
+  {% set discussion = url | discussionForUrl(allstaticman, webmentions.children) %}
   {% include "entry-footer.njk" %}
 </article>

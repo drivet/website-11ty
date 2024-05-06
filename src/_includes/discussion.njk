@@ -1,0 +1,62 @@
+{% set mentions =  discussion.commentsAndMentions %}
+{% set likes = discussion.likes %}
+{% set reposts = discussion.reposts %}
+{% set bookmarks = discussion.bookmarks %}
+
+{% if (mentions | length > 0) or (likes | length > 0) or (reposts | length > 0) or (bookmarks | length > 0) %}
+<section class="entry__conversation">
+  <hr/>
+  <h2>{{discussion.total}} Conversation(s)</h2>
+  {% if mentions.length > 0 %}
+  <section class="wm-group">
+    <h3 id="wm-mentions">Comments and Mentions</h3>
+    <ul class="content-list"> 
+      {% asyncEach link in mentions %}
+      <li class="content-list__item content-list__item--separator">
+      {% include 'mention.njk' %}
+      </li>
+      {% endeach %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if likes.length > 0 %}
+  <section class="wm-group">
+    <h3 id="wm-likes">Likes</h3>
+    <ul class="content-list"> 
+      {% asyncEach link in likes %}
+      <li class="content-list__item content-list__item--compact">
+      {% include 'link.njk' %}
+      </li>
+      {% endeach %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if reposts.length > 0 %}
+  <section class="wm-group">
+    <h3 id="wm-reposts">Reposts</h3>
+    <ul class="content-list">
+      {% asyncEach link in reposts %}
+      <li class="content-list__item content-list__item--compact">
+      {% include 'link.njk' %}
+      </li>
+      {% endeach %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if bookmarks.length > 0 %}
+  <section class="wm-group">
+    <h3 id="wm-bookmarks" class="wm-group--header">Bookmarks</h3>
+    <ul class="content-list">
+      {% asyncEach link in bookmarks %}
+      <li class="content-list__item content-list__item--compact">
+      {% include 'link.njk' %}
+      </li>
+      {% endeach %}
+    </ul>
+  </section>
+  {% endif %}
+</section>
+{% endif %}

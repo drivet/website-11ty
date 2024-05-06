@@ -1,21 +1,29 @@
 const Image = require("@11ty/eleventy-img");
 
 async function makeImage(src, width) {
-  return await Image(src, {
-    widths: [width],
-    formats: ["jpeg"],
-    urlPath: "/static/img/",
-    outputDir: "./_site/static/img/" ,
-    cacheOptions: {
-      duration: "*",
-      directory: "_cache/images",
-      removeUrlQueryParams: false,
-    },
-  });
+  try {
+    return await Image(src, {
+      widths: [width],
+      formats: ["jpeg"],
+      urlPath: "/static/img/",
+      outputDir: "./_site/static/img/" ,
+      cacheOptions: {
+        duration: "*",
+        directory: "_cache/images",
+        removeUrlQueryParams: false,
+      },
+    });
+  } catch (e) {
+    console.warn(`failed to create image ${src}`);
+    return null;
+  }
 }
 
 async function imgShortcode(src, alt, cls, width, onerror) {
   const data = await makeImage(src, width);
+  if (!data) {
+    return `<img src="/static/img/avatar.png" alt=""/>`
+  }
   const allCls = data['jpeg'][0].height > data['jpeg'][0].width ? `${cls} portrait` : cls;
   const attributes = {
     alt, class: allCls

@@ -202,13 +202,18 @@ body {
   margin-bottom: 1em;
 }
 
-.entry__footer {
+.entry__footerline {
   font-size: var(--font-size-smaller);
   color: var(--lighter-color);
+  margin-bottom: 0.5em;
 }
 
 .entry__footerlink {
   color: var(--lighter-color); 
+}
+
+.entry__conversation {
+  margin-top: 2.5em;
 }
 
 .post-tag {
@@ -254,6 +259,12 @@ body {
 
 .link-context__published {
   font-size: var(--font-size-smaller);
+  margin-right: 0.2em;
+}
+
+.post-info__published {
+  font-size: var(--font-size-smaller);
+  margin-right: 0.2em;
 }
 
 .link-context__content {
@@ -268,16 +279,9 @@ body {
   margin-right: 0.5em;
 }
 
-.post-info__published {
-  font-size: var(--font-size-smaller);
-}
 
 .post-info__content {
   margin-top: 1em;
-}
-
-.wm-group {
-  margin-top: 3em;
 }
 
 .tag-list {

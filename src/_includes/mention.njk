@@ -1,9 +1,7 @@
 {% set photo = link.author.photo %}
 <article class="wm-mention">
   <div class="post-info__header row">
-    {% if link.url %}
-    <a href="{{ link.url }}"><i class="fas fa-external-link-alt"></i></a>
-    {% endif %}
+   
     {% include "avatar.njk" %}
     <div>
       <div>
@@ -15,6 +13,9 @@
       </div>
       <div>
         <span class="post-info__published">{{ link.published | date  }}</span>
+        {% if link.url %}
+        <a href="{{ link.url }}"><i class="fas fa-external-link-alt"></i></a>
+        {% endif %}
       </div>
     </div>
   </div>
