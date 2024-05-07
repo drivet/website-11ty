@@ -32,7 +32,7 @@ function commentsForUrl(comments, url) {
     return [];
   }  
   return comments
-      .filter(entry => entry['commenting-on'] === url);
+      .filter(entry => entry['commentingon'] === url);
 }
 
 function webmentionKind(webmentions, ...kinds) {

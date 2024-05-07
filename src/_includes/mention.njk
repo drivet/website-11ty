@@ -1,8 +1,6 @@
-{% set photo = link.author.photo %}
 <article class="wm-mention">
   <div class="post-info__header row">
-   
-    {% include "avatar.njk" %}
+    {% avatar link.author.photo, link.author.name %} 
     <div>
       <div>
         {% if link.author.url %}

@@ -1,6 +1,5 @@
-{% set photo = link.author.photo %}
 <article class="wm-link row"> 
   <a href="{{ link.url }}"><i class="fas fa-external-link-alt"></i></a>
-  {% include "avatar.njk" %}
+  {% avatar link.author.photo, link.author.name %} 
   <a href="{{ link.author.url }}">{{link.author.name}}</a>
 </article>
