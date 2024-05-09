@@ -2,40 +2,18 @@ const html = require('./utils/html.js');
 const { dateFormat, makePermalink } = require('./utils/helpers.js');
 const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL;
-const sanitizeHTML = require('sanitize-html');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const yaml = require("js-yaml");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const { addAllCollectionGroups, addAlbumImages } = require('./configs/collections');
+const { addAllCollectionGroups } = require('./configs/collections');
 const { previewConfig } = require('./configs/previews.js');
 const { imageConfig } = require('./configs/image.js');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { enhanceNavigation, photoUrlSlug } = require('./configs/albums.js');
 const { inspect } = require('util');
-const { searchIdxPosts, searchIdxRecipes } = require('./configs/search.js');
+const { searchIdxPosts, searchIdxRecipes } = require('./configs/search');
+const { discussionConfig } = require('./configs/discussion.js');
 
-function webmentionsForUrl(webmentions, url) {
-  if (!webmentions) {
-    return [];
-  }
-
-  const absUrl = `${rootUrl}${url}`.replace(/\.[^/.]+$/, "");
-
-  const sanitize = entry => {
-    const { content } = entry;
-    if (content && content['content-type'] === 'text/html') {
-      content.value = sanitizeHTML(content.value);
-    }
-    return entry;
-  };
-  return webmentions
-      .filter(entry => entry['wm-target'] === absUrl)
-      .map(sanitize);
-}
-
-function webmentionKind(webmentions, ...kinds) {
-  return webmentions.filter(entry => kinds.includes(entry['wm-property']));
-}
 
 function sydicationsForUrl(wmresults, url) {
   if (!wmresults) {
@@ -120,9 +98,6 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addFilter("postPermalink", page => `${makePermalink(page, false)}.html`);
   eleventyConfig.addFilter("date", d => dateFormat(d, 'MMM D, YYYY, h:mm A Z'));
-
-  eleventyConfig.addFilter("webmentionsForUrl", webmentionsForUrl);
-  eleventyConfig.addFilter("webmentionKind", webmentionKind);
   eleventyConfig.addFilter("syndicationsForUrl", sydicationsForUrl);
 
   eleventyConfig.addFilter('stripExt', obj => {
@@ -135,11 +110,11 @@ module.exports = (eleventyConfig) => {
   
   eleventyConfig.addFilter('inspect', obj => inspect(obj));
 
-  eleventyConfig.addFilter('aUrl', obj => {
-    if (obj.startsWith('/')) {
-      return `${rootUrl}${obj}`;
+  eleventyConfig.addFilter('aUrl', url => {
+    if (url.startsWith('/')) {
+      return `${rootUrl}${url}`;
     } else {
-      return `${obj}`;
+      return `${url}`;
     }
   });
 
@@ -159,6 +134,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('enhanceNavigation', enhanceNavigation);
   eleventyConfig.addFilter("searchIdxPosts", searchIdxPosts);
   eleventyConfig.addFilter("searchIdxRecipes", searchIdxRecipes);
+  
+  eleventyConfig.addFilter("debug", obj => JSON.stringify(obj));
 
   eleventyConfig.setTemplateFormats([
     "md",
@@ -182,6 +159,7 @@ module.exports = (eleventyConfig) => {
   previewConfig(eleventyConfig);
   addAllCollectionGroups(eleventyConfig);
   imageConfig(eleventyConfig);
+  discussionConfig(eleventyConfig);
 
   return {
     dir: {

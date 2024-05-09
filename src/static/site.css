@@ -17,6 +17,11 @@ body {
   border-top: 5px solid var(--accent);
 }
 
+h1 {
+  font-size: 2em;
+}
+
+
 .mug {
   width: 150px;
   height: 150px;
@@ -202,13 +207,18 @@ body {
   margin-bottom: 1em;
 }
 
-.entry__footer {
+.entry__footerline {
   font-size: var(--font-size-smaller);
   color: var(--lighter-color);
+  margin-bottom: 0.5em;
 }
 
 .entry__footerlink {
   color: var(--lighter-color); 
+}
+
+.entry__conversation {
+  margin-top: 2.5em;
 }
 
 .post-tag {
@@ -254,6 +264,12 @@ body {
 
 .link-context__published {
   font-size: var(--font-size-smaller);
+  margin-right: 0.2em;
+}
+
+.post-info__published {
+  font-size: var(--font-size-smaller);
+  margin-right: 0.2em;
 }
 
 .link-context__content {
@@ -268,16 +284,9 @@ body {
   margin-right: 0.5em;
 }
 
-.post-info__published {
-  font-size: var(--font-size-smaller);
-}
 
 .post-info__content {
   margin-top: 1em;
-}
-
-.wm-group {
-  margin-top: 3em;
 }
 
 .tag-list {
@@ -379,4 +388,26 @@ body {
 
 .recipe__instructions-header {
   font-weight: bold;
+}
+
+.commentform__section {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.commentform__label {
+  display: block;
+}
+
+.commentform__input {
+  display: block;
+}
+
+.commentform__textarea {
+  width: 100%;
+  height: 10em;
+}
+
+.separator {
+  border: 1px solid var(--lightest-color);
 }

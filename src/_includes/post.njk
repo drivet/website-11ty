@@ -12,7 +12,7 @@ breadcumbOptions:
 
 {% block content %}
 <main class="main">
-<div class="h-entry entry">
+<article class="h-entry entry">
   
   {% for mention in bridgyMentions %}
   <a href="{{mention}}"></a>
@@ -74,9 +74,10 @@ breadcumbOptions:
     {% endif %}
   {% endif %}
 
-  {% set url = page.url | stripExt %} 
-  {% set expand = true %}
+  {% set url = page.url | stripExt %}
+  {% set discussion = url | discussionForUrl(allstaticman, webmentions.children) %}
   {% include "entry-footer.njk" %}
-</div>
+  {% include "discussion.njk" %}
+</article>
 </main>
 {% endblock %}
