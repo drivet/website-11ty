@@ -2,13 +2,15 @@
 {% set likes = discussion.likes %}
 {% set reposts = discussion.reposts %}
 {% set bookmarks = discussion.bookmarks %}
+{% set comment_response = "/comment-response" | aUrl %}
+
 
 {% if (mentions | length > 0) or (likes | length > 0) or (reposts | length > 0) or (bookmarks | length > 0) %}
 <section class="entry__conversation">
   <hr class="separator"/>
   <h2>Post a Comment</h2>
   <form class="commentform" method="POST" action="https://staticman.desmondrivet.com/v3/entry/github/drivet/website-11ty/main/comments">
-    <input name="options[redirect]" type="hidden" value="{{url}}">
+    <input name="options[redirect]" type="hidden" value="{{comment_response}}">
     <input name="fields[commentingon]" type="hidden" value="{{url}}">
     
     <div class="commentform__section">

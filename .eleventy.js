@@ -110,11 +110,11 @@ module.exports = (eleventyConfig) => {
   
   eleventyConfig.addFilter('inspect', obj => inspect(obj));
 
-  eleventyConfig.addFilter('aUrl', obj => {
-    if (obj.startsWith('/')) {
-      return `${rootUrl}${obj}`;
+  eleventyConfig.addFilter('aUrl', url => {
+    if (url.startsWith('/')) {
+      return `${rootUrl}${url}`;
     } else {
-      return `${obj}`;
+      return `${url}`;
     }
   });
 
