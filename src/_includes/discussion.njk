@@ -4,8 +4,6 @@
 {% set bookmarks = discussion.bookmarks %}
 {% set comment_response = "/comment-response" | aUrl %}
 
-
-{% if (mentions | length > 0) or (likes | length > 0) or (reposts | length > 0) or (bookmarks | length > 0) %}
 <section class="entry__conversation">
   <hr class="separator"/>
   <h2>Post a Comment</h2>
@@ -31,7 +29,8 @@
     <div class="commentform__section">
       <button class="commentform__input" type="submit">Go!</button>
     </div>
-  </form>  
+  </form>
+  {% if (mentions | length > 0) or (likes | length > 0) or (reposts | length > 0) or (bookmarks | length > 0) %}
   <hr class="separator"/>
   <h2>{{discussion.total}} Conversation(s)</h2>
   {% if mentions.length > 0 %}
@@ -74,5 +73,5 @@
     {% endeach %}
   </section>
   {% endif %}
+  {% endif %}
 </section>
-{% endif %}
