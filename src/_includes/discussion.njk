@@ -5,22 +5,32 @@
 
 {% if (mentions | length > 0) or (likes | length > 0) or (reposts | length > 0) or (bookmarks | length > 0) %}
 <section class="entry__conversation">
-  <hr/>
-  Post a Comment:
-  <form method="POST" action="https://staticman.desmondrivet.com/v3/entry/github/drivet/website-11ty/main/comments">
+  <hr class="separator"/>
+  <h2>Post a Comment</h2>
+  <form class="commentform" method="POST" action="https://staticman.desmondrivet.com/v3/entry/github/drivet/website-11ty/main/comments">
     <input name="options[redirect]" type="hidden" value="{{url}}">
     <input name="fields[commentingon]" type="hidden" value="{{url}}">
-    <label for="comment_name">Name</label>
-    <input name="fields[name]" id="comment_name" type="text">
+    
+    <div class="commentform__section">
+      <label class="commentform__label" for="comment_name">Name:</label>
+      <input class="commentform__input" name="fields[name]" id="comment_name" type="text">
+    </div>
 
-    <label for="comment_email">E-mail</label>
-    <input name="fields[email]" id="comment_email" type="email">
+    <div class="commentform__section">
+      <label class="commentform__label" for="comment_email">E-mail:</label>
+      <input class="commentform__input" name="fields[email]" id="comment_email" type="email">
+    </div>
 
-    <label for="comment_message">Comment</label>
-    <textarea name="fields[message]" id="comment_message"></textarea>
-    <button type="submit">Go!</button>
+    <div class="commentform__section">
+      <label class="commentform__label" for="comment_message">Comment:</label> 
+      <textarea class="commentform__input commentform__textarea" name="fields[message]" id="comment_message"></textarea>
+    </div>
+
+    <div class="commentform__section">
+      <button class="commentform__input" type="submit">Go!</button>
+    </div>
   </form>  
-  <hr/>
+  <hr class="separator"/>
   <h2>{{discussion.total}} Conversation(s)</h2>
   {% if mentions.length > 0 %}
   <section class="wm-group">
