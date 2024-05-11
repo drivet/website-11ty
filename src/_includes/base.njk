@@ -22,12 +22,12 @@
   <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Open+Sans&display=swap" rel="stylesheet"/>
   <link href="https://unpkg.com/prismjs@1.27.0/themes/prism-okaidia.css" rel="stylesheet">
 
-  <link href="/static/theme.css" rel="stylesheet">
-  <link href="/static/settings.css" rel="stylesheet">
-  <link href="/static/utils.css" rel="stylesheet">
-  <link href="/static/site.css" rel="stylesheet">
-  <link href="/static/tablet.css" rel="stylesheet">
-  <link href="/static/desktop.css" rel="stylesheet">
+  <link href="{{ '/static/theme.css' | cachebust(global.URL, 'src/static/theme.css')}}" rel="stylesheet">
+  <link href="{{ '/static/settings.css' | cachebust(global.URL, 'src/static/settings.css')}}" rel="stylesheet">
+  <link href="{{ '/static/utils.css' | cachebust(global.URL, 'src/static/utils.css')}}" rel="stylesheet">
+  <link href="{{ '/static/site.css' | cachebust(global.URL, 'src/static/site.css') }}" rel="stylesheet">
+  <link href="{{ '/static/tablet.css' | cachebust(global.URL, 'src/static/tablet.css')}}" rel="stylesheet">
+  <link href="{{ '/static/desktop.css' | cachebust(global.URL, 'src/static/desktop.css')}}" rel="stylesheet">
 
   <link href="/static/fontawesome/css/all.min.css" rel="stylesheet">
 

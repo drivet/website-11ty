@@ -13,7 +13,7 @@ const { enhanceNavigation, photoUrlSlug } = require('./configs/albums.js');
 const { inspect } = require('util');
 const { searchIdxPosts, searchIdxRecipes } = require('./configs/search');
 const { discussionConfig } = require('./configs/discussion.js');
-
+const { cacheBustConfig } = require('./configs/cachebust.js');
 
 function sydicationsForUrl(wmresults, url) {
   if (!wmresults) {
@@ -160,6 +160,7 @@ module.exports = (eleventyConfig) => {
   addAllCollectionGroups(eleventyConfig);
   imageConfig(eleventyConfig);
   discussionConfig(eleventyConfig);
+  cacheBustConfig(eleventyConfig);
 
   return {
     dir: {

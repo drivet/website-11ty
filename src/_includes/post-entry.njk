@@ -17,7 +17,7 @@
 
   {{ reflink(post.data.postType, post.data.referencedLink) }}
 
-  <div class="e-content">
+  <div class="e-content entry__content">
     {% if post.data.postType == 'article' %}
     {{ post.templateContent | excerpt | safe }}
     {% else %} 
