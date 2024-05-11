@@ -187,6 +187,7 @@ h1 {
   position: relative;
   padding-bottom: 75%;
   overflow: hidden;
+  margin: 1em 0;
 }
 
 .entry__photoclipped {
@@ -338,6 +339,10 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
+}
+
+.entry__image-grid {
+  margin: 1em 0;
 }
 
 .image-grid__item {

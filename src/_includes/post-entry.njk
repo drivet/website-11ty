@@ -38,9 +38,9 @@
       <div class="entry__photowrapper">
         {% image photoObj.value | d(photoObj), photoObj.alt | d('') , "u-photo entry__photoclipped image" %}
       </div>
-    {% else %}
+    {% elif photoCount > 1 %}
       {% set photoArg = post.data.photo | clamp(8) %}
-      <div class="image-grid">
+      <div class="entry__image-grid image-grid">
         {% asyncEach photoObj in photoArg %}
           <div class="image-grid__item">
             {% thumb photoObj.value | d(photoObj), photoObj.alt | d('') , "u-photo image-grid__thumb image" %}
