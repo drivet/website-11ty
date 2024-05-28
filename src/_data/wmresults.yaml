@@ -2363,4 +2363,8 @@ results:
     'https://canadianportfoliomanagerblog.com/how-to-choose-your-asset-allocation-etf/': {}
   2024/05/01/112914:
     'https://lucidmanager.org/productivity/read-rss-feeds-with-emacs-and-elfeed/': {}
+  2024/05/28/140721:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112520049112006552'
 site_url: 'https://desmondrivet.com'
