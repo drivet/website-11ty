@@ -153,7 +153,8 @@ module.exports = (eleventyConfig) => {
     "ttf",
     "woff",
     "woff2",
-    "js"
+    "js",
+    "ps"
   ]);
   
   previewConfig(eleventyConfig);

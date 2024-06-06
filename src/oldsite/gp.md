@@ -64,17 +64,4 @@ someday.
 </table>
 
 ### Source Code
-* [gpbase.h](/oldsite/gp_src/gpbase.h)
-* [gpbase.c](/oldsite/gp_src/gpbase.c)
-* [algebra.h](/oldsite/gp_src/algebra.h)
-* [algebra.c](/oldsite/gp_src/algebra.c)
-* [clip.h](/oldsite/gp_src/clip.h)
-* [clip.c](/oldsite/gp_src/clip.c)
-* [light.h](/oldsite/gp_src/light.h)
-* [light.c](/oldsite/gp_src/light.c)
-* [pipe.h](/oldsite/gp_src/pipe.h)
-* [pipe.c](/oldsite/gp_src/pipe.c)
-* [raster.h](/oldsite/gp_src/raster.h)
-* [raster.c](/oldsite/gp_src/raster.c)
-* [view.h](/oldsite/gp_src/view.h)
-* [view.c](/oldsite/gp_src/view.c)
+The source code is [available on github](https://github.com/drivet/graphics-pipeline).

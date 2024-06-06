@@ -55,14 +55,13 @@ are all just different variations of a note.  In general, I think it's more
 useful to firmly distinguish between original content, such as
 [articles][15] or notes, and derivative content, such as [likes][17],
 [reposts][18] and [replies][19].  This personal preference surfaces in my
-blog via the existence of the "Lifestream" feed which houses all my original
-content.)
+blog via my ["Lifestream"][20] feed which houses all my original content.)
 
 My blog never had a lot of readers, and I never had a ton of followers on
 social media, so while the social networking aspects of the IndieWeb,
-particularly the webmentions, were certainly intriguing to me, they were
-never what sold me.  I wrote this a few years ago, for example, in my
-inaugural post introducing myself to the IndieWeb at large:
+particularly the webmentions, certainly intrigued me, they were never what
+sold me.  I wrote this a few years ago, for example, in my inaugural post
+introducing myself to the IndieWeb at large:
 
 > Even if the entire IndieWeb consisted of a single personal website, it
 > would still "work", in the sense that the owner of the website would be in
@@ -84,13 +83,14 @@ will never call it X).
 
 Don't get me wrong - after the Musk takeover of Twitter, decentralized
 social networking is certainly having a moment, but it's mostly in the form
-of ActivityPub, the protocol that powers Mastodon and a host of other
-applications specializing in different things, such as photo or book
-sharing.  And while these applications are certainly a step up from the
-standard crop of corporate backed silos, they aren't a replacement for a
-personal website; your online presence and content, while nominally under
-your control, is still spread out across different platforms.  As I've
-mentioned before, it's not something that really appeals to me.
+of [ActivityPub][21], the protocol that powers [Mastodon][22] and a host of
+other applications specializing in different things, such as [photo][23] or
+[book][24] sharing.  And while these applications are certainly a step up
+from the standard crop of corporate backed [silos][25], they aren't a
+replacement for a personal website; your online presence and content, while
+nominally under your control, is still spread out across different
+platforms.  As I've mentioned before, it's not something that really appeals
+to me.
 
 Still, if you joined the IndieWeb in the hopes of being part of a
 conversation and have been disappointed, these ActivityPub based
@@ -138,3 +138,15 @@ value in that.
 [18]: https://indieweb.org/repost
 
 [19]: https://indieweb.org/reply
+
+[20]: https://desmondrivet.com/posts/lifestream/
+
+[21]: https://www.w3.org/TR/activitypub/
+
+[22]: https://joinmastodon.org/
+
+[23]: https://pixelfed.org/
+
+[24]: https://bookwyrm.social/
+
+[25]: https://indieweb.org/silo
