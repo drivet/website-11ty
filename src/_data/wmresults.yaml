@@ -2367,4 +2367,48 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/112520049112006552'
+  2024/06/07/five-years-indieweb:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112578428427251859'
+    'https://indieweb.org/IndieWeb':
+      status_code: 404
+    'https://indieweb.org/IndieAuth':
+      status_code: 404
+    'https://indieweb.org/OpenID':
+      status_code: 404
+    'https://indieweb.org/post':
+      status_code: 404
+    'https://indieweb.org/microformats':
+      status_code: 404
+    'https://indieweb.org/post-type-discovery':
+      status_code: 404
+    'https://indieweb.org/Webmention':
+      status_code: 404
+    'https://indieweb.org/POSSE':
+      status_code: 404
+    'https://indieweb.org/backfeed':
+      status_code: 404
+    'https://indieweb.org/Micropub':
+      status_code: 404
+    'https://indieweb.org/link-preview':
+      status_code: 404
+    'https://indieweb.org/article':
+      status_code: 404
+    'https://indieweb.org/note':
+      status_code: 404
+    'https://indieweb.org/video':
+      status_code: 404
+    'https://indieweb.org/like':
+      status_code: 404
+    'https://indieweb.org/repost':
+      status_code: 404
+    'https://indieweb.org/reply':
+      status_code: 404
+    'https://www.w3.org/TR/activitypub/': {}
+    'https://joinmastodon.org/': {}
+    'https://pixelfed.org/': {}
+    'https://bookwyrm.social/': {}
+    'https://indieweb.org/silo':
+      status_code: 404
 site_url: 'https://desmondrivet.com'
