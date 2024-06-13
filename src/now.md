@@ -1,5 +1,5 @@
 ---
-modified: 2024-05-02T20:52:00-04:00
+modified: 2024-06-13T14:24:00-04:00
 permalink: "{{ page.filePathStem }}.html"
 layout: "page.njk"
 title: Now
@@ -14,7 +14,6 @@ on social media.
 
 So, currently, my life looks roughly like this, in approximate order of stuff most likely to change:
 
-* Reading Leviathan Falls by James S. A. Corey.
 * Playing Baldur's Gate 3.
 * Trying to obtain my Italian citizenship.
 * Working as a senior software developer at Unity Technologies, doing mostly data
