@@ -2411,4 +2411,12 @@ results:
     'https://bookwyrm.social/': {}
     'https://indieweb.org/silo':
       status_code: 404
+  2024/06/13/163143:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112611213376578179'
+    'https://mastodon.social/@matthiasott/112430293298188853': {}
+    'https://desmondrivet.com':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/UTKrRq8KIQIbnL0lJZVU'
 site_url: 'https://desmondrivet.com'
