@@ -22,7 +22,7 @@
     {% if link.content.html %}
     {{ link.content.html | safe }}
     {% else %}
-    {{ link.content.text }}
+    {{ link.content.text | markdown | safe}}
     {% endif %}
   </div>
 </article>
