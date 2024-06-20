@@ -59,7 +59,11 @@ module.exports = (eleventyConfig) => {
     html: true,
     linkify: true
   };
-  eleventyConfig.setLibrary("md", markdownIt(options));
+  const markdown = markdownIt(options);
+  eleventyConfig.setLibrary("md", markdown);
+  eleventyConfig.addFilter('markdown', function(value) {
+    return markdown.render(value);
+  });
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
