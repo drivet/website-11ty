@@ -26,8 +26,8 @@ is doable by pressing the backspace key several times, or by highlighting the
 line in question with the mouse and deleting it. I never really tried to
 find a faster way to do it (though now that I'm aware of it..cool!)
 
-All that being that being said, I have developed, over the years, a fair bit
-of "workflow" around my use of Emacs.
+All that being said, I have developed, over the years, a fair bit of
+"workflow" around my use of Emacs.
 
 Emacs isn't a so much a text editor as it is a text editing platform - a
 platform for controlling and transforming text buffers. So over the years
