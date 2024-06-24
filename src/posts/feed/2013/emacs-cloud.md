@@ -10,7 +10,7 @@ I'm a long time (15 years) [Emacs][1] user. Please don't draw too many
 conclusions from this fact. I'm not, by any stretch of the imagination, an
 Emacs "wizard". I don't know how to make my Emacs buffer do amazing things
 with a single key stroke. I'm embarrassed to say, for example, that I've
-only recently learned the keystroke for deleting am entire line.
+only recently learned the keystroke for deleting an entire line.
 
 I'm not a Lisp hacker, and even less of an Emacs Lisp hacker.  While I
 wouldn't say my knowledge of Lisp is non-existent, I would still firmly
