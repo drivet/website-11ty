@@ -10,7 +10,7 @@ I'm a long time (15 years) [Emacs][1] user. Please don't draw too many
 conclusions from this fact. I'm not, by any stretch of the imagination, an
 Emacs "wizard". I don't know how to make my Emacs buffer do amazing things
 with a single key stroke. I'm embarrassed to say, for example, that I've
-only recently learned the keystroke for deleting am entire line.
+only recently learned the keystroke for deleting an entire line.
 
 I'm not a Lisp hacker, and even less of an Emacs Lisp hacker.  While I
 wouldn't say my knowledge of Lisp is non-existent, I would still firmly
@@ -26,8 +26,8 @@ is doable by pressing the backspace key several times, or by highlighting the
 line in question with the mouse and deleting it. I never really tried to
 find a faster way to do it (though now that I'm aware of it..cool!)
 
-All that being that being said, I have developed, over the years, a fair bit
-of "workflow" around my use of Emacs.
+All that being said, I have developed, over the years, a fair bit of
+"workflow" around my use of Emacs.
 
 Emacs isn't a so much a text editor as it is a text editing platform - a
 platform for controlling and transforming text buffers. So over the years
