@@ -2419,4 +2419,8 @@ results:
     'https://desmondrivet.com':
       status_code: 201
       location: 'https://webmention.io/desmondrivet.com/webmention/UTKrRq8KIQIbnL0lJZVU'
+  2024/06/25/102658:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112677726721635108'
 site_url: 'https://desmondrivet.com'
