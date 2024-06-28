@@ -2423,4 +2423,8 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/112677726721635108'
+  2024/06/28/chai-tea:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/112695773706697913'
 site_url: 'https://desmondrivet.com'
