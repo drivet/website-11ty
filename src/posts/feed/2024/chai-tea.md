@@ -9,10 +9,10 @@ tags:
 image: /static/img/chai_unsplash.jpg
 ---
 
-Yes, I know that the word "chai" literally just means "tea" in Hindi and
-that the term "chai tea" is therefore technically redundant.  I don't care.
-I will still occasionally say "chai tea" and I don't feel like I'm
-committing some kind of linguistic sin by doing so.
+Yes, I know that the word "chai" literally just means "tea" in Hindi (and
+other languages) and that the term "chai tea" is therefore technically
+redundant.  I don't care.  I will still occasionally say "chai tea" and I
+don't feel like I'm committing some kind of linguistic sin by doing so.
 
 The English translation of "chai" is, of course, "tea" and it refers to a
 very generic category of usually hot and often caffeinated beverages made
