@@ -2427,4 +2427,10 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/112695773706697913'
+  2024/07/14/140635:
+    'https://hugocisneros.com/blog/my-org-roam-notes-workflow/':
+      status_code: 429
+    'https://hugocisneros.com/':
+      status_code: 201
+      location: 'https://webmention.io/hugocisneros.com/webmention/RCppFQ3_elRuqKPDrwgD'
 site_url: 'https://desmondrivet.com'
