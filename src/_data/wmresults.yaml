@@ -2433,4 +2433,8 @@ results:
     'https://hugocisneros.com/':
       status_code: 201
       location: 'https://webmention.io/hugocisneros.com/webmention/RCppFQ3_elRuqKPDrwgD'
+  2024/09/22/135511:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/113182490966927287'
 site_url: 'https://desmondrivet.com'
