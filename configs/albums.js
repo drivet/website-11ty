@@ -25,6 +25,8 @@ function albumPhotoPost(album, albumPath, index0, photoUrl, slugs) {
     slug,
     nextLink,
     prevLink,
+    total,
+    index0,
   };
 }
 

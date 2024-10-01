@@ -24,7 +24,7 @@ eleventyComputed:
           <a class="entry__published dt-published" href="{{ page.url | stripExt }}">{{ date | date  }}</a>
       </span>
       <h1 class="entry__title p-name">
-        <a href="{{ p.albumUrl | stripExt }}" class="entry__titlelink">{{ p.title }}</a> / {{ p.slug }}
+        <a href="{{ p.albumUrl | stripExt }}" class="entry__titlelink">{{ p.title }}</a> / {{ p.index0 + 1}} of {{ p.total }}
       </h1>
 
       <p>
