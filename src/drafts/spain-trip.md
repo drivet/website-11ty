@@ -46,9 +46,25 @@ advice on how to blend in...or at least on how to avoid walking around with
 a giant neon arrow pointed at my head flashing "tourist".  Mostly this
 involved dressing plainly and not being obnoxious.
 
-Did it work?  Read on to find out!
+Did it work?  Were we pelted with water guns?  Was the food indeed amazing?
+Read on to find out!
 
 ## Barcelona
+
+Our first stop was Barcelona, our home for the next few days.  The Airbnb
+was located in the Barcelona Sans district, right near the train station,
+and only a 5 minute walk from the metro.  While our accommodations were
+modest, our hostess was one of the friendliest people I've ever met in my
+life.
+
+So what were my impressions of Barcelona?  Bear with me, as they have to be
+put in context.  Paris may get a lot of the attention as a tourist magnet,
+but people are often underwhelmed when they finally visit, what with all the
+rude locals, overpriced croissants and dog shit everywhere.  There's even a
+whole syndrome named after this phenomenon.
+
+Barcelona, though?  Everyone I know raves about Barcelona.  I have not yet
+found a Barcelona Syndrome page on Wikipedia.
 
 A lot of the photos from my early trips to Europe (Naples, Paris, etc.)
 consist of random, not particularly interesting street shots.  The reason is
