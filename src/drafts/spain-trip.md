@@ -66,6 +66,8 @@ whole syndrome named after this phenomenon.
 Barcelona, though?  Everyone I know raves about Barcelona.  I have not yet
 found a Barcelona Syndrome page on Wikipedia.
 
+## El Born
+
 A lot of the photos from my early trips to Europe (Naples, Paris, etc.)
 consist of random, not particularly interesting street shots.  The reason is
 that, to my eyes at the time, *everything* looked exotic, even a graffitied
