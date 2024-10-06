@@ -50,6 +50,12 @@ eleventyComputed:
     {% set img_classes = "u-featured u-photo entry__photo image" %}
     {% include "image.njk" %}
    </div>
+   
+   {% set url = page.url | stripExt %}
+   {% set discussion = url | discussionForUrl(allstaticman, webmentions.children) %}
+   {% include "entry-footer.njk" %}
+   {% include "discussion.njk" %}
+
 </div>
 </main>
 {% endblock %}
