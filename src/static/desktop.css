@@ -2,11 +2,11 @@
     :root {
         --width: 750px;
     }
-   
+   /*
     .navbar { 
         max-width: var(--width);
     }
-
+*/
     .main { 
         max-width: var(--width);
     }
