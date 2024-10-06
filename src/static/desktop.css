@@ -7,6 +7,10 @@
         max-width: var(--width);
     }
 */
+    .secondary-header__navbar {
+        max-width: var(--width);
+    }
+    
     .main { 
         max-width: var(--width);
     }
