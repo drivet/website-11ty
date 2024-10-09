@@ -9,6 +9,9 @@ eleventyComputed:
 ---
 {% extends "base.njk" %}
 {% from "entry-header.njk" import entryheader %}
+{% block extrastyle %}
+<link href="{{ '/static/albumImage.css' | cachebust(global.URL, 'src/static/albumImage.css')}}" rel="stylesheet">
+{% endblock %}
 {% block content %}
 {% set date = p.date %}
 <main class="main">
@@ -23,11 +26,12 @@ eleventyComputed:
       <span class="entry__headerline row row--spacious">
           <a class="entry__published dt-published" href="{{ page.url | stripExt }}">{{ date | date  }}</a>
       </span>
+
       <h1 class="entry__title p-name">
         <a href="{{ p.albumUrl | stripExt }}" class="entry__titlelink">{{ p.title }}</a> / {{ p.index0 + 1}} of {{ p.total }}
       </h1>
 
-      <p>
+      <p class="entry__imagenav">
       {% if p.prevLink %}
       <a href="{{p.prevLink}}" title="Previous"><i class="fa fa-chevron-circle-left"></i></a>
       {% else %}
@@ -44,11 +48,9 @@ eleventyComputed:
        </p>
   </header>
 
-  <div class="e-content">
-    {{ content | safe }} 
-    {% set photoObj = p.photo %}
-    {% set img_classes = "u-featured u-photo entry__photo image" %}
-    {% include "image.njk" %}
+  <div class="e-content entry__content">
+    {{ content | safe }}
+    {% largeImage p.photo.value, p.photo.alt or "album photo`", "u-featured u-photo entry__photo image" %}
    </div>
    
    {% set url = page.url | stripExt %}

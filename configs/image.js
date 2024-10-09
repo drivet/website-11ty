@@ -1,9 +1,9 @@
 const Image = require("@11ty/eleventy-img");
 
-async function makeImage(src, width) {
+async function makeImage(src, widths) {
   try {
     return await Image(src, {
-      widths: [width],
+      widths,
       formats: ["jpeg"],
       urlPath: "/static/img/",
       outputDir: "./_site/static/img/" ,
@@ -19,14 +19,17 @@ async function makeImage(src, width) {
   }
 }
 
-async function imgShortcode(src, alt, cls, width, onerror) {
-  const data = await makeImage(src, width);
+async function imgShortcode(src, alt, cls, widths, onerror) {
+  const data = await makeImage(src, widths);
   if (!data) {
     return `<img src="/static/img/avatar.png" alt=""/>`
   }
   const allCls = data['jpeg'][0].height > data['jpeg'][0].width ? `${cls} portrait` : cls;
+  //const sizes = '(min-width: 1024px) 444, (min-width: 768px) 444, 100vw';
   const attributes = {
-    alt, class: allCls
+    alt, class: allCls,
+    loading: "lazy",
+    decoding: "async",
   };
   if (onerror) {
     attributes.onerror = onerror
@@ -34,16 +37,20 @@ async function imgShortcode(src, alt, cls, width, onerror) {
   return Image.generateHTML(data, attributes);
 }
 
+async function largeImageShortcode(src, alt, cls, onerror) {
+  return await imgShortcode(src, alt, cls, [1200], onerror);
+}
+
 async function imageShortcode(src, alt, cls, onerror) {
-  return await imgShortcode(src, alt, cls, 800, onerror);
+  return await imgShortcode(src, alt, cls, [800], onerror);
 }
 
 async function bigThumbShortcode(src, alt, cls, onerror) {
-  return await imgShortcode(src, alt, cls, 400, onerror);
+  return await imgShortcode(src, alt, cls, [400], onerror);
 }
 
 async function thumbShortcode(src, alt, cls, onerror) {
-  return await imgShortcode(src, alt, cls, 200, onerror);
+  return await imgShortcode(src, alt, cls, [200], onerror);
 }
 
 async function avatarShortcode(src, name) {
@@ -54,7 +61,7 @@ async function avatarShortcode(src, name) {
   if (!src) {
     return `<img src="${staticAvatar}" alt="${alt}" title="${title}" />`
   }
-  const data = await makeImage(src, width);
+  const data = await makeImage(src, [width]);
   if (!data) {
     return `<img src="${staticAvatar}" alt="${alt}" title="${title}" />`
   }
@@ -64,13 +71,14 @@ async function avatarShortcode(src, name) {
     alt,
     title,
     class: allCls,
-    onerror: `if (this.src != '${staticAvatar}') this.src = '${staticAvatar}';`
+    onerror: `if (this.src != '${staticAvatar}') this.src = '${staticAvatar}';`,
   };
   return Image.generateHTML(data, attributes);
  
 }
 
 function imageConfig(eleventyConfig) {
+  eleventyConfig.addNunjucksAsyncShortcode("largeImage", largeImageShortcode);
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addNunjucksAsyncShortcode("bigthumb", bigThumbShortcode);
   eleventyConfig.addNunjucksAsyncShortcode("thumb", thumbShortcode); 

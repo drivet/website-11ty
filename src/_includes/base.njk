@@ -28,7 +28,7 @@
   <link href="{{ '/static/site.css' | cachebust(global.URL, 'src/static/site.css') }}" rel="stylesheet">
   <link href="{{ '/static/tablet.css' | cachebust(global.URL, 'src/static/tablet.css')}}" rel="stylesheet">
   <link href="{{ '/static/desktop.css' | cachebust(global.URL, 'src/static/desktop.css')}}" rel="stylesheet">
-
+  {% block extrastyle %}{% endblock %}
   <link href="/static/fontawesome/css/all.min.css" rel="stylesheet">
 
   {% if global.AUTH_ENDPOINT %}
