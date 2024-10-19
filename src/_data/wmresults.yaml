@@ -2441,4 +2441,12 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/113194503615965225'
+  2024/10/15/154525:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/113313158398970872'
+    'https://pixelfed.social/p/nhoizey/751853308530419259': {}
+    'https://desmondrivet.com/2024/10/05/alcazar/19c08a7be5b784':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/pTxr5B8X5ssEG4egXPFs'
 site_url: 'https://desmondrivet.com'
