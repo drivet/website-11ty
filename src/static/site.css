@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 
@@ -160,7 +160,7 @@ h1 {
 }
 
 .entry__header--top {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .entry__headerline {
@@ -173,7 +173,7 @@ h1 {
 }
 
 .entry__title {
-  margin: 0.5em 0;
+  margin: 0.2em 0;
 }
 
 .entry__titlelink {

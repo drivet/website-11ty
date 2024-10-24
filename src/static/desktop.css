@@ -2,11 +2,7 @@
     :root {
         --width: 750px;
     }
-   /*
-    .navbar { 
-        max-width: var(--width);
-    }
-*/
+
     .secondary-header__navbar {
         max-width: var(--width);
     }
@@ -27,4 +23,8 @@
       float: left;
       margin: 0 1em 1em 0;
     }
+    
+    .entry__header--top {
+      margin-top: 2em;
+     }
 }

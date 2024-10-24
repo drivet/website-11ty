@@ -10,10 +10,10 @@ tags:
 
 I recently finished watching Bodies on Netflix and the concept of free will
 comes up a fair bit given that the show involves a [predestination
-paradox][1].  One of the characters voices the opinion that, in
-his words, "free will is an illusion" because human choices are ultimately
-the result of physics and biology.  Humans choices, in other words, are
-predetermined, and that means that the free will doesn't exist.
+paradox][1].  One of the characters voices the opinion that "free will is an
+illusion" (his words) because human choices are ultimately the result of
+physics and biology.  Human choices, in other words, are predetermined, and
+that means that free will doesn't exist.
 
 The character in question is acting as a mouthpiece for the notion of
 [incompatibilism][2], the idea that free will and [determinism][3] are
@@ -51,8 +51,8 @@ like spinning circles, right?  Here's one:
 It makes sense to call these spinning circles "illusions".  Why?  Because we
 all know what an actual spinning object looks like, and we can tell that
 this picture isn't it.  You could tap your face on the picture with no fear
-whatsoever - something, I suspect, you'd be reluctant to do with, say, a
-propeller or ceiling fan.
+at all - something, I suspect, you'd be reluctant to do with, say, a
+propeller or a ceiling fan.
 
 So if someone asserts that free will is an illusion, the very first question
 that needs to be answered is: "an illusion of what?"  And that is, I think,
@@ -60,11 +60,12 @@ a very tough question to answer - an impossible question to answer, I would
 argue, if you're an incompatibilist.
 
 But it's actually pretty easy if you're a [comptatibilist][4] - if you
-believe that free will is not only possible in a mathematical universe, but
-actually *requires* it, like any natural phenomenon.  If you're a
-comptatibilist, then free will is simply the human capacity for choice - no
-more and no less.  It's almost a self-evident truth, something you witness
-every day.  You might as well try and prove that gravity doesn't exist.
+believe that free will is not only possible in a mathematical, deterministic
+universe, but actually *requires* it, like any natural phenomenon.  If
+you're a comptatibilist, then free will is simply the human capacity for
+choice - no more and no less.  It's almost a self-evident truth, something
+you witness every day.  You might as well try and prove that gravity doesn't
+exist.
 
 It doesn't matter if a choice is determined, or if it has a natural
 mechanism, or if it's explainable by physics or biology.  Explaining how
