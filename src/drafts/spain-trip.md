@@ -168,6 +168,44 @@ Later that day we visited Park Guell, yet another Gaudi creation (this guy
 is *everywhere* in Barcelona).  Not quite the jaw dropping spectacle of the
 Sagrada Familiar, Park Guell still looks like something out of Dr. Seuss.
 
+## A Brief Culinary Detour
+
+We obviously had to eat that night and so now might be good time to talk
+about the food.  It's definitely one of things people tend to comment on
+when they talk about Spain.  People seem to love it.  When questioned on the
+subject, a friend of mine once said: "Two words: Jamón ibérico".  Another
+friend won't stop talking about the paella and yet another friend raves
+about the tapas, which is weird because tapas aren't really a *recipe*,
+right?  More of a...portion size?
+
+So I'll get this out of the way: the food was...fine.  Tasty, but not mind
+blowing.  Just okay.
+
+Maybe it's because I've visited France and Italy where the food was, indeed,
+mind blowing, but I found the food in Spain a bit lackluster.  I'm honestly
+not sure what the big deal is about paealla; I tried it three times and it
+was certainly *good* each time but people sell this dish like it's some kind
+of religious experience it just...was not that for me.  To be fair, it's
+possible that we simply picked the wrong spots - I'm pretty sure at least of
+them was a tourist trap - but it's hard for me to imagine even a
+professionally prepared paella changing my life.
+
+And the jamón ibérico?  People will yell at you if you call it prosciutto,
+so I won't call it prosciutto, but it's definitely prosciutto *adjacent*,
+you know?  It's delicious, but I've had similar stuff before.
+
+One Spanish culinary item that did, in fact, surprise me might not be what
+you expect: it was the vermouth.  Vermerterias, bars that specialize in
+vermouth, are *everywhere* in Spain, many of them with their own house
+blends.  Vermouth gets a bad rap in North America - it's the stuff you
+*grudgingly* put into a Martini or a Manhattan - but *good* vermouth is
+criminally underrated, and Spain is awash in the stuff.  It was great.
+
+Oh!  And the cheesecake.  I actually really, really liked the cheesecake.
+It's definitely not like the firm, almost crumbly cheesecake you buy here,
+which I also love.  Spanish cheesecake is less cake and more creamy custard.
+You almost eat it like a pudding.  It's amazing.
+
 ## El Born and the Gothic Quarter
 
 On the advice of a friend, we booked a free (sort of - these people work on
@@ -210,28 +248,3 @@ been if we had, you know, actually gotten on the right train.
 Take it from someone who's been there: make sure you get on the right train!
 Words to live by.
 
-## A Brief Culinary Detour
-
-One of things people tend to comment on when they talk about their trip to
-Spain is the food.  People seem to love it.  On the subject, a friend of
-mine once said: "Two words: Jamón ibérico".  Another friend won't stop
-talking about the paella and yet another friend raves about the tapas, which
-is weird because tapas aren't really a *recipe*, right?  More of a...portion
-size?
-
-So I'll get this out of the way: the food was...fine.  Tasty, but not mind
-blowing.  Just okay.
-
-Maybe it's because I've visited France and Italy where the food was, indeed,
-mind blowing, but I found the food in Spain was a bit lackluster.  I'm
-honestly not sure what the big deal about paealla is supposed to be; I tried
-it three times and it was certainly *good* each time but people sell this
-dish like it's some kind of religious experience it just...was not that.
-
-And the jamón ibérico?  People will yell at you if you call it prosciutto,
-so I won't call it prosciutto, but it's definitely prosciutto *adjacent*,
-you know?  It's delicious, but I've had it before.
-
-The one Spanish food related item that did, in fact, surprise me might not
-be what you expect: it was the vermouth.  Vermerterias, bars that specialize
-in vermouth, are *everywhere* in Spain
