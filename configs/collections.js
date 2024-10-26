@@ -12,11 +12,6 @@ function getMonth(date) {
   return (month < 10 ? '0' : '') + month;
 }
 
-function getDay(date) {
-  const day = date.getDate();
-  return (day < 10 ? '0' : '') + day;
-}
-
 /**
  * Given a collection and a tagExtractor function (a function which returns a list of 
  * "tags" for an item), create an object with tags for the elements and the matching

@@ -6,6 +6,8 @@ featured:
   value: >-
     https://media.desmondrivet.com/87/f3/63/15/40335144767d57949c27a009bc224b8d3178373941bf839a0aeb93e0.jpg
 album: true
+eleventyExcludeFromCollections: true
+parent: '2024-spain'
 photo:
   - alt: ''
     value: >-
