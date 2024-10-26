@@ -2449,4 +2449,8 @@ results:
     'https://desmondrivet.com/2024/10/05/alcazar/19c08a7be5b784':
       status_code: 201
       location: 'https://webmention.io/desmondrivet.com/webmention/pTxr5B8X5ssEG4egXPFs'
+  2024/10/25/barcelona:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/113370935185059287'
 site_url: 'https://desmondrivet.com'
