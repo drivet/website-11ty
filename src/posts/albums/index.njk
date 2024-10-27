@@ -1,0 +1,22 @@
+---
+title: Albums
+description: |
+  <p>I'm not a great photographer, but I do occasionally take a good shot.  This
+  is a curated set of my favorite photos that I've taken over the years.</p>
+
+  <p>If you find yourself perusing my <a href="/posts/notes/">notes<a/> and 
+  <a href="/posts/articles/">articles as well</a>, you may be 
+  interested in my <a  href="/posts/lifestream/">lifestream</a>, which
+  combines them.<p>
+pagination:
+  data: collections.albums
+  size: 25
+permalink: "/posts/albums/index{% if pagination.pageNumber %}{{ pagination.pageNumber + 1 }}{% endif %}.html"
+layout: "feed.njk"
+rss: "/posts/feed_albums.xml"
+tagurl: "/posts/albums/tags/"
+archiveurl: "/posts/albums/archives/"
+navname: blog
+---
+
+{% include "feed-list.njk" %}

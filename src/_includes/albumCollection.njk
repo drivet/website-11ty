@@ -5,7 +5,7 @@ breadcumbOptions:
   listItemClass: breadcrumbs__item
   anchorClass: breadcrumbs__anchor
 ---
-
+  type: {{ postType }}<br/>
 {% if eleventyNavigation.key and eleventyNavigation.parent %}
 Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
 {% endif %}

@@ -145,7 +145,7 @@ function addAllCollectionGroups(eleventyConfig) {
   addCollectionGroup(eleventyConfig, "allPosts", getPosts);
 
   addCollectionGroup(eleventyConfig, "lifestream",
-    collection => postTypes(getPosts(collection), ["article", "note", "photo", "video"]));
+    collection => postTypes(getPosts(collection), ["article", "note", "photo", "video", "album", "albumCollection"]));
   
   addCollectionGroup(eleventyConfig, "articles",
     collection => postTypes(getPosts(collection), ["article"]));
@@ -167,8 +167,9 @@ function addAllCollectionGroups(eleventyConfig) {
 
   addCollectionGroup(eleventyConfig, "replies",
     collection => postTypes(getPosts(collection), ["reply"]));
-
-  eleventyConfig.addCollection("albums", getAlbums);
+  
+  addCollectionGroup(eleventyConfig, "albums",
+      collection => postTypes(getPosts(collection), ["album", "albumCollection"]));
   addAlbumCollections(eleventyConfig);
 
   eleventyConfig.addCollection("drafts", getDrafts);

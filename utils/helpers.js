@@ -34,6 +34,7 @@ function postTypes(collection, postTypes) {
 
 function getPosts(collection) {
   return collection.getFilteredByGlob("./src/posts/feed/**/*.md")
+                   .filter(item => !item.data.excludeFromPosts)
                    .reverse();
 }
 
@@ -46,8 +47,7 @@ function getAlbums(collection) {
 }
 
 function getDrafts(collection) {
-  return collection.getFilteredByGlob("./src/drafts/**/*.md")
-                   .reverse();
+  return collection.getFilteredByGlob("./src/drafts/**/*.md").reverse();
 }
 
 function navigation(root, data) {

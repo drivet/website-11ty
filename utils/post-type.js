@@ -35,6 +35,10 @@ function postType(item) {
     return 'rsvp';
   }
 
+  if (props['albumCollection']) {
+    return 'albumCollection';
+  }
+
   const impliedTypes = [
     ["repost-of", "repost"],
     ["like-of", "like"],
