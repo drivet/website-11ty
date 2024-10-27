@@ -43,7 +43,9 @@ function getRecipes(collection) {
 }
 
 function getAlbums(collection) {
-  return collection.getFilteredByGlob("./src/albums/feed/**/*.md").reverse();
+  return collection.getFilteredByGlob("./src/posts/feed/**/*.md")
+                   .filter(item => item.data.album)
+                   .reverse();
 }
 
 function getDrafts(collection) {

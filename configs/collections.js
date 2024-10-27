@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { postTypes, getPosts, getRecipes, getAlbums, getDrafts } = require('../utils/helpers.js');
+const { postTypes, getPosts, getRecipes, getDrafts } = require('../utils/helpers.js');
 const { addAlbumCollections } = require('./albums.js');
 
 
