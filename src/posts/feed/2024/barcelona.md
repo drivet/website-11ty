@@ -180,7 +180,7 @@ years, I suppose it's not surprising.
 
 Later that day we visited [Park Guell][8], yet another Gaudi creation (this
 guy is *everywhere* in Barcelona).  Not quite the jaw dropping spectacle of
-the Sagrada Familiar, Park Guell still looks like something out of
+the Sagrada Familia, Park Guell still looks like something out of
 Dr. Seuss.
 
 ## A Brief Culinary Detour
