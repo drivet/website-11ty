@@ -7,7 +7,7 @@ featured:
 layout: "albumCollection.njk" 
 key: "2024-spain"
 parent: albums
-albumCollection: true
+album: true
 ---
 
 Evelyn and I took a 10 day trip to Spain in September 2024.

@@ -6,7 +6,7 @@ featured:
   value: "https://media.desmondrivet.com/e3/14/20/8f/cf3098484a1d4e2ec46968971684181d9446ec57e80d899aa1756b41.jpg"
 permalink: "albums/2016-poland/index.html"
 layout: "albumCollection.njk"
-albumCollection: true
+album: true
 key: "2016-poland"
 parent: albums
 ---

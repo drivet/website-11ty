@@ -35,8 +35,8 @@ function postType(item) {
     return 'rsvp';
   }
 
-  if (props['albumCollection']) {
-    return 'albumCollection';
+  if (props['album']) {
+    return 'album';
   }
 
   const impliedTypes = [
@@ -51,7 +51,7 @@ function postType(item) {
   for (let i = 0; i < impliedTypes.length; i++) {
     const [propertyName, impliedType] = impliedTypes[i];
     if (propNames.includes(propertyName) && validUrl.isUri(getPropValue(props[propertyName]))) {
-      return (impliedType === 'photo' && props['album']) ? 'album' : impliedType;
+      return impliedType;
     }
   }
 

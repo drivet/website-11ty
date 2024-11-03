@@ -42,9 +42,9 @@ function getRecipes(collection) {
   return collection.getFilteredByGlob("./src/recipes/feed/**/*.md").reverse();
 }
 
-function getAlbums(collection) {
+function getLeafAlbums(collection) {
   return collection.getFilteredByGlob("./src/posts/feed/**/*.md")
-                   .filter(item => item.data.album)
+                   .filter(item => item.data.album && item.data.photo)
                    .reverse();
 }
 
@@ -76,7 +76,7 @@ module.exports = {
   postTypes,
   getPosts,
   getRecipes,
-  getAlbums,
+  getLeafAlbums,
   getDrafts,
   navigation
 }
