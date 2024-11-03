@@ -8,7 +8,7 @@
   {% endfor %}
 
   {% set title = post.data.title  %}
-  {{ entryheader(wmresults, post.data.date, post.url, post.data.navigation, title, 2) }}
+  {{ entryheader(wmresults, post.data.date, post.url, post.data.navigation, post.data.postType, title, 2) }}
   {% if post.data.blurb %}
     <div class="p-summary" style="display: none">
     {{post.data.blurb}}
@@ -20,7 +20,7 @@
   <div class="e-content entry__content">
     {% if post.data.postType == 'article' %}
     {{ post.templateContent | excerpt | safe }}
-    {% else %} 
+    {% else %}
     {{ post.templateContent | safe }}
     {% endif %}
 

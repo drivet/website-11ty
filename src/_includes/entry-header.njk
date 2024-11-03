@@ -1,8 +1,41 @@
-{% macro entryheader(wmresults, date, url, navigation, title, level) %}
+{% macro entryheader(wmresults, date, url, navigation, postType, title, level) %}
 <header class="entry__header {{'entry__header--top' if level == 1 }}">
     <a href="/" class="u-author"></a>
 
     <span class="entry__headerline row row--spacious">
+        {% if postType == 'note' %}
+        <a href="/posts/notes" class="navbar__link row row--comfy" title="Notes">
+            <i class="far fa-sticky-note"></i>
+        </a>
+        {% elif postType == 'photo' %} 
+        <a href="/posts/photos" class="navbar__link row row--comfy" title="Photos">
+            <i class="far fa-image"></i>
+        </a>
+        {% elif postType == 'article' %}
+        <a href="/posts/articles" class="navbar__link row row--comfy" title="Blog">
+            <i class="fa fa-newspaper"></i>
+        </a>
+        {% elif postType == 'reply' %} 
+        <a href="/posts/replies" class="navbar__link row row--comfy" title="Replies">
+            <i class="fa fa-comment"></i> 
+        </a>
+        {% elif postType == 'like' %}
+        <a href="/posts/likes" class="navbar__link row row--comfy" title="Likes">
+            <i class="far fa-thumbs-up"></i>
+        </a>
+        {% elif postType == 'repost' %}
+        <a href="/posts/reposts" class="navbar__link row row--comfy" title="Reposts"> 
+            <i class="fa fa-retweet"></i>
+        </a>
+        {% elif postType == 'bookmark' %}
+        <a href="/posts/bookmarks" class="navbar__link row row--comfy" title="Links"> 
+            <i class="far fa-bookmark"></i>
+        </a>
+        {% elif postType == 'album' %}
+        <a href="/posts/albums" class="navbar__link row row--comfy" title="Albums"> 
+            <i class="fa fa-camera"></i>
+        </a>
+        {% endif %}
       <a class="entry__published dt-published" href="{{ url | stripExt }}">{{ date | date  }}</a>
     </span>
 
