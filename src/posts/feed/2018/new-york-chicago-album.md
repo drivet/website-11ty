@@ -9,7 +9,6 @@ permalink: "albums/2018-new-york-chicago/index.html"
 layout: "albumCollection.njk"
 album: true
 key: "2018-new-york-chicago"  
-parent: albums
 ---
 
 Evelyn and I visited New York and Chicago in 2018 to use up some air miles.

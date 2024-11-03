@@ -2,7 +2,6 @@
 date: '2012-09-30T19:00:00-05:00'
 title: San Francisco (JavaOne Conference, Fall 2012)
 key: "2012-san-francisco"
-parent: "albums"
 featured:
   alt: ''
   value: >-

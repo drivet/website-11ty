@@ -2,7 +2,6 @@
 date: '2012-04-29T17:00:00-05:00'
 title: Saint-Henri, Montreal (Summer 2012)
 key: "2012-saint-henri"
-parent: "albums"
 featured:
   alt: ''
   value: >-

@@ -8,7 +8,6 @@ permalink: "albums/2016-poland/index.html"
 layout: "albumCollection.njk"
 album: true
 key: "2016-poland"
-parent: albums
 ---
 
 We visited Poland for a wedding.  A literal Polish wedding.

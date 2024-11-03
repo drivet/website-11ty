@@ -18,7 +18,7 @@ breadcumbOptions:
   <a href="{{mention}}"></a>
   {% endfor %} 
   {{ entryheader(wmresults, date, page.url, navigation, title, 1) }}
-  type: {{ postType }} <br/>
+  
   {% if eleventyNavigation %}
   Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
   {% endif %}

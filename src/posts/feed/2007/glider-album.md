@@ -2,7 +2,6 @@
 date: '2007-06-12T14:00:00-05:00'
 title: Glider (Summer 2007)
 key: "2007-glider-album"
-parent: "albums"
 featured:
   alt: ''
   value: >-
