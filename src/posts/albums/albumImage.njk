@@ -32,11 +32,14 @@ eleventyComputed:
       </h1>
 
       <p class="entry__imagenav">
+
       {% if p.prevLink %}
       <a href="{{p.prevLink}}" title="Previous"><i class="fa fa-chevron-circle-left"></i></a>
       {% else %}
       <span title="Previous"><i class="fa fa-chevron-circle-left"></i></span>
       {% endif %}
+
+      <a href="{{p.photo.value}}" title="Download {{p.photo.value}}"><i class="fa fa-chevron-circle-down"></i></a>
 
       {% if p.nextLink %}
       <a href="{{p.nextLink}}" title="Next"><i class="fa fa-chevron-circle-right"></i></a>
@@ -44,7 +47,6 @@ eleventyComputed:
       <span title="Next"><i class="fa fa-chevron-circle-right"></i></span>
       {% endif %}
      
-      <a href="{{p.photo.value}}" title="Download {{p.photo.value}}"><i class="fa fa-chevron-circle-down"></i></a>
        </p>
   </header>
 

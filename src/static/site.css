@@ -183,7 +183,6 @@ h6 {
 }
 
 .entry__headerline {
-  font-size: var(--font-size-smaller);
   color: var(--lighter-color);
 }
 
@@ -228,7 +227,6 @@ h6 {
 }
 
 .entry__footerline {
-  font-size: var(--font-size-smaller);
   color: var(--lighter-color);
   margin-bottom: 0.5em;
 }

@@ -56,5 +56,13 @@
     
     .entry__header--top {
       margin-top: 2em;
-     }
+    }
+    
+    .entry__headerline {
+      font-size: var(--font-size-smaller);
+    }
+
+    .entry__footerline {
+      font-size: var(--font-size-smaller);
+    }
 }
