@@ -8,6 +8,8 @@ permalink: "albums/2013-lyon/index.html"
 layout: "albumCollection.njk"
 album: true
 key: "2013-lyon"
+tags:
+- travel
 ---
 
 We visited our friend Sid who lives in Lyon.  Saw some cool stuff.

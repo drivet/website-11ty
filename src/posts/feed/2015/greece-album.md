@@ -8,6 +8,8 @@ permalink: "albums/2015-greece/index.html"
 layout: "albumCollection.njk"
 album: true
 key: "2015-greece"
+tags:
+- travel
 ---
 
 We visited Greece for ten days.  Beautiful place.

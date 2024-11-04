@@ -8,6 +8,8 @@ permalink: "albums/2003-france/index.html"
 layout: "albumCollection.njk"
 album: true
 key: "2003-france"
+tags:
+- travel
 ---
 
 I took a three week tour of to France in 2003

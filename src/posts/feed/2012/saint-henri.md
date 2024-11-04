@@ -7,6 +7,8 @@ featured:
   value: >-
     https://media.desmondrivet.com/41/18/ed/84/551b065d13e8bd69e544505146e872e98b579b34ca2003b861fd4565.jpg
 album: true
+tags:
+- local
 photo:
   - alt: ''
     value: >-

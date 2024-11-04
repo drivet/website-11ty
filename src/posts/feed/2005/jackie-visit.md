@@ -8,6 +8,9 @@ permalink: "albums/2005-jackie-visit/index.html"
 layout: "albumCollection.njk"
 album: true
 key: "2005-jackie-visit"
+tags:
+- travel
+- family
 ---
 
 I visited my sister, who used to live in the Middle East, in 2005.  I also took the oppourtunity to visit a bit of England while I was at it.

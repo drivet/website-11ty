@@ -7,6 +7,8 @@ featured:
 layout: "albumCollection.njk" 
 key: "2024-spain"
 album: true
+tags:
+- travel
 ---
 
 Evelyn and I took a 10 day trip to Spain in September 2024.
