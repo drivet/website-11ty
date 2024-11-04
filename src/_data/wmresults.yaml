@@ -2453,4 +2453,5 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/113370935185059287'
+  2024/10/05/spain: {}
 site_url: 'https://desmondrivet.com'
