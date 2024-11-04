@@ -19,7 +19,7 @@ breadcumbOptions:
   {% endfor %} 
   {{ entryheader(wmresults, date, page.url, navigation, postType, title, 1) }}
   
-  {% if eleventyNavigation %}
+  {% if eleventyNavigation.parent %}
   Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
   {% endif %}
 
