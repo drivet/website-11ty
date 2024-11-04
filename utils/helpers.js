@@ -34,6 +34,7 @@ function postTypes(collection, postTypes) {
 
 function getPosts(collection) {
   return collection.getFilteredByGlob("./src/posts/feed/**/*.md")
+                   .filter(item => !item.data.excludeFromPosts)
                    .reverse();
 }
 
@@ -41,13 +42,14 @@ function getRecipes(collection) {
   return collection.getFilteredByGlob("./src/recipes/feed/**/*.md").reverse();
 }
 
-function getAlbums(collection) {
-  return collection.getFilteredByGlob("./src/albums/feed/**/*.md").reverse();
+function getLeafAlbums(collection) {
+  return collection.getFilteredByGlob("./src/posts/feed/**/*.md")
+                   .filter(item => item.data.album && item.data.photo)
+                   .reverse();
 }
 
 function getDrafts(collection) {
-  return collection.getFilteredByGlob("./src/drafts/**/*.md")
-                   .reverse();
+  return collection.getFilteredByGlob("./src/drafts/**/*.md").reverse();
 }
 
 function navigation(root, data) {
@@ -74,7 +76,7 @@ module.exports = {
   postTypes,
   getPosts,
   getRecipes,
-  getAlbums,
+  getLeafAlbums,
   getDrafts,
   navigation
 }

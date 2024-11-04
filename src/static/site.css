@@ -1,5 +1,5 @@
 :root {
-  --side-padding: 1em;
+  --side-padding: 0.66em;
   --font-size: 16px;
   --font-size-smaller: 14px;
   --font-size-smallest: 10px;
@@ -18,9 +18,28 @@ body {
 }
 
 h1 {
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 
+h2 {
+  font-size: 1.125em;
+}
+
+h3 {
+  font-size: 0.8775em;
+}
+
+h4 {
+  font-size: 0.75em;
+}
+
+h5 {
+  font-size: 0.6225em;
+}
+
+h6 {
+  font-size: 0.5em;
+}
 
 .mug {
   width: 150px;
@@ -148,7 +167,7 @@ h1 {
 }
 
 .feed__header {
-  margin-bottom: 6em;
+  margin-bottom: 4em;
 }
 
 .feed-extra__label {
@@ -156,11 +175,11 @@ h1 {
 }
 
 .entry__header {
-  margin: 0 0 1em 0;
+  margin: 0 0 0.5em 0;
 }
 
 .entry__header--top {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .entry__headerline {

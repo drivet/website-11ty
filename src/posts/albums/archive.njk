@@ -1,0 +1,13 @@
+---
+pagination:
+  data: collections.albums_archivePages
+  size: 1
+  alias: p
+permalink: "{{archiveUrlPrefix}}/{{ p.name }}/index{% if p.page %}{{ p.page + 1 }}{% endif %}.html"
+layout: "collection.njk"
+archiveUrlPrefix: "/posts/albums"
+eleventyComputed:
+   title: "Archives for {{ p.name }} (Albums)"
+---
+
+{% include 'archive.njk' %}

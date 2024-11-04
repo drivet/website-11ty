@@ -17,9 +17,9 @@ breadcumbOptions:
   {% for mention in bridgyMentions %}
   <a href="{{mention}}"></a>
   {% endfor %} 
-  {{ entryheader(wmresults, date, page.url, navigation, title, 1) }}
+  {{ entryheader(wmresults, date, page.url, navigation, postType, title, 1) }}
   
-  {% if eleventyNavigation %}
+  {% if eleventyNavigation.parent %}
   Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
   {% endif %}
 

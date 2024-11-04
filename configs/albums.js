@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { makePermalink, getAlbums } = require('../utils/helpers.js');
+const { makePermalink, getLeafAlbums } = require('../utils/helpers.js');
 
 function photoUrlSlug(photoUrl) {
   const hash = photoUrl.substring(photoUrl.lastIndexOf('/') + 1)
@@ -50,15 +50,15 @@ function enhanceNavigation(nav, allAlbums) {
   return nav;
 }
 
-function addAlbumCollections(eleventyConfig) {
+function addAlbumImageCollections(eleventyConfig) {
   eleventyConfig.addCollection('albumImages', (collection) => {
-    const albums = getAlbums(collection);
+    const albums = getLeafAlbums(collection);
     return _.flatten(albums.map(albumToImagePosts));
   });
 }
 
 module.exports = {
-  addAlbumCollections,
+  addAlbumImageCollections,
   enhanceNavigation,
   photoUrlSlug
 }

@@ -1,14 +1,14 @@
 {% from "reflink.njk" import reflink %}
 {% from "entry-header.njk" import entryheader %}
 
+
 <article class="h-entry entry">
   {% for mention in post.data.bridgyMentions %}
   <a href="{{mention}}"></a>
   {% endfor %}
 
   {% set title = post.data.title  %}
-  {{ entryheader(wmresults, post.data.date, post.url, post.data.navigation, title, 2) }}
-  
+  {{ entryheader(wmresults, post.data.date, post.url, post.data.navigation, post.data.postType, title, 2) }}
   {% if post.data.blurb %}
     <div class="p-summary" style="display: none">
     {{post.data.blurb}}
@@ -20,17 +20,23 @@
   <div class="e-content entry__content">
     {% if post.data.postType == 'article' %}
     {{ post.templateContent | excerpt | safe }}
-    {% else %} 
+    {% else %}
     {{ post.templateContent | safe }}
     {% endif %}
 
     {% set photoCount = post.data.photo | length %}
-    {% set album = post.data.postType == 'album' %}
+    {% set album = post.data.postType == 'album' %}  
 
-    {% if album or photoCount > 1 %}
+    {% if photoCount > 1 %}
     <p><a href="{{ post.url | stripExt }}">{{ photoCount }} photos</a></p>
     {% endif %}
-  
+
+    {% set albums = collections.all | eleventyNavigation(post.data.eleventyNavigation.key) %} 
+    {% set albumCount = albums | length %}
+    {% if albumsCount > 1 %}
+    <p><a href="{{ post.url | stripExt }}">{{ albumCount }} albums</a></p>
+    {% endif %}
+
     {% if album %}
       {% image post.data.featured.value, post.data.featured.alt, 'u-featured entry__photo image' %}
     {% elif photoCount == 1 %}

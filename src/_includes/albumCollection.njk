@@ -1,41 +1,73 @@
 ---
-layout: "collection.njk"
 breadcumbOptions:
   listClass: breadcrumbs
   listItemClass: breadcrumbs__item
   anchorClass: breadcrumbs__anchor
 ---
 
-{% if eleventyNavigation.key and eleventyNavigation.parent %}
-Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
-{% endif %}
+{% extends "base.njk" %}
 
-{% set enhancedAlbums = collections.all | eleventyNavigation(eleventyNavigation.key) | enhanceNavigation(collections.all) %}
+{% block meta %}
+<meta name="robots" content="noindex,follow" />
+{% endblock %}
 
-{{ content | safe }}
+{% from "entry-header.njk" import entryheader %}
 
-<p>{{ enhancedAlbums.length }} albums</p>
-<ul class="content-list">
-{% asyncEach album in enhancedAlbums | reverse %}
-<li class="content-list__item content-list__item--separator content-list__item--spacious">
-  <article>
-    <h2 class="entry__title"><a href="{{ album.url }}" class="entry__titlelink">{{ album.title }}</a></h2>
-    <div>
-      {{ album.content | safe }}
-      
-      {% if album.photo %}
-      <p>{{ album.photo | length }} photos</p>
-      {% else %}
-      <p>{{ album.children | length }} albums</p>
-      {% endif %}
+{% block content %}
+<main class="main">
+<article class="h-entry entry">
+  
+  {% for mention in bridgyMentions %}
+  <a href="{{mention}}"></a>
+  {% endfor %} 
+  {{ entryheader(wmresults, date, page.url, navigation, postType, title, 1) }}
+  
+  {% if eleventyNavigation.parent %}
+  Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
+  {% endif %}
 
-      {% if album.featured %}
-      <a href="{{ album.url }}">
-        {% image album.featured.value, album.featured.alt, "u-featured entry__photo image"  %}
-      </a>
-      {% endif %}
+  {% if blurb %}
+    <div class="p-summary" style="display: none">
+    {{ blurb }}
     </div>
-  </article>
-</li>
-{% endeach %}
-</ul>
+  {% endif %}
+  
+  <div class="e-content entry__content">
+
+    {% set enhancedAlbums = collections.all | eleventyNavigation(eleventyNavigation.key) | enhanceNavigation(collections.all) %}
+    {{ content | safe }}
+
+    <p>{{ enhancedAlbums.length }} albums</p>
+    <ul class="content-list">
+    {% asyncEach album in enhancedAlbums | reverse %}
+    <li class="content-list__item content-list__item--separator content-list__item--spacious">
+      <article>
+        <h2 class="entry__title"><a href="{{ album.url }}" class="entry__titlelink">{{ album.title }}</a></h2>
+        <div>
+          {{ album.content | safe }}
+          
+          {% if album.photo %}
+          <p>{{ album.photo | length }} photos</p>
+          {% else %}
+          <p>{{ album.children | length }} albums</p>
+          {% endif %}
+
+          {% if album.featured %}
+          <a href="{{ album.url }}">
+            {% image album.featured.value, album.featured.alt, "u-featured entry__photo image"  %}
+          </a>
+          {% endif %}
+        </div>
+      </article>
+    </li>
+    {% endeach %}
+    </ul>
+  </div>
+
+  {% set url = page.url | stripExt %}
+  {% set discussion = url | discussionForUrl(allstaticman, webmentions.children) %}
+  {% include "entry-footer.njk" %}
+  {% include "discussion.njk" %}
+</article>
+</main>
+{% endblock %}

@@ -5,8 +5,8 @@ blurb: "I joined the IndieWeb five years ago.  How are things going?"
 mp-syndicate-to:
 - mastodon
 tags: 
- - indieweb
- - blogging
+- indieweb
+- blogging
 ---
 
 About five years ago, in early 2019, I stumbled upon the [IndieWeb][1], a

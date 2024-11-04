@@ -1,0 +1,13 @@
+---
+pagination:
+  data: collections.albums_tagPages
+  size: 1
+  alias: p
+permalink: "{{tagUrlPrefix}}/{{ p.name }}{% if p.page %}{{ p.page + 1 }}{% endif %}.html"
+layout: "collection.njk"
+tagUrlPrefix: "/posts/albums/tags"
+eleventyComputed:
+  title: "Tagged {{ p.name }} (Albums)"
+---
+
+{% include 'tag.njk' %}

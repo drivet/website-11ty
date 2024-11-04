@@ -1,6 +1,6 @@
 const _ = require('lodash');
-const { postTypes, getPosts, getRecipes, getAlbums, getDrafts } = require('../utils/helpers.js');
-const { addAlbumCollections } = require('./albums.js');
+const { postTypes, getPosts, getRecipes, getDrafts } = require('../utils/helpers.js');
+const { addAlbumImageCollections } = require('./albums.js');
 
 
 function getYear(date) {
@@ -10,11 +10,6 @@ function getYear(date) {
 function getMonth(date) {
   const month = date.getMonth() + 1;
   return (month < 10 ? '0' : '') + month;
-}
-
-function getDay(date) {
-  const day = date.getDate();
-  return (day < 10 ? '0' : '') + day;
 }
 
 /**
@@ -150,7 +145,7 @@ function addAllCollectionGroups(eleventyConfig) {
   addCollectionGroup(eleventyConfig, "allPosts", getPosts);
 
   addCollectionGroup(eleventyConfig, "lifestream",
-    collection => postTypes(getPosts(collection), ["article", "note", "photo", "video"]));
+    collection => postTypes(getPosts(collection), ["article", "note", "photo", "video", "album"]));
   
   addCollectionGroup(eleventyConfig, "articles",
     collection => postTypes(getPosts(collection), ["article"]));
@@ -172,9 +167,11 @@ function addAllCollectionGroups(eleventyConfig) {
 
   addCollectionGroup(eleventyConfig, "replies",
     collection => postTypes(getPosts(collection), ["reply"]));
-
-  eleventyConfig.addCollection("albums", getAlbums);
-  addAlbumCollections(eleventyConfig);
+  
+  addCollectionGroup(eleventyConfig, "albums",
+    collection => postTypes(getPosts(collection), ["album"]));
+  
+  addAlbumImageCollections(eleventyConfig);
 
   eleventyConfig.addCollection("drafts", getDrafts);
 }
