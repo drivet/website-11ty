@@ -39,8 +39,17 @@
     
     .main { 
         max-width: var(--width);
+        padding: 0.5em var(--side-padding);
     }
-    
+
+    .entry__photo {
+      border-radius: 10px;
+    }
+
+    .entry__photowrapper {
+      border-radius: 10px;
+    }
+
     .image-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -62,7 +71,28 @@
       font-size: var(--font-size-smaller);
     }
 
+
     .entry__footerline {
       font-size: var(--font-size-smaller);
+    }
+
+    
+    .feed__header {
+      padding: 0;
+    }
+
+    .entry__header {
+      padding: 0;
+    }
+    
+    .entry__footer {
+      padding: 0;
+    }
+    .conversation-commentform {
+      padding: 0;
+    }
+
+    .entry__text {
+      padding: 0;
     }
 }

@@ -19,12 +19,9 @@ breadcumbOptions:
   
   {% for mention in bridgyMentions %}
   <a href="{{mention}}"></a>
-  {% endfor %} 
-  {{ entryheader(wmresults, date, page.url, navigation, postType, title, 1) }}
+  {% endfor %}
   
-  {% if eleventyNavigation.parent %}
-  Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
-  {% endif %}
+  {{ entryheader(wmresults, date, page.url, navigation, postType, title, 1) }}
 
   {% if blurb %}
     <div class="p-summary" style="display: none">
@@ -32,18 +29,24 @@ breadcumbOptions:
     </div>
   {% endif %}
   
-  <div class="e-content entry__content">
+  <div class="e-content entry__content entry__photo">
+    <div class="entry__text">
+      {% if eleventyNavigation.parent %}
+      Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
+      {% endif %}
+      {% set enhancedAlbums = collections.all | eleventyNavigation(eleventyNavigation.key) | enhanceNavigation(collections.all) %}
+      {{ content | safe }}
 
-    {% set enhancedAlbums = collections.all | eleventyNavigation(eleventyNavigation.key) | enhanceNavigation(collections.all) %}
-    {{ content | safe }}
+      <p>{{ enhancedAlbums.length }} albums</p>
+    </div>
 
-    <p>{{ enhancedAlbums.length }} albums</p>
     <ul class="content-list">
     {% asyncEach album in enhancedAlbums | reverse %}
     <li class="content-list__item content-list__item--separator content-list__item--spacious">
       <article>
-        <h2 class="entry__title"><a href="{{ album.url }}" class="entry__titlelink">{{ album.title }}</a></h2>
-        <div>
+        <div class="entry__text">
+          <h2 class="entry__title"><a href="{{ album.url }}" class="entry__titlelink">{{ album.title }}</a></h2>
+        
           {{ album.content | safe }}
           
           {% if album.photo %}
@@ -51,13 +54,14 @@ breadcumbOptions:
           {% else %}
           <p>{{ album.children | length }} albums</p>
           {% endif %}
-
-          {% if album.featured %}
-          <a href="{{ album.url }}">
-            {% image album.featured.value, album.featured.alt, "u-featured entry__photo image"  %}
-          </a>
-          {% endif %}
         </div>
+
+        {% if album.featured %}
+        <a href="{{ album.url }}">
+          {% image album.featured.value, album.featured.alt, "u-featured entry__photo image"  %}
+        </a>
+        {% endif %}
+        
       </article>
     </li>
     {% endeach %}

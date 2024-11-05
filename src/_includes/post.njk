@@ -18,10 +18,6 @@ breadcumbOptions:
   <a href="{{mention}}"></a>
   {% endfor %} 
   {{ entryheader(wmresults, date, page.url, navigation, postType, title, 1) }}
-  
-  {% if eleventyNavigation.parent %}
-  Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
-  {% endif %}
 
   {% if blurb %}
     <div class="p-summary" style="display: none">
@@ -32,11 +28,17 @@ breadcumbOptions:
   {{ reflink(postType, referencedLink) }}
   
   <div class="e-content entry__content">
-    {{ content | safe }}
+    <div class="entry__text">
+      {% if eleventyNavigation.parent %}
+      Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
+      {% endif %}
+      
+      {{ content | safe }}
 
-    {% if album or photo | length > 1 %}
+      {% if album or photo | length > 1 %}
       <p>{{ photo | length }} photos</p>
-    {% endif %}
+      {% endif %}
+    </div>
 
     {% set photoArg = photo %}
     {% if photoArg %}

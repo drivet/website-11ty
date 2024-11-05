@@ -6,72 +6,76 @@
 
 <section class="entry__conversation">
   <hr class="separator"/>
-  <h2>Post a Comment</h2>
-  <form class="commentform" method="POST" action="https://staticman.desmondrivet.com/v3/entry/github/drivet/website-11ty/main/comments">
-    <input name="options[redirect]" type="hidden" value="{{comment_response}}">
-    <input name="fields[commentingon]" type="hidden" value="{{url}}">
-    
-    <div class="commentform__section">
-      <label class="commentform__label" for="comment_name">Name:</label>
-      <input class="commentform__input" name="fields[name]" id="comment_name" type="text">
-    </div>
+  <div class="conversation-commentform">
+    <h2>Post a Comment</h2>
+    <form class="commentform" method="POST" action="https://staticman.desmondrivet.com/v3/entry/github/drivet/website-11ty/main/comments">
+      <input name="options[redirect]" type="hidden" value="{{comment_response}}">
+      <input name="fields[commentingon]" type="hidden" value="{{url}}">
+      
+      <div class="commentform__section">
+        <label class="commentform__label" for="comment_name">Name:</label>
+        <input class="commentform__input" name="fields[name]" id="comment_name" type="text">
+      </div>
 
-    <div class="commentform__section">
-      <label class="commentform__label" for="comment_email">E-mail (not saved):</label>
-      <input class="commentform__input" name="fields[email]" id="comment_email" type="email">
-    </div>
+      <div class="commentform__section">
+        <label class="commentform__label" for="comment_email">E-mail (not saved):</label>
+        <input class="commentform__input" name="fields[email]" id="comment_email" type="email">
+      </div>
 
-    <div class="commentform__section">
-      <label class="commentform__label" for="comment_message">Comment:</label> 
-      <textarea class="commentform__input commentform__textarea" name="fields[message]" id="comment_message"></textarea>
-    </div>
+      <div class="commentform__section">
+        <label class="commentform__label" for="comment_message">Comment:</label> 
+        <textarea class="commentform__input commentform__textarea" name="fields[message]" id="comment_message"></textarea>
+      </div>
 
-    <div class="commentform__section">
-      <button class="commentform__input" type="submit">Go!</button>
-    </div>
-  </form>
+      <div class="commentform__section">
+        <button class="commentform__input" type="submit">Go!</button>
+      </div>
+    </form>
+  </div>
   {% if (mentions | length > 0) or (likes | length > 0) or (reposts | length > 0) or (bookmarks | length > 0) %}
   <hr class="separator"/>
-  <h2>{{discussion.total}} Conversation(s)</h2>
-  {% if mentions.length > 0 %}
-  <section class="wm-group">
-    <h3 id="wm-mentions">Comments and Mentions</h3>
-    <ul class="content-list"> 
-      {% asyncEach link in mentions %}
-      <li class="content-list__item content-list__item--separator">
-      {% include 'mention.njk' %}
-      </li>
+
+  <div class="conversation-list">
+    <h2>{{discussion.total}} Conversation(s)</h2>
+    {% if mentions.length > 0 %}
+    <section class="wm-group">
+      <h3 id="wm-mentions">Comments and Mentions</h3>
+      <ul class="content-list"> 
+        {% asyncEach link in mentions %}
+        <li class="content-list__item content-list__item--separator">
+        {% include 'mention.njk' %}
+        </li>
+        {% endeach %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if likes.length > 0 %}
+    <section class="wm-group">
+      <h3 id="wm-likes">Likes</h3> 
+      {% asyncEach link in likes %}
+      <a href="{{link.author.url}}">{% avatar link.author.photo, link.author.name %}</a>
       {% endeach %}
-    </ul>
-  </section>
-  {% endif %}
+    </section>
+    {% endif %}
 
-  {% if likes.length > 0 %}
-  <section class="wm-group">
-    <h3 id="wm-likes">Likes</h3> 
-    {% asyncEach link in likes %}
-    <a href="{{link.author.url}}">{% avatar link.author.photo, link.author.name %}</a>
-    {% endeach %}
-  </section>
-  {% endif %}
+    {% if reposts.length > 0 %}
+    <section class="wm-group">
+      <h3 id="wm-reposts">Reposts</h3> 
+      {% asyncEach link in reposts %} 
+      <a href="{{link.author.url}}">{% avatar link.author.photo, link.author.name %}</a>
+      {% endeach %}
+    </section>
+    {% endif %}
 
-  {% if reposts.length > 0 %}
-  <section class="wm-group">
-    <h3 id="wm-reposts">Reposts</h3> 
-    {% asyncEach link in reposts %} 
-    <a href="{{link.author.url}}">{% avatar link.author.photo, link.author.name %}</a>
-    {% endeach %}
-   
-  </section>
-  {% endif %}
-
-  {% if bookmarks.length > 0 %}
-  <section class="wm-group">
-    <h3 id="wm-bookmarks" class="wm-group--header">Bookmarks</h3>  
-    {% asyncEach link in bookmarks %}
-    <a href="{{link.author.url}}">{% avatar link.author.photo, link.author.name %}</a>
-    {% endeach %}
-  </section>
-  {% endif %}
+    {% if bookmarks.length > 0 %}
+    <section class="wm-group">
+      <h3 id="wm-bookmarks" class="wm-group--header">Bookmarks</h3>  
+      {% asyncEach link in bookmarks %}
+      <a href="{{link.author.url}}">{% avatar link.author.photo, link.author.name %}</a>
+      {% endeach %}
+    </section>
+    {% endif %}
+  </div>
   {% endif %}
 </section>
