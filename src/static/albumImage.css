@@ -3,11 +3,6 @@
       --width: 1200px;
     }
 
-    .entry__content {
-      display: flex;
-      justify-content: center;
-    }
-
     .portrait {
       width: 800px;
       margin: 0 auto;

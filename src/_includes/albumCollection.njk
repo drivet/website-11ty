@@ -34,9 +34,9 @@ breadcumbOptions:
       {% if eleventyNavigation.parent %}
       Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
       {% endif %}
-      {% set enhancedAlbums = collections.all | eleventyNavigation(eleventyNavigation.key) | enhanceNavigation(collections.all) %}
       {{ content | safe }}
 
+      {% set enhancedAlbums = collections.all | eleventyNavigation(eleventyNavigation.key) | enhanceNavigation(collections.all) %}
       <p>{{ enhancedAlbums.length }} albums</p>
     </div>
 

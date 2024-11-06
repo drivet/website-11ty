@@ -6,6 +6,10 @@ pagination:
 permalink: "{{ p.permalink }}.html"
 eleventyComputed:
   title: "{{p.title}} / {{p.slug}}"
+breadcumbOptions:
+  listClass: breadcrumbs
+  listItemClass: breadcrumbs__item
+  anchorClass: breadcrumbs__anchor
 ---
 {% extends "base.njk" %}
 {% from "entry-header.njk" import entryheader %}
@@ -21,37 +25,43 @@ eleventyComputed:
   <a href="{{ mention }}"></a>
   {% endfor %}
 
-  <header class="entry__header {{'entry__header--top' }}">
+  <header class="entry__header entry__header--top">
       <a href="/" class="u-author"></a>
-      <span class="entry__headerline row row--spacious">
-          <a class="entry__published dt-published" href="{{ page.url | stripExt }}">{{ date | date  }}</a>
-      </span>
 
+      <span class="entry__headerline row row--spacious"> 
+        <a href="/posts/albums" class="navbar__link row row--comfy" title="Albums"> <i class="fa fa-camera"></i></a>
+        <a class="entry__published dt-published" href="{{ page.url | stripExt }}">{{ date | date  }}</a>
+      </span>
+     
       <h1 class="entry__title p-name">
         <a href="{{ p.albumUrl | stripExt }}" class="entry__titlelink">{{ p.title }}</a> / {{ p.index0 + 1}} of {{ p.total }}
       </h1>
+    
+      {% if p.eleventyNavigation.parent %}
+      Posted in {{ collections.all | eleventyNavigationBreadcrumb(p.eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
+      {% endif %}
 
       <p class="entry__imagenav">
+        {% if p.prevLink %}
+        <a href="{{p.prevLink}}" title="Previous" class="entry__imagenavctrl entry__prevctrl"><i class="fa fa-arrow-left"></i></a>
+        {% else %}
+        <span title="Previous" class="entry__imagenavctrl entry__prevctrl"><i class="fa fa-arrow-left"></i></span>
+        {% endif %}
 
-      {% if p.prevLink %}
-      <a href="{{p.prevLink}}" title="Previous" class="entry__imagenavctrl entry__prevctrl"><i class="fa fa-arrow-left"></i></a>
-      {% else %}
-      <span title="Previous" class="entry__imagenavctrl entry__prevctrl"><i class="fa fa-arrow-left"></i></span>
-      {% endif %}
+        <a href="{{p.photo.value}}" title="Download {{p.photo.value}}" class="entry__imagenavctrl entry__downctrl"><i class="fa fa-arrow-down"></i></a>
 
-      <a href="{{p.photo.value}}" title="Download {{p.photo.value}}" class="entry__imagenavctrl entry__downctrl"><i class="fa fa-arrow-down"></i></a>
-
-      {% if p.nextLink %}
-      <a href="{{p.nextLink}}" title="Next" class="entry__imagenavctrl entry__nextctrl"><i class="fa fa-arrow-right"></i></a>
-      {% else %}
-      <span title="Next" class="imagenavctrl entry__nextctrl"><i class="fa fa-arrow-right"></i></span>
-      {% endif %}
-     
+        {% if p.nextLink %}
+        <a href="{{p.nextLink}}" title="Next" class="entry__imagenavctrl entry__nextctrl"><i class="fa fa-arrow-right"></i></a>
+        {% else %}
+        <span title="Next" class="imagenavctrl entry__nextctrl"><i class="fa fa-arrow-right"></i></span>
+        {% endif %}
       </p>
   </header>
 
   <div class="e-content entry__content">
-    {{ content | safe }}
+    <div class="entry__text">  
+      {{ content | safe }}
+    </div>
     {% largeImage p.photo.value, p.photo.alt or "album photo`", "u-featured u-photo entry__photo image" %}
    </div>
    
