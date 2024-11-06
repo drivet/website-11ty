@@ -2,11 +2,12 @@
 
 {% block content %}
 <main class="main">
+<div class="entry__text">
+    {% if title  %}
+    <h1>{{ title }}</h1>
+    {% endif %}
 
-{% if title  %}
-<h1>{{ title }}</h1>
-{% endif %}
-
-{{ content | safe }}
+    {{ content | safe }}
+</div>
 </main>
 {% endblock %}
