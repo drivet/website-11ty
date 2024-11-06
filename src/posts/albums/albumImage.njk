@@ -10,12 +10,38 @@ breadcumbOptions:
   listClass: breadcrumbs
   listItemClass: breadcrumbs__item
   anchorClass: breadcrumbs__anchor
+scripts:
+- type: text/javascript
+  src: /static/js/swiped-events.min.js
 ---
 {% extends "base.njk" %}
 {% from "entry-header.njk" import entryheader %}
+
 {% block extrastyle %}
 <link href="{{ '/static/albumImage.css' | cachebust(global.URL, 'src/static/albumImage.css')}}" rel="stylesheet">
 {% endblock %}
+
+{% block underbody %}
+
+<script>
+   {% if p.prevLink %}
+   document.addEventListener('swiped-right', function(e) { 
+   
+     window.location.href = '{{ p.prevLink}}';
+   });
+   {% endif %}
+
+   {% if p.nextLink %}
+   document.addEventListener('swiped-left', function(e) {
+  
+     window.location.href = '{{ p.nextLink }}';
+   });  
+   {% endif %}
+
+</script>
+
+{% endblock %}
+
 {% block content %}
 {% set date = p.date %}
 <main class="main">

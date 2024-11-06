@@ -57,7 +57,9 @@
   {% endfor %}
   <script defer src="https://analytics.us.umami.is/script.js" data-website-id="6342d1a0-d5b3-469a-a22d-16844ec3d0e3"></script>
 </head>
-<body>  
+<body>
+  {% block underbody %}{% endblock %}
+  
   <header class="main-header">
     <nav class="navbar row" aria-label="main navigation">
       <div class="navbar__brand row">
