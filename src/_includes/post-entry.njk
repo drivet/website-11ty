@@ -18,24 +18,30 @@
   {{ reflink(post.data.postType, post.data.referencedLink) }}
 
   <div class="e-content entry__content">
-    {% if post.data.postType == 'article' %}
-    {{ post.templateContent | excerpt | safe }}
-    {% else %}
-    {{ post.templateContent | safe }}
-    {% endif %}
+    <div class="entry__text">
+      {% if post.data.postType == 'article' %}
+      {{ post.templateContent | excerpt | safe }}
+      {% else %}
+      {{ post.templateContent | safe }}
+      {% endif %}
 
-    {% set photoCount = post.data.photo | length %}
-    {% set album = post.data.postType == 'album' %}  
+      {% set photoCount = post.data.photo | length %}
+      {% set album = post.data.postType == 'album' %}  
 
-    {% if photoCount > 1 %}
-    <p><a href="{{ post.url | stripExt }}">{{ photoCount }} photos</a></p>
-    {% endif %}
+      {% if photoCount > 1 %}
+      <p><a href="{{ post.url | stripExt }}">{{ photoCount }} photos</a></p>
+      {% endif %}
 
-    {% set albums = collections.all | eleventyNavigation(post.data.eleventyNavigation.key) %} 
-    {% set albumCount = albums | length %}
-    {% if albumsCount > 1 %}
-    <p><a href="{{ post.url | stripExt }}">{{ albumCount }} albums</a></p>
-    {% endif %}
+      {% set albums = collections.all | eleventyNavigation(post.data.eleventyNavigation.key) %} 
+      {% set albumCount = albums | length %}
+      {% if albumsCount > 1 %}
+      <p><a href="{{ post.url | stripExt }}">{{ albumCount }} albums</a></p>
+      {% endif %}
+
+      {% if post.data.postType == 'article' %}
+      <p><a class="read-more" href="{{ post.url | stripExt }}">Read more &raquo;</a></p>
+      {% endif %}
+    </div>
 
     {% if album %}
       {% image post.data.featured.value, post.data.featured.alt, 'u-featured entry__photo image' %}
@@ -64,9 +70,7 @@
     {% endif %}
   {% endif %}
 
-  {% if post.data.postType == 'article' %}
-  <p><a class="read-more" href="{{ post.url | stripExt }}">Read more &raquo;</a></p>
-  {% endif %}
+ 
 
   {% set tags = post.data.tags %}
   {% set url = post.url | stripExt %}

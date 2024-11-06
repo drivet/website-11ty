@@ -27,6 +27,10 @@ function albumPhotoPost(album, albumPath, index0, photoUrl, slugs) {
     prevLink,
     total,
     index0,
+    eleventyNavigation: {
+      key: album.data.eleventyNavigation.key,
+      parent: album.data.eleventyNavigation.parent
+    }
   };
 }
 
