@@ -15,17 +15,20 @@
 {% set m_title = title | striptags | escape %}
 
 {% if image %}
-{% set m_image = image | aUrl %}
-{% set m_large = true %}
+    {% set m_image = image | aUrl %}
+    {% set m_large = true %}
+{% elif featured %}
+    {% set m_image = featured.value or featured | aUrl %}
+    {% set m_large = true %}
 {% elif photo %}
-{% set m_image = (photo[0].value or photo[0]) | aUrl %}
-{% set m_large = true %}
+    {% set m_image = (photo[0].value or photo[0]) | aUrl %}
+    {% set m_large = true %}
 {% elif thumb %}
-{% set m_image = thumb | aUrl %}
-{% set m_large = false %}
+    {% set m_image = thumb | aUrl %}
+    {% set m_large = false %}
 {% elif OPEN_GRAPH_IMAGE %}
-{% set m_image = OPEN_GRAPH_IMAGE | aUrl %}
-{% set m_large = false %}
+    {% set m_image = OPEN_GRAPH_IMAGE | aUrl %}
+    {% set m_large = false %}
 {% endif %}
 
 {% include 'opengraph.njk' %}
