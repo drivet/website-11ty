@@ -3,7 +3,7 @@
     <a href="/" class="u-author"></a>
     <h2 class="entry__title p-name"><a href="{{ post.url | stripExt }}" class="entry__titlelink">{{ post.data.title }}</a></h2>
   </header>
-  <div class="entry__text">
+  <div class="text">
     {% if post.data.blurb %}
       <p>{{ post.data.blurb | safe }}</p>
     {% endif %}

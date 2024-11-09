@@ -25,12 +25,12 @@ breadcumbOptions:
     </div>
   {% endif %}
 
-  <div class="entry__text">
+  <div class="text">
     {{ reflink(postType, referencedLink) }}
   </div>
 
   <div class="e-content entry__content">
-    <div class="entry__text">
+    <div class="text">
   
       {% if eleventyNavigation.parent %}
       Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
@@ -71,7 +71,7 @@ breadcumbOptions:
     {% endif %}
   </div>
 
-  <div class="entry__text">
+  <div class="text">
     {% if postType != 'article' %}
       {% set link = referencedLink or (content | contentLink) %}
       {% if link %}

@@ -15,12 +15,12 @@
     </div>
   {% endif %}
 
-  <div class="entry__text">
+  <div class="text">
     {{ reflink(post.data.postType, post.data.referencedLink) }}
   </div>
   
   <div class="e-content entry__content">
-    <div class="entry__text">
+    <div class="text">
 
       {% if post.data.postType == 'article' %}
       {{ post.templateContent | excerpt | safe }}
@@ -65,7 +65,7 @@
     {% endif %}
   </div>
 
-  <div class="entry__text">
+  <div class="text">
     {% if post.data.postType != 'article' %}
       {% set link = post.data.referencedLink or (post.templateContent | contentLink) %}
       {% if link %}

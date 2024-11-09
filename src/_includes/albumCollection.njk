@@ -30,7 +30,7 @@ breadcumbOptions:
   {% endif %}
   
   <div class="e-content entry__content entry__photo">
-    <div class="entry__text">
+    <div class="text">
       {% if eleventyNavigation.parent %}
       Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
       {% endif %}
@@ -44,7 +44,7 @@ breadcumbOptions:
     {% asyncEach album in enhancedAlbums | reverse %}
     <li class="content-list__item content-list__item--separator content-list__item--spacious">
       <article>
-        <div class="entry__text">
+        <div class="text">
           <h2 class="entry__title"><a href="{{ album.url }}" class="entry__titlelink">{{ album.title }}</a></h2>
         
           {{ album.content | safe }}

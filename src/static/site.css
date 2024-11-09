@@ -245,7 +245,7 @@ h6 {
   color: var(--lighter-color); 
 }
 
-.entry__text {
+.text {
   padding: 0 var(--side-padding);
 }
 
