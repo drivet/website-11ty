@@ -2454,4 +2454,9 @@ results:
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/113370935185059287'
   2024/10/05/spain: {}
+  2024/11/09/125358:
+    'https://adactio.com/journal/21548':
+      status_code: 202
+    'https://adactio.com/':
+      status_code: 302
 site_url: 'https://desmondrivet.com'
