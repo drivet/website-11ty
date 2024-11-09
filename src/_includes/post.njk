@@ -25,10 +25,13 @@ breadcumbOptions:
     </div>
   {% endif %}
 
-  {{ reflink(postType, referencedLink) }}
-  
+  <div class="entry__text">
+    {{ reflink(postType, referencedLink) }}
+  </div>
+
   <div class="e-content entry__content">
     <div class="entry__text">
+  
       {% if eleventyNavigation.parent %}
       Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
       {% endif %}
@@ -68,13 +71,15 @@ breadcumbOptions:
     {% endif %}
   </div>
 
-  {% if postType != 'article' %}
-    {% set link = referencedLink or (content | contentLink) %}
-    {% if link %}
-      {% set preview_data = link | preview %}
-      {% include "unfurl.njk" %}
+  <div class="entry__text">
+    {% if postType != 'article' %}
+      {% set link = referencedLink or (content | contentLink) %}
+      {% if link %}
+        {% set preview_data = link | preview %}
+        {% include "unfurl.njk" %}
+      {% endif %}
     {% endif %}
-  {% endif %}
+  </div>
 
   {% set url = page.url | stripExt %}
   {% set discussion = url | discussionForUrl(allstaticman, webmentions.children) %}

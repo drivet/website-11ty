@@ -11,14 +11,17 @@
   {{ entryheader(wmresults, post.data.date, post.url, post.data.navigation, post.data.postType, title, 2) }}
   {% if post.data.blurb %}
     <div class="p-summary" style="display: none">
-    {{post.data.blurb}}
+       {{post.data.blurb}}
     </div>
   {% endif %}
 
-  {{ reflink(post.data.postType, post.data.referencedLink) }}
-
+  <div class="entry__text">
+    {{ reflink(post.data.postType, post.data.referencedLink) }}
+  </div>
+  
   <div class="e-content entry__content">
     <div class="entry__text">
+
       {% if post.data.postType == 'article' %}
       {{ post.templateContent | excerpt | safe }}
       {% else %}
@@ -62,15 +65,15 @@
     {% endif %}
   </div>
 
-  {% if post.data.postType != 'article' %}
-    {% set link = post.data.referencedLink or (post.templateContent | contentLink) %}
-    {% if link %}
-      {% set preview_data = link | preview %}
-      {% include "unfurl.njk" %}
+  <div class="entry__text">
+    {% if post.data.postType != 'article' %}
+      {% set link = post.data.referencedLink or (post.templateContent | contentLink) %}
+      {% if link %}
+        {% set preview_data = link | preview %}
+        {% include "unfurl.njk" %}
+      {% endif %}
     {% endif %}
-  {% endif %}
-
- 
+  </div>
 
   {% set tags = post.data.tags %}
   {% set url = post.url | stripExt %}
