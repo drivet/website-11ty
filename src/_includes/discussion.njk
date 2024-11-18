@@ -35,7 +35,7 @@
   {% if (mentions | length > 0) or (likes | length > 0) or (reposts | length > 0) or (bookmarks | length > 0) %}
   <hr class="separator"/>
 
-  <div class="conversation-list">
+  <div class="conversation-list text">
     <h2>{{discussion.total}} Conversation(s)</h2>
     {% if mentions.length > 0 %}
     <section class="wm-group">

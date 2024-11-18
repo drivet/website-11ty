@@ -18,7 +18,7 @@ eleventyComputed:
 {% endeach %}
 </ul>
 
-<nav class="feed__pagenav">
+<nav class="feed__pagenav text">
 {% if p.page > 0 %}
 {% set prevpage = p.page - 1 %}
 <a href="{{tagUrlPrefix}}/{{ p.name }}{% if prevpage %}{{ prevpage + 1 }}{% endif %}" class="feed__prevlink">

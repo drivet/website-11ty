@@ -6,7 +6,9 @@
 
 {% block content %}
 <main class="main">
-  <h1>{{ title }}</h1>
+  <div class="text">
+    <h1>{{ title }}</h1>
+  </div>
   {{ content | safe }}
 </main>
 {% endblock content %}
