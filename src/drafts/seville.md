@@ -75,15 +75,68 @@ through it all.  It's just...stunning, in a quite literal way - I was
 speechless for a few seconds the first time I saw it.
 
 I was surprised to learn that the Plaza de Espana isn't actually very old;
-it was built in 1929 for the Seville World Fair.  It was designed to
-impress, and accomplishes the goal effortlessly.  I was more disappointed to
-learn that the building now houses mostly government offices but I guess you
-got to do *something* with all that space.
+it was built in 1929 for the Seville World Fair.  It was built to impress,
+and accomplishes the goal effortlessly.  I was more disappointed to learn
+that the building now houses mostly government offices but I guess you got
+to do *something* with all that space.
 
-## Second
+## Second Day
 
 The next day was reserved for our two main paid attractions in Seville: the
 Royal Alcazar and the Seville Cathedral.
 
-The Royal Alcazar is the Spanish royal family's official residence when
-they stay in Seville and it looks like something out of Morocco.
+First up was the Royal Alcazar, the Spanish royal family's official
+residence when they stay in Seville.  It looks like something out of
+Morocco.  At first I thought it was actually built by Moorish invaders but,
+alas, the truth is a bit more mundane.  Though originally the site of a 10th
+century Islamic citadel, progressive conquests and reconstructions have led
+to current palace, a Mudéjar-style estate dating back to the 14th century,
+near the end of Islamic rule in Spain.  It *looks* like something
+Scheherazade may have cooked up, but it was actually built by European
+Christians as a Christian residence, though very much in the style of the
+conquering Moors.
+
+The place is mind-blowing.  To some extent, I suppose, it must have been the
+novelty of the whole thing - I'd never seen anything quite it.  When you
+visit Europe, you're used to seeing a lot of churches and castles and
+palaces of a certain ilk, and the Alcazar just doesn't fit the mould.
+
+When the tour was over, we had lunch, walked a bit and then stood in line
+for the Seville Cathedral.  Like the Alcazar, the site has Islamic origins
+and was originally the site of a large mosque.  Nothing remains of the
+original structure except, notably, the Giralda tower, which totally looks
+the part.
+
+I usually don't bother with church tours when I visit Europe, but this one
+came highly recommended, for reasons I didn't fully grasp until I booked a
+tour.  The Seville Cathedral is the largest Gothic cathedral in the world
+and although I understand what that means *abstractly* it's still a big hit
+to the brain when you go inside and see just what that means in practice.
+
+I could say that it's huge, but what does that even mean?  Legend has it
+that the architects wanted to build a church so big the world thought they
+were crazy.  Mission accomplished - the size is impossible to convey in
+words, and difficult in photos.  Let's just say that when you go inside you
+feel very, very, very small.  My first reaction was to wonder how on earth
+they keep the ceilings clean.
+
+There are, reportedly, over 80 chapels (distinct altars or areas where
+people can kneel and pray) inside but, again, I'm not exactly sure what I'm
+supposed to do with that information.  How many chapels does a church
+usually have?  I have no idea.
+
+What I *do* know is that the main chapel is called, unsurprisingly, the Main
+Chapel, and that it houses one of the most breathtaking works of art I've
+ever seen in my life: the Ritablo Mayor, or Main Altarpiece, an unassuming
+name for something so incredibly *extra*.
+
+The Ritablo Mayor stands roughly 60 feet tall and consists of matrix or grid
+of Bible scenes, all carved out of wood and gilded to the hilt.  In a time
+when most people couldn't read, this was meant to familiarize them with
+selected Bible stories, the way a comic book might today.
+
+Oh! And the Cathedral is also the final resting place of one Christopher
+Columbus.  An asshole, to be sure, but the history is deep here.
+
+## Third Day
+
