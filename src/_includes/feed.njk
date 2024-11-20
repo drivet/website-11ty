@@ -4,6 +4,11 @@
 {% extends "basepost.njk" %}
 {% endif %}
 
+{% block extralink %}
+<link rel="alternate" type="application/atom+xml"
+      title="Atom feed for {{global.AUTHOR}} - {{ title }}"
+      href="{{rss}}"/>
+{% endblock %}
 
 {% block meta %}
 <meta name="robots" content="noindex,follow" />

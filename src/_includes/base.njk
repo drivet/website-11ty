@@ -51,7 +51,9 @@
   {% if global.WEBMENTION_ENDPOINT %}
   <link rel="webmention" href="{{ global.WEBMENTION_ENDPOINT }}"/>
   {% endif %}
- 
+
+  {% block extralink %}{% endblock %}
+
   {% for script in scripts %}
   <script type="{{script.type}}" src="{{script.src}}"></script>
   {% endfor %}
