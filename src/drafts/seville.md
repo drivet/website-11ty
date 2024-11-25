@@ -108,10 +108,11 @@ original structure except, notably, the Giralda tower, which totally looks
 the part.
 
 I usually don't bother with church tours when I visit Europe, but this one
-came highly recommended, for reasons I didn't fully grasp until I booked a
-tour.  The Seville Cathedral is the largest Gothic cathedral in the world
-and although I understand what that means *abstractly* it's still a big hit
-to the brain when you go inside and see just what that means in practice.
+came highly recommended, for reasons I didn't fully grasp until I booked
+some time inside.  The Seville Cathedral is the largest Gothic cathedral in
+the world and although I understand what that means *abstractly* it's still
+a big hit to the brain when you go inside and see just what that means in
+practice.
 
 I could say that it's huge, but what does that even mean?  Legend has it
 that the architects wanted to build a church so big the world thought they
@@ -140,3 +141,32 @@ Columbus.  An asshole, to be sure, but the history is deep here.
 
 ## Third Day
 
+The third day in Seville was mostly just exploration and if you're going to
+do that, one neighbourhood stands out: Triana.  At least, that's what all
+the guide books say, which means that it's still just as touristy as the
+rest of town.
+
+I'm being a bit unfair.  Triana definitely had a lot of tourists but it also
+had a lot of stretches that just seemed...uninteresting.  Therein lies rub
+when it comes to the dichotomy between "authentic" and "touristy".
+Generally speaking, touristy places are like that for a reason - and, by
+contrast, the non-touristy, authentic spots are *also* like that for a
+reason.
+
+When we first crossed the bridge to Trina, for example, after a bit of
+wandering, we settled on a bar that felt pretty local.  It wasn't a bad
+spot, and the food was okay, but...it was definitely not catering to us.  I
+think people sometimes don't realize that "real" Spaniards drink local beer
+and eat fries and pizza like the rest of us.  I honestly think the place
+could have become better over upon multiple visits but we never got the
+chance.
+
+It turns out that we actually crossed the wrong bridge.  We meant to cross
+the Puente de Isabel II, which was supposed to take us directly into the
+main part of the neighbourhood, with all the popular restaurants and bars,
+but instead we crossed a bridge or two earlier and ended up in a part of
+town that was much more residential and local - as represented by the bar we
+settled on.  We didn't quite know where we were, and we couldn't quite
+figure out why there wasn't anything interesting around us.  Again, it all
+comes back to be authentic versus touristy, and being careful what you wish
+for.
