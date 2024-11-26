@@ -2,7 +2,6 @@
 date: 2024-10-25T20:38:02-04:00
 title: "Looking for Paella in All the Wrong Places"
 blurb: "We visited Spain for 10 days and learned that Duo Lingo doesn't work"
-post-status: draft
 mp-syndicate-to:
 - mastodon
 tags: 
