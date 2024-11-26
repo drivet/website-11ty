@@ -2459,4 +2459,19 @@ results:
       status_code: 202
     'https://adactio.com/':
       status_code: 302
+  2024/11/25/seville:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/113546398303913549'
+    'https://www.youtube.com/watch?v=iiYW2d7RWw4': {}
+    'https://en.wikipedia.org/wiki/The_Barber_of_Seville': {}
+    'https://en.wikipedia.org/wiki/Metropol_Parasol': {}
+    'https://en.wikipedia.org/wiki/Plaza_de_Espa%C3%B1a,_Seville': {}
+    'https://en.wikipedia.org/wiki/Santa_Cruz,_Seville': {}
+    'https://en.wikipedia.org/wiki/Alc%C3%A1zar_of_Seville': {}
+    'https://en.wikipedia.org/wiki/Seville_Cathedral': {}
+    'https://en.wikipedia.org/wiki/Scheherazade': {}
+    'https://en.wikipedia.org/wiki/Giralda': {}
+    'https://yatrikaone.com/spain-seville-cathedral-altarpiece-at-the-main-chapel/': {}
+    'https://en.wikipedia.org/wiki/Triana,_Seville': {}
 site_url: 'https://desmondrivet.com'
