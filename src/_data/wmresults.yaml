@@ -2474,4 +2474,8 @@ results:
     'https://en.wikipedia.org/wiki/Giralda': {}
     'https://yatrikaone.com/spain-seville-cathedral-altarpiece-at-the-main-chapel/': {}
     'https://en.wikipedia.org/wiki/Triana,_Seville': {}
+  2024/11/25/madrid-exit:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/113546609033879794'
 site_url: 'https://desmondrivet.com'
