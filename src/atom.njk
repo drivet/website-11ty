@@ -16,72 +16,84 @@
       "collection": "allPosts",
       "permalink": "posts/feed_all.xml",
       "title":  "Desmond Rivet - All Posts",
+      "subtitle": "The firehose of all my posts",
       "url": "https://desmondrivet.com/posts/"
     },
     {
       "collection": "allPosts",
       "permalink": "feeds/all.rss",
       "title":  "Desmond Rivet - All Posts",
+      "subtitle": "The firehose of all my posts",
       "url": "https://desmondrivet.com/posts/"
     },
     {
       "collection": "lifestream",
       "permalink": "posts/feed_lifestream.xml",
-      "title":  "Desmond Rivet - Lifestrea,",
+      "title":  "Desmond Rivet - Lifestream",
+      "subtitle": "My lifestream, or original content.  Articles, notes, photos, etc.",
       "url": "https://desmondrivet.com/posts/lifestream/"
     },
     {
       "collection": "articles",
       "permalink": "posts/feed_articles.xml",
       "title":  "Desmond Rivet - Blog",
+      "subtitle": "My old school blog",
       "url": "https://desmondrivet.com/posts/articles/"
     },
     {
       "collection": "bookmarks",
       "permalink": "posts/feed_bookmarks.xml",
       "title":  "Desmond Rivet - Links",
+      "subtitle": "My bookmarks, for reading later",
       "url": "https://desmondrivet.com/posts/bookmarks/"
     },
     {
       "collection": "notes",
       "permalink": "posts/feed_notes.xml",
       "title":  "Desmond Rivet - Notes",
+      "subtitle": "Random, small, titleless thoughts",
       "url": "https://desmondrivet.com/posts/notes/"
     },
     {
       "collection": "photos",
       "permalink": "posts/feed_photos.xml",
       "title":  "Desmond Rivet - Photos",
+      "subtitle": "Random photos I have taken",
       "url": "https://desmondrivet.com/posts/photos/"
     }, 
     {
       "collection": "albums",
       "permalink": "posts/feed_albums.xml",
       "title":  "Desmond Rivet - Albums",
+      "subtitle": "My curated photo albums",
       "url": "https://desmondrivet.com/posts/albums/"
     },
     {
       "collection": "replies",
       "permalink": "posts/feed_replies.xml",
       "title":  "Desmond Rivet - Replies",
+      "subtitle": "Random comments on things I read on the web",
       "url": "https://desmondrivet.com/posts/replies/"
     },
     {
       "collection": "reposts",
       "permalink": "posts/feed_reposts.xml",
       "title":  "Desmond Rivet - Reposts",
+      "subtitle": "Random reposts",
       "url": "https://desmondrivet.com/posts/reposts/"
     },
     {
       "collection": "likes",
       "permalink": "posts/feed_likes.xml",
       "title":  "Desmond Rivet - Likes",
+      "subtitle": "Stuff I have liked on the web",
       "url": "https://desmondrivet.com/posts/likes/"
     },
     {
       "collection": "recipes",
       "permalink": "recipes/feed.xml",
       "title":  "Desmond Rivet - Recipes",
+      "subtitle": "Recipes I have collected",
       "url": "https://desmondrivet.com/recipes/"
     }
   ]
@@ -92,6 +104,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ metadata.title }}</title>
+  {% if metadata.subtitle %}
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  {% endif %}
+  <icon>{{global.URL}}{{ global.FAVICON }}</icon>
   <link href="{{ feedUrlPrefix }}/{{metadata.permalink}}" rel="self"/>
   <link href="{{ metadata.url }}"/>
   <updated>{{ collections[metadata.collection] | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
@@ -108,7 +124,10 @@
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
     <content type="html">
+        {% set referencedLinkText %}
         {{ reflink(post.data.postType, post.data.referencedLink) }}
+        {% endset %}
+        {{ referencedLinkText | e }}
         {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
     </content>
   </entry>
