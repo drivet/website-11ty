@@ -33,19 +33,20 @@
       {% if photoCount > 1 %}
       <p><a href="{{ post.url | stripExt }}">{{ photoCount }} photos</a></p>
       {% endif %}
-
-      {% set albums = collections.all | eleventyNavigation(post.data.eleventyNavigation.key) %} 
-      {% set albumCount = albums | length %}
-      {% if albumsCount > 1 %}
-      <p><a href="{{ post.url | stripExt }}">{{ albumCount }} albums</a></p>
-      {% endif %}
-
+ 
+  
       {% if post.data.postType == 'article' %}
       <p><a class="read-more" href="{{ post.url | stripExt }}">Read more &raquo;</a></p>
       {% endif %}
     </div>
 
     {% if album %}
+      {% set albums = collections.all | eleventyNavigation(post.data.eleventyNavigation.key) %}
+      {% set albumCount = albums | length %}  
+      {% if albumCount > 1 %}
+      <p><a href="{{ post.url | stripExt }}">{{ albumCount }} albums</a></p>
+      {% endif %}
+
       {% image post.data.featured.value, post.data.featured.alt, 'u-featured entry__photo image' %}
     {% elif photoCount == 1 %}
       {% set photoObj = post.data.photo[0] %}

@@ -116,7 +116,7 @@
     <name>{{ author.name }}</name>
     <email>{{ author.email }}</email>
   </author>
-  {%- for post in collections[metadata.collection].slice(0, 10) %}
+  {%- for post in collections[metadata.collection].slice(0, 25) %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) | stripExt }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
@@ -124,11 +124,30 @@
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
     <content type="html">
-        {% set referencedLinkText %}
-        {{ reflink(post.data.postType, post.data.referencedLink) }}
-        {% endset %}
-        {{ referencedLinkText | e }}
         {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+
+        <![CDATA[
+        {{ reflink(post.data.postType, post.data.referencedLink) }}
+
+        {% set photoCount = post.data.photo | length %}
+        {% set album = post.data.postType == 'album' %}
+
+        {% if photoCount > 1 %}
+        <p><{{ photoCount }} photos</p>
+        {% endif %}
+
+        {% if album %}
+          {% set albums = collections.all | eleventyNavigation(post.data.eleventyNavigation.key) %}
+          {% set albumCount = albums | length %}  
+          {% if albumCount > 1 %}
+          <p>{{ albumCount }} albums</p>
+          {% endif %}
+          {% atomImage post.data.featured.value, post.data.featured.alt %}
+        {% elif photoCount > 0 %}
+          {% set photoObj = post.data.photo[0] %}
+          {% atomImage photoObj.value | d(photoObj), photoObj.alt | d('') %}
+        {% endif %}
+        ]]>
     </content>
   </entry>
   {%- endfor %}

@@ -19,6 +19,16 @@ async function makeImage(src, widths) {
   }
 }
 
+async function atomImageShortcode(src, alt) {
+  const data = await makeImage(src, [800]); // match the width of regular image
+  return `<img src="${data.jpeg[0].url}" alt="${alt}" width="600"/>`;
+}
+
+async function atomThumbShortcode(src, alt) {
+  const data = await makeImage(src, [200]); // match the width of thumb image
+  return `<img src="${data.jpeg[0].url}" alt="${alt}" width="200"/>`;
+}
+
 async function imgShortcode(src, alt, cls, widths, onerror) {
   const data = await makeImage(src, widths);
   if (!data) {
@@ -83,6 +93,8 @@ function imageConfig(eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("bigthumb", bigThumbShortcode);
   eleventyConfig.addNunjucksAsyncShortcode("thumb", thumbShortcode); 
   eleventyConfig.addNunjucksAsyncShortcode("avatar", avatarShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("atomImage", atomImageShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("atomThumb", atomThumbShortcode);
 }
 
 module.exports = {
