@@ -41,9 +41,6 @@ elswhere on the web as well:
     <a href="https://indieweb.social/@desmondrivet" title="Twitter" rel="me">
         <i class="fab fa-mastodon fa-lg"></i>
     </a>
-    <a href="http://www.twitter.com/desmondrivet" title="Twitter" rel="me">
-        <i class="fab fa-twitter fa-lg"></i>
-    </a>
     <a href="https://github.com/drivet" title="Github" rel="me">
         <i class="fab fa-github fa-lg"></i>
     </a>
