@@ -13,10 +13,6 @@ breadcumbOptions:
 {% block content %}
 <main class="main">
 <article class="h-entry entry">
-  
-  {% for mention in bridgyMentions %}
-  <a href="{{mention}}"></a>
-  {% endfor %} 
   {{ entryheader(wmresults, date, page.url, navigation, postType, title, 1) }}
 
   {% if blurb %}
@@ -33,53 +29,79 @@ breadcumbOptions:
     <div class="text">
   
       {% if eleventyNavigation.parent %}
-      Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
+      Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) |  eleventyNavigationToHtml(breadcumbOptions) | safe }}
       {% endif %}
       
       {{ content | safe }}
-
-      {% if album or photo | length > 1 %}
-      <p>{{ photo | length }} photos</p>
-      {% endif %}
+      
     </div>
 
-    {% set photoArg = photo %}
-    {% if photoArg %}
-      {% if album %}
-        <div class="image-grid">
-          {% asyncEach photoObj in photoArg %}
-            {% set obj = photoObj.value | d(photoObj) %}
-            {% set alt = photoObj.alt | d('') %}
-            <div class="h-entry entry image-grid__item">
-              <a href="{{ page.url | stripExt | albumImageUrl(obj)}}">
-                {% thumb obj, alt, "u-photo image-grid__thumb image" %}
-              </a>
-            </div>
-          {% endeach %}
-        </div>
+    {% if photo %} 
+      {% set photoCount = photo | length  %}
+      {% if photoCount > 1 %}
+        <p class="text">{{ photoCount }} photos</p>
+        {% if album %}
+          <div class="image-grid">
+            {% asyncEach photoObj in photo %}
+              {% set obj = photoObj.value | d(photoObj) %}
+              {% set alt = photoObj.alt | d('') %}
+              <div class="h-entry entry image-grid__item">
+                <a href="{{ page.url | stripExt | albumImageUrl(obj)}}">
+                  {% thumb obj, alt, "u-photo image-grid__thumb image" %}
+                </a>
+              </div>
+            {% endeach %}
+          </div>
+        {% endif %}
       {% else %}
-        {% asyncEach photoObj in photoArg %}
+        {% asyncEach photoObj in photo %}
           {% set obj = photoObj.value | d(photoObj) %}
           {% set alt = photoObj.alt | d('') %}
           {% if loop.first %}
-          {% image obj, alt, "u-featured u-photo entry__photo image" %}
+            {% image obj, alt, "u-featured u-photo entry__photo image" %}
           {% else %}
-          {% image obj, alt, "u-photo entry__photo image" %}
+            {% image obj, alt, "u-photo entry__photo image" %}
           {% endif %}
         {% endeach %}
       {% endif %}
     {% endif %}
-  </div>
 
-  <div class="text">
-    {% if postType != 'article' %}
-      {% set link = referencedLink or (content | contentLink) %}
-      {% if link %}
-        {% set preview_data = link | preview %}
-        {% include "unfurl.njk" %}
+    {% if album %}
+      {% set enhancedAlbums = collections.all | eleventyNavigation(eleventyNavigation.key) | enhanceNavigation(collections.all) %}
+      {% set albumCount = enhancedAlbums | length  %}
+      {% if albumCount > 1 %}
+        <p>{{ albumCount }} albums</p>
+        <ul class="content-list">
+        {% asyncEach ealbum in enhancedAlbums | reverse %}
+          <li class="content-list__item content-list__item--separator content-list__item--spacious">
+            <article>
+              <div class="text">
+                <h2 class="entry__title"><a href="{{ ealbum.url }}" class="entry__titlelink">{{ ealbum.title }}</a></h2>
+              
+                {{ ealbum.content | safe }}
+                
+                {% if ealbum.photo %}
+                <p>{{ ealbum.photo | length }} photos</p>
+                {% else %}
+                <p>{{ ealbum.children | length }} albums</p>
+                {% endif %}
+              </div>
+
+              {% if ealbum.featured %}
+              <a href="{{ ealbum.url }}">
+                {% image ealbum.featured.value, ealbum.featured.alt, "u-featured entry__photo image"  %}
+              </a>
+              {% endif %}
+              
+            </article>
+          </li>
+        {% endeach %}
+        </ul>
       {% endif %}
     {% endif %}
   </div>
+
+  {% include "unfurl.njk" %}
 
   {% set url = page.url | stripExt %}
   {% set discussion = url | discussionForUrl(allstaticman, webmentions.children) %}

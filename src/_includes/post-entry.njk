@@ -1,12 +1,9 @@
 {% from "reflink.njk" import reflink %}
 {% from "entry-header.njk" import entryheader %}
 
-<article class="h-entry entry">
-  {% for mention in post.data.bridgyMentions %}
-  <a href="{{mention}}"></a>
-  {% endfor %}
-
+<article class="h-entry entry"> 
   {% set title = post.data.title  %}
+ 
   {{ entryheader(wmresults, post.data.date, post.url, post.data.navigation, post.data.postType, title, 2) }}
   {% if post.data.blurb %}
     <div class="p-summary" style="display: none">
@@ -33,7 +30,6 @@
       {% if photoCount > 1 %}
       <p><a href="{{ post.url | stripExt }}">{{ photoCount }} photos</a></p>
       {% endif %}
- 
   
       {% if post.data.postType == 'article' %}
       <p><a class="read-more" href="{{ post.url | stripExt }}">Read more &raquo;</a></p>
@@ -65,15 +61,10 @@
     {% endif %}
   </div>
 
-  <div class="text">
-    {% if post.data.postType != 'article' %}
-      {% set link = post.data.referencedLink or (post.templateContent | contentLink) %}
-      {% if link %}
-        {% set preview_data = link | preview %}
-        {% include "unfurl.njk" %}
-      {% endif %}
-    {% endif %}
-  </div>
+  {% set postType = post.data.postType %}
+  {% set referencedLink = post.data.referencedLink %}
+  {% set content = post.templateContent %}
+  {% include "unfurl.njk" %}
 
   {% set tags = post.data.tags %}
   {% set url = post.url | stripExt %}

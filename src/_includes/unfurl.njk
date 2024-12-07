@@ -1,9 +1,16 @@
-{% if preview_data %}
-  <section class="unfurl">
-  {% if preview_data.type == 'mf2' or preview_data.type == 'unfurl' %}
-    {% include "link-context.njk" %}
-  {% elif preview_data.type == 'oembed' %}
-    {{ preview_data.meta.oEmbed.html | safe }}
+{% if postType != 'article' %}
+  {% set link = referencedLink or (content | contentLink) %}
+  {% if link %}
+    {% set preview_data = link | preview %}
+    {% if preview_data %}
+
+      <section class="unfurl text">
+      {% if preview_data.type == 'mf2' or preview_data.type == 'unfurl' %}
+        {% include "link-context.njk" %}
+      {% elif preview_data.type == 'oembed' %}
+        {{ preview_data.meta.oEmbed.html | safe }}
+      {% endif %}
+      </section>
+    {% endif %}
   {% endif %}
-  </section>
 {% endif %}

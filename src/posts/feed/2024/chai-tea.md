@@ -7,6 +7,9 @@ mp-syndicate-to:
 tags:
 - language
 image: /static/img/chai_unsplash.jpg
+featured:
+  alt: "A cup of chai tea"
+  value: "/static/img/chai_unsplash.jpg"
 ---
 
 Yes, I know that the word "chai" literally just means "tea" in Hindi (and

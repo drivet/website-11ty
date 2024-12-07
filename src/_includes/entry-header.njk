@@ -1,5 +1,9 @@
 {% macro entryheader(wmresults, date, url, navigation, postType, title, level) %}
+
 <header class="entry__header {{'entry__header--top' if level == 1 }}">
+    {% for mention in bridgyMentions %}
+    <a href="{{mention}}"></a>
+    {% endfor %}
     <a href="/" class="u-author"></a>
 
     <span class="entry__headerline row row--spacious">
