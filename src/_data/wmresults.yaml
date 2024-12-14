@@ -2486,4 +2486,5 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/113601116398573766'
+  2024/12/07/anatomy-of-post: {}
 site_url: 'https://desmondrivet.com'
