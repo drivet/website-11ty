@@ -7,7 +7,7 @@ function photoUrlSlug(photoUrl) {
   return hash.substring(0, Math.floor(hash.length / 4));
 }
 
-function albumPhotoPost(album, albumPath, index0, photoUrl, slugs) {
+function albumPhotoPost(album, albumPath, index0, photo, slugs) {
   const date = album.data.date;
   const slug = slugs[index0];
   const total = album.data.photo.length;
@@ -18,7 +18,7 @@ function albumPhotoPost(album, albumPath, index0, photoUrl, slugs) {
 
   return {
     permalink: `${albumPath}/${slug}`,
-    photo: photoUrl,
+    photo,
     date,
     title: album.data.title,
     albumUrl: album.url,

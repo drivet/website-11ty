@@ -4,19 +4,31 @@
 <article class="h-entry entry"> 
   {% set title = post.data.title  %}
  
-  {{ entryheader(wmresults, post.data.date, post.url, post.data.navigation, post.data.postType, title, 2) }}
+  {{ entryheader(wmresults, post.data.date, post.url, post.data.navigation, post.data.postType, title, 2, post.data.featured) }}
   {% if post.data.blurb %}
     <div class="p-summary" style="display: none">
        {{post.data.blurb}}
     </div>
   {% endif %}
 
-  <div class="text">
-    {{ reflink(post.data.postType, post.data.referencedLink) }}
-  </div>
-  
   <div class="e-content entry__content">
     <div class="text">
+      {{ reflink(post.data.postType, post.data.referencedLink) }}
+
+      {% set photoCount = post.data.photo | length %}
+      {% if photoCount > 1 %}
+      <p><a href="{{ post.url | stripExt }}">{{ photoCount }} photos</a></p>
+      {% endif %}
+
+      {% set albumCount = 0 %}
+      {% set album = post.data.postType == 'album' %}
+      {% if album %}
+        {% set albums = collections.all | eleventyNavigation(post.data.eleventyNavigation.key) %}
+        {% set albumCount = albums | length %}
+        {% if albumCount > 0 %}
+          <p><a href="{{ post.url | stripExt }}">{{ albumCount }} albums</a></p>
+        {% endif %}
+      {% endif %}
 
       {% if post.data.postType == 'article' %}
       {{ post.templateContent | excerpt | safe }}
@@ -24,27 +36,12 @@
       {{ post.templateContent | safe }}
       {% endif %}
 
-      {% set photoCount = post.data.photo | length %}
-      {% set album = post.data.postType == 'album' %}  
-
-      {% if photoCount > 1 %}
-      <p><a href="{{ post.url | stripExt }}">{{ photoCount }} photos</a></p>
-      {% endif %}
-  
       {% if post.data.postType == 'article' %}
       <p><a class="read-more" href="{{ post.url | stripExt }}">Read more &raquo;</a></p>
       {% endif %}
     </div>
 
-    {% if album %}
-      {% set albums = collections.all | eleventyNavigation(post.data.eleventyNavigation.key) %}
-      {% set albumCount = albums | length %}  
-      {% if albumCount > 1 %}
-      <p><a href="{{ post.url | stripExt }}">{{ albumCount }} albums</a></p>
-      {% endif %}
-
-      {% image post.data.featured.value, post.data.featured.alt, 'u-featured entry__photo image' %}
-    {% elif photoCount == 1 %}
+    {% if photoCount == 1 %}
       {% set photoObj = post.data.photo[0] %}
       <div class="entry__photowrapper">
         {% image photoObj.value | d(photoObj), photoObj.alt | d('') , "u-photo entry__photoclipped image" %}
@@ -58,6 +55,9 @@
           </div>
         {% endeach %}
       </div>
+    {% elif post.data.featured and album %}
+      {# Should probably handle featured images more generically, not just for albums #}
+      {% image post.data.featured.value, post.data.featured.alt, 'u-featured entry__photo image' %}
     {% endif %}
   </div>
 

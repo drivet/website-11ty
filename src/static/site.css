@@ -468,3 +468,7 @@ h6 {
 .entry__nextctrl {
   justify-content: flex-end;
 }
+
+.album-list {
+  margin-top: 4em;
+}

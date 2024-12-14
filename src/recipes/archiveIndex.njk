@@ -4,8 +4,9 @@ permalink: "/recipes/archives/index.html"
 ---
 {% extends "base.njk" %}
 
-{% block meta %}
+{% block metadata %}
 <meta name="robots" content="noindex,follow" />
+{{ super() }}
 {% endblock %}
 
 {% block content %} 

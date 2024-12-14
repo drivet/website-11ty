@@ -40,8 +40,9 @@ tagIndexData:
 {% set metadata = pagination.items[0]%}
 {% extends "base.njk" %}
 
-{% block meta %}
+{% block metadata %}
 <meta name="robots" content="noindex,follow" />
+{{ super() }}
 {% endblock %}
 
 {% block content %}

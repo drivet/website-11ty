@@ -12,47 +12,53 @@ breadcumbOptions:
 
 {% block content %}
 <main class="main">
-<article class="h-entry entry">
-  {{ entryheader(wmresults, date, page.url, navigation, postType, title, 1) }}
+  <article class="h-entry entry">
+    {{ entryheader(wmresults, date, page.url, navigation, postType, title, 1) }}
 
-  {% if blurb %}
-    <div class="p-summary" style="display: none">
-    {{ blurb }}
-    </div>
-  {% endif %}
+    {% if blurb %}
+      <div class="p-summary" style="display: none">
+      {{ blurb }}
+      </div>
+    {% endif %}
 
-  <div class="text">
-    {{ reflink(postType, referencedLink) }}
-  </div>
+    <div class="e-content entry__content">
+      <div class="text">
+        {{ reflink(postType, referencedLink) }}
 
-  <div class="e-content entry__content">
-    <div class="text">
-  
-      {% if eleventyNavigation.parent %}
-      Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) |  eleventyNavigationToHtml(breadcumbOptions) | safe }}
-      {% endif %}
-      
-      {{ content | safe }}
-      
-    </div>
-
-    {% if photo %} 
-      {% set photoCount = photo | length  %}
-      {% if photoCount > 1 %}
-        <p class="text">{{ photoCount }} photos</p>
+        {% if eleventyNavigation.parent %}
+        Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) |  eleventyNavigationToHtml(breadcumbOptions) | safe }}
+        {% endif %} 
+        
+        {% set photoCount = photo | length  %}
+        {% if photoCount > 1 %}
+        <p>{{ photoCount }} photos</p>
+        {% endif %} 
+        
+        {% set albumCount = 0 %}
         {% if album %}
-          <div class="image-grid">
-            {% asyncEach photoObj in photo %}
-              {% set obj = photoObj.value | d(photoObj) %}
-              {% set alt = photoObj.alt | d('') %}
-              <div class="h-entry entry image-grid__item">
-                <a href="{{ page.url | stripExt | albumImageUrl(obj)}}">
-                  {% thumb obj, alt, "u-photo image-grid__thumb image" %}
-                </a>
-              </div>
-            {% endeach %}
-          </div>
+          {% set enhancedAlbums = collections.all | eleventyNavigation(eleventyNavigation.key) | enhanceNavigation(collections.all) %}
+          {% set albumCount = enhancedAlbums | length  %}
+          {% if albumCount > 1 %}
+            <p>{{ albumCount }} albums</p>
+          {% endif %}  
         {% endif %}
+
+        {{ content | safe }}
+        
+      </div>
+       
+      {% if album and photoCount > 1 %}
+        <div class="image-grid">
+          {% asyncEach photoObj in photo %}
+            {% set obj = photoObj.value | d(photoObj) %}
+            {% set alt = photoObj.alt | d('') %}
+            <div class="h-entry entry image-grid__item">
+              <a href="{{ page.url | stripExt | albumImageUrl(obj)}}">
+                {% thumb obj, alt, "u-photo image-grid__thumb image" %}
+              </a>
+            </div>
+          {% endeach %}
+        </div>
       {% else %}
         {% asyncEach photoObj in photo %}
           {% set obj = photoObj.value | d(photoObj) %}
@@ -64,14 +70,9 @@ breadcumbOptions:
           {% endif %}
         {% endeach %}
       {% endif %}
-    {% endif %}
-
-    {% if album %}
-      {% set enhancedAlbums = collections.all | eleventyNavigation(eleventyNavigation.key) | enhanceNavigation(collections.all) %}
-      {% set albumCount = enhancedAlbums | length  %}
+      
       {% if albumCount > 1 %}
-        <p>{{ albumCount }} albums</p>
-        <ul class="content-list">
+        <ul class="content-list album-list">
         {% asyncEach ealbum in enhancedAlbums | reverse %}
           <li class="content-list__item content-list__item--separator content-list__item--spacious">
             <article>
@@ -89,7 +90,7 @@ breadcumbOptions:
 
               {% if ealbum.featured %}
               <a href="{{ ealbum.url }}">
-                {% image ealbum.featured.value, ealbum.featured.alt, "u-featured entry__photo image"  %}
+                {% image ealbum.featured.value, ealbum.featured.alt, "entry__photo image"  %}
               </a>
               {% endif %}
               
@@ -98,15 +99,15 @@ breadcumbOptions:
         {% endeach %}
         </ul>
       {% endif %}
-    {% endif %}
-  </div>
+      
+    </div>
 
-  {% include "unfurl.njk" %}
+    {% include "unfurl.njk" %}
 
-  {% set url = page.url | stripExt %}
-  {% set discussion = url | discussionForUrl(allstaticman, webmentions.children) %}
-  {% include "entry-footer.njk" %}
-  {% include "discussion.njk" %}
-</article>
+    {% set url = page.url | stripExt %}
+    {% set discussion = url | discussionForUrl(allstaticman, webmentions.children) %}
+    {% include "entry-footer.njk" %}
+    {% include "discussion.njk" %}
+  </article>
 </main>
 {% endblock %}

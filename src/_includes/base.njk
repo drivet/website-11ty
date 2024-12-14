@@ -12,7 +12,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 
-  {% include 'metadata.njk' %}
+  {% if global.AUTHOR %}
+  <meta name="author" content="{{ global.AUTHOR }}" />
+  {% endif %}
+
+  {% block metadata %}
+  {% if description %}
+  {% set m_description = description | striptags | escape | truncate(160) %}
+  {% else %}
+  {% set m_description = content | striptags | escape | truncate(160) %}
+  {% endif %}
+
+  {% set m_title = title | striptags | escape %}
+
+  {% if image %}
+    {% set m_image = image | aUrl %}
+  {% elif featured %}
+    {% set m_image = featured.value or featured | aUrl %}
+  {% elif photo %}
+    {% set m_image = (photo[0].value or photo[0]) | aUrl %}
+  {% elif thumb %}
+    {% set m_image = thumb | aUrl %}
+  {% elif OPEN_GRAPH_IMAGE %}
+    {% set m_image = OPEN_GRAPH_IMAGE | aUrl %}
+  {% endif %}
+
+  <meta name="description" content="{{ m_description }}" />
+
+  {# Open graph #}
+  <meta property="og:site_name" content="{{ global.SITENAME }}" />
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="{{ m_title }}"/>
+  <meta property="og:url" content="{{ page.url }}"/>
+  <meta property="og:description" content="{{ m_description }}" />
+  {% if m_image %}
+  <meta property="og:image" content="{{ m_image }}"/> 
+  {% endif %}
+
+  {% endblock %}
 
   {% if global.FAVICON %}
   <link href="{{ global.FAVICON }}" rel="icon">

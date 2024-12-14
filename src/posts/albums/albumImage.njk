@@ -21,6 +21,16 @@ scripts:
 <link href="{{ '/static/albumImage.css' | cachebust(global.URL, 'src/static/albumImage.css')}}" rel="stylesheet">
 {% endblock %}
 
+{% block metadata %}
+<meta name="description" content="" />
+<meta property="og:site_name" content="{{ global.SITENAME }}" />
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="{{ p.title }} / {{ p.index0 + 1}} of {{ p.total }}"/>
+<meta property="og:url" content="{{ page.url }}"/>
+<meta property="og:description" content="" />
+<meta property="og:image" content="{{ p.photo.value | aUrl }}"/> 
+{% endblock %}
+
 {% block underbody %}
 
 <script>

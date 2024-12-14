@@ -51,7 +51,7 @@ photo:
   - alt: ''
     value: >-
       https://media.desmondrivet.com/7b/9c/79/fc/81f661395a22495c819a31b0de68da9c087f119fe966b788735e3ff0.jpg
-  - alt: ''
+  - alt: 'Chateau Frontenac in the distance'
     value: >-
       https://media.desmondrivet.com/7d/f7/3b/45/38ac184e7656e6805c1581d72dd3c06ff87b252e86a1797347f956e3.jpg
   - alt: ''
