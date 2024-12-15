@@ -133,7 +133,7 @@
         {% set album = post.data.postType == 'album' %}
 
         {% if photoCount > 1 %}
-        <p><{{ photoCount }} photos</p>
+        <p>{{ photoCount }} photos</p>
         {% endif %}
 
         {% if album %}
@@ -144,8 +144,9 @@
           {% endif %}
           {% atomImage post.data.featured.value, post.data.featured.alt %}
         {% elif photoCount > 0 %}
-          {% set photoObj = post.data.photo[0] %}
+          {% asyncEach photoObj in photo %}
           {% atomImage photoObj.value | d(photoObj), photoObj.alt | d('') %}
+          {% endeach %}
         {% endif %}
         ]]>
     </content>

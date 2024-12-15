@@ -13,6 +13,9 @@ breadcumbOptions:
 {% block content %}
 <main class="main">
   <article class="h-entry entry">
+    {% for mention in bridgyMentions %}
+    <a href="{{mention}}"></a>
+    {% endfor %}
     {{ entryheader(wmresults, date, page.url, navigation, postType, title, 1) }}
 
     {% if blurb %}
