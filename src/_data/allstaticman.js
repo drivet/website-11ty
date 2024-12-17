@@ -4,7 +4,7 @@ const path = require('path');
 
 const STATICMAN_DIR = "./_staticman";
 
-module.exports = async function () {
+module.exports = function () {
   return fs.readdirSync(STATICMAN_DIR)
     .filter(file => path.extname(file) === '.yml')
     .map(file => yaml.safeLoad(fs.readFileSync(path.join(STATICMAN_DIR, file))));

@@ -45,7 +45,7 @@ function enhanceNavigation(nav, allAlbums) {
   nav.forEach(n => {
     const album = indexed[n.key];
     n.featured = album ? album.data.featured : undefined;
-    n.content = album ? album.templateContent : undefined;
+    n.content = album ? album.content : undefined;
     n.photo = album ? album.data.photo : undefined;
     if (n.children && n.children.length > 0) {
       enhanceNavigation(n.children, allAlbums);

@@ -1,7 +1,7 @@
 const elasticlunr = require("elasticlunr");
 const { dateFormat } = require('../utils/helpers.js');
 
-function searchIdxPosts(collection) {
+function searchPostsInit() {
   const index = elasticlunr();
   index.addField("title");
   index.addField("date");
@@ -9,23 +9,22 @@ function searchIdxPosts(collection) {
   index.addField('refLink');
   index.addField("content");
   index.setRef("id");
+  return index;
+}
 
-  collection.forEach((page) => {
-    index.addDoc({
-      id: page.url,
-      title: page.data.title,
-      date: dateFormat(page.date, 'MMM D, YYYY, h:mm A Z'),
-      tags: page.data.tags,
-      postType: page.data.postType,
-      refLink: page.data.referencedLink,
-      content: page.templateContent 
-    });
+function searchPostsIdx(post, content, index) {
+  index.addDoc({
+    id: post.url,
+    title: post.data.title,
+    date: dateFormat(post.date, 'MMM D, YYYY, h:mm A Z'),
+    tags: post.data.tags,
+    postType: post.data.postType,
+    refLink: post.data.referencedLink,
+    content
   });
+}
 
-  return index.toJSON();
-};
-
-function searchIdxRecipes(collection) {
+function searchRecipesInit() {
   const index = elasticlunr();
   index.addField("title");
   index.addField("blurb");
@@ -33,22 +32,28 @@ function searchIdxRecipes(collection) {
   index.addField("ingredients");
   index.addField("content");
   index.setRef("id");
+  return index;
+}
 
-  collection.forEach((page) => {
-    index.addDoc({
-      id: page.url,      
-      title: page.data.title,
-      blurb: page.data.blurb,
-      tags: page.data.tags,
-      ingredients: page.data.ingredients,
-      content: page.templateContent 
-    });
+function searchRecipesIdx(post, content, index) {
+  index.addDoc({
+    id: post.url,      
+    title: post.data.title,
+    blurb: post.data.blurb,
+    tags: post.data.tags,
+    ingredients: post.data.ingredients,
+    content
   });
+}
 
+function idxJson(index) {
   return index.toJSON();
-};
+}
 
 module.exports = {
-  searchIdxPosts,
-  searchIdxRecipes,
+  searchPostsInit,
+  searchPostsIdx,
+  searchRecipesInit,
+  searchRecipesIdx,
+  idxJson
 }

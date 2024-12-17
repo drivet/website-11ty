@@ -11,7 +11,7 @@ const { imageConfig } = require('./configs/image.js');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { enhanceNavigation, photoUrlSlug } = require('./configs/albums.js');
 const { inspect } = require('util');
-const { searchIdxPosts, searchIdxRecipes } = require('./configs/search');
+const { searchPostsInit, searchPostsIdx, searchRecipesInit, searchRecipesIdx, idxJson } = require('./configs/search');
 const { discussionConfig } = require('./configs/discussion.js');
 const { cacheBustConfig } = require('./configs/cachebust.js');
 
@@ -50,9 +50,41 @@ function albumImageUrl(albumPath, photoUrl) {
 }
 
 module.exports = (eleventyConfig) => {
-  eleventyConfig.setBrowserSyncConfig(
-    require('./configs/browsersync.config')('_site')
-  );
+  const fs = require('fs');
+  const url = require('url');
+  eleventyConfig.setServerOptions({
+		module: "@11ty/eleventy-server-browsersync",
+    server: {
+      baseDir: '_site',
+      middleware: [
+        function (req, res, next) {
+          let file = url.parse(req.url);
+          file = file.pathname;
+          file = file.replace(/\/+$/, ''); // remove trailing hash
+          file = `_site/${file}.html`;
+  
+          if (fs.existsSync(file)) {
+            const content = fs.readFileSync(file);
+            res.write(content);
+            res.writeHead(200);
+            res.end();
+          } else {
+            return next();
+          }
+        },
+      ],
+    },
+    callbacks: {
+      ready: function (_, bs) {
+        bs.addMiddleware('*', (_, res) => {
+          const content = fs.readFileSync('_site/404.html');
+          res.write(content);
+          res.writeHead(404);
+          res.end();
+        });
+      },
+    },
+	});
 
   const markdownIt = require("markdown-it");
   const options = {
@@ -136,8 +168,11 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addFilter('enhanceNavigation', enhanceNavigation);
-  eleventyConfig.addFilter("searchIdxPosts", searchIdxPosts);
-  eleventyConfig.addFilter("searchIdxRecipes", searchIdxRecipes);
+  eleventyConfig.addFilter("searchPostsInit", searchPostsInit);
+  eleventyConfig.addFilter("searchPostsIdx", searchPostsIdx);
+  eleventyConfig.addFilter("searchRecipesInit", searchRecipesInit);
+  eleventyConfig.addFilter("searchRecipesIdx", searchRecipesIdx);
+  eleventyConfig.addFilter("idxJson", idxJson);
   
   eleventyConfig.addFilter("debug", obj => JSON.stringify(obj));
 

@@ -31,9 +31,9 @@
       {% endif %}
 
       {% if post.data.postType == 'article' %}
-      {{ post.templateContent | excerpt | safe }}
+      {{ post.content | excerpt | safe }}
       {% else %}
-      {{ post.templateContent | safe }}
+      {{ post.content | safe }}
       {% endif %}
 
       {% if post.data.postType == 'article' %}
@@ -63,7 +63,7 @@
 
   {% set postType = post.data.postType %}
   {% set referencedLink = post.data.referencedLink %}
-  {% set content = post.templateContent %}
+  {% set content = post.content %}
   {% include "unfurl.njk" %}
 
   {% set tags = post.data.tags %}

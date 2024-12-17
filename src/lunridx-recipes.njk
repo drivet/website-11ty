@@ -2,4 +2,9 @@
 permalink: /lunridx-recipes.json
 ---
 
-{{ collections.recipes | searchIdxRecipes | dump | safe }}
+{% set idx = '' | searchRecipesInit %}
+{% for post in collections.recipes %}
+{% set dummy = post | searchRecipesIdx(post.content, idx) %}
+{% endfor %}
+
+{{ idx | dump | safe }}

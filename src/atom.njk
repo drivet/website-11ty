@@ -116,7 +116,7 @@
     <name>{{ author.name }}</name>
     <email>{{ author.email }}</email>
   </author>
-  {%- for post in collections[metadata.collection].slice(0, 25) %}
+  {%- asyncEach post in collections[metadata.collection].slice(0, 25) %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) | stripExt }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
@@ -124,7 +124,7 @@
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
     <content type="html">
-        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+        {{ post.content | htmlToAbsoluteUrls(absolutePostUrl) }}
 
         <![CDATA[
         {{ reflink(post.data.postType, post.data.referencedLink) }}
@@ -144,12 +144,12 @@
           {% endif %}
           {% atomImage post.data.featured.value, post.data.featured.alt %}
         {% elif photoCount > 0 %}
-          {% asyncEach photoObj in photo %}
+          {% asyncEach photoObj in post.data.photo %}
           {% atomImage photoObj.value | d(photoObj), photoObj.alt | d('') %}
           {% endeach %}
         {% endif %}
         ]]>
     </content>
   </entry>
-  {%- endfor %}
+  {%- endeach %}
 </feed>
