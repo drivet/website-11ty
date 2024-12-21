@@ -24,7 +24,11 @@ sort of thing interests you.
 
 There's actually a fair bit of content on this site:
 
-* a collection of [posts][3], where I publish random thoughts on a semi-regular basis
+* a collection of [posts][8], called the "stream" on this site, where I
+  publish random thoughts on a semi-regular basis, as well as something I
+  call a *[lifestream][3]*, which provides a calmer, more curated version.
+* My [digital garden][9], a kind of personal wiki, where I publish
+  standalone notes and pages.
 * a [set of curated photo albums][4]
 * my [recipe collection][7]
 * various [selected pages][5] from my old sites
@@ -64,3 +68,5 @@ elswhere on the web as well:
 [5]: /oldsite/
 [6]: /now
 [7]: /recipes/
+[8]: /posts/
+[9]: https://garden.desmondrivet.com
