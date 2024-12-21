@@ -2503,4 +2503,9 @@ results:
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/113692001580346249'
     'https://social.lol/@jbaty/113691579479508286': {}
+  2024/12/21/123643:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/113692026656561072'
+    'https://social.lol/@jbaty/113691579479508286': {}
 site_url: 'https://desmondrivet.com'
