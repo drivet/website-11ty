@@ -124,11 +124,13 @@
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
     <content type="html">
+        <![CDATA[ 
+        {{ reflink(post.data.postType, post.data.referencedLink) }}
+        ]]>
+
         {{ post.content | htmlToAbsoluteUrls(absolutePostUrl) }}
 
         <![CDATA[
-        {{ reflink(post.data.postType, post.data.referencedLink) }}
-
         {% set photoCount = post.data.photo | length %}
         {% set album = post.data.postType == 'album' %}
 

@@ -10,11 +10,13 @@
        {{post.data.blurb}}
     </div>
   {% endif %}
+  
+  <div class="text">
+    {{ reflink(post.data.postType, post.data.referencedLink) }}
+  </div>
 
   <div class="e-content entry__content">
     <div class="text">
-      {{ reflink(post.data.postType, post.data.referencedLink) }}
-
       {% set photoCount = post.data.photo | length %}
       {% if photoCount > 1 %}
       <p><a href="{{ post.url | stripExt }}">{{ photoCount }} photos</a></p>

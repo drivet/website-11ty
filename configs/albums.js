@@ -15,7 +15,6 @@ function albumPhotoPost(album, albumPath, index0, photo, slugs) {
   const prev = index0 > 0 ? index0 - 1 : undefined;
   const nextLink = next != undefined ? slugs[next] : undefined;
   const prevLink = prev != undefined ? slugs[prev] : undefined;
-
   return {
     permalink: `${albumPath}/${slug}`,
     photo,

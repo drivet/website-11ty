@@ -23,11 +23,13 @@ breadcumbOptions:
       {{ blurb }}
       </div>
     {% endif %}
+    
+    <div class="text">
+      {{ reflink(post.data.postType, post.data.referencedLink) }}
+    </div>
 
     <div class="e-content entry__content">
       <div class="text">
-        {{ reflink(postType, referencedLink) }}
-
         {% if eleventyNavigation.parent %}
         Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) |  eleventyNavigationToHtml(breadcumbOptions) | safe }}
         {% endif %} 
