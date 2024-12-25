@@ -19,6 +19,9 @@ Wikis, and how they differ from blogs, is a topic that interests me.  You
 may not know it, but my domain sports a [wiki][3], powered by [MoinMoin][4].
 I mostly use it to store technical notes and recipes.
 
+(Edited 2024/12/25: I no longer use MoinMoin, opting instead for an
+[org-roam][12] based [digital garden][13], but the concepts are the same)
+
 I'm no historian, but it seems obvious that wikis were created mostly in
 order to make certain kinds of websites easier to build and maintain.  In
 the days when "webmaster" was an actual job title and when traditional
@@ -150,3 +153,5 @@ Anyway, lots of food for thought!
 [9]: https://wiki.desmondrivet.com/VncBasics
 [10]: https://wiki.desmondrivet.com/VegetarianChili
 [11]: https://tiddlywiki.com/
+[12]: https://www.orgroam.com/
+[13]: https://garden.desmondrivet.com/

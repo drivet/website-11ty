@@ -20,18 +20,25 @@ to [now][6], and peruse some information [about the site itself][2] if that
 sort of thing interests you.
 </div>
 
-## Finding Your Way Around
+## The Garden and the Stream
 
-There's actually a fair bit of content on this site:
+My web presence is split between my blog, i.e. [this site][10], where I
+[post random thoughts][8] on a semi-regular basis, and my [digital
+garden][9], where I maintain a kind of personal wiki of random,
+interconnected notes on various topics that interest me.  I wrote [an
+article][11] on the differences between these two kinds of websites if you
+want to learn more about it.
 
-* a collection of [posts][8], called the "stream" on this site, where I
-  publish random thoughts on a semi-regular basis, as well as something I
-  call a *[lifestream][3]*, which provides a calmer, more curated version.
-* My [digital garden][9], a kind of personal wiki, where I publish
-  standalone notes and pages.
-* a [set of curated photo albums][4]
-* my [recipe collection][7]
-* various [selected pages][5] from my old sites
+## On This Site
+
+There's actually a fair bit of content here:
+
+* In addition to the fire hose of all my [posts][8], I also publish
+  something I call my *[lifestream][3]*, which provides a calmer, more
+  curated experience..
+* A [set of curated photo albums][4]
+* My [recipe collection][7]
+* Various [selected pages][5] from my old sites
 
 ## Contact 
 
@@ -70,3 +77,5 @@ elswhere on the web as well:
 [7]: /recipes/
 [8]: /posts/
 [9]: https://garden.desmondrivet.com
+[10]: /
+[11]: /2020/05/01/wikis-and-blogs
