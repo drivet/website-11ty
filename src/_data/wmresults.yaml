@@ -2511,4 +2511,6 @@ results:
   2024/12/25/074546: {}
   2024/12/30/141552:
     'https://codeberg.org/howardabrams/emacs-rpgtk': {}
+  2024/12/30/141621:
+    'https://gitlab.com/howardabrams/emacs-rpgdm': {}
 site_url: 'https://desmondrivet.com'
