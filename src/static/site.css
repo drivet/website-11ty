@@ -76,6 +76,7 @@ h6 {
 .secondary-header {
   padding: 0 var(--side-padding);
   border-bottom: 1px solid var(--lightest-color);
+  font-size: 0.9em;
 }
 
 .navbar__brand {
@@ -125,14 +126,15 @@ h6 {
   font-size: var(--font-size-smaller);
 }
 
+.feed__navbarlist {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
 .feed__navbaritem {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-  padding: 0.4em 0;
-  border-bottom: 2px solid white;
+  display: inline-block;
+  padding: 0.3em 0.4em;
 }
 
 .feed__navbaritem--active {
@@ -141,10 +143,6 @@ h6 {
   border-bottom: 2px solid var(--accent);
   border-top: 2px solid var(--light-accent);
   background-color: var(--light-accent);
-}
-
-.feed__navname {
-  display: none;
 }
 
 .feed__pagenav {

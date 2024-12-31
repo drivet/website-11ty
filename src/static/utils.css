@@ -7,6 +7,15 @@
     margin: 0;
 }
 
+.row-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
 .row--wrap {
     flex-wrap: wrap;
 }
@@ -15,17 +24,18 @@
     gap: 1em;
 }
 
-.row--center {
-    justify-content: center;
-}
-
 .row--extra-spacious {
     gap: 1.5em;
 }
 
 .row--comfy {
-    gap: 0.6em;
+    gap: 0.4em;
 }
+
+.row--center {
+    justify-content: center;
+}
+
 
 .row__item--right {
     margin-left: auto;
@@ -83,4 +93,4 @@
     -webkit-hyphens: auto;
     hyphens: auto;
   
-  }
+}

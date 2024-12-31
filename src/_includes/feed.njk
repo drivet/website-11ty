@@ -1,8 +1,4 @@
-{% if secondarynavoff %}
 {% extends "base.njk" %}
-{% else %}
-{% extends "basepost.njk" %}
-{% endif %}
 
 {% block extralink %}
 <link rel="alternate" type="application/atom+xml"
@@ -45,7 +41,23 @@
           </a>  
         </div>
     </header>
-  {{ content | safe }}
+  <ul class="content-list">
+  {% asyncEach post in pagination.items %}
+  <li class="content-list__item content-list__item--separator content-list__item--no-padding">
+  {% include entrytemplate %}
+  </li>
+  {% endeach %}
+  </ul>
+
+  <nav class="feed__pagenav text">
+  {% if pagination.href.previous %}
+  <a href="{{ pagination.href.previous }}" class="feed__prevlink">&laquo; Previous</a>
+  {% endif %}
+  {% if pagination.href.next %}
+  <a href="{{ pagination.href.next }}" class="feed__nextlink">Next &raquo;</a>
+  {% endif %}
+  </nav>
+
   </div>
 </main>
 {% endblock content %}

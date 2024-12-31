@@ -1,7 +1,7 @@
 @media only screen and (min-width : 1024px) {
     :root {
         --width: 800px; 
-        --navwidth: 850px;
+        --navwidth: 900px;
         --side-padding: 1em;
     }
 
@@ -33,6 +33,11 @@
        --width: var(--navwidth);
     }
 
+    .secondary-header {
+    
+      font-size: 1em;
+    }
+    
     .secondary-header__navbar {
         max-width: var(--width);
     }
