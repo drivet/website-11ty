@@ -79,17 +79,17 @@ scripts:
 
       <p class="entry__imagenav">
         {% if p.prevLink %}
-        <a href="{{p.prevLink}}" title="Previous" class="entry__imagenavctrl entry__prevctrl"><i class="fa fa-arrow-left"></i></a>
+        <a href="{{p.prevLink}}" title="Previous" class="entry__imagenavctrl entry__prevctrl"><i class="fa fa-angle-double-left"></i> Previous</a>
         {% else %}
-        <span title="Previous" class="entry__imagenavctrl entry__prevctrl"><i class="fa fa-arrow-left"></i></span>
+        <span title="Previous" class="entry__imagenavctrl entry__prevctrl"><i class="fa fa-angle-double-left"></i> Previous</span>
         {% endif %}
 
-        <a href="{{p.photo.value}}" title="Download {{p.photo.value}}" class="entry__imagenavctrl entry__downctrl"><i class="fa fa-arrow-down"></i></a>
+        <a href="{{p.photo.value}}" title="Download {{p.photo.value}}" class="entry__imagenavctrl entry__downctrl"><i class="fa fa-angle-double-down"></i> Download</a>
 
         {% if p.nextLink %}
-        <a href="{{p.nextLink}}" title="Next" class="entry__imagenavctrl entry__nextctrl"><i class="fa fa-arrow-right"></i></a>
+        <a href="{{p.nextLink}}" title="Next" class="entry__imagenavctrl entry__nextctrl">Next <i class="fa fa-angle-double-right"></i></a>
         {% else %}
-        <span title="Next" class="imagenavctrl entry__nextctrl"><i class="fa fa-arrow-right"></i></span>
+        <span title="Next" class="imagenavctrl entry__nextctrl">Next <i class="fa fa-angle-double-right"></i></span>
         {% endif %}
       </p>
   </header>

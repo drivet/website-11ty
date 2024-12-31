@@ -175,22 +175,12 @@
     
   <footer class="main-footer">
     <div class="main-footer__content">
-      <div class="row">
-        &copy;2024 by <a href="/">{{ global.AUTHOR }}</a>
-        <span class="row__item--right">
-          <a href="https://github.com/drivet/website-11ty/edit/main/{{page.inputPath}}">Edit</a>
-          &middot;
-          <i class="fa fa-arrow-up"></i> <a href="#">Top</a>
-        </span>
+      <div>&copy;2025 by <a href="/">{{ global.AUTHOR }}</a>
+        <span class="center">&middot;</span>
+        <a href="https://github.com/drivet/website-11ty/edit/main/{{page.inputPath}}">Edit</a>
       </div>
-      <div class="row">
-          Powered by <a href="https://www.11ty.dev/" target="_blank">Eleventy</a>
-           <span class="row__item--right">
-          {% include "webring.njk" %}
-          &middot;
-          {% include "geekring.njk" %}
-          </span>
-      </div>
+      <div>{% include "webring.njk" %}</div>
+      <div>{% include "geekring.njk" %}</div>
     </div>
   </footer>
 </body>

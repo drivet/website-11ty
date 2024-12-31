@@ -123,7 +123,7 @@ h6 {
   max-width: 100%;
   margin: 0 auto;
   padding: 1em 0.5em;
-  font-size: var(--font-size-smaller);
+  text-align: center;
 }
 
 .feed__navbarlist {
@@ -149,8 +149,23 @@ h6 {
   display: flex;
 }
 
-.feed__prevlink {
-  margin-right: auto;
+.feed__prevctrl {
+  justify-content: flex-start;
+}
+
+.feed__nextctrl {
+  justify-content: flex-end;
+}
+
+.feed__topctrl {
+  justify-content: center;
+}
+
+.feed__navctrl {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
 }
 
 .feed__description {
@@ -453,6 +468,8 @@ h6 {
 .entry__imagenavctrl {
   flex: 1 0 auto;
   display: flex;
+  align-items: center;
+  gap: 0.2em;
 }
 
 .entry__prevctrl {

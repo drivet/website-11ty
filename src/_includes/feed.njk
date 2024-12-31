@@ -41,6 +41,7 @@
           </a>  
         </div>
     </header>
+
   <ul class="content-list">
   {% asyncEach post in pagination.items %}
   <li class="content-list__item content-list__item--separator content-list__item--no-padding">
@@ -50,11 +51,31 @@
   </ul>
 
   <nav class="feed__pagenav text">
+
+
   {% if pagination.href.previous %}
-  <a href="{{ pagination.href.previous }}" class="feed__prevlink">&laquo; Previous</a>
+  
+  <a href="{{ pagination.href.previous }}" class="feed__prevctrl feed__navctrl">
+    <span class="fa fa-angle-double-left"></span> Newer
+  </a>
+  {% else %}
+  <span class="feed__prevctrl feed__navctrl">
+    <span class="fa fa-angle-double-left"></span> Newer
+  </span>
   {% endif %}
+
+  <a href="#" class="feed__topctrl feed__navctrl">
+    <span class="fa fa-angle-double-up"></span>Top
+  </a>
+
   {% if pagination.href.next %}
-  <a href="{{ pagination.href.next }}" class="feed__nextlink">Next &raquo;</a>
+  <a href="{{ pagination.href.next }}" class="feed__nextctrl feed__navctrl">Older
+    <span class="fa fa-angle-double-right">
+  </a>
+  {% else %}
+  <span class="feed__nextctrl feed__navctrl">Older
+    <span class="fa fa-angle-double-right">
+  </span>
   {% endif %}
   </nav>
 
