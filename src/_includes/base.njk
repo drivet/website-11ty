@@ -126,6 +126,11 @@
             <i class="fa fa-list"></i> <span class="feed__navname">Lifestream</span>
           </a>
         </li>
+         <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'articles' }}">
+          <a href="/posts/articles" class="navbar__link row-inline row--comfy">
+            <i class="fa fa-newspaper"></i> <span class="feed__navname">Articles</span>
+          </a>
+        </li>
         <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'notes' }}">
           <a href="/posts/notes" class="navbar__link row-inline row--comfy">
             <i class="far fa-sticky-note"></i> <span class="feed__navname">Notes</span>
@@ -140,12 +145,7 @@
           <a href="/posts/albums" class="navbar__link row-inline row--comfy">
             <i class="fa fa-camera"></i> <span class="feed__navname">Albums</span>
           </a>
-        </li> 
-        <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'blog' }}">
-          <a href="/posts/articles" class="navbar__link row-inline row--comfy">
-            <i class="fa fa-newspaper"></i> <span class="feed__navname">Blog</span>
-          </a>
-        </li>  
+        </li>
         <li class="feed__navbaritem {{'feed__navbaritem--active' if navname == 'replies' }}">
           <a href="/posts/replies" class="navbar__link row-inline row--comfy">
             <i class="fa fa-comment"></i> <span class="feed__navname">Replies</span>
