@@ -138,7 +138,6 @@ h6 {
 }
 
 .feed__navbaritem--active {
-  font-weight: bold;
   color: var(--accent);
   border-bottom: 2px solid var(--accent);
   border-top: 2px solid var(--light-accent);
