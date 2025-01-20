@@ -1,8 +1,7 @@
 ---
-date: 2025-01-19T19:10:51-05:00
+date: 2025-01-19T19:35:39-05:00
 title: "I Never Considered Myself Naive"
-blurb: "The billionaire escape hatch"
-post-status: draft
+blurb: "The last few years have definitely changed my perception of the world"
 mp-syndicate-to:
 - mastodon
 tags:
@@ -10,8 +9,8 @@ tags:
 ---
 
 I never thought that the law applied equally to rich people and poor people.
-I never considered myself that naive.  I always understood that rich people
-could break the law in ways that poor people simply couldn't.
+I never considered myself that naive.  I had always understood that rich
+people could break the law in ways that poor people simply couldn't.
 
 But I had always assumed that the way this worked in practice was that being
 rich just came with a heightened ability to cover your tracks.  I had always
@@ -27,6 +26,8 @@ from a legal standpoint, that you did the thing of which you were accused,
 then, rich or poor, you'd be charged and convicted.  Like...I had always
 assumed, for example, that if you committed a murder and it was caught on
 camera then, rich or poor, it was game over for you.
+
+What's that expression about assuming things?
 
 What the past few years have taught me, of course, is that this is bullshit.
 Once you reach a certain level of wealth, you don't even have to cover your
