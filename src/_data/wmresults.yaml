@@ -2525,4 +2525,8 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 400
     'https://chaosfem.tw/@EmilyGB2023/113868591663908406': {}
+  2025/01/30/when-visiting-toronto:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/113920668318021618'
 site_url: 'https://desmondrivet.com'
