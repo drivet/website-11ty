@@ -2535,4 +2535,8 @@ results:
     'https://smallweb.cc/': {}
   2025/02/03/222823:
     'https://www.zylstra.org/blog/2019/09/joining-rss-club-as-an-experiment/': {}
+  2025/03/13/132159:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/114156278366197892'
 site_url: 'https://desmondrivet.com'
