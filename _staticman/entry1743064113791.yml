@@ -1,0 +1,6 @@
+_id: 789d03f0-0ae5-11f0-a53b-ed1b604ce9ab
+commentingon: /2022/03/23/eleventy-pagination
+name: Ferhan
+email: b35339dae22c17af690eb2a4a4bd3c12
+message: "Sucks 11ty doesn't natively support this.\r\nI think I'd just create a new layout for showing posts and create a new template for every tag. It's not like I'd have to touch those templates again."
+date: 1743064113
