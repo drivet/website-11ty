@@ -2560,4 +2560,8 @@ results:
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/114394117126670273'
     'https://en.wikipedia.org/wiki/Chinese_room': {}
+  2025/04/24/154808:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/114394669892608199'
 site_url: 'https://desmondrivet.com'
