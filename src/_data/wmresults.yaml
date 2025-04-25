@@ -2564,4 +2564,9 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/114394669892608199'
+  2025/04/25/091959:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/114398806015385483'
+    'https://indieweb.social/@adamclaxon/114395749550683639': {}
 site_url: 'https://desmondrivet.com'
