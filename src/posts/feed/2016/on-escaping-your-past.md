@@ -242,7 +242,7 @@ Which I do.  Or try to, anyway.  Sometimes.  Your mileage may vary.
 
 [1]: http://tvtropes.org/pmwiki/pmwiki.php/Main/RaisedCatholic
 [2]: http://tvtropes.org
-[2a]: http://desmondrivet.com/2013/11/19/charter-ramblings
+[2a]: http://desmondrivet.com/2013/11/20/charter-ramblings
 [3]: http://en.wikipedia.org/wiki/Trinity
 [4]: http://en.wikipedia.org/wiki/Arianism
 [5]: http://en.wikipedia.org/wiki/Christology
