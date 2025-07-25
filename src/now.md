@@ -1,5 +1,5 @@
 ---
-modified: 2024-06-13T14:24:00-04:00
+modified: 2025-07-25T08:08:03-04:00
 permalink: "{{ page.filePathStem }}.html"
 layout: "page.njk"
 title: Now
@@ -14,11 +14,11 @@ on social media.
 
 So, currently, my life looks roughly like this, in approximate order of stuff most likely to change:
 
-* Playing Baldur's Gate 3.
-* Trying to obtain my Italian citizenship.
+* Playing The Expanse: A Telltale Series.
+* Reading Death's End by Liu Cixin
 * Working as a senior software developer at Unity Technologies, doing mostly data
 and billing related tasks.  The languages I use most often in my job at
-the moment are Typescript, JavaScript, Python and SQL.
+the moment are Go, Typescript, JavaScript, Python and SQL.
 * Living in the Saint-Henri neighbourhood of Montreal, in an old, large
 Edwardian apartment.
 
