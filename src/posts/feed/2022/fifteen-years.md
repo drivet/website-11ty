@@ -238,7 +238,7 @@ I wonder what the thirtieth anniversary post will look like?
 [11]: /2008/09/08/no-comments
 [12]: /2016/04/02/on-escaping-your-past
 [13]: /2013/07/31/canada-malting
-[14]: posts/articles/tags/blogging
+[14]: /posts/tags/blogging
 [15]: http://blosxom.sourceforge.net/
 [16]: https://github.com/drivet/yawt
 [17]: https://blog.getpelican.com/
