@@ -148,10 +148,10 @@ Anyway, lots of food for thought!
 [4]: https://moinmo.in/
 [5]: https://martinfowler.com/
 [6]: https://martinfowler.com/bliki/WhatIsaBliki.html
-[7]: https://wiki.desmondrivet.com/CranberryOrangeButtermilkMuffins
-[8]: https://wiki.desmondrivet.com/CertificateManagementBasics
-[9]: https://wiki.desmondrivet.com/VncBasics
-[10]: https://wiki.desmondrivet.com/VegetarianChili
+[7]: https://garden.desmondrivet.com/20250627211250-orange_cranberry_buttermilk_muffins.html
+[8]: https://garden.desmondrivet.com/20220405185129-certificate_management_basics.html
+[9]: https://garden.desmondrivet.com/20220405230218-vnc_basics.html
+[10]: https://garden.desmondrivet.com/20250817080912-chili_vegetarian_2.html
 [11]: https://tiddlywiki.com/
 [12]: https://www.orgroam.com/
 [13]: https://garden.desmondrivet.com/
