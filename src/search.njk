@@ -11,24 +11,6 @@ scripts:
   src: /static/js/searchResults.js
 ---
 {% raw %}
-<script id="searchResultsTemplate-recipes" type="text/x-mustache-template">
-  {{#hasResults}}
-  <p class="feed__header">Results for {{field}} in {{root}}</p>
-  <ul class="content-list">
-    {{#results}}
-    <li class="content-list__item">
-      <h3><a href="{{id}}">{{title}}</a></h3>
-      <p>{{blurb}}</p>
-    </li>
-    {{/results}}
-  </ul>
-  {{/hasResults}}
-
-  {{^results}}
-  <p>No results found.</p>
-  {{/results}}
-</script>
-
 <script id="searchResultsTemplate-posts" type="text/x-mustache-template">
   {{#hasResults}}
   <p class="feed__header">Results for {{field}} in {{root}}</p>

@@ -11,7 +11,7 @@ const { imageConfig } = require('./configs/image.js');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { enhanceNavigation, photoUrlSlug } = require('./configs/albums.js');
 const { inspect } = require('util');
-const { searchPostsInit, searchPostsIdx, searchRecipesInit, searchRecipesIdx, idxJson } = require('./configs/search');
+const { searchPostsInit, searchPostsIdx, idxJson } = require('./configs/search');
 const { discussionConfig } = require('./configs/discussion.js');
 const { cacheBustConfig } = require('./configs/cachebust.js');
 
@@ -170,8 +170,6 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('enhanceNavigation', enhanceNavigation);
   eleventyConfig.addFilter("searchPostsInit", searchPostsInit);
   eleventyConfig.addFilter("searchPostsIdx", searchPostsIdx);
-  eleventyConfig.addFilter("searchRecipesInit", searchRecipesInit);
-  eleventyConfig.addFilter("searchRecipesIdx", searchRecipesIdx);
   eleventyConfig.addFilter("idxJson", idxJson);
   
   eleventyConfig.addFilter("debug", obj => JSON.stringify(obj));

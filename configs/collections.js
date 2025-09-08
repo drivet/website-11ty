@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { postTypes, getPosts, getRecipes, getDrafts } = require('../utils/helpers.js');
+const { postTypes, getPosts, getDrafts } = require('../utils/helpers.js');
 const { addAlbumImageCollections } = require('./albums.js');
 
 
@@ -141,7 +141,6 @@ function addCollectionGroup(eleventyConfig, name, collectionFn) {
 }
 
 function addAllCollectionGroups(eleventyConfig) {
-  addCollectionGroup(eleventyConfig, "recipes", getRecipes);
   addCollectionGroup(eleventyConfig, "allPosts", getPosts);
 
   addCollectionGroup(eleventyConfig, "lifestream",

@@ -33,12 +33,16 @@ want to learn more about it.
 
 There's actually a fair bit of content here:
 
-* In addition to the fire hose of all my [posts][8], I also publish
-  something I call my *[lifestream][3]*, which provides a calmer, more
-  curated experience..
-* A [set of curated photo albums][4]
-* My [recipe collection][7]
+* In addition to the fire hose of all my [posts][8], I also separately
+  publish a subset of them in my *[lifestream][3]*, hopefully providing a
+  calmer, more curated experience.
+* A [collection of curated photo albums][4]
 * Various [selected pages][5] from my old sites
+
+This site also used to house my recipe collection after I stopped
+maintaining my wiki.  As my wiki has since found new life, of a sort, in my
+[digital garden][9], I've decided to move my [recipes][7] there.  We'll see
+how long that lasts.
 
 ## Contact 
 
@@ -74,7 +78,7 @@ elswhere on the web as well:
 [4]: /posts/albums/
 [5]: /oldsite/
 [6]: /now
-[7]: /recipes/
+[7]: https://garden.desmondrivet.com/20250218202000-recipes.html
 [8]: /posts/
 [9]: https://garden.desmondrivet.com
 [10]: /

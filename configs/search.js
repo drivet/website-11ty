@@ -24,28 +24,6 @@ function searchPostsIdx(post, content, index) {
   });
 }
 
-function searchRecipesInit() {
-  const index = elasticlunr();
-  index.addField("title");
-  index.addField("blurb");
-  index.addField("tags");
-  index.addField("ingredients");
-  index.addField("content");
-  index.setRef("id");
-  return index;
-}
-
-function searchRecipesIdx(post, content, index) {
-  index.addDoc({
-    id: post.url,      
-    title: post.data.title,
-    blurb: post.data.blurb,
-    tags: post.data.tags,
-    ingredients: post.data.ingredients,
-    content
-  });
-}
-
 function idxJson(index) {
   return index.toJSON();
 }
@@ -53,7 +31,5 @@ function idxJson(index) {
 module.exports = {
   searchPostsInit,
   searchPostsIdx,
-  searchRecipesInit,
-  searchRecipesIdx,
   idxJson
 }
