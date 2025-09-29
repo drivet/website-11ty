@@ -98,7 +98,7 @@ feature.  I've also leveraged org mode's built in tagging system to define a
 basic taxonomy for the reading list.
 
 To display your books using org-agenda, you can add this section in your
-org-agenda-custom-commands block:
+`org-agenda-custom-commands` block:
 
 ``` emacs-lisp
 ("r" "All Books"
@@ -157,7 +157,7 @@ major configuration, org-mode HTML export will result in HTML that more or
 less mirrors the original content in terms of structure and semantics.
 
 What I'm trying to say is that if you want your exported HTML to be structured
-certain way, it often easiest to arrange for your org source to be structured
+a certain way, it's often easiest to arrange for your org-mode source to be structured
 in a similar way.
 
 Related to this is the fact that org-books, seemingly as a matter of policy,
@@ -165,16 +165,14 @@ formats all of its book entries exclusively as "headlines + properties",
 presumably reserving the content area for extra comments about work itself.
 
 This can be a problem when it comes time to export the entry to HTML,
-because properties are treated as special in org-mode's export system.  So
-that URL in the AMAZON property you see above?  Since it isn't formatted
-as an org-mode link, the result in HTML is a plain, unclickable URL.  It's
-actually worse than that - since propeties are exported as plain text by default,
-even if you format the URL as a real link, the exported result will still
-be just plain text, not HTML.  After some amount of research, I came to the conclusion
-that the easiest way to get an actual link in the output was to embed the
-Amazon URL as a real org-mode link, in the *content* of the entry, not the properties - and proper
-org-mode links *do* get turned into HTML links during export, as you might
-expect.
+because properties are treated as special in org-mode's export system - 
+they are rendered as plain text by default, not HTML.  So
+that URL in the AMAZON property you see above?  Because it's a property, 
+it's rendered in HTML as a plain, unclickable URL.  After some amount of research,
+I came to the conclusion that the easiest way to get an actual link in
+the output was to embed the Amazon URL as a real org-mode link, in
+the *content* of the entry, not the properties - since proper org-mode
+links *do* get turned into HTML links during export, as you might expect.
 
 I also thought it would be nice to have display cover image for each book
 entry, particularly in the exported HTML, and Open Library does have a
