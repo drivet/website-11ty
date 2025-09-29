@@ -202,7 +202,7 @@ later produce the layout I wanted via CSS.  In the end, a typical entry
 looked like this:
 
 
-``` text
+```text
 * READ Redshirts                   :scifi:
 CLOSED: [2025-01-28]
 :PROPERTIES:
@@ -230,13 +230,19 @@ wrapped in an `aside` tag that can be easily styled by CSS.
 
 The formatting of the cover image is worth noting.  It looks like this:
 
-``` text
+```text
 #+ATTR_HTML: :loading lazy
 [[https://covers.openlibrary.org/b/ISBN/9780765316998-M.jpg]]
 ```
 
 This results in a `loading="lazy"` attribute added to the cover `img` tag in
-the exported HTML.  The effect is to only load the image when it's scrolled
+the exported HTML:
+
+```html
+<img src="https://covers.openlibrary.org/b/ISBN/9780765316998-M.jpg" alt="9780765316998-M.jpg" loading="lazy">
+```
+
+The effect is to only load the image when it's scrolled
 into view.  Given that I have hundreds of books in my reading list, the
 exported page loads *much* faster as a result.
 
