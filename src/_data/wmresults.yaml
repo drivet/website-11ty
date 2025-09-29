@@ -2578,4 +2578,28 @@ results:
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/115273720283209523'
     'https://www.amazon.ca/Piranesi-Susanna-Clarke/dp/1635577802': {}
+  2025/09/28/reading-list-in-emacs:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/115284726220289522'
+    'https://thestorygraph.com/': {}
+    'https://www.librarything.com/': {}
+    'https://openlibrary.org/': {}
+    'https://bookwyrm.social/': {}
+    'https://joinmastodon.org/': {}
+    'https://indieweb.org/':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/_h7Nc4owcgZ9915uJ5Mm'
+    'https://www.gnu.org/software/emacs/': {}
+    'https://orgmode.org/': {}
+    'https://orgmode.org/manual/Properties-and-Columns.html': {}
+    'https://orgmode.org/manual/Agenda-Column-View.html': {}
+    'https://github.com/lepisma/org-books': {}
+    'https://www.amazon.ca/Piranesi-Susanna-Clarke/dp/1635577802': {}
+    'https://openlibrary.org/dev/docs/api/covers': {}
+    'https://github.com/drivet/org-books/compare/master...drivet:org-books:customizations': {}
+    'https://garden.desmondrivet.com/books': {}
+    'https://indieweb.org/POSSE':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/nDuLjVr7NQaZRhyyffT3'
 site_url: 'https://desmondrivet.com'
