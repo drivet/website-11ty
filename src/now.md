@@ -1,5 +1,5 @@
 ---
-modified: 2025-07-25T08:08:03-04:00
+modified: 2025-10-14T08:38:03-04:00
 permalink: "{{ page.filePathStem }}.html"
 layout: "page.njk"
 title: Now
@@ -14,8 +14,8 @@ on social media.
 
 So, currently, my life looks roughly like this, in approximate order of stuff most likely to change:
 
-* Playing The Expanse: A Telltale Series.
-* Reading Death's End by Liu Cixin
+* Not playing anything at the moment
+* Reading Mansfield Park by Jane Austen
 * Working as a senior software developer at Unity Technologies, doing mostly data
 and billing related tasks.  The languages I use most often in my job at
 the moment are Go, Typescript, JavaScript, Python and SQL.
