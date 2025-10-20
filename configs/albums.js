@@ -39,6 +39,14 @@ function albumToImagePosts(album) {
   return album.data.photo.map((p, i) => albumPhotoPost(album, albumPath, i, p, imageSlugs));
 }
 
+function addAlbumImageCollections(eleventyConfig) {
+  eleventyConfig.addCollection('albumImages', (collection) => {
+    const albums = getLeafAlbums(collection);
+    return _.flatten(albums.map(albumToImagePosts));
+  });
+}
+
+
 function enhanceNavigation(nav, allAlbums) {
   const indexed = _.keyBy(allAlbums, a => a.data.eleventyNavigation?.key);
   nav.forEach(n => {
@@ -53,15 +61,25 @@ function enhanceNavigation(nav, allAlbums) {
   return nav;
 }
 
-function addAlbumImageCollections(eleventyConfig) {
-  eleventyConfig.addCollection('albumImages', (collection) => {
-    const albums = getLeafAlbums(collection);
-    return _.flatten(albums.map(albumToImagePosts));
+function addAlbumFilters(eleventyConfig) {
+  eleventyConfig.addFilter('albumImageUrl', (albumPath, photoUrl) => {
+    const slug = photoUrlSlug(photoUrl);
+    return `${albumPath}/${slug}`;
   });
+
+  eleventyConfig.addFilter('albumTitle', (title, parents) => {
+    if (!parents || parents.length === 0) {
+      return title;
+    } else {
+      const parentTitles = parents.map(p => p.title).join(' / ')
+      return `${parentTitles} / ${title}`;
+    }
+  });
+
+   eleventyConfig.addFilter('enhanceNavigation', enhanceNavigation);
 }
 
 module.exports = {
   addAlbumImageCollections,
-  enhanceNavigation,
-  photoUrlSlug
+  addAlbumFilters,
 }

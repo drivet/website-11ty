@@ -1,15 +1,15 @@
 const html = require('./utils/html.js');
-const { dateFormat, makePermalink } = require('./utils/helpers.js');
+const { dateFormat, makePermalink, getDrafts } = require('./utils/helpers.js');
 const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL;
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const yaml = require("js-yaml");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const { addAllCollectionGroups } = require('./configs/collections');
+const { addIndieWebCollectionGroups } = require('./configs/collections');
 const { previewConfig } = require('./configs/previews.js');
 const { imageConfig } = require('./configs/image.js');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const { enhanceNavigation, photoUrlSlug } = require('./configs/albums.js');
+const { addAlbumFilters, addAlbumImageCollections } = require('./configs/albums.js');
 const { inspect } = require('util');
 const { searchPostsInit, searchPostsIdx, idxJson } = require('./configs/search');
 const { discussionConfig } = require('./configs/discussion.js');
@@ -42,11 +42,6 @@ function synIcon(url) {
   } else {
     return 'fas fa-external-link-alt';
   }
-}
-
-function albumImageUrl(albumPath, photoUrl) {
-  const slug = photoUrlSlug(photoUrl);
-  return `${albumPath}/${slug}`;
 }
 
 module.exports = (eleventyConfig) => {
@@ -155,19 +150,6 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addFilter('isArray', obj => Array.isArray(obj));
-  
-  eleventyConfig.addFilter('albumImageUrl', albumImageUrl);
-
-  eleventyConfig.addFilter('albumTitle', (title, parents) => {
-    if (!parents || parents.length === 0) {
-      return title;
-    } else {
-      const parentTitles = parents.map(p => p.title).join(' / ')
-      return `${parentTitles} / ${title}`;
-    }
-  });
-
-  eleventyConfig.addFilter('enhanceNavigation', enhanceNavigation);
   eleventyConfig.addFilter("searchPostsInit", searchPostsInit);
   eleventyConfig.addFilter("searchPostsIdx", searchPostsIdx);
   eleventyConfig.addFilter("idxJson", idxJson);
@@ -177,25 +159,19 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.setTemplateFormats([
     "md",
     "njk",
-    "css",
-    "jpeg",
-    "jpg",
-    "JPG",
-    "JPEG",
-    "png",
-    "PNG",
-    "SVG",
-    "svg",
-    "eot",
-    "ttf",
-    "woff",
-    "woff2",
-    "js",
     "ps"
   ]);
+
+  eleventyConfig.addPassthroughCopy("static/**/*")
   
   previewConfig(eleventyConfig);
-  addAllCollectionGroups(eleventyConfig);
+  addIndieWebCollectionGroups(eleventyConfig);
+
+  addAlbumFilters(eleventyConfig);
+  addAlbumImageCollections(eleventyConfig);
+  
+  eleventyConfig.addCollection("drafts", getDrafts);
+
   imageConfig(eleventyConfig);
   discussionConfig(eleventyConfig);
   cacheBustConfig(eleventyConfig);

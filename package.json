@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "npm run eleventy:dev",
-    "build": "npm run eleventy:prod",
-    "eleventy:dev": "ELEVENTY_ENV=development eleventy --serve",
-    "eleventy:prod": "ELEVENTY_ENV=production eleventy",
+    "dev": "ELEVENTY_ENV=development eleventy --serve",
+    "devp": "ELEVENTY_ENV=development DEBUG=Eleventy:Benchmark* eleventy --serve",
+    "build": "ELEVENTY_ENV=production eleventy",
     "album": "node scripts/album.js",
     "upload": "node scripts/upload.js"
   },

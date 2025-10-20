@@ -18,7 +18,7 @@ scripts:
 {% from "entry-header.njk" import entryheader %}
 
 {% block extrastyle %}
-<link href="{{ '/static/albumImage.css' | cachebust(global.URL, 'src/static/albumImage.css')}}" rel="stylesheet">
+<link href="{{ '/static/albumImage.css' | cachebust(global.URL, 'static/albumImage.css')}}" rel="stylesheet">
 {% endblock %}
 
 {% block metadata %}

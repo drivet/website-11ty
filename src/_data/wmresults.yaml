@@ -2045,10 +2045,7 @@ results:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 400
     'https://twitter.com/LuxAlptraum/status/1597365932556693505?t=Yb8wXJRZMspcBXvi7uN0BA&s=19': {}
-  2023/02/19/popular-vote:
-    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
-      status_code: 201
-      location: 'https://twitter.com/desmondrivet/status/1627438771594485762'
+  2023/02/19/popular-vote: {}
   2023/02/25/084752:
     'https://brid.gy/publish/twitter?bridgy_omit_link=true':
       status_code: 201

@@ -1,6 +1,5 @@
 const _ = require('lodash');
-const { postTypes, getPosts, getDrafts } = require('../utils/helpers.js');
-const { addAlbumImageCollections } = require('./albums.js');
+const { postTypes, getPosts } = require('../utils/helpers.js');
 
 
 function getYear(date) {
@@ -64,7 +63,7 @@ function indexByDates(collection) {
 
 /* counts of years and months for archive page */
 function archiveList(collection) {
-  // object keyed by yyyy, yyyy/mm, yyyy/mm/dd to counts
+  // object keyed by yyyy/mm to counts
   const dates = classifyCounts(indexByDates(collection));
 
   const groupedByYear = _.groupBy(
@@ -132,20 +131,17 @@ function addCollectionGroup(eleventyConfig, name, collectionFn) {
 
   // double paginated collections - each tag page
   eleventyConfig.addCollection(`${name}_tagPages`, (collection) =>
-    flatPaginate(indexByTag(collectionFn(collection)), 25)
+    flatPaginate(indexByTag(collectionFn(collection)), 50)
   );
 
   eleventyConfig.addCollection(`${name}_archivePages`, (collection) =>
-    flatPaginate(indexByDates(collectionFn(collection)), 25)
+    flatPaginate(indexByDates(collectionFn(collection)), 50)
   );
 }
 
-function addAllCollectionGroups(eleventyConfig) {
+function addIndieWebCollectionGroups(eleventyConfig) {
   addCollectionGroup(eleventyConfig, "allPosts", getPosts);
 
-  addCollectionGroup(eleventyConfig, "lifestream",
-    collection => postTypes(getPosts(collection), ["article", "note", "photo", "video", "album"]));
-  
   addCollectionGroup(eleventyConfig, "articles",
     collection => postTypes(getPosts(collection), ["article"]));
 
@@ -169,12 +165,12 @@ function addAllCollectionGroups(eleventyConfig) {
   
   addCollectionGroup(eleventyConfig, "albums",
     collection => postTypes(getPosts(collection), ["album"]));
-  
-  addAlbumImageCollections(eleventyConfig);
 
-  eleventyConfig.addCollection("drafts", getDrafts);
+  addCollectionGroup(eleventyConfig, "lifestream",
+    collection => postTypes(getPosts(collection), ["article", "note", "photo", "video", "album"]));
+  
 }
 
 module.exports = {
-  addAllCollectionGroups,
+  addIndieWebCollectionGroups,
 }

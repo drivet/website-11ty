@@ -16,7 +16,7 @@ current [global situation][2], the entire thing was remote; I participated
 via Zoom.  It was fun!  I'm glad I got to meet everyone. 
 
 Wikis, and how they differ from blogs, is a topic that interests me.  You
-may not know it, but my domain sports a [wiki][3], powered by [MoinMoin][4].
+may not know it, but my domain sports a wiki, powered by [MoinMoin][4].
 I mostly use it to store technical notes and recipes.
 
 (Edited 2024/12/25: I no longer use MoinMoin, opting instead for an
@@ -132,7 +132,7 @@ a new [chili recipe][10].
 
 So where to go from here?
 
-Well, for one thing, I'll admit that my [wiki][3] is getting a bit long in
+Well, for one thing, I'll admit that my wiki is getting a bit long in
 the tooth - it's just kind of ugly.  The IndieWebCamp session dropped some
 interesting new pieces of software to try out, like [TiddlyWiki][11], so I
 may end up trying some of those.  We'll see.
@@ -144,7 +144,6 @@ Anyway, lots of food for thought!
 
 [1]: https://chrisaldrich.wordpress.com/2020/04/17/gardens-and-streams-wikis-blogs-and-ui-a-pop-up-indiewebcamp-session/
 [2]: https://en.wikipedia.org/wiki/Coronavirus_disease_2019
-[3]: https://wiki.desmondrivet.com
 [4]: https://moinmo.in/
 [5]: https://martinfowler.com/
 [6]: https://martinfowler.com/bliki/WhatIsaBliki.html

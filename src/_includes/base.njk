@@ -60,12 +60,12 @@
   <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Open+Sans&display=swap" rel="stylesheet"/>
   <link href="https://unpkg.com/prismjs@1.27.0/themes/prism-okaidia.css" rel="stylesheet">
 
-  <link href="{{ '/static/theme.css' | cachebust(global.URL, 'src/static/theme.css')}}" rel="stylesheet">
-  <link href="{{ '/static/settings.css' | cachebust(global.URL, 'src/static/settings.css')}}" rel="stylesheet">
-  <link href="{{ '/static/utils.css' | cachebust(global.URL, 'src/static/utils.css')}}" rel="stylesheet">
-  <link href="{{ '/static/site.css' | cachebust(global.URL, 'src/static/site.css') }}" rel="stylesheet">
-  <link href="{{ '/static/tablet.css' | cachebust(global.URL, 'src/static/tablet.css')}}" rel="stylesheet">
-  <link href="{{ '/static/desktop.css' | cachebust(global.URL, 'src/static/desktop.css')}}" rel="stylesheet">
+  <link href="{{ '/static/theme.css' | cachebust(global.URL, 'static/theme.css')}}" rel="stylesheet">
+  <link href="{{ '/static/settings.css' | cachebust(global.URL, 'static/settings.css')}}" rel="stylesheet">
+  <link href="{{ '/static/utils.css' | cachebust(global.URL, 'static/utils.css')}}" rel="stylesheet">
+  <link href="{{ '/static/site.css' | cachebust(global.URL, 'static/site.css') }}" rel="stylesheet">
+  <link href="{{ '/static/tablet.css' | cachebust(global.URL, 'static/tablet.css')}}" rel="stylesheet">
+  <link href="{{ '/static/desktop.css' | cachebust(global.URL, 'static/desktop.css')}}" rel="stylesheet">
   {% block extrastyle %}{% endblock %}
   <link href="/static/fontawesome/css/all.min.css" rel="stylesheet">
 
@@ -179,8 +179,20 @@
         <span class="center">&middot;</span>
         <a href="https://github.com/drivet/website-11ty/edit/main/{{page.inputPath}}">Edit</a>
       </div>
-      <div>{% include "webring.njk" %}</div>
-      <div>{% include "geekring.njk" %}</div>
+      <div>
+      <div title="indiewebring">
+        <a href="https://xn--sr8hvo.ws/%F0%9F%93%95%F0%9F%94%9F%F0%9F%99%85/previous">←</a>
+        <a href="https://xn--sr8hvo.ws">IndieWeb Webring 🕸</a>
+        <a href="https://xn--sr8hvo.ws/%F0%9F%93%95%F0%9F%94%9F%F0%9F%99%85/next">→</a>  
+      </div>
+      </div>
+      <div>
+      <span title="geekring">
+        <a href="http://geekring.net/site/368/previous">←</a>
+        <a href="http://geekring.net/site/368/random">Geekring &#x1f913;</a>
+        <a href="http://geekring.net/site/368/next">→</a>
+      </span>
+      </div>
     </div>
   </footer>
 </body>

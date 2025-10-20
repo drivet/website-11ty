@@ -24,7 +24,7 @@ hold of; he has a reputation of working odd hours. When I finally managed to
 corner him in his office, the first question he asked was whether I knew how
 to program. This took me by surprise; did he think I would ask to be his
 student if I didn't know my way around at least one or two programming
-languages? I ended up showing him work I did on the [Graphics Pipeline](gp/)
+languages? I ended up showing him work I did on the [Graphics Pipeline][8]
 to seal the deal.
 
 The next step was to get an [NSERC][4] grant. This turned out to be easy as
@@ -56,6 +56,7 @@ Oh, and I got a 98% :)
 [2]: http://www.utoronto.ca
 [3]: http://www.cs.toronto.edu/~dt/
 [4]: http://www.nserc-crsng.gc.ca/
-[5]: http://www.bostondynamics.com/diguy/company-overview.html
+[5]: https://www.di-guy.com/mak-one/tools/di-guy-sdk
 [6]: http://www.bostondynamics.com
 [7]: https://en.wikipedia.org/wiki/OpenGL_Performer
+[8]: /oldsite/gp

@@ -27,13 +27,13 @@ alt="Map of France" style="border: none; margin-right:1em; margin-bottom: 1em;"/
 </div>
 
 <map name="francemap" id="francemap">
-<area shape="rect" coords="273,114,339,133" href="https://photos.desmondrivet.com/index.php?/category/15" alt="Paris" />
-<area shape="rect" coords="248,186,303,206" href="https://photos.desmondrivet.com/index.php?/category/19" alt="Blois" />
-<area shape="rect" coords="125,334,212,369" href="https://photos.desmondrivet.com/index.php?/category/20" alt="Bordeaux" /> 
-<area shape="rect" coords="211,297,303,324" href="https://photos.desmondrivet.com/index.php?/category/22" alt="Perigueux" /> 
-<area shape="rect" coords="235,333,303,352" href="https://photos.desmondrivet.com/index.php?/category/21" alt="Sarlat" /> 
-<area shape="rect" coords="227,399,308,430" href="https://photos.desmondrivet.com/index.php?/category/23" alt="Toulouse" />
-<area shape="rect" coords="456,387,499,417" href="https://photos.desmondrivet.com/index.php?/category/25" alt="Nice" /> 
+<area shape="rect" coords="273,114,339,133" href="https://desmondrivet.com/2003/10/01/paris.html" alt="Paris" />
+<area shape="rect" coords="248,186,303,206" href="https://desmondrivet.com/2003/10/01/blois.html" alt="Blois" />
+<area shape="rect" coords="125,334,212,369" href="https://desmondrivet.com/2003/10/01/bordeaux.html" alt="Bordeaux" /> 
+<area shape="rect" coords="211,297,303,324" href="https://desmondrivet.com/2003/10/01/perigueux.html" alt="Perigueux" /> 
+<area shape="rect" coords="235,333,303,352" href="https://desmondrivet.com/2003/10/01/sarlat.html" alt="Sarlat" /> 
+<area shape="rect" coords="227,399,308,430" href="https://desmondrivet.com/2003/10/01/toulouse.html" alt="Toulouse" />
+<area shape="rect" coords="456,387,499,417" href="https://desmondrivet.com/2003/10/01/nice-monaco.html" alt="Nice" /> 
 </map>
 
 
