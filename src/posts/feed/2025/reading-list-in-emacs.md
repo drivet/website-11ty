@@ -27,7 +27,7 @@ to think about finding a replacement.
 
 ## Alternatives to Goodreads
 
-There are several viable alternatives to Goodreads particularly if, like,
+There are several viable alternatives to Goodreads particularly if, like
 me, you aren't that invested in the social aspect of maintaining a reading
 list.  In 2025, the contenders seem to include, but are not necessarily
 limited to:
