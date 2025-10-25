@@ -1,11 +1,9 @@
 ---
-date: 2022-07-23T08:34:14-04:00
-title: "Amaro Showdown at Casa Di Desmond"
-blurb: "I have a small collection of Italian Amaros.  I decided to try them all"
-mp-syndicate-to:
-- twitter
-tags: 
-- cocktails
+date: '2022-07-23T08:34:14-04:00'
+title: Amaro Showdown at Casa Di Desmond
+blurb: I have a small collection of Italian Amaros.  I decided to try them all
+tags:
+  - cocktails
 image: /static/img/amari.jpg
 ---
 

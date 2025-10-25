@@ -1,11 +1,9 @@
 ---
-title: "Taming Eleventy Tags: Or How I Learned To Tolerate Double Pagination"
-date: 2022-03-23T15:33:00-04:00
-mp-syndicate-to:
-- twitter
+title: 'Taming Eleventy Tags: Or How I Learned To Tolerate Double Pagination'
+date: '2022-03-23T15:33:00-04:00'
 tags:
-- blogging
-- eleventy
+  - blogging
+  - eleventy
 ---
 
 [Pagination][1] in [Eleventy][2] is bit strange.  Out of the box, Eleventy

@@ -1,12 +1,10 @@
 ---
 blurb: Covid musings
-date: 2020-10-25T02:44:23.000Z
-modified: 2020-10-25T02:44:23.000Z
+date: '2020-10-25T02:44:23.000Z'
+modified: '2020-10-25T02:44:23.000Z'
 tags:
   - covid-19
 title: Things I Learned In Lockdown
-mp-syndicate-to:
-  - twitter
 ---
 
 While it's perhaps inaccurate to call the current Covid-19 crisis

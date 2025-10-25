@@ -1,13 +1,11 @@
 ---
 title: Eleventy For IndieWeb Enthusiasts - Basic Setup And Post Organization
-blurb: "Classifying your #indieweb posts with @eleven_ty"
-date: 2022-03-09T16:46:02-05:00
+blurb: 'Classifying your #indieweb posts with @eleven_ty'
+date: '2022-03-09T16:46:02-05:00'
 tags:
-- eleventy
-- indieweb
-- blogging
-mp-syndicate-to:
-- twitter
+  - eleventy
+  - indieweb
+  - blogging
 ---
 
 As [mentioned previously][1], I recently converted my website over to

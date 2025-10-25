@@ -1,10 +1,8 @@
 ---
 blurb: I cannot be the only one who thinks that git is awful
-date: 2021-08-26T01:17:13.000Z
-modified: 2021-08-26T01:17:13.000Z
+date: '2021-08-26T01:17:13.000Z'
+modified: '2021-08-26T01:17:13.000Z'
 title: Git is Terrible
-mp-syndicate-to:
-  - twitter
 tags:
   - programming
 ---

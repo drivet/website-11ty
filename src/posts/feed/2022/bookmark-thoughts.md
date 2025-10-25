@@ -1,12 +1,10 @@
 ---
-date: 2022-03-01T13:57:07-05:00
-modified: 2022-03-01T13:57:07-05:00
-title: 'Much Ado About (Indieweb) Bookmarks'
+date: '2022-03-01T13:57:07-05:00'
+modified: '2022-03-01T13:57:07-05:00'
+title: Much Ado About (Indieweb) Bookmarks
 blurb: 'The ins and outs of owning your bookmarks on the #indieweb'
 tags:
   - indieweb
-mp-syndicate-to:
-  - twitter
 ---
 
 Like many Indieweb participants, I post [bookmarks][1], [likes][2] and

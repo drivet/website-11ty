@@ -1,13 +1,11 @@
 ---
-blurb: "Taming the #indieweb post type zoo"
-date: 2022-02-27T17:51:48-05:00
-modified: 2022-02-27T17:51:48-05:00
+blurb: 'Taming the #indieweb post type zoo'
+date: '2022-02-27T17:51:48-05:00'
+modified: '2022-02-27T17:51:48-05:00'
 title: A Place For Everything
 tags:
   - indieweb
   - blogging
-mp-syndicate-to:
-  - twitter
 ---
 
 If you're a programmer of a certain age, you've either read or know about

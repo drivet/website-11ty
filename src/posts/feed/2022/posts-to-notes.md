@@ -1,11 +1,9 @@
 ---
 title: Changes To Post Organization
-date: 2022-03-21T06:53:22-04:00
-mp-syndicate-to:
-- twitter
+date: '2022-03-21T06:53:22-04:00'
 tags:
-- blogging
-- indieweb
+  - blogging
+  - indieweb
 ---
 
 After some consideration I've decided to remove the articles from my "Posts"

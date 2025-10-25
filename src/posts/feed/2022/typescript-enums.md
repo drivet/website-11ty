@@ -1,12 +1,10 @@
 ---
 title: The Philosophy of TypeScript Enums
-date: 2022-04-11T20:13:11-04:00
+date: '2022-04-11T20:13:11-04:00'
 tags:
-- typescript
-- programming
-blurb: "#TypeScript enums are kind of weird"
-mp-syndicate-to:
-- twitter
+  - typescript
+  - programming
+blurb: '#TypeScript enums are kind of weird'
 ---
 
 I'm a pretty big fan of [TypeScript][1], probably best described as a

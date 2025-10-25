@@ -1,13 +1,11 @@
 ---
 blurb: In praise of simple
-date: 2020-08-27T16:41:19.000Z
-modified: 2020-08-27T16:41:19.000Z
+date: '2020-08-27T16:41:19.000Z'
+modified: '2020-08-27T16:41:19.000Z'
 tags:
   - cooking
   - recipes
 title: On Being Vaguely Obsessed With Pound Cake
-mp-syndicate-to:
-  - twitter
 ---
 
 When it comes to food and drink, I tend to lean towards the simple.  Or,

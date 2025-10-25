@@ -1,13 +1,11 @@
 ---
-date: 2022-04-04T15:00:42-04:00
-title: "Link Contexts In Eleventy"
-blurb: "An #indieweb aware approach to unfurling URLs in @eleven_ty"
-mp-syndicate-to:
-- twitter
+date: '2022-04-04T15:00:42-04:00'
+title: Link Contexts In Eleventy
+blurb: 'An #indieweb aware approach to unfurling URLs in @eleven_ty'
 tags:
-- eleventy
-- indieweb
-- blogging
+  - eleventy
+  - indieweb
+  - blogging
 ---
 
 As a participant in the [IndieWeb][1], I publish my share of [likes][2],

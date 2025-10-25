@@ -1,13 +1,11 @@
 ---
 title: From Pelican to Eleventy
 blurb: Making the switch from Pelican to @eleven_ty
-date: 2022-03-06T12:08:25-05:00
+date: '2022-03-06T12:08:25-05:00'
 tags:
-- pelican
-- eleventy
-- blogging
-mp-syndicate-to:
-- twitter
+  - pelican
+  - eleventy
+  - blogging
 ---
 
 After roughly [five years][1], I've finally decided to switch my blog over
