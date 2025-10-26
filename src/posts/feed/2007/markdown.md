@@ -39,4 +39,4 @@ is so light and so close to what I would normally write anyway, that I
 can comfortably relinquish control in this particular instance.
 
 [1]: http://daringfireball.net/projects/markdown/
-[2]: /design-notes
+[2]: /colophon
