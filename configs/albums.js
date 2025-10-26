@@ -15,21 +15,19 @@ function albumPhotoPost(album, albumPath, index0, photo, slugs) {
   const prev = index0 > 0 ? index0 - 1 : undefined;
   const nextLink = next != undefined ? slugs[next] : undefined;
   const prevLink = prev != undefined ? slugs[prev] : undefined;
+  const title = `${album.data.title} / ${index0 + 1} of ${total}`;
   return {
     permalink: `${albumPath}/${slug}`,
     photo,
     date,
-    title: album.data.title,
+    title,
     albumUrl: album.url,
     slug,
     nextLink,
     prevLink,
     total,
     index0,
-    eleventyNavigation: {
-      key: album.data.eleventyNavigation.key,
-      parent: album.data.eleventyNavigation.parent
-    }
+    albumKey: album.data.eleventyNavigation?.key
   };
 }
 

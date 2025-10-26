@@ -42,6 +42,13 @@ function getLeafAlbums(collection) {
   return collection.getFilteredByGlob("./src/posts/feed/**/*.md")
                    .filter(item => item.data.album && item.data.photo)
                    .reverse();
+
+}
+
+function getAllAlbums(collection) {
+  return collection.getFilteredByGlob("./src/posts/feed/**/*.md")
+                   .filter(item => item.data.album)
+                   .reverse();
 }
 
 function getDrafts(collection) {
@@ -72,6 +79,7 @@ module.exports = {
   postTypes,
   getPosts,
   getLeafAlbums,
+  getAllAlbums,
   getDrafts,
   navigation
 }

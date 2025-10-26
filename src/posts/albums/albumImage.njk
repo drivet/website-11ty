@@ -4,8 +4,6 @@ pagination:
   size: 1
   alias: p
 permalink: "{{ p.permalink }}.html"
-eleventyComputed:
-  title: "{{p.title}} / {{p.slug}}"
 breadcumbOptions:
   listClass: breadcrumbs
   listItemClass: breadcrumbs__item
@@ -25,7 +23,7 @@ scripts:
 <meta name="description" content="" />
 <meta property="og:site_name" content="{{ global.SITENAME }}" />
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="{{ p.title }} / {{ p.index0 + 1}} of {{ p.total }}"/>
+<meta property="og:title" content="{{ p.title }}"/>
 <meta property="og:url" content="{{ page.url }}"/>
 <meta property="og:description" content="" />
 <meta property="og:image" content="{{ p.photo.value | aUrl }}"/> 
@@ -70,13 +68,11 @@ scripts:
       </span>
      
       <h1 class="entry__title p-name">
-        <a href="{{ p.albumUrl | stripExt }}" class="entry__titlelink">{{ p.title }}</a> / {{ p.index0 + 1}} of {{ p.total }}
+        <a href="{{ p.albumUrl | stripExt }}" class="entry__titlelink">{{ p.title }}</a>
       </h1>
     
-      {% if p.eleventyNavigation.parent %}
-      Posted in {{ collections.all | eleventyNavigationBreadcrumb(p.eleventyNavigation.key) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
-      {% endif %}
-
+      Posted in {{ collections.allAlbums | eleventyNavigationBreadcrumb(p.albumKey, { includeSelf: true }) | eleventyNavigationToHtml(breadcumbOptions) | safe }}
+     
       <p class="entry__imagenav">
         {% if p.prevLink %}
         <a href="{{p.prevLink}}" title="Previous" class="entry__imagenavctrl entry__prevctrl"><i class="fa fa-angle-double-left"></i> Previous</a>

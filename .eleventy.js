@@ -1,5 +1,5 @@
 const html = require('./utils/html.js');
-const { dateFormat, makePermalink, getDrafts } = require('./utils/helpers.js');
+const { dateFormat, makePermalink, getDrafts, getAllAlbums } = require('./utils/helpers.js');
 const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL;
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -171,6 +171,7 @@ module.exports = (eleventyConfig) => {
   addAlbumImageCollections(eleventyConfig);
   
   eleventyConfig.addCollection("drafts", getDrafts);
+  eleventyConfig.addCollection("allAlbums", getAllAlbums);
 
   imageConfig(eleventyConfig);
   discussionConfig(eleventyConfig);

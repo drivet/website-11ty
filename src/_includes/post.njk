@@ -32,7 +32,7 @@ breadcumbOptions:
       <div class="text">
         {% if eleventyNavigation.parent %}
         Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) |  eleventyNavigationToHtml(breadcumbOptions) | safe }}
-        {% endif %} 
+        {% endif %}
         
         {% set photoCount = photo | length  %}
         {% if photoCount > 1 %}
