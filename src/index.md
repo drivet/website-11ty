@@ -65,7 +65,7 @@ elswhere on the web as well:
     <a href="https://www.instagram.com/thegreatdesmondo/" title="Instagram" rel="me">
         <i class="fab fa-instagram fa-lg"></i>
     </a> 
-    <a href="http://ca.linkedin.com/in/desmondrivet" title="LinkedIn" rel="me">
+    <a href="https://www.linkedin.com/in/desmondrivet/" title="LinkedIn" rel="me">
         <i class="fab fa-linkedin-in fa-lg"></i>
     </a>
 </div>
