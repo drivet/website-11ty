@@ -4,6 +4,8 @@ pagination:
   size: 1
   alias: p
 permalink: "{{ p.permalink }}.html"
+eleventyComputed:
+  title: "{{p.title}}"
 breadcumbOptions:
   listClass: breadcrumbs
   listItemClass: breadcrumbs__item
