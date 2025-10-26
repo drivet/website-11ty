@@ -173,35 +173,35 @@ results:
   2019/05/30/204734: {}
   2019/05/31/204823: {}
   2019/05/31/202427:
-    https://brid.gy/publish/twitter:
-      location: https://twitter.com/ohhelloana/status/1134502772257239040
+    'https://brid.gy/publish/twitter':
+      location: 'https://twitter.com/ohhelloana/status/1134502772257239040'
       status_code: 200
   2019/06/01/075740:
-    https://brid.gy/publish/twitter:
-      location: https://twitter.com/sonniesedge/status/1134439901624176640
+    'https://brid.gy/publish/twitter':
+      location: 'https://twitter.com/sonniesedge/status/1134439901624176640'
       status_code: 200
   2019/06/01/090258: {}
   2019/06/01/205947: {}
   2019/06/01/212855: {}
   2019/06/02/105328:
-    https://brid.gy/publish/twitter:
-      location: https://twitter.com/VadymSvv/status/1135171489781755907
+    'https://brid.gy/publish/twitter':
+      location: 'https://twitter.com/VadymSvv/status/1135171489781755907'
       status_code: 200
   2019/06/08/193802:
-    https://doubleloop.net/2019/05/30/sicp-reading-group/:
+    'https://doubleloop.net/2019/05/30/sicp-reading-group/':
       status_code: 200
   2019/06/28/204047: {}
   2019/08/02/234458: {}
   2019/10/20/235615: {}
   2019/10/27/031616:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/Kavaeric/status/1186655197541609472
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/Kavaeric/status/1186655197541609472'
       status_code: 201
   2019/10/29/232253: {}
   2019/11/02/033407: {}
   2019/11/03/235009:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/Kavaeric/status/1191126991988281344?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/Kavaeric/status/1191126991988281344?s=19'
       status_code: 201
   2019/11/05/175509: {}
   2019/11/06/024549: {}
@@ -209,8 +209,8 @@ results:
   2019/11/07/213700: {}
   2019/11/07/221239: {}
   2019/11/10/052608:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/WhoThat_One_Guy/status/1192988446928834561?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/WhoThat_One_Guy/status/1192988446928834561?s=19'
       status_code: 201
   2019/11/17/174202: {}
   2019/11/17/195814: {}
@@ -225,168 +225,168 @@ results:
   2019/12/06/160801: {}
   2019/12/06/162159: {}
   2019/12/06/173709:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/nickwalton00/status/1202706532095258625
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/nickwalton00/status/1202706532095258625'
       status_code: 201
   2019/12/07/145937: {}
   2019/12/07/162426: {}
   2019/12/08/intro-to-indie-web:
-    https://indieweb.org/:
-      location: https://webmention.io/indiewebcamp/webmention/M2QYrwocca5e7FUrxAAY
+    'https://indieweb.org/':
+      location: 'https://webmention.io/indiewebcamp/webmention/M2QYrwocca5e7FUrxAAY'
       status_code: 201
-    https://indieweb.org/Medium#Nagware:
-      location: https://webmention.io/indiewebcamp/webmention/h2nmoN5Vd0RB-AkpRhkN
+    'https://indieweb.org/Medium#Nagware':
+      location: 'https://webmention.io/indiewebcamp/webmention/h2nmoN5Vd0RB-AkpRhkN'
       status_code: 201
-    https://indieweb.org/POSSE:
-      location: https://webmention.io/indiewebcamp/webmention/_2lvSSeotTXv9fVgMsnK
+    'https://indieweb.org/POSSE':
+      location: 'https://webmention.io/indiewebcamp/webmention/_2lvSSeotTXv9fVgMsnK'
       status_code: 201
-    https://indieweb.org/backfeed:
-      location: https://webmention.io/indiewebcamp/webmention/bGKcVVpGHuRDnGlBS85h
+    'https://indieweb.org/backfeed':
+      location: 'https://webmention.io/indiewebcamp/webmention/bGKcVVpGHuRDnGlBS85h'
       status_code: 201
-    https://indieweb.org/silo:
-      location: https://webmention.io/indiewebcamp/webmention/0CB3VrmeScJndGq3dTxg
+    'https://indieweb.org/silo':
+      location: 'https://webmention.io/indiewebcamp/webmention/0CB3VrmeScJndGq3dTxg'
       status_code: 201
   2019/12/10/123147: {}
   2019/12/10/142828: {}
   2019/12/17/213805: {}
   2019/12/20/174535: {}
   2019/12/20/191707:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/melissaFTW/status/1207877289951711232?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/melissaFTW/status/1207877289951711232?s=19'
       status_code: 201
   2019/12/21/222902: {}
   2019/12/22/164304: {}
   2019/12/24/123055: {}
   2019/12/24/124205:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/CharlieRoseMari/status/1209266459312054273?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/CharlieRoseMari/status/1209266459312054273?s=19'
       status_code: 201
   2019/12/26/022947: {}
   2019/12/27/154849:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/SaraSoueidan/status/1210540426396143617?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/SaraSoueidan/status/1210540426396143617?s=19'
       status_code: 201
   2019/12/28/234512: {}
   2019/12/31/000212:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/ohhelloana/status/1211775220916338689?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/ohhelloana/status/1211775220916338689?s=19'
       status_code: 201
   2020/01/05/173051:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/SurpriseSparrow/status/1213863363039682560?s=20
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/SurpriseSparrow/status/1213863363039682560?s=20'
       status_code: 201
   2020/01/05/233921:
-    https://social.johanbove.info/2020/01/05/thanks-for-the-write-up-on-the-indieweb:
+    'https://social.johanbove.info/2020/01/05/thanks-for-the-write-up-on-the-indieweb':
       status_code: 202
   2020/01/05/website-castle:
-    https://indieweb.org:
-      location: https://webmention.io/indiewebcamp/webmention/KKb9BEDePJtJFj_N3Gxf
+    'https://indieweb.org':
+      location: 'https://webmention.io/indiewebcamp/webmention/KKb9BEDePJtJFj_N3Gxf'
       status_code: 201
-    https://indieweb.org/Bridgy:
-      location: https://webmention.io/indiewebcamp/webmention/2WWYQwBVpjz9-8JnJ0k1
+    'https://indieweb.org/Bridgy':
+      location: 'https://webmention.io/indiewebcamp/webmention/2WWYQwBVpjz9-8JnJ0k1'
       status_code: 201
-    https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain:
-      location: https://webmention.io/indiewebcamp/webmention/1JLeQYNthoh2r9l4xqdF
+    'https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain':
+      location: 'https://webmention.io/indiewebcamp/webmention/1JLeQYNthoh2r9l4xqdF'
       status_code: 201
-    https://indieweb.org/IndieAuth:
-      location: https://webmention.io/indiewebcamp/webmention/0pwP_yjV-zZfGwz_yO6S
+    'https://indieweb.org/IndieAuth':
+      location: 'https://webmention.io/indiewebcamp/webmention/0pwP_yjV-zZfGwz_yO6S'
       status_code: 201
-    https://indieweb.org/POSSE:
-      location: https://webmention.io/indiewebcamp/webmention/FMdBCpBWpn0Mi_xY1cgm
+    'https://indieweb.org/POSSE':
+      location: 'https://webmention.io/indiewebcamp/webmention/FMdBCpBWpn0Mi_xY1cgm'
       status_code: 201
-    https://indieweb.org/article:
-      location: https://webmention.io/indiewebcamp/webmention/LlNmrSR4VEjHB0iNtOgh
+    'https://indieweb.org/article':
+      location: 'https://webmention.io/indiewebcamp/webmention/LlNmrSR4VEjHB0iNtOgh'
       status_code: 201
-    https://indieweb.org/backfeed:
-      location: https://webmention.io/indiewebcamp/webmention/8-I_Q8MRsNbhlYWMmLW-
+    'https://indieweb.org/backfeed':
+      location: 'https://webmention.io/indiewebcamp/webmention/8-I_Q8MRsNbhlYWMmLW-'
       status_code: 201
-    https://indieweb.org/like:
-      location: https://webmention.io/indiewebcamp/webmention/cCKKB3LJfq8O1ppzmc4n
+    'https://indieweb.org/like':
+      location: 'https://webmention.io/indiewebcamp/webmention/cCKKB3LJfq8O1ppzmc4n'
       status_code: 201
-    https://indieweb.org/microformats:
-      location: https://webmention.io/indiewebcamp/webmention/Q83A11r1lmiKNRiY1aw5
+    'https://indieweb.org/microformats':
+      location: 'https://webmention.io/indiewebcamp/webmention/Q83A11r1lmiKNRiY1aw5'
       status_code: 201
-    https://indieweb.org/note:
-      location: https://webmention.io/indiewebcamp/webmention/_MjZXb5Aij_BXJvLiWhC
+    'https://indieweb.org/note':
+      location: 'https://webmention.io/indiewebcamp/webmention/_MjZXb5Aij_BXJvLiWhC'
       status_code: 201
-    https://indieweb.org/permalink:
-      location: https://webmention.io/indiewebcamp/webmention/XzH6jLqfIwWkedmtpI7a
+    'https://indieweb.org/permalink':
+      location: 'https://webmention.io/indiewebcamp/webmention/XzH6jLqfIwWkedmtpI7a'
       status_code: 201
-    https://indieweb.org/posts:
-      location: https://webmention.io/indiewebcamp/webmention/5xtDi5ceW3bOLmG1NrJe
+    'https://indieweb.org/posts':
+      location: 'https://webmention.io/indiewebcamp/webmention/5xtDi5ceW3bOLmG1NrJe'
       status_code: 201
-    https://indieweb.org/reply:
-      location: https://webmention.io/indiewebcamp/webmention/ErRN184NM3062elLw1ct
+    'https://indieweb.org/reply':
+      location: 'https://webmention.io/indiewebcamp/webmention/ErRN184NM3062elLw1ct'
       status_code: 201
-    https://indieweb.org/repost:
-      location: https://webmention.io/indiewebcamp/webmention/2o6usOgGsViJfOwpRpSb
+    'https://indieweb.org/repost':
+      location: 'https://webmention.io/indiewebcamp/webmention/2o6usOgGsViJfOwpRpSb'
       status_code: 201
-    https://indieweb.org/selfauth:
-      location: https://webmention.io/indiewebcamp/webmention/Csz2fMRk5UbEROnjjPaP
+    'https://indieweb.org/selfauth':
+      location: 'https://webmention.io/indiewebcamp/webmention/Csz2fMRk5UbEROnjjPaP'
       status_code: 201
-    https://indieweb.org/webmention:
-      location: https://webmention.io/indiewebcamp/webmention/nwTFGMtkDRm8JSlI58dH
+    'https://indieweb.org/webmention':
+      location: 'https://webmention.io/indiewebcamp/webmention/nwTFGMtkDRm8JSlI58dH'
       status_code: 201
   2020/01/09/181710: {}
   2020/01/10/203957: {}
   2020/01/12/224036: {}
   2020/01/13/175148:
-    https://tantek.com/2020/007/t2/walk-on-the-beach-at-sunset:
-      location: https://webmention.io/tantek.com/webmention/ZGwgM6Kd5CJE8DYqhrp8
+    'https://tantek.com/2020/007/t2/walk-on-the-beach-at-sunset':
+      location: 'https://webmention.io/tantek.com/webmention/ZGwgM6Kd5CJE8DYqhrp8'
       status_code: 201
   2020/01/13/175300:
-    https://islandinthenet.com/portal/:
+    'https://islandinthenet.com/portal/':
       status_code: 200
   2020/01/14/135502:
-    https://charlotteallen.info/2020/01/13/6816/:
+    'https://charlotteallen.info/2020/01/13/6816/':
       status_code: 200
   2020/01/17/142035: {}
   2020/01/17/151420: {}
   2020/01/22/174239: {}
   2020/01/26/204025: {}
   2020/01/27/184734:
-    https://lefaive.ca/2019/06/territory-acknowledgements/:
+    'https://lefaive.ca/2019/06/territory-acknowledgements/':
       status_code: 200
   2020/01/29/130257:
-    https://charlotteallen.info/2020/01/28/7012/:
+    'https://charlotteallen.info/2020/01/28/7012/':
       status_code: 200
   2020/01/30/131036:
-    https://charlotteallen.info/2020/01/29/7018/:
+    'https://charlotteallen.info/2020/01/29/7018/':
       status_code: 200
   2020/02/12/website-identity:
-    https://indieweb.org/:
-      location: https://webmention.io/indiewebcamp/webmention/eDAPzTcxXBAdyGKd9OO0
+    'https://indieweb.org/':
+      location: 'https://webmention.io/indiewebcamp/webmention/eDAPzTcxXBAdyGKd9OO0'
       status_code: 201
-    https://indieweb.org/RelMeAuth:
-      location: https://webmention.io/indiewebcamp/webmention/TRTMuftz87jt7qWlRxqO
+    'https://indieweb.org/RelMeAuth':
+      location: 'https://webmention.io/indiewebcamp/webmention/TRTMuftz87jt7qWlRxqO'
       status_code: 201
-    https://indieweb.org/Web_sign-in:
-      location: https://webmention.io/indiewebcamp/webmention/Jl9ukBqR_hDZs8EQJA2O
+    'https://indieweb.org/Web_sign-in':
+      location: 'https://webmention.io/indiewebcamp/webmention/Jl9ukBqR_hDZs8EQJA2O'
       status_code: 201
-    https://oauth.net/articles/authentication/:
-      location: https://webmention.io/aaronpk/webmention/sc5Sv6v_URjU7sEXsU3k
+    'https://oauth.net/articles/authentication/':
+      location: 'https://webmention.io/aaronpk/webmention/sc5Sv6v_URjU7sEXsU3k'
       status_code: 201
-    https://quill.p3k.io/:
-      location: https://webmention.io/aaronpk/webmention/WdwQg0k5EGoWN_pCP2_c
+    'https://quill.p3k.io/':
+      location: 'https://webmention.io/aaronpk/webmention/WdwQg0k5EGoWN_pCP2_c'
       status_code: 201
   2020/02/20/201200: {}
   2020/02/20/212415: {}
   2020/02/23/182714: {}
   2020/02/25/125902: {}
   2020/03/06/121941:
-    https://jlelse.blog/micro/2020/03/photos-workflow/:
+    'https://jlelse.blog/micro/2020/03/photos-workflow/':
       status_code: 200
   2020/03/08/202032: {}
   2020/03/11/223611: {}
   2020/03/13/225015: {}
   2020/03/14/175524: {}
   2020/03/14/180710:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/FyreByrde/status/1238883923553378304?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/FyreByrde/status/1238883923553378304?s=19'
       status_code: 201
   2020/03/19/010334:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/BBolander/status/1240322283211612161?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/BBolander/status/1240322283211612161?s=19'
       status_code: 201
   2020/03/22/184044: {}
   2020/03/24/124145: {}
@@ -398,37 +398,37 @@ results:
   2020/04/02/213743: {}
   2020/04/04/174833: {}
   2020/04/04/indieweb-conversation:
-    https://desmondrivet.com/2020/02/12/website-identity:
+    'https://desmondrivet.com/2020/02/12/website-identity':
       status_code: 202
-    https://indieweb.org/:
-      location: https://webmention.io/indiewebcamp/webmention/rukh_MsSrPhPCRjpOS7-
+    'https://indieweb.org/':
+      location: 'https://webmention.io/indiewebcamp/webmention/rukh_MsSrPhPCRjpOS7-'
       status_code: 201
-    https://indieweb.org/Webmention:
-      location: https://webmention.io/indiewebcamp/webmention/FDFD8nCTV0g3qOd2xLN7
+    'https://indieweb.org/Webmention':
+      location: 'https://webmention.io/indiewebcamp/webmention/FDFD8nCTV0g3qOd2xLN7'
       status_code: 201
-    https://indieweb.org/article:
-      location: https://webmention.io/indiewebcamp/webmention/sOopIFJFMZeaU8676ymx
+    'https://indieweb.org/article':
+      location: 'https://webmention.io/indiewebcamp/webmention/sOopIFJFMZeaU8676ymx'
       status_code: 201
-    https://indieweb.org/h-card:
-      location: https://webmention.io/indiewebcamp/webmention/6DtHT-CGySCOU-lNMv97
+    'https://indieweb.org/h-card':
+      location: 'https://webmention.io/indiewebcamp/webmention/6DtHT-CGySCOU-lNMv97'
       status_code: 201
-    https://indieweb.org/h-entry:
-      location: https://webmention.io/indiewebcamp/webmention/HNCGw9ipzN--GHcrhW_4
+    'https://indieweb.org/h-entry':
+      location: 'https://webmention.io/indiewebcamp/webmention/HNCGw9ipzN--GHcrhW_4'
       status_code: 201
-    https://indieweb.org/like:
-      location: https://webmention.io/indiewebcamp/webmention/W9v3j060OZe017OvBGEf
+    'https://indieweb.org/like':
+      location: 'https://webmention.io/indiewebcamp/webmention/W9v3j060OZe017OvBGEf'
       status_code: 201
-    https://indieweb.org/microformats:
-      location: https://webmention.io/indiewebcamp/webmention/nDHlyGEZqH6GieBvvaov
+    'https://indieweb.org/microformats':
+      location: 'https://webmention.io/indiewebcamp/webmention/nDHlyGEZqH6GieBvvaov'
       status_code: 201
-    https://indieweb.org/note:
-      location: https://webmention.io/indiewebcamp/webmention/Od0a_4SEcTEb4Hd_-WAa
+    'https://indieweb.org/note':
+      location: 'https://webmention.io/indiewebcamp/webmention/Od0a_4SEcTEb4Hd_-WAa'
       status_code: 201
-    https://indieweb.org/reply:
-      location: https://webmention.io/indiewebcamp/webmention/hAxlP1F_l7gf4FG8Dnrm
+    'https://indieweb.org/reply':
+      location: 'https://webmention.io/indiewebcamp/webmention/hAxlP1F_l7gf4FG8Dnrm'
       status_code: 201
-    https://indieweb.org/representative_h-card:
-      location: https://webmention.io/indiewebcamp/webmention/qfif41w7g1hqE2CHoyqB
+    'https://indieweb.org/representative_h-card':
+      location: 'https://webmention.io/indiewebcamp/webmention/qfif41w7g1hqE2CHoyqB'
       status_code: 201
   2020/04/06/225401: {}
   2020/04/07/162708: {}
@@ -445,32 +445,32 @@ results:
   2020/04/21/164249: {}
   2020/04/22/133408: {}
   2020/04/23/010611:
-    https://janboddez.tech/notes/ab8cca73e5:
+    'https://janboddez.tech/notes/ab8cca73e5':
       status_code: 202
   2020/04/26/013510: {}
   2020/04/26/154404: {}
   2020/04/27/140651: {}
   2020/04/27/193532: {}
   2020/04/28/125257:
-    https://desmondrivet.com:
+    'https://desmondrivet.com':
       status_code: 202
   2020/04/28/writing-reasons:
-    https://indieweb.org/:
-      location: https://webmention.io/indiewebcamp/webmention/zH1sXiaP-HnElXKgxPiz
+    'https://indieweb.org/':
+      location: 'https://webmention.io/indiewebcamp/webmention/zH1sXiaP-HnElXKgxPiz'
       status_code: 201
-    https://jlelse.blog/:
-      location: https://jlelse.blog/
+    'https://jlelse.blog/':
+      location: 'https://jlelse.blog/'
       status_code: 201
-    https://jlelse.blog/posts/why-no-blog/:
-      location: https://jlelse.blog/posts/why-no-blog/
+    'https://jlelse.blog/posts/why-no-blog/':
+      location: 'https://jlelse.blog/posts/why-no-blog/'
       status_code: 201
-    https://jlelse.dev/:
-      location: https://webmention.io/jlelse.dev/webmention/DT0TeZNh7XcMqPcaxMo-
+    'https://jlelse.dev/':
+      location: 'https://webmention.io/jlelse.dev/webmention/DT0TeZNh7XcMqPcaxMo-'
       status_code: 201
   2020/04/29/223754: {}
   2020/05/01/120726:
-    https://ohhelloana.blog/redesign-in-progress/:
-      location: https://webmention.io/ohhelloana.blog/webmention/lmYQIilW8cZQ_-NpWJrN
+    'https://ohhelloana.blog/redesign-in-progress/':
+      location: 'https://webmention.io/ohhelloana.blog/webmention/lmYQIilW8cZQ_-NpWJrN'
       status_code: 201
   2020/05/01/wikis-and-blogs: {}
   2020/05/03/223920: {}
@@ -484,8 +484,8 @@ results:
   2020/05/21/084009: {}
   2020/05/24/121245: {}
   2020/05/24/143008:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/__nathalylopez/status/1264394840000921601?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/__nathalylopez/status/1264394840000921601?s=19'
       status_code: 201
   2020/05/24/145254: {}
   2020/05/24/182847: {}
@@ -499,8 +499,8 @@ results:
   2020/06/01/133321: {}
   2020/06/02/085424: {}
   2020/06/19/101459:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/Astrofotografen/status/1273891275679416321
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/Astrofotografen/status/1273891275679416321'
       status_code: 201
   2020/06/20/183208: {}
   2020/06/22/122839: {}
@@ -512,12 +512,12 @@ results:
   2020/07/03/073210: {}
   2020/07/06/232110: {}
   2020/07/08/162537:
-    https://desmondrivet.com/2018/05/20/theremin-build:
+    'https://desmondrivet.com/2018/05/20/theremin-build':
       status_code: 202
   2020/07/09/073932: {}
   2020/07/09/074904:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/alyzande/status/1280479333170192385?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/alyzande/status/1280479333170192385?s=19'
       status_code: 201
   2020/07/09/090054: {}
   2020/07/10/101603: {}
@@ -526,8 +526,8 @@ results:
   2020/07/11/092757: {}
   2020/07/12/155621: {}
   2020/07/14/091057:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/Gemmapolyglot/status/1282394150843887616?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/Gemmapolyglot/status/1282394150843887616?s=19'
       status_code: 201
   2020/07/14/191910: {}
   2020/07/15/153416: {}
@@ -535,14 +535,14 @@ results:
   2020/07/17/214709: {}
   2020/07/17/215248: {}
   2020/07/19/100600:
-    https://doubleloop.net/2020/07/19/centralised-applications-are-authoritarian/:
+    'https://doubleloop.net/2020/07/19/centralised-applications-are-authoritarian/':
       status_code: 200
   2020/07/20/102400:
-    https://doubleloop.net/2020/07/19/6961/:
+    'https://doubleloop.net/2020/07/19/6961/':
       status_code: 200
   2020/07/25/113206:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/kvlly/status/1287033701600317441?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/kvlly/status/1287033701600317441?s=19'
       status_code: 201
   2020/07/25/113814: {}
   2020/07/25/152747: {}
@@ -557,56 +557,56 @@ results:
   2020/08/07/132414: {}
   2020/08/11/193040: {}
   2020/08/12/073217:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/dreid/status/1293400556984131585?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/dreid/status/1293400556984131585?s=19'
       status_code: 201
   2020/08/13/205623: {}
   2020/08/17/195123: {}
   2020/08/17/232522:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/rosielefaive/status/1295498720759500801?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/rosielefaive/status/1295498720759500801?s=19'
       status_code: 201
   2020/08/18/114857: {}
   2020/08/20/084138: {}
   2020/08/22/101347:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/susie_dent/status/1297096339394789378?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/susie_dent/status/1297096339394789378?s=19'
       status_code: 201
   2020/08/22/163900: {}
   2020/08/24/080258:
-    https://desmondrivet.com:
+    'https://desmondrivet.com':
       status_code: 202
   2020/08/24/210246:
-    https://desmondrivet.com/2018/11/18/photo-organization:
+    'https://desmondrivet.com/2018/11/18/photo-organization':
       status_code: 202
-    https://social.johanbove.info/2020/08/24/i-have-thirteen-years-worth-of-personal:
+    'https://social.johanbove.info/2020/08/24/i-have-thirteen-years-worth-of-personal':
       status_code: 202
   2020/08/25/071952: {}
   2020/08/25/074214: {}
   2020/08/25/075917: {}
   2020/08/25/080315:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/PieAmy/status/1298226845268287489?s=20
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/PieAmy/status/1298226845268287489?s=20'
       status_code: 201
   2020/08/27/143607: {}
   2020/08/27/212353: {}
   2020/08/27/pound-cake: {}
   2020/08/28/073533:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/Steampunk_T/status/1299297943346966528?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/Steampunk_T/status/1299297943346966528?s=19'
       status_code: 201
   2020/08/28/083201:
-    https://adactio.com/links/17343:
+    'https://adactio.com/links/17343':
       status_code: 202
   2020/08/28/083712: {}
   2020/08/28/083941:
-    https://adactio.com/links/17343:
+    'https://adactio.com/links/17343':
       status_code: 202
   2020/08/28/183654: {}
   2020/08/29/111702: {}
   2020/08/29/130720:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/vboykis/status/1299504414835838977?s=20
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/vboykis/status/1299504414835838977?s=20'
       status_code: 201
   2020/08/29/224303: {}
   2020/08/31/073344: {}
@@ -614,7 +614,7 @@ results:
   2020/09/02/italian-gatekeeping: {}
   2020/09/05/201219: {}
   2020/09/06/184200:
-    https://doubleloop.net/2020/09/06/a-home-on-the-web/:
+    'https://doubleloop.net/2020/09/06/a-home-on-the-web/':
       status_code: 200
   2020/09/07/230346: {}
   2020/09/07/231632: {}
@@ -624,12 +624,12 @@ results:
   2020/09/12/144800: {}
   2020/09/13/225319: {}
   2020/09/14/070835:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/gwisk20/status/1305172143680913409?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/gwisk20/status/1305172143680913409?s=19'
       status_code: 201
   2020/09/17/090849:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/spacespng/status/1306344115945254920?s=20
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/spacespng/status/1306344115945254920?s=20'
       status_code: 201
   2020/09/17/181213: {}
   2020/09/18/115258: {}
@@ -638,20 +638,20 @@ results:
   2020/09/19/120655: {}
   2020/09/21/204139: {}
   2020/09/22/195214:
-    https://stream.jeremycherfas.net/2020/you-may-be-doing-it-wrong:
+    'https://stream.jeremycherfas.net/2020/you-may-be-doing-it-wrong':
       status_code: 202
   2020/09/23/073708: {}
   2020/09/24/195202: {}
   2020/10/06/074455:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/Steampunk_T/status/1313439762993369088?s=20
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/Steampunk_T/status/1313439762993369088?s=20'
       status_code: 201
   2020/10/08/080501: {}
   2020/10/08/081004: {}
   2020/10/08/081932: {}
   2020/10/10/135624:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/ScribblingOn/status/1314665357873999872?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/ScribblingOn/status/1314665357873999872?s=19'
       status_code: 201
   2020/10/12/144609: {}
   2020/10/12/165607: {}
@@ -662,19 +662,19 @@ results:
   2020/10/22/153421: {}
   2020/10/24/lockdown: {}
   2020/10/25/221604:
-    https://doubleloop.net/2020/10/25/7224/:
+    'https://doubleloop.net/2020/10/25/7224/':
       status_code: 200
   2020/10/29/083713: {}
   2020/10/30/130327: {}
   2020/10/31/144622:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/drvox/status/1322263909743484928?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/drvox/status/1322263909743484928?s=19'
       status_code: 201
   2020/11/02/115254: {}
   2020/11/07/120449: {}
   2020/11/17/072906:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/chrtucci/status/1328405825463873536
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/chrtucci/status/1328405825463873536'
       status_code: 201
   2020/11/17/160853: {}
   2020/11/22/150217: {}
@@ -682,32 +682,32 @@ results:
   2020/11/29/152925: {}
   2020/11/29/160424: {}
   2020/12/01/085510:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/mxbck/status/1333673939017592832
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/mxbck/status/1333673939017592832'
       status_code: 201
   2020/12/01/085704:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/emrazz/status/1333654085095055360
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/emrazz/status/1333654085095055360'
       status_code: 201
   2020/12/03/093432: {}
   2020/12/10/192649: {}
   2020/12/12/201017: {}
   2020/12/13/125029: {}
   2020/12/13/201442:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/ashhhhhhole/status/1337865017975336974
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/ashhhhhhole/status/1337865017975336974'
       status_code: 201
   2020/12/15/075553:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/susie_dent/status/1338781237406740482
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/susie_dent/status/1338781237406740482'
       status_code: 201
   2020/12/20/133732: {}
   2020/12/23/211410: {}
   2020/12/24/173504: {}
   2020/12/24/201013: {}
   2020/12/24/205506:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/PavelASamsonov/status/1341881125053071368
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/PavelASamsonov/status/1341881125053071368'
       status_code: 201
   2020/12/28/175831: {}
   2020/12/30/183410: {}
@@ -716,31 +716,31 @@ results:
   2021/01/03/103742: {}
   2021/01/06/124446: {}
   2021/01/06/204329:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/susie_dent/status/1346915538698727428
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/susie_dent/status/1346915538698727428'
       status_code: 201
   2021/01/07/133129: {}
   2021/01/10/182552:
-    https://social.johanbove.info/2021/01/09/what-do-you-use-to-manage-your:
+    'https://social.johanbove.info/2021/01/09/what-do-you-use-to-manage-your':
       status_code: 202
   2021/01/19/073807: {}
   2021/01/24/223829:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/jlhbrain/status/1353536703059746816
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/jlhbrain/status/1353536703059746816'
       status_code: 201
   2021/01/27/102038: {}
   2021/01/29/192416:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/philosophytweet/status/1355283086980874241
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/philosophytweet/status/1355283086980874241'
       status_code: 201
   2021/02/08/232414:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/AstroKatie/status/1358833824252190723
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/AstroKatie/status/1358833824252190723'
       status_code: 201
   2021/02/09/151357: {}
   2021/02/12/122409: {}
   2021/02/15/121759:
-    https://social.johanbove.info/2021/02/15/testing-a-new-browser-gave-me-the:
+    'https://social.johanbove.info/2021/02/15/testing-a-new-browser-gave-me-the':
       status_code: 202
   2021/03/06/133010: {}
   2021/03/19/200403: {}
@@ -751,20 +751,20 @@ results:
   2021/04/14/212546: {}
   2021/05/11/223338: {}
   2021/05/20/101212:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/blainecapatch/status/1395191164957958146?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/blainecapatch/status/1395191164957958146?s=19'
       status_code: 201
   2021/05/20/203726:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/philosophytweet/status/1395384785720258561?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/philosophytweet/status/1395384785720258561?s=19'
       status_code: 201
   2021/05/30/110700:
-    https://doubleloop.net/2021/05/29/when-did-you-join-the-indieweb/:
+    'https://doubleloop.net/2021/05/29/when-did-you-join-the-indieweb/':
       status_code: 200
   2021/06/14/205334: {}
   2021/06/25/174918:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/philippawarr/status/1408258565945663491?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/philippawarr/status/1408258565945663491?s=19'
       status_code: 201
   2021/06/27/195004: {}
   2021/07/05/225409: {}
@@ -772,12 +772,12 @@ results:
   2021/07/14/112000: {}
   2021/07/16/150300: {}
   2021/07/17/103400:
-    https://jlelse.blog/micro/2021/07/2021-07-17-dspcx:
+    'https://jlelse.blog/micro/2021/07/2021-07-17-dspcx':
       status_code: 202
   2021/07/18/193600: {}
   2021/08/01/171520:
-    https://www.jvt.me/posts/2021/08/01/books-microformats/#demo:
-      location: https://webmention.io/www.jvt.me/webmention/5P5iSZbjPSwNJgg73uXg
+    'https://www.jvt.me/posts/2021/08/01/books-microformats/#demo':
+      location: 'https://webmention.io/www.jvt.me/webmention/5P5iSZbjPSwNJgg73uXg'
       status_code: 201
   2021/08/08/195700: {}
   2021/08/10/175300: {}
@@ -789,13 +789,13 @@ results:
   2021/08/31/180241: {}
   2021/09/02/133034: {}
   2021/09/03/113100:
-    https://blog.b-ark.ca/2019/12/22/indiewebbing.html:
-      location: https://webmention.io/blog.b-ark.ca/webmention/Gs95UaOpMhwwn4PaSveq
+    'https://blog.b-ark.ca/2019/12/22/indiewebbing.html':
+      location: 'https://webmention.io/blog.b-ark.ca/webmention/Gs95UaOpMhwwn4PaSveq'
       status_code: 201
   2021/09/05/213237: {}
   2021/09/08/074306:
-    https://brid.gy/publish/twitter?bridgy_omit_link=true:
-      location: https://twitter.com/ChrisAldrich/status/1435017980132270080?s=19
+    'https://brid.gy/publish/twitter?bridgy_omit_link=true':
+      location: 'https://twitter.com/ChrisAldrich/status/1435017980132270080?s=19'
       status_code: 201
   2021/09/09/130209: {}
   2021/09/13/082328: {}
@@ -805,975 +805,976 @@ results:
   2021/10/07/101400: {}
   2021/10/08/000344: {}
   2021/10/23/211009:
-    https://twitter.com/paul_franklin_/status/1452026115501985793?t=ND3F_VRRzcUu9Dh8D4buIA&s=19: {}
+    'https://twitter.com/paul_franklin_/status/1452026115501985793?t=ND3F_VRRzcUu9Dh8D4buIA&s=19': {}
   2021/10/29/102500:
-    https://boffosocko.com/2021/10/27/55797602/:
+    'https://boffosocko.com/2021/10/27/55797602/':
       status_code: 200
-    https://boffosocko.com/author/chrisaldrich/: {}
+    'https://boffosocko.com/author/chrisaldrich/': {}
   2021/10/30/111200: {}
   2021/10/31/161100:
-    https://twitter.com/Sotherans/status/1454894992103821314?ref_src=twsrc%5Etfw: {}
-    https://twitter.com/Sotherans/status/1454894992103821314?t=P5jft_MC8RUIoIgP-UVLZQ&s=19: {}
+    'https://twitter.com/Sotherans/status/1454894992103821314?ref_src=twsrc%5Etfw': {}
+    'https://twitter.com/Sotherans/status/1454894992103821314?t=P5jft_MC8RUIoIgP-UVLZQ&s=19': {}
   2021/11/07/210300:
-    https://t.co/7s0JyHoRcw: {}
-    https://twitter.com/Elzo_/status/1455949934449111040?ref_src=twsrc%5Etfw: {}
-    https://twitter.com/Elzo_/status/1455949934449111040?t=cMc-bQB9UD6EksduuE6e-g&s=19: {}
+    'https://t.co/7s0JyHoRcw': {}
+    'https://twitter.com/Elzo_/status/1455949934449111040?ref_src=twsrc%5Etfw': {}
+    'https://twitter.com/Elzo_/status/1455949934449111040?t=cMc-bQB9UD6EksduuE6e-g&s=19': {}
   2021/11/27/142949: {}
   2021/12/05/210233: {}
   2022/01/16/131055:
-    https://blog.mollywhite.net/its-not-still-the-early-days/: {}
+    'https://blog.mollywhite.net/its-not-still-the-early-days/': {}
   2022/02/23/202735: {}
   2022/02/23/210751: {}
   2022/02/24/155956: {}
   2022/02/24/201032: {}
   2022/02/24/202509: {}
   2022/02/27/post-type-org:
-    https://doubleloop.net/:
+    'https://doubleloop.net/':
       status_code: 200
-    https://en.wikipedia.org/wiki/Atom_(Web_standard): {}
-    https://en.wikipedia.org/wiki/Design_Patterns: {}
-    https://en.wikipedia.org/wiki/RSS: {}
-    https://indieweb.org/:
-      location: https://webmention.io/indiewebcamp/webmention/npY1J9tBy5W661Ux4kK-
+    'https://en.wikipedia.org/wiki/Atom_(Web_standard)': {}
+    'https://en.wikipedia.org/wiki/Design_Patterns': {}
+    'https://en.wikipedia.org/wiki/RSS': {}
+    'https://indieweb.org/':
+      location: 'https://webmention.io/indiewebcamp/webmention/npY1J9tBy5W661Ux4kK-'
       status_code: 201
-    https://indieweb.org/article:
-      location: https://webmention.io/indiewebcamp/webmention/INC4-6wJgVeDUwf2lj5h
+    'https://indieweb.org/article':
+      location: 'https://webmention.io/indiewebcamp/webmention/INC4-6wJgVeDUwf2lj5h'
       status_code: 201
-    https://indieweb.org/bookmark:
-      location: https://webmention.io/indiewebcamp/webmention/_R0ROJtuKMzq-QqzA_gr
+    'https://indieweb.org/bookmark':
+      location: 'https://webmention.io/indiewebcamp/webmention/_R0ROJtuKMzq-QqzA_gr'
       status_code: 201
-    https://indieweb.org/like:
-      location: https://webmention.io/indiewebcamp/webmention/7ZtClDW_MG5AzmnKZvVL
+    'https://indieweb.org/like':
+      location: 'https://webmention.io/indiewebcamp/webmention/7ZtClDW_MG5AzmnKZvVL'
       status_code: 201
-    https://indieweb.org/microformats:
-      location: https://webmention.io/indiewebcamp/webmention/-31nWQErn7suau0Z9gKm
+    'https://indieweb.org/microformats':
+      location: 'https://webmention.io/indiewebcamp/webmention/-31nWQErn7suau0Z9gKm'
       status_code: 201
-    https://indieweb.org/note:
-      location: https://webmention.io/indiewebcamp/webmention/xYW9RTry48KwHZhiRwJK
+    'https://indieweb.org/note':
+      location: 'https://webmention.io/indiewebcamp/webmention/xYW9RTry48KwHZhiRwJK'
       status_code: 201
-    https://indieweb.org/photo:
-      location: https://webmention.io/indiewebcamp/webmention/oP14f5tsJUza7cBCKW9G
+    'https://indieweb.org/photo':
+      location: 'https://webmention.io/indiewebcamp/webmention/oP14f5tsJUza7cBCKW9G'
       status_code: 201
-    https://indieweb.org/reply:
-      location: https://webmention.io/indiewebcamp/webmention/BKEJ8MAseDa60dusL_R1
+    'https://indieweb.org/reply':
+      location: 'https://webmention.io/indiewebcamp/webmention/BKEJ8MAseDa60dusL_R1'
       status_code: 201
-    https://indieweb.org/repost:
-      location: https://webmention.io/indiewebcamp/webmention/rt2OCNW67U8Ug1UyviVf
+    'https://indieweb.org/repost':
+      location: 'https://webmention.io/indiewebcamp/webmention/rt2OCNW67U8Ug1UyviVf'
       status_code: 201
-    https://indieweb.org/video:
-      location: https://webmention.io/indiewebcamp/webmention/3NtAYPp1RnZ4pDmyfUzZ
+    'https://indieweb.org/video':
+      location: 'https://webmention.io/indiewebcamp/webmention/3NtAYPp1RnZ4pDmyfUzZ'
       status_code: 201
-    https://tvtropes.org/: {}
+    'https://tvtropes.org/': {}
   2022/02/28/005250:
-    https://snarfed.org/:
+    'https://snarfed.org/':
       status_code: 200
-    https://snarfed.org/2022-01-08_happy-10th-birthday-bridgy:
+    'https://snarfed.org/2022-01-08_happy-10th-birthday-bridgy':
       status_code: 200
   2022/02/28/212800:
-    https://social.johanbove.info/2022/02/27/emilys-site-is-cool:
+    'https://social.johanbove.info/2022/02/27/emilys-site-is-cool':
       status_code: 202
-    https://social.johanbove.info/profile/johan:
+    'https://social.johanbove.info/profile/johan':
       status_code: 202
   2022/03/01/080200: {}
   2022/03/01/080800: {}
   2022/03/01/bookmark-thoughts:
-    https://indieweb.org/bookmark:
+    'https://indieweb.org/bookmark':
       status_code: 429
-    https://indieweb.org/h-entry:
-      location: https://webmention.io/indiewebcamp/webmention/touUnqRSwtH8YKUg_Yz6
+    'https://indieweb.org/h-entry':
+      location: 'https://webmention.io/indiewebcamp/webmention/touUnqRSwtH8YKUg_Yz6'
       status_code: 201
-    https://indieweb.org/like:
-      location: https://webmention.io/indiewebcamp/webmention/sSu6ZYg6dfuvEfhb5Yep
+    'https://indieweb.org/like':
+      location: 'https://webmention.io/indiewebcamp/webmention/sSu6ZYg6dfuvEfhb5Yep'
       status_code: 201
-    https://indieweb.org/microformats:
-      location: https://webmention.io/indiewebcamp/webmention/pyP-dRPL2QqLZ0VvSGDy
+    'https://indieweb.org/microformats':
+      location: 'https://webmention.io/indiewebcamp/webmention/pyP-dRPL2QqLZ0VvSGDy'
       status_code: 201
-    https://indieweb.org/repost:
-      location: https://webmention.io/indiewebcamp/webmention/3ZLpEJnDxCBfGHmFkiJQ
+    'https://indieweb.org/repost':
+      location: 'https://webmention.io/indiewebcamp/webmention/3ZLpEJnDxCBfGHmFkiJQ'
       status_code: 201
   2022/03/02/090110:
-    https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/: {}
+    'https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/': {}
   2022/03/02/090136:
-    https://www.smashingmagazine.com/2010/02/color-theory-for-designers-part-2-understanding-concepts-and-terminology/: {}
+    'https://www.smashingmagazine.com/2010/02/color-theory-for-designers-part-2-understanding-concepts-and-terminology/': {}
   2022/03/02/090157:
-    https://www.smashingmagazine.com/2010/02/color-theory-for-designer-part-3-creating-your-own-color-palettes/: {}
+    'https://www.smashingmagazine.com/2010/02/color-theory-for-designer-part-3-creating-your-own-color-palettes/': {}
   2022/03/02/090216:
-    https://www.smashingmagazine.com/2016/04/web-developer-guide-color/: {}
+    'https://www.smashingmagazine.com/2016/04/web-developer-guide-color/': {}
   2022/03/06/195739:
-    https://mxb.dev:
-      location: https://webmention.io/mxb.dev/webmention/ebJOK0wUsFDpaGtR31b6
+    'https://mxb.dev':
+      location: 'https://webmention.io/mxb.dev/webmention/ebJOK0wUsFDpaGtR31b6'
       status_code: 201
-    https://mxb.dev/blog/indieweb-link-sharing/:
-      location: https://webmention.io/mxb.dev/webmention/MUTJgWW9tDAb0HhfXLw2
+    'https://mxb.dev/blog/indieweb-link-sharing/':
+      location: 'https://webmention.io/mxb.dev/webmention/MUTJgWW9tDAb0HhfXLw2'
       status_code: 201
   2022/03/06/200139:
-    https://mxb.dev:
-      location: https://webmention.io/mxb.dev/webmention/6Klt203FLQdIVnkFRwQA
+    'https://mxb.dev':
+      location: 'https://webmention.io/mxb.dev/webmention/6Klt203FLQdIVnkFRwQA'
       status_code: 201
-    https://mxb.dev/blog/how-to-turn-your-website-into-a-pwa/:
-      location: https://webmention.io/mxb.dev/webmention/T5NtpzvUnwn_kobbNC89
+    'https://mxb.dev/blog/how-to-turn-your-website-into-a-pwa/':
+      location: 'https://webmention.io/mxb.dev/webmention/T5NtpzvUnwn_kobbNC89'
       status_code: 201
   2022/03/06/pelican-to-eleventy:
-    https://blog.getpelican.com/: {}
-    https://indieweb.org/:
-      location: https://webmention.io/indiewebcamp/webmention/XpvyzxqCDrqOicx5JRSl
+    'https://blog.getpelican.com/': {}
+    'https://indieweb.org/':
+      location: 'https://webmention.io/indiewebcamp/webmention/XpvyzxqCDrqOicx5JRSl'
       status_code: 201
-    https://indieweb.org/article:
-      location: https://webmention.io/indiewebcamp/webmention/wi5oEg_ThnAWj5PdxBXi
+    'https://indieweb.org/article':
+      location: 'https://webmention.io/indiewebcamp/webmention/wi5oEg_ThnAWj5PdxBXi'
       status_code: 201
-    https://indieweb.org/note:
-      location: https://webmention.io/indiewebcamp/webmention/Xy8CwrqDEKpUtLcxP4mw
+    'https://indieweb.org/note':
+      location: 'https://webmention.io/indiewebcamp/webmention/Xy8CwrqDEKpUtLcxP4mw'
       status_code: 201
-    https://www.11ty.dev/: {}
+    'https://www.11ty.dev/': {}
   2022/03/09/eleventy-post-type:
-    https://github.com/kylewm/mf2util: {}
-    https://indieweb.org/:
-      location: https://webmention.io/indiewebcamp/webmention/77OnXsaDstTntUGKXNNi
+    'https://github.com/kylewm/mf2util': {}
+    'https://indieweb.org/':
+      location: 'https://webmention.io/indiewebcamp/webmention/77OnXsaDstTntUGKXNNi'
       status_code: 201
-    https://indieweb.org/Webmention:
-      location: https://webmention.io/indiewebcamp/webmention/MlgojquJMZMZsly21srF
+    'https://indieweb.org/Webmention':
+      location: 'https://webmention.io/indiewebcamp/webmention/MlgojquJMZMZsly21srF'
       status_code: 201
-    https://indieweb.org/article:
-      location: https://webmention.io/indiewebcamp/webmention/mHxPTUwLawInrHFNc9yU
+    'https://indieweb.org/article':
+      location: 'https://webmention.io/indiewebcamp/webmention/mHxPTUwLawInrHFNc9yU'
       status_code: 201
-    https://indieweb.org/bookmark:
-      location: https://webmention.io/indiewebcamp/webmention/YDjP-DP4mii-tfPCGZsu
+    'https://indieweb.org/bookmark':
+      location: 'https://webmention.io/indiewebcamp/webmention/YDjP-DP4mii-tfPCGZsu'
       status_code: 201
-    https://indieweb.org/like:
-      location: https://webmention.io/indiewebcamp/webmention/l5_JwVZ179TCwff_7nyD
+    'https://indieweb.org/like':
+      location: 'https://webmention.io/indiewebcamp/webmention/l5_JwVZ179TCwff_7nyD'
       status_code: 201
-    https://indieweb.org/microformats:
-      location: https://webmention.io/indiewebcamp/webmention/0yZgienPKPIm24CFh41L
+    'https://indieweb.org/microformats':
+      location: 'https://webmention.io/indiewebcamp/webmention/0yZgienPKPIm24CFh41L'
       status_code: 201
-    https://indieweb.org/note:
-      location: https://webmention.io/indiewebcamp/webmention/N4w5BMN1YhtuHdcYPtcC
+    'https://indieweb.org/note':
+      location: 'https://webmention.io/indiewebcamp/webmention/N4w5BMN1YhtuHdcYPtcC'
       status_code: 201
-    https://indieweb.org/post-type-discovery:
-      location: https://webmention.io/indiewebcamp/webmention/VXVWGNlTJkFSRLZJmOnX
+    'https://indieweb.org/post-type-discovery':
+      location: 'https://webmention.io/indiewebcamp/webmention/VXVWGNlTJkFSRLZJmOnX'
       status_code: 201
-    https://indieweb.org/repost:
-      location: https://webmention.io/indiewebcamp/webmention/iPdoh7jKCZ4gePlGaiYu
+    'https://indieweb.org/repost':
+      location: 'https://webmention.io/indiewebcamp/webmention/iPdoh7jKCZ4gePlGaiYu'
       status_code: 201
-    https://jekyllrb.com/: {}
-    https://www.11ty.dev/: {}
-    https://www.11ty.dev/docs/: {}
-    https://www.11ty.dev/docs/collections/: {}
-    https://www.11ty.dev/docs/data-computed/: {}
-    https://www.11ty.dev/docs/data-template-dir/: {}
-    https://www.11ty.dev/docs/filters/: {}
-    https://www.netlify.com/: {}
-    https://www.w3.org/Provider/Style/URI: {}
+    'https://jekyllrb.com/': {}
+    'https://www.11ty.dev/': {}
+    'https://www.11ty.dev/docs/': {}
+    'https://www.11ty.dev/docs/collections/': {}
+    'https://www.11ty.dev/docs/data-computed/': {}
+    'https://www.11ty.dev/docs/data-template-dir/': {}
+    'https://www.11ty.dev/docs/filters/': {}
+    'https://www.netlify.com/': {}
+    'https://www.w3.org/Provider/Style/URI': {}
   2022/03/10/080848:
-    https://twitter.com/nhoizey/status/1501888419907186691: {}
-    https://twitter.com/nhoizey/status/1501888419907186691?ref_src=twsrc%5Etfw: {}
+    'https://twitter.com/nhoizey/status/1501888419907186691': {}
+    'https://twitter.com/nhoizey/status/1501888419907186691?ref_src=twsrc%5Etfw': {}
   2022/03/10/082203:
-    https://twitter.com/nhoizey/status/1501888419907186691: {}
-    https://twitter.com/nhoizey/status/1501888419907186691?ref_src=twsrc%5Etfw: {}
+    'https://twitter.com/nhoizey/status/1501888419907186691': {}
+    'https://twitter.com/nhoizey/status/1501888419907186691?ref_src=twsrc%5Etfw': {}
   2022/03/10/115424:
-    https://twitter.com/FalconSensei/status/1501961557806178306: {}
-    https://twitter.com/FalconSensei/status/1501961557806178306?ref_src=twsrc%5Etfw: {}
+    'https://twitter.com/FalconSensei/status/1501961557806178306': {}
+    'https://twitter.com/FalconSensei/status/1501961557806178306?ref_src=twsrc%5Etfw': {}
   2022/03/10/122023:
-    https://t.co/T7FBg18dlT: {}
-    https://twitter.com/nhoizey/status/1501967877305470981: {}
-    https://twitter.com/nhoizey/status/1501967877305470981?ref_src=twsrc%5Etfw: {}
+    'https://t.co/T7FBg18dlT': {}
+    'https://twitter.com/nhoizey/status/1501967877305470981': {}
+    'https://twitter.com/nhoizey/status/1501967877305470981?ref_src=twsrc%5Etfw': {}
   2022/03/10/bridgy-location:
-    https://twitter.com/FalconSensei/status/1501967593363558415: {}
-    https://twitter.com/FalconSensei/status/1501967593363558415?ref_src=twsrc%5Etfw: {}
+    'https://twitter.com/FalconSensei/status/1501967593363558415': {}
+    'https://twitter.com/FalconSensei/status/1501967593363558415?ref_src=twsrc%5Etfw': {}
   2022/03/10/bridgy-publish:
-    https://twitter.com/FalconSensei/status/1501967593363558415: {}
-    https://twitter.com/FalconSensei/status/1501967593363558415?ref_src=twsrc%5Etfw: {}
+    'https://twitter.com/FalconSensei/status/1501967593363558415': {}
+    'https://twitter.com/FalconSensei/status/1501967593363558415?ref_src=twsrc%5Etfw': {}
   2022/03/10/feed-descriptions: {}
   2022/03/10/see-post-type:
-    https://desmondrivet.com/2022/02/27/post-type-org:
-      location: https://webmention.io/desmondrivet.com/webmention/oHMXWzBXReG4l-GgwTOS
+    'https://desmondrivet.com/2022/02/27/post-type-org':
+      location: 'https://webmention.io/desmondrivet.com/webmention/oHMXWzBXReG4l-GgwTOS'
       status_code: 201
-    https://twitter.com/nhoizey/status/1501888419907186691: {}
-    https://twitter.com/nhoizey/status/1501888419907186691?ref_src=twsrc%5Etfw: {}
+    'https://twitter.com/nhoizey/status/1501888419907186691': {}
+    'https://twitter.com/nhoizey/status/1501888419907186691?ref_src=twsrc%5Etfw': {}
   2022/03/12/164307:
-    https://jlelse.blog/:
+    'https://jlelse.blog/':
       status_code: 202
-    https://jlelse.blog/micro/2022/03/2022-03-11-rorfe:
+    'https://jlelse.blog/micro/2022/03/2022-03-11-rorfe':
       status_code: 202
   2022/03/20/123836: {}
   2022/03/20/post-org-change: {}
   2022/03/21/posts-to-notes: {}
   2022/03/23/eleventy-pagination:
-    https://www.11ty.dev/docs/: {}
-    https://www.11ty.dev/docs/collections/: {}
-    https://www.11ty.dev/docs/layouts/: {}
-    https://www.11ty.dev/docs/pagination/: {}
-    https://www.11ty.dev/docs/quicktips/tag-pages/: {}
+    'https://www.11ty.dev/docs/': {}
+    'https://www.11ty.dev/docs/collections/': {}
+    'https://www.11ty.dev/docs/layouts/': {}
+    'https://www.11ty.dev/docs/pagination/': {}
+    'https://www.11ty.dev/docs/quicktips/tag-pages/': {}
   2022/03/27/190500:
-    https://github.com/james-stoup/emacs-org-mode-tutorial: {}
+    'https://github.com/james-stoup/emacs-org-mode-tutorial': {}
   2022/03/28/104300:
-    https://medium.com/@rebeccawilliams9941/the-zettelkasten-method-examples-to-help-you-get-started-8f8a44fa9ae6: {}
+    'https://medium.com/@rebeccawilliams9941/the-zettelkasten-method-examples-to-help-you-get-started-8f8a44fa9ae6': {}
   2022/03/30/080800:
-    https://social.johanbove.info/2022/03/29/people-drinking-the-vodka-they-already-had:
+    'https://social.johanbove.info/2022/03/29/people-drinking-the-vodka-they-already-had':
       status_code: 202
-    https://social.johanbove.info/profile/johan:
+    'https://social.johanbove.info/profile/johan':
       status_code: 202
   2022/03/30/110159: {}
   2022/04/04/eleventy-previews:
-    https://cheerio.js.org/: {}
-    https://github.com/drivet/website-11ty/blob/main/configs/previews.js: {}
-    https://indieweb.org/:
-      location: https://webmention.io/indiewebcamp/webmention/7NA811EemuKu5oDcyLFs
+    'https://cheerio.js.org/': {}
+    'https://github.com/drivet/website-11ty/blob/main/configs/previews.js': {}
+    'https://indieweb.org/':
+      location: 'https://webmention.io/indiewebcamp/webmention/7NA811EemuKu5oDcyLFs'
       status_code: 201
-    https://indieweb.org/The-Open-Graph-protocol:
-      location: https://webmention.io/indiewebcamp/webmention/JmG201qTDv5dWeQi6r1d
+    'https://indieweb.org/The-Open-Graph-protocol':
+      location: 'https://webmention.io/indiewebcamp/webmention/JmG201qTDv5dWeQi6r1d'
       status_code: 201
-    https://indieweb.org/Twitter_Cards:
-      location: https://webmention.io/indiewebcamp/webmention/vUIXVmNRPUsOEISzGw_f
+    'https://indieweb.org/Twitter_Cards':
+      location: 'https://webmention.io/indiewebcamp/webmention/vUIXVmNRPUsOEISzGw_f'
       status_code: 201
-    https://indieweb.org/article:
-      location: https://webmention.io/indiewebcamp/webmention/52xLPuim9vgM3LJoR-Ho
+    'https://indieweb.org/article':
+      location: 'https://webmention.io/indiewebcamp/webmention/52xLPuim9vgM3LJoR-Ho'
       status_code: 201
-    https://indieweb.org/authorship-spec:
-      location: https://webmention.io/indiewebcamp/webmention/Cjdde_mLsJO-s_d2QmQ7
+    'https://indieweb.org/authorship-spec':
+      location: 'https://webmention.io/indiewebcamp/webmention/Cjdde_mLsJO-s_d2QmQ7'
       status_code: 201
-    https://indieweb.org/bookmark:
-      location: https://webmention.io/indiewebcamp/webmention/RaKlLvrpeV1hiOcyKUKI
+    'https://indieweb.org/bookmark':
+      location: 'https://webmention.io/indiewebcamp/webmention/RaKlLvrpeV1hiOcyKUKI'
       status_code: 201
-    https://indieweb.org/featured:
-      location: https://webmention.io/indiewebcamp/webmention/T5aZf9QoMLGZKXpEdwMf
+    'https://indieweb.org/featured':
+      location: 'https://webmention.io/indiewebcamp/webmention/T5aZf9QoMLGZKXpEdwMf'
       status_code: 201
-    https://indieweb.org/like:
-      location: https://webmention.io/indiewebcamp/webmention/al74usSdgIEjYI3TH5qW
+    'https://indieweb.org/like':
+      location: 'https://webmention.io/indiewebcamp/webmention/al74usSdgIEjYI3TH5qW'
       status_code: 201
-    https://indieweb.org/link-preview:
-      location: https://webmention.io/indiewebcamp/webmention/6ZOeCmknWtlsBJbSy3dI
+    'https://indieweb.org/link-preview':
+      location: 'https://webmention.io/indiewebcamp/webmention/6ZOeCmknWtlsBJbSy3dI'
       status_code: 201
-    https://indieweb.org/microformats:
-      location: https://webmention.io/indiewebcamp/webmention/ozb2lFndKTuNS5slfj2t
+    'https://indieweb.org/microformats':
+      location: 'https://webmention.io/indiewebcamp/webmention/ozb2lFndKTuNS5slfj2t'
       status_code: 201
-    https://indieweb.org/note:
-      location: https://webmention.io/indiewebcamp/webmention/A8XWd_t230uZLqz9PdJN
+    'https://indieweb.org/note':
+      location: 'https://webmention.io/indiewebcamp/webmention/A8XWd_t230uZLqz9PdJN'
       status_code: 201
-    https://indieweb.org/oEmbed:
-      location: https://webmention.io/indiewebcamp/webmention/O_SDp5o2D7-dVu-ePz85
+    'https://indieweb.org/oEmbed':
+      location: 'https://webmention.io/indiewebcamp/webmention/O_SDp5o2D7-dVu-ePz85'
       status_code: 201
-    https://indieweb.org/post-type-discovery:
-      location: https://webmention.io/indiewebcamp/webmention/KGeB39YKK8SY3Z1drN-s
+    'https://indieweb.org/post-type-discovery':
+      location: 'https://webmention.io/indiewebcamp/webmention/KGeB39YKK8SY3Z1drN-s'
       status_code: 201
-    https://indieweb.org/reply:
-      location: https://webmention.io/indiewebcamp/webmention/OYB4KjgNHWiMow5n93dK
+    'https://indieweb.org/reply':
+      location: 'https://webmention.io/indiewebcamp/webmention/OYB4KjgNHWiMow5n93dK'
       status_code: 201
-    https://indieweb.org/reply-context:
-      location: https://webmention.io/indiewebcamp/webmention/_SgbYa1kuJYV3dmOIF7s
+    'https://indieweb.org/reply-context':
+      location: 'https://webmention.io/indiewebcamp/webmention/_SgbYa1kuJYV3dmOIF7s'
       status_code: 201
-    https://indieweb.org/repost:
-      location: https://webmention.io/indiewebcamp/webmention/gDXk1iGcRf7ERwO1aa8X
+    'https://indieweb.org/repost':
+      location: 'https://webmention.io/indiewebcamp/webmention/gDXk1iGcRf7ERwO1aa8X'
       status_code: 201
-    https://jquery.com/: {}
-    https://mxb.dev:
-      location: https://webmention.io/mxb.dev/webmention/cH5z-aIO7aLIa6YcUJDO
+    'https://jquery.com/': {}
+    'https://mxb.dev':
+      location: 'https://webmention.io/mxb.dev/webmention/cH5z-aIO7aLIa6YcUJDO'
       status_code: 201
-    https://mxb.dev/blog/persistent-build-folders-netlify/:
-      location: https://webmention.io/mxb.dev/webmention/wqWc8SKSvwIaWbQo9TgW
+    'https://mxb.dev/blog/persistent-build-folders-netlify/':
+      location: 'https://webmention.io/mxb.dev/webmention/wqWc8SKSvwIaWbQo9TgW'
       status_code: 201
-    https://mxb.dev/blog/using-webmentions-on-static-sites/:
-      location: https://webmention.io/mxb.dev/webmention/aOxklzH9zQX_C2DrOWf4
+    'https://mxb.dev/blog/using-webmentions-on-static-sites/':
+      location: 'https://webmention.io/mxb.dev/webmention/aOxklzH9zQX_C2DrOWf4'
       status_code: 201
-    https://pypi.org/project/mf2util/: {}
-    https://www.11ty.dev/: {}
-    https://www.11ty.dev/docs/data-computed/: {}
-    https://www.11ty.dev/docs/data-global/: {}
-    https://www.11ty.dev/docs/plugins/image/: {}
-    https://www.netlify.com/: {}
-    https://www.npmjs.com/package/mf2utiljs: {}
-    https://www.npmjs.com/package/microformats-parser: {}
-    https://www.npmjs.com/package/unfurl.js: {}
+    'https://pypi.org/project/mf2util/': {}
+    'https://www.11ty.dev/': {}
+    'https://www.11ty.dev/docs/data-computed/': {}
+    'https://www.11ty.dev/docs/data-global/': {}
+    'https://www.11ty.dev/docs/plugins/image/': {}
+    'https://www.netlify.com/': {}
+    'https://www.npmjs.com/package/mf2utiljs': {}
+    'https://www.npmjs.com/package/microformats-parser': {}
+    'https://www.npmjs.com/package/unfurl.js': {}
   2022/04/06/zettlekastan-overreach-reply:
-    https://boffosocko.com/2022/02/05/zettelkasten-overreach/:
+    'https://boffosocko.com/2022/02/05/zettelkasten-overreach/':
       status_code: 200
-    https://boffosocko.com/author/chrisaldrich/: {}
+    'https://boffosocko.com/author/chrisaldrich/': {}
   2022/04/11/typescript-enums:
-    https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_%E2%80%93_ECMAScript_2015: {}
-    https://www.typescriptlang.org/: {}
-    https://www.typescriptlang.org/docs/handbook/interfaces.html: {}
+    'https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_%E2%80%93_ECMAScript_2015': {}
+    'https://www.typescriptlang.org/': {}
+    'https://www.typescriptlang.org/docs/handbook/interfaces.html': {}
   2022/04/13/130300:
-    ? https://learntrepreneurs.com/books-reading-better-learning-more/zettelkastens-3-note-taking-levels-help-you-harvest-your-thoughts/
-    : {}
+    'https://learntrepreneurs.com/books-reading-better-learning-more/zettelkastens-3-note-taking-levels-help-you-harvest-your-thoughts/': {}
   2022/04/23/145000: {}
   2022/04/25/receiving-webmentions:
-    https://github.com/drivet/webmention-git-server: {}
-    https://indieweb.org/POSSE:
-      location: https://webmention.io/indiewebcamp/webmention/AWiBAhjjtGMLad3Q9RgI
+    'https://github.com/drivet/webmention-git-server': {}
+    'https://indieweb.org/POSSE':
+      location: 'https://webmention.io/indiewebcamp/webmention/AWiBAhjjtGMLad3Q9RgI'
       status_code: 201
-    https://indieweb.org/backfeed:
-      location: https://webmention.io/indiewebcamp/webmention/VIoEsyPkUu2ShDo8eV8p
+    'https://indieweb.org/backfeed':
+      location: 'https://webmention.io/indiewebcamp/webmention/VIoEsyPkUu2ShDo8eV8p'
       status_code: 201
-    https://mxb.dev/:
-      location: https://webmention.io/mxb.dev/webmention/1gudm4P174ttKOj7XGGT
+    'https://mxb.dev/':
+      location: 'https://webmention.io/mxb.dev/webmention/1gudm4P174ttKOj7XGGT'
       status_code: 201
-    https://mxb.dev/blog/persistent-build-folders-netlify/:
-      location: https://webmention.io/mxb.dev/webmention/fqYGPy_fFyNBIpkW2It-
+    'https://mxb.dev/blog/persistent-build-folders-netlify/':
+      location: 'https://webmention.io/mxb.dev/webmention/fqYGPy_fFyNBIpkW2It-'
       status_code: 201
-    https://mxb.dev/blog/using-webmentions-on-static-sites/:
+    'https://mxb.dev/blog/using-webmentions-on-static-sites/':
       status_code: 429
-    https://redis.io/: {}
-    https://webmention.io:
-      location: https://webmention.io/pingback/webmention/tTeaPU3xHcw5xNGjoR1-
+    'https://redis.io/': {}
+    'https://webmention.io':
+      location: 'https://webmention.io/pingback/webmention/tTeaPU3xHcw5xNGjoR1-'
       status_code: 201
-    https://www.11ty.dev/docs/data-global/: {}
+    'https://www.11ty.dev/docs/data-global/': {}
   2022/05/01/152628: {}
   2022/05/03/102424: {}
   2022/05/04/constitutional-amendment: {}
   2022/05/09/120800: {}
   2022/05/09/122800:
-    https://youtu.be/n0EKDZ4H3jo: {}
+    'https://youtu.be/n0EKDZ4H3jo': {}
   2022/05/09/132432:
-    https://www.youtube.com/watch?v=3O28uSZxyEw: {}
+    'https://www.youtube.com/watch?v=3O28uSZxyEw': {}
   2022/05/12/100800: {}
   2022/05/14/164131:
-    https://williamkennedy.ninja/javascript/2022/05/03/in-defence-of-the-single-page-application/: {}
+    'https://williamkennedy.ninja/javascript/2022/05/03/in-defence-of-the-single-page-application/': {}
   2022/05/16/144125: {}
   2022/05/19/235900:
-    https://www.canadahelps.org/en/donate-to-the-afghanistan-emergency-relief-efforts/: {}
+    'https://www.canadahelps.org/en/donate-to-the-afghanistan-emergency-relief-efforts/': {}
   2022/05/21/164300:
-    https://coredumped.dev/2021/05/26/taking-org-roam-everywhere-with-logseq/: {}
+    'https://coredumped.dev/2021/05/26/taking-org-roam-everywhere-with-logseq/': {}
   2022/05/22/190050: {}
   2022/05/29/171138: {}
   2022/06/01/fifteen-years:
-    https://blog.getpelican.com/: {}
-    https://github.com/drivet/yawt: {}
-    https://indieweb.org:
-      location: https://webmention.io/indiewebcamp/webmention/mw8nVtbzeltK5o3gpHG_
+    'https://blog.getpelican.com/': {}
+    'https://github.com/drivet/yawt': {}
+    'https://indieweb.org':
+      location: 'https://webmention.io/indiewebcamp/webmention/mw8nVtbzeltK5o3gpHG_'
       status_code: 201
-    https://indieweb.org/Webmention:
-      location: https://webmention.io/indiewebcamp/webmention/gb_RFF6xk2hLI5yfboye
+    'https://indieweb.org/Webmention':
+      location: 'https://webmention.io/indiewebcamp/webmention/gb_RFF6xk2hLI5yfboye'
       status_code: 201
-    https://wordpress.com/: {}
-    https://www.11ty.dev/: {}
-    https://www.gnu.org/software/emacs/: {}
+    'https://wordpress.com/': {}
+    'https://www.11ty.dev/': {}
+    'https://www.gnu.org/software/emacs/': {}
   2022/06/13/090200:
-    https://boffosocko.com/2022/06/10/reframing-and-simplifying-the-idea-of-how-to-keep-a-zettelkasten/:
+    'https://boffosocko.com/2022/06/10/reframing-and-simplifying-the-idea-of-how-to-keep-a-zettelkasten/':
       status_code: 200
-    https://boffosocko.com/author/chrisaldrich/: {}
+    'https://boffosocko.com/author/chrisaldrich/': {}
   2022/06/28/135347: {}
   2022/07/01/amaro-tasting:
-    https://en.wikipedia.org/wiki/Amaro_(liqueur): {}
-    https://en.wikipedia.org/wiki/Amaro_Averna: {}
-    https://en.wikipedia.org/wiki/Amaro_Lucano: {}
-    https://en.wikipedia.org/wiki/Amaro_Montenegro: {}
-    https://en.wikipedia.org/wiki/Aperol: {}
-    https://en.wikipedia.org/wiki/Campari: {}
-    https://en.wikipedia.org/wiki/Chartreuse_(liqueur): {}
-    https://en.wikipedia.org/wiki/Cynar: {}
-    https://en.wikipedia.org/wiki/Fernet-Branca: {}
-    https://en.wikipedia.org/wiki/J%C3%A4germeister: {}
-    https://en.wikipedia.org/wiki/Suze_(drink): {}
-    https://en.wikipedia.org/wiki/Zucca_(aperitif): {}
-    https://www.saq.com/en/10999073: {}
-    https://www.vecchioamarodelcapo.com/en/: {}
+    'https://en.wikipedia.org/wiki/Amaro_(liqueur)': {}
+    'https://en.wikipedia.org/wiki/Amaro_Averna': {}
+    'https://en.wikipedia.org/wiki/Amaro_Lucano': {}
+    'https://en.wikipedia.org/wiki/Amaro_Montenegro': {}
+    'https://en.wikipedia.org/wiki/Aperol': {}
+    'https://en.wikipedia.org/wiki/Campari': {}
+    'https://en.wikipedia.org/wiki/Chartreuse_(liqueur)': {}
+    'https://en.wikipedia.org/wiki/Cynar': {}
+    'https://en.wikipedia.org/wiki/Fernet-Branca': {}
+    'https://en.wikipedia.org/wiki/J%C3%A4germeister': {}
+    'https://en.wikipedia.org/wiki/Suze_(drink)': {}
+    'https://en.wikipedia.org/wiki/Zucca_(aperitif)': {}
+    'https://www.saq.com/en/10999073': {}
+    'https://www.vecchioamarodelcapo.com/en/': {}
   2022/07/23/115538: {}
   2022/07/23/115726: {}
   2022/07/23/amaro-tasting:
-    https://en.wikipedia.org/wiki/Amaro_(liqueur): {}
-    https://en.wikipedia.org/wiki/Amaro_Averna: {}
-    https://en.wikipedia.org/wiki/Amaro_Lucano: {}
-    https://en.wikipedia.org/wiki/Amaro_Montenegro: {}
-    https://en.wikipedia.org/wiki/Aperol: {}
-    https://en.wikipedia.org/wiki/Campari: {}
-    https://en.wikipedia.org/wiki/Chartreuse_(liqueur): {}
-    https://en.wikipedia.org/wiki/Cynar: {}
-    https://en.wikipedia.org/wiki/Fernet-Branca: {}
-    https://en.wikipedia.org/wiki/J%C3%A4germeister: {}
-    https://en.wikipedia.org/wiki/Suze_(drink): {}
-    https://en.wikipedia.org/wiki/Zucca_(aperitif): {}
-    https://www.saq.com/en/10999073: {}
-    https://www.vecchioamarodelcapo.com/en/: {}
+    'https://en.wikipedia.org/wiki/Amaro_(liqueur)': {}
+    'https://en.wikipedia.org/wiki/Amaro_Averna': {}
+    'https://en.wikipedia.org/wiki/Amaro_Lucano': {}
+    'https://en.wikipedia.org/wiki/Amaro_Montenegro': {}
+    'https://en.wikipedia.org/wiki/Aperol': {}
+    'https://en.wikipedia.org/wiki/Campari': {}
+    'https://en.wikipedia.org/wiki/Chartreuse_(liqueur)': {}
+    'https://en.wikipedia.org/wiki/Cynar': {}
+    'https://en.wikipedia.org/wiki/Fernet-Branca': {}
+    'https://en.wikipedia.org/wiki/J%C3%A4germeister': {}
+    'https://en.wikipedia.org/wiki/Suze_(drink)': {}
+    'https://en.wikipedia.org/wiki/Zucca_(aperitif)': {}
+    'https://www.saq.com/en/10999073': {}
+    'https://www.vecchioamarodelcapo.com/en/': {}
   2022/07/31/093034:
-    https://storax.github.io/blog/2016/05/02/org-capture-tricks/: {}
+    'https://storax.github.io/blog/2016/05/02/org-capture-tricks/': {}
   2022/08/03/001737:
-    https://boffosocko.com/2022/06/10/reframing-and-simplifying-the-idea-of-how-to-keep-a-zettelkasten/:
+    'https://boffosocko.com/2022/06/10/reframing-and-simplifying-the-idea-of-how-to-keep-a-zettelkasten/':
       status_code: 200
-    https://boffosocko.com/author/chrisaldrich/: {}
+    'https://boffosocko.com/author/chrisaldrich/': {}
   2022/08/05/231606:
-    https://www.seriouseats.com/classic-french-omelette-recipe: {}
+    'https://www.seriouseats.com/classic-french-omelette-recipe': {}
   2022/08/07/122050: {}
   2022/08/12/212425: {}
   2022/08/26/205125:
-    https://jhalabi.com/: {}
+    'https://jhalabi.com/': {}
   2022/09/29/082050:
-    https://twitter.com/AtheneTrek/status/1575449556527255552?t=bTzsiGi9b4Ikzw4br6q7iQ&s=19: {}
+    'https://twitter.com/AtheneTrek/status/1575449556527255552?t=bTzsiGi9b4Ikzw4br6q7iQ&s=19': {}
   2022/09/29/222915:
-    https://twitter.com/AtheneTrek/status/1575469656382787584?t=iFkPpWLqPDbpCp4XhgaTyg&s=19: {}
+    'https://twitter.com/AtheneTrek/status/1575469656382787584?t=iFkPpWLqPDbpCp4XhgaTyg&s=19': {}
   2022/09/30/093543:
-    https://twitter.com/SaraSoueidan/status/1575839350150922246?t=J78w77Vitc3RTFQkS7h-ew&s=19: {}
+    'https://twitter.com/SaraSoueidan/status/1575839350150922246?t=J78w77Vitc3RTFQkS7h-ew&s=19': {}
   2022/09/30/095010:
-    https://twitter.com/SaraSoueidan/status/1575844351863058435?t=xf6d37EW2F8Yt0UVSCJ8Ew&s=19: {}
+    'https://twitter.com/SaraSoueidan/status/1575844351863058435?t=xf6d37EW2F8Yt0UVSCJ8Ew&s=19': {}
   2022/10/26/085610: {}
   2022/10/26/172623: {}
   2022/10/26/215017: {}
   2022/10/29/183706:
-    https://twitter.com/AtheneTrek/status/1586486431689867264?t=6UA9N3XfL6xE1NetlLYYtw&s=19: {}
+    'https://twitter.com/AtheneTrek/status/1586486431689867264?t=6UA9N3XfL6xE1NetlLYYtw&s=19': {}
   2022/11/04/174252: {}
   2022/11/06/092305:
-    https://twitter.com/LuxAlptraum/status/1588889018892455936?t=iCIdnVi57CKuJwbR3SkaBQ&s=19: {}
+    'https://twitter.com/LuxAlptraum/status/1588889018892455936?t=iCIdnVi57CKuJwbR3SkaBQ&s=19': {}
   2022/11/07/235044:
-    https://twitter.com/JillFilipovic/status/1589679857818300416?t=jZ7EFBJJ61kbzt-0Fnc-Pw&s=19: {}
+    'https://twitter.com/JillFilipovic/status/1589679857818300416?t=jZ7EFBJJ61kbzt-0Fnc-Pw&s=19': {}
   2022/11/08/105700:
-    https://twitter.com/bessbell/status/1589974936395067392?t=9CkQ49y8npo3uc3ah55PEg&s=19: {}
+    'https://twitter.com/bessbell/status/1589974936395067392?t=9CkQ49y8npo3uc3ah55PEg&s=19': {}
   2022/11/09/220711: {}
   2022/11/15/211120: {}
   2022/11/16/073526: {}
   2022/11/16/204550:
-    https://twitter.com/LuxAlptraum/status/1593050629194514435?t=eL-iPYmJdgq8yHsWkBT8Ow&s=19: {}
+    'https://twitter.com/LuxAlptraum/status/1593050629194514435?t=eL-iPYmJdgq8yHsWkBT8Ow&s=19': {}
   2022/11/23/132053: {}
   2022/11/24/074611:
-    https://twitter.com/LuxAlptraum/status/1595758735301152768?t=4RhU4nsdh8g62oUwVGl19w&s=19: {}
+    'https://twitter.com/LuxAlptraum/status/1595758735301152768?t=4RhU4nsdh8g62oUwVGl19w&s=19': {}
   2022/11/26/082249:
-    https://gamerant.com/best-lesser-known-sci-fi-books-read-holidays/: {}
+    'https://gamerant.com/best-lesser-known-sci-fi-books-read-holidays/': {}
   2022/11/28/182035:
-    https://twitter.com/LuxAlptraum/status/1597365932556693505?t=Yb8wXJRZMspcBXvi7uN0BA&s=19: {}
+    'https://twitter.com/LuxAlptraum/status/1597365932556693505?t=Yb8wXJRZMspcBXvi7uN0BA&s=19': {}
   2022/12/07/171126:
-    https://twitter.com/JillFilipovic/status/1600606364459536387?t=AQRQP-93fd6Ac7HtiFp5Dw&s=19: {}
+    'https://twitter.com/JillFilipovic/status/1600606364459536387?t=AQRQP-93fd6Ac7HtiFp5Dw&s=19': {}
   2022/12/11/224205: {}
   2022/12/25/152554:
-    https://twitter.com/DanielBGreene/status/1607064455350988800?t=Cl1uhE114V24yr4vnSwQpQ&s=19: {}
+    'https://twitter.com/DanielBGreene/status/1607064455350988800?t=Cl1uhE114V24yr4vnSwQpQ&s=19': {}
   2023/01/10/075411:
-    https://bloodknife.com/everyone-beautiful-no-one-horny/: {}
+    'https://bloodknife.com/everyone-beautiful-no-one-horny/': {}
   2023/01/10/131551:
-    https://twitter.com/AmandaMarcotte/status/1612858374269407246?t=q20IaYO7hOGVMkrXawmc9g&s=19: {}
+    'https://twitter.com/AmandaMarcotte/status/1612858374269407246?t=q20IaYO7hOGVMkrXawmc9g&s=19': {}
   2023/01/15/210931: {}
   2023/02/19/popular-vote: {}
   2023/02/23/210045: {}
   2023/02/25/084752:
-    https://brid.gy/publish/mastodon:
-      location: https://indieweb.social/@desmondrivet/109925838754750846
+    'https://brid.gy/publish/mastodon':
+      location: 'https://indieweb.social/@desmondrivet/109925838754750846'
       status_code: 201
   2023/02/28/071500:
-    https://islandinthenet.com/corn-meal-porridge/:
+    'https://islandinthenet.com/corn-meal-porridge/':
       status_code: 200
   2023/03/01/231554:
-    https://social.johanbove.info/2023/03/01/i-dont-think-anybody-would-miss-my:
+    'https://social.johanbove.info/2023/03/01/i-dont-think-anybody-would-miss-my':
       status_code: 202
-    https://social.johanbove.info/profile/johan:
+    'https://social.johanbove.info/profile/johan':
       status_code: 202
   2023/03/02/222859:
-    https://indieweb.social/@johanbove/109955475813359665: {}
+    'https://indieweb.social/@johanbove/109955475813359665': {}
   2023/03/04/134856:
-    ? https://www.theguardian.com/commentisfree/2023/mar/04/the-joy-of-mediocrity-we-need-hobbies-even-if-were-bad-at-them-to-free-us-from-perfection
-    : {}
+    'https://www.theguardian.com/commentisfree/2023/mar/04/the-joy-of-mediocrity-we-need-hobbies-even-if-were-bad-at-them-to-free-us-from-perfection': {}
   2023/03/09/120147:
-    https://set.studio/some-simple-ways-to-make-content-look-good/: {}
+    'https://set.studio/some-simple-ways-to-make-content-look-good/': {}
   2023/03/14/005320:
-    https://twitter.com/culturaltutor/status/1625024395960807424?t=MQxrtImIUWRj2Emy7X2Emw&s=19: {}
+    'https://twitter.com/culturaltutor/status/1625024395960807424?t=MQxrtImIUWRj2Emy7X2Emw&s=19': {}
   2023/03/22/160204:
-    https://werd.io/2022/the-fediverse-and-the-indieweb:
+    'https://werd.io/2022/the-fediverse-and-the-indieweb':
       status_code: 202
-    https://werd.io/profile/benwerd:
+    'https://werd.io/profile/benwerd':
       status_code: 202
   2023/03/22/211802:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110070083815090768
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110070083815090768'
       status_code: 201
   2023/03/27/144324:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110096769777640453
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110096769777640453'
       status_code: 201
   2023/04/02/123549:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110130202625756253
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110130202625756253'
       status_code: 201
   2023/04/04/115607:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110141644771624311
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110141644771624311'
       status_code: 201
-    https://social.platypush.tech/@cambridgeport90/110141072688298642: {}
+    'https://social.platypush.tech/@cambridgeport90/110141072688298642': {}
   2023/04/08/143155:
-    https://fedi.tips/what-other-kinds-of-servers-are-on-the-fediverse/: {}
+    'https://fedi.tips/what-other-kinds-of-servers-are-on-the-fediverse/': {}
   2023/04/19/101856:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110225937975853457
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110225937975853457'
       status_code: 201
-    https://desmondrivet.com:
-      location: https://webmention.io/desmondrivet.com/webmention/oCGp5ZXV3CHnpUk-8KLK
+    'https://desmondrivet.com':
+      location: 'https://webmention.io/desmondrivet.com/webmention/oCGp5ZXV3CHnpUk-8KLK'
       status_code: 201
-    https://mastodon.social/@john_fisherman/110224246899618915: {}
+    'https://mastodon.social/@john_fisherman/110224246899618915': {}
   2023/04/21/130027:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110237929793754964
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110237929793754964'
       status_code: 201
   2023/04/21/133244:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110238012071767712
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110238012071767712'
       status_code: 201
   2023/04/21/221652:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110240071543427770
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110240071543427770'
       status_code: 201
   2023/04/24/140808:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110255138796097005
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110255138796097005'
       status_code: 201
   2023/04/25/155334:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110261215442372288
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110261215442372288'
       status_code: 201
   2023/04/26/073715:
-    https://mastodon.social/@john_fisherman/110254704190170859: {}
+    'https://mastodon.social/@john_fisherman/110254704190170859': {}
   2023/04/29/154734:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110283837984803530
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110283837984803530'
       status_code: 201
   2023/04/30/182239:
-    https://chelseatroy.com/2022/11/25/on-the-psychology-of-tech-money/: {}
-    https://chelseatroy.com/author/ctd524/: {}
+    'https://chelseatroy.com/2022/11/25/on-the-psychology-of-tech-money/': {}
+    'https://chelseatroy.com/author/ctd524/': {}
   2023/05/09/094325:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110344393743574115
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110344393743574115'
       status_code: 201
   2023/05/27/092034:
-    https://golmac.org/about-the-time-i-wrote-an-inform-7-game/: {}
-    https://golmac.org/author/infocom79/: {}
+    'https://golmac.org/about-the-time-i-wrote-an-inform-7-game/': {}
+    'https://golmac.org/author/infocom79/': {}
   2023/05/30/enjoy-coding:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110460490573043169
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110460490573043169'
       status_code: 201
-    https://orgmode.org/: {}
-    https://www.gnu.org/software/emacs/: {}
+    'https://orgmode.org/': {}
+    'https://www.gnu.org/software/emacs/': {}
   2023/06/18/183700:
-    https://youtu.be/Kok5RLFYtSo: {}
+    'https://youtu.be/Kok5RLFYtSo': {}
   2023/06/27/110931:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110616910509780736
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110616910509780736'
       status_code: 201
-    https://www.currentaffairs.org/2023/06/the-perils-of-innovator-mindset: {}
+    'https://www.currentaffairs.org/2023/06/the-perils-of-innovator-mindset': {}
   2023/06/28/104447:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110622384107944414
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110622384107944414'
       status_code: 201
-    https://desmondrivet.com/2013/07/31/canada-malting.html:
-      location: https://webmention.io/desmondrivet.com/webmention/ZyoJi2Q8Duww-wc4GcPp
+    'https://desmondrivet.com/2013/07/31/canada-malting.html':
+      location: 'https://webmention.io/desmondrivet.com/webmention/ZyoJi2Q8Duww-wc4GcPp'
       status_code: 201
-    https://desmondrivet.com/2016/04/02/on-escaping-your-past.html:
-      location: https://webmention.io/desmondrivet.com/webmention/M5OybjiRtzpBhe-3Bfxm
+    'https://desmondrivet.com/2016/04/02/on-escaping-your-past.html':
+      location: 'https://webmention.io/desmondrivet.com/webmention/M5OybjiRtzpBhe-3Bfxm'
       status_code: 201
-    https://desmondrivet.com/2016/06/29/poland.html:
-      location: https://webmention.io/desmondrivet.com/webmention/85I8nNRhjX874WAb7G1i
+    'https://desmondrivet.com/2016/06/29/poland.html':
+      location: 'https://webmention.io/desmondrivet.com/webmention/85I8nNRhjX874WAb7G1i'
       status_code: 201
-    https://indieweb.social/@ohhelloana@mastodon.social/110618245234039592: {}
+    'https://indieweb.social/@ohhelloana@mastodon.social/110618245234039592': {}
   2023/07/10/183500:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110692180897103509
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110692180897103509'
       status_code: 201
   2023/08/28/world-library:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110970602070427675
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110970602070427675'
       status_code: 201
-    https://www.imdb.com/title/tt26242614/: {}
+    'https://www.imdb.com/title/tt26242614/': {}
   2023/08/30/112924:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/110979284711946581
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/110979284711946581'
       status_code: 201
   2023/09/13/195210:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/111060534591930492
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/111060534591930492'
       status_code: 201
   2023/09/14/plain-text:
-    https://asciidoc.org/: {}
-    https://blosxom.sourceforge.net/: {}
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/111066276767360167
+    'https://asciidoc.org/': {}
+    'https://blosxom.sourceforge.net/': {}
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/111066276767360167'
       status_code: 201
-    https://daringfireball.net/projects/markdown/: {}
-    https://docutils.sourceforge.io/rst.html: {}
-    https://en.wikipedia.org/wiki/ASCII: {}
-    https://getpelican.com/: {}
-    https://obsidian.md/: {}
-    https://orgmode.org/: {}
-    https://roamresearch.com/: {}
-    https://todoist.com/: {}
-    https://wordpress.com/: {}
-    https://www.11ty.dev/: {}
-    https://www.gnu.org/software/emacs/: {}
-    https://www.mysql.com/: {}
-    https://www.orgroam.com/: {}
+    'https://daringfireball.net/projects/markdown/': {}
+    'https://docutils.sourceforge.io/rst.html': {}
+    'https://en.wikipedia.org/wiki/ASCII': {}
+    'https://getpelican.com/': {}
+    'https://obsidian.md/': {}
+    'https://orgmode.org/': {}
+    'https://roamresearch.com/': {}
+    'https://todoist.com/': {}
+    'https://wordpress.com/': {}
+    'https://www.11ty.dev/': {}
+    'https://www.gnu.org/software/emacs/': {}
+    'https://www.mysql.com/': {}
+    'https://www.orgroam.com/': {}
   2023/09/15/064124:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/111068750656605535
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/111068750656605535'
       status_code: 201
-    https://nerdculture.de/@titaniumbiscuit/111067559683462120: {}
+    'https://nerdculture.de/@titaniumbiscuit/111067559683462120': {}
   2023/09/24/154250:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/111121839584598767
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/111121839584598767'
       status_code: 201
   2023/10/02/121935:
-    https://adactio.com/:
+    'https://adactio.com/':
       status_code: 302
-    https://adactio.com/journal/20515:
+    'https://adactio.com/journal/20515':
       status_code: 202
   2023/10/16/142300:
-    https://lucidmanager.org/tags/emacs/: {}
+    'https://lucidmanager.org/tags/emacs/': {}
   2023/11/03/221421:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/111349870321942586
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/111349870321942586'
       status_code: 201
   2023/12/05/gtd-org-mode:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/111531207238423458
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/111531207238423458'
       status_code: 201
-    https://en.wikipedia.org/wiki/Getting_Things_Done: {}
-    https://orgmode.org/: {}
-    https://orgmode.org/manual/Agenda-Views.html: {}
-    https://orgmode.org/manual/Capture.html: {}
-    https://orgmode.org/manual/Drawers.html: {}
-    https://orgmode.org/manual/Filtering_002flimiting-agenda-items.html: {}
-    https://orgmode.org/manual/Refile-and-Copy.html: {}
-    https://www.gnu.org/software/emacs/: {}
+    'https://en.wikipedia.org/wiki/Getting_Things_Done': {}
+    'https://orgmode.org/': {}
+    'https://orgmode.org/manual/Agenda-Views.html': {}
+    'https://orgmode.org/manual/Capture.html': {}
+    'https://orgmode.org/manual/Drawers.html': {}
+    'https://orgmode.org/manual/Filtering_002flimiting-agenda-items.html': {}
+    'https://orgmode.org/manual/Refile-and-Copy.html': {}
+    'https://www.gnu.org/software/emacs/': {}
   2023/12/16/171358:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/111592404701244888
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/111592404701244888'
       status_code: 201
   2023/12/27/231100:
-    https://www.theguardian.com/commentisfree/2023/dec/26/blogging-freedom-outdated-format: {}
+    'https://www.theguardian.com/commentisfree/2023/dec/26/blogging-freedom-outdated-format': {}
   2024/01/03/222222: {}
   2024/01/07/free-will-illusion:
-    https://backtothefuture.fandom.com/wiki/Predestination_paradox: {}
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/111718065713273734
+    'https://backtothefuture.fandom.com/wiki/Predestination_paradox': {}
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/111718065713273734'
       status_code: 201
-    https://en.wikipedia.org/wiki/Compatibilism: {}
-    https://en.wikipedia.org/wiki/Determinism: {}
-    https://en.wikipedia.org/wiki/Incompatibilism: {}
+    'https://en.wikipedia.org/wiki/Compatibilism': {}
+    'https://en.wikipedia.org/wiki/Determinism': {}
+    'https://en.wikipedia.org/wiki/Incompatibilism': {}
   2024/01/09/225000:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://mastodon.social/@rjkwon/111698894265326672#favorited-by-109915770893332033
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: >-
+        https://mastodon.social/@rjkwon/111698894265326672#favorited-by-109915770893332033
       status_code: 201
-    https://mastodon.social/@rjkwon/111698894265326672: {}
+    'https://mastodon.social/@rjkwon/111698894265326672': {}
   2024/01/09/230000:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/111729660207035843
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/111729660207035843'
       status_code: 201
-    https://desmondrivet.com/2019/12/08/intro-to-indie-web:
-      location: https://webmention.io/desmondrivet.com/webmention/G929sUoFHN-br7_ntrMU
+    'https://desmondrivet.com/2019/12/08/intro-to-indie-web':
+      location: 'https://webmention.io/desmondrivet.com/webmention/G929sUoFHN-br7_ntrMU'
       status_code: 201
-    https://mastodon.social/@rjkwon/111698894265326672: {}
+    'https://mastodon.social/@rjkwon/111698894265326672': {}
   2024/02/05/084700:
-    https://protesilaos.com/: {}
+    'https://protesilaos.com/': {}
   2024/02/05/113710:
-    https://stackoverflow.com/questions/24330980/enumerate-all-tags-in-org-mode: {}
+    'https://stackoverflow.com/questions/24330980/enumerate-all-tags-in-org-mode': {}
   2024/02/09/092646:
-    https://edwardtufte.github.io/tufte-css/: {}
+    'https://edwardtufte.github.io/tufte-css/': {}
   2024/03/03/180240:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112034251651512816
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112034251651512816'
       status_code: 201
   2024/03/03/183750:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112034389966570657
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112034389966570657'
       status_code: 201
   2024/03/03/202657:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112034819108008888
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112034819108008888'
       status_code: 201
   2024/03/03/213533:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112035088860003847
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112035088860003847'
       status_code: 201
-    https://front-end.social/@sarajw/112033998987930006: {}
+    'https://front-end.social/@sarajw/112033998987930006': {}
   2024/03/11/091249:
-    https://cleberg.net/blog/digital-minimalism/: {}
+    'https://cleberg.net/blog/digital-minimalism/': {}
   2024/03/11/183238:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112079432078932934
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112079432078932934'
       status_code: 201
   2024/03/12/133719:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112083933215581450
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112083933215581450'
       status_code: 201
   2024/03/16/wheel-of-time:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112106833371922883
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112106833371922883'
       status_code: 201
-    https://en.wikipedia.org/wiki/Brandon_Sanderson: {}
-    https://en.wikipedia.org/wiki/Robert_Jordan: {}
-    https://en.wikipedia.org/wiki/The_Great_Hunt: {}
-    https://en.wikipedia.org/wiki/The_Shadow_Rising: {}
-    https://en.wikipedia.org/wiki/The_Wheel_of_Time: {}
-    https://en.wikipedia.org/wiki/The_Wheel_of_Time_(TV_series): {}
-    https://lotr.fandom.com/wiki/Nazg%C3%BBl: {}
-    https://tvtropes.org/pmwiki/pmwiki.php/Main/WomenInRefrigerators: {}
-    https://wot.fandom.com/wiki/Age_of_Legends: {}
-    https://wot.fandom.com/wiki/Artur_Hawkwing: {}
-    https://wot.fandom.com/wiki/Dragon: {}
-    https://wot.fandom.com/wiki/Forsaken: {}
-    https://wot.fandom.com/wiki/Liandrin_Guirale: {}
-    https://wot.fandom.com/wiki/Seanchan: {}
-    https://wot.fandom.com/wiki/True_Power: {}
-    https://wot.fandom.com/wiki/War_of_Power: {}
-    https://www.imdb.com/title/tt11316280/: {}
+    'https://en.wikipedia.org/wiki/Brandon_Sanderson': {}
+    'https://en.wikipedia.org/wiki/Robert_Jordan': {}
+    'https://en.wikipedia.org/wiki/The_Great_Hunt': {}
+    'https://en.wikipedia.org/wiki/The_Shadow_Rising': {}
+    'https://en.wikipedia.org/wiki/The_Wheel_of_Time': {}
+    'https://en.wikipedia.org/wiki/The_Wheel_of_Time_(TV_series)': {}
+    'https://lotr.fandom.com/wiki/Nazg%C3%BBl': {}
+    'https://tvtropes.org/pmwiki/pmwiki.php/Main/WomenInRefrigerators': {}
+    'https://wot.fandom.com/wiki/Age_of_Legends': {}
+    'https://wot.fandom.com/wiki/Artur_Hawkwing': {}
+    'https://wot.fandom.com/wiki/Dragon': {}
+    'https://wot.fandom.com/wiki/Forsaken': {}
+    'https://wot.fandom.com/wiki/Liandrin_Guirale': {}
+    'https://wot.fandom.com/wiki/Seanchan': {}
+    'https://wot.fandom.com/wiki/True_Power': {}
+    'https://wot.fandom.com/wiki/War_of_Power': {}
+    'https://www.imdb.com/title/tt11316280/': {}
   2024/03/19/152857:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112124008850937197
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112124008850937197'
       status_code: 201
   2024/03/27/133109:
-    https://cmdln.org/2023/03/25/how-i-org-in-2023/: {}
+    'https://cmdln.org/2023/03/25/how-i-org-in-2023/': {}
   2024/03/29/084200:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112179032462456087
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112179032462456087'
       status_code: 201
   2024/03/29/145634:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112180503476299495
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112180503476299495'
       status_code: 201
   2024/04/06/100033:
-    https://dev.to/antopiras89/add-comments-to-your-static-blog-with-utterances-3jao: {}
+    'https://dev.to/antopiras89/add-comments-to-your-static-blog-with-utterances-3jao': {}
   2024/04/06/204833:
-    https://blog.lazkani.io/posts/bookmark-with-org-capture/: {}
+    'https://blog.lazkani.io/posts/bookmark-with-org-capture/': {}
   2024/04/06/205714:
-    https://dewaka.com/blog/bookmarking-with-org-mode/: {}
+    'https://dewaka.com/blog/bookmarking-with-org-mode/': {}
   2024/04/14/150239:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112271124171596748
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112271124171596748'
       status_code: 201
   2024/04/19/153110:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112299547891164026
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112299547891164026'
       status_code: 201
   2024/04/25/082120:
-    https://canadianportfoliomanagerblog.com/how-to-choose-your-asset-allocation-etf/: {}
+    'https://canadianportfoliomanagerblog.com/how-to-choose-your-asset-allocation-etf/': {}
   2024/05/01/112914:
-    https://lucidmanager.org/productivity/read-rss-feeds-with-emacs-and-elfeed/: {}
+    'https://lucidmanager.org/productivity/read-rss-feeds-with-emacs-and-elfeed/': {}
   2024/05/28/140721:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112520049112006552
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112520049112006552'
       status_code: 201
   2024/06/07/five-years-indieweb:
-    https://bookwyrm.social/: {}
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112578428427251859
+    'https://bookwyrm.social/': {}
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112578428427251859'
       status_code: 201
-    https://indieweb.org/IndieAuth:
+    'https://indieweb.org/IndieAuth':
       status_code: 404
-    https://indieweb.org/IndieWeb:
+    'https://indieweb.org/IndieWeb':
       status_code: 404
-    https://indieweb.org/Micropub:
+    'https://indieweb.org/Micropub':
       status_code: 404
-    https://indieweb.org/OpenID:
+    'https://indieweb.org/OpenID':
       status_code: 404
-    https://indieweb.org/POSSE:
+    'https://indieweb.org/POSSE':
       status_code: 404
-    https://indieweb.org/Webmention:
+    'https://indieweb.org/Webmention':
       status_code: 404
-    https://indieweb.org/article:
+    'https://indieweb.org/article':
       status_code: 404
-    https://indieweb.org/backfeed:
+    'https://indieweb.org/backfeed':
       status_code: 404
-    https://indieweb.org/like:
+    'https://indieweb.org/like':
       status_code: 404
-    https://indieweb.org/link-preview:
+    'https://indieweb.org/link-preview':
       status_code: 404
-    https://indieweb.org/microformats:
+    'https://indieweb.org/microformats':
       status_code: 404
-    https://indieweb.org/note:
+    'https://indieweb.org/note':
       status_code: 404
-    https://indieweb.org/post:
+    'https://indieweb.org/post':
       status_code: 404
-    https://indieweb.org/post-type-discovery:
+    'https://indieweb.org/post-type-discovery':
       status_code: 404
-    https://indieweb.org/reply:
+    'https://indieweb.org/reply':
       status_code: 404
-    https://indieweb.org/repost:
+    'https://indieweb.org/repost':
       status_code: 404
-    https://indieweb.org/silo:
+    'https://indieweb.org/silo':
       status_code: 404
-    https://indieweb.org/video:
+    'https://indieweb.org/video':
       status_code: 404
-    https://joinmastodon.org/: {}
-    https://pixelfed.org/: {}
-    https://www.w3.org/TR/activitypub/: {}
+    'https://joinmastodon.org/': {}
+    'https://pixelfed.org/': {}
+    'https://www.w3.org/TR/activitypub/': {}
   2024/06/13/163143:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112611213376578179
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112611213376578179'
       status_code: 201
-    https://desmondrivet.com:
-      location: https://webmention.io/desmondrivet.com/webmention/UTKrRq8KIQIbnL0lJZVU
+    'https://desmondrivet.com':
+      location: 'https://webmention.io/desmondrivet.com/webmention/UTKrRq8KIQIbnL0lJZVU'
       status_code: 201
-    https://mastodon.social/@matthiasott/112430293298188853: {}
+    'https://mastodon.social/@matthiasott/112430293298188853': {}
   2024/06/25/102658:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112677726721635108
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112677726721635108'
       status_code: 201
   2024/06/28/chai-tea:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/112695773706697913
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/112695773706697913'
       status_code: 201
   2024/07/14/140635:
-    https://hugocisneros.com/:
-      location: https://webmention.io/hugocisneros.com/webmention/RCppFQ3_elRuqKPDrwgD
+    'https://hugocisneros.com/':
+      location: 'https://webmention.io/hugocisneros.com/webmention/RCppFQ3_elRuqKPDrwgD'
       status_code: 201
-    https://hugocisneros.com/blog/my-org-roam-notes-workflow/:
+    'https://hugocisneros.com/blog/my-org-roam-notes-workflow/':
       status_code: 429
   2024/09/22/135511:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113182490966927287
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113182490966927287'
       status_code: 201
   2024/09/24/165011:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113194503615965225
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113194503615965225'
       status_code: 201
   2024/10/05/spain: {}
   2024/10/15/154525:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113313158398970872
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113313158398970872'
       status_code: 201
-    https://desmondrivet.com/2024/10/05/alcazar/19c08a7be5b784:
-      location: https://webmention.io/desmondrivet.com/webmention/pTxr5B8X5ssEG4egXPFs
+    'https://desmondrivet.com/2024/10/05/alcazar/19c08a7be5b784':
+      location: 'https://webmention.io/desmondrivet.com/webmention/pTxr5B8X5ssEG4egXPFs'
       status_code: 201
-    https://pixelfed.social/p/nhoizey/751853308530419259: {}
+    'https://pixelfed.social/p/nhoizey/751853308530419259': {}
   2024/10/25/barcelona:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113370935185059287
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113370935185059287'
       status_code: 201
   2024/11/09/125358:
-    https://adactio.com/:
+    'https://adactio.com/':
       status_code: 302
-    https://adactio.com/journal/21548:
+    'https://adactio.com/journal/21548':
       status_code: 202
   2024/11/25/madrid-exit:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113546609033879794
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113546609033879794'
       status_code: 201
   2024/11/25/seville:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113546398303913549
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113546398303913549'
       status_code: 201
-    https://en.wikipedia.org/wiki/Alc%C3%A1zar_of_Seville: {}
-    https://en.wikipedia.org/wiki/Giralda: {}
-    https://en.wikipedia.org/wiki/Metropol_Parasol: {}
-    https://en.wikipedia.org/wiki/Plaza_de_Espa%C3%B1a,_Seville: {}
-    https://en.wikipedia.org/wiki/Santa_Cruz,_Seville: {}
-    https://en.wikipedia.org/wiki/Scheherazade: {}
-    https://en.wikipedia.org/wiki/Seville_Cathedral: {}
-    https://en.wikipedia.org/wiki/The_Barber_of_Seville: {}
-    https://en.wikipedia.org/wiki/Triana,_Seville: {}
-    https://www.youtube.com/watch?v=iiYW2d7RWw4: {}
-    https://yatrikaone.com/spain-seville-cathedral-altarpiece-at-the-main-chapel/: {}
+    'https://en.wikipedia.org/wiki/Alc%C3%A1zar_of_Seville': {}
+    'https://en.wikipedia.org/wiki/Giralda': {}
+    'https://en.wikipedia.org/wiki/Metropol_Parasol': {}
+    'https://en.wikipedia.org/wiki/Plaza_de_Espa%C3%B1a,_Seville': {}
+    'https://en.wikipedia.org/wiki/Santa_Cruz,_Seville': {}
+    'https://en.wikipedia.org/wiki/Scheherazade': {}
+    'https://en.wikipedia.org/wiki/Seville_Cathedral': {}
+    'https://en.wikipedia.org/wiki/The_Barber_of_Seville': {}
+    'https://en.wikipedia.org/wiki/Triana,_Seville': {}
+    'https://www.youtube.com/watch?v=iiYW2d7RWw4': {}
+    'https://yatrikaone.com/spain-seville-cathedral-altarpiece-at-the-main-chapel/': {}
   2024/12/05/103739:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113600962754009494
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113600962754009494'
       status_code: 201
   2024/12/05/111646:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113601116398573766
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113601116398573766'
       status_code: 201
   2024/12/07/anatomy-of-post:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113652986410986845
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113652986410986845'
       status_code: 201
   2024/12/14/160118:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113654411070947662
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113654411070947662'
       status_code: 201
   2024/12/16/194700:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113665408936483226
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113665408936483226'
       status_code: 201
   2024/12/21/123018:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113692001580346249
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113692001580346249'
       status_code: 201
-    https://social.lol/@jbaty/113691579479508286: {}
+    'https://social.lol/@jbaty/113691579479508286': {}
   2024/12/21/123643:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113692026656561072
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113692026656561072'
       status_code: 201
-    https://social.lol/@jbaty/113691579479508286: {}
+    'https://social.lol/@jbaty/113691579479508286': {}
   2024/12/25/074546: {}
   2024/12/30/141552:
-    https://codeberg.org/howardabrams/emacs-rpgtk: {}
+    'https://codeberg.org/howardabrams/emacs-rpgtk': {}
   2024/12/30/141621:
-    https://gitlab.com/howardabrams/emacs-rpgdm: {}
+    'https://gitlab.com/howardabrams/emacs-rpgdm': {}
   2025/01/10/082735:
-    https://seds.nl/notes/orgmode-firefox-bookmark/: {}
+    'https://seds.nl/notes/orgmode-firefox-bookmark/': {}
   2025/01/10/082749:
-    https://seds.nl/notes/org-roam-firefox-bookmark/: {}
+    'https://seds.nl/notes/org-roam-firefox-bookmark/': {}
   2025/01/19/being-rich:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113857910321264380
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113857910321264380'
       status_code: 201
   2025/01/21/180406:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 400
-    https://chaosfem.tw/@EmilyGB2023/113868591663908406: {}
+    'https://chaosfem.tw/@EmilyGB2023/113868591663908406': {}
   2025/01/30/when-visiting-toronto:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/113920668318021618
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/113920668318021618'
       status_code: 201
   2025/02/03/222417:
-    https://ooh.directory/: {}
+    'https://ooh.directory/': {}
   2025/02/03/222514:
-    https://smallweb.cc/: {}
+    'https://smallweb.cc/': {}
   2025/02/03/222823:
-    https://www.zylstra.org/blog/2019/09/joining-rss-club-as-an-experiment/: {}
+    'https://www.zylstra.org/blog/2019/09/joining-rss-club-as-an-experiment/': {}
   2025/03/13/132159:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/114156278366197892
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/114156278366197892'
       status_code: 201
   2025/03/13/232207:
-    https://beige.party/@Lana/114157916830499372: {}
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
+    'https://beige.party/@Lana/114157916830499372': {}
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 400
   2025/04/02/093813:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/114268644672142748
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/114268644672142748'
       status_code: 201
   2025/04/03/110915:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/114274665073807465
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/114274665073807465'
       status_code: 201
   2025/04/08/083919:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/114302386753538365
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/114302386753538365'
       status_code: 201
   2025/04/24/132734:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/114394117126670273
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/114394117126670273'
       status_code: 201
-    https://en.wikipedia.org/wiki/Chinese_room: {}
+    'https://en.wikipedia.org/wiki/Chinese_room': {}
   2025/04/24/154808:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/114394669892608199
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/114394669892608199'
       status_code: 201
   2025/04/25/091959:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/114398806015385483
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/114398806015385483'
       status_code: 201
-    https://indieweb.social/@adamclaxon/114395749550683639: {}
+    'https://indieweb.social/@adamclaxon/114395749550683639': {}
   2025/06/08/162656:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/114649626571743787
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/114649626571743787'
       status_code: 201
   2025/09/10/reading-list-in-emacs:
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/115273720283209523
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/115273720283209523'
       status_code: 201
-    https://www.amazon.ca/Piranesi-Susanna-Clarke/dp/1635577802: {}
+    'https://www.amazon.ca/Piranesi-Susanna-Clarke/dp/1635577802': {}
   2025/09/28/reading-list-in-emacs:
-    https://bookwyrm.social/: {}
-    https://brid.gy/publish/mastodon?bridgy_omit_link=maybe:
-      location: https://indieweb.social/@desmondrivet/115284726220289522
+    'https://bookwyrm.social/': {}
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      location: 'https://indieweb.social/@desmondrivet/115284726220289522'
       status_code: 201
-    https://garden.desmondrivet.com/books: {}
-    https://github.com/drivet/org-books/compare/master...drivet:org-books:customizations: {}
-    https://github.com/lepisma/org-books: {}
-    https://indieweb.org/:
-      location: https://webmention.io/indiewebcamp/webmention/_h7Nc4owcgZ9915uJ5Mm
+    'https://garden.desmondrivet.com/books': {}
+    'https://github.com/drivet/org-books/compare/master...drivet:org-books:customizations': {}
+    'https://github.com/lepisma/org-books': {}
+    'https://indieweb.org/':
+      location: 'https://webmention.io/indiewebcamp/webmention/_h7Nc4owcgZ9915uJ5Mm'
       status_code: 201
-    https://indieweb.org/POSSE:
-      location: https://webmention.io/indiewebcamp/webmention/nDuLjVr7NQaZRhyyffT3
+    'https://indieweb.org/POSSE':
+      location: 'https://webmention.io/indiewebcamp/webmention/nDuLjVr7NQaZRhyyffT3'
       status_code: 201
-    https://joinmastodon.org/: {}
-    https://openlibrary.org/: {}
-    https://openlibrary.org/dev/docs/api/covers: {}
-    https://orgmode.org/: {}
-    https://orgmode.org/manual/Agenda-Column-View.html: {}
-    https://orgmode.org/manual/Properties-and-Columns.html: {}
-    https://thestorygraph.com/: {}
-    https://www.amazon.ca/Piranesi-Susanna-Clarke/dp/1635577802: {}
-    https://www.gnu.org/software/emacs/: {}
-    https://www.librarything.com/: {}
-site_url: https://desmondrivet.com
+    'https://joinmastodon.org/': {}
+    'https://openlibrary.org/': {}
+    'https://openlibrary.org/dev/docs/api/covers': {}
+    'https://orgmode.org/': {}
+    'https://orgmode.org/manual/Agenda-Column-View.html': {}
+    'https://orgmode.org/manual/Properties-and-Columns.html': {}
+    'https://thestorygraph.com/': {}
+    'https://www.amazon.ca/Piranesi-Susanna-Clarke/dp/1635577802': {}
+    'https://www.gnu.org/software/emacs/': {}
+    'https://www.librarything.com/': {}
+  2025/10/26/173924:
+    'https://www.emilygorcenski.com/': {}
+site_url: 'https://desmondrivet.com'
