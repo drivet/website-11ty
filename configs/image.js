@@ -1,4 +1,5 @@
 const Image = require("@11ty/eleventy-img");
+const debug = require('debug')('previews');
 
 async function makeImage(src, widths) {
   try {
@@ -14,7 +15,10 @@ async function makeImage(src, widths) {
       },
     });
   } catch (e) {
-    console.warn(`failed to create image ${src}`);
+    debug(`could not process image ${src}, ${JSON.stringify(e)}`);
+    // not a good check but not sure what else to do 
+    // interpreting a message to mean there is an image but the plugin couldn't handle it
+    // return e.message ? src : null;
     return null;
   }
 }
@@ -35,7 +39,6 @@ async function imgShortcode(src, alt, cls, widths, onerror) {
     return `<img src="/static/img/avatar.png" alt=""/>`
   }
   const allCls = data['jpeg'][0].height > data['jpeg'][0].width ? `${cls} portrait` : cls;
-  //const sizes = '(min-width: 1024px) 444, (min-width: 768px) 444, 100vw';
   const attributes = {
     alt, class: allCls,
     loading: "lazy",
@@ -68,7 +71,7 @@ async function avatarShortcode(src, name) {
   const title = name;
   const width = 32;
   const staticAvatar = '/static/img/avatar.png';
-  if (!src) {
+  if (!src || !src.startsWith("http")) {
     return `<img src="${staticAvatar}" alt="${alt}" title="${title}" />`
   }
   const data = await makeImage(src, [width]);
