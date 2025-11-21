@@ -9,17 +9,18 @@
       <blockquote cite="{{ link }}" class="h-cite cite link-context">
 
       {% if preview_data.indieweb %}
-        {% set icon = preview_data.author.photo %}
         {% set header = preview_data.author.name %}
         {% set headerUrl = preview_data.author.url %}
       {% else %}
-        {% set icon = preview_data.site.icon %}
         {% set header = preview_data.site.name %}
         {% set headerUrl = preview_data.site.url %}
       {% endif %}
+      {% set icon = preview_data.author.photo | d(preview_data.site.icon) %}
       {% if header %}
       <div class="row link-context__header">
-          {% avatar icon, header %} 
+          {% if icon %}
+          {% avatar icon, header %}
+          {% endif %}
           <div>
               <div>
                   {% if headerUrl %}
@@ -30,14 +31,14 @@
               </div>
 
               {% if preview_data.published %}
-                  <div><span class="link-context__published">{{ preview_data.published | date }}</span></div>  
+              <div><span class="link-context__published">{{ preview_data.published | date }}</span></div>  
               {% endif %}
           </div>
       </div>
       {% endif %}
 
       {% if preview_data.image %}
-      <img alt="{{ preview_data.image.alt }}" src="{{ preview_data.image.url }}" class="link-context__image"/>
+      {% image preview_data.image.url, preview_data.image.alt or "album photo`", "link-context__image" %}
       {% endif %}
 
       {% if preview_data.title %}

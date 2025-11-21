@@ -68,12 +68,6 @@ async function cachePreviewImage(url, widths, format) {
   }
 }
 
-async function cacheImages(preview) {
-  if (preview.image?.url) {
-    preview.image.url = await cachePreviewImage(preview.image.url, [750], 'jpeg'); 
-  }
-}
-
 function previewConfig(eleventyConfig) {
   /**
    * This filter will
@@ -90,11 +84,7 @@ function previewConfig(eleventyConfig) {
       console.log(`no scraped data for ${url}, trying to scrape some...`);
       cached[key] = await preview(url);
     }
-    const previewData = clone(cached[key]);
-    if (previewData) {
-      await cacheImages(previewData);
-    }
-    return cb(null, previewData);
+    return cb(null, cached[key]);
   });
 
   /**
