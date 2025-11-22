@@ -5,11 +5,52 @@
     {% if preview_data %}
 
       <section class="unfurl text">
-      {% if preview_data.type == 'mf2' or preview_data.type == 'unfurl' %}
-        {% include "link-context.njk" %}
-      {% elif preview_data.type == 'oembed' %}
-        {{ preview_data.meta.oEmbed.html | safe }}
+
+      <blockquote cite="{{ link }}" class="h-cite cite link-context">
+
+      {% if preview_data.indieweb %}
+        {% set header = preview_data.author.name %}
+        {% set headerUrl = preview_data.author.url %}
+      {% else %}
+        {% set header = preview_data.site.name %}
+        {% set headerUrl = preview_data.site.url %}
       {% endif %}
+      {% set icon = preview_data.author.photo | d(preview_data.site.icon) %}
+      {% if header %}
+      <div class="row link-context__header">
+          {% if icon %}
+          {% avatar icon, header %}
+          {% endif %}
+          <div>
+              <div>
+                  {% if headerUrl %}
+                  <a class="link-context__site-url" href="{{ headerUrl }}">{{ header }}</a>
+                  {% else %}
+                  <span class="link-context__site">{{ header }}</span>
+                  {% endif %}
+              </div>
+
+              {% if preview_data.published %}
+              <div><span class="link-context__published">{{ preview_data.published | date }}</span></div>  
+              {% endif %}
+          </div>
+      </div>
+      {% endif %}
+
+      {% if preview_data.image %}
+      {% image preview_data.image.url, preview_data.image.alt or "album photo`", "link-context__image" %}
+      {% endif %}
+
+      {% if preview_data.title %}
+      <h2><a href="{{ link }}">{{ preview_data.title }}</a></h2>
+      {% endif %}
+
+      {% if preview_data.description %}
+      <div class="link-context__content">{{ preview_data.description }}</div>
+      {% endif %}
+
+      </blockquote>
+
       </section>
     {% endif %}
   {% endif %}
