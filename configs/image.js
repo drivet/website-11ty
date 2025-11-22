@@ -1,29 +1,42 @@
 const Image = require("@11ty/eleventy-img");
 const Fetch = require("@11ty/eleventy-fetch");
-const debug = require('debug')('previews');
+const debug = require('debug')('image');
 const icoToPng = require("ico-to-png");
 
 async function makeImage(src, width, format) {
-  return await Image(src, {
-    widths: [width],
-    formats: [format],
-    urlPath: "/static/img/",
-    outputDir: "./_site/static/img/",
-    cacheOptions: {
-      duration: "*",
-      directory: "_cache/images",
-      removeUrlQueryParams: false,
-    },
-  });
+  try {
+    return await Image(src, {
+      widths: [width],
+      formats: [format],
+      urlPath: "/static/img/",
+      outputDir: "./_site/static/img/",
+      cacheOptions: {
+        duration: "*",
+        directory: "_cache/images",
+        removeUrlQueryParams: false,
+      },
+    });
+  } catch (e) {
+    debug(`cannot make image ${src}, ${width}, ${format}`);
+    return null;
+  }
 }
 
 async function atomImageShortcode(src, alt) {
-  const data = await makeImage(src, 800, "jpeg"); // match the width of regular image
+  // match the width of regular image
+  const data = await makeImage(src, 800, "jpeg");
+  if (!data) {
+    return `<img src="/static/img/avatar.png" alt=""/>`
+  }
   return `<img src="${data.jpeg[0].url}" alt="${alt}" width="600"/>`;
 }
 
 async function atomThumbShortcode(src, alt) {
-  const data = await makeImage(src, 200, "jpeg"); // match the width of thumb image
+  // match the width of thumb image
+  const data = await makeImage(src, 200, "jpeg");
+  if (!data) {
+    return `<img src="/static/img/avatar.png" alt=""/>`
+  }
   return `<img src="${data.jpeg[0].url}" alt="${alt}" width="200"/>`;
 }
 
@@ -69,11 +82,7 @@ async function avatarShortcode(src, name) {
     return `<img src="${staticAvatar}" alt="${alt}" title="${title}" />`
   }
 
-  let data = null;
-  try {
-    data = await makePng(src, width);
-  } catch (e) {}
-
+  const data = await makePng(src, width);
   if (!data) {
     return `<img src="${src}" alt="${alt}" title="${title}" />`
   }
