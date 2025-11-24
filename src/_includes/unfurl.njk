@@ -10,7 +10,7 @@
 
       {% if preview_data.indieweb %}
         {% set header = preview_data.author.name %}
-        {% set headerUrl = preview_data.author.url %}
+        {% set headerUrl = preview_data.author.url | d(preview_data.site.url)  %}
       {% else %}
         {% set header = preview_data.site.name %}
         {% set headerUrl = preview_data.site.url %}
