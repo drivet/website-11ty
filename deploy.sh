@@ -1,4 +1,4 @@
-PATH=$PATH:~/.nvm/versions/node/v22.12.0/bin
+PATH=~/.nvm/versions/node/v22.12.0/bin:$PATH
 WEBMENTION_IO_TOKEN=rh7Wtv9MIwDKvpcrp1TdzA
 npm install
 npm run build

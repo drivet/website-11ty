@@ -92,7 +92,7 @@ So how do I render these posts?  One very simple and direct way is create a
 separate template for each type, but would result in a significant amount of
 repetition.  A photo post and multi-photo post are virtually the same, for
 example, and both of them share a lot in common with a note, in that they're
-basically just notes with photos added.  An article could be consider a
+basically just notes with photos added.  An article could be considered a
 longer note with a title added.
 
 Deciding how to render them all on my blog in a relatively DRY way i.e. a
@@ -114,9 +114,9 @@ post template which captures them all.  To start with, it includes:
 
 If we're dealing with a multi-photo, then one more piece of content is
 implied: a line telling you how many photos are in the post, if there's more
-than 1 (for multi-photos, in other words).  A good place to put that would
-be after the title, but before the content, so you would get something like
-this:
+than 1 (I don't put any extra line at all if I just have one photo).  A good
+place to put that would be after the title, but before the content, so you
+would get something like this:
 
  * Title
  * Photo count (for multi-photos)
@@ -141,7 +141,7 @@ derivative post types are:
  
 These are all posts that are "about" another URL, which I call a *referenced
 URL*.  The posts make no sense without it, so it needs to be included in the
-somehow.  With the exception of a reply, these types are often without
+post somehow.  With the exception of a reply, these types are often without
 content, though there's nothing stopping you from adding some.  In addition,
 these posts should all show an unfurled "link preview" or "reply context"
 (the IndieWeb wiki distinguishes between these two things, but I don't find
@@ -186,10 +186,10 @@ link preview as well.  And, though it might be unusual for a like or a reply
 to have a title, there's no particular reason to enforce this as a rule.
 
 The bottom line is that a "derivative" template can pretty much take
-advantage of the "original content" template and just add the one thing that
-is unique to these kinds of posts: the referenced URL.  A good place to
-show it is after the title, and before the content.  With that, we have a
-new unified template with:
+advantage of the "original content" template and just add the things that
+are unique to these kinds of posts: the referenced URL and the unfurled
+link.  A good place to show them is after the title, and before the content.
+With that, we have a new unified template with:
 
  * Title
  * Referenced URL

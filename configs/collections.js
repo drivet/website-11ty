@@ -145,9 +145,6 @@ function addIndieWebCollectionGroups(eleventyConfig) {
   addCollectionGroup(eleventyConfig, "articles",
     collection => postTypes(getPosts(collection), ["article"]));
 
-  addCollectionGroup(eleventyConfig, "bookmarks",
-    collection => postTypes(getPosts(collection), ["bookmark"]));
-
   addCollectionGroup(eleventyConfig, "notes",
     collection => postTypes(getPosts(collection), ["note"]));
   
@@ -165,10 +162,6 @@ function addIndieWebCollectionGroups(eleventyConfig) {
   
   addCollectionGroup(eleventyConfig, "albums",
     collection => postTypes(getPosts(collection), ["album"]));
-
-  addCollectionGroup(eleventyConfig, "lifestream",
-    collection => postTypes(getPosts(collection), ["article", "note", "photo", "video", "album"]));
-  
 }
 
 module.exports = {
