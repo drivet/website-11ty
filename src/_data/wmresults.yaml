@@ -1784,4 +1784,27 @@ results:
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/115684090013317827'
   2026/01/04/160247: {}
+  2026/01/10/moving-bookmarks:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/115874084070165186'
+    'https://desmondrivet.com/2022/03/01/bookmark-thoughts.html':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/YjzDDEw5rKfHlZnK2R76'
+    'https://indieweb.org/':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/ynoCPm9mTmbVwpi0Di4A'
+    'https://indieweb.org/Delicious':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/gRJqKu6ErNNIuuyWB9VI'
+    'https://garden.desmondrivet.com/': {}
+    'https://garden.desmondrivet.com/books.html': {}
+    'https://github.com/rexim/org-cliplink': {}
+    'https://desmondrivet.com/2022/04/04/eleventy-previews.html':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/0K43FiGAVUIIHEqxgPKP'
+    'https://desmondrivet.com/2025/09/28/reading-list-in-emacs':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/vRsbHuDPVkqUTQCggjzt'
+    'https://garden.desmondrivet.com/links.html': {}
 site_url: 'https://desmondrivet.com'
