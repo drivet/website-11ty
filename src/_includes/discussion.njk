@@ -40,7 +40,7 @@
     {% if mentions.length > 0 %}
     <section class="wm-group">
       <h3 id="wm-mentions">Comments and Mentions</h3>
-      <ul class="content-list"> 
+      <ul class="content-list">
         {% asyncEach link in mentions %}
         <li class="content-list__item content-list__item--separator">
         {% include 'mention.njk' %}

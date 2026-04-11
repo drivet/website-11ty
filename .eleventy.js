@@ -1,5 +1,5 @@
 const html = require('./utils/html.js');
-const { dateFormat, makePermalink, getDrafts, getAllAlbums } = require('./utils/helpers.js');
+const { dateFormat, makePermalink, getDrafts } = require('./utils/helpers.js');
 const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL;
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -8,8 +8,6 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { addIndieWebCollectionGroups } = require('./configs/collections');
 const { previewConfig } = require('./configs/previews.js');
 const { imageConfig } = require('./configs/image.js');
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const { addAlbumFilters, addAlbumImageCollections } = require('./configs/albums.js');
 const { inspect } = require('util');
 const { searchPostsInit, searchPostsIdx, idxJson } = require('./configs/search');
 const { discussionConfig } = require('./configs/discussion.js');
@@ -94,7 +92,6 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
   eleventyConfig.addFilter('excerpt', content => html.excerpt(content, 500));
   eleventyConfig.addFilter('synicon', url => synIcon(url));
@@ -167,12 +164,8 @@ module.exports = (eleventyConfig) => {
   previewConfig(eleventyConfig);
   addIndieWebCollectionGroups(eleventyConfig);
 
-  addAlbumFilters(eleventyConfig);
-  addAlbumImageCollections(eleventyConfig);
-  
   eleventyConfig.addCollection("drafts", getDrafts);
-  eleventyConfig.addCollection("allAlbums", getAllAlbums);
-
+  
   imageConfig(eleventyConfig);
   discussionConfig(eleventyConfig);
   cacheBustConfig(eleventyConfig);

@@ -38,39 +38,8 @@ function getPosts(collection) {
                    .reverse();
 }
 
-function getLeafAlbums(collection) {
-  return collection.getFilteredByGlob("./src/posts/feed/**/*.md")
-                   .filter(item => item.data.album && item.data.photo)
-                   .reverse();
-
-}
-
-function getAllAlbums(collection) {
-  return collection.getFilteredByGlob("./src/posts/feed/**/*.md")
-                   .filter(item => item.data.album)
-                   .reverse();
-}
-
 function getDrafts(collection) {
   return collection.getFilteredByGlob("./src/drafts/**/*.md").reverse();
-}
-
-function navigation(root, data) {
-  if (!data.parent) {
-    return undefined;
-  }
-  const parentList = data.parent.slice().reverse();
-  let path = root;
-  const navList = parentList.map(p => {
-    const slug = slugify(p.title, { lower: true, strict: true } );
-    path += '/' + slug;
-    return {
-      title: p.title,
-      description: p.description,
-      permalink: path
-    };
-  });
-  return navList;
 }
 
 module.exports = {
@@ -78,8 +47,5 @@ module.exports = {
   makePermalink,
   postTypes,
   getPosts,
-  getLeafAlbums,
-  getAllAlbums,
-  getDrafts,
-  navigation
+  getDrafts
 }

@@ -8,7 +8,7 @@ const debug = require('debug')('previews');
 
 let scraped = null;
 
-const CACHE_DIR = './_cache/scraped'
+const CACHE_DIR = './_cache/scraped';
 
 function loadCached() {
   if (scraped !== null) {
@@ -16,9 +16,9 @@ function loadCached() {
   }
 
   debug('scraped data not loaded, loading...');
-  const filePath = `${CACHE_DIR}/scraped.json`
+  const filePath = `${CACHE_DIR}/scraped.json`;
   if (fs.existsSync(filePath)) {
-    const cacheFile = fs.readFileSync(filePath)
+    const cacheFile = fs.readFileSync(filePath);
     scraped = JSON.parse(cacheFile);
   } else {
     debug('no scraped cache, initializing...');
@@ -29,11 +29,11 @@ function loadCached() {
 
 function saveScraped() {
   debug('saving scraped...');
-  const filePath = `${CACHE_DIR}/scraped.json`
+  const filePath = `${CACHE_DIR}/scraped.json`;
   const fileContent = JSON.stringify(scraped, null, 2);
   // create cache folder if it doesnt exist already
   if (!fs.existsSync(CACHE_DIR)) {
-    fs.mkdirSync(CACHE_DIR)
+    fs.mkdirSync(CACHE_DIR);
   }
 
   fs.writeFileSync(filePath, fileContent);

@@ -21,9 +21,9 @@
   {% if link.content and (link.content.html or link.content.text) %}
   <div class="post-info__content">
     {% if link.content.html %}
-    {{ link.content.html | safe }}
+    {{ link.content.html | excerpt | safe }}
     {% else %}
-    {{ link.content.text | markdown | safe}}
+    {{ link.content.text | markdown | excerpt | safe}}
     {% endif %}
   </div>
   {% endif %}

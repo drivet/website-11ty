@@ -48,13 +48,6 @@
       "url": "https://desmondrivet.com/posts/photos/"
     }, 
     {
-      "collection": "albums",
-      "permalink": "posts/feed_albums.xml",
-      "title":  "Desmond Rivet - Albums",
-      "subtitle": "My curated photo albums",
-      "url": "https://desmondrivet.com/posts/albums/"
-    },
-    {
       "collection": "replies",
       "permalink": "posts/feed_replies.xml",
       "title":  "Desmond Rivet - Replies",
@@ -111,20 +104,12 @@
 
         <![CDATA[
         {% set photoCount = post.data.photo | length %}
-        {% set album = post.data.postType == 'album' %}
 
         {% if photoCount > 1 %}
         <p>{{ photoCount }} photos</p>
         {% endif %}
 
-        {% if album %}
-          {% set albums = collections.all | eleventyNavigation(post.data.eleventyNavigation.key) %}
-          {% set albumCount = albums | length %}  
-          {% if albumCount > 1 %}
-          <p>{{ albumCount }} albums</p>
-          {% endif %}
-          {% atomImage post.data.featured.value, post.data.featured.alt %}
-        {% elif photoCount > 0 %}
+        {% if photoCount > 0 %}
           {% asyncEach photoObj in post.data.photo %}
           {% atomImage photoObj.value | d(photoObj), photoObj.alt | d('') %}
           {% endeach %}

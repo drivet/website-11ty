@@ -169,8 +169,8 @@ looking for:
 If you want to create a folder with all the photos from a particular album
 copied into it, you can use this command:
 
-`exiftool -r -o .  '-directory=/home/dcr/media/images/chicago' -if
-'$keywords =~ /album:2018_chicago/i' <folder with photos>`
+`exiftool -r -o .  '-directory=<destination folder>' -if
+'$keywords =~ /album:2018_chicago/i' <source folder with photos>`
 
 The command is a bit weird.  You need the `-o` because otherwise the files
 would be moved, not copied.  However, the `.` after the `-o` is just a dummy

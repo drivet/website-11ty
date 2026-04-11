@@ -61,17 +61,8 @@ function referencedLink(data) {
          data['bookmark-of'];
 } 
 
-function eleventyNavigation(data) {
-  return {
-    key: data.key || data.title,
-    parent: data.parent,
-    title: data.title
-  };
-}
-
 module.exports = {
   eleventyComputed: {
-    eleventyNavigation,
     postType: (data) => pt.postType({data}),
     bridgyMentions,
     referencedLink,

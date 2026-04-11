@@ -30,80 +30,25 @@ breadcumbOptions:
 
     <div class="e-content entry__content">
       <div class="text">
-        {% if eleventyNavigation.parent %}
-        Posted in {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) |  eleventyNavigationToHtml(breadcumbOptions) | safe }}
-        {% endif %}
-        
+       
         {% set photoCount = photo | length  %}
         {% if photoCount > 1 %}
         <p>{{ photoCount }} photos</p>
         {% endif %} 
         
-        {% set albumCount = 0 %}
-        {% if album %}
-          {% set enhancedAlbums = collections.all | eleventyNavigation(eleventyNavigation.key) | enhanceNavigation(collections.all) %}
-          {% set albumCount = enhancedAlbums | length  %}
-          {% if albumCount > 1 %}
-            <p>{{ albumCount }} albums</p>
-          {% endif %}  
-        {% endif %}
-
         {{ content | safe }}
         
       </div>
-       
-      {% if album and photoCount > 1 %}
-        <div class="image-grid">
-          {% asyncEach photoObj in photo %}
-            {% set obj = photoObj.value | d(photoObj) %}
-            {% set alt = photoObj.alt | d('') %}
-            <div class="h-entry entry image-grid__item">
-              <a href="{{ page.url | stripExt | albumImageUrl(obj)}}">
-                {% thumb obj, alt, "u-photo image-grid__thumb image" %}
-              </a>
-            </div>
-          {% endeach %}
-        </div>
-      {% else %}
-        {% asyncEach photoObj in photo %}
-          {% set obj = photoObj.value | d(photoObj) %}
-          {% set alt = photoObj.alt | d('') %}
-          {% if loop.first %}
-            {% image obj, alt, "u-featured u-photo entry__photo image" %}
-          {% else %}
-            {% image obj, alt, "u-photo entry__photo image" %}
-          {% endif %}
-        {% endeach %}
-      {% endif %}
-      
-      {% if albumCount > 1 %}
-        <ul class="content-list album-list">
-        {% asyncEach ealbum in enhancedAlbums | reverse %}
-          <li class="content-list__item content-list__item--separator content-list__item--spacious">
-            <article>
-              <div class="text">
-                <h2 class="entry__title"><a href="{{ ealbum.url }}" class="entry__titlelink">{{ ealbum.title }}</a></h2>
-              
-                {{ ealbum.content | safe }}
-                
-                {% if ealbum.photo %}
-                <p>{{ ealbum.photo | length }} photos</p>
-                {% else %}
-                <p>{{ ealbum.children | length }} albums</p>
-                {% endif %}
-              </div>
 
-              {% if ealbum.featured %}
-              <a href="{{ ealbum.url }}">
-                {% image ealbum.featured.value, ealbum.featured.alt, "entry__photo image"  %}
-              </a>
-              {% endif %}
-              
-            </article>
-          </li>
-        {% endeach %}
-        </ul>
+      {% asyncEach photoObj in photo %}
+      {% set obj = photoObj.value | d(photoObj) %}
+      {% set alt = photoObj.alt | d('') %}
+      {% if loop.first %}
+        {% image obj, alt, "u-featured u-photo entry__photo image" %}
+      {% else %}
+        {% image obj, alt, "u-photo entry__photo image" %}
       {% endif %}
+      {% endeach %}
       
     </div>
 

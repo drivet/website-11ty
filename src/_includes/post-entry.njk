@@ -21,17 +21,7 @@
       {% if photoCount > 1 %}
       <p><a href="{{ post.url | stripExt }}">{{ photoCount }} photos</a></p>
       {% endif %}
-
-      {% set albumCount = 0 %}
-      {% set album = post.data.postType == 'album' %}
-      {% if album %}
-        {% set albums = collections.all | eleventyNavigation(post.data.eleventyNavigation.key) %}
-        {% set albumCount = albums | length %}
-        {% if albumCount > 0 %}
-          <p><a href="{{ post.url | stripExt }}">{{ albumCount }} albums</a></p>
-        {% endif %}
-      {% endif %}
-
+      
       {% if post.data.postType == 'article' %}
       {{ post.content | excerpt | safe }}
       {% else %}
@@ -57,9 +47,6 @@
           </div>
         {% endeach %}
       </div>
-    {% elif post.data.featured and album %}
-      {# Should probably handle featured images more generically, not just for albums #}
-      {% image post.data.featured.value, post.data.featured.alt, 'u-featured entry__photo image' %}
     {% endif %}
   </div>
 
