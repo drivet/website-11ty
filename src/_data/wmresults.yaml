@@ -1807,4 +1807,43 @@ results:
       status_code: 201
       location: 'https://webmention.io/desmondrivet.com/webmention/vRsbHuDPVkqUTQCggjzt'
     'https://garden.desmondrivet.com/links.html': {}
+  2026/03/28/indieweb-albums:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/116388293352936469'
+    'https://indieweb.org/':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/j44AUB40meki_FfzoD3A'
+    'https://indieweb.org/Micropub':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/2_SyhNg7Uy9Z2hYVAkHT'
+    'https://indieweb.org/post':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/YI6c7jUO5rh6d_cPguRi'
+    'https://indieweb.org/permalink':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/JxV4kdErl5_2QKi5nsb_'
+    'https://indieweb.org/feed':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/ZTrfv_kTKtkJIa0YEk8i'
+    'https://indieweb.org/photo':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/L3KGFvB5yfQYofcJ0-Vl'
+    'https://indieweb.org/multi-photo':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/3PVzdtMoEpJ_lCgDOn0c'
+    'https://indieweb.org/photo-album':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/61qHJ6eaxrRQ04zfZvYq'
+    'https://indieweb.org/collection':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/U6bs7VL81Kzm3R25On9a'
+    'https://indieweb.org/Micropub-extensions#Visibility':
+      status_code: 201
+      location: 'https://webmention.io/indiewebcamp/webmention/yzo6_LWm8w0iA0nvly7e'
+    'https://photo.postrchild.com/': {}
+    'https://www.11ty.dev/': {}
+    'https://gallery.desmondrivet.com/': {}
+    'https://garden.desmondrivet.com/20250218202000-recipes.html': {}
+    'https://garden.desmondrivet.com': {}
 site_url: 'https://desmondrivet.com'
