@@ -95,7 +95,9 @@ themselves paginated.
 
 The process is a bit complicated since Eleventy doesn't support the
 pagination of tag pages out of the box.  See `configs/collections.json` for
-some insight into how it's done.
+some insight into how it's done.  I wrote a [blog
+entry](https://desmondrivet.com/2022/03/23/eleventy-pagination.html) on
+this.
 
 ## Archives
 
