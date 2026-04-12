@@ -29,15 +29,13 @@ interconnected notes on various topics that interest me.  I wrote [an
 article][11] on the differences between these two kinds of websites if you
 want to learn more about it.
 
+I also maintain a curated collection of [photo albums][12] that are, for
+various reasons, easier to maintain separately from this site.
+
 ## On This Site
 
-There's actually a fair bit of content here:
-
-* In addition to the fire hose of all my [posts][8], I also separately
-  publish a subset of them in my *[lifestream][3]*, hopefully providing a
-  calmer, more curated experience.
-* A [collection of curated photo albums][4]
-* Various [selected pages][5] from my old sites
+In addition to the fire hose of all my [posts][8], I also have a section
+with various [selected pages][5] from my old sites.
 
 This site also used to house my recipe collection after I stopped
 maintaining my wiki.  As my wiki has since found new life, of a sort, in my
@@ -83,3 +81,4 @@ elswhere on the web as well:
 [9]: https://garden.desmondrivet.com
 [10]: /
 [11]: /2020/05/01/wikis-and-blogs
+[12]: https://gallery.desmondrivet.com

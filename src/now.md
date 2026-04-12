@@ -14,8 +14,8 @@ on social media.
 
 So, currently, my life looks roughly like this, in approximate order of stuff most likely to change:
 
-* Not playing anything at the moment
-* Reading Mansfield Park by Jane Austen
+* Playing Witcher 3
+* Reading Rendez Vous With Rama by Arthur C. Clarke.
 * Working as a senior software developer at Unity Technologies, doing mostly data
 and billing related tasks.  The languages I use most often in my job at
 the moment are Go, Typescript, JavaScript, Python and SQL.
