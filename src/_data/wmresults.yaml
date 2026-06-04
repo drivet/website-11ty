@@ -1846,4 +1846,8 @@ results:
     'https://gallery.desmondrivet.com/': {}
     'https://garden.desmondrivet.com/20250218202000-recipes.html': {}
     'https://garden.desmondrivet.com': {}
+  2026/06/03/linus-woke:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/116689150132056004'
 site_url: 'https://desmondrivet.com'
