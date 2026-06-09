@@ -1,25 +1,6 @@
 const cheerio = require('cheerio');
-/*
-function excerpt(html, maxCount) {
-  if (!html) {
-    return '';
-  }
-  
-  const $ = cheerio.load(html);
-  const nodes = $('body > *');
-  let summary = '';
-  let wordCount = 0;
-  nodes.each((i, e) => {
-      const wrapper = $(e).wrap('<p/>').parent();
-      summary += wrapper.html();
-      wordCount += wrapper.text().split(/[\s,]+/).length;
-      return wordCount < maxCount;
-  });
-  return summary;
-}
-*/
 
-function excerpt(content, length) {
+function excerptParas(content, length) {
   let excerptParagraphs = [];
   let currentLength = 0;
   const paragraphs = content.match(/<p>.*?<\/p>/gs) || [];
@@ -35,8 +16,20 @@ function excerpt(content, length) {
           break;
       }
   }
+  return [excerptParagraphs, paragraphs];
+}
 
+function excerpt(content, length) {
+  const [excerptParagraphs] = excerptParas(content, length);
   return excerptParagraphs.join(" ");
+}
+
+function excerptInfo(content, length) {
+  const [excerptParagraphs, paragraphs] = excerptParas(content, length);
+  return {
+    text: excerptParagraphs.join(" "),
+    truncated: paragraphs.length > excerptParagraphs.length
+  };
 }
 
 function links(html) {
@@ -50,5 +43,5 @@ function links(html) {
 }
 
 module.exports = {
-  excerpt, links
+  excerpt, excerptInfo, links
 }
