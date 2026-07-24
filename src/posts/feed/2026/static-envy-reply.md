@@ -10,7 +10,7 @@ I run an IndieWeb (Micropub, Webmentions) enabled static
 [website](https://desmondrivet.com/) and I admit it's not the easiest thing
 in the world. Coding knowledge definitely helps.
 
-My static site generator is [Eleventy](https://www.11ty.dev/.  Posts are
+My static site generator is [Eleventy](https://www.11ty.dev/).  Posts are
 published by committing to the main branch.  I wrote a basic Micropub server
 which piggy backs on this mechanism to publish (i.e. it "publishes" a post
 by committing to the main branch).  Local comments are handled with
