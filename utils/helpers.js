@@ -38,14 +38,9 @@ function getPosts(collection) {
                    .reverse();
 }
 
-function getDrafts(collection) {
-  return collection.getFilteredByGlob("./src/drafts/**/*.md").reverse();
-}
-
 module.exports = {
   dateFormat,
   makePermalink,
   postTypes,
   getPosts,
-  getDrafts
 }

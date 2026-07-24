@@ -2,7 +2,6 @@
 date: 2024-12-07T12:07:47-05:00
 title: "Anatomy of a Post"
 blurb: "Different posts look different under the hood"
-post-status: draft
 mp-syndicate-to:
 - mastodon
 tags:

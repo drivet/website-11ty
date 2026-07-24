@@ -2,6 +2,7 @@
 date: 2019-03-09 20:04:45-05:00
 modified: 2019-03-09 20:04:45-05:00
 title: Multiculturalism and Relativism
+post-status: draft
 ---
 
 In October 2010 Angela Merkel, Chancellor of Germany, stated that
@@ -33,7 +34,7 @@ to look very hard.  The regionalism and the multiculturalism is strong up
 here.
 
 So it isn't so much that Canada doesn't have a culture, it's that we have
-*many*. Toronto, in particular, often *defines* itself by how many different
+*many*. Toronto, in particular, often *defines* itself by how many different 
 cultures it has.
 
 I don't know what definition of multiculturalism Merkel's working from, but

@@ -1,7 +1,8 @@
 ---
-date: 2018-10-09 13:50:46-04:00
+date: 2026-07-03T08:08:37-04:00
 modified: 2018-10-09 13:50:46-04:00
 title: On Religious Neutrality and Fashion Choices
+post-status: draft
 ---
 
 A while back I wrote a [blog entry on the proposed Charter of Quebec

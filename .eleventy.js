@@ -1,5 +1,5 @@
 const html = require('./utils/html.js');
-const { dateFormat, makePermalink, getDrafts } = require('./utils/helpers.js');
+const { dateFormat, makePermalink } = require('./utils/helpers.js');
 const _ = require('lodash');
 const rootUrl = require('./src/_data/global.json').URL;
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -165,12 +165,16 @@ module.exports = (eleventyConfig) => {
   previewConfig(eleventyConfig);
   addIndieWebCollectionGroups(eleventyConfig);
 
-  eleventyConfig.addCollection("drafts", getDrafts);
-  
   imageConfig(eleventyConfig);
   discussionConfig(eleventyConfig);
   cacheBustConfig(eleventyConfig);
 
+  eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+		if (data['post-status'] === 'draft' && process.env.ELEVENTY_RUN_MODE === "build") {
+			return false;
+		}
+	});
+ 
   return {
     dir: {
         input: 'src'

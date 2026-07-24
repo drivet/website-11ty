@@ -2,7 +2,6 @@
 date: 2023-12-05T21:42:19-05:00
 title: "Implementing GTD in Emacs With Org Mode"
 blurb: "There are lots of ways to do it"
-post-status: draft
 mp-syndicate-to:
 - mastodon
 tags: 

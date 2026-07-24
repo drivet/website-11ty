@@ -2,7 +2,6 @@
 date: 2026-01-10T21:20:53-05:00
 title: "Moving My Bookmarks to My Garden"
 blurb: "My bookmarks were always a bit dicey"
-post-status: draft
 mp-syndicate-to:
 - mastodon
 tags:
