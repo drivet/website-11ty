@@ -1854,4 +1854,17 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/116772594085835090'
+  2026/07/24/static-envy-reply:
+    'https://www.zylstra.org/blog/2026/07/static-website-envy/':
+      status_code: 200
+    'https://desmondrivet.com/':
+      status_code: 201
+      location: 'https://webmention.io/desmondrivet.com/webmention/SqxhI4lxjUUsVDT3xtcX'
+    'https://www.11ty.dev/': {}
+    'https://github.com/eduardoboucas/staticman': {}
+    'https://webmention.io/':
+      status_code: 201
+      location: 'https://webmention.io/pingback/webmention/3-SGntkNZ_GUOwR-Nb35'
+    'https://www.zylstra.org':
+      status_code: 400
 site_url: 'https://desmondrivet.com'
