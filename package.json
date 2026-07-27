@@ -9,6 +9,7 @@
     "devp": "ELEVENTY_ENV=development DEBUG=Eleventy:Benchmark* eleventy --serve",
     "devd": "ELEVENTY_ENV=development DEBUG=Eleventy:* eleventy --serve",
     "build": "ELEVENTY_ENV=production eleventy",
+    "builds": "ELEVENTY_ENV=production eleventy --serve",
     "buildd": "ELEVENTY_ENV=production DEBUG=Eleventy:* eleventy",
     "upload": "node scripts/upload.js"
   },
