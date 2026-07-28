@@ -10,16 +10,16 @@ tags:
 
 I recently saw [Christopher Nolan][17]'s [The Odyssey][1].
 
-Ignoring the advice I often dispense in these situations like these, I
-decided to read the [poem][2] beforehand.  I originally bought a cheap,
-used, prose translation by [W. H. D. Rouse][3] that I found difficult to get
-through, so I pivoted early on to [Emily Wilson][15]'s [version][4] and
-found it *much* more accessible.  I'll likely have much more to say about
-the experience of reading the Odyssey, particularly since I was in the
-unusual position, for an amateur, of having two translations at my
-fingertips at the same time, but that is a discussion for another day.
-Suffice it to say that I read the poem before seeing the movie and it
-unsurprisingly coloured my experience of the whole thing.
+Ignoring the advice I often dispense in situations like these, I decided to
+read the [poem][2] beforehand.  I originally bought a cheap, used, prose
+translation by [W. H. D. Rouse][3] that I found difficult to get through, so
+I pivoted early on to [Emily Wilson][15]'s [version][4] and found it *much*
+more accessible.  I'll likely have much more to say about the experience of
+reading the Odyssey, particularly since I was in the unusual position, for
+an amateur, of having two translations at my fingertips at the same time,
+but that is a discussion for another day.  Suffice it to say that I read the
+poem before seeing the movie and it unsurprisingly coloured my experience of
+the whole thing.
 
 ## The Short of It
 
