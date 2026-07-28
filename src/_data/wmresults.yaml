@@ -1867,4 +1867,23 @@ results:
       location: 'https://webmention.io/pingback/webmention/3-SGntkNZ_GUOwR-Nb35'
     'https://www.zylstra.org':
       status_code: 400
+  2026/07/28/odyssey-nolan:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/116997658818434961'
+    'https://en.wikipedia.org/wiki/Christopher_Nolan': {}
+    'https://en.wikipedia.org/wiki/The_Odyssey_(2026_film)': {}
+    'https://en.wikipedia.org/wiki/Odyssey': {}
+    'https://en.wikipedia.org/wiki/W._H._D._Rouse': {}
+    'https://en.wikipedia.org/wiki/Emily_Wilson_(classicist)': {}
+    'https://en.wikipedia.org/wiki/Odyssey_(Emily_Wilson_translation)': {}
+    'https://en.wikipedia.org/wiki/Circe': {}
+    'https://en.wikipedia.org/wiki/Siren_(mythology)': {}
+    'https://en.wikipedia.org/wiki/Trojan_Horse': {}
+    'https://en.wikipedia.org/wiki/Cyclopes': {}
+    'https://en.wikipedia.org/wiki/Scheria': {}
+    'https://en.wikipedia.org/wiki/Calypso_(mythology)': {}
+    'https://en.wikipedia.org/wiki/Oresteia': {}
+    'https://en.wikipedia.org/wiki/Robert_Fagles': {}
+    'https://en.wikipedia.org/wiki/Odyssey_(Robert_Fagles_translation)': {}
 site_url: 'https://desmondrivet.com'
