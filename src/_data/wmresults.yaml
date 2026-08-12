@@ -1886,4 +1886,8 @@ results:
     'https://en.wikipedia.org/wiki/Oresteia': {}
     'https://en.wikipedia.org/wiki/Robert_Fagles': {}
     'https://en.wikipedia.org/wiki/Odyssey_(Robert_Fagles_translation)': {}
+  2026/08/12/093925:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/117082816756315815'
 site_url: 'https://desmondrivet.com'
