@@ -1890,4 +1890,8 @@ results:
     'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
       status_code: 201
       location: 'https://indieweb.social/@desmondrivet/117082816756315815'
+  2026/09/11/bribing-americans:
+    'https://brid.gy/publish/mastodon?bridgy_omit_link=maybe':
+      status_code: 201
+      location: 'https://indieweb.social/@desmondrivet/117252299400021108'
 site_url: 'https://desmondrivet.com'
