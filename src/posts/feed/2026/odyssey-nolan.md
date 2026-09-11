@@ -35,11 +35,11 @@ felt - I never thought I would say this - *fresh*.
 
 ## The Long of It
 
-With all that said, I had some problems with the movie, and most of the
-problems stemmed from the differences between the film and the poem.  This
-is why I usually advise people to watch a movie before reading the book on
-which it's based - you won't have any preconceived notions muddying your
-experience.
+With all that said, I did have some problems with the movie, most of them
+sourced, as you might expect, in differences from the poem.  This
+is why I usually advise people to watch a movie before reading the source
+material on which it's based - you won't have any preconceived notions
+muddying your experience.
 
 The first problem is that book Odysseus is supposed to be clever and wily.
 Film Odysseus is neither; he's basically a tortured soldier with PTSD.  In
