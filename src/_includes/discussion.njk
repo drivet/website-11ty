@@ -54,7 +54,7 @@
     <section class="wm-group">
       <h3 id="wm-likes">Likes</h3> 
       {% asyncEach link in likes %}
-      <a href="{{link.author.url}}">{% avatar link.author.photo, link.author.name %}</a>
+      <a href="{{link.author.url or link.url}}">{% avatar link.author.photo, link.author.name %}</a>
       {% endeach %}
     </section>
     {% endif %}
@@ -63,7 +63,7 @@
     <section class="wm-group">
       <h3 id="wm-reposts">Reposts</h3> 
       {% asyncEach link in reposts %} 
-      <a href="{{link.author.url}}">{% avatar link.author.photo, link.author.name %}</a>
+      <a href="{{link.author.url or link.url}}">{% avatar link.author.photo, link.author.name %}</a>
       {% endeach %}
     </section>
     {% endif %}
@@ -72,7 +72,7 @@
     <section class="wm-group">
       <h3 id="wm-bookmarks" class="wm-group--header">Bookmarks</h3>  
       {% asyncEach link in bookmarks %}
-      <a href="{{link.author.url}}">{% avatar link.author.photo, link.author.name %}</a>
+      <a href="{{link.author.url or link.url}}">{% avatar link.author.photo, link.author.name %}</a>
       {% endeach %}
     </section>
     {% endif %}
