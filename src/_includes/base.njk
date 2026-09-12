@@ -69,6 +69,8 @@
   {% block extrastyle %}{% endblock %}
   <link href="/static/fontawesome/css/all.min.css" rel="stylesheet">
 
+  <link rel="feed" href="/posts/">
+
   {% if global.AUTH_ENDPOINT %}
   <link rel="authorization_endpoint" href="{{ global.AUTH_ENDPOINT }}"/>
   {% endif %}
